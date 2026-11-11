@@ -6,7 +6,7 @@ Agency Tracker reports what the federal executive branch has done since you last
 
 1. **Collector** (`collector/`): a small Python program, using only the standard library, that GitHub runs once a day (`.github/workflows/collect.yml`). It reads official government interfaces, sorts and flags what it finds, and saves the results in `docs/data/`.
 2. **Website** (`docs/`): a static page served by GitHub Pages, with two modes:
-   - **Classic** (`app.js`): what is new since your last visit, by agency. The original version is preserved under the git tag `classic-v1`.
+   - **Classic** (`app.js`): what is new since your last visit, by agency. The original version is preserved in the `classic-v1` branch.
    - **Research** (`research.js`): searches the full history. It offers search by type of sanction (results grouped by agency) and "ask in your own words" reports that can be regrouped, shown as a table, downloaded as CSV or saved as a link. It runs entirely in the browser.
 
 ## Sources, and the safety rules the collector follows
