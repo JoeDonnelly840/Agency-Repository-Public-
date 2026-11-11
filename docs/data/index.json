@@ -1,0 +1,232 @@
+{
+ "agencies": [
+  {
+   "key": "sec",
+   "name": "Securities and Exchange Commission",
+   "short": "SEC"
+  },
+  {
+   "key": "ftc",
+   "name": "Federal Trade Commission",
+   "short": "FTC"
+  },
+  {
+   "key": "fcc",
+   "name": "Federal Communications Commission",
+   "short": "FCC"
+  },
+  {
+   "key": "epa",
+   "name": "Environmental Protection Agency",
+   "short": "EPA"
+  },
+  {
+   "key": "nlrb",
+   "name": "National Labor Relations Board",
+   "short": "NLRB"
+  },
+  {
+   "key": "cfpb",
+   "name": "Consumer Financial Protection Bureau",
+   "short": "CFPB"
+  },
+  {
+   "key": "dol",
+   "name": "Department of Labor",
+   "short": "DOL"
+  },
+  {
+   "key": "fda",
+   "name": "Food and Drug Administration",
+   "short": "FDA"
+  },
+  {
+   "key": "hhs",
+   "name": "Health and Human Services (other than FDA)",
+   "short": "HHS"
+  },
+  {
+   "key": "ferc",
+   "name": "Federal Energy Regulatory Commission",
+   "short": "FERC"
+  }
+ ],
+ "categories": {
+  "adjudication": "Adjudication & licensing",
+  "enforcement": "Enforcement",
+  "other": "Other notices",
+  "presidential": "Presidential actions",
+  "rulemaking": "Rulemaking"
+ },
+ "corporations": [
+  {
+   "key": "finra",
+   "name": "Financial Industry Regulatory Authority (FINRA)",
+   "overseer": "SEC"
+  },
+  {
+   "key": "pcaob",
+   "name": "Public Company Accounting Oversight Board (PCAOB)",
+   "overseer": "SEC"
+  },
+  {
+   "key": "msrb",
+   "name": "Municipal Securities Rulemaking Board (MSRB)",
+   "overseer": "SEC"
+  },
+  {
+   "key": "other_sro",
+   "name": "Other SEC-supervised self-regulatory organizations (exchanges, clearing agencies)",
+   "overseer": "SEC"
+  }
+ ],
+ "coverage_notes": {
+  "adjudication": "Partly covered. Federal Register notices of hearings, applications, licensing and filings, plus SEC in-house administrative proceedings. Individual ALJ and board decisions (for example, most NLRB decisions) are usually NOT published in the Federal Register and are not tracked in this version.",
+  "enforcement": "Partly covered. Only enforcement matters published in the Federal Register (for example, some FTC proposed consent orders and civil-penalty notices) and, for the SEC, its official litigation-release and administrative-proceeding feeds. Most other agencies announce enforcement actions only on their own websites, which this version does not read.",
+  "other": "Everything else the Federal Register publishes for the agency (meetings, information-collection requests, and similar notices).",
+  "presidential": "Well covered. Executive orders, memoranda and proclamations published in the Federal Register.",
+  "rulemaking": "Well covered. Proposed and final rules must be published in the Federal Register, which is checked for every tracked agency. Guidance and policy statements appear only if the agency chose to publish them there."
+ },
+ "days": {
+  "2026-10-13": 37,
+  "2026-10-14": 31,
+  "2026-10-15": 17,
+  "2026-10-16": 52,
+  "2026-10-19": 36,
+  "2026-10-20": 22,
+  "2026-10-21": 24,
+  "2026-10-22": 20,
+  "2026-10-23": 27,
+  "2026-10-26": 37,
+  "2026-10-27": 25,
+  "2026-10-28": 36,
+  "2026-10-29": 53,
+  "2026-10-30": 37,
+  "2026-11-02": 31,
+  "2026-11-03": 25,
+  "2026-11-04": 24,
+  "2026-11-05": 47,
+  "2026-11-06": 26,
+  "2026-11-09": 35,
+  "2026-11-10": 31
+ },
+ "president": {
+  "key": "president",
+  "name": "The President (Presidential Documents)",
+  "short": "President"
+ },
+ "runs": [
+  {
+   "end": "2026-11-11",
+   "items_found": 673,
+   "items_new": 673,
+   "reports": [
+    {
+     "agencies": {
+      "cfpb": "ok",
+      "dol": "ok",
+      "epa": "ok",
+      "fcc": "ok",
+      "fda": "ok",
+      "ferc": "ok",
+      "ftc": "ok",
+      "hhs": "ok",
+      "nlrb": "ok",
+      "president": "ok",
+      "sec": "ok"
+     },
+     "detail": "",
+     "label": "Federal Register",
+     "source": "federal_register",
+     "status": "ok"
+    },
+    {
+     "agencies": {},
+     "detail": "Not checked: the REGULATIONS_GOV_API_KEY secret has not been added to GitHub.",
+     "label": "Regulations.gov",
+     "source": "regulations_gov",
+     "status": "skipped"
+    },
+    {
+     "agencies": {},
+     "detail": "Not checked: the SEC asks automated tools to give a contact email. Add the SEC_CONTACT_EMAIL secret in GitHub to turn this on.",
+     "label": "SEC litigation releases (federal court actions)",
+     "source": "sec_litigation",
+     "status": "skipped"
+    },
+    {
+     "agencies": {},
+     "detail": "Not checked: the SEC asks automated tools to give a contact email. Add the SEC_CONTACT_EMAIL secret in GitHub to turn this on.",
+     "label": "SEC administrative proceedings (in-house)",
+     "source": "sec_admin",
+     "status": "skipped"
+    }
+   ],
+   "requests": 12,
+   "run_at": "2026-11-11T13:33:45+00:00",
+   "start": "2026-10-12"
+  }
+ ],
+ "schema": 1,
+ "source_agencies": {
+  "federal_register": [
+   "sec",
+   "ftc",
+   "fcc",
+   "epa",
+   "nlrb",
+   "cfpb",
+   "dol",
+   "fda",
+   "hhs",
+   "ferc",
+   "president"
+  ],
+  "regulations_gov": [
+   "sec",
+   "ftc",
+   "fcc",
+   "epa",
+   "nlrb",
+   "cfpb",
+   "dol",
+   "fda",
+   "hhs",
+   "ferc"
+  ],
+  "sec_admin": [
+   "sec"
+  ],
+  "sec_litigation": [
+   "sec"
+  ]
+ },
+ "sources": {
+  "federal_register": {
+   "covered_through": "2026-11-11",
+   "label": "Federal Register",
+   "last_attempt": "2026-11-11T13:33:45+00:00",
+   "last_detail": "",
+   "last_status": "ok"
+  },
+  "regulations_gov": {
+   "label": "Regulations.gov",
+   "last_attempt": "2026-11-11T13:33:45+00:00",
+   "last_detail": "Not checked: the REGULATIONS_GOV_API_KEY secret has not been added to GitHub.",
+   "last_status": "skipped"
+  },
+  "sec_admin": {
+   "label": "SEC administrative proceedings (in-house)",
+   "last_attempt": "2026-11-11T13:33:45+00:00",
+   "last_detail": "Not checked: the SEC asks automated tools to give a contact email. Add the SEC_CONTACT_EMAIL secret in GitHub to turn this on.",
+   "last_status": "skipped"
+  },
+  "sec_litigation": {
+   "label": "SEC litigation releases (federal court actions)",
+   "last_attempt": "2026-11-11T13:33:45+00:00",
+   "last_detail": "Not checked: the SEC asks automated tools to give a contact email. Add the SEC_CONTACT_EMAIL secret in GitHub to turn this on.",
+   "last_status": "skipped"
+  }
+ },
+ "updated_at": "2026-11-11T13:33:45+00:00"
+}

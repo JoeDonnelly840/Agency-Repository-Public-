@@ -1,0 +1,858 @@
+{
+ "date": "2026-10-22",
+ "items": [
+  {
+   "action": "Notice of a new system of records.",
+   "agencies": [
+    "fcc"
+   ],
+   "category": "enforcement",
+   "comments_close": "2026-11-23",
+   "corporation": null,
+   "date": "2026-10-22",
+   "doc_type": "Notice",
+   "docket_ids": [
+    "FR ID: 373367"
+   ],
+   "effective_on": "2026-10-22",
+   "eo_number": null,
+   "first_seen": "2026-11-11T13:33:45+00:00",
+   "flags": [
+    {
+     "authorities": [
+      "SEC v. Jarkesy, 603 U.S. 109 (2024)",
+      "Axon Enterprise, Inc. v. FTC, 598 U.S. 175 (2023)",
+      "Granfinanciera, S.A. v. Nordberg, 492 U.S. 33 (1989)"
+     ],
+     "code": "agency_adjudication",
+     "label": "Agency adjudication of penalties (jury trial / Article III)",
+     "priority": "high",
+     "structural": true,
+     "triggers": [
+      "debar"
+     ],
+     "why": "The agency itself appears to be deciding a case that could carry penalties. Penalty cases resembling common-law suits may require a jury and an Article III court, and agency proceedings can combine prosecutor and judge in one body."
+    }
+   ],
+   "fr_agency_names": [
+    "Federal Communications Commission"
+   ],
+   "fr_agency_slugs": [
+    "federal-communications-commission"
+   ],
+   "id": "fr:2026-21619",
+   "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-10-22/pdf/2026-21619.pdf",
+   "priority": 3,
+   "rins": [],
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Enforcement notice",
+   "subtype": "",
+   "summary": "The Federal Communications Commission (FCC, Commission, or Agency) proposes to establish a new system of records, FCC/OGC-8, Suspension and Debarment Records, subject to the Privacy Act of 1974, as amended. This action is necessary to meet the requirements of the Privacy Act to publish in the Federal Register notice of the creation, existence, and character of records maintained by the Agency. The Commission uses this system to collect information about any prior misconduct of individuals and entities who participate in certain programs the FCC administers (e.g., Universal Service Fund (USF) and the Telecommunications Relay Services (TRS) program) so that the Suspending and Debarring Official (SDO) can determine whether to exclude or take such other actions as permitted under 2 CFR 6001 against those individuals or entities.",
+   "title": "Privacy Act of 1974; System of Records",
+   "url": "https://www.federalregister.gov/documents/2026/10/22/2026-21619/privacy-act-of-1974-system-of-records"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "sec"
+   ],
+   "category": "rulemaking",
+   "comments_close": null,
+   "corporation": "other_sro",
+   "date": "2026-10-22",
+   "doc_type": "Notice",
+   "docket_ids": [
+    "Release No. 34-106694",
+    "File No. SR-PEARL-2026-42"
+   ],
+   "effective_on": null,
+   "eo_number": null,
+   "first_seen": "2026-11-11T13:33:45+00:00",
+   "flags": [
+    {
+     "authorities": [
+      "Alpine Securities Corp. v. FINRA, 121 F.4th 1314 (D.C. Cir. 2024)"
+     ],
+     "code": "private_discipline",
+     "label": "Private corporation disciplining or expelling a member",
+     "priority": "high",
+     "structural": true,
+     "triggers": [
+      "fine"
+     ],
+     "why": "A private, agency-supervised corporation appears to be imposing discipline. Courts have questioned whether such bodies may expel or punish without government review first."
+    },
+    {
+     "authorities": [
+      "Carter v. Carter Coal Co., 298 U.S. 238 (1936)",
+      "Department of Transportation v. Association of American Railroads, 575 U.S. 43 (2015)",
+      "Alpine Securities Corp. v. FINRA, 121 F.4th 1314 (D.C. Cir. 2024)"
+     ],
+     "code": "private_delegation",
+     "label": "Government power exercised by a private corporation",
+     "priority": "low",
+     "structural": true,
+     "triggers": [
+      "issued by an agency-supervised private corporation"
+     ],
+     "why": "This action comes from a private, agency-supervised corporation. Delegating government power to private entities is limited by the private nondelegation doctrine and by Article II."
+    }
+   ],
+   "fr_agency_names": [
+    "Securities and Exchange Commission"
+   ],
+   "fr_agency_slugs": [
+    "securities-and-exchange-commission"
+   ],
+   "id": "fr:2026-21574",
+   "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-10-22/pdf/2026-21574.pdf",
+   "priority": 3,
+   "rins": [],
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Rule filing by self-regulatory organization",
+   "subtype": "",
+   "summary": "",
+   "title": "Self-Regulatory Organizations; MIAX PEARL, LLC; Notice of Filing and Immediate Effectiveness of a Proposed Rule Change To Make a Non-Substantive Correction to Exchange Rule 1014, Imposition of Fines for Minor Rule Violations",
+   "url": "https://www.federalregister.gov/documents/2026/10/22/2026-21574/self-regulatory-organizations-miax-pearl-llc-notice-of-filing-and-immediate-effectiveness-of-a"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "sec"
+   ],
+   "category": "rulemaking",
+   "comments_close": null,
+   "corporation": "other_sro",
+   "date": "2026-10-22",
+   "doc_type": "Notice",
+   "docket_ids": [
+    "Release No. 34-106692",
+    "File No. SR-CboeEDGX-2026-067"
+   ],
+   "effective_on": null,
+   "eo_number": null,
+   "first_seen": "2026-11-11T13:33:45+00:00",
+   "flags": [
+    {
+     "authorities": [
+      "Carter v. Carter Coal Co., 298 U.S. 238 (1936)",
+      "Department of Transportation v. Association of American Railroads, 575 U.S. 43 (2015)",
+      "Alpine Securities Corp. v. FINRA, 121 F.4th 1314 (D.C. Cir. 2024)"
+     ],
+     "code": "private_delegation",
+     "label": "Government power exercised by a private corporation",
+     "priority": "low",
+     "structural": true,
+     "triggers": [
+      "issued by an agency-supervised private corporation"
+     ],
+     "why": "This action comes from a private, agency-supervised corporation. Delegating government power to private entities is limited by the private nondelegation doctrine and by Article II."
+    }
+   ],
+   "fr_agency_names": [
+    "Securities and Exchange Commission"
+   ],
+   "fr_agency_slugs": [
+    "securities-and-exchange-commission"
+   ],
+   "id": "fr:2026-21572",
+   "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-10-22/pdf/2026-21572.pdf",
+   "priority": 1,
+   "rins": [],
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Rule filing by self-regulatory organization",
+   "subtype": "",
+   "summary": "",
+   "title": "Self-Regulatory Organizations; Cboe EDGX Exchange, Inc.; Notice of Filing and Immediate Effectiveness of a Proposed Rule Change To Amend Rule 19.3 and Rule 19.4 To Establish Generic Listing Criteria and Continued Listing Standards for Options on Commodity-Based Trusts Holding Multiple Crypto Assets and To Permit the Listing of Options on Exchange-Traded Funds",
+   "url": "https://www.federalregister.gov/documents/2026/10/22/2026-21572/self-regulatory-organizations-cboe-edgx-exchange-inc-notice-of-filing-and-immediate-effectiveness-of"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "sec"
+   ],
+   "category": "rulemaking",
+   "comments_close": null,
+   "corporation": "other_sro",
+   "date": "2026-10-22",
+   "doc_type": "Notice",
+   "docket_ids": [
+    "Release No. 34-106696",
+    "File No. SR-CBOE-2026-081"
+   ],
+   "effective_on": null,
+   "eo_number": null,
+   "first_seen": "2026-11-11T13:33:45+00:00",
+   "flags": [
+    {
+     "authorities": [
+      "Carter v. Carter Coal Co., 298 U.S. 238 (1936)",
+      "Department of Transportation v. Association of American Railroads, 575 U.S. 43 (2015)",
+      "Alpine Securities Corp. v. FINRA, 121 F.4th 1314 (D.C. Cir. 2024)"
+     ],
+     "code": "private_delegation",
+     "label": "Government power exercised by a private corporation",
+     "priority": "low",
+     "structural": true,
+     "triggers": [
+      "issued by an agency-supervised private corporation"
+     ],
+     "why": "This action comes from a private, agency-supervised corporation. Delegating government power to private entities is limited by the private nondelegation doctrine and by Article II."
+    }
+   ],
+   "fr_agency_names": [
+    "Securities and Exchange Commission"
+   ],
+   "fr_agency_slugs": [
+    "securities-and-exchange-commission"
+   ],
+   "id": "fr:2026-21576",
+   "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-10-22/pdf/2026-21576.pdf",
+   "priority": 1,
+   "rins": [],
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Rule filing by self-regulatory organization",
+   "subtype": "",
+   "summary": "",
+   "title": "Self-Regulatory Organizations; Cboe Exchange, Inc.; Notice of Filing and Immediate Effectiveness of a Proposed Rule Change To Amend Rule 5.33(g) and Rule 5.34",
+   "url": "https://www.federalregister.gov/documents/2026/10/22/2026-21576/self-regulatory-organizations-cboe-exchange-inc-notice-of-filing-and-immediate-effectiveness-of-a"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "sec"
+   ],
+   "category": "rulemaking",
+   "comments_close": null,
+   "corporation": "other_sro",
+   "date": "2026-10-22",
+   "doc_type": "Notice",
+   "docket_ids": [
+    "Release No. 34-106695",
+    "File No. SR-LTSE-2026-23"
+   ],
+   "effective_on": null,
+   "eo_number": null,
+   "first_seen": "2026-11-11T13:33:45+00:00",
+   "flags": [
+    {
+     "authorities": [
+      "Carter v. Carter Coal Co., 298 U.S. 238 (1936)",
+      "Department of Transportation v. Association of American Railroads, 575 U.S. 43 (2015)",
+      "Alpine Securities Corp. v. FINRA, 121 F.4th 1314 (D.C. Cir. 2024)"
+     ],
+     "code": "private_delegation",
+     "label": "Government power exercised by a private corporation",
+     "priority": "low",
+     "structural": true,
+     "triggers": [
+      "issued by an agency-supervised private corporation"
+     ],
+     "why": "This action comes from a private, agency-supervised corporation. Delegating government power to private entities is limited by the private nondelegation doctrine and by Article II."
+    }
+   ],
+   "fr_agency_names": [
+    "Securities and Exchange Commission"
+   ],
+   "fr_agency_slugs": [
+    "securities-and-exchange-commission"
+   ],
+   "id": "fr:2026-21575",
+   "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-10-22/pdf/2026-21575.pdf",
+   "priority": 1,
+   "rins": [],
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Rule filing by self-regulatory organization",
+   "subtype": "",
+   "summary": "",
+   "title": "Self-Regulatory Organizations; Long-Term Stock Exchange, Inc.; Notice of Filing and Immediate Effectiveness of a Proposed Rule Change To Modify Listing Rules Regarding Dually-Listed Securities",
+   "url": "https://www.federalregister.gov/documents/2026/10/22/2026-21575/self-regulatory-organizations-long-term-stock-exchange-inc-notice-of-filing-and-immediate"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "sec"
+   ],
+   "category": "rulemaking",
+   "comments_close": null,
+   "corporation": "other_sro",
+   "date": "2026-10-22",
+   "doc_type": "Notice",
+   "docket_ids": [
+    "Release No. 34-106693",
+    "File No. SR-MIAX-2026-42"
+   ],
+   "effective_on": null,
+   "eo_number": null,
+   "first_seen": "2026-11-11T13:33:45+00:00",
+   "flags": [
+    {
+     "authorities": [
+      "Carter v. Carter Coal Co., 298 U.S. 238 (1936)",
+      "Department of Transportation v. Association of American Railroads, 575 U.S. 43 (2015)",
+      "Alpine Securities Corp. v. FINRA, 121 F.4th 1314 (D.C. Cir. 2024)"
+     ],
+     "code": "private_delegation",
+     "label": "Government power exercised by a private corporation",
+     "priority": "low",
+     "structural": true,
+     "triggers": [
+      "issued by an agency-supervised private corporation"
+     ],
+     "why": "This action comes from a private, agency-supervised corporation. Delegating government power to private entities is limited by the private nondelegation doctrine and by Article II."
+    }
+   ],
+   "fr_agency_names": [
+    "Securities and Exchange Commission"
+   ],
+   "fr_agency_slugs": [
+    "securities-and-exchange-commission"
+   ],
+   "id": "fr:2026-21573",
+   "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-10-22/pdf/2026-21573.pdf",
+   "priority": 1,
+   "rins": [],
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Rule filing by self-regulatory organization",
+   "subtype": "",
+   "summary": "",
+   "title": "Self-Regulatory Organizations; Miami International Securities Exchange LLC; Notice of Filing and Immediate Effectiveness of a Proposed Rule Change To Make Non-Substantive Edits to Exchange Rule 1703, Consolidated Audit Trail Compliance Rule-Industry Member Data Reporting",
+   "url": "https://www.federalregister.gov/documents/2026/10/22/2026-21573/self-regulatory-organizations-miami-international-securities-exchange-llc-notice-of-filing-and"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "sec"
+   ],
+   "category": "rulemaking",
+   "comments_close": null,
+   "corporation": "other_sro",
+   "date": "2026-10-22",
+   "doc_type": "Notice",
+   "docket_ids": [
+    "Release No. 34-106691",
+    "File No. SR-NYSE-2026-51"
+   ],
+   "effective_on": null,
+   "eo_number": null,
+   "first_seen": "2026-11-11T13:33:45+00:00",
+   "flags": [
+    {
+     "authorities": [
+      "Carter v. Carter Coal Co., 298 U.S. 238 (1936)",
+      "Department of Transportation v. Association of American Railroads, 575 U.S. 43 (2015)",
+      "Alpine Securities Corp. v. FINRA, 121 F.4th 1314 (D.C. Cir. 2024)"
+     ],
+     "code": "private_delegation",
+     "label": "Government power exercised by a private corporation",
+     "priority": "low",
+     "structural": true,
+     "triggers": [
+      "issued by an agency-supervised private corporation"
+     ],
+     "why": "This action comes from a private, agency-supervised corporation. Delegating government power to private entities is limited by the private nondelegation doctrine and by Article II."
+    }
+   ],
+   "fr_agency_names": [
+    "Securities and Exchange Commission"
+   ],
+   "fr_agency_slugs": [
+    "securities-and-exchange-commission"
+   ],
+   "id": "fr:2026-21571",
+   "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-10-22/pdf/2026-21571.pdf",
+   "priority": 1,
+   "rins": [],
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Rule filing by self-regulatory organization",
+   "subtype": "",
+   "summary": "",
+   "title": "Self-Regulatory Organizations; New York Stock Exchange LLC; Notice of Filing and Immediate Effectiveness of Proposed Rule Change To Harmonize NYSE Rule 3220 With Certain Changes by FINRA",
+   "url": "https://www.federalregister.gov/documents/2026/10/22/2026-21571/self-regulatory-organizations-new-york-stock-exchange-llc-notice-of-filing-and-immediate"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "president"
+   ],
+   "category": "presidential",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-10-22",
+   "doc_type": "Presidential Document",
+   "docket_ids": [],
+   "effective_on": null,
+   "eo_number": "14437",
+   "first_seen": "2026-11-11T13:33:45+00:00",
+   "flags": [],
+   "fr_agency_names": [
+    "Executive Office of the President"
+   ],
+   "fr_agency_slugs": [
+    "executive-office-of-the-president"
+   ],
+   "id": "fr:2026-21666",
+   "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-10-22/pdf/2026-21666.pdf",
+   "priority": 0,
+   "rins": [],
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Executive Order",
+   "subtype": "Executive Order",
+   "summary": "",
+   "title": "Advancing Women's Health To Improve Outcomes in All Phases of Life",
+   "url": "https://www.federalregister.gov/documents/2026/10/22/2026-21666/advancing-womens-health-to-improve-outcomes-in-all-phases-of-life"
+  },
+  {
+   "action": "Notice.",
+   "agencies": [
+    "epa"
+   ],
+   "category": "other",
+   "comments_close": "2026-12-21",
+   "corporation": null,
+   "date": "2026-10-22",
+   "doc_type": "Notice",
+   "docket_ids": [
+    "EPA-HQ-OPA-2207-0042",
+    "FRL-13660-01-OLEM"
+   ],
+   "effective_on": null,
+   "eo_number": null,
+   "first_seen": "2026-11-11T13:33:45+00:00",
+   "flags": [],
+   "fr_agency_names": [
+    "Environmental Protection Agency"
+   ],
+   "fr_agency_slugs": [
+    "environmental-protection-agency"
+   ],
+   "id": "fr:2026-21610",
+   "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-10-22/pdf/2026-21610.pdf",
+   "priority": 0,
+   "rins": [],
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Information collection (paperwork)",
+   "subtype": "",
+   "summary": "The Environmental Protection Agency (EPA) is planning to submit an information collection request (ICR), The National Oil and Hazardous Substances Pollution Contingency Plan Regulation, Subpart J (Renewal) (EPA ICR Number 1664.15, OMB Control Number 2050-0141) to the Office of Management and Budget (OMB) for review and approval in accordance with the Paperwork Reduction Act. Before doing so, EPA is soliciting public comments on specific aspects of the proposed information collection as described below. This is a proposed extension of the ICR, which is currently approved through May 31, 2027. This notice allows for 60 days for public comments.",
+   "title": "Agency Information Collection Activities; Proposed Information Collection Request; Comment Request; The National Oil and Hazardous Substances Pollution Contingency Plan Regulation, Subpart J (Renewal)",
+   "url": "https://www.federalregister.gov/documents/2026/10/22/2026-21610/agency-information-collection-activities-proposed-information-collection-request-comment-request-the"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "sec"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-10-22",
+   "doc_type": "Notice",
+   "docket_ids": [
+    "OMB Control No. 3235-0681"
+   ],
+   "effective_on": null,
+   "eo_number": null,
+   "first_seen": "2026-11-11T13:33:45+00:00",
+   "flags": [],
+   "fr_agency_names": [
+    "Securities and Exchange Commission"
+   ],
+   "fr_agency_slugs": [
+    "securities-and-exchange-commission"
+   ],
+   "id": "fr:2026-21562",
+   "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-10-22/pdf/2026-21562.pdf",
+   "priority": 0,
+   "rins": [],
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Information collection (paperwork)",
+   "subtype": "",
+   "summary": "",
+   "title": "Agency Information Collection Activities; Submission for OMB Review; Comment Request; Extension: Rules 15Ba1-1 to 15Ba1-8-Registration of Municipal Advisors and Forms MA, MA-I, MA-W, and MA-NR",
+   "url": "https://www.federalregister.gov/documents/2026/10/22/2026-21562/agency-information-collection-activities-submission-for-omb-review-comment-request-extension-rules"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "ferc"
+   ],
+   "category": "adjudication",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-10-22",
+   "doc_type": "Notice",
+   "docket_ids": [],
+   "effective_on": null,
+   "eo_number": null,
+   "first_seen": "2026-11-11T13:33:45+00:00",
+   "flags": [],
+   "fr_agency_names": [
+    "Energy Department",
+    "Federal Energy Regulatory Commission"
+   ],
+   "fr_agency_slugs": [
+    "energy-department",
+    "federal-energy-regulatory-commission"
+   ],
+   "id": "fr:2026-21601",
+   "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-10-22/pdf/2026-21601.pdf",
+   "priority": 0,
+   "rins": [],
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Applications, filings & licensing",
+   "subtype": "",
+   "summary": "",
+   "title": "Combined Notice of Filings #1",
+   "url": "https://www.federalregister.gov/documents/2026/10/22/2026-21601/combined-notice-of-filings-1"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "ftc"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-10-22",
+   "doc_type": "Notice",
+   "docket_ids": [],
+   "effective_on": null,
+   "eo_number": null,
+   "first_seen": "2026-11-11T13:33:45+00:00",
+   "flags": [],
+   "fr_agency_names": [
+    "Federal Trade Commission"
+   ],
+   "fr_agency_slugs": [
+    "federal-trade-commission"
+   ],
+   "id": "fr:2026-21630",
+   "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-10-22/pdf/2026-21630.pdf",
+   "priority": 0,
+   "rins": [],
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Other notice",
+   "subtype": "",
+   "summary": "",
+   "title": "Granting of Requests for Early Termination of the Waiting Period under the Premerger Notification Rules",
+   "url": "https://www.federalregister.gov/documents/2026/10/22/2026-21630/granting-of-requests-for-early-termination-of-the-waiting-period-under-the-premerger-notification"
+  },
+  {
+   "action": "Notice.",
+   "agencies": [
+    "sec"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-10-22",
+   "doc_type": "Notice",
+   "docket_ids": [
+    "Investment Company Act Release No. 36363",
+    "File No. 812-16066"
+   ],
+   "effective_on": null,
+   "eo_number": null,
+   "first_seen": "2026-11-11T13:33:45+00:00",
+   "flags": [],
+   "fr_agency_names": [
+    "Securities and Exchange Commission"
+   ],
+   "fr_agency_slugs": [
+    "securities-and-exchange-commission"
+   ],
+   "id": "fr:2026-21621",
+   "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-10-22/pdf/2026-21621.pdf",
+   "priority": 0,
+   "rins": [],
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Other notice",
+   "subtype": "",
+   "summary": "",
+   "title": "Neostellar Capital Corp., et al.",
+   "url": "https://www.federalregister.gov/documents/2026/10/22/2026-21621/neostellar-capital-corp-et-al"
+  },
+  {
+   "action": "Direct final rule.",
+   "agencies": [
+    "epa"
+   ],
+   "category": "rulemaking",
+   "comments_close": "2026-11-23",
+   "corporation": null,
+   "date": "2026-10-22",
+   "doc_type": "Rule",
+   "docket_ids": [
+    "EPA-R09-UST-2025-0703",
+    "FRL-12910-02-R9"
+   ],
+   "effective_on": "2026-12-21",
+   "eo_number": null,
+   "first_seen": "2026-11-11T13:33:45+00:00",
+   "flags": [],
+   "fr_agency_names": [
+    "Environmental Protection Agency"
+   ],
+   "fr_agency_slugs": [
+    "environmental-protection-agency"
+   ],
+   "id": "fr:2026-21603",
+   "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-10-22/pdf/2026-21603.pdf",
+   "priority": 0,
+   "rins": [],
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Final rule",
+   "subtype": "",
+   "summary": "On September 30, 2021, the State of Nevada (Nevada) received final approval, from the Environmental Protection Agency (EPA), of revisions to its Underground Storage Tank Program (UST Program) under subtitle I of the Resource Conservation and Recovery Act (RCRA). Pursuant to RCRA, the EPA is taking direct final action to codify the approval of Nevada's revised UST Program and incorporate by reference those provisions of Nevada's statutes and regulations that the EPA has determined meet the requirements for approval.",
+   "title": "Nevada: Codification and Incorporation by Reference of Approved Underground Storage Tank Program",
+   "url": "https://www.federalregister.gov/documents/2026/10/22/2026-21603/nevada-codification-and-incorporation-by-reference-of-approved-underground-storage-tank-program"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "sec"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-10-22",
+   "doc_type": "Notice",
+   "docket_ids": [
+    "Release No. 34-106697"
+   ],
+   "effective_on": null,
+   "eo_number": null,
+   "first_seen": "2026-11-11T13:33:45+00:00",
+   "flags": [],
+   "fr_agency_names": [
+    "Securities and Exchange Commission"
+   ],
+   "fr_agency_slugs": [
+    "securities-and-exchange-commission"
+   ],
+   "id": "fr:2026-21577",
+   "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-10-22/pdf/2026-21577.pdf",
+   "priority": 0,
+   "rins": [],
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Other notice",
+   "subtype": "",
+   "summary": "",
+   "title": "Notice of Intention To Cancel Registrations of Certain Transfer Agents",
+   "url": "https://www.federalregister.gov/documents/2026/10/22/2026-21577/notice-of-intention-to-cancel-registrations-of-certain-transfer-agents"
+  },
+  {
+   "action": "Notice of proposed consent decree; request for public comment.",
+   "agencies": [
+    "epa"
+   ],
+   "category": "enforcement",
+   "comments_close": "2026-11-23",
+   "corporation": null,
+   "date": "2026-10-22",
+   "doc_type": "Notice",
+   "docket_ids": [
+    "EPA-HQ-OGC-2026-9077",
+    "FRL-13669-01-OGC"
+   ],
+   "effective_on": null,
+   "eo_number": null,
+   "first_seen": "2026-11-11T13:33:45+00:00",
+   "flags": [],
+   "fr_agency_names": [
+    "Environmental Protection Agency"
+   ],
+   "fr_agency_slugs": [
+    "environmental-protection-agency"
+   ],
+   "id": "fr:2026-21609",
+   "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-10-22/pdf/2026-21609.pdf",
+   "priority": 0,
+   "rins": [],
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Enforcement notice",
+   "subtype": "",
+   "summary": "In accordance with the Clean Air Act, as amended (CAA or the Act), notice is given of a proposed consent decree in Our Children's Earth Foundation v. Zeldin, No. 3:25-cv-08994-WHO. On October 19, 2025, Plaintiff Our Children's Earth Foundation filed a complaint in the United States District Court for the Northern District of California, San Francisco Division. Plaintiff alleged that the Environmental Protection Agency (EPA or the Agency) failed to perform certain non- discretionary duties in accordance with the Act to timely respond to numerous state implementation plan (SIP) submissions from the State of California. The EPA is providing notice of this proposed consent decree, which would resolve all claims in the case by establishing deadlines for the EPA to take final actions as specified in the decree.",
+   "title": "Proposed Consent Decree, Clean Air Act Citizen Suit",
+   "url": "https://www.federalregister.gov/documents/2026/10/22/2026-21609/proposed-consent-decree-clean-air-act-citizen-suit"
+  },
+  {
+   "action": "Notice of tentative approval and solicitation of requests for a public hearing.",
+   "agencies": [
+    "epa"
+   ],
+   "category": "other",
+   "comments_close": "2026-11-23",
+   "corporation": null,
+   "date": "2026-10-22",
+   "doc_type": "Notice",
+   "docket_ids": [
+    "FRL-13495-02-R6"
+   ],
+   "effective_on": null,
+   "eo_number": null,
+   "first_seen": "2026-11-11T13:33:45+00:00",
+   "flags": [],
+   "fr_agency_names": [
+    "Environmental Protection Agency"
+   ],
+   "fr_agency_slugs": [
+    "environmental-protection-agency"
+   ],
+   "id": "fr:2026-21602",
+   "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-10-22/pdf/2026-21602.pdf",
+   "priority": 0,
+   "rins": [],
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Other notice",
+   "subtype": "",
+   "summary": "Notice is hereby given that the State of Arkansas is revising its approved Public Water System Supervision (PWSS) program. Arkansas has adopted the Environmental Protection Agency (EPA) drinking water rules for the Consumer Confidence Report Rule Revisions. Therefore, the EPA intends to approve this PWSS program revision package.",
+   "title": "Public Water System Supervision Program Revision for the State of Arkansas",
+   "url": "https://www.federalregister.gov/documents/2026/10/22/2026-21602/public-water-system-supervision-program-revision-for-the-state-of-arkansas"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "ferc"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-10-22",
+   "doc_type": "Notice",
+   "docket_ids": [],
+   "effective_on": null,
+   "eo_number": null,
+   "first_seen": "2026-11-11T13:33:45+00:00",
+   "flags": [],
+   "fr_agency_names": [
+    "Energy Department",
+    "Federal Energy Regulatory Commission"
+   ],
+   "fr_agency_slugs": [
+    "energy-department",
+    "federal-energy-regulatory-commission"
+   ],
+   "id": "fr:2026-21606",
+   "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-10-22/pdf/2026-21606.pdf",
+   "priority": 0,
+   "rins": [],
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Meeting or event",
+   "subtype": "",
+   "summary": "",
+   "title": "Sunshine Act Meetings",
+   "url": "https://www.federalregister.gov/documents/2026/10/22/2026-21606/sunshine-act-meetings"
+  },
+  {
+   "action": "Proposed rule; notice of public hearing.",
+   "agencies": [
+    "epa"
+   ],
+   "category": "rulemaking",
+   "comments_close": "2026-12-07",
+   "corporation": null,
+   "date": "2026-10-22",
+   "doc_type": "Proposed Rule",
+   "docket_ids": [
+    "EPA-HQ-OW-2026-0496",
+    "FRL 13209-01-OW"
+   ],
+   "effective_on": null,
+   "eo_number": null,
+   "first_seen": "2026-11-11T13:33:45+00:00",
+   "flags": [],
+   "fr_agency_names": [
+    "Environmental Protection Agency"
+   ],
+   "fr_agency_slugs": [
+    "environmental-protection-agency"
+   ],
+   "id": "fr:2026-21618",
+   "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-10-22/pdf/2026-21618.pdf",
+   "priority": 0,
+   "rins": [],
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Proposed rule",
+   "subtype": "",
+   "summary": "The U.S. Environmental Protection Agency (EPA or Agency) has received a complete Underground Injection Control (UIC) program revision application from the State of Utah, requesting primary enforcement responsibility (primacy) for Class VI injection wells under Safe Drinking Water Act (SDWA) section 1422. The EPA's approval of the State's UIC program revision application would allow the Utah Department of Natural Resources, Division of Oil, Gas and Mining (DOGM) to issue and enforce compliance with UIC Class VI permits for injection wells used for geologic carbon sequestration. In this action, the EPA proposes to approve Utah's application to implement the UIC program for Class VI injection wells located within the State, except those on Indian lands for which the EPA retains primacy. The EPA has determined that Utah's UIC Class VI program meets Federal requirements for primacy under SDWA section 1422 and the applicable implementing regulations in 40 CFR parts 144, 145, and 146.",
+   "title": "Utah Underground Injection Control Program; Class VI Primacy",
+   "url": "https://www.federalregister.gov/documents/2026/10/22/2026-21618/utah-underground-injection-control-program-class-vi-primacy"
+  },
+  {
+   "action": "Availability of final decision.",
+   "agencies": [
+    "epa"
+   ],
+   "category": "rulemaking",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-10-22",
+   "doc_type": "Rule",
+   "docket_ids": [
+    "EPA-HQ-OLEM-2025-3325",
+    "FRL-12983-02-OLEM"
+   ],
+   "effective_on": "2026-11-23",
+   "eo_number": null,
+   "first_seen": "2026-11-11T13:33:45+00:00",
+   "flags": [],
+   "fr_agency_names": [
+    "Environmental Protection Agency"
+   ],
+   "fr_agency_slugs": [
+    "environmental-protection-agency"
+   ],
+   "id": "fr:2026-21622",
+   "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-10-22/pdf/2026-21622.pdf",
+   "priority": 0,
+   "rins": [],
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Final rule",
+   "subtype": "",
+   "summary": "The Environmental Protection Agency (EPA or the Agency) is approving Virginia's coal combustion residuals (CCR) permit program under the Resource Conservation and Recovery Act (RCRA). After reviewing the CCR permit program application submitted by the Virginia Department of Environmental Quality (VADEQ), EPA has determined that Virginia's partial CCR permit program meets the standard for approval under RCRA. Virginia's CCR permit program will operate in lieu of the Federal CCR program with the exception of the specific provisions noted below.",
+   "title": "Virginia: Approval of State Coal Combustion Residuals Permit Program",
+   "url": "https://www.federalregister.gov/documents/2026/10/22/2026-21622/virginia-approval-of-state-coal-combustion-residuals-permit-program"
+  }
+ ]
+}
