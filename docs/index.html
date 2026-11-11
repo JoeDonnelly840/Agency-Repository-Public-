@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Agency Tracker</title>
+<link rel="icon" href="logo.svg" type="image/svg+xml">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#overview" id="brand">
+    <img src="logo.svg" alt="" width="36" height="36">
+    <span>Agency Tracker</span>
+  </a>
+  <div class="since" id="since-box">
+    <label for="since-date">Showing changes since</label>
+    <input type="date" id="since-date">
+    <button type="button" class="btn ghost" id="caught-up" title="Treat everything up to now as read">Mark all as read</button>
+  </div>
+  <div class="user" id="user-box">
+    <span id="user-name"></span>
+    <button type="button" class="btn ghost small" id="user-menu-btn">Account</button>
+  </div>
+</header>
+
+<div class="layout">
+  <nav class="sidebar" id="sidebar" aria-label="Sections">
+    <div class="nav-group">
+      <a href="#overview" data-nav="overview">Since you last checked</a>
+      <a href="#flags" data-nav="flags">Constitutional flags</a>
+    </div>
+    <div class="nav-title">Agencies</div>
+    <div class="nav-group" id="nav-agencies"></div>
+    <div class="nav-title">The President</div>
+    <div class="nav-group" id="nav-president"></div>
+    <div class="nav-title">Agency-controlled corporations</div>
+    <div class="nav-group" id="nav-corps"></div>
+    <div class="nav-title">Help</div>
+    <div class="nav-group">
+      <a href="#coverage" data-nav="coverage">What we checked</a>
+      <a href="#manual" data-nav="manual">User manual</a>
+      <a href="#tutorial" data-nav="tutorial" id="nav-tutorial">Tutorial</a>
+    </div>
+  </nav>
+
+  <main id="main" tabindex="-1">
+    <div id="view"></div>
+  </main>
+</div>
+
+<!-- Username dialog -->
+<div class="modal" id="welcome" hidden>
+  <div class="modal-card" role="dialog" aria-labelledby="welcome-title">
+    <img src="logo.svg" alt="" width="56" height="56">
+    <h2 id="welcome-title">Welcome to Agency Tracker</h2>
+    <p>Pick a username so the app can remember when you last checked. No password is needed.
+      Your username and last-checked date are kept only in this browser.</p>
+    <label for="welcome-name">Username</label>
+    <input id="welcome-name" maxlength="40" autocomplete="username" placeholder="e.g. joe">
+    <details class="sync-in">
+      <summary>Coming from another device? Paste a sync code</summary>
+      <textarea id="welcome-sync" rows="2" placeholder="Paste sync code here"></textarea>
+    </details>
+    <p class="error" id="welcome-error" hidden></p>
+    <div class="row">
+      <button type="button" class="btn" id="welcome-go">Start</button>
+    </div>
+  </div>
+</div>
+
+<!-- Account dialog -->
+<div class="modal" id="account" hidden>
+  <div class="modal-card" role="dialog" aria-labelledby="account-title">
+    <h2 id="account-title">Account</h2>
+    <p>Signed in as <strong id="account-name"></strong>.</p>
+    <h3>Sync code</h3>
+    <p class="muted">Copy this code to another computer or browser to carry over your username and last-checked date.</p>
+    <textarea id="account-sync" rows="2" readonly></textarea>
+    <div class="row">
+      <button type="button" class="btn ghost" id="account-copy">Copy code</button>
+      <button type="button" class="btn ghost" id="account-switch">Switch user</button>
+      <button type="button" class="btn" id="account-close">Close</button>
+    </div>
+  </div>
+</div>
+
+<!-- Tutorial overlay -->
+<div class="tour" id="tour" hidden>
+  <div class="tour-spot" id="tour-spot"></div>
+  <div class="tour-card" id="tour-card" role="dialog" aria-live="polite">
+    <div class="tour-step" id="tour-step"></div>
+    <h3 id="tour-title"></h3>
+    <p id="tour-text"></p>
+    <div class="row">
+      <button type="button" class="btn ghost small" id="tour-exit">Exit tutorial</button>
+      <span class="spacer"></span>
+      <button type="button" class="btn ghost small" id="tour-back">Back</button>
+      <button type="button" class="btn small" id="tour-next">Next</button>
+    </div>
+  </div>
+</div>
+
+<template id="manual-template">
+  <article class="prose">
+    <h1>User manual</h1>
+    <p class="lead">Agency Tracker gathers what the federal executive branch publishes each day, sorts it by agency
+      and type of action, flags arguable constitutional problems, and tells you plainly what it did
+      <em>not</em> check.</p>
+
+    <h2>1. Your username and "since you last checked"</h2>
+    <p>The first time you open the app you choose a username (no password). The app remembers, in this browser,
+      when you last opened it. Each time you return, every page shows what was published <strong>since that
+      date</strong>. The date is shown at the top of the screen.</p>
+    <ul>
+      <li><strong>Change the date</strong> any time with the date box at the top, for example to review the last month.</li>
+      <li><strong>Mark all as read</strong> sets your baseline to right now.</li>
+      <li><strong>New computer or cleared browser?</strong> Enter the same username and either paste your sync code
+        (from the Account button) or simply pick the date you last checked. Nothing is ever lost, because every
+        day's results are kept permanently.</li>
+      <li>Items that were published earlier but reached the app after your last visit are also shown, so late
+        postings are not missed.</li>
+    </ul>
+
+    <h2>2. Finding your way around</h2>
+    <ul>
+      <li><strong>Since you last checked</strong>: a summary across all agencies, the highest-priority flags, and a list of
+        anything that could not be checked.</li>
+      <li><strong>Constitutional flags</strong>: every flagged item, most serious first.</li>
+      <li><strong>Agency tabs</strong>: one per agency, split into <em>Rulemaking</em>, <em>Enforcement</em>,
+        <em>Adjudication &amp; licensing</em> and <em>Other notices</em>.</li>
+      <li><strong>The President</strong>: executive orders, memoranda and proclamations.</li>
+      <li><strong>Agency-controlled corporations</strong>: FINRA, PCAOB, MSRB and other SEC-supervised
+        self-regulatory organizations. Their rule changes and some disciplinary matters reach the public through
+        SEC notices in the Federal Register.</li>
+      <li><strong>What we checked</strong>: which sources were checked, when, and whether anything failed.</li>
+    </ul>
+
+    <h2>3. Reading an item</h2>
+    <p>Each item shows its title (linked to the official source), date, type, the source it came from, and any
+      comment deadline. Colored labels show constitutional flags:</p>
+    <ul>
+      <li><span class="badge high">High</span> structural issues the app treats as most important, such as an agency
+        adjudicating penalty cases in-house or questions about how officers like ALJs are appointed.</li>
+      <li><span class="badge medium">Medium</span> other structural issues: delegation and major questions, presidential
+        control of independent agencies, spending, federalism, agency restructuring, private corporations exercising
+        government power.</li>
+      <li><span class="badge low">Low</span> substantive-rights issues (speech, searches, property and due process,
+        equal protection). These are tracked, but ranked below structural issues.</li>
+    </ul>
+    <p>Click <strong>Why flagged?</strong> to see the exact words that triggered the flag, a short explanation, and leading
+      cases to start your research.</p>
+
+    <h2>4. What a flag means, and does not mean</h2>
+    <p>Flags come from an automated screen of the document's official title and summary. A flag means
+      <em>"a lawyer may want to look at this."</em> It is not a legal conclusion, and the absence of a flag does not mean
+      an action is constitutional. The screen reads only the title and summary, not the full document.</p>
+
+    <h2>5. "Nothing found" and what we did not check</h2>
+    <p>Every empty section says what was searched, for which dates, and what that source cannot see. For example,
+      most agencies announce enforcement actions only on their own websites, which this version does not read, so an
+      empty Enforcement tab means "nothing published in the sources we check," not "no enforcement happened."
+      If a source failed or was skipped on some days, the app lists those days.</p>
+
+    <h2>6. Where the information comes from</h2>
+    <ul>
+      <li><strong>Federal Register API</strong> (federalregister.gov): the government's official daily journal, offered
+        for programmatic use. Checked for every agency and for presidential documents.</li>
+      <li><strong>Regulations.gov API</strong>: read-only access with a free government key, for documents posted there but
+        not in the Federal Register.</li>
+      <li><strong>SEC RSS feeds</strong>: litigation releases and administrative proceedings, published by the SEC for
+        subscription.</li>
+    </ul>
+    <p>A collection program runs once a day on GitHub. It only uses official interfaces meant for software, asks for
+      each page at most once per run, waits several seconds between requests, follows each site's robots.txt and
+      published access rules, identifies itself honestly, never submits anything, and stops using a source that shows
+      signs of strain. It does not visit FINRA's or any agency's other web pages.</p>
+
+    <h2>7. Common questions</h2>
+    <dl>
+      <dt>Why is today's information missing?</dt>
+      <dd>The collector runs each morning. The Federal Register is published on business days, so weekends and holidays
+        normally have no items.</dd>
+      <dt>Can I add an agency?</dt>
+      <dd>Yes. Agencies are listed in <code>collector/config.py</code>; adding one adds a new tab after the next run.</dd>
+      <dt>Is my information private?</dt>
+      <dd>Your username and dates stay in your browser. The website itself is public, as is all the government
+        information it shows.</dd>
+    </dl>
+  </article>
+</template>
+
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+name: Collect agency data
+
+on:
+  schedule:
+    - cron: "23 12 * * *"   # once a day, 12:23 UTC (7:23 a.m. Eastern in winter)
+  workflow_dispatch:         # lets you start a run by hand from the Actions tab
+    inputs:
+      start_date:
+        description: "Optional: re-check from this date (YYYY-MM-DD)"
+        required: false
+      end_date:
+        description: "Optional: re-check up to this date (YYYY-MM-DD)"
+        required: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: collect          # never two runs at once
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run safety and logic tests
+        run: python -m unittest discover tests
+
+      - name: Collect
+        env:
+          REGULATIONS_GOV_API_KEY: ${{ secrets.REGULATIONS_GOV_API_KEY }}
+          SEC_CONTACT_EMAIL: ${{ secrets.SEC_CONTACT_EMAIL }}
+          START_DATE: ${{ github.event.inputs.start_date }}
+          END_DATE: ${{ github.event.inputs.end_date }}
+        run: python -m collector.run
+
+      - name: Save results
+        run: |
+          git config user.name "agency-tracker-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/data
+          if git diff --cached --quiet; then
+            echo "No changes."
+          else
+            git commit -m "Data update $(date -u +%Y-%m-%d)"
+            git push
+          fi
