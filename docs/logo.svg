@@ -1,14 +1,21 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Agency Tracker logo">
   <rect width="64" height="64" rx="14" fill="#1b2a4a"/>
-  <!-- pediment -->
-  <path d="M10 22 L30 11 L50 22 Z" fill="#f4efe3"/>
-  <rect x="11" y="23" width="38" height="3" rx="1" fill="#f4efe3"/>
-  <!-- columns -->
-  <rect x="14" y="28" width="4" height="17" fill="#f4efe3"/>
-  <rect x="23" y="28" width="4" height="17" fill="#f4efe3"/>
-  <rect x="32" y="28" width="4" height="17" fill="#f4efe3"/>
-  <rect x="11" y="46" width="30" height="3" rx="1" fill="#f4efe3"/>
+  <!-- federal office building: tall, square, rows of windows -->
+  <rect x="9" y="12" width="32" height="2.5" fill="#f4efe3"/>
+  <rect x="11" y="14.5" width="28" height="37" fill="#f4efe3"/>
+  <g fill="#1b2a4a">
+    <rect x="13.5" y="17" width="3.5" height="4"/><rect x="19.5" y="17" width="3.5" height="4"/><rect x="25.5" y="17" width="3.5" height="4"/><rect x="31.5" y="17" width="3.5" height="4"/>
+    <rect x="13.5" y="23.5" width="3.5" height="4"/><rect x="19.5" y="23.5" width="3.5" height="4"/><rect x="25.5" y="23.5" width="3.5" height="4"/><rect x="31.5" y="23.5" width="3.5" height="4"/>
+    <rect x="13.5" y="30" width="3.5" height="4"/><rect x="19.5" y="30" width="3.5" height="4"/><rect x="25.5" y="30" width="3.5" height="4"/><rect x="31.5" y="30" width="3.5" height="4"/>
+    <rect x="13.5" y="36.5" width="3.5" height="4"/><rect x="19.5" y="36.5" width="3.5" height="4"/><rect x="25.5" y="36.5" width="3.5" height="4"/><rect x="31.5" y="36.5" width="3.5" height="4"/>
+    <!-- entrance -->
+    <rect x="21.5" y="43.5" width="7" height="8"/>
+  </g>
+  <rect x="8" y="51.5" width="34" height="2.5" fill="#f4efe3"/>
+  <!-- flag on the roof -->
+  <line x1="25" y1="5" x2="25" y2="12" stroke="#f4efe3" stroke-width="1.2"/>
+  <path d="M25 5.2 L31 6.8 L25 8.4 Z" fill="#d9a441"/>
   <!-- magnifying glass -->
-  <circle cx="44" cy="40" r="9" fill="none" stroke="#d9a441" stroke-width="4"/>
-  <line x1="50.5" y1="46.5" x2="57" y2="53" stroke="#d9a441" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="42" cy="38" r="10" fill="#d9a441" fill-opacity="0.18" stroke="#d9a441" stroke-width="4"/>
+  <line x1="49.2" y1="45.2" x2="56.5" y2="52.5" stroke="#d9a441" stroke-width="5" stroke-linecap="round"/>
 </svg>

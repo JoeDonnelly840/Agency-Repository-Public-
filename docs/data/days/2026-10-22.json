@@ -2,58 +2,6 @@
  "date": "2026-10-22",
  "items": [
   {
-   "action": "Notice of a new system of records.",
-   "agencies": [
-    "fcc"
-   ],
-   "category": "enforcement",
-   "comments_close": "2026-11-23",
-   "corporation": null,
-   "date": "2026-10-22",
-   "doc_type": "Notice",
-   "docket_ids": [
-    "FR ID: 373367"
-   ],
-   "effective_on": "2026-10-22",
-   "eo_number": null,
-   "first_seen": "2026-11-11T13:33:45+00:00",
-   "flags": [
-    {
-     "authorities": [
-      "SEC v. Jarkesy, 603 U.S. 109 (2024)",
-      "Axon Enterprise, Inc. v. FTC, 598 U.S. 175 (2023)",
-      "Granfinanciera, S.A. v. Nordberg, 492 U.S. 33 (1989)"
-     ],
-     "code": "agency_adjudication",
-     "label": "Agency adjudication of penalties (jury trial / Article III)",
-     "priority": "high",
-     "structural": true,
-     "triggers": [
-      "debar"
-     ],
-     "why": "The agency itself appears to be deciding a case that could carry penalties. Penalty cases resembling common-law suits may require a jury and an Article III court, and agency proceedings can combine prosecutor and judge in one body."
-    }
-   ],
-   "fr_agency_names": [
-    "Federal Communications Commission"
-   ],
-   "fr_agency_slugs": [
-    "federal-communications-commission"
-   ],
-   "id": "fr:2026-21619",
-   "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-10-22/pdf/2026-21619.pdf",
-   "priority": 3,
-   "rins": [],
-   "significant": false,
-   "source": "federal_register",
-   "source_label": "Federal Register",
-   "subcategory": "Enforcement notice",
-   "subtype": "",
-   "summary": "The Federal Communications Commission (FCC, Commission, or Agency) proposes to establish a new system of records, FCC/OGC-8, Suspension and Debarment Records, subject to the Privacy Act of 1974, as amended. This action is necessary to meet the requirements of the Privacy Act to publish in the Federal Register notice of the creation, existence, and character of records maintained by the Agency. The Commission uses this system to collect information about any prior misconduct of individuals and entities who participate in certain programs the FCC administers (e.g., Universal Service Fund (USF) and the Telecommunications Relay Services (TRS) program) so that the Suspending and Debarring Official (SDO) can determine whether to exclude or take such other actions as permitted under 2 CFR 6001 against those individuals or entities.",
-   "title": "Privacy Act of 1974; System of Records",
-   "url": "https://www.federalregister.gov/documents/2026/10/22/2026-21619/privacy-act-of-1974-system-of-records"
-  },
-  {
    "action": "",
    "agencies": [
     "sec"
@@ -449,7 +397,7 @@
    "significant": false,
    "source": "federal_register",
    "source_label": "Federal Register",
-   "subcategory": "Information collection (paperwork)",
+   "subcategory": "Information collection, privacy or paperwork notice",
    "subtype": "",
    "summary": "The Environmental Protection Agency (EPA) is planning to submit an information collection request (ICR), The National Oil and Hazardous Substances Pollution Contingency Plan Regulation, Subpart J (Renewal) (EPA ICR Number 1664.15, OMB Control Number 2050-0141) to the Office of Management and Budget (OMB) for review and approval in accordance with the Paperwork Reduction Act. Before doing so, EPA is soliciting public comments on specific aspects of the proposed information collection as described below. This is a proposed extension of the ICR, which is currently approved through May 31, 2027. This notice allows for 60 days for public comments.",
    "title": "Agency Information Collection Activities; Proposed Information Collection Request; Comment Request; The National Oil and Hazardous Substances Pollution Contingency Plan Regulation, Subpart J (Renewal)",
@@ -485,7 +433,7 @@
    "significant": false,
    "source": "federal_register",
    "source_label": "Federal Register",
-   "subcategory": "Information collection (paperwork)",
+   "subcategory": "Information collection, privacy or paperwork notice",
    "subtype": "",
    "summary": "",
    "title": "Agency Information Collection Activities; Submission for OMB Review; Comment Request; Extension: Rules 15Ba1-1 to 15Ba1-8-Registration of Municipal Advisors and Forms MA, MA-I, MA-W, and MA-NR",
@@ -670,6 +618,42 @@
    "summary": "",
    "title": "Notice of Intention To Cancel Registrations of Certain Transfer Agents",
    "url": "https://www.federalregister.gov/documents/2026/10/22/2026-21577/notice-of-intention-to-cancel-registrations-of-certain-transfer-agents"
+  },
+  {
+   "action": "Notice of a new system of records.",
+   "agencies": [
+    "fcc"
+   ],
+   "category": "other",
+   "comments_close": "2026-11-23",
+   "corporation": null,
+   "date": "2026-10-22",
+   "doc_type": "Notice",
+   "docket_ids": [
+    "FR ID: 373367"
+   ],
+   "effective_on": "2026-10-22",
+   "eo_number": null,
+   "first_seen": "2026-11-11T13:33:45+00:00",
+   "flags": [],
+   "fr_agency_names": [
+    "Federal Communications Commission"
+   ],
+   "fr_agency_slugs": [
+    "federal-communications-commission"
+   ],
+   "id": "fr:2026-21619",
+   "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-10-22/pdf/2026-21619.pdf",
+   "priority": 0,
+   "rins": [],
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Information collection, privacy or paperwork notice",
+   "subtype": "",
+   "summary": "The Federal Communications Commission (FCC, Commission, or Agency) proposes to establish a new system of records, FCC/OGC-8, Suspension and Debarment Records, subject to the Privacy Act of 1974, as amended. This action is necessary to meet the requirements of the Privacy Act to publish in the Federal Register notice of the creation, existence, and character of records maintained by the Agency. The Commission uses this system to collect information about any prior misconduct of individuals and entities who participate in certain programs the FCC administers (e.g., Universal Service Fund (USF) and the Telecommunications Relay Services (TRS) program) so that the Suspending and Debarring Official (SDO) can determine whether to exclude or take such other actions as permitted under 2 CFR 6001 against those individuals or entities.",
+   "title": "Privacy Act of 1974; System of Records",
+   "url": "https://www.federalregister.gov/documents/2026/10/22/2026-21619/privacy-act-of-1974-system-of-records"
   },
   {
    "action": "Notice of proposed consent decree; request for public comment.",

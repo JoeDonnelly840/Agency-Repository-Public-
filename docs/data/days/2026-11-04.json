@@ -65,6 +65,59 @@
    "date": "2026-11-04",
    "doc_type": "Notice",
    "docket_ids": [
+    "Release No. 34-106779",
+    "File No. SR-LTSE-2026-25"
+   ],
+   "effective_on": null,
+   "eo_number": null,
+   "first_seen": "2026-11-11T13:33:45+00:00",
+   "flags": [
+    {
+     "authorities": [
+      "Carter v. Carter Coal Co., 298 U.S. 238 (1936)",
+      "Department of Transportation v. Association of American Railroads, 575 U.S. 43 (2015)",
+      "Alpine Securities Corp. v. FINRA, 121 F.4th 1314 (D.C. Cir. 2024)"
+     ],
+     "code": "private_delegation",
+     "label": "Government power exercised by a private corporation",
+     "priority": "low",
+     "structural": true,
+     "triggers": [
+      "issued by an agency-supervised private corporation"
+     ],
+     "why": "This action comes from a private, agency-supervised corporation. Delegating government power to private entities is limited by the private nondelegation doctrine and by Article II."
+    }
+   ],
+   "fr_agency_names": [
+    "Securities and Exchange Commission"
+   ],
+   "fr_agency_slugs": [
+    "securities-and-exchange-commission"
+   ],
+   "id": "fr:2026-22452",
+   "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-11-04/pdf/2026-22452.pdf",
+   "priority": 1,
+   "rins": [],
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Rule filing by self-regulatory organization",
+   "subtype": "",
+   "summary": "",
+   "title": "Self-Regulatory Organizations: Long-Term Stock Exchange, Inc.; Notice of Filing and Immediate Effectiveness of Proposed Rule Change To Amend LTSE Rule 3.291",
+   "url": "https://www.federalregister.gov/documents/2026/11/04/2026-22452/self-regulatory-organizations-long-term-stock-exchange-inc-notice-of-filing-and-immediate"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "sec"
+   ],
+   "category": "rulemaking",
+   "comments_close": null,
+   "corporation": "other_sro",
+   "date": "2026-11-04",
+   "doc_type": "Notice",
+   "docket_ids": [
     "Release No. 34-106787",
     "File No. SR-CboeBZX-2026-088"
    ],
@@ -707,7 +760,7 @@
    "significant": false,
    "source": "federal_register",
    "source_label": "Federal Register",
-   "subcategory": "Information collection (paperwork)",
+   "subcategory": "Information collection, privacy or paperwork notice",
    "subtype": "",
    "summary": "On November 2, 2026, CMS published a notice in the Federal Register that sought comment on a collection of information concerning CMS-10599 (OMB control number 0938-1311) and titled \"Pre-Claim Review Demonstration For Home Health Services.\" The notice contained incorrect information regarding the subject information collection. This document corrects the error.",
    "title": "Emergency Clearance: Public Information Collection Requirements Submitted to the Office of Management and Budget (OMB); Correction",
@@ -930,55 +983,18 @@
    "significant": false,
    "source": "federal_register",
    "source_label": "Federal Register",
-   "subcategory": "Other notice",
+   "subcategory": "Information collection, privacy or paperwork notice",
    "subtype": "",
    "summary": "Pursuant to the Privacy Act of 1974 and Office of Management and Budget (OMB) Circular A-108, the Federal Energy Regulatory Commission (Commission or FERC) proposes to rescind an existing system of records notice (SORN). Specifically, the following SORN is being proposed for rescindment \"Commission Temporary Work-at-Home Program (FERC-39).\" The basis for rescindment is explained below.",
    "title": "Privacy Act of 1974; Systems of Records",
    "url": "https://www.federalregister.gov/documents/2026/11/04/2026-22511/privacy-act-of-1974-systems-of-records"
   },
   {
-   "action": "",
-   "agencies": [
-    "sec"
-   ],
-   "category": "adjudication",
-   "comments_close": null,
-   "corporation": null,
-   "date": "2026-11-04",
-   "doc_type": "Notice",
-   "docket_ids": [
-    "Release No. 34-106779",
-    "File No. SR-LTSE-2026-25"
-   ],
-   "effective_on": null,
-   "eo_number": null,
-   "first_seen": "2026-11-11T13:33:45+00:00",
-   "flags": [],
-   "fr_agency_names": [
-    "Securities and Exchange Commission"
-   ],
-   "fr_agency_slugs": [
-    "securities-and-exchange-commission"
-   ],
-   "id": "fr:2026-22452",
-   "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-11-04/pdf/2026-22452.pdf",
-   "priority": 0,
-   "rins": [],
-   "significant": false,
-   "source": "federal_register",
-   "source_label": "Federal Register",
-   "subcategory": "Applications, filings & licensing",
-   "subtype": "",
-   "summary": "",
-   "title": "Self-Regulatory Organizations: Long-Term Stock Exchange, Inc.; Notice of Filing and Immediate Effectiveness of Proposed Rule Change To Amend LTSE Rule 3.291",
-   "url": "https://www.federalregister.gov/documents/2026/11/04/2026-22452/self-regulatory-organizations-long-term-stock-exchange-inc-notice-of-filing-and-immediate"
-  },
-  {
    "action": "Request for public comments.",
    "agencies": [
     "hhs"
    ],
-   "category": "enforcement",
+   "category": "other",
    "comments_close": "2026-12-04",
    "corporation": null,
    "date": "2026-11-04",
@@ -1005,7 +1021,7 @@
    "significant": false,
    "source": "federal_register",
    "source_label": "Federal Register",
-   "subcategory": "Enforcement notice",
+   "subcategory": "Information collection, privacy or paperwork notice",
    "subtype": "",
    "summary": "The Office of Child Support Enforcement (OCSE), Administration for Children and Families (ACF), U.S. Department of Health and Human Services, is requesting a 3-year extension of the Voluntary Acknowledgment of Paternity and Required Data Elements for Paternity Establishment Affidavits. No changes are proposed to the data elements, but burden has been adjusted to reflect improved automation for processes.",
    "title": "Submission for Office of Management and Budget Review; Voluntary Acknowledgment of Paternity and Required Data Elements for Paternity Establishment Affidavits",

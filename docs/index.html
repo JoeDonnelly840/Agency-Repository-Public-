@@ -13,7 +13,11 @@
     <img src="logo.svg" alt="" width="36" height="36">
     <span>Agency Tracker</span>
   </a>
-  <div class="since" id="since-box">
+  <div class="mode-toggle" role="group" aria-label="Mode" id="mode-toggle">
+    <button type="button" data-mode="classic" aria-pressed="true">Classic</button>
+    <button type="button" data-mode="research" aria-pressed="false">Research</button>
+  </div>
+  <div class="since classic-only" id="since-box">
     <label for="since-date">Showing changes since</label>
     <input type="date" id="since-date">
     <button type="button" class="btn ghost" id="caught-up" title="Treat everything up to now as read">Mark all as read</button>
@@ -26,6 +30,17 @@
 
 <div class="layout">
   <nav class="sidebar" id="sidebar" aria-label="Sections">
+    <div class="research-only">
+      <div class="nav-title">Research tools</div>
+      <div class="nav-group">
+        <a href="#research/sanctions" data-nav="research/sanctions">Search by type of sanction</a>
+        <a href="#research/ask" data-nav="research/ask">Ask in your own words</a>
+        <a href="#research/help" data-nav="research/help">How research mode works</a>
+      </div>
+      <div class="nav-title">Switch</div>
+      <div class="nav-group"><a href="#overview">Back to classic mode</a></div>
+    </div>
+    <div class="classic-only">
     <div class="nav-group">
       <a href="#overview" data-nav="overview">Since you last checked</a>
       <a href="#flags" data-nav="flags">Constitutional flags</a>
@@ -41,6 +56,7 @@
       <a href="#coverage" data-nav="coverage">What we checked</a>
       <a href="#manual" data-nav="manual">User manual</a>
       <a href="#tutorial" data-nav="tutorial" id="nav-tutorial">Tutorial</a>
+    </div>
     </div>
   </nav>
 
@@ -176,7 +192,24 @@
       published access rules, identifies itself honestly, never submits anything, and stops using a source that shows
       signs of strain. It does not visit FINRA's or any agency's other web pages.</p>
 
-    <h2>7. Common questions</h2>
+    <h2>7. Research mode</h2>
+    <p>Use the <strong>Classic / Research</strong> switch at the top to change modes. Classic mode is the
+      since-you-last-checked report described above. Research mode searches the <em>whole</em> stored history and offers
+      two tools:</p>
+    <ul>
+      <li><strong>Search by type of sanction</strong>: tick the kinds of action you care about (fines, bars from the
+        market, license revocations and so on). Results come back grouped by agency, with a table showing which agencies
+        used which sanctions. Click any number in the table to jump to those items.</li>
+      <li><strong>Ask in your own words</strong>: type a request such as <em>“SEC and FINRA actions barring people from
+        the industry since September”</em>. The app shows how it understood you as removable labels, then builds an
+        organized report: headline numbers, a chart, and results grouped by agency, issue, type or date. You can change
+        the grouping, switch between cards and a compact table, download the results as a spreadsheet file (CSV), or
+        bookmark the page to rerun the same search later.</li>
+    </ul>
+    <p>Research mode reads requests with a built-in vocabulary of agencies, sanctions, constitutional issues and
+      dates. It runs entirely in your browser, so nothing you type is sent anywhere.</p>
+
+    <h2>8. Common questions</h2>
     <dl>
       <dt>Why is today's information missing?</dt>
       <dd>The collector runs each morning. The Federal Register is published on business days, so weekends and holidays
@@ -190,6 +223,7 @@
   </article>
 </template>
 
+<script src="research.js"></script>
 <script src="app.js"></script>
 </body>
 </html>

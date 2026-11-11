@@ -437,7 +437,15 @@
   }
 
   function route() {
-    const h = decodeURIComponent(location.hash.replace(/^#/, "")) || "overview";
+    const h = decodeURIComponent(location.hash.replace(/^#/, "")) || (getMode() === "research" ? "research/sanctions" : "overview");
+    const research = h.startsWith("research");
+    setMode(research ? "research" : "classic");
+    if (research && window.AgencyResearch) {
+      state.view = h.split("?")[0];
+      renderNav();
+      window.AgencyResearch.render(h);
+      return;
+    }
     if (h === "tutorial") { state.view = "overview"; render(); startTour(); return; }
     state.view = h;
     render();
@@ -500,6 +508,31 @@
     Object.assign(card.style, { top: top + "px", left: left + "px" });
   }
 
+  // ----------------------------------------------------------------- modes
+  function getMode() { return storageGet(localStorage, "agencyTracker.mode", "classic"); }
+  function setMode(mode) {
+    storageSet(localStorage, "agencyTracker.mode", mode);
+    document.body.classList.toggle("mode-research", mode === "research");
+    document.querySelectorAll("[data-mode]").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.mode === mode)));
+  }
+
+  /** All items on or after `from` (or all history), ignoring "since last visit". Cached. */
+  const rangeCache = {};
+  async function loadRange(from) {
+    if (!state.index) return [];
+    const days = Object.keys(state.index.days || {}).filter((d) => !from || d >= from).sort().slice(-MAX_DAYS);
+    const missing = days.filter((d) => !rangeCache[d]);
+    const loaded = await Promise.all(missing.map((d) => fetchJson(`data/days/${d}.json`).catch(() => ({ items: [] }))));
+    missing.forEach((d, i) => { rangeCache[d] = loaded[i].items || []; });
+    return days.flatMap((d) => rangeCache[d]);
+  }
+
+  window.AgencyTracker = {
+    get index() { return state.index; }, get user() { return state.user; },
+    esc, safeUrl, fmtDay, addDays, today, plural, itemHtml, agencyNames, loadRange,
+    storageGet: (k, f) => storageGet(localStorage, k, f), storageSet: (k, v) => storageSet(localStorage, k, v),
+  };
+
   // ---------------------------------------------------------------- setup
   function showWelcome() {
     $("#welcome").hidden = false;
@@ -507,6 +540,9 @@
   }
   function bindChrome() {
     window.addEventListener("hashchange", route);
+    document.querySelectorAll("[data-mode]").forEach((b) => b.addEventListener("click", () => {
+      location.hash = b.dataset.mode === "research" ? "#research/sanctions" : "#overview";
+    }));
     window.addEventListener("resize", () => { if (!$("#tour").hidden) showTourStep(); });
 
     $("#welcome-go").addEventListener("click", async () => {

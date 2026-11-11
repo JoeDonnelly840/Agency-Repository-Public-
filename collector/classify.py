@@ -23,11 +23,14 @@ ENFORCEMENT = _rx(r"consent (?:agreement|order|decree)", r"civil (?:money )?pena
                   r"order instituting", r"settlement", r"notice of violation", r"debarment", r"enforcement",
                   r"proposed (?:consent )?order", r"complaint", r"forfeiture", r"revocation", r"trading suspension",
                   r"disgorgement", r"sanction")
+STRONG = _rx(r"civil (?:money )?penalt(?:y|ies) (?:of|against)", r"consent (?:order|decree)", r"cease[- ]and[- ]desist",
+             r"order instituting", r"debarment proceeding")
 GUIDANCE = _rx(r"guidance", r"policy statement", r"statement of policy", r"interpretive", r"interpretation",
                r"request for (?:information|comment)", r"advance notice of proposed rulemaking",
                r"petition for rulemaking", r"frequently asked questions")
 RULE_HEARING = _rx(r"informal (?:public )?hearing", r"public hearing on (?:the )?proposed rule")
-PAPERWORK = _rx(r"information collection", r"paperwork reduction act", r"agency information collection")
+PAPERWORK = _rx(r"information collection", r"paperwork reduction act", r"agency information collection",
+                r"submission for (?:the )?office of management and budget", r"system of records", r"privacy act of 1974")
 MEETING = _rx(r"meeting", r"sunshine act", r"advisory committee", r"webinar", r"public workshop")
 
 
@@ -76,6 +79,8 @@ def assign_category(item):
             return "enforcement", "Disciplinary matter"
         return "rulemaking", "Rule filing by self-regulatory organization"
     # Notices and everything else: decide from the wording.
+    if PAPERWORK.search(title_action):
+        return "other", "Information collection, privacy or paperwork notice"
     if RULE_HEARING.search(title_action):
         return "rulemaking", "Rulemaking hearing"
     if ADJUDICATION.search(title_action):
@@ -84,15 +89,13 @@ def assign_category(item):
         return "enforcement", "Enforcement notice"
     if LICENSING.search(title_action):
         return "adjudication", "Applications, filings & licensing"
-    if PAPERWORK.search(title_action):
-        return "other", "Information collection (paperwork)"
     if GUIDANCE.search(title_action):
         return "rulemaking", "Guidance, interpretation or request for comment"
     if MEETING.search(title_action):
         return "other", "Meeting or event"
-    if ENFORCEMENT.search(full) or ADJUDICATION.search(full):
-        return ("adjudication", "Hearing, decision or adjudicatory order") if ADJUDICATION.search(full) \
-            else ("enforcement", "Enforcement notice")
+    # Summary text alone is only trusted for strong adjudication/enforcement wording.
+    if STRONG.search(full):
+        return "enforcement", "Enforcement notice"
     return "other", "Other notice"
 
 

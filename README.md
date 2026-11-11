@@ -5,7 +5,9 @@ Agency Tracker reports what the federal executive branch has done since you last
 ## How it works
 
 1. **Collector** (`collector/`): a small Python program, using only the standard library, that GitHub runs once a day (`.github/workflows/collect.yml`). It reads official government interfaces, sorts and flags what it finds, and saves the results in `docs/data/`.
-2. **Website** (`docs/`): a static page served by GitHub Pages. It reads `docs/data/` and shows what is new since your last visit.
+2. **Website** (`docs/`): a static page served by GitHub Pages, with two modes:
+   - **Classic** (`app.js`): what is new since your last visit, by agency. The original version is preserved under the git tag `classic-v1`.
+   - **Research** (`research.js`): searches the full history. It offers search by type of sanction (results grouped by agency) and "ask in your own words" reports that can be regrouped, shown as a table, downloaded as CSV or saved as a link. It runs entirely in the browser.
 
 ## Sources, and the safety rules the collector follows
 
@@ -36,6 +38,7 @@ Safety rules enforced in `collector/http_client.py` (and covered by the tests in
 
 - **Add an agency:** add an entry to `AGENCIES` in `collector/config.py`. You need its Federal Register slug (the last part of `federalregister.gov/agencies/<slug>`) and its Regulations.gov agency ID. If a slug is wrong, the app shows a configuration error for that agency rather than failing silently.
 - **Tune the flags:** edit `collector/flags.py`. Each rule lists its trigger words, explanation and leading cases.
+- **Re-sort stored data after changing the rules:** `python -m collector.reclassify`
 - **Run the tests:** `python -m unittest discover tests`
 
 ## Limitations

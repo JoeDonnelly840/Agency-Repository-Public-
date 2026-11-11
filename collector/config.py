@@ -74,7 +74,7 @@ CORPORATIONS = [
     {"key": "msrb", "name": "Municipal Securities Rulemaking Board (MSRB)", "overseer": "SEC",
      "title_patterns": [r"Municipal Securities Rulemaking Board"]},
     {"key": "other_sro", "name": "Other SEC-supervised self-regulatory organizations (exchanges, clearing agencies)",
-     "overseer": "SEC", "title_patterns": [r"^Self-Regulatory Organizations;"]},
+     "overseer": "SEC", "title_patterns": [r"^Self-Regulatory Organizations\s*[;:]"]},
 ]
 
 # --- SEC enforcement feeds ---------------------------------------------------
