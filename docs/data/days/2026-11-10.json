@@ -6,6 +6,80 @@
    "agencies": [
     "sec"
    ],
+   "category": "adjudication",
+   "corporation": null,
+   "date": "2026-11-10",
+   "doc_type": "In-house administrative proceeding",
+   "first_seen": "2026-11-12T16:13:55+00:00",
+   "flags": [
+    {
+     "authorities": [
+      "SEC v. Jarkesy, 603 U.S. 109 (2024)",
+      "Axon Enterprise, Inc. v. FTC, 598 U.S. 175 (2023)",
+      "Granfinanciera, S.A. v. Nordberg, 492 U.S. 33 (1989)"
+     ],
+     "code": "agency_adjudication",
+     "label": "Agency adjudication of penalties (jury trial / Article III)",
+     "priority": "high",
+     "structural": true,
+     "triggers": [
+      "SEC in-house administrative proceeding"
+     ],
+     "why": "The agency itself appears to be deciding a case that could carry penalties. Penalty cases resembling common-law suits may require a jury and an Article III court, and agency proceedings can combine prosecutor and judge in one body."
+    }
+   ],
+   "id": "sec_admin:2de2351c9c9d00af",
+   "priority": 3,
+   "source": "sec_admin",
+   "source_label": "SEC administrative proceedings (in-house)",
+   "subcategory": "In-house administrative proceeding",
+   "subtype": "",
+   "summary": "Mingran Wang",
+   "title": "Mingran Wang",
+   "url": "https://www.sec.gov/files/litigation/admin/2026/ia-7036.pdf"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "sec"
+   ],
+   "category": "adjudication",
+   "corporation": null,
+   "date": "2026-11-10",
+   "doc_type": "In-house administrative proceeding",
+   "first_seen": "2026-11-12T16:13:55+00:00",
+   "flags": [
+    {
+     "authorities": [
+      "SEC v. Jarkesy, 603 U.S. 109 (2024)",
+      "Axon Enterprise, Inc. v. FTC, 598 U.S. 175 (2023)",
+      "Granfinanciera, S.A. v. Nordberg, 492 U.S. 33 (1989)"
+     ],
+     "code": "agency_adjudication",
+     "label": "Agency adjudication of penalties (jury trial / Article III)",
+     "priority": "high",
+     "structural": true,
+     "triggers": [
+      "SEC in-house administrative proceeding"
+     ],
+     "why": "The agency itself appears to be deciding a case that could carry penalties. Penalty cases resembling common-law suits may require a jury and an Article III court, and agency proceedings can combine prosecutor and judge in one body."
+    }
+   ],
+   "id": "sec_admin:6d6eb08b15955ca9",
+   "priority": 3,
+   "source": "sec_admin",
+   "source_label": "SEC administrative proceedings (in-house)",
+   "subcategory": "In-house administrative proceeding",
+   "subtype": "",
+   "summary": "North East Capital, LLC and Anthony T. Vicidomine",
+   "title": "North East Capital, LLC and Anthony T. Vicidomine",
+   "url": "https://www.sec.gov/files/litigation/admin/2026/34-106869.pdf"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "sec"
+   ],
    "category": "rulemaking",
    "comments_close": null,
    "corporation": "other_sro",

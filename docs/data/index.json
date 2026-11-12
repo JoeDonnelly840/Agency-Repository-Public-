@@ -88,27 +88,27 @@
   "rulemaking": "Well covered. Proposed and final rules must be published in the Federal Register, which is checked for every tracked agency. Guidance and policy statements appear only if the agency chose to publish them there."
  },
  "days": {
-  "2026-10-13": 37,
-  "2026-10-14": 31,
-  "2026-10-15": 17,
-  "2026-10-16": 52,
-  "2026-10-19": 36,
-  "2026-10-20": 22,
-  "2026-10-21": 24,
-  "2026-10-22": 20,
-  "2026-10-23": 27,
-  "2026-10-26": 37,
-  "2026-10-27": 25,
-  "2026-10-28": 36,
-  "2026-10-29": 53,
-  "2026-10-30": 37,
-  "2026-11-02": 31,
-  "2026-11-03": 25,
-  "2026-11-04": 24,
-  "2026-11-05": 47,
-  "2026-11-06": 26,
+  "2026-10-13": 90,
+  "2026-10-14": 49,
+  "2026-10-15": 101,
+  "2026-10-16": 72,
+  "2026-10-19": 79,
+  "2026-10-20": 48,
+  "2026-10-21": 50,
+  "2026-10-22": 35,
+  "2026-10-23": 58,
+  "2026-10-26": 70,
+  "2026-10-27": 53,
+  "2026-10-28": 58,
+  "2026-10-29": 80,
+  "2026-10-30": 113,
+  "2026-11-02": 65,
+  "2026-11-03": 60,
+  "2026-11-04": 33,
+  "2026-11-05": 108,
+  "2026-11-06": 48,
   "2026-11-09": 54,
-  "2026-11-10": 49,
+  "2026-11-10": 51,
   "2026-11-12": 40
  },
  "president": {
@@ -357,6 +357,71 @@
    "requests": 35,
    "run_at": "2026-11-12T16:09:54+00:00",
    "start": "2026-11-09"
+  },
+  {
+   "end": "2026-11-12",
+   "items_found": 1416,
+   "items_new": 665,
+   "reports": [
+    {
+     "agencies": {
+      "cfpb": "ok",
+      "dol": "ok",
+      "epa": "ok",
+      "fcc": "ok",
+      "fda": "ok",
+      "ferc": "ok",
+      "ftc": "ok",
+      "hhs": "ok",
+      "nlrb": "ok",
+      "president": "ok",
+      "sec": "ok"
+     },
+     "detail": "",
+     "label": "Federal Register",
+     "source": "federal_register",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "cfpb": "ok",
+      "dol": "ok",
+      "epa": "ok",
+      "fcc": "ok",
+      "fda": "ok",
+      "ferc": "ok",
+      "ftc": "ok",
+      "hhs": "ok",
+      "nlrb": "ok",
+      "sec": "ok"
+     },
+     "detail": "",
+     "label": "Regulations.gov",
+     "source": "regulations_gov",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "sec": "ok"
+     },
+     "detail": "",
+     "label": "SEC litigation releases (federal court actions)",
+     "source": "sec_litigation",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "sec": "ok"
+     },
+     "detail": "",
+     "label": "SEC administrative proceedings (in-house)",
+     "source": "sec_admin",
+     "status": "ok"
+    }
+   ],
+   "requests": 44,
+   "run_at": "2026-11-12T16:13:55+00:00",
+   "start": "2026-10-13"
   }
  ],
  "schema": 1,
@@ -397,30 +462,31 @@
   "federal_register": {
    "covered_through": "2026-11-12",
    "label": "Federal Register",
-   "last_attempt": "2026-11-12T16:09:54+00:00",
+   "last_attempt": "2026-11-12T16:13:55+00:00",
    "last_detail": "",
    "last_status": "ok"
   },
   "regulations_gov": {
    "covered_through": "2026-11-12",
    "label": "Regulations.gov",
-   "last_attempt": "2026-11-12T16:09:54+00:00",
+   "last_attempt": "2026-11-12T16:13:55+00:00",
    "last_detail": "",
    "last_status": "ok"
   },
   "sec_admin": {
+   "covered_through": "2026-11-12",
    "label": "SEC administrative proceedings (in-house)",
-   "last_attempt": "2026-11-12T16:09:54+00:00",
-   "last_detail": "not well-formed (invalid token): line 127, column 17",
-   "last_status": "failed"
+   "last_attempt": "2026-11-12T16:13:55+00:00",
+   "last_detail": "",
+   "last_status": "ok"
   },
   "sec_litigation": {
    "covered_through": "2026-11-12",
    "label": "SEC litigation releases (federal court actions)",
-   "last_attempt": "2026-11-12T16:09:54+00:00",
+   "last_attempt": "2026-11-12T16:13:55+00:00",
    "last_detail": "",
    "last_status": "ok"
   }
  },
- "updated_at": "2026-11-12T16:09:54+00:00"
+ "updated_at": "2026-11-12T16:13:55+00:00"
 }

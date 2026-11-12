@@ -6,6 +6,43 @@
    "agencies": [
     "sec"
    ],
+   "category": "adjudication",
+   "corporation": null,
+   "date": "2026-11-04",
+   "doc_type": "In-house administrative proceeding",
+   "first_seen": "2026-11-12T16:13:55+00:00",
+   "flags": [
+    {
+     "authorities": [
+      "SEC v. Jarkesy, 603 U.S. 109 (2024)",
+      "Axon Enterprise, Inc. v. FTC, 598 U.S. 175 (2023)",
+      "Granfinanciera, S.A. v. Nordberg, 492 U.S. 33 (1989)"
+     ],
+     "code": "agency_adjudication",
+     "label": "Agency adjudication of penalties (jury trial / Article III)",
+     "priority": "high",
+     "structural": true,
+     "triggers": [
+      "SEC in-house administrative proceeding"
+     ],
+     "why": "The agency itself appears to be deciding a case that could carry penalties. Penalty cases resembling common-law suits may require a jury and an Article III court, and agency proceedings can combine prosecutor and judge in one body."
+    }
+   ],
+   "id": "sec_admin:95f7b8cc71fbde44",
+   "priority": 3,
+   "source": "sec_admin",
+   "source_label": "SEC administrative proceedings (in-house)",
+   "subcategory": "In-house administrative proceeding",
+   "subtype": "",
+   "summary": "Reyna Guiffaro",
+   "title": "Reyna Guiffaro",
+   "url": "https://www.sec.gov/files/litigation/admin/2026/34-106817.pdf"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "sec"
+   ],
    "category": "rulemaking",
    "comments_close": null,
    "corporation": "pcaob",
@@ -587,6 +624,146 @@
   {
    "action": "",
    "agencies": [
+    "fda"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-04",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-P-13729"
+   ],
+   "first_seen": "2026-11-12T16:13:55+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-P-13729-0002",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Other notice",
+   "subtype": "Acknowledgement Letter/Receipt",
+   "summary": "",
+   "title": "Acknowledgement Letter from FDA DOD to George Scott Crowther",
+   "url": "https://www.regulations.gov/document/FDA-2026-P-13729-0002",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-04",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-P-13828"
+   ],
+   "first_seen": "2026-11-12T16:13:55+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-P-13828-0002",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Other notice",
+   "subtype": "Acknowledgement Letter/Receipt",
+   "summary": "",
+   "title": "Acknowledgment Letter from FDA DOD to Institute of Contaminant Standards (DBA of Paleo Certified, Inc.)",
+   "url": "https://www.regulations.gov/document/FDA-2026-P-13828-0002",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "hhs"
+   ],
+   "category": "other",
+   "comments_close": "2026-11-07",
+   "corporation": null,
+   "date": "2026-11-04",
+   "doc_type": "Other",
+   "docket_ids": [
+    "CMS-2026-2344"
+   ],
+   "first_seen": "2026-11-12T16:13:55+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:CMS-2026-2344-2188",
+   "priority": 0,
+   "regs_agency_id": "CMS",
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Other notice",
+   "subtype": "",
+   "summary": "",
+   "title": "CY 2027 Hospital Outpatient PPS Policy Changes and Payment Rates and Ambulatory Surgical Center Payment System Policy Changes and Payment Rates. CMS-1850-FC Display",
+   "url": "https://www.regulations.gov/document/CMS-2026-2344-2188",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-04",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-P-13729"
+   ],
+   "first_seen": "2026-11-12T16:13:55+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-P-13729-0001",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Other notice",
+   "subtype": "Citizen Petition",
+   "summary": "",
+   "title": "Citizen Petition from George Scott Crowther",
+   "url": "https://www.regulations.gov/document/FDA-2026-P-13729-0001",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-04",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-P-13828"
+   ],
+   "first_seen": "2026-11-12T16:13:55+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-P-13828-0001",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Other notice",
+   "subtype": "Citizen Petition",
+   "summary": "",
+   "title": "Citizen Petition from Institute of Contaminant Standards (DBA of Paleo Certified, Inc.)",
+   "url": "https://www.regulations.gov/document/FDA-2026-P-13828-0001",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
     "ferc"
    ],
    "category": "adjudication",
@@ -693,6 +870,34 @@
    "url": "https://www.federalregister.gov/documents/2026/11/04/2026-22491/combined-notice-of-filings-2"
   },
   {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-04",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-H-13438"
+   ],
+   "first_seen": "2026-11-12T16:13:55+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-H-13438-0001",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Enforcement notice",
+   "subtype": "Complaint",
+   "summary": "",
+   "title": "Complaint",
+   "url": "https://www.regulations.gov/document/FDA-2026-H-13438-0001",
+   "withdrawn": false
+  },
+  {
    "action": "Notice of applications for deregistration under section 8(f) of the Investment Company Act of 1940.",
    "agencies": [
     "sec"
@@ -765,6 +970,34 @@
    "summary": "On November 2, 2026, CMS published a notice in the Federal Register that sought comment on a collection of information concerning CMS-10599 (OMB control number 0938-1311) and titled \"Pre-Claim Review Demonstration For Home Health Services.\" The notice contained incorrect information regarding the subject information collection. This document corrects the error.",
    "title": "Emergency Clearance: Public Information Collection Requirements Submitted to the Office of Management and Budget (OMB); Correction",
    "url": "https://www.federalregister.gov/documents/2026/11/04/2026-22494/emergency-clearance-public-information-collection-requirements-submitted-to-the-office-of-management"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "epa"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-04",
+   "doc_type": "Other",
+   "docket_ids": [
+    "EPA-R05-OAR-2026-7591"
+   ],
+   "first_seen": "2026-11-12T16:13:55+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:EPA-R05-OAR-2026-7591-0001",
+   "priority": 0,
+   "regs_agency_id": "EPA",
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Other notice",
+   "subtype": "",
+   "summary": "",
+   "title": "Isabella RNG Part 49 Administrative Amendment",
+   "url": "https://www.regulations.gov/document/EPA-R05-OAR-2026-7591-0001",
+   "withdrawn": false
   },
   {
    "action": "",
@@ -1026,6 +1259,34 @@
    "summary": "The Office of Child Support Enforcement (OCSE), Administration for Children and Families (ACF), U.S. Department of Health and Human Services, is requesting a 3-year extension of the Voluntary Acknowledgment of Paternity and Required Data Elements for Paternity Establishment Affidavits. No changes are proposed to the data elements, but burden has been adjusted to reflect improved automation for processes.",
    "title": "Submission for Office of Management and Budget Review; Voluntary Acknowledgment of Paternity and Required Data Elements for Paternity Establishment Affidavits",
    "url": "https://www.federalregister.gov/documents/2026/11/04/2026-22462/submission-for-office-of-management-and-budget-review-voluntary-acknowledgment-of-paternity-and"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "epa"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-04",
+   "doc_type": "Other",
+   "docket_ids": [
+    "EPA-R05-OAR-2026-7591"
+   ],
+   "first_seen": "2026-11-12T16:13:55+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:EPA-R05-OAR-2026-7591-0002",
+   "priority": 0,
+   "regs_agency_id": "EPA",
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Other notice",
+   "subtype": "",
+   "summary": "",
+   "title": "Technical Support Document for Isabella RNG 2026 AA",
+   "url": "https://www.regulations.gov/document/EPA-R05-OAR-2026-7591-0002",
+   "withdrawn": false
   },
   {
    "action": "",

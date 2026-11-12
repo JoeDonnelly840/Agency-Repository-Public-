@@ -2,6 +2,80 @@
  "date": "2026-11-06",
  "items": [
   {
+   "action": "",
+   "agencies": [
+    "sec"
+   ],
+   "category": "adjudication",
+   "corporation": null,
+   "date": "2026-11-06",
+   "doc_type": "In-house administrative proceeding",
+   "first_seen": "2026-11-12T16:13:55+00:00",
+   "flags": [
+    {
+     "authorities": [
+      "SEC v. Jarkesy, 603 U.S. 109 (2024)",
+      "Axon Enterprise, Inc. v. FTC, 598 U.S. 175 (2023)",
+      "Granfinanciera, S.A. v. Nordberg, 492 U.S. 33 (1989)"
+     ],
+     "code": "agency_adjudication",
+     "label": "Agency adjudication of penalties (jury trial / Article III)",
+     "priority": "high",
+     "structural": true,
+     "triggers": [
+      "SEC in-house administrative proceeding"
+     ],
+     "why": "The agency itself appears to be deciding a case that could carry penalties. Penalty cases resembling common-law suits may require a jury and an Article III court, and agency proceedings can combine prosecutor and judge in one body."
+    }
+   ],
+   "id": "sec_admin:b299ad4ddf436cf9",
+   "priority": 3,
+   "source": "sec_admin",
+   "source_label": "SEC administrative proceedings (in-house)",
+   "subcategory": "In-house administrative proceeding",
+   "subtype": "",
+   "summary": "Christopher Williams",
+   "title": "Christopher Williams",
+   "url": "https://www.sec.gov/files/litigation/admin/2026/34-106836.pdf"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "sec"
+   ],
+   "category": "adjudication",
+   "corporation": null,
+   "date": "2026-11-06",
+   "doc_type": "In-house administrative proceeding",
+   "first_seen": "2026-11-12T16:13:55+00:00",
+   "flags": [
+    {
+     "authorities": [
+      "SEC v. Jarkesy, 603 U.S. 109 (2024)",
+      "Axon Enterprise, Inc. v. FTC, 598 U.S. 175 (2023)",
+      "Granfinanciera, S.A. v. Nordberg, 492 U.S. 33 (1989)"
+     ],
+     "code": "agency_adjudication",
+     "label": "Agency adjudication of penalties (jury trial / Article III)",
+     "priority": "high",
+     "structural": true,
+     "triggers": [
+      "SEC in-house administrative proceeding"
+     ],
+     "why": "The agency itself appears to be deciding a case that could carry penalties. Penalty cases resembling common-law suits may require a jury and an Article III court, and agency proceedings can combine prosecutor and judge in one body."
+    }
+   ],
+   "id": "sec_admin:04f4f00b037293ef",
+   "priority": 3,
+   "source": "sec_admin",
+   "source_label": "SEC administrative proceedings (in-house)",
+   "subcategory": "In-house administrative proceeding",
+   "subtype": "",
+   "summary": "NPB Financial Group, LLC",
+   "title": "NPB Financial Group, LLC",
+   "url": "https://www.sec.gov/files/litigation/admin/2026/34-106837.pdf"
+  },
+  {
    "action": "Final rule.",
    "agencies": [
     "dol"
@@ -410,6 +484,174 @@
    "url": "https://www.federalregister.gov/documents/2026/11/06/2026-22648/83-investment-group-income-fund-et-al"
   },
   {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-06",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-P-14061"
+   ],
+   "first_seen": "2026-11-12T16:13:55+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-P-14061-0002",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Other notice",
+   "subtype": "Acknowledgement Letter/Receipt",
+   "summary": "",
+   "title": "Acknowledgement Letter from FDA DOD to Soft Lights Foundation",
+   "url": "https://www.regulations.gov/document/FDA-2026-P-14061-0002",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-06",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-V-10268"
+   ],
+   "first_seen": "2026-11-12T16:13:55+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-V-10268-0002",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Other notice",
+   "subtype": "Acknowledgement Letter/Receipt",
+   "summary": "",
+   "title": "Acknowledgment Letter from FDA DMB to Nathan Has Lasers",
+   "url": "https://www.regulations.gov/document/FDA-2026-V-10268-0002",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-06",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-V-11399"
+   ],
+   "first_seen": "2026-11-12T16:13:55+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-V-11399-0002",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Other notice",
+   "subtype": "Acknowledgement Letter/Receipt",
+   "summary": "",
+   "title": "Acknowledgment Letter from FDA DMB to Wolfgang Shelton",
+   "url": "https://www.regulations.gov/document/FDA-2026-V-11399-0002",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-06",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-V-13437"
+   ],
+   "first_seen": "2026-11-12T16:13:55+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-V-13437-0002",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Other notice",
+   "subtype": "Acknowledgement Letter/Receipt",
+   "summary": "",
+   "title": "Acknowledgment Letter from FDA DOD to Adler Planetarium",
+   "url": "https://www.regulations.gov/document/FDA-2026-V-13437-0002",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-06",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-V-13310"
+   ],
+   "first_seen": "2026-11-12T16:13:55+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-V-13310-0002",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Other notice",
+   "subtype": "Acknowledgement Letter/Receipt",
+   "summary": "",
+   "title": "Acknowledgment Letter from FDA DOD to Christine Garcia Corella",
+   "url": "https://www.regulations.gov/document/FDA-2026-V-13310-0002",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-06",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-V-13534"
+   ],
+   "first_seen": "2026-11-12T16:13:55+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-V-13534-0002",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Other notice",
+   "subtype": "Acknowledgement Letter/Receipt",
+   "summary": "",
+   "title": "Acknowledgment Letter from FDA DOD to Spotlight Rent, LLC",
+   "url": "https://www.regulations.gov/document/FDA-2026-V-13534-0002",
+   "withdrawn": false
+  },
+  {
    "action": "Final rule.",
    "agencies": [
     "sec"
@@ -598,6 +840,34 @@
   {
    "action": "",
    "agencies": [
+    "fda"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-06",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-P-14061"
+   ],
+   "first_seen": "2026-11-12T16:13:55+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-P-14061-0001",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Other notice",
+   "subtype": "Citizen Petition",
+   "summary": "",
+   "title": "Citizen Petition from Soft Lights Foundation",
+   "url": "https://www.regulations.gov/document/FDA-2026-P-14061-0001",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
     "ferc"
    ],
    "category": "adjudication",
@@ -780,6 +1050,34 @@
    "url": "https://www.federalregister.gov/documents/2026/11/06/2026-22684/environmental-impact-statements-notice-of-availability"
   },
   {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "other",
+   "comments_close": "2027-01-06",
+   "corporation": null,
+   "date": "2026-11-06",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-N-13135"
+   ],
+   "first_seen": "2026-11-12T16:13:55+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-N-13135-0001",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Other notice",
+   "subtype": "Request",
+   "summary": "",
+   "title": "Evaluating Benefit-Risk in Robotic Medical Devices with Autonomous or Remote Teleoperation Capabilities: Discussion Paper and Request for Feedback",
+   "url": "https://www.regulations.gov/document/FDA-2026-N-13135-0001",
+   "withdrawn": false
+  },
+  {
    "action": "Fair Lending Report of the Consumer Financial Protection Bureau.",
    "agencies": [
     "cfpb"
@@ -890,6 +1188,34 @@
    "url": "https://www.federalregister.gov/documents/2026/11/06/2026-22663/food-additive-petitions-change-of-address"
   },
   {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-06",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-N-13135"
+   ],
+   "first_seen": "2026-11-12T16:13:55+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-N-13135-0003",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Other notice",
+   "subtype": "General Correspondence",
+   "summary": "",
+   "title": "Instructions for Submitting Comments",
+   "url": "https://www.regulations.gov/document/FDA-2026-N-13135-0003",
+   "withdrawn": false
+  },
+  {
    "action": "Final amendment; final order.",
    "agencies": [
     "fda"
@@ -966,6 +1292,34 @@
    "summary": "This final rule with comment period revises the Medicare Hospital Outpatient Prospective Payment System (OPPS) and the Medicare Ambulatory Surgical Center (ASC) payment system for calendar year 2027 based on our continuing experience with these systems. We also describe the changes to the amounts and factors used to determine the payment rates for Medicare services paid under the OPPS and those paid under the ASC payment systems. In addition, this final rule with comment period updates and refines the requirements for the Hospital Outpatient Quality Reporting Program and the Ambulatory Surgical Center Quality Reporting Program. There are no changes to the Rural Emergency Hospital Quality Reporting Program. We finalized the expansion of the prior authorization requirement to include additional Botulinum Toxin Injection services. We also finalized implementation of certain provisions of the Consolidated Appropriations Act, 2026, for off-campus outpatient departments of a provider. In addition, this final rule with comment period announces notices of closure of teaching hospitals and opportunities to apply for available slots. Additionally, we finalized the policy that hospital accrediting organizations (AOs) with deeming authority may assess compliance with certain Emergency Medical Treatment and Labor Act (EMTALA) administrative requirements under 42 CFR 489.20 during accreditation and reaccreditation surveys.",
    "title": "Medicare Program: Hospital Outpatient Prospective Payment and Ambulatory Surgical Center Payment Systems; and Quality Reporting Programs; including the Hospital Outpatient Quality Reporting Program and Ambulatory Surgical Center Quality Program; Request for Information on Strengthening the Standardization and Comparability of Hospital Price Transparency (HPT) Data; Prior Authorization; Accrediting Organization (AO) Deeming for Emergency Medical Treatment and Labor Act (EMTALA); and Notices of Closure of Teaching Hospitals and Opportunities To Apply for Available Slots",
    "url": "https://www.federalregister.gov/documents/2026/11/06/2026-22739/medicare-program-hospital-outpatient-prospective-payment-and-ambulatory-surgical-center-payment"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "other",
+   "comments_close": "2027-01-06",
+   "corporation": null,
+   "date": "2026-11-06",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-N-13135"
+   ],
+   "first_seen": "2026-11-12T16:13:55+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-N-13135-0002",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Meeting or event",
+   "subtype": "Meeting",
+   "summary": "",
+   "title": "Public Workshop: Evaluating Benefit-Risk in Robotic Medical Devices with Autonomous or Remote Teleoperation Capabilities",
+   "url": "https://www.regulations.gov/document/FDA-2026-N-13135-0002",
+   "withdrawn": false
   },
   {
    "action": "",
@@ -1076,6 +1430,286 @@
    "summary": "",
    "title": "Transcontinental Gas Pipe Line Company, LLC; Notice of Schedule for the Preparation of an Environmental Assessment for the Leidy Access Expansion Project",
    "url": "https://www.federalregister.gov/documents/2026/11/06/2026-22721/transcontinental-gas-pipe-line-company-llc-notice-of-schedule-for-the-preparation-of-an"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-06",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-V-13437"
+   ],
+   "first_seen": "2026-11-12T16:13:55+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-V-13437-0001",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Other notice",
+   "subtype": "Application for Variance (VAR)",
+   "summary": "",
+   "title": "Variance Application from Adler Planetarium",
+   "url": "https://www.regulations.gov/document/FDA-2026-V-13437-0001",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-06",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-V-13310"
+   ],
+   "first_seen": "2026-11-12T16:13:55+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-V-13310-0001",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Other notice",
+   "subtype": "Application for Variance (VAR)",
+   "summary": "",
+   "title": "Variance Application from Christine Garcia Corella",
+   "url": "https://www.regulations.gov/document/FDA-2026-V-13310-0001",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-06",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-V-10268"
+   ],
+   "first_seen": "2026-11-12T16:13:55+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-V-10268-0001",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Other notice",
+   "subtype": "Application for Variance (VAR)",
+   "summary": "",
+   "title": "Variance Application from Nathan Has Lasers",
+   "url": "https://www.regulations.gov/document/FDA-2026-V-10268-0001",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-06",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-V-13534"
+   ],
+   "first_seen": "2026-11-12T16:13:55+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-V-13534-0001",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Other notice",
+   "subtype": "Application for Variance (VAR)",
+   "summary": "",
+   "title": "Variance Application from Spotlight Rent, LLC",
+   "url": "https://www.regulations.gov/document/FDA-2026-V-13534-0001",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-06",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-V-11399"
+   ],
+   "first_seen": "2026-11-12T16:13:55+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-V-11399-0001",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Other notice",
+   "subtype": "Application for Variance (VAR)",
+   "summary": "",
+   "title": "Variance Application from Wolfgang Shelton",
+   "url": "https://www.regulations.gov/document/FDA-2026-V-11399-0001",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-06",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-V-13437"
+   ],
+   "first_seen": "2026-11-12T16:13:55+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-V-13437-0003",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Other notice",
+   "subtype": "Approval for Variance (VRA)",
+   "summary": "",
+   "title": "Variance Approval Letter from FDA CDRH to Adler Planetarium",
+   "url": "https://www.regulations.gov/document/FDA-2026-V-13437-0003",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-06",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-V-10268"
+   ],
+   "first_seen": "2026-11-12T16:13:55+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-V-10268-0003",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Other notice",
+   "subtype": "Approval for Variance (VRA)",
+   "summary": "",
+   "title": "Variance Approval Letter from FDA CDRH to Nathan Has Lasers",
+   "url": "https://www.regulations.gov/document/FDA-2026-V-10268-0003",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-06",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-V-11399"
+   ],
+   "first_seen": "2026-11-12T16:13:55+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-V-11399-0003",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Other notice",
+   "subtype": "Approval for Variance (VRA)",
+   "summary": "",
+   "title": "Variance Approval Letter from FDA CDRH to Wolfgang Shelton",
+   "url": "https://www.regulations.gov/document/FDA-2026-V-11399-0003",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-06",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-V-13310"
+   ],
+   "first_seen": "2026-11-12T16:13:55+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-V-13310-0003",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Other notice",
+   "subtype": "Approval for Variance (VRA)",
+   "summary": "",
+   "title": "Variance Approval Letter to Christine Garcia Corella",
+   "url": "https://www.regulations.gov/document/FDA-2026-V-13310-0003",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-06",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-V-13534"
+   ],
+   "first_seen": "2026-11-12T16:13:55+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-V-13534-0003",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Other notice",
+   "subtype": "Approval for Variance (VRA)",
+   "summary": "",
+   "title": "Variance Approval Letter to Spotlight Rent LLC",
+   "url": "https://www.regulations.gov/document/FDA-2026-V-13534-0003",
+   "withdrawn": false
   }
  ]
 }

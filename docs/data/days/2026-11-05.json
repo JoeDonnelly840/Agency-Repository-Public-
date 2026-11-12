@@ -2,6 +2,43 @@
  "date": "2026-11-05",
  "items": [
   {
+   "action": "",
+   "agencies": [
+    "sec"
+   ],
+   "category": "adjudication",
+   "corporation": null,
+   "date": "2026-11-05",
+   "doc_type": "In-house administrative proceeding",
+   "first_seen": "2026-11-12T16:13:55+00:00",
+   "flags": [
+    {
+     "authorities": [
+      "SEC v. Jarkesy, 603 U.S. 109 (2024)",
+      "Axon Enterprise, Inc. v. FTC, 598 U.S. 175 (2023)",
+      "Granfinanciera, S.A. v. Nordberg, 492 U.S. 33 (1989)"
+     ],
+     "code": "agency_adjudication",
+     "label": "Agency adjudication of penalties (jury trial / Article III)",
+     "priority": "high",
+     "structural": true,
+     "triggers": [
+      "SEC in-house administrative proceeding"
+     ],
+     "why": "The agency itself appears to be deciding a case that could carry penalties. Penalty cases resembling common-law suits may require a jury and an Article III court, and agency proceedings can combine prosecutor and judge in one body."
+    }
+   ],
+   "id": "sec_admin:2675f8fe0cec6051",
+   "priority": 3,
+   "source": "sec_admin",
+   "source_label": "SEC administrative proceedings (in-house)",
+   "subcategory": "In-house administrative proceeding",
+   "subtype": "",
+   "summary": "Elizabeth Escoto",
+   "title": "Elizabeth Escoto",
+   "url": "https://www.sec.gov/files/litigation/admin/2026/34-106830.pdf"
+  },
+  {
    "action": "Proposed rule.",
    "agencies": [
     "epa"
@@ -564,6 +601,482 @@
    "url": "https://www.federalregister.gov/documents/2026/11/05/2026-22560/self-regulatory-organizations-nasdaq-phlx-llc-notice-of-filing-and-immediate-effectiveness-of-a"
   },
   {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-05",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-P-13861"
+   ],
+   "first_seen": "2026-11-12T16:13:55+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-P-13861-0002",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Other notice",
+   "subtype": "Acknowledgement Letter/Receipt",
+   "summary": "",
+   "title": "Acknowledgement Letter from FDA DOD to Ascent Pharmaceuticals Inc",
+   "url": "https://www.regulations.gov/document/FDA-2026-P-13861-0002",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-05",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-P-13993"
+   ],
+   "first_seen": "2026-11-12T16:13:55+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-P-13993-0002",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Other notice",
+   "subtype": "Acknowledgement Letter/Receipt",
+   "summary": "",
+   "title": "Acknowledgement Letter from FDA DOD to Axxelent Pharma Science Private Limited",
+   "url": "https://www.regulations.gov/document/FDA-2026-P-13993-0002",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-05",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-P-13927"
+   ],
+   "first_seen": "2026-11-12T16:13:55+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-P-13927-0002",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Other notice",
+   "subtype": "Acknowledgement Letter/Receipt",
+   "summary": "",
+   "title": "Acknowledgement Letter from FDA DOD to Ganesha Enterprises LLC",
+   "url": "https://www.regulations.gov/document/FDA-2026-P-13927-0002",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-05",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-V-12756"
+   ],
+   "first_seen": "2026-11-12T16:13:55+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-V-12756-0002",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Other notice",
+   "subtype": "Acknowledgement Letter/Receipt",
+   "summary": "",
+   "title": "Acknowledgment Letter from FDA DMB to Andrew Bewer",
+   "url": "https://www.regulations.gov/document/FDA-2026-V-12756-0002",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-05",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-V-10266"
+   ],
+   "first_seen": "2026-11-12T16:13:55+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-V-10266-0002",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Other notice",
+   "subtype": "Acknowledgement Letter/Receipt",
+   "summary": "",
+   "title": "Acknowledgment Letter from FDA DMB to Manuel Alejandro Tellez",
+   "url": "https://www.regulations.gov/document/FDA-2026-V-10266-0002",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-05",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-V-12754"
+   ],
+   "first_seen": "2026-11-12T16:13:55+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-V-12754-0002",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Other notice",
+   "subtype": "Acknowledgement Letter/Receipt",
+   "summary": "",
+   "title": "Acknowledgment Letter from FDA DMB to Ritter Planetarium, University of Toledo",
+   "url": "https://www.regulations.gov/document/FDA-2026-V-12754-0002",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-05",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-V-12839"
+   ],
+   "first_seen": "2026-11-12T16:13:55+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-V-12839-0002",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Other notice",
+   "subtype": "Acknowledgement Letter/Receipt",
+   "summary": "",
+   "title": "Acknowledgment Letter from FDA DMB to Tyler Phillips",
+   "url": "https://www.regulations.gov/document/FDA-2026-V-12839-0002",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-05",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-V-13311"
+   ],
+   "first_seen": "2026-11-12T16:13:55+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-V-13311-0002",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Other notice",
+   "subtype": "Acknowledgement Letter/Receipt",
+   "summary": "",
+   "title": "Acknowledgment Letter from FDA DOD to Beware Productions",
+   "url": "https://www.regulations.gov/document/FDA-2026-V-13311-0002",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-05",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-V-13630"
+   ],
+   "first_seen": "2026-11-12T16:13:55+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-V-13630-0002",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Other notice",
+   "subtype": "Acknowledgement Letter/Receipt",
+   "summary": "",
+   "title": "Acknowledgment Letter from FDA DOD to Daniel Trapp",
+   "url": "https://www.regulations.gov/document/FDA-2026-V-13630-0002",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-05",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-V-13435"
+   ],
+   "first_seen": "2026-11-12T16:13:55+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-V-13435-0002",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Other notice",
+   "subtype": "Acknowledgement Letter/Receipt",
+   "summary": "",
+   "title": "Acknowledgment Letter from FDA DOD to J. Thor",
+   "url": "https://www.regulations.gov/document/FDA-2026-V-13435-0002",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-05",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-V-13531"
+   ],
+   "first_seen": "2026-11-12T16:13:55+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-V-13531-0002",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Other notice",
+   "subtype": "Acknowledgement Letter/Receipt",
+   "summary": "",
+   "title": "Acknowledgment Letter from FDA DOD to MEBO Lighting Technolgies",
+   "url": "https://www.regulations.gov/document/FDA-2026-V-13531-0002",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-05",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-V-12675"
+   ],
+   "first_seen": "2026-11-12T16:13:55+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-V-12675-0002",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Other notice",
+   "subtype": "Acknowledgement Letter/Receipt",
+   "summary": "",
+   "title": "Acknowledgment Letter from FDA DOD to Minho Kang",
+   "url": "https://www.regulations.gov/document/FDA-2026-V-12675-0002",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-05",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-V-13532"
+   ],
+   "first_seen": "2026-11-12T16:13:55+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-V-13532-0002",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Other notice",
+   "subtype": "Acknowledgement Letter/Receipt",
+   "summary": "",
+   "title": "Acknowledgment Letter from FDA DOD to Oscar Rodriguez Rios",
+   "url": "https://www.regulations.gov/document/FDA-2026-V-13532-0002",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-05",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-V-12678"
+   ],
+   "first_seen": "2026-11-12T16:13:55+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-V-12678-0002",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Other notice",
+   "subtype": "Acknowledgement Letter/Receipt",
+   "summary": "",
+   "title": "Acknowledgment Letter from FDA DOD to Patrick Koepke",
+   "url": "https://www.regulations.gov/document/FDA-2026-V-12678-0002",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-05",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-V-13533"
+   ],
+   "first_seen": "2026-11-12T16:13:55+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-V-13533-0002",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Other notice",
+   "subtype": "Acknowledgement Letter/Receipt",
+   "summary": "",
+   "title": "Acknowledgment Letter from FDA DOD to SHAMS Creative Group",
+   "url": "https://www.regulations.gov/document/FDA-2026-V-13533-0002",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-05",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-V-12707"
+   ],
+   "first_seen": "2026-11-12T16:13:55+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-V-12707-0002",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Other notice",
+   "subtype": "Acknowledgement Letter/Receipt",
+   "summary": "",
+   "title": "Acknowledgment Letter from FDA DOD to Taylor Christensen",
+   "url": "https://www.regulations.gov/document/FDA-2026-V-12707-0002",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-05",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-V-13536"
+   ],
+   "first_seen": "2026-11-12T16:13:55+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-V-13536-0002",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Other notice",
+   "subtype": "Acknowledgement Letter/Receipt",
+   "summary": "",
+   "title": "Acknowledgment Letter from FDA DOD to Watch The Throne",
+   "url": "https://www.regulations.gov/document/FDA-2026-V-13536-0002",
+   "withdrawn": false
+  },
+  {
    "action": "Notice.",
    "agencies": [
     "hhs"
@@ -860,6 +1373,34 @@
   {
    "action": "",
    "agencies": [
+    "fda"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-05",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-P-13927"
+   ],
+   "first_seen": "2026-11-12T16:13:55+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-P-13927-0001",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Other notice",
+   "subtype": "Citizen Petition",
+   "summary": "",
+   "title": "Citizen Petition from Ganesha Enterprises LLC",
+   "url": "https://www.regulations.gov/document/FDA-2026-P-13927-0001",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
     "ferc"
    ],
    "category": "adjudication",
@@ -1004,6 +1545,62 @@
    "url": "https://www.federalregister.gov/documents/2026/11/05/2026-22607/commission-information-collection-activities-ferc-725r-comment-request-extension"
   },
   {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-05",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-H-13258"
+   ],
+   "first_seen": "2026-11-12T16:13:55+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-H-13258-0001",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Enforcement notice",
+   "subtype": "Complaint",
+   "summary": "",
+   "title": "Complaint",
+   "url": "https://www.regulations.gov/document/FDA-2026-H-13258-0001",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-05",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-H-13400"
+   ],
+   "first_seen": "2026-11-12T16:13:55+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-H-13400-0001",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Enforcement notice",
+   "subtype": "Complaint",
+   "summary": "",
+   "title": "Complaint",
+   "url": "https://www.regulations.gov/document/FDA-2026-H-13400-0001",
+   "withdrawn": false
+  },
+  {
    "action": "Notice.",
    "agencies": [
     "epa"
@@ -1038,6 +1635,34 @@
    "summary": "This notice announces the Environmental Protection Agency's (EPA) approval of requests to revise/modify EPA-authorized programs to allow electronic reporting from:",
    "title": "Cross-Media Electronic Reporting: Announcement of Determination To Approve Authorized Program Revisions",
    "url": "https://www.federalregister.gov/documents/2026/11/05/2026-22546/cross-media-electronic-reporting-announcement-of-determination-to-approve-authorized-program"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "epa"
+   ],
+   "category": "other",
+   "comments_close": "2026-12-09",
+   "corporation": null,
+   "date": "2026-11-05",
+   "doc_type": "Other",
+   "docket_ids": [
+    "EPA-R05-OW-2026-1981"
+   ],
+   "first_seen": "2026-11-12T16:13:55+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:EPA-R05-OW-2026-1981-0002",
+   "priority": 0,
+   "regs_agency_id": "EPA",
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Other notice",
+   "subtype": "",
+   "summary": "",
+   "title": "DRAFT IN-181-1I-PIN-0001",
+   "url": "https://www.regulations.gov/document/EPA-R05-OW-2026-1981-0002",
+   "withdrawn": false
   },
   {
    "action": "",
@@ -1154,6 +1779,118 @@
    "url": "https://www.federalregister.gov/documents/2026/11/05/2026-22609/freeport-lng-development-lp-flng-liquefaction-llc-flng-liquefaction-2-llc-flng-liquefaction-3-llc"
   },
   {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-05",
+   "doc_type": "Notice",
+   "docket_ids": [
+    "FDA-2026-N-1832"
+   ],
+   "first_seen": "2026-11-12T16:13:55+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-N-1832-0105",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Other notice",
+   "subtype": "General Notice",
+   "summary": "",
+   "title": "GRAS Notice (GRN) 1350 - Amendment - Rebaudioside M produced by enzymatic treatment of rebaudioside A purified from the leaves of Stevia rebaudiana (Bertoni) Bertoni",
+   "url": "https://www.regulations.gov/document/FDA-2026-N-1832-0105",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-05",
+   "doc_type": "Notice",
+   "docket_ids": [
+    "FDA-2026-N-1832"
+   ],
+   "first_seen": "2026-11-12T16:13:55+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-N-1832-0106",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Other notice",
+   "subtype": "General Notice",
+   "summary": "",
+   "title": "GRAS Notice (GRN) 1354 - Amendment - Rebaudioside M produced by enzymatic treatment of rebaudioside A purified from the leaves of Stevia rebaudiana (Bertoni) Bertoni",
+   "url": "https://www.regulations.gov/document/FDA-2026-N-1832-0106",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-05",
+   "doc_type": "Notice",
+   "docket_ids": [
+    "FDA-2026-N-1832"
+   ],
+   "first_seen": "2026-11-12T16:13:55+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-N-1832-0107",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Other notice",
+   "subtype": "General Notice",
+   "summary": "",
+   "title": "GRAS Notice (GRN) 1356 - Rebaudioside M produced by enzymatic treatment of rebaudioside A purified from the leaves of Stevia rebaudiana (Bertoni) Bertoni",
+   "url": "https://www.regulations.gov/document/FDA-2026-N-1832-0107",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-05",
+   "doc_type": "Notice",
+   "docket_ids": [
+    "FDA-2026-N-1832"
+   ],
+   "first_seen": "2026-11-12T16:13:55+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-N-1832-0108",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Other notice",
+   "subtype": "General Notice",
+   "summary": "",
+   "title": "GRAS Notice (GRN) 1360 - Lactobacillus gasseri strain CECT 30648",
+   "url": "https://www.regulations.gov/document/FDA-2026-N-1832-0108",
+   "withdrawn": false
+  },
+  {
    "action": "Notice; request for comments.",
    "agencies": [
     "fcc"
@@ -1226,6 +1963,90 @@
    "summary": "As part of its continuing effort to reduce paperwork burdens, as required by the Paperwork Reduction Act (PRA) of 1995, the Federal Communications Commission (FCC or the Commission) invites the general public and other Federal Agencies to take this opportunity to comment on the following information collection. Pursuant to the Small Business Paperwork Relief Act of 2002, the FCC seeks specific comment on how it can further reduce the information collection burden for small business concerns with fewer than 25 employees.",
    "title": "Information Collections Being Submitted for Review and Approval to Office of Management and Budget",
    "url": "https://www.federalregister.gov/documents/2026/11/05/2026-22574/information-collections-being-submitted-for-review-and-approval-to-office-of-management-and-budget"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-05",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-P-5453"
+   ],
+   "first_seen": "2026-11-12T16:13:55+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-P-5453-0006",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Other notice",
+   "subtype": "Response(s)",
+   "summary": "",
+   "title": "Interim Response Letter",
+   "url": "https://www.regulations.gov/document/FDA-2026-P-5453-0006",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "epa"
+   ],
+   "category": "other",
+   "comments_close": "2026-12-09",
+   "corporation": null,
+   "date": "2026-11-05",
+   "doc_type": "Other",
+   "docket_ids": [
+    "EPA-R05-OW-2026-1981"
+   ],
+   "first_seen": "2026-11-12T16:13:55+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:EPA-R05-OW-2026-1981-0001",
+   "priority": 0,
+   "regs_agency_id": "EPA",
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Other notice",
+   "subtype": "",
+   "summary": "",
+   "title": "Liberty Landfill Fact Sheet 2026",
+   "url": "https://www.regulations.gov/document/EPA-R05-OW-2026-1981-0001",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "epa"
+   ],
+   "category": "other",
+   "comments_close": "2026-12-09",
+   "corporation": null,
+   "date": "2026-11-05",
+   "doc_type": "Other",
+   "docket_ids": [
+    "EPA-R05-OW-2026-1981"
+   ],
+   "first_seen": "2026-11-12T16:13:55+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:EPA-R05-OW-2026-1981-0003",
+   "priority": 0,
+   "regs_agency_id": "EPA",
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Other notice",
+   "subtype": "",
+   "summary": "",
+   "title": "Liberty Landfill Newspaper Notice",
+   "url": "https://www.regulations.gov/document/EPA-R05-OW-2026-1981-0003",
+   "withdrawn": false
   },
   {
    "action": "Final amendment; final order.",
@@ -1824,6 +2645,62 @@
    "url": "https://www.federalregister.gov/documents/2026/11/05/2026-22551/submission-for-office-of-management-and-budget-review-sexual-risk-avoidance-education-national"
   },
   {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-05",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-P-13861"
+   ],
+   "first_seen": "2026-11-12T16:13:55+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-P-13861-0001",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Other notice",
+   "subtype": "Petition(s)",
+   "summary": "",
+   "title": "Suitability Petition from Ascent Pharmaceuticals Inc",
+   "url": "https://www.regulations.gov/document/FDA-2026-P-13861-0001",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-05",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-P-13993"
+   ],
+   "first_seen": "2026-11-12T16:13:55+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-P-13993-0001",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Other notice",
+   "subtype": "Petition(s)",
+   "summary": "",
+   "title": "Suitability Petition from Axxelent Pharma Science Private Limited",
+   "url": "https://www.regulations.gov/document/FDA-2026-P-13993-0001",
+   "withdrawn": false
+  },
+  {
    "action": "Notice.",
    "agencies": [
     "sec"
@@ -1859,6 +2736,846 @@
    "summary": "",
    "title": "UBS Asset Management Credit Income Opportunities Fund and UBS Asset Management (Americas) LLC",
    "url": "https://www.federalregister.gov/documents/2026/11/05/2026-22544/ubs-asset-management-credit-income-opportunities-fund-and-ubs-asset-management-americas-llc"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-05",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-V-12756"
+   ],
+   "first_seen": "2026-11-12T16:13:55+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-V-12756-0001",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Other notice",
+   "subtype": "Application for Variance (VAR)",
+   "summary": "",
+   "title": "Variance Application from Andrew Bewer",
+   "url": "https://www.regulations.gov/document/FDA-2026-V-12756-0001",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-05",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-V-13311"
+   ],
+   "first_seen": "2026-11-12T16:13:55+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-V-13311-0001",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Other notice",
+   "subtype": "Application for Variance (VAR)",
+   "summary": "",
+   "title": "Variance Application from Beware Productions",
+   "url": "https://www.regulations.gov/document/FDA-2026-V-13311-0001",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-05",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-V-13630"
+   ],
+   "first_seen": "2026-11-12T16:13:55+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-V-13630-0001",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Other notice",
+   "subtype": "Application for Variance (VAR)",
+   "summary": "",
+   "title": "Variance Application from Daniel Trapp",
+   "url": "https://www.regulations.gov/document/FDA-2026-V-13630-0001",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-05",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-V-13435"
+   ],
+   "first_seen": "2026-11-12T16:13:55+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-V-13435-0001",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Other notice",
+   "subtype": "Application for Variance (VAR)",
+   "summary": "",
+   "title": "Variance Application from J. Thor",
+   "url": "https://www.regulations.gov/document/FDA-2026-V-13435-0001",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-05",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-V-13531"
+   ],
+   "first_seen": "2026-11-12T16:13:55+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-V-13531-0001",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Other notice",
+   "subtype": "Application for Variance (VAR)",
+   "summary": "",
+   "title": "Variance Application from MEBO Lighting Technolgies",
+   "url": "https://www.regulations.gov/document/FDA-2026-V-13531-0001",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-05",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-V-10266"
+   ],
+   "first_seen": "2026-11-12T16:13:55+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-V-10266-0001",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Other notice",
+   "subtype": "Application for Variance (VAR)",
+   "summary": "",
+   "title": "Variance Application from Manuel Alejandro Tellez",
+   "url": "https://www.regulations.gov/document/FDA-2026-V-10266-0001",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-05",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-V-12675"
+   ],
+   "first_seen": "2026-11-12T16:13:55+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-V-12675-0001",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Other notice",
+   "subtype": "Application for Variance (VAR)",
+   "summary": "",
+   "title": "Variance Application from Minho Kang",
+   "url": "https://www.regulations.gov/document/FDA-2026-V-12675-0001",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-05",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-V-13532"
+   ],
+   "first_seen": "2026-11-12T16:13:55+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-V-13532-0001",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Other notice",
+   "subtype": "Application for Variance (VAR)",
+   "summary": "",
+   "title": "Variance Application from Oscar Rodriguez Rios",
+   "url": "https://www.regulations.gov/document/FDA-2026-V-13532-0001",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-05",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-V-12678"
+   ],
+   "first_seen": "2026-11-12T16:13:55+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-V-12678-0001",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Other notice",
+   "subtype": "Application for Variance (VAR)",
+   "summary": "",
+   "title": "Variance Application from Patrick Koepke",
+   "url": "https://www.regulations.gov/document/FDA-2026-V-12678-0001",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-05",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-V-12754"
+   ],
+   "first_seen": "2026-11-12T16:13:55+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-V-12754-0001",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Other notice",
+   "subtype": "Application for Variance (VAR)",
+   "summary": "",
+   "title": "Variance Application from Ritter Planetarium, University of Toledo",
+   "url": "https://www.regulations.gov/document/FDA-2026-V-12754-0001",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-05",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-V-13533"
+   ],
+   "first_seen": "2026-11-12T16:13:55+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-V-13533-0001",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Other notice",
+   "subtype": "Application for Variance (VAR)",
+   "summary": "",
+   "title": "Variance Application from SHAMS Creative Group",
+   "url": "https://www.regulations.gov/document/FDA-2026-V-13533-0001",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-05",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-V-12707"
+   ],
+   "first_seen": "2026-11-12T16:13:55+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-V-12707-0001",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Other notice",
+   "subtype": "Application for Variance (VAR)",
+   "summary": "",
+   "title": "Variance Application from Taylor Christensen",
+   "url": "https://www.regulations.gov/document/FDA-2026-V-12707-0001",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-05",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-V-12839"
+   ],
+   "first_seen": "2026-11-12T16:13:55+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-V-12839-0001",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Other notice",
+   "subtype": "Application for Variance (VAR)",
+   "summary": "",
+   "title": "Variance Application from Tyler Phillips",
+   "url": "https://www.regulations.gov/document/FDA-2026-V-12839-0001",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-05",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-V-13536"
+   ],
+   "first_seen": "2026-11-12T16:13:55+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-V-13536-0001",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Other notice",
+   "subtype": "Application for Variance (VAR)",
+   "summary": "",
+   "title": "Variance Application from Watch The Throne",
+   "url": "https://www.regulations.gov/document/FDA-2026-V-13536-0001",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-05",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-V-12756"
+   ],
+   "first_seen": "2026-11-12T16:13:55+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-V-12756-0003",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Other notice",
+   "subtype": "Approval for Variance (VRA)",
+   "summary": "",
+   "title": "Variance Approval Letter from FDA CDRH to Andrew Bewer",
+   "url": "https://www.regulations.gov/document/FDA-2026-V-12756-0003",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-05",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-V-13311"
+   ],
+   "first_seen": "2026-11-12T16:13:55+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-V-13311-0003",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Other notice",
+   "subtype": "Approval for Variance (VRA)",
+   "summary": "",
+   "title": "Variance Approval Letter from FDA CDRH to Beware Productions",
+   "url": "https://www.regulations.gov/document/FDA-2026-V-13311-0003",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-05",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-V-13630"
+   ],
+   "first_seen": "2026-11-12T16:13:55+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-V-13630-0003",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Other notice",
+   "subtype": "Approval for Variance (VRA)",
+   "summary": "",
+   "title": "Variance Approval Letter from FDA CDRH to Daniel Trapp",
+   "url": "https://www.regulations.gov/document/FDA-2026-V-13630-0003",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-05",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-V-13532"
+   ],
+   "first_seen": "2026-11-12T16:13:55+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-V-13532-0003",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Other notice",
+   "subtype": "Approval for Variance (VRA)",
+   "summary": "",
+   "title": "Variance Approval Letter from FDA CDRH to Oscar Rodriguez Rios",
+   "url": "https://www.regulations.gov/document/FDA-2026-V-13532-0003",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-05",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-V-13533"
+   ],
+   "first_seen": "2026-11-12T16:13:55+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-V-13533-0003",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Other notice",
+   "subtype": "Approval for Variance (VRA)",
+   "summary": "",
+   "title": "Variance Approval Letter from FDA CDRH to SHAMS Creative Group",
+   "url": "https://www.regulations.gov/document/FDA-2026-V-13533-0003",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-05",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-V-12707"
+   ],
+   "first_seen": "2026-11-12T16:13:55+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-V-12707-0003",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Other notice",
+   "subtype": "Approval for Variance (VRA)",
+   "summary": "",
+   "title": "Variance Approval Letter from FDA CDRH to Taylor Christensen",
+   "url": "https://www.regulations.gov/document/FDA-2026-V-12707-0003",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-05",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-V-12839"
+   ],
+   "first_seen": "2026-11-12T16:13:55+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-V-12839-0003",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Other notice",
+   "subtype": "Approval for Variance (VRA)",
+   "summary": "",
+   "title": "Variance Approval Letter from FDA CDRH to Tyler Phillips",
+   "url": "https://www.regulations.gov/document/FDA-2026-V-12839-0003",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-05",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-V-13536"
+   ],
+   "first_seen": "2026-11-12T16:13:55+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-V-13536-0003",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Other notice",
+   "subtype": "Approval for Variance (VRA)",
+   "summary": "",
+   "title": "Variance Approval Letter from FDA CDRH to Watch The Throne",
+   "url": "https://www.regulations.gov/document/FDA-2026-V-13536-0003",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-05",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2023-V-2101"
+   ],
+   "first_seen": "2026-11-12T16:13:55+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2023-V-2101-0006",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Other notice",
+   "subtype": "Approval for Variance (VRA)",
+   "summary": "",
+   "title": "Variance Approval Letter from FDA DOD to Beatrox LLC",
+   "url": "https://www.regulations.gov/document/FDA-2023-V-2101-0006",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-05",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2022-V-1802"
+   ],
+   "first_seen": "2026-11-12T16:13:55+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2022-V-1802-0005",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Other notice",
+   "subtype": "Approval for Variance (VRA)",
+   "summary": "",
+   "title": "Variance Approval Letter from FDA DOD to Brian Johnson",
+   "url": "https://www.regulations.gov/document/FDA-2022-V-1802-0005",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-05",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-V-12675"
+   ],
+   "first_seen": "2026-11-12T16:13:55+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-V-12675-0003",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Other notice",
+   "subtype": "Approval for Variance (VRA)",
+   "summary": "",
+   "title": "Variance Approval Letter from FDA DOD to Minho Kang",
+   "url": "https://www.regulations.gov/document/FDA-2026-V-12675-0003",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-05",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-V-13435"
+   ],
+   "first_seen": "2026-11-12T16:13:55+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-V-13435-0003",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Other notice",
+   "subtype": "Approval for Variance (VRA)",
+   "summary": "",
+   "title": "Variance Approval Letter to J. Thor",
+   "url": "https://www.regulations.gov/document/FDA-2026-V-13435-0003",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-05",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-V-13531"
+   ],
+   "first_seen": "2026-11-12T16:13:55+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-V-13531-0003",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Other notice",
+   "subtype": "Approval for Variance (VRA)",
+   "summary": "",
+   "title": "Variance Approval Letter to MEBO Lighting Technolgies",
+   "url": "https://www.regulations.gov/document/FDA-2026-V-13531-0003",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-05",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-V-10266"
+   ],
+   "first_seen": "2026-11-12T16:13:55+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-V-10266-0003",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Other notice",
+   "subtype": "Approval for Variance (VRA)",
+   "summary": "",
+   "title": "Variance Approval Letter to Manuel Tellez",
+   "url": "https://www.regulations.gov/document/FDA-2026-V-10266-0003",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-05",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-V-12678"
+   ],
+   "first_seen": "2026-11-12T16:13:55+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-V-12678-0003",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Other notice",
+   "subtype": "Approval for Variance (VRA)",
+   "summary": "",
+   "title": "Variance Approval Letter to Patrick Koepke",
+   "url": "https://www.regulations.gov/document/FDA-2026-V-12678-0003",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-05",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-V-12754"
+   ],
+   "first_seen": "2026-11-12T16:13:55+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-V-12754-0003",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Other notice",
+   "subtype": "Approval for Variance (VRA)",
+   "summary": "",
+   "title": "Variance Approval Letter to Ritter Planetarium, University of Toledo",
+   "url": "https://www.regulations.gov/document/FDA-2026-V-12754-0003",
+   "withdrawn": false
   },
   {
    "action": "Final rule; announcement of effective date.",
