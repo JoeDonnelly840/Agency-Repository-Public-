@@ -7,6 +7,7 @@ ALLOWED_HOSTS. To add an agency, add an entry to AGENCIES.
 
 REPO_URL = "https://github.com/JoeDonnelly840/Agency-Repository-Public-"
 USER_AGENT = f"AgencyTracker/1.0 (personal research tool; +{REPO_URL})"
+SEC_USER_AGENT_NAME = "AgencyTracker"  # followed by the SEC_CONTACT_EMAIL secret, per the SEC's fair-access format
 
 # Only these hosts may ever be contacted. Anything else is refused in code.
 ALLOWED_HOSTS = {

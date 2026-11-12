@@ -29,7 +29,8 @@ def main():
     contact = os.environ.get("SEC_CONTACT_EMAIL", "").strip()
 
     client = PoliteClient()
-    sec_client = PoliteClient(user_agent=f"{config.USER_AGENT} contact: {contact}") if contact else client
+    # The SEC asks automated tools to declare themselves exactly as "Name email@example.com".
+    sec_client = PoliteClient(user_agent=f"{config.SEC_USER_AGENT_NAME} {contact}") if contact else client
 
     all_items, reports = [], []
     items, rep = federal_register.fetch(client, start, end)
