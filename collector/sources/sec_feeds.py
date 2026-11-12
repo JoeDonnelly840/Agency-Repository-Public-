@@ -9,6 +9,7 @@ has been provided through the SEC_CONTACT_EMAIL secret.
 """
 import email.utils
 import hashlib
+import html.entities
 import re
 import xml.etree.ElementTree as ET
 
@@ -35,8 +36,31 @@ def _strip_html(s):
     return re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", s or "")).strip()
 
 
+_VALID_ENTITY = re.compile(r"&(?!(?:amp|lt|gt|quot|apos|#\d+|#x[0-9a-fA-F]+);)")
+_NAMED_ENTITY = re.compile(r"&([A-Za-z][A-Za-z0-9]+);")
+
+
+def _repair(xml_bytes):
+    """Fix the common mistakes in hand-made feeds: web-page symbols such as &nbsp;
+    (not valid in XML) and bare '&' characters in titles."""
+    text = xml_bytes.decode("utf-8", "replace")
+
+    def named(m):
+        name = m.group(1)
+        if name in ("amp", "lt", "gt", "quot", "apos"):
+            return m.group(0)
+        code = html.entities.name2codepoint.get(name)
+        return f"&#{code};" if code else f"&amp;{name};"
+    text = _NAMED_ENTITY.sub(named, text)
+    text = _VALID_ENTITY.sub("&amp;", text)
+    return text.encode("utf-8")
+
+
 def parse_feed(xml_bytes, feed):
-    root = ET.fromstring(xml_bytes)
+    try:
+        root = ET.fromstring(xml_bytes)
+    except ET.ParseError:
+        root = ET.fromstring(_repair(xml_bytes))
     out = []
     for it in root.iter("item"):
         link = _text(it, "link")

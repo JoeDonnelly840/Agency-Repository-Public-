@@ -174,6 +174,12 @@ class SecFeedTests(unittest.TestCase):
         self.assertEqual(it["category"], "adjudication")
         self.assertEqual(it["flags"][0]["code"], "agency_adjudication")
 
+    def test_repairs_sloppy_feed(self):
+        bad = self.RSS.replace(b"Jane Doe", b"Smith & Jones&nbsp;LLC &mdash; AT&T")
+        items = sec_feeds.parse_feed(bad, config.SEC_FEEDS[1])
+        self.assertIn("Smith & Jones", items[0]["title"])
+        self.assertIn("AT&T", items[0]["title"])
+
     def test_skipped_without_contact(self):
         items, reps = sec_feeds.fetch(None, "2026-11-01", "2026-11-09", "")
         self.assertEqual(items, [])
