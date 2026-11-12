@@ -109,7 +109,7 @@
   "2026-11-06": 26,
   "2026-11-09": 54,
   "2026-11-10": 49,
-  "2026-11-12": 36
+  "2026-11-12": 40
  },
  "president": {
   "key": "president",
@@ -227,6 +227,71 @@
    "requests": 32,
    "run_at": "2026-11-12T13:37:14+00:00",
    "start": "2026-11-08"
+  },
+  {
+   "end": "2026-11-12",
+   "items_found": 143,
+   "items_new": 4,
+   "reports": [
+    {
+     "agencies": {
+      "cfpb": "ok",
+      "dol": "ok",
+      "epa": "ok",
+      "fcc": "ok",
+      "fda": "ok",
+      "ferc": "ok",
+      "ftc": "ok",
+      "hhs": "ok",
+      "nlrb": "ok",
+      "president": "ok",
+      "sec": "ok"
+     },
+     "detail": "",
+     "label": "Federal Register",
+     "source": "federal_register",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "cfpb": "ok",
+      "dol": "ok",
+      "epa": "ok",
+      "fcc": "ok",
+      "fda": "ok",
+      "ferc": "ok",
+      "ftc": "ok",
+      "hhs": "ok",
+      "nlrb": "ok",
+      "sec": "ok"
+     },
+     "detail": "",
+     "label": "Regulations.gov",
+     "source": "regulations_gov",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "sec": "error: Could not read https://www.sec.gov/robots.txt (HTTP Error 403: Forbidden); skipped to be safe."
+     },
+     "detail": "Could not read https://www.sec.gov/robots.txt (HTTP Error 403: Forbidden); skipped to be safe.",
+     "label": "SEC litigation releases (federal court actions)",
+     "source": "sec_litigation",
+     "status": "failed"
+    },
+    {
+     "agencies": {
+      "sec": "error: Could not read https://www.sec.gov/robots.txt (HTTP Error 403: Forbidden); skipped to be safe."
+     },
+     "detail": "Could not read https://www.sec.gov/robots.txt (HTTP Error 403: Forbidden); skipped to be safe.",
+     "label": "SEC administrative proceedings (in-house)",
+     "source": "sec_admin",
+     "status": "failed"
+    }
+   ],
+   "requests": 34,
+   "run_at": "2026-11-12T16:02:27+00:00",
+   "start": "2026-11-09"
   }
  ],
  "schema": 1,
@@ -267,29 +332,29 @@
   "federal_register": {
    "covered_through": "2026-11-12",
    "label": "Federal Register",
-   "last_attempt": "2026-11-12T13:37:14+00:00",
+   "last_attempt": "2026-11-12T16:02:27+00:00",
    "last_detail": "",
    "last_status": "ok"
   },
   "regulations_gov": {
    "covered_through": "2026-11-12",
    "label": "Regulations.gov",
-   "last_attempt": "2026-11-12T13:37:14+00:00",
+   "last_attempt": "2026-11-12T16:02:27+00:00",
    "last_detail": "",
    "last_status": "ok"
   },
   "sec_admin": {
    "label": "SEC administrative proceedings (in-house)",
-   "last_attempt": "2026-11-12T13:37:14+00:00",
-   "last_detail": "Not checked: the SEC asks automated tools to give a contact email. Add the SEC_CONTACT_EMAIL secret in GitHub to turn this on.",
-   "last_status": "skipped"
+   "last_attempt": "2026-11-12T16:02:27+00:00",
+   "last_detail": "Could not read https://www.sec.gov/robots.txt (HTTP Error 403: Forbidden); skipped to be safe.",
+   "last_status": "failed"
   },
   "sec_litigation": {
    "label": "SEC litigation releases (federal court actions)",
-   "last_attempt": "2026-11-12T13:37:14+00:00",
-   "last_detail": "Not checked: the SEC asks automated tools to give a contact email. Add the SEC_CONTACT_EMAIL secret in GitHub to turn this on.",
-   "last_status": "skipped"
+   "last_attempt": "2026-11-12T16:02:27+00:00",
+   "last_detail": "Could not read https://www.sec.gov/robots.txt (HTTP Error 403: Forbidden); skipped to be safe.",
+   "last_status": "failed"
   }
  },
- "updated_at": "2026-11-12T13:37:14+00:00"
+ "updated_at": "2026-11-12T16:02:27+00:00"
 }
