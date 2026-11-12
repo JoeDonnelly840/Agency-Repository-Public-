@@ -107,8 +107,9 @@
   "2026-11-04": 24,
   "2026-11-05": 47,
   "2026-11-06": 26,
-  "2026-11-09": 35,
-  "2026-11-10": 31
+  "2026-11-09": 54,
+  "2026-11-10": 49,
+  "2026-11-12": 36
  },
  "president": {
   "key": "president",
@@ -165,6 +166,67 @@
    "requests": 12,
    "run_at": "2026-11-11T13:33:45+00:00",
    "start": "2026-10-12"
+  },
+  {
+   "end": "2026-11-12",
+   "items_found": 139,
+   "items_new": 73,
+   "reports": [
+    {
+     "agencies": {
+      "cfpb": "ok",
+      "dol": "ok",
+      "epa": "ok",
+      "fcc": "ok",
+      "fda": "ok",
+      "ferc": "ok",
+      "ftc": "ok",
+      "hhs": "ok",
+      "nlrb": "ok",
+      "president": "ok",
+      "sec": "ok"
+     },
+     "detail": "",
+     "label": "Federal Register",
+     "source": "federal_register",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "cfpb": "ok",
+      "dol": "ok",
+      "epa": "ok",
+      "fcc": "ok",
+      "fda": "ok",
+      "ferc": "ok",
+      "ftc": "ok",
+      "hhs": "ok",
+      "nlrb": "ok",
+      "sec": "ok"
+     },
+     "detail": "",
+     "label": "Regulations.gov",
+     "source": "regulations_gov",
+     "status": "ok"
+    },
+    {
+     "agencies": {},
+     "detail": "Not checked: the SEC asks automated tools to give a contact email. Add the SEC_CONTACT_EMAIL secret in GitHub to turn this on.",
+     "label": "SEC litigation releases (federal court actions)",
+     "source": "sec_litigation",
+     "status": "skipped"
+    },
+    {
+     "agencies": {},
+     "detail": "Not checked: the SEC asks automated tools to give a contact email. Add the SEC_CONTACT_EMAIL secret in GitHub to turn this on.",
+     "label": "SEC administrative proceedings (in-house)",
+     "source": "sec_admin",
+     "status": "skipped"
+    }
+   ],
+   "requests": 32,
+   "run_at": "2026-11-12T13:37:14+00:00",
+   "start": "2026-11-08"
   }
  ],
  "schema": 1,
@@ -203,30 +265,31 @@
  },
  "sources": {
   "federal_register": {
-   "covered_through": "2026-11-11",
+   "covered_through": "2026-11-12",
    "label": "Federal Register",
-   "last_attempt": "2026-11-11T13:33:45+00:00",
+   "last_attempt": "2026-11-12T13:37:14+00:00",
    "last_detail": "",
    "last_status": "ok"
   },
   "regulations_gov": {
+   "covered_through": "2026-11-12",
    "label": "Regulations.gov",
-   "last_attempt": "2026-11-11T13:33:45+00:00",
-   "last_detail": "Not checked: the REGULATIONS_GOV_API_KEY secret has not been added to GitHub.",
-   "last_status": "skipped"
+   "last_attempt": "2026-11-12T13:37:14+00:00",
+   "last_detail": "",
+   "last_status": "ok"
   },
   "sec_admin": {
    "label": "SEC administrative proceedings (in-house)",
-   "last_attempt": "2026-11-11T13:33:45+00:00",
+   "last_attempt": "2026-11-12T13:37:14+00:00",
    "last_detail": "Not checked: the SEC asks automated tools to give a contact email. Add the SEC_CONTACT_EMAIL secret in GitHub to turn this on.",
    "last_status": "skipped"
   },
   "sec_litigation": {
    "label": "SEC litigation releases (federal court actions)",
-   "last_attempt": "2026-11-11T13:33:45+00:00",
+   "last_attempt": "2026-11-12T13:37:14+00:00",
    "last_detail": "Not checked: the SEC asks automated tools to give a contact email. Add the SEC_CONTACT_EMAIL secret in GitHub to turn this on.",
    "last_status": "skipped"
   }
  },
- "updated_at": "2026-11-11T13:33:45+00:00"
+ "updated_at": "2026-11-12T13:37:14+00:00"
 }
