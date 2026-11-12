@@ -72,7 +72,7 @@ def parse_feed(xml_bytes, feed):
             "source_label": feed["label"],
             "url": link,
             "title": title,
-            "summary": _strip_html(_text(it, "description"))[:800],
+            "summary": "" if _strip_html(_text(it, "description")) == title else _strip_html(_text(it, "description"))[:800],
             "action": "",
             "date": _date(_text(it, "pubDate")),
             "doc_type": feed["subcategory"],
