@@ -2,6 +2,43 @@
  "date": "2026-11-16",
  "items": [
   {
+   "action": "",
+   "agencies": [
+    "sec"
+   ],
+   "category": "adjudication",
+   "corporation": null,
+   "date": "2026-11-16",
+   "doc_type": "In-house administrative proceeding",
+   "first_seen": "2026-11-17T13:35:23+00:00",
+   "flags": [
+    {
+     "authorities": [
+      "SEC v. Jarkesy, 603 U.S. 109 (2024)",
+      "Axon Enterprise, Inc. v. FTC, 598 U.S. 175 (2023)",
+      "Granfinanciera, S.A. v. Nordberg, 492 U.S. 33 (1989)"
+     ],
+     "code": "agency_adjudication",
+     "label": "Agency adjudication of penalties (jury trial / Article III)",
+     "priority": "high",
+     "structural": true,
+     "triggers": [
+      "SEC in-house administrative proceeding"
+     ],
+     "why": "The agency itself appears to be deciding a case that could carry penalties. Penalty cases resembling common-law suits may require a jury and an Article III court, and agency proceedings can combine prosecutor and judge in one body."
+    }
+   ],
+   "id": "sec_admin:41426aff075a04ba",
+   "priority": 3,
+   "source": "sec_admin",
+   "source_label": "SEC administrative proceedings (in-house)",
+   "subcategory": "In-house administrative proceeding",
+   "subtype": "",
+   "summary": "",
+   "title": "Lloyd Anderson Wilson, CPA",
+   "url": "https://www.sec.gov/files/litigation/admin/2026/34-106906.pdf"
+  },
+  {
    "action": "Final rule.",
    "agencies": [
     "hhs"
@@ -132,6 +169,90 @@
    "summary": "",
    "title": "ANI Pharmaceuticals DESI 7661 Meeting Minutes FINAL",
    "url": "https://www.regulations.gov/document/FDA-1998-P-0083-0047",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-16",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-P-14477"
+   ],
+   "first_seen": "2026-11-17T13:35:23+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-P-14477-0002",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Other notice",
+   "subtype": "Acknowledgement Letter/Receipt",
+   "summary": "",
+   "title": "Acknowledgement Letter from FDA DOD to Abishe Defa Djini",
+   "url": "https://www.regulations.gov/document/FDA-2026-P-14477-0002",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-16",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-P-14478"
+   ],
+   "first_seen": "2026-11-17T13:35:23+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-P-14478-0002",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Other notice",
+   "subtype": "Acknowledgement Letter/Receipt",
+   "summary": "",
+   "title": "Acknowledgement Letter from FDA DOD to Ascend Laboratories, LLC",
+   "url": "https://www.regulations.gov/document/FDA-2026-P-14478-0002",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-16",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-P-14480"
+   ],
+   "first_seen": "2026-11-17T13:35:23+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-P-14480-0002",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Other notice",
+   "subtype": "Acknowledgement Letter/Receipt",
+   "summary": "",
+   "title": "Acknowledgment Letter from FDA DOD to Lachman Consultant Services, Inc.",
+   "url": "https://www.regulations.gov/document/FDA-2026-P-14480-0002",
    "withdrawn": false
   },
   {
@@ -531,6 +652,90 @@
   {
    "action": "",
    "agencies": [
+    "fda"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-16",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2025-P-4612"
+   ],
+   "first_seen": "2026-11-17T13:35:23+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2025-P-4612-0005",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Other notice",
+   "subtype": "Amendment",
+   "summary": "",
+   "title": "Citizen Petition Amendment from Arnall Golden Gregory LLP",
+   "url": "https://www.regulations.gov/document/FDA-2025-P-4612-0005",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-16",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-P-14477"
+   ],
+   "first_seen": "2026-11-17T13:35:23+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-P-14477-0001",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Other notice",
+   "subtype": "Citizen Petition",
+   "summary": "",
+   "title": "Citizen Petition from Abishe Defa Djini",
+   "url": "https://www.regulations.gov/document/FDA-2026-P-14477-0001",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-16",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-P-14478"
+   ],
+   "first_seen": "2026-11-17T13:35:23+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-P-14478-0001",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Other notice",
+   "subtype": "Citizen Petition",
+   "summary": "",
+   "title": "Citizen Petition from Ascend Laboratories, LLC",
+   "url": "https://www.regulations.gov/document/FDA-2026-P-14478-0001",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
     "ferc"
    ],
    "category": "adjudication",
@@ -635,6 +840,510 @@
    "summary": "",
    "title": "Combined Notice of Filings #2",
    "url": "https://www.federalregister.gov/documents/2026/11/16/2026-23283/combined-notice-of-filings-2"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-16",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-H-13705"
+   ],
+   "first_seen": "2026-11-17T13:35:23+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-H-13705-0001",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Enforcement notice",
+   "subtype": "Complaint",
+   "summary": "",
+   "title": "Complaint",
+   "url": "https://www.regulations.gov/document/FDA-2026-H-13705-0001",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-16",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-H-13706"
+   ],
+   "first_seen": "2026-11-17T13:35:23+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-H-13706-0001",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Enforcement notice",
+   "subtype": "Complaint",
+   "summary": "",
+   "title": "Complaint",
+   "url": "https://www.regulations.gov/document/FDA-2026-H-13706-0001",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-16",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-H-14137"
+   ],
+   "first_seen": "2026-11-17T13:35:23+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-H-14137-0001",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Enforcement notice",
+   "subtype": "Complaint",
+   "summary": "",
+   "title": "Complaint",
+   "url": "https://www.regulations.gov/document/FDA-2026-H-14137-0001",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-16",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-H-14102"
+   ],
+   "first_seen": "2026-11-17T13:35:23+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-H-14102-0001",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Enforcement notice",
+   "subtype": "Complaint",
+   "summary": "",
+   "title": "Complaint",
+   "url": "https://www.regulations.gov/document/FDA-2026-H-14102-0001",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-16",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-H-14136"
+   ],
+   "first_seen": "2026-11-17T13:35:23+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-H-14136-0001",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Enforcement notice",
+   "subtype": "Complaint",
+   "summary": "",
+   "title": "Complaint",
+   "url": "https://www.regulations.gov/document/FDA-2026-H-14136-0001",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-16",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-H-13710"
+   ],
+   "first_seen": "2026-11-17T13:35:23+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-H-13710-0001",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Enforcement notice",
+   "subtype": "Complaint",
+   "summary": "",
+   "title": "Complaint",
+   "url": "https://www.regulations.gov/document/FDA-2026-H-13710-0001",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-16",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-H-13702"
+   ],
+   "first_seen": "2026-11-17T13:35:23+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-H-13702-0001",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Enforcement notice",
+   "subtype": "Complaint",
+   "summary": "",
+   "title": "Complaint",
+   "url": "https://www.regulations.gov/document/FDA-2026-H-13702-0001",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-16",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-H-13708"
+   ],
+   "first_seen": "2026-11-17T13:35:23+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-H-13708-0001",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Enforcement notice",
+   "subtype": "Complaint",
+   "summary": "",
+   "title": "Complaint",
+   "url": "https://www.regulations.gov/document/FDA-2026-H-13708-0001",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-16",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-H-13599"
+   ],
+   "first_seen": "2026-11-17T13:35:23+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-H-13599-0001",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Enforcement notice",
+   "subtype": "Complaint",
+   "summary": "",
+   "title": "Complaint",
+   "url": "https://www.regulations.gov/document/FDA-2026-H-13599-0001",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-16",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-H-14100"
+   ],
+   "first_seen": "2026-11-17T13:35:23+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-H-14100-0001",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Enforcement notice",
+   "subtype": "Complaint",
+   "summary": "",
+   "title": "Complaint",
+   "url": "https://www.regulations.gov/document/FDA-2026-H-14100-0001",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-16",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-H-14135"
+   ],
+   "first_seen": "2026-11-17T13:35:23+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-H-14135-0001",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Enforcement notice",
+   "subtype": "Complaint",
+   "summary": "",
+   "title": "Complaint",
+   "url": "https://www.regulations.gov/document/FDA-2026-H-14135-0001",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-16",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-H-13707"
+   ],
+   "first_seen": "2026-11-17T13:35:23+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-H-13707-0001",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Enforcement notice",
+   "subtype": "Complaint",
+   "summary": "",
+   "title": "Complaint",
+   "url": "https://www.regulations.gov/document/FDA-2026-H-13707-0001",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-16",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-H-13711"
+   ],
+   "first_seen": "2026-11-17T13:35:23+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-H-13711-0001",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Enforcement notice",
+   "subtype": "Complaint",
+   "summary": "",
+   "title": "Complaint",
+   "url": "https://www.regulations.gov/document/FDA-2026-H-13711-0001",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-16",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-H-13601"
+   ],
+   "first_seen": "2026-11-17T13:35:23+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-H-13601-0001",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Enforcement notice",
+   "subtype": "Complaint",
+   "summary": "",
+   "title": "Complaint",
+   "url": "https://www.regulations.gov/document/FDA-2026-H-13601-0001",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-16",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-H-14103"
+   ],
+   "first_seen": "2026-11-17T13:35:23+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-H-14103-0001",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Enforcement notice",
+   "subtype": "Complaint",
+   "summary": "",
+   "title": "Complaint",
+   "url": "https://www.regulations.gov/document/FDA-2026-H-14103-0001",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-16",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-H-13709"
+   ],
+   "first_seen": "2026-11-17T13:35:23+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-H-13709-0001",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Enforcement notice",
+   "subtype": "Complaint",
+   "summary": "",
+   "title": "Complaint",
+   "url": "https://www.regulations.gov/document/FDA-2026-H-13709-0001",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-16",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-P-13334"
+   ],
+   "first_seen": "2026-11-17T13:35:23+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-P-13334-0007",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Other notice",
+   "subtype": "Assessment Document or Analysis",
+   "summary": "",
+   "title": "Completeness Assessment Correspondence",
+   "url": "https://www.regulations.gov/document/FDA-2026-P-13334-0007",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-16",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-P-13539"
+   ],
+   "first_seen": "2026-11-17T13:35:23+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-P-13539-0007",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Other notice",
+   "subtype": "Assessment Document or Analysis",
+   "summary": "",
+   "title": "Completeness Assessment Correspondence",
+   "url": "https://www.regulations.gov/document/FDA-2026-P-13539-0007",
+   "withdrawn": false
   },
   {
    "action": "",
@@ -787,6 +1496,62 @@
    "url": "https://www.federalregister.gov/documents/2026/11/16/2026-23216/information-collections-being-reviewed-by-the-federal-communications-commission-under-delegated"
   },
   {
+   "action": "",
+   "agencies": [
+    "epa"
+   ],
+   "category": "adjudication",
+   "comments_close": "2026-12-17",
+   "corporation": null,
+   "date": "2026-11-16",
+   "doc_type": "Other",
+   "docket_ids": [
+    "EPA-R08-OAR-2025-3390"
+   ],
+   "first_seen": "2026-11-17T13:35:23+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:EPA-R08-OAR-2025-3390-0024",
+   "priority": 0,
+   "regs_agency_id": "EPA",
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Applications, filings & licensing",
+   "subtype": "",
+   "summary": "",
+   "title": "KODA Ouray Draft Permit TMNSR-UO-000008-2025.003",
+   "url": "https://www.regulations.gov/document/EPA-R08-OAR-2025-3390-0024",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "epa"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-16",
+   "doc_type": "Other",
+   "docket_ids": [
+    "EPA-R08-OAR-2025-3390"
+   ],
+   "first_seen": "2026-11-17T13:35:23+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:EPA-R08-OAR-2025-3390-0023",
+   "priority": 0,
+   "regs_agency_id": "EPA",
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Other notice",
+   "subtype": "",
+   "summary": "",
+   "title": "KODA Ouray Draft TMNSR Permit_Letter to Permittee",
+   "url": "https://www.regulations.gov/document/EPA-R08-OAR-2025-3390-0023",
+   "withdrawn": false
+  },
+  {
    "action": "Notice of extension and modification of a temporary moratorium.",
    "agencies": [
     "hhs"
@@ -861,6 +1626,62 @@
    "summary": "This notice announces the extension and modification of the nationwide temporary moratorium on the enrollment of new Medicare hospices.",
    "title": "Medicare, Medicaid, and Children's Health Insurance Programs: Announcement of the Extension and Modification of the Nationwide Temporary Moratorium on Enrollment of Hospices",
    "url": "https://www.federalregister.gov/documents/2026/11/16/2026-23242/medicare-medicaid-and-childrens-health-insurance-programs-announcement-of-the-extension-and"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "epa"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-16",
+   "doc_type": "Other",
+   "docket_ids": [
+    "EPA-R08-OAR-2025-0034"
+   ],
+   "first_seen": "2026-11-17T13:35:23+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:EPA-R08-OAR-2025-0034-0051",
+   "priority": 0,
+   "regs_agency_id": "EPA",
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Other notice",
+   "subtype": "",
+   "summary": "",
+   "title": "Murfin Steamboat Butte E5 Final TV Cover Letter to Permittee",
+   "url": "https://www.regulations.gov/document/EPA-R08-OAR-2025-0034-0051",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "epa"
+   ],
+   "category": "adjudication",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-16",
+   "doc_type": "Other",
+   "docket_ids": [
+    "EPA-R08-OAR-2025-0034"
+   ],
+   "first_seen": "2026-11-17T13:35:23+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:EPA-R08-OAR-2025-0034-0050",
+   "priority": 0,
+   "regs_agency_id": "EPA",
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Applications, filings & licensing",
+   "subtype": "",
+   "summary": "",
+   "title": "Murfin Steamboat Butte E5 Final TV Permit",
+   "url": "https://www.regulations.gov/document/EPA-R08-OAR-2025-0034-0050",
+   "withdrawn": false
   },
   {
    "action": "",
@@ -970,6 +1791,62 @@
    "url": "https://www.federalregister.gov/documents/2026/11/16/2026-23294/proposed-revision-of-information-collection-certification-of-medical-necessity"
   },
   {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-16",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-D-11783"
+   ],
+   "first_seen": "2026-11-17T13:35:23+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-D-11783-0006",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Other notice",
+   "subtype": "Request for Extension",
+   "summary": "",
+   "title": "Request for Extension of Comment Period from Alliance for Regenerative Medicine",
+   "url": "https://www.regulations.gov/document/FDA-2026-D-11783-0006",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-16",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-D-11783"
+   ],
+   "first_seen": "2026-11-17T13:35:23+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-D-11783-0005",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Other notice",
+   "subtype": "Request for Extension",
+   "summary": "",
+   "title": "Request for Extension of Comment Period from Biotechnology Innovation Organization",
+   "url": "https://www.regulations.gov/document/FDA-2026-D-11783-0005",
+   "withdrawn": false
+  },
+  {
    "action": "Final rule; correcting amendment.",
    "agencies": [
     "fcc"
@@ -1006,6 +1883,34 @@
    "summary": "On July 8, 2026, the Federal Communications Commission announced the effective date of the Commission's rules. That document inadvertently failed to update the effective date in amendatory instructions 13, 17, and 19. This document corrects the final regulations.",
    "title": "Review of Submarine Cable Landing License Rules and Procedures To Assess Evolving National Security, Law Enforcement, Foreign Policy, and Trade Policy Risks",
    "url": "https://www.federalregister.gov/documents/2026/11/16/2026-23255/review-of-submarine-cable-landing-license-rules-and-procedures-to-assess-evolving-national-security"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-16",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-P-14480"
+   ],
+   "first_seen": "2026-11-17T13:35:23+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-P-14480-0001",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Other notice",
+   "subtype": "Petition(s)",
+   "summary": "",
+   "title": "Suitability Petition from Lachman Consultant Services, Inc.",
+   "url": "https://www.regulations.gov/document/FDA-2026-P-14480-0001",
+   "withdrawn": false
   },
   {
    "action": "Notice with comment period.",
