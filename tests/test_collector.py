@@ -10,7 +10,7 @@ from collector import config, store
 from collector.classify import classify
 from collector.flags import flag_item
 from collector.http_client import PoliteClient, RequestRefused, SourceUnavailable
-from collector.sources import federal_register, sec_feeds
+from collector.sources import agency_feeds, federal_register, openfda, sec_feeds
 
 
 class FakeResponse(io.BytesIO):
@@ -56,7 +56,7 @@ class SafetyTests(unittest.TestCase):
         c = PoliteClient(sleep=lambda s: None, opener=opener)
         c.get_json("https://www.federalregister.gov/api/v1/agencies.json", "fr")
         self.assertEqual(seen[0].get_method(), "GET")
-        self.assertIn("AgencyTracker", seen[0].get_header("User-agent"))
+        self.assertIn("RegHunter", seen[0].get_header("User-agent"))
 
     def test_waits_between_requests_to_same_host(self):
         sleeps, t = [], [0.0]
@@ -184,6 +184,124 @@ class SecFeedTests(unittest.TestCase):
         items, reps = sec_feeds.fetch(None, "2026-11-01", "2026-11-09", "")
         self.assertEqual(items, [])
         self.assertTrue(all(r["status"] == "skipped" for r in reps))
+
+
+class SeverityTests(unittest.TestCase):
+    def test_jarkesy_pattern_is_flagrant_and_severe(self):
+        it = process(fr_doc(title="In the Matter of Acme Corp.; Order Instituting Proceedings",
+                            abstract="The Division seeks civil money penalties for fraud under Rule 10b-5."))
+        f = it["flags"][0]
+        self.assertEqual((f["code"], f["clarity"], f["impact"]), ("agency_adjudication", 3, 3))
+        self.assertEqual(it["severity"]["score"], 9)
+
+    def test_settled_matter_is_only_arguable(self):
+        it = process(fr_doc(title="In the Matter of Acme Corp.; Order Instituting Cease-and-Desist Proceedings",
+                            abstract="Acme submitted an offer of settlement and agreed to pay a civil money penalty."))
+        self.assertEqual(it["flags"][0]["clarity"], 1)
+
+    def test_fcc_forfeiture_lowered_after_fcc_v_att(self):
+        doc = fr_doc(title="Acme Wireless; Notice of Apparent Liability for Forfeiture", abstract="civil penalty",
+                     agencies=[{"slug": "federal-communications-commission"}])
+        it = process(doc, query="fcc")
+        f = [x for x in it["flags"] if x["code"] == "agency_adjudication"][0]
+        self.assertEqual(f["clarity"], 1)
+        self.assertIn("forfeiture_nal", it["sanctions"])
+
+    def test_ieepa_tariffs_flagrant(self):
+        doc = fr_doc(type="Presidential Document", subtype="Executive Order", title="Imposing Tariffs",
+                     abstract="Under the International Emergency Economic Powers Act, a tariff of 25 percent applies.",
+                     agencies=[{"slug": "executive-office-of-the-president"}])
+        it = process(doc, query="president")
+        f = [x for x in it["flags"] if x["code"] == "presidential_lawmaking"][0]
+        self.assertEqual((f["clarity"], f["impact"]), (3, 3))
+
+    def test_every_flag_rating_is_red_orange_or_yellow(self):
+        for kind in __import__("collector.flags", fromlist=["export"]).export()["kinds"]:
+            self.assertIn(kind["default_clarity"], (1, 2, 3))
+            self.assertIn(kind["default_impact"], (1, 2, 3))
+
+    def test_gag_terms_are_tagged(self):
+        it = process(fr_doc(title="In the Matter of Beta LLC; Consent Order",
+                            abstract="Respondent agrees not to publicly deny the allegations and to a civil penalty of $2 million."))
+        self.assertIn("gag", it["sanctions"])
+        self.assertIn("speech_restraint", [f["code"] for f in it["flags"]])
+        self.assertEqual(it["outcome"], "settled")
+
+
+class FdaDocketTests(unittest.TestCase):
+    def _regs(self, docket, title):
+        it = {"id": "regs:x", "source": "regulations_gov", "title": title, "summary": "", "action": "",
+              "doc_type": "Other", "docket_ids": [docket], "query_agencies": ["fda"], "date": "2026-11-09"}
+        return flag_item(classify(it))
+
+    def test_tobacco_cmp_complaint_is_enforcement(self):
+        it = self._regs("FDA-2026-H-1234", "Complaint")
+        self.assertEqual(it["category"], "enforcement")
+        self.assertIn("civil_penalty", it["sanctions"])
+        self.assertEqual(it["flags"][0]["code"], "agency_adjudication")
+
+    def test_supplement_notification_is_other(self):
+        it = self._regs("FDA-2026-S-0001", "2026-001040 - Example Inc - Gummies")
+        self.assertEqual(it["category"], "other")
+        self.assertEqual(it["flags"], [])
+
+
+class AgencyFeedTests(unittest.TestCase):
+    RSS = b"""<?xml version="1.0"?><rss><channel>
+      <item><title>FTC Sues Acme Over Deceptive Subscriptions</title><link>https://www.ftc.gov/n/1</link>
+        <pubDate>Mon, 09 Nov 2026 10:00:00 -0500</pubDate><description>Complaint seeks civil penalties.</description></item>
+      <item><title>FTC to Host Workshop on Data Privacy</title><link>https://www.ftc.gov/n/2</link>
+        <pubDate>Mon, 09 Nov 2026 11:00:00 -0500</pubDate></item>
+    </channel></rss>"""
+    ATOM = b"""<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom">
+      <entry><title>Decision in Starbucks Corp.</title><link href="https://www.nlrb.gov/case/1"/><id>tag:1</id>
+      <updated>2026-11-10T12:00:00Z</updated><summary>Board decision</summary></entry></feed>"""
+
+    def test_keeps_actions_drops_events(self):
+        feed = config.AGENCY_FEEDS[0]
+        items = [i for i in agency_feeds.parse_feed(self.RSS, feed) if agency_feeds.keep(i, feed)]
+        self.assertEqual([i["title"] for i in items], ["FTC Sues Acme Over Deceptive Subscriptions"])
+        it = flag_item(classify(items[0]))
+        self.assertEqual(it["agencies"], ["ftc"])
+        self.assertEqual(it["category"], "enforcement")
+
+    def test_atom_with_fixed_category(self):
+        feed = [f for f in config.AGENCY_FEEDS if f["key"] == "nlrb_board"][0]
+        it = classify(agency_feeds.parse_feed(self.ATOM, feed)[0])
+        self.assertEqual((it["date"], it["category"], it["url"]), ("2026-11-10", "adjudication", "https://www.nlrb.gov/case/1"))
+
+    def test_discovery_only_follows_same_host(self):
+        page = (b'<a href="https://evil.example.com/rss.xml">Board Decisions</a>'
+                b'<a href="/rss/rssBoard.xml">Board Decisions</a>')
+
+        def opener(req, timeout):
+            if req.full_url.endswith("robots.txt"):
+                return FakeResponse(b"User-agent: *\nAllow: /\n")
+            return FakeResponse(page)
+        c = PoliteClient(sleep=lambda s: None, opener=opener)
+        feed = [f for f in config.AGENCY_FEEDS if f["key"] == "nlrb_board"][0]
+        self.assertEqual(agency_feeds.discover_url(c, feed), "https://www.nlrb.gov/rss/rssBoard.xml")
+
+    def test_new_hosts_allowed_but_finra_still_refused(self):
+        for host in ("www.ftc.gov", "www.nlrb.gov", "api.fda.gov"):
+            self.assertIn(host, config.ALLOWED_HOSTS)
+        self.assertNotIn("www.finra.org", config.ALLOWED_HOSTS)
+
+
+class OpenFdaTests(unittest.TestCase):
+    def test_normalize_and_404_means_no_results(self):
+        rec = {"recall_number": "D-0001-2027", "recalling_firm": "Acme Pharma", "product_description": "Tablets",
+               "classification": "Class I", "voluntary_mandated": "Voluntary: Firm initiated",
+               "reason_for_recall": "Contamination", "report_date": "20261111", "_endpoint": "drug"}
+        it = flag_item(classify(openfda.normalize(rec, "drugs")))
+        self.assertEqual((it["date"], it["category"], it["outcome"]), ("2026-11-11", "enforcement", "recall"))
+        self.assertIn("recall", it["sanctions"])
+
+        def opener(req, timeout):
+            raise urllib.error.HTTPError(req.full_url, 404, "nf", {}, None)
+        c = PoliteClient(sleep=lambda s: None, opener=opener)
+        items, rep = openfda.fetch(c, "2026-11-01", "2026-11-02")
+        self.assertEqual((items, rep["status"]), ([], "ok"))
 
 
 class StoreTests(unittest.TestCase):

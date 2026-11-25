@@ -1,4 +1,4 @@
-"""Reading and writing the data files the website shows.
+"""RegHunter: reading and writing the data files the website shows.
 
 docs/data/index.json        - run log, source health, list of days that have items
 docs/data/days/<date>.json  - the items published on that date
@@ -10,7 +10,7 @@ import datetime as dt
 import json
 import os
 
-from . import config
+from . import config, flags, taxonomy
 
 ROOT = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "docs", "data")
 
@@ -37,7 +37,7 @@ def _write_json(path, data):
 
 
 def load_index(root=None):
-    return _read_json(_path("index.json", root=root), {"schema": 1, "runs": [], "days": {}, "sources": {}})
+    return _read_json(_path("index.json", root=root), {"schema": 2, "runs": [], "days": {}, "sources": {}})
 
 
 def compute_window(index, today):
@@ -50,6 +50,11 @@ def compute_window(index, today):
     else:
         start = today - dt.timedelta(days=config.FIRST_RUN_BACKFILL_DAYS)
     return start.isoformat(), today.isoformat()
+
+
+def sort_key(item):
+    sev = item.get("severity") or {}
+    return (-sev.get("clarity", 0), -sev.get("impact", 0), item.get("title", ""))
 
 
 def merge_items(items, run_at, root=None):
@@ -68,7 +73,7 @@ def merge_items(items, run_at, root=None):
             if not old:
                 new_count += 1
             existing[it["id"]] = it
-        ordered = sorted(existing.values(), key=lambda i: (-i.get("priority", 0), i.get("title", "")))
+        ordered = sorted(existing.values(), key=sort_key)
         _write_json(path, {"date": day, "items": ordered})
     return new_count
 
@@ -83,8 +88,20 @@ def _day_counts(root=None):
     return counts
 
 
+def source_agencies():
+    """Which tracked agencies each source can see (used for "what we checked" lists)."""
+    out = {
+        "federal_register": [a["key"] for a in config.AGENCIES] + [config.PRESIDENT["key"]],
+        "regulations_gov": [a["key"] for a in config.AGENCIES],
+        "openfda": ["fda"],
+    }
+    out.update({f["key"]: ["sec"] for f in config.SEC_FEEDS})
+    out.update({f["key"]: [f["agency"]] for f in config.AGENCY_FEEDS})
+    return out
+
+
 def write_index(index, run, root=None):
-    index["schema"] = 1
+    index["schema"] = 2
     index["updated_at"] = run["run_at"]
     index["runs"] = (index.get("runs", []) + [run])[-config.MAX_RUN_HISTORY:]
     sources = index.setdefault("sources", {})
@@ -95,15 +112,19 @@ def write_index(index, run, root=None):
         if rep["status"] in ("ok", "partial"):
             s["covered_through"] = run["end"]
     index["days"] = _day_counts(root)
-    index["agencies"] = [{k: a[k] for k in ("key", "name", "short")} for a in config.AGENCIES]
-    index["president"] = config.PRESIDENT
-    index["corporations"] = [{k: c[k] for k in ("key", "name", "overseer")} for c in config.CORPORATIONS]
+    index["app"] = {"name": config.APP_NAME, "version": config.APP_VERSION}
+    index["jurisdictions"] = config.JURISDICTIONS
+    index["agencies"] = [{k: a[k] for k in ("key", "name", "short", "kind", "description")} for a in config.AGENCIES]
+    index["president"] = {k: config.PRESIDENT[k] for k in ("key", "name", "short", "kind", "description")}
+    index["corporations"] = [{k: c[k] for k in ("key", "name", "short", "overseer", "description")}
+                             for c in config.CORPORATIONS]
     index["categories"] = config.CATEGORIES
     index["coverage_notes"] = config.COVERAGE_NOTES
-    index["source_agencies"] = {
-        "federal_register": [a["key"] for a in config.AGENCIES] + [config.PRESIDENT["key"]],
-        "regulations_gov": [a["key"] for a in config.AGENCIES],
-        **{f["key"]: ["sec"] for f in config.SEC_FEEDS},
-    }
+    index["not_tracked"] = config.NOT_TRACKED
+    index["source_agencies"] = source_agencies()
+    index["source_labels"] = {"federal_register": "Federal Register", "regulations_gov": "Regulations.gov",
+                              "openfda": "openFDA recall enforcement reports",
+                              **{f["key"]: f["label"] for f in config.SEC_FEEDS + config.AGENCY_FEEDS}}
+    _write_json(_path("taxonomy.json", root=root), {**taxonomy.export(), **flags.export()})
     _write_json(_path("index.json", root=root), index)
     return index

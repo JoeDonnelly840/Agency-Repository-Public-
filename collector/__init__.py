@@ -1,1 +1,1 @@
-"""Agency Tracker data collector."""
+"""RegHunter data collector."""

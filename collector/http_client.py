@@ -53,7 +53,7 @@ class PoliteClient:
         return parts.hostname
 
     def _wait_turn(self, host):
-        gap = config.MIN_SECONDS_BETWEEN_REQUESTS.get(host, 5.0)
+        gap = config.MIN_SECONDS_BETWEEN_REQUESTS.get(host, config.DEFAULT_SECONDS_BETWEEN_REQUESTS)
         last = self._last_request_at.get(host)
         if last is not None:
             remaining = gap - (self._clock() - last)
@@ -83,13 +83,16 @@ class PoliteClient:
         self.total_requests += 1
         self._last_request_at[host] = self._clock()
         with self._open(req, timeout=config.REQUEST_TIMEOUT_SECONDS) as resp:
-            body = resp.read()
+            body = resp.read(config.MAX_RESPONSE_BYTES + 1)
+            if len(body) > config.MAX_RESPONSE_BYTES:
+                raise SourceUnavailable("Response was larger than the safety limit; not used.")
             if resp.headers.get("Content-Encoding") == "gzip":
                 body = gzip.decompress(body)
             return body
 
-    def get(self, url, source, headers=None, check_robots=False):
-        """GET a URL, politely. Returns bytes or raises SourceUnavailable."""
+    def get(self, url, source, headers=None, check_robots=False, not_found_ok=False):
+        """GET a URL, politely. Returns bytes or raises SourceUnavailable.
+        not_found_ok: treat HTTP 404 as an empty answer (some APIs use it for "no results")."""
         if self.failures_by_source.get(source, 0) >= config.MAX_CONSECUTIVE_FAILURES_PER_SOURCE:
             raise SourceUnavailable("Stopped after repeated failures (circuit breaker).")
         host = self._check_allowed(url)
@@ -103,6 +106,9 @@ class PoliteClient:
                 self.failures_by_source[source] = 0
                 return body
             except urllib.error.HTTPError as exc:
+                if exc.code == 404 and not_found_ok:
+                    self.failures_by_source[source] = 0
+                    return b""
                 last_error = f"HTTP {exc.code}"
                 if exc.code in (429, 500, 502, 503, 504) and attempt < config.MAX_RETRIES:
                     wait = _retry_after(exc, default=30 * (attempt + 1))
@@ -118,8 +124,10 @@ class PoliteClient:
         self.failures_by_source[source] = self.failures_by_source.get(source, 0) + 1
         raise SourceUnavailable(last_error or "unknown error")
 
-    def get_json(self, url, source, headers=None):
-        body = self.get(url, source, headers=headers)
+    def get_json(self, url, source, headers=None, not_found_ok=False):
+        body = self.get(url, source, headers=headers, not_found_ok=not_found_ok)
+        if not body:
+            return {}
         try:
             return json.loads(body.decode("utf-8"))
         except ValueError as exc:

@@ -1,56 +1,80 @@
 {
  "agencies": [
   {
+   "description": "Regulates the securities markets, public-company disclosure, brokers and investment advisers.",
    "key": "sec",
+   "kind": "commission",
    "name": "Securities and Exchange Commission",
    "short": "SEC"
   },
   {
+   "description": "Enforces antitrust and consumer-protection law against unfair or deceptive business practices.",
    "key": "ftc",
+   "kind": "commission",
    "name": "Federal Trade Commission",
    "short": "FTC"
   },
   {
+   "description": "Licenses and regulates broadcast, wireless, wire, cable and satellite communications.",
    "key": "fcc",
+   "kind": "commission",
    "name": "Federal Communications Commission",
    "short": "FCC"
   },
   {
+   "description": "Sets and enforces national standards for air, water, chemicals, pesticides and waste.",
    "key": "epa",
+   "kind": "single",
    "name": "Environmental Protection Agency",
    "short": "EPA"
   },
   {
+   "description": "Decides unfair-labor-practice cases and runs union representation elections.",
    "key": "nlrb",
+   "kind": "commission",
    "name": "National Labor Relations Board",
    "short": "NLRB"
   },
   {
+   "description": "Writes and enforces federal consumer-finance law for banks, lenders and other providers.",
    "key": "cfpb",
+   "kind": "single",
    "name": "Consumer Financial Protection Bureau",
    "short": "CFPB"
   },
   {
+   "description": "Enforces wage, workplace-safety, benefits and contractor laws through OSHA, WHD, EBSA and others.",
    "key": "dol",
+   "kind": "single",
    "name": "Department of Labor",
    "short": "DOL"
   },
   {
+   "description": "Regulates food, drugs, medical devices, tobacco, cosmetics and dietary supplements.",
    "key": "fda",
+   "kind": "single",
    "name": "Food and Drug Administration",
    "short": "FDA"
   },
   {
+   "description": "Runs Medicare, Medicaid, public-health and grant programs through CMS, CDC, NIH, OIG and others.",
    "key": "hhs",
-   "name": "Health and Human Services (other than FDA)",
+   "kind": "single",
+   "name": "Department of Health and Human Services (excluding FDA)",
    "short": "HHS"
   },
   {
+   "description": "Regulates interstate electricity, natural-gas and oil pipelines, and hydropower licensing.",
    "key": "ferc",
+   "kind": "commission",
    "name": "Federal Energy Regulatory Commission",
    "short": "FERC"
   }
  ],
+ "app": {
+  "name": "RegHunter",
+  "version": "2.0"
+ },
  "categories": {
   "adjudication": "Adjudication & licensing",
   "enforcement": "Enforcement",
@@ -60,32 +84,40 @@
  },
  "corporations": [
   {
+   "description": "Private corporation that writes rules for, examines and disciplines broker-dealers, under SEC oversight.",
    "key": "finra",
-   "name": "Financial Industry Regulatory Authority (FINRA)",
-   "overseer": "SEC"
+   "name": "Financial Industry Regulatory Authority",
+   "overseer": "SEC",
+   "short": "FINRA"
   },
   {
+   "description": "Nonprofit corporation that registers, inspects and disciplines auditors of public companies.",
    "key": "pcaob",
-   "name": "Public Company Accounting Oversight Board (PCAOB)",
-   "overseer": "SEC"
+   "name": "Public Company Accounting Oversight Board",
+   "overseer": "SEC",
+   "short": "PCAOB"
   },
   {
+   "description": "Writes rules for dealers in municipal bonds and for municipal advisors.",
    "key": "msrb",
-   "name": "Municipal Securities Rulemaking Board (MSRB)",
-   "overseer": "SEC"
+   "name": "Municipal Securities Rulemaking Board",
+   "overseer": "SEC",
+   "short": "MSRB"
   },
   {
+   "description": "Other self-regulatory organizations, such as Nasdaq, NYSE, Cboe and the clearing agencies, whose rule changes the SEC must approve.",
    "key": "other_sro",
-   "name": "Other SEC-supervised self-regulatory organizations (exchanges, clearing agencies)",
-   "overseer": "SEC"
+   "name": "Stock Exchanges and Clearing Agencies",
+   "overseer": "SEC",
+   "short": "Exchanges & clearing agencies"
   }
  ],
  "coverage_notes": {
-  "adjudication": "Partly covered. Federal Register notices of hearings, applications, licensing and filings, plus SEC in-house administrative proceedings. Individual ALJ and board decisions (for example, most NLRB decisions) are usually NOT published in the Federal Register and are not tracked in this version.",
-  "enforcement": "Partly covered. Only enforcement matters published in the Federal Register (for example, some FTC proposed consent orders and civil-penalty notices) and, for the SEC, its official litigation-release and administrative-proceeding feeds. Most other agencies announce enforcement actions only on their own websites, which this version does not read.",
-  "other": "Everything else the Federal Register publishes for the agency (meetings, information-collection requests, and similar notices).",
-  "presidential": "Well covered. Executive orders, memoranda and proclamations published in the Federal Register.",
-  "rulemaking": "Well covered. Proposed and final rules must be published in the Federal Register, which is checked for every tracked agency. Guidance and policy statements appear only if the agency chose to publish them there."
+  "adjudication": "Partly covered. Federal Register notices of hearings, applications and licensing; SEC in-house proceedings; NLRB Board and administrative-law-judge decisions (from the NLRB's own feeds); and FDA civil-money-penalty complaints on Regulations.gov. Not covered: ALJ and appeals-board decisions at the other agencies (for example the HHS Departmental Appeals Board, OSHRC, FERC initial decisions) unless they appear in the Federal Register.",
+  "enforcement": "Partly covered. Enforcement notices in the Federal Register and on Regulations.gov; the SEC's litigation-release and administrative-proceeding feeds; enforcement announcements in the FTC, NLRB, FDA and CFPB press feeds; FCC Enforcement Bureau documents and notices of apparent liability; and FDA recall enforcement reports. Not covered: EPA, DOL (OSHA, Wage and Hour), FERC and HHS-OIG enforcement announcements, and anything an agency never announces publicly.",
+  "other": "Everything else the Federal Register publishes for the agency (meetings, information-collection requests, and similar notices) and routine Regulations.gov postings.",
+  "presidential": "Well covered. Executive orders, memoranda and proclamations published in the Federal Register. Presidential actions that are never published (for example some directives and firings) are not.",
+  "rulemaking": "Well covered. Proposed and final rules must be published in the Federal Register, which is checked for every tracked agency. Guidance and policy statements appear only if the agency published them there or on Regulations.gov."
  },
  "days": {
   "2026-10-13": 90,
@@ -120,9 +152,74 @@
   "2026-11-24": 83,
   "2026-11-25": 25
  },
+ "jurisdictions": [
+  {
+   "key": "federal",
+   "name": "Federal",
+   "status": "active"
+  },
+  {
+   "key": "state",
+   "name": "State agencies",
+   "note": "Planned for a future version. The data format already records each item's jurisdiction.",
+   "status": "planned"
+  }
+ ],
+ "not_tracked": [
+  {
+   "what": "Agency websites without a published feed or API",
+   "why": "Reading ordinary web pages in bulk can breach a site's terms or load its servers, so RegHunter reads only feeds and interfaces published for software."
+  },
+  {
+   "what": "EPA enforcement cases (ECHO database)",
+   "why": "EPA offers an official ECHO web service; it is a planned addition but is not connected yet."
+  },
+  {
+   "what": "Department of Labor enforcement (OSHA citations, Wage and Hour cases)",
+   "why": "DOL's enforcement data API needs a separate key and has not been connected yet."
+  },
+  {
+   "what": "FERC enforcement settlements and orders not in the Federal Register",
+   "why": "FERC does not publish an enforcement feed; its eLibrary is not read."
+  },
+  {
+   "what": "HHS Office of Inspector General exclusions and civil money penalties",
+   "why": "Published as monthly downloadable files; not connected yet."
+  },
+  {
+   "what": "FINRA's disciplinary database, BrokerCheck and website",
+   "why": "Not read, to respect FINRA's terms of use. FINRA matters appear only when the SEC publishes them."
+  },
+  {
+   "what": "PCAOB and MSRB disciplinary orders",
+   "why": "Their websites are not read. Only SEC-published notices about them are tracked."
+  },
+  {
+   "what": "Court dockets (PACER) and Department of Justice actions",
+   "why": "PACER charges per page and DOJ is not a tracked agency in this version."
+  },
+  {
+   "what": "Unpublished agency actions",
+   "why": "Investigations, subpoenas, closing letters, supervisory findings and anything an agency does not announce publicly cannot be seen by any outside tool."
+  },
+  {
+   "what": "Full text of documents",
+   "why": "Flags and search use each document's title, summary and type, not the full text."
+  },
+  {
+   "what": "State agencies",
+   "why": "Planned for a future version."
+  },
+  {
+   "what": "Federal agencies other than those on the home screen",
+   "why": "More agencies can be added in collector/config.py."
+  }
+ ],
  "president": {
+  "description": "Executive orders, proclamations, memoranda, determinations and other presidential documents.",
   "key": "president",
-  "name": "The President (Presidential Documents)",
+  "kind": "president",
+  "name": "The President",
   "short": "President"
  },
  "runs": [
@@ -1278,8 +1375,20 @@
    "start": "2026-11-21"
   }
  ],
- "schema": 1,
+ "schema": 2,
  "source_agencies": {
+  "cfpb_newsroom": [
+   "cfpb"
+  ],
+  "fcc_enforcement": [
+   "fcc"
+  ],
+  "fcc_nal": [
+   "fcc"
+  ],
+  "fda_press": [
+   "fda"
+  ],
   "federal_register": [
    "sec",
    "ftc",
@@ -1292,6 +1401,24 @@
    "hhs",
    "ferc",
    "president"
+  ],
+  "ftc_competition": [
+   "ftc"
+  ],
+  "ftc_consumer": [
+   "ftc"
+  ],
+  "nlrb_alj": [
+   "nlrb"
+  ],
+  "nlrb_board": [
+   "nlrb"
+  ],
+  "nlrb_press": [
+   "nlrb"
+  ],
+  "openfda": [
+   "fda"
   ],
   "regulations_gov": [
    "sec",
@@ -1311,6 +1438,22 @@
   "sec_litigation": [
    "sec"
   ]
+ },
+ "source_labels": {
+  "cfpb_newsroom": "CFPB newsroom (enforcement announcements)",
+  "fcc_enforcement": "FCC Enforcement Bureau documents",
+  "fcc_nal": "FCC notices of apparent liability (proposed forfeitures)",
+  "fda_press": "FDA press releases",
+  "federal_register": "Federal Register",
+  "ftc_competition": "FTC competition (antitrust) press releases",
+  "ftc_consumer": "FTC consumer-protection press releases",
+  "nlrb_alj": "NLRB administrative law judge decisions",
+  "nlrb_board": "NLRB Board decisions",
+  "nlrb_press": "NLRB press releases",
+  "openfda": "openFDA recall enforcement reports",
+  "regulations_gov": "Regulations.gov",
+  "sec_admin": "SEC administrative proceedings (in-house)",
+  "sec_litigation": "SEC litigation releases (federal court actions)"
  },
  "sources": {
   "federal_register": {
