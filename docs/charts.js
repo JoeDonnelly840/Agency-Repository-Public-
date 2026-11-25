@@ -1,21 +1,22 @@
-/* RegHunter chart builder: per-agency visuals, drawn as SVG with no outside libraries.
+/* RegCollect chart builder: per-agency visuals, drawn as SVG with no outside libraries.
  * Chart types: stacked bars over time, lines over time, totals, share (donut), and the
- * clarity x seriousness grid. Every chart can be exported as PNG, SVG or CSV.
+ * flagrance x seriousness grid. Every chart can be exported as PNG, SVG, or CSV.
  *
  * Series colors were checked with a colorblind-safety validator against the dark
- * chart surface. Red, orange and yellow are deliberately absent: they mean severity
- * everywhere in RegHunter and are used only when a chart is broken down by severity.
+ * chart surface. Red, orange, and yellow are deliberately absent: they mean severity
+ * everywhere in RegCollect and are used only when a chart is broken down by severity.
  */
 (function () {
   "use strict";
 
-  const SURFACE = "#121418";
-  const TEXT = "#ece6d6", TEXT2 = "#bdb6a4", TEXT3 = "#8b8577", GRID = "rgba(236,230,214,0.10)";
+  const SURFACE = "#14171b";
+  const TEXT = "#e8ebf0", TEXT2 = "#b4bcc8", TEXT3 = "#8a94a3", GRID = "rgba(232,235,240,0.09)";
   const SERIES = ["#338ced", "#e24d8b", "#0aac23", "#9887ef", "#00a888"]; // validated order; never cycled
   const OTHER = "#5b616b";
   const SEV = { 3: "#ef5148", 2: "#f39232", 1: "#f2cb4c" };
-  const FONT = "system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif";
-  const SERIF = "'Iowan Old Style', 'Palatino Linotype', Palatino, 'Book Antiqua', Georgia, serif";
+  const FONT = "'IBM Plex Sans', system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif";
+  const SERIF = FONT;   // titles use the same family, heavier
+  const MONO = "'IBM Plex Mono', ui-monospace, Menlo, Consolas, monospace";
 
   const esc = (s) => String(s == null ? "" : s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
   const pad = (n) => String(n).padStart(2, "0");
@@ -42,11 +43,15 @@
     if (interval === "month") return dayObj(b).toLocaleDateString(undefined, { month: "short", year: "numeric" });
     return fmt(b);
   }
-  function niceMax(v) {
-    if (v <= 4) return Math.max(1, v);
-    const p = Math.pow(10, Math.floor(Math.log10(v))); const n = v / p;
-    return (n <= 1 ? 1 : n <= 2 ? 2 : n <= 2.5 ? 2.5 : n <= 5 ? 5 : 10) * p;
+  /** Whole-number axis for counts: a "nice" step (1, 2, 5, 10, 20, 25, 50, ...) and 3 to 6 ticks. */
+  function niceAxis(maxVal) {
+    maxVal = Math.max(1, Math.ceil(maxVal));
+    const steps = [1, 2, 5, 10, 20, 25, 50, 100, 200, 250, 500, 1000, 2000, 2500, 5000, 10000, 20000, 25000, 50000];
+    const step = steps.find((st) => Math.ceil(maxVal / st) <= 5) || Math.pow(10, Math.ceil(Math.log10(maxVal / 5)));
+    const max = Math.ceil(maxVal / step) * step;
+    return { max, step };
   }
+  const niceMax = (v) => niceAxis(v).max;
 
   // -------------------------------------------------------------- the data
   /** keys an item belongs to for a breakdown dimension */
@@ -57,7 +62,7 @@
       case "sanction": return (it.sanctions || []).length ? it.sanctions : ["none"];
       case "outcome": return [it.outcome || "notice"];
       case "issue": return (it.flags || []).length ? [...new Set(it.flags.map((f) => f.code))] : ["none"];
-      case "clarity": return [it.severity ? String(it.severity.clarity) : "0"];
+      case "flagrance": return [it.severity ? String(it.severity.flagrance) : "0"];
       case "impact": return [it.severity ? String(it.severity.impact) : "0"];
       default: return ["all"];
     }
@@ -70,7 +75,7 @@
     if (dim === "sanction") return (L.sanctions[key] || {}).label || key;
     if (dim === "outcome") return L.outcomes[key] || key;
     if (dim === "issue") return L.kinds[key] || key;
-    if (dim === "clarity") return key === "0" ? "No flag" : `Clarity: ${L.clarity[key]}`;
+    if (dim === "flagrance") return key === "0" ? "No flag" : `Flagrance: ${L.flagrance[key]}`;
     if (dim === "impact") return key === "0" ? "No flag" : `Seriousness: ${L.impact[key]}`;
     return key;
   }
@@ -83,6 +88,7 @@
       if (st.sanctions.length && !(it.sanctions || []).some((s) => st.sanctions.includes(s))) return false;
       if (st.outcomes.length && !st.outcomes.includes(it.outcome)) return false;
       if (st.flaggedOnly && !(it.flags || []).length) return false;
+      if (!st.routine && it.routine) return false;
       return true;
     });
   }
@@ -92,7 +98,7 @@
     const totals = new Map();
     items.forEach((it) => keysFor(it, dim, L).forEach((k) => totals.set(k, (totals.get(k) || 0) + 1)));
     let keys = [...totals.keys()];
-    const severityDim = dim === "clarity" || dim === "impact";
+    const severityDim = dim === "flagrance" || dim === "impact";
     if (severityDim) keys.sort((a, b) => b - a);
     else keys.sort((a, b) => (a === "none") - (b === "none") || totals.get(b) - totals.get(a));
     // At most five colored series; the rest fold into "Other" (never a generated sixth hue).
@@ -120,17 +126,18 @@
   function frame(title, subtitle, body, h) {
     return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${h || H}" role="img" aria-label="${esc(title)}" font-family="${esc(FONT)}">
       <rect width="${W}" height="${h || H}" fill="${SURFACE}" rx="12"/>
-      <text x="${M.l}" y="28" fill="${TEXT}" font-family="${esc(SERIF)}" font-size="19">${esc(title)}</text>
+      <text x="${M.l}" y="28" fill="${TEXT}" font-weight="600" font-size="17">${esc(title)}</text>
       <text x="${M.l}" y="47" fill="${TEXT3}" font-size="12">${esc(subtitle)}</text>${body}</svg>`;
   }
   function yAxis(max, x0, x1, y0, y1) {
+    const { step } = niceAxis(max);
     let s = "";
-    for (let i = 0; i <= 4; i++) {
-      const v = (max / 4) * i, y = y0 - (y0 - y1) * (i / 4);
+    for (let v = 0; v <= max; v += step) {
+      const y = y0 - (y0 - y1) * (v / max);
       s += `<line x1="${x0}" x2="${x1}" y1="${y}" y2="${y}" stroke="${GRID}"/>
-        <text x="${x0 - 8}" y="${y + 4}" fill="${TEXT3}" font-size="11" text-anchor="end">${Math.round(v * 10) / 10}</text>`;
+        <text x="${x0 - 8}" y="${y + 4}" fill="${TEXT3}" font-size="11" font-family="${esc(MONO)}" text-anchor="end">${v.toLocaleString()}</text>`;
     }
-    return s;
+    return s + `<text x="${x0 - 40}" y="${y1 - 10}" fill="${TEXT3}" font-size="11">Number of actions</text>`;
   }
   function xLabels(buckets, interval, x, y) {
     const every = Math.max(1, Math.ceil(buckets.length / 12));
@@ -203,7 +210,7 @@
     let s = "";
     rows.forEach((r, i) => {
       const y = M.t + 20 + i * rowH, w = Math.max(2, ((x1 - x0) * r.total) / max);
-      const color = a.dim === "clarity" || a.dim === "impact" ? r.color : r.key === "none" || r.key === "__other" ? OTHER : SERIES[0];
+      const color = a.dim === "flagrance" || a.dim === "impact" ? r.color : r.key === "none" || r.key === "__other" ? OTHER : SERIES[0];
       s += `<text x="${x0 - 12}" y="${y + 15}" fill="${TEXT2}" font-size="12" text-anchor="end">${esc(r.label.length > 44 ? r.label.slice(0, 43) + "…" : r.label)}</text>
         <path d="M${x0},${y + 4}H${x0 + w - 4}Q${x0 + w},${y + 4} ${x0 + w},${y + 8}V${y + 16}Q${x0 + w},${y + 20} ${x0 + w - 4},${y + 20}H${x0}Z" fill="${color}"/>
         <text x="${x0 + w + 8}" y="${y + 16}" fill="${TEXT}" font-size="12">${r.total}</text>
@@ -240,17 +247,17 @@
   }
 
   function drawMatrix(items, st, L, title, sub) {
-    const counts = {}; items.forEach((it) => { if (it.severity) { const k = `${it.severity.clarity}${it.severity.impact}`; counts[k] = (counts[k] || 0) + 1; } });
+    const counts = {}; items.forEach((it) => { if (it.severity) { const k = `${it.severity.flagrance}${it.severity.impact}`; counts[k] = (counts[k] || 0) + 1; } });
     const x0 = 250, y0 = M.t + 50, cw = 200, ch = 92;
     let s = "";
     [3, 2, 1].forEach((imp, j) => { s += `<text x="${x0 + j * cw + cw / 2}" y="${y0 - 14}" fill="${TEXT2}" font-size="13" text-anchor="middle">Seriousness: ${esc(L.impact[imp])}</text>`; });
     [3, 2, 1].forEach((cla, i) => {
-      s += `<text x="${x0 - 14}" y="${y0 + i * ch + ch / 2 + 4}" fill="${TEXT2}" font-size="13" text-anchor="end">Clarity: ${esc(L.clarity[cla])}</text>`;
+      s += `<text x="${x0 - 14}" y="${y0 + i * ch + ch / 2 + 4}" fill="${TEXT2}" font-size="13" text-anchor="end">Flagrance: ${esc(L.flagrance[cla])}</text>`;
       [3, 2, 1].forEach((imp, j) => {
         const n = counts[`${cla}${imp}`] || 0, score = cla * imp;
         const c = score >= 6 ? SEV[3] : score >= 3 ? SEV[2] : SEV[1];
         s += `<rect x="${x0 + j * cw + 3}" y="${y0 + i * ch + 3}" width="${cw - 6}" height="${ch - 6}" rx="8" fill="${c}" fill-opacity="${n ? 0.28 : 0.07}" stroke="${c}" stroke-opacity="${n ? 0.8 : 0.25}"
-          class="hit" data-tip="${esc(`Clarity ${L.clarity[cla]}, seriousness ${L.impact[imp]}|${n} flagged actions`)}"/>
+          class="hit" data-tip="${esc(`Flagrance ${L.flagrance[cla]}, seriousness ${L.impact[imp]}|${n} flagged actions`)}"/>
           <text x="${x0 + j * cw + cw / 2}" y="${y0 + i * ch + ch / 2 + 10}" fill="${n ? TEXT : TEXT3}" font-family="${esc(SERIF)}" font-size="28" text-anchor="middle">${n}</text>`;
       });
     });
@@ -260,13 +267,16 @@
   // -------------------------------------------------------------- the UI
   function defaults(items) {
     const dates = items.map((i) => i.date).filter(Boolean).sort();
-    return { type: "stacked", by: "category", interval: "week", from: dates[0] || "", to: dates[dates.length - 1] || "",
-      categories: [], sanctions: [], outcomes: [], flaggedOnly: false, table: false };
+    const from = dates[0] || "", to = dates[dates.length - 1] || "";
+    const spanDays = from && to ? (dayObj(to) - dayObj(from)) / 864e5 : 0;
+    return { type: "stacked", by: "category", interval: spanDays > 400 ? "month" : spanDays > 120 ? "week" : "day", from, to,
+      categories: [], sanctions: [], outcomes: [], flaggedOnly: false, routine: false, table: false };
   }
 
   function render(host, items, ctx) {
     const L = ctx.labels;
     const st = ctx.state || (ctx.state = defaults(items));
+    if (ctx.pending) { Object.assign(st, ctx.pending); delete ctx.pending; }   // set by the assistant
     const present = (key) => [...new Set(items.flatMap((i) => key(i)))];
     const cats = present((i) => [i.category]);
     const sancs = present((i) => i.sanctions || []);
@@ -278,10 +288,10 @@
       <form class="chart-controls" id="cc" onsubmit="return false">
         <div class="ctl"><span>Chart</span><select data-k="type">
           ${opt("stacked", "Stacked bars over time", st.type)}${opt("lines", "Lines over time", st.type)}${opt("bars", "Totals (bar chart)", st.type)}
-          ${opt("donut", "Share of total (donut)", st.type)}${opt("matrix", "Clarity × seriousness grid", st.type)}</select></div>
+          ${opt("donut", "Share of total (donut)", st.type)}${opt("matrix", "Flagrance × seriousness grid", st.type)}</select></div>
         <div class="ctl" ${st.type === "matrix" ? "hidden" : ""}><span>Break down by</span><select data-k="by">
           ${opt("category", "Kind of action", st.by)}${opt("subcategory", "Specific type of document", st.by)}${opt("sanction", "Sanction imposed or sought", st.by)}
-          ${opt("outcome", "Outcome", st.by)}${opt("issue", "Constitutional issue", st.by)}${opt("clarity", "Clarity rating", st.by)}
+          ${opt("outcome", "Outcome", st.by)}${opt("issue", "Constitutional issue", st.by)}${opt("flagrance", "Flagrance rating", st.by)}
           ${opt("impact", "Seriousness rating", st.by)}${opt("none", "Nothing (one total)", st.by)}</select></div>
         <div class="ctl" ${st.type === "stacked" || st.type === "lines" ? "" : "hidden"}><span>Group dates by</span><select data-k="interval">
           ${opt("day", "Day", st.interval)}${opt("week", "Week", st.interval)}${opt("month", "Month", st.interval)}</select></div>
@@ -290,7 +300,8 @@
         <div class="ctl"><span>Kinds of action ${st.categories.length ? "" : "(all)"}</span><div class="checks">${cats.map((c) => check("categories", c, L.categories[c] || c, st.categories.includes(c))).join("")}</div></div>
         <div class="ctl"><span>Sanctions ${st.sanctions.length ? "" : "(any)"}</span><div class="checks">${sancs.length ? sancs.map((s) => check("sanctions", s, (L.sanctions[s] || {}).label || s, st.sanctions.includes(s))).join("") : '<span class="muted small">None recorded for this agency yet.</span>'}</div></div>
         <div class="ctl"><span>Outcomes ${st.outcomes.length ? "" : "(any)"}</span><div class="checks">${outs.map((o) => check("outcomes", o, L.outcomes[o] || o, st.outcomes.includes(o))).join("")}</div></div>
-        <div class="ctl"><label class="small"><input type="checkbox" data-k="flaggedOnly" ${st.flaggedOnly ? "checked" : ""}> Only actions with a constitutional flag</label></div>
+        <div class="ctl"><label class="small"><input type="checkbox" data-k="flaggedOnly" ${st.flaggedOnly ? "checked" : ""}> Only actions with a constitutional flag</label>
+          ${items.some((i) => i.routine) ? `<br><label class="small"><input type="checkbox" data-k="routine" ${st.routine ? "checked" : ""}> Include routine exchange fee filings</label>` : ""}</div>
         <div class="row"><button type="button" class="btn small" data-x="png">Download PNG</button><button type="button" class="btn ghost small" data-x="svg">SVG</button>
           <button type="button" class="btn ghost small" data-x="csv">CSV</button><button type="button" class="btn ghost small" data-x="reset">Reset</button></div>
       </form>
@@ -300,13 +311,13 @@
 
     const data = filterItems(items, st);
     const what = { category: "kind of action", subcategory: "type of document", sanction: "sanction", outcome: "outcome",
-      issue: "constitutional issue", clarity: "clarity", impact: "seriousness", none: "" }[st.by];
+      issue: "constitutional issue", flagrance: "flagrance", impact: "seriousness", none: "" }[st.by];
     const span = st.from && st.to ? `${fmt(st.from, { month: "short", day: "numeric", year: "numeric" })} – ${fmt(st.to, { month: "short", day: "numeric", year: "numeric" })}` : "";
-    const title = `${ctx.entityName}: ${st.type === "matrix" ? "flagged actions by clarity and seriousness" : `actions${st.type === "stacked" || st.type === "lines" ? ` per ${st.interval}` : ""}${what ? ` by ${what}` : ""}`}`;
+    const title = `${ctx.entityName}: ${st.type === "matrix" ? "flagged actions by flagrance and seriousness" : `actions${st.type === "stacked" || st.type === "lines" ? ` per ${st.interval}` : ""}${what ? ` by ${what}` : ""}`}`;
     const filtersSaid = [st.categories.length && `kinds: ${st.categories.map((c) => L.categories[c]).join(", ")}`,
       st.sanctions.length && `sanctions: ${st.sanctions.map((s) => (L.sanctions[s] || {}).short || s).join(", ")}`,
       st.outcomes.length && `outcomes: ${st.outcomes.map((o) => L.outcomes[o]).join(", ")}`, st.flaggedOnly && "flagged only"].filter(Boolean).join("; ");
-    const sub = `${data.length} matching actions${span ? `, ${span}` : ""}${filtersSaid ? `. Filters: ${filtersSaid}` : ""}. Source: RegHunter`;
+    const sub = `${data.length} matching actions${span ? `, ${span}` : ""}${filtersSaid ? `. Filters: ${filtersSaid}` : ""}. Source: RegCollect`;
 
     let svg, agg = null;
     if (st.type === "matrix") svg = drawMatrix(data, st, L, title, sub);
@@ -336,7 +347,7 @@
       const k = el.dataset.arr; st[k] = [...host.querySelectorAll(`[data-arr="${k}"]:checked`)].map((x) => x.value); rerender();
     }));
     host.querySelectorAll("[data-x]").forEach((b) => b.addEventListener("click", () => {
-      const x = b.dataset.x, name = `reghunter-${ctx.fileKey}-${st.type}`;
+      const x = b.dataset.x, name = `regcollect-${ctx.fileKey}-${st.type}`;
       if (x === "svg") download(`${name}.svg`, new Blob([stage.innerHTML], { type: "image/svg+xml" }));
       if (x === "png") toPng(stage.querySelector("svg"), (blob) => download(`${name}.png`, blob));
       if (x === "csv") download(`${name}.csv`, new Blob(["﻿" + rowsForCsv.map((r) => r.map((c) => `"${String(c).replace(/"/g, '""')}"`).join(",")).join("\r\n")], { type: "text/csv" }));
@@ -347,8 +358,8 @@
 
   function tableRows(st, agg, data, L) {
     if (!agg) {
-      const rows = [["Clarity", "Seriousness: Severe", "Seriousness: Significant", "Seriousness: Moderate"]];
-      [3, 2, 1].forEach((c) => rows.push([L.clarity[c], ...[3, 2, 1].map((i) => data.filter((it) => it.severity && it.severity.clarity === c && it.severity.impact === i).length)]));
+      const rows = [["Flagrance", "Seriousness: Severe", "Seriousness: Significant", "Seriousness: Moderate"]];
+      [3, 2, 1].forEach((c) => rows.push([L.flagrance[c], ...[3, 2, 1].map((i) => data.filter((it) => it.severity && it.severity.flagrance === c && it.severity.impact === i).length)]));
       return rows;
     }
     if (st.type === "stacked" || st.type === "lines")

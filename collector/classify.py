@@ -38,6 +38,10 @@ MEETING = _rx(r"meeting", r"sunshine act", r"advisory committee", r"webinar", r"
 INFLATION = _rx(r"inflation adjustment", r"adjustment of civil (?:monetary )?penalt", r"civil (?:monetary )?penalty (?:inflation )?adjustment",
                 r"no adjustment to .{0,40}penalt")
 
+# Exchange and clearing-agency filings that only change fees, rebates, or pricing.
+SRO_FEE = _rx(r"fees?\b", r"pricing", r"price list", r"schedule of (?:fees|charges)", r"rebates?\b", r"fee schedule",
+              r"transaction credits?", r"charges\b", r"connectivity", r"port fees")
+
 # Regulations.gov FDA docket letters (FDA-YYYY-<letter>-NNNN).
 _FDA_DOCKET = re.compile(r"^FDA-\d{4}-([A-Z])-", re.I)
 
@@ -108,7 +112,9 @@ def assign_category(item):
     if item.get("corporation"):
         if ENFORCEMENT.search(title_action) and re.search(r"disciplin|expel|\bbar\b", full, re.I):
             return "enforcement", "Disciplinary matter"
-        return "rulemaking", "Rule filing by self-regulatory organization"
+        if SRO_FEE.search(item.get("title", "")):
+            return "rulemaking", "Fee change by self-regulatory organization"
+        return "rulemaking", "Rule change by self-regulatory organization"
     fda = _fda_docket_category(item)
     if fda:
         return fda
@@ -118,19 +124,19 @@ def assign_category(item):
         return "enforcement", "Enforcement action announced by the agency"
     # Notices and everything else: decide from the wording.
     if PAPERWORK.search(title_action):
-        return "other", "Information collection, privacy or paperwork notice"
+        return "other", "Information collection, privacy, or paperwork notice"
     if INFLATION.search(full):
         return "other", "Penalty inflation adjustment"
     if RULE_HEARING.search(title_action):
         return "rulemaking", "Rulemaking hearing"
     if ADJUDICATION.search(title_action):
-        return "adjudication", "Hearing, decision or adjudicatory order"
+        return "adjudication", "Hearing, decision, or adjudicatory order"
     if ENFORCEMENT.search(title_action):
         return "enforcement", "Enforcement notice"
     if LICENSING.search(title_action):
-        return "adjudication", "Applications, filings & licensing"
+        return "adjudication", "Applications, filings, and licensing"
     if GUIDANCE.search(title_action):
-        return "rulemaking", "Guidance, interpretation or request for comment"
+        return "rulemaking", "Guidance, interpretation, or request for comment"
     if MEETING.search(title_action):
         return "other", "Meeting or event"
     # Summary text alone is only trusted for strong adjudication/enforcement wording.
@@ -146,4 +152,6 @@ def classify(item):
     item["category"], item["subcategory"] = assign_category(item)
     item["sanctions"] = sanctions_of(item) if item["category"] in ("enforcement", "adjudication", "presidential") else []
     item["outcome"] = outcome_of(item)
+    # Routine fee filings by exchanges and clearing agencies are hidden by default in the app.
+    item["routine"] = item["subcategory"] == "Fee change by self-regulatory organization"
     return item

@@ -10,6 +10,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-11-20",
+   "date_basis": "published",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2026-H-14523"
@@ -17,26 +18,23 @@
    "first_seen": "2026-11-21T13:22:09+00:00",
    "flags": [
     {
-     "authorities": [
-      "SEC v. Jarkesy, 603 U.S. 109 (2024)",
-      "Axon Enterprise, Inc. v. FTC, 598 U.S. 175 (2023)",
-      "FCC v. AT&T, Inc. (U.S. June 4, 2026) (FCC forfeiture orders upheld)",
-      "Granfinanciera, S.A. v. Nordberg, 492 U.S. 33 (1989)"
-     ],
-     "clarity": 2,
      "code": "agency_adjudication",
+     "counters": [],
+     "elements_found": [
+      "penalty",
+      "in_house",
+      "contested"
+     ],
+     "elements_total": 4,
+     "flagrance": 1,
      "group": "structural",
      "impact": 2,
-     "label": "Agency adjudication of penalties (jury trial / Article III)",
-     "rating_notes": [
-      "no penalty wording found (seriousness lowered)",
-      "civil money penalty decided by an HHS administrative law judge"
-     ],
      "structural": true,
+     "tier": 1,
+     "tier_authority": "atlas_roofing",
      "triggers": [
       "civil money penalty complaint"
-     ],
-     "why": "The agency itself appears to be deciding a case that could carry penalties. Penalty cases resembling common-law suits may require a jury and an Article III court, and agency proceedings can combine prosecutor and judge in one body."
+     ]
     }
    ],
    "fr_doc_num": null,
@@ -44,14 +42,32 @@
    "jurisdiction": "federal",
    "outcome": "initiated",
    "priority": 2,
+   "published": "2026-11-20",
    "regs_agency_id": "FDA",
+   "routine": false,
    "sanctions": [
     "civil_penalty"
    ],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 3,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 2,
+    "points": 4
+   },
    "severity": {
-    "clarity": 2,
+    "flagrance": 1,
     "impact": 2,
-    "score": 4
+    "score": 2
    },
    "source": "regulations_gov",
    "source_label": "Regulations.gov",
@@ -71,6 +87,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-11-20",
+   "date_basis": "published",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2026-H-14326"
@@ -78,26 +95,23 @@
    "first_seen": "2026-11-21T13:22:09+00:00",
    "flags": [
     {
-     "authorities": [
-      "SEC v. Jarkesy, 603 U.S. 109 (2024)",
-      "Axon Enterprise, Inc. v. FTC, 598 U.S. 175 (2023)",
-      "FCC v. AT&T, Inc. (U.S. June 4, 2026) (FCC forfeiture orders upheld)",
-      "Granfinanciera, S.A. v. Nordberg, 492 U.S. 33 (1989)"
-     ],
-     "clarity": 2,
      "code": "agency_adjudication",
+     "counters": [],
+     "elements_found": [
+      "penalty",
+      "in_house",
+      "contested"
+     ],
+     "elements_total": 4,
+     "flagrance": 1,
      "group": "structural",
      "impact": 2,
-     "label": "Agency adjudication of penalties (jury trial / Article III)",
-     "rating_notes": [
-      "no penalty wording found (seriousness lowered)",
-      "civil money penalty decided by an HHS administrative law judge"
-     ],
      "structural": true,
+     "tier": 1,
+     "tier_authority": "atlas_roofing",
      "triggers": [
       "civil money penalty complaint"
-     ],
-     "why": "The agency itself appears to be deciding a case that could carry penalties. Penalty cases resembling common-law suits may require a jury and an Article III court, and agency proceedings can combine prosecutor and judge in one body."
+     ]
     }
    ],
    "fr_doc_num": null,
@@ -105,14 +119,32 @@
    "jurisdiction": "federal",
    "outcome": "initiated",
    "priority": 2,
+   "published": "2026-11-20",
    "regs_agency_id": "FDA",
+   "routine": false,
    "sanctions": [
     "civil_penalty"
    ],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 3,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 2,
+    "points": 4
+   },
    "severity": {
-    "clarity": 2,
+    "flagrance": 1,
     "impact": 2,
-    "score": 4
+    "score": 2
    },
    "source": "regulations_gov",
    "source_label": "Regulations.gov",
@@ -132,6 +164,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-11-20",
+   "date_basis": "published",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2026-H-14459"
@@ -139,26 +172,23 @@
    "first_seen": "2026-11-21T13:22:09+00:00",
    "flags": [
     {
-     "authorities": [
-      "SEC v. Jarkesy, 603 U.S. 109 (2024)",
-      "Axon Enterprise, Inc. v. FTC, 598 U.S. 175 (2023)",
-      "FCC v. AT&T, Inc. (U.S. June 4, 2026) (FCC forfeiture orders upheld)",
-      "Granfinanciera, S.A. v. Nordberg, 492 U.S. 33 (1989)"
-     ],
-     "clarity": 2,
      "code": "agency_adjudication",
+     "counters": [],
+     "elements_found": [
+      "penalty",
+      "in_house",
+      "contested"
+     ],
+     "elements_total": 4,
+     "flagrance": 1,
      "group": "structural",
      "impact": 2,
-     "label": "Agency adjudication of penalties (jury trial / Article III)",
-     "rating_notes": [
-      "no penalty wording found (seriousness lowered)",
-      "civil money penalty decided by an HHS administrative law judge"
-     ],
      "structural": true,
+     "tier": 1,
+     "tier_authority": "atlas_roofing",
      "triggers": [
       "civil money penalty complaint"
-     ],
-     "why": "The agency itself appears to be deciding a case that could carry penalties. Penalty cases resembling common-law suits may require a jury and an Article III court, and agency proceedings can combine prosecutor and judge in one body."
+     ]
     }
    ],
    "fr_doc_num": null,
@@ -166,14 +196,32 @@
    "jurisdiction": "federal",
    "outcome": "initiated",
    "priority": 2,
+   "published": "2026-11-20",
    "regs_agency_id": "FDA",
+   "routine": false,
    "sanctions": [
     "civil_penalty"
    ],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 3,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 2,
+    "points": 4
+   },
    "severity": {
-    "clarity": 2,
+    "flagrance": 1,
     "impact": 2,
-    "score": 4
+    "score": 2
    },
    "source": "regulations_gov",
    "source_label": "Regulations.gov",
@@ -193,6 +241,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-11-20",
+   "date_basis": "published",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2026-H-14325"
@@ -200,26 +249,23 @@
    "first_seen": "2026-11-21T13:22:09+00:00",
    "flags": [
     {
-     "authorities": [
-      "SEC v. Jarkesy, 603 U.S. 109 (2024)",
-      "Axon Enterprise, Inc. v. FTC, 598 U.S. 175 (2023)",
-      "FCC v. AT&T, Inc. (U.S. June 4, 2026) (FCC forfeiture orders upheld)",
-      "Granfinanciera, S.A. v. Nordberg, 492 U.S. 33 (1989)"
-     ],
-     "clarity": 2,
      "code": "agency_adjudication",
+     "counters": [],
+     "elements_found": [
+      "penalty",
+      "in_house",
+      "contested"
+     ],
+     "elements_total": 4,
+     "flagrance": 1,
      "group": "structural",
      "impact": 2,
-     "label": "Agency adjudication of penalties (jury trial / Article III)",
-     "rating_notes": [
-      "no penalty wording found (seriousness lowered)",
-      "civil money penalty decided by an HHS administrative law judge"
-     ],
      "structural": true,
+     "tier": 1,
+     "tier_authority": "atlas_roofing",
      "triggers": [
       "civil money penalty complaint"
-     ],
-     "why": "The agency itself appears to be deciding a case that could carry penalties. Penalty cases resembling common-law suits may require a jury and an Article III court, and agency proceedings can combine prosecutor and judge in one body."
+     ]
     }
    ],
    "fr_doc_num": null,
@@ -227,14 +273,32 @@
    "jurisdiction": "federal",
    "outcome": "initiated",
    "priority": 2,
+   "published": "2026-11-20",
    "regs_agency_id": "FDA",
+   "routine": false,
    "sanctions": [
     "civil_penalty"
    ],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 3,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 2,
+    "points": 4
+   },
    "severity": {
-    "clarity": 2,
+    "flagrance": 1,
     "impact": 2,
-    "score": 4
+    "score": 2
    },
    "source": "regulations_gov",
    "source_label": "Regulations.gov",
@@ -254,6 +318,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-11-20",
+   "date_basis": "published",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2026-H-14463"
@@ -261,26 +326,23 @@
    "first_seen": "2026-11-21T13:22:09+00:00",
    "flags": [
     {
-     "authorities": [
-      "SEC v. Jarkesy, 603 U.S. 109 (2024)",
-      "Axon Enterprise, Inc. v. FTC, 598 U.S. 175 (2023)",
-      "FCC v. AT&T, Inc. (U.S. June 4, 2026) (FCC forfeiture orders upheld)",
-      "Granfinanciera, S.A. v. Nordberg, 492 U.S. 33 (1989)"
-     ],
-     "clarity": 2,
      "code": "agency_adjudication",
+     "counters": [],
+     "elements_found": [
+      "penalty",
+      "in_house",
+      "contested"
+     ],
+     "elements_total": 4,
+     "flagrance": 1,
      "group": "structural",
      "impact": 2,
-     "label": "Agency adjudication of penalties (jury trial / Article III)",
-     "rating_notes": [
-      "no penalty wording found (seriousness lowered)",
-      "civil money penalty decided by an HHS administrative law judge"
-     ],
      "structural": true,
+     "tier": 1,
+     "tier_authority": "atlas_roofing",
      "triggers": [
       "civil money penalty complaint"
-     ],
-     "why": "The agency itself appears to be deciding a case that could carry penalties. Penalty cases resembling common-law suits may require a jury and an Article III court, and agency proceedings can combine prosecutor and judge in one body."
+     ]
     }
    ],
    "fr_doc_num": null,
@@ -288,14 +350,32 @@
    "jurisdiction": "federal",
    "outcome": "initiated",
    "priority": 2,
+   "published": "2026-11-20",
    "regs_agency_id": "FDA",
+   "routine": false,
    "sanctions": [
     "civil_penalty"
    ],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 3,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 2,
+    "points": 4
+   },
    "severity": {
-    "clarity": 2,
+    "flagrance": 1,
     "impact": 2,
-    "score": 4
+    "score": 2
    },
    "source": "regulations_gov",
    "source_label": "Regulations.gov",
@@ -315,6 +395,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-11-20",
+   "date_basis": "published",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2026-H-14490"
@@ -322,26 +403,23 @@
    "first_seen": "2026-11-21T13:22:09+00:00",
    "flags": [
     {
-     "authorities": [
-      "SEC v. Jarkesy, 603 U.S. 109 (2024)",
-      "Axon Enterprise, Inc. v. FTC, 598 U.S. 175 (2023)",
-      "FCC v. AT&T, Inc. (U.S. June 4, 2026) (FCC forfeiture orders upheld)",
-      "Granfinanciera, S.A. v. Nordberg, 492 U.S. 33 (1989)"
-     ],
-     "clarity": 2,
      "code": "agency_adjudication",
+     "counters": [],
+     "elements_found": [
+      "penalty",
+      "in_house",
+      "contested"
+     ],
+     "elements_total": 4,
+     "flagrance": 1,
      "group": "structural",
      "impact": 2,
-     "label": "Agency adjudication of penalties (jury trial / Article III)",
-     "rating_notes": [
-      "no penalty wording found (seriousness lowered)",
-      "civil money penalty decided by an HHS administrative law judge"
-     ],
      "structural": true,
+     "tier": 1,
+     "tier_authority": "atlas_roofing",
      "triggers": [
       "civil money penalty complaint"
-     ],
-     "why": "The agency itself appears to be deciding a case that could carry penalties. Penalty cases resembling common-law suits may require a jury and an Article III court, and agency proceedings can combine prosecutor and judge in one body."
+     ]
     }
    ],
    "fr_doc_num": null,
@@ -349,14 +427,32 @@
    "jurisdiction": "federal",
    "outcome": "initiated",
    "priority": 2,
+   "published": "2026-11-20",
    "regs_agency_id": "FDA",
+   "routine": false,
    "sanctions": [
     "civil_penalty"
    ],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 3,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 2,
+    "points": 4
+   },
    "severity": {
-    "clarity": 2,
+    "flagrance": 1,
     "impact": 2,
-    "score": 4
+    "score": 2
    },
    "source": "regulations_gov",
    "source_label": "Regulations.gov",
@@ -376,6 +472,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-11-20",
+   "date_basis": "published",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2026-H-14521"
@@ -383,26 +480,23 @@
    "first_seen": "2026-11-21T13:22:09+00:00",
    "flags": [
     {
-     "authorities": [
-      "SEC v. Jarkesy, 603 U.S. 109 (2024)",
-      "Axon Enterprise, Inc. v. FTC, 598 U.S. 175 (2023)",
-      "FCC v. AT&T, Inc. (U.S. June 4, 2026) (FCC forfeiture orders upheld)",
-      "Granfinanciera, S.A. v. Nordberg, 492 U.S. 33 (1989)"
-     ],
-     "clarity": 2,
      "code": "agency_adjudication",
+     "counters": [],
+     "elements_found": [
+      "penalty",
+      "in_house",
+      "contested"
+     ],
+     "elements_total": 4,
+     "flagrance": 1,
      "group": "structural",
      "impact": 2,
-     "label": "Agency adjudication of penalties (jury trial / Article III)",
-     "rating_notes": [
-      "no penalty wording found (seriousness lowered)",
-      "civil money penalty decided by an HHS administrative law judge"
-     ],
      "structural": true,
+     "tier": 1,
+     "tier_authority": "atlas_roofing",
      "triggers": [
       "civil money penalty complaint"
-     ],
-     "why": "The agency itself appears to be deciding a case that could carry penalties. Penalty cases resembling common-law suits may require a jury and an Article III court, and agency proceedings can combine prosecutor and judge in one body."
+     ]
     }
    ],
    "fr_doc_num": null,
@@ -410,14 +504,32 @@
    "jurisdiction": "federal",
    "outcome": "initiated",
    "priority": 2,
+   "published": "2026-11-20",
    "regs_agency_id": "FDA",
+   "routine": false,
    "sanctions": [
     "civil_penalty"
    ],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 3,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 2,
+    "points": 4
+   },
    "severity": {
-    "clarity": 2,
+    "flagrance": 1,
     "impact": 2,
-    "score": 4
+    "score": 2
    },
    "source": "regulations_gov",
    "source_label": "Regulations.gov",
@@ -437,6 +549,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-11-20",
+   "date_basis": "published",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2026-H-14461"
@@ -444,26 +557,23 @@
    "first_seen": "2026-11-21T13:22:09+00:00",
    "flags": [
     {
-     "authorities": [
-      "SEC v. Jarkesy, 603 U.S. 109 (2024)",
-      "Axon Enterprise, Inc. v. FTC, 598 U.S. 175 (2023)",
-      "FCC v. AT&T, Inc. (U.S. June 4, 2026) (FCC forfeiture orders upheld)",
-      "Granfinanciera, S.A. v. Nordberg, 492 U.S. 33 (1989)"
-     ],
-     "clarity": 2,
      "code": "agency_adjudication",
+     "counters": [],
+     "elements_found": [
+      "penalty",
+      "in_house",
+      "contested"
+     ],
+     "elements_total": 4,
+     "flagrance": 1,
      "group": "structural",
      "impact": 2,
-     "label": "Agency adjudication of penalties (jury trial / Article III)",
-     "rating_notes": [
-      "no penalty wording found (seriousness lowered)",
-      "civil money penalty decided by an HHS administrative law judge"
-     ],
      "structural": true,
+     "tier": 1,
+     "tier_authority": "atlas_roofing",
      "triggers": [
       "civil money penalty complaint"
-     ],
-     "why": "The agency itself appears to be deciding a case that could carry penalties. Penalty cases resembling common-law suits may require a jury and an Article III court, and agency proceedings can combine prosecutor and judge in one body."
+     ]
     }
    ],
    "fr_doc_num": null,
@@ -471,14 +581,32 @@
    "jurisdiction": "federal",
    "outcome": "initiated",
    "priority": 2,
+   "published": "2026-11-20",
    "regs_agency_id": "FDA",
+   "routine": false,
    "sanctions": [
     "civil_penalty"
    ],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 3,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 2,
+    "points": 4
+   },
    "severity": {
-    "clarity": 2,
+    "flagrance": 1,
     "impact": 2,
-    "score": 4
+    "score": 2
    },
    "source": "regulations_gov",
    "source_label": "Regulations.gov",
@@ -498,6 +626,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-11-20",
+   "date_basis": "published",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2026-H-14492"
@@ -505,26 +634,23 @@
    "first_seen": "2026-11-21T13:22:09+00:00",
    "flags": [
     {
-     "authorities": [
-      "SEC v. Jarkesy, 603 U.S. 109 (2024)",
-      "Axon Enterprise, Inc. v. FTC, 598 U.S. 175 (2023)",
-      "FCC v. AT&T, Inc. (U.S. June 4, 2026) (FCC forfeiture orders upheld)",
-      "Granfinanciera, S.A. v. Nordberg, 492 U.S. 33 (1989)"
-     ],
-     "clarity": 2,
      "code": "agency_adjudication",
+     "counters": [],
+     "elements_found": [
+      "penalty",
+      "in_house",
+      "contested"
+     ],
+     "elements_total": 4,
+     "flagrance": 1,
      "group": "structural",
      "impact": 2,
-     "label": "Agency adjudication of penalties (jury trial / Article III)",
-     "rating_notes": [
-      "no penalty wording found (seriousness lowered)",
-      "civil money penalty decided by an HHS administrative law judge"
-     ],
      "structural": true,
+     "tier": 1,
+     "tier_authority": "atlas_roofing",
      "triggers": [
       "civil money penalty complaint"
-     ],
-     "why": "The agency itself appears to be deciding a case that could carry penalties. Penalty cases resembling common-law suits may require a jury and an Article III court, and agency proceedings can combine prosecutor and judge in one body."
+     ]
     }
    ],
    "fr_doc_num": null,
@@ -532,14 +658,32 @@
    "jurisdiction": "federal",
    "outcome": "initiated",
    "priority": 2,
+   "published": "2026-11-20",
    "regs_agency_id": "FDA",
+   "routine": false,
    "sanctions": [
     "civil_penalty"
    ],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 3,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 2,
+    "points": 4
+   },
    "severity": {
-    "clarity": 2,
+    "flagrance": 1,
     "impact": 2,
-    "score": 4
+    "score": 2
    },
    "source": "regulations_gov",
    "source_label": "Regulations.gov",
@@ -559,6 +703,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-11-20",
+   "date_basis": "published",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2026-H-14464"
@@ -566,26 +711,23 @@
    "first_seen": "2026-11-21T13:22:09+00:00",
    "flags": [
     {
-     "authorities": [
-      "SEC v. Jarkesy, 603 U.S. 109 (2024)",
-      "Axon Enterprise, Inc. v. FTC, 598 U.S. 175 (2023)",
-      "FCC v. AT&T, Inc. (U.S. June 4, 2026) (FCC forfeiture orders upheld)",
-      "Granfinanciera, S.A. v. Nordberg, 492 U.S. 33 (1989)"
-     ],
-     "clarity": 2,
      "code": "agency_adjudication",
+     "counters": [],
+     "elements_found": [
+      "penalty",
+      "in_house",
+      "contested"
+     ],
+     "elements_total": 4,
+     "flagrance": 1,
      "group": "structural",
      "impact": 2,
-     "label": "Agency adjudication of penalties (jury trial / Article III)",
-     "rating_notes": [
-      "no penalty wording found (seriousness lowered)",
-      "civil money penalty decided by an HHS administrative law judge"
-     ],
      "structural": true,
+     "tier": 1,
+     "tier_authority": "atlas_roofing",
      "triggers": [
       "civil money penalty complaint"
-     ],
-     "why": "The agency itself appears to be deciding a case that could carry penalties. Penalty cases resembling common-law suits may require a jury and an Article III court, and agency proceedings can combine prosecutor and judge in one body."
+     ]
     }
    ],
    "fr_doc_num": null,
@@ -593,14 +735,32 @@
    "jurisdiction": "federal",
    "outcome": "initiated",
    "priority": 2,
+   "published": "2026-11-20",
    "regs_agency_id": "FDA",
+   "routine": false,
    "sanctions": [
     "civil_penalty"
    ],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 3,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 2,
+    "points": 4
+   },
    "severity": {
-    "clarity": 2,
+    "flagrance": 1,
     "impact": 2,
-    "score": 4
+    "score": 2
    },
    "source": "regulations_gov",
    "source_label": "Regulations.gov",
@@ -620,6 +780,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-11-20",
+   "date_basis": "published",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2026-H-14524"
@@ -627,26 +788,23 @@
    "first_seen": "2026-11-21T13:22:09+00:00",
    "flags": [
     {
-     "authorities": [
-      "SEC v. Jarkesy, 603 U.S. 109 (2024)",
-      "Axon Enterprise, Inc. v. FTC, 598 U.S. 175 (2023)",
-      "FCC v. AT&T, Inc. (U.S. June 4, 2026) (FCC forfeiture orders upheld)",
-      "Granfinanciera, S.A. v. Nordberg, 492 U.S. 33 (1989)"
-     ],
-     "clarity": 2,
      "code": "agency_adjudication",
+     "counters": [],
+     "elements_found": [
+      "penalty",
+      "in_house",
+      "contested"
+     ],
+     "elements_total": 4,
+     "flagrance": 1,
      "group": "structural",
      "impact": 2,
-     "label": "Agency adjudication of penalties (jury trial / Article III)",
-     "rating_notes": [
-      "no penalty wording found (seriousness lowered)",
-      "civil money penalty decided by an HHS administrative law judge"
-     ],
      "structural": true,
+     "tier": 1,
+     "tier_authority": "atlas_roofing",
      "triggers": [
       "civil money penalty complaint"
-     ],
-     "why": "The agency itself appears to be deciding a case that could carry penalties. Penalty cases resembling common-law suits may require a jury and an Article III court, and agency proceedings can combine prosecutor and judge in one body."
+     ]
     }
    ],
    "fr_doc_num": null,
@@ -654,14 +812,32 @@
    "jurisdiction": "federal",
    "outcome": "initiated",
    "priority": 2,
+   "published": "2026-11-20",
    "regs_agency_id": "FDA",
+   "routine": false,
    "sanctions": [
     "civil_penalty"
    ],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 3,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 2,
+    "points": 4
+   },
    "severity": {
-    "clarity": 2,
+    "flagrance": 1,
     "impact": 2,
-    "score": 4
+    "score": 2
    },
    "source": "regulations_gov",
    "source_label": "Regulations.gov",
@@ -681,6 +857,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-11-20",
+   "date_basis": "published",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2026-H-14456"
@@ -688,26 +865,23 @@
    "first_seen": "2026-11-21T13:22:09+00:00",
    "flags": [
     {
-     "authorities": [
-      "SEC v. Jarkesy, 603 U.S. 109 (2024)",
-      "Axon Enterprise, Inc. v. FTC, 598 U.S. 175 (2023)",
-      "FCC v. AT&T, Inc. (U.S. June 4, 2026) (FCC forfeiture orders upheld)",
-      "Granfinanciera, S.A. v. Nordberg, 492 U.S. 33 (1989)"
-     ],
-     "clarity": 2,
      "code": "agency_adjudication",
+     "counters": [],
+     "elements_found": [
+      "penalty",
+      "in_house",
+      "contested"
+     ],
+     "elements_total": 4,
+     "flagrance": 1,
      "group": "structural",
      "impact": 2,
-     "label": "Agency adjudication of penalties (jury trial / Article III)",
-     "rating_notes": [
-      "no penalty wording found (seriousness lowered)",
-      "civil money penalty decided by an HHS administrative law judge"
-     ],
      "structural": true,
+     "tier": 1,
+     "tier_authority": "atlas_roofing",
      "triggers": [
       "civil money penalty complaint"
-     ],
-     "why": "The agency itself appears to be deciding a case that could carry penalties. Penalty cases resembling common-law suits may require a jury and an Article III court, and agency proceedings can combine prosecutor and judge in one body."
+     ]
     }
    ],
    "fr_doc_num": null,
@@ -715,14 +889,32 @@
    "jurisdiction": "federal",
    "outcome": "initiated",
    "priority": 2,
+   "published": "2026-11-20",
    "regs_agency_id": "FDA",
+   "routine": false,
    "sanctions": [
     "civil_penalty"
    ],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 3,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 2,
+    "points": 4
+   },
    "severity": {
-    "clarity": 2,
+    "flagrance": 1,
     "impact": 2,
-    "score": 4
+    "score": 2
    },
    "source": "regulations_gov",
    "source_label": "Regulations.gov",
@@ -742,6 +934,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-11-20",
+   "date_basis": "published",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2026-H-14462"
@@ -749,26 +942,23 @@
    "first_seen": "2026-11-21T13:22:09+00:00",
    "flags": [
     {
-     "authorities": [
-      "SEC v. Jarkesy, 603 U.S. 109 (2024)",
-      "Axon Enterprise, Inc. v. FTC, 598 U.S. 175 (2023)",
-      "FCC v. AT&T, Inc. (U.S. June 4, 2026) (FCC forfeiture orders upheld)",
-      "Granfinanciera, S.A. v. Nordberg, 492 U.S. 33 (1989)"
-     ],
-     "clarity": 2,
      "code": "agency_adjudication",
+     "counters": [],
+     "elements_found": [
+      "penalty",
+      "in_house",
+      "contested"
+     ],
+     "elements_total": 4,
+     "flagrance": 1,
      "group": "structural",
      "impact": 2,
-     "label": "Agency adjudication of penalties (jury trial / Article III)",
-     "rating_notes": [
-      "no penalty wording found (seriousness lowered)",
-      "civil money penalty decided by an HHS administrative law judge"
-     ],
      "structural": true,
+     "tier": 1,
+     "tier_authority": "atlas_roofing",
      "triggers": [
       "civil money penalty complaint"
-     ],
-     "why": "The agency itself appears to be deciding a case that could carry penalties. Penalty cases resembling common-law suits may require a jury and an Article III court, and agency proceedings can combine prosecutor and judge in one body."
+     ]
     }
    ],
    "fr_doc_num": null,
@@ -776,14 +966,32 @@
    "jurisdiction": "federal",
    "outcome": "initiated",
    "priority": 2,
+   "published": "2026-11-20",
    "regs_agency_id": "FDA",
+   "routine": false,
    "sanctions": [
     "civil_penalty"
    ],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 3,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 2,
+    "points": 4
+   },
    "severity": {
-    "clarity": 2,
+    "flagrance": 1,
     "impact": 2,
-    "score": 4
+    "score": 2
    },
    "source": "regulations_gov",
    "source_label": "Regulations.gov",
@@ -803,6 +1011,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-11-20",
+   "date_basis": "published",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2026-H-14489"
@@ -810,26 +1019,23 @@
    "first_seen": "2026-11-21T13:22:09+00:00",
    "flags": [
     {
-     "authorities": [
-      "SEC v. Jarkesy, 603 U.S. 109 (2024)",
-      "Axon Enterprise, Inc. v. FTC, 598 U.S. 175 (2023)",
-      "FCC v. AT&T, Inc. (U.S. June 4, 2026) (FCC forfeiture orders upheld)",
-      "Granfinanciera, S.A. v. Nordberg, 492 U.S. 33 (1989)"
-     ],
-     "clarity": 2,
      "code": "agency_adjudication",
+     "counters": [],
+     "elements_found": [
+      "penalty",
+      "in_house",
+      "contested"
+     ],
+     "elements_total": 4,
+     "flagrance": 1,
      "group": "structural",
      "impact": 2,
-     "label": "Agency adjudication of penalties (jury trial / Article III)",
-     "rating_notes": [
-      "no penalty wording found (seriousness lowered)",
-      "civil money penalty decided by an HHS administrative law judge"
-     ],
      "structural": true,
+     "tier": 1,
+     "tier_authority": "atlas_roofing",
      "triggers": [
       "civil money penalty complaint"
-     ],
-     "why": "The agency itself appears to be deciding a case that could carry penalties. Penalty cases resembling common-law suits may require a jury and an Article III court, and agency proceedings can combine prosecutor and judge in one body."
+     ]
     }
    ],
    "fr_doc_num": null,
@@ -837,14 +1043,32 @@
    "jurisdiction": "federal",
    "outcome": "initiated",
    "priority": 2,
+   "published": "2026-11-20",
    "regs_agency_id": "FDA",
+   "routine": false,
    "sanctions": [
     "civil_penalty"
    ],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 3,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 2,
+    "points": 4
+   },
    "severity": {
-    "clarity": 2,
+    "flagrance": 1,
     "impact": 2,
-    "score": 4
+    "score": 2
    },
    "source": "regulations_gov",
    "source_label": "Regulations.gov",
@@ -864,6 +1088,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-11-20",
+   "date_basis": "published",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2026-H-14494"
@@ -871,26 +1096,23 @@
    "first_seen": "2026-11-21T13:22:09+00:00",
    "flags": [
     {
-     "authorities": [
-      "SEC v. Jarkesy, 603 U.S. 109 (2024)",
-      "Axon Enterprise, Inc. v. FTC, 598 U.S. 175 (2023)",
-      "FCC v. AT&T, Inc. (U.S. June 4, 2026) (FCC forfeiture orders upheld)",
-      "Granfinanciera, S.A. v. Nordberg, 492 U.S. 33 (1989)"
-     ],
-     "clarity": 2,
      "code": "agency_adjudication",
+     "counters": [],
+     "elements_found": [
+      "penalty",
+      "in_house",
+      "contested"
+     ],
+     "elements_total": 4,
+     "flagrance": 1,
      "group": "structural",
      "impact": 2,
-     "label": "Agency adjudication of penalties (jury trial / Article III)",
-     "rating_notes": [
-      "no penalty wording found (seriousness lowered)",
-      "civil money penalty decided by an HHS administrative law judge"
-     ],
      "structural": true,
+     "tier": 1,
+     "tier_authority": "atlas_roofing",
      "triggers": [
       "civil money penalty complaint"
-     ],
-     "why": "The agency itself appears to be deciding a case that could carry penalties. Penalty cases resembling common-law suits may require a jury and an Article III court, and agency proceedings can combine prosecutor and judge in one body."
+     ]
     }
    ],
    "fr_doc_num": null,
@@ -898,14 +1120,32 @@
    "jurisdiction": "federal",
    "outcome": "initiated",
    "priority": 2,
+   "published": "2026-11-20",
    "regs_agency_id": "FDA",
+   "routine": false,
    "sanctions": [
     "civil_penalty"
    ],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 3,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 2,
+    "points": 4
+   },
    "severity": {
-    "clarity": 2,
+    "flagrance": 1,
     "impact": 2,
-    "score": 4
+    "score": 2
    },
    "source": "regulations_gov",
    "source_label": "Regulations.gov",
@@ -925,6 +1165,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-11-20",
+   "date_basis": "published",
    "doc_type": "Rule",
    "docket_ids": [
     "EPA-R06-OAR-2026-8383",
@@ -935,21 +1176,21 @@
    "first_seen": "2026-11-20T13:36:00+00:00",
    "flags": [
     {
-     "authorities": [
-      "City of Los Angeles v. Patel, 576 U.S. 409 (2015)",
-      "Carpenter v. United States, 585 U.S. 296 (2018)"
-     ],
-     "clarity": 1,
      "code": "fourth_amendment",
+     "counters": [],
+     "elements_found": [
+      "search"
+     ],
+     "elements_total": 2,
+     "flagrance": 1,
      "group": "rights",
-     "impact": 2,
-     "label": "Searches, inspections, records demands or surveillance",
-     "rating_notes": [],
+     "impact": 1,
      "structural": false,
+     "tier": 1,
+     "tier_authority": "burger",
      "triggers": [
       "inspection"
-     ],
-     "why": "Government inspections and demands for records or data can raise Fourth Amendment questions."
+     ]
     }
    ],
    "fr_agency_names": [
@@ -962,13 +1203,26 @@
    "jurisdiction": "federal",
    "outcome": "final",
    "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-11-20/pdf/2026-23686.pdf",
-   "priority": 2,
+   "priority": 1,
+   "published": "2026-11-20",
    "rins": [],
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 2,
+      "why": "binding rule"
+     }
+    ],
+    "level": 1,
+    "points": 2
+   },
    "severity": {
-    "clarity": 1,
-    "impact": 2,
-    "score": 2
+    "flagrance": 1,
+    "impact": 1,
+    "score": 1
    },
    "significant": false,
    "source": "federal_register",
@@ -988,6 +1242,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-11-20",
+   "date_basis": "published",
    "doc_type": "Rule",
    "docket_ids": [
     "EPA-R06-OAR-2026-8317",
@@ -998,21 +1253,21 @@
    "first_seen": "2026-11-20T13:36:00+00:00",
    "flags": [
     {
-     "authorities": [
-      "City of Los Angeles v. Patel, 576 U.S. 409 (2015)",
-      "Carpenter v. United States, 585 U.S. 296 (2018)"
-     ],
-     "clarity": 1,
      "code": "fourth_amendment",
+     "counters": [],
+     "elements_found": [
+      "search"
+     ],
+     "elements_total": 2,
+     "flagrance": 1,
      "group": "rights",
-     "impact": 2,
-     "label": "Searches, inspections, records demands or surveillance",
-     "rating_notes": [],
+     "impact": 1,
      "structural": false,
+     "tier": 1,
+     "tier_authority": "burger",
      "triggers": [
       "inspection"
-     ],
-     "why": "Government inspections and demands for records or data can raise Fourth Amendment questions."
+     ]
     }
    ],
    "fr_agency_names": [
@@ -1025,13 +1280,26 @@
    "jurisdiction": "federal",
    "outcome": "final",
    "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-11-20/pdf/2026-23690.pdf",
-   "priority": 2,
+   "priority": 1,
+   "published": "2026-11-20",
    "rins": [],
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 2,
+      "why": "binding rule"
+     }
+    ],
+    "level": 1,
+    "points": 2
+   },
    "severity": {
-    "clarity": 1,
-    "impact": 2,
-    "score": 2
+    "flagrance": 1,
+    "impact": 1,
+    "score": 1
    },
    "significant": false,
    "source": "federal_register",
@@ -1049,72 +1317,9 @@
    ],
    "category": "rulemaking",
    "comments_close": null,
-   "corporation": "msrb",
-   "date": "2026-11-20",
-   "doc_type": "Notice",
-   "docket_ids": [
-    "Release No. 34-106917",
-    "File No. SR-MSRB-2026-05"
-   ],
-   "effective_on": null,
-   "eo_number": null,
-   "first_seen": "2026-11-20T13:36:00+00:00",
-   "flags": [
-    {
-     "authorities": [
-      "Carter v. Carter Coal Co., 298 U.S. 238 (1936)",
-      "Department of Transportation v. Association of American Railroads, 575 U.S. 43 (2015)",
-      "Alpine Securities Corp. v. FINRA, 121 F.4th 1314 (D.C. Cir. 2024)"
-     ],
-     "clarity": 1,
-     "code": "private_delegation",
-     "group": "structural",
-     "impact": 2,
-     "label": "Government power exercised by a private corporation",
-     "rating_notes": [],
-     "structural": true,
-     "triggers": [
-      "issued by an agency-supervised private corporation"
-     ],
-     "why": "This action comes from a private, agency-supervised corporation. Delegating government power to private entities is limited by the private nondelegation doctrine and by Article II."
-    }
-   ],
-   "fr_agency_names": [
-    "Securities and Exchange Commission"
-   ],
-   "fr_agency_slugs": [
-    "securities-and-exchange-commission"
-   ],
-   "id": "fr:2026-23648",
-   "jurisdiction": "federal",
-   "outcome": "proposed",
-   "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-11-20/pdf/2026-23648.pdf",
-   "priority": 2,
-   "rins": [],
-   "sanctions": [],
-   "severity": {
-    "clarity": 1,
-    "impact": 2,
-    "score": 2
-   },
-   "significant": false,
-   "source": "federal_register",
-   "source_label": "Federal Register",
-   "subcategory": "Rule filing by self-regulatory organization",
-   "subtype": "",
-   "summary": "",
-   "title": "Self-Regulatory Organizations; Municipal Securities Rulemaking Board; Notice of Filing and Immediate Effectiveness of a Proposed Rule Change To Amend MSRB Rule G-3, on Professional Qualification Requirements, To Reduce the Waiting Periods for Retaking Professional Qualification Examinations for Brokers, Dealers, and Municipal Securities Dealers and Municipal Advisors to Preserve Alignment With FINRA Rule 1210.06",
-   "url": "https://www.federalregister.gov/documents/2026/11/20/2026-23648/self-regulatory-organizations-municipal-securities-rulemaking-board-notice-of-filing-and-immediate"
-  },
-  {
-   "action": "",
-   "agencies": [
-    "sec"
-   ],
-   "category": "rulemaking",
-   "comments_close": null,
    "corporation": "other_sro",
    "date": "2026-11-20",
+   "date_basis": "published",
    "doc_type": "Notice",
    "docket_ids": [
     "Release No. 34-106916",
@@ -1126,24 +1331,23 @@
    "first_seen": "2026-11-20T13:36:00+00:00",
    "flags": [
     {
-     "authorities": [
-      "Carter v. Carter Coal Co., 298 U.S. 238 (1936)",
-      "Department of Transportation v. Association of American Railroads, 575 U.S. 43 (2015)",
-      "Alpine Securities Corp. v. FINRA, 121 F.4th 1314 (D.C. Cir. 2024)"
-     ],
-     "clarity": 1,
      "code": "private_delegation",
+     "counters": [],
+     "elements_found": [
+      "private",
+      "binding",
+      "no_prior_review"
+     ],
+     "elements_total": 3,
+     "flagrance": 1,
      "group": "structural",
      "impact": 1,
-     "label": "Government power exercised by a private corporation",
-     "rating_notes": [
-      "routine exchange or clearing-agency filing (seriousness lowered)"
-     ],
      "structural": true,
+     "tier": 1,
+     "tier_authority": "consumers_research",
      "triggers": [
       "issued by an agency-supervised private corporation"
-     ],
-     "why": "This action comes from a private, agency-supervised corporation. Delegating government power to private entities is limited by the private nondelegation doctrine and by Article II."
+     ]
     }
    ],
    "fr_agency_names": [
@@ -1157,17 +1361,30 @@
    "outcome": "proposed",
    "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-11-20/pdf/2026-23647.pdf",
    "priority": 1,
+   "published": "2026-11-20",
    "rins": [],
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "self-regulatory filing"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
    "severity": {
-    "clarity": 1,
+    "flagrance": 1,
     "impact": 1,
     "score": 1
    },
    "significant": false,
    "source": "federal_register",
    "source_label": "Federal Register",
-   "subcategory": "Rule filing by self-regulatory organization",
+   "subcategory": "Rule change by self-regulatory organization",
    "subtype": "",
    "summary": "",
    "title": "Self-Regulatory Organizations; 24X National Exchange LLC; Notice of Filing and Immediate Effectiveness of Proposed Rule Change To Amend the Limited Liability Agreement of 24X US Holdings LLC in Connection With the Expansion of the Warrant Performance Incentive Program",
@@ -1182,6 +1399,7 @@
    "comments_close": null,
    "corporation": "other_sro",
    "date": "2026-11-20",
+   "date_basis": "published",
    "doc_type": "Notice",
    "docket_ids": [
     "Release No. 34-106915",
@@ -1192,24 +1410,23 @@
    "first_seen": "2026-11-20T13:36:00+00:00",
    "flags": [
     {
-     "authorities": [
-      "Carter v. Carter Coal Co., 298 U.S. 238 (1936)",
-      "Department of Transportation v. Association of American Railroads, 575 U.S. 43 (2015)",
-      "Alpine Securities Corp. v. FINRA, 121 F.4th 1314 (D.C. Cir. 2024)"
-     ],
-     "clarity": 1,
      "code": "private_delegation",
+     "counters": [],
+     "elements_found": [
+      "private",
+      "binding",
+      "no_prior_review"
+     ],
+     "elements_total": 3,
+     "flagrance": 1,
      "group": "structural",
      "impact": 1,
-     "label": "Government power exercised by a private corporation",
-     "rating_notes": [
-      "routine exchange or clearing-agency filing (seriousness lowered)"
-     ],
      "structural": true,
+     "tier": 1,
+     "tier_authority": "consumers_research",
      "triggers": [
       "issued by an agency-supervised private corporation"
-     ],
-     "why": "This action comes from a private, agency-supervised corporation. Delegating government power to private entities is limited by the private nondelegation doctrine and by Article II."
+     ]
     }
    ],
    "fr_agency_names": [
@@ -1223,17 +1440,30 @@
    "outcome": "proposed",
    "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-11-20/pdf/2026-23646.pdf",
    "priority": 1,
+   "published": "2026-11-20",
    "rins": [],
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "self-regulatory filing"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
    "severity": {
-    "clarity": 1,
+    "flagrance": 1,
     "impact": 1,
     "score": 1
    },
    "significant": false,
    "source": "federal_register",
    "source_label": "Federal Register",
-   "subcategory": "Rule filing by self-regulatory organization",
+   "subcategory": "Rule change by self-regulatory organization",
    "subtype": "",
    "summary": "",
    "title": "Self-Regulatory Organizations; Cboe BZX Exchange, Inc.; Notice of Filing and Immediate Effectiveness of a Proposed Rule Change To Amend Rules 21.2(a), 21.6(c), and 21.7(b)(1) and (c) for the Queuing Period, Order and Quote Entry, and Opening Auction Times Regarding the Global Trading Hours (“GTH”) Sessions",
@@ -1248,6 +1478,7 @@
    "comments_close": null,
    "corporation": "other_sro",
    "date": "2026-11-20",
+   "date_basis": "published",
    "doc_type": "Notice",
    "docket_ids": [
     "Release No. 34-106914",
@@ -1258,24 +1489,23 @@
    "first_seen": "2026-11-20T13:36:00+00:00",
    "flags": [
     {
-     "authorities": [
-      "Carter v. Carter Coal Co., 298 U.S. 238 (1936)",
-      "Department of Transportation v. Association of American Railroads, 575 U.S. 43 (2015)",
-      "Alpine Securities Corp. v. FINRA, 121 F.4th 1314 (D.C. Cir. 2024)"
-     ],
-     "clarity": 1,
      "code": "private_delegation",
+     "counters": [],
+     "elements_found": [
+      "private",
+      "binding",
+      "no_prior_review"
+     ],
+     "elements_total": 3,
+     "flagrance": 1,
      "group": "structural",
      "impact": 1,
-     "label": "Government power exercised by a private corporation",
-     "rating_notes": [
-      "routine exchange or clearing-agency filing (seriousness lowered)"
-     ],
      "structural": true,
+     "tier": 1,
+     "tier_authority": "consumers_research",
      "triggers": [
       "issued by an agency-supervised private corporation"
-     ],
-     "why": "This action comes from a private, agency-supervised corporation. Delegating government power to private entities is limited by the private nondelegation doctrine and by Article II."
+     ]
     }
    ],
    "fr_agency_names": [
@@ -1289,17 +1519,30 @@
    "outcome": "proposed",
    "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-11-20/pdf/2026-23645.pdf",
    "priority": 1,
+   "published": "2026-11-20",
    "rins": [],
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "self-regulatory filing"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
    "severity": {
-    "clarity": 1,
+    "flagrance": 1,
     "impact": 1,
     "score": 1
    },
    "significant": false,
    "source": "federal_register",
    "source_label": "Federal Register",
-   "subcategory": "Rule filing by self-regulatory organization",
+   "subcategory": "Rule change by self-regulatory organization",
    "subtype": "",
    "summary": "",
    "title": "Self-Regulatory Organizations; Cboe EDGX Exchange, Inc.; Notice of Filing and Immediate Effectiveness of a Proposed Rule Change To Amend Rules 21.6(b) and 21.7(b)(1) and (c) for the Queuing Period, Order and Quote Entry, and Opening Auction Times Regarding the Global Trading Hours (“GTH”) Sessions",
@@ -1314,6 +1557,7 @@
    "comments_close": null,
    "corporation": "other_sro",
    "date": "2026-11-20",
+   "date_basis": "published",
    "doc_type": "Notice",
    "docket_ids": [
     "Release No. 34-106923",
@@ -1324,24 +1568,23 @@
    "first_seen": "2026-11-20T13:36:00+00:00",
    "flags": [
     {
-     "authorities": [
-      "Carter v. Carter Coal Co., 298 U.S. 238 (1936)",
-      "Department of Transportation v. Association of American Railroads, 575 U.S. 43 (2015)",
-      "Alpine Securities Corp. v. FINRA, 121 F.4th 1314 (D.C. Cir. 2024)"
-     ],
-     "clarity": 1,
      "code": "private_delegation",
+     "counters": [],
+     "elements_found": [
+      "private",
+      "binding",
+      "no_prior_review"
+     ],
+     "elements_total": 3,
+     "flagrance": 1,
      "group": "structural",
      "impact": 1,
-     "label": "Government power exercised by a private corporation",
-     "rating_notes": [
-      "routine exchange or clearing-agency filing (seriousness lowered)"
-     ],
      "structural": true,
+     "tier": 1,
+     "tier_authority": "consumers_research",
      "triggers": [
       "issued by an agency-supervised private corporation"
-     ],
-     "why": "This action comes from a private, agency-supervised corporation. Delegating government power to private entities is limited by the private nondelegation doctrine and by Article II."
+     ]
     }
    ],
    "fr_agency_names": [
@@ -1355,17 +1598,30 @@
    "outcome": "proposed",
    "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-11-20/pdf/2026-23653.pdf",
    "priority": 1,
+   "published": "2026-11-20",
    "rins": [],
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "self-regulatory filing"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
    "severity": {
-    "clarity": 1,
+    "flagrance": 1,
     "impact": 1,
     "score": 1
    },
    "significant": false,
    "source": "federal_register",
    "source_label": "Federal Register",
-   "subcategory": "Rule filing by self-regulatory organization",
+   "subcategory": "Rule change by self-regulatory organization",
    "subtype": "",
    "summary": "",
    "title": "Self-Regulatory Organizations; Coinbase Derivatives, LLC; Notice of Filing and Immediate Effectiveness of a Proposed Rule Change Relating to Customer Margin Requirements for Security Futures Products",
@@ -1380,6 +1636,7 @@
    "comments_close": null,
    "corporation": "other_sro",
    "date": "2026-11-20",
+   "date_basis": "published",
    "doc_type": "Notice",
    "docket_ids": [
     "Release No. 34-106921",
@@ -1390,24 +1647,22 @@
    "first_seen": "2026-11-20T13:36:00+00:00",
    "flags": [
     {
-     "authorities": [
-      "Carter v. Carter Coal Co., 298 U.S. 238 (1936)",
-      "Department of Transportation v. Association of American Railroads, 575 U.S. 43 (2015)",
-      "Alpine Securities Corp. v. FINRA, 121 F.4th 1314 (D.C. Cir. 2024)"
-     ],
-     "clarity": 1,
      "code": "private_delegation",
+     "counters": [],
+     "elements_found": [
+      "private",
+      "binding"
+     ],
+     "elements_total": 3,
+     "flagrance": 1,
      "group": "structural",
      "impact": 1,
-     "label": "Government power exercised by a private corporation",
-     "rating_notes": [
-      "routine exchange or clearing-agency filing (seriousness lowered)"
-     ],
      "structural": true,
+     "tier": 1,
+     "tier_authority": "consumers_research",
      "triggers": [
       "issued by an agency-supervised private corporation"
-     ],
-     "why": "This action comes from a private, agency-supervised corporation. Delegating government power to private entities is limited by the private nondelegation doctrine and by Article II."
+     ]
     }
    ],
    "fr_agency_names": [
@@ -1421,17 +1676,30 @@
    "outcome": "proposed",
    "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-11-20/pdf/2026-23652.pdf",
    "priority": 1,
+   "published": "2026-11-20",
    "rins": [],
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "self-regulatory filing"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
    "severity": {
-    "clarity": 1,
+    "flagrance": 1,
     "impact": 1,
     "score": 1
    },
    "significant": false,
    "source": "federal_register",
    "source_label": "Federal Register",
-   "subcategory": "Rule filing by self-regulatory organization",
+   "subcategory": "Rule change by self-regulatory organization",
    "subtype": "",
    "summary": "",
    "title": "Self-Regulatory Organizations; ICE Clear Credit LLC; Notice of Filing of Proposed Rule Change Relating to the CDS Clearing Rules, End-of-Day Price Discovery Policies and Procedures, Default Auction Procedures-Initial Default Auctions, and Secondary Auction Procedures",
@@ -1446,6 +1714,7 @@
    "comments_close": null,
    "corporation": "other_sro",
    "date": "2026-11-20",
+   "date_basis": "published",
    "doc_type": "Notice",
    "docket_ids": [
     "Release No. 34-106920",
@@ -1456,24 +1725,23 @@
    "first_seen": "2026-11-20T13:36:00+00:00",
    "flags": [
     {
-     "authorities": [
-      "Carter v. Carter Coal Co., 298 U.S. 238 (1936)",
-      "Department of Transportation v. Association of American Railroads, 575 U.S. 43 (2015)",
-      "Alpine Securities Corp. v. FINRA, 121 F.4th 1314 (D.C. Cir. 2024)"
-     ],
-     "clarity": 1,
      "code": "private_delegation",
+     "counters": [],
+     "elements_found": [
+      "private",
+      "binding",
+      "no_prior_review"
+     ],
+     "elements_total": 3,
+     "flagrance": 1,
      "group": "structural",
      "impact": 1,
-     "label": "Government power exercised by a private corporation",
-     "rating_notes": [
-      "routine exchange or clearing-agency filing (seriousness lowered)"
-     ],
      "structural": true,
+     "tier": 1,
+     "tier_authority": "consumers_research",
      "triggers": [
       "issued by an agency-supervised private corporation"
-     ],
-     "why": "This action comes from a private, agency-supervised corporation. Delegating government power to private entities is limited by the private nondelegation doctrine and by Article II."
+     ]
     }
    ],
    "fr_agency_names": [
@@ -1487,17 +1755,30 @@
    "outcome": "proposed",
    "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-11-20/pdf/2026-23651.pdf",
    "priority": 1,
+   "published": "2026-11-20",
    "rins": [],
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "self-regulatory filing"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
    "severity": {
-    "clarity": 1,
+    "flagrance": 1,
     "impact": 1,
     "score": 1
    },
    "significant": false,
    "source": "federal_register",
    "source_label": "Federal Register",
-   "subcategory": "Rule filing by self-regulatory organization",
+   "subcategory": "Rule change by self-regulatory organization",
    "subtype": "",
    "summary": "",
    "title": "Self-Regulatory Organizations; Investors Exchange LLC; Notice of Filing and Immediate Effectiveness of Proposed Rule Change To Amend Rule 11.270 Clearly Erroneous Executions",
@@ -1512,6 +1793,7 @@
    "comments_close": null,
    "corporation": "other_sro",
    "date": "2026-11-20",
+   "date_basis": "published",
    "doc_type": "Notice",
    "docket_ids": [
     "Release No. 34-106919",
@@ -1522,24 +1804,23 @@
    "first_seen": "2026-11-20T13:36:00+00:00",
    "flags": [
     {
-     "authorities": [
-      "Carter v. Carter Coal Co., 298 U.S. 238 (1936)",
-      "Department of Transportation v. Association of American Railroads, 575 U.S. 43 (2015)",
-      "Alpine Securities Corp. v. FINRA, 121 F.4th 1314 (D.C. Cir. 2024)"
-     ],
-     "clarity": 1,
      "code": "private_delegation",
+     "counters": [],
+     "elements_found": [
+      "private",
+      "binding",
+      "no_prior_review"
+     ],
+     "elements_total": 3,
+     "flagrance": 1,
      "group": "structural",
      "impact": 1,
-     "label": "Government power exercised by a private corporation",
-     "rating_notes": [
-      "routine exchange or clearing-agency filing (seriousness lowered)"
-     ],
      "structural": true,
+     "tier": 1,
+     "tier_authority": "consumers_research",
      "triggers": [
       "issued by an agency-supervised private corporation"
-     ],
-     "why": "This action comes from a private, agency-supervised corporation. Delegating government power to private entities is limited by the private nondelegation doctrine and by Article II."
+     ]
     }
    ],
    "fr_agency_names": [
@@ -1553,17 +1834,30 @@
    "outcome": "proposed",
    "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-11-20/pdf/2026-23650.pdf",
    "priority": 1,
+   "published": "2026-11-20",
    "rins": [],
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "self-regulatory filing"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
    "severity": {
-    "clarity": 1,
+    "flagrance": 1,
     "impact": 1,
     "score": 1
    },
    "significant": false,
    "source": "federal_register",
    "source_label": "Federal Register",
-   "subcategory": "Rule filing by self-regulatory organization",
+   "subcategory": "Rule change by self-regulatory organization",
    "subtype": "",
    "summary": "",
    "title": "Self-Regulatory Organizations; MEMX LLC; Notice of Filing and Immediate Effectiveness of a Proposed Rule Change To Amend Its Rules To Permit the Listing of Binary Options Overlying Key Performance Indicators",
@@ -1578,6 +1872,7 @@
    "comments_close": null,
    "corporation": "other_sro",
    "date": "2026-11-20",
+   "date_basis": "published",
    "doc_type": "Notice",
    "docket_ids": [
     "Release No. 34-106918",
@@ -1588,24 +1883,23 @@
    "first_seen": "2026-11-20T13:36:00+00:00",
    "flags": [
     {
-     "authorities": [
-      "Carter v. Carter Coal Co., 298 U.S. 238 (1936)",
-      "Department of Transportation v. Association of American Railroads, 575 U.S. 43 (2015)",
-      "Alpine Securities Corp. v. FINRA, 121 F.4th 1314 (D.C. Cir. 2024)"
-     ],
-     "clarity": 1,
      "code": "private_delegation",
+     "counters": [],
+     "elements_found": [
+      "private",
+      "binding",
+      "no_prior_review"
+     ],
+     "elements_total": 3,
+     "flagrance": 1,
      "group": "structural",
      "impact": 1,
-     "label": "Government power exercised by a private corporation",
-     "rating_notes": [
-      "routine exchange or clearing-agency filing (seriousness lowered)"
-     ],
      "structural": true,
+     "tier": 1,
+     "tier_authority": "consumers_research",
      "triggers": [
       "issued by an agency-supervised private corporation"
-     ],
-     "why": "This action comes from a private, agency-supervised corporation. Delegating government power to private entities is limited by the private nondelegation doctrine and by Article II."
+     ]
     }
    ],
    "fr_agency_names": [
@@ -1619,21 +1913,113 @@
    "outcome": "proposed",
    "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-11-20/pdf/2026-23649.pdf",
    "priority": 1,
+   "published": "2026-11-20",
    "rins": [],
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "self-regulatory filing"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
    "severity": {
-    "clarity": 1,
+    "flagrance": 1,
     "impact": 1,
     "score": 1
    },
    "significant": false,
    "source": "federal_register",
    "source_label": "Federal Register",
-   "subcategory": "Rule filing by self-regulatory organization",
+   "subcategory": "Rule change by self-regulatory organization",
    "subtype": "",
    "summary": "",
    "title": "Self-Regulatory Organizations; Miami International Securities Exchange, LLC; Notice of Filing and Immediate Effectiveness of a Proposed Rule Change To Permit the Listing of Binary Options Overlying Key Performance Indicators Reported by Certain Issuers of Stock",
    "url": "https://www.federalregister.gov/documents/2026/11/20/2026-23649/self-regulatory-organizations-miami-international-securities-exchange-llc-notice-of-filing-and"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "sec"
+   ],
+   "category": "rulemaking",
+   "comments_close": null,
+   "corporation": "msrb",
+   "date": "2026-11-20",
+   "date_basis": "published",
+   "doc_type": "Notice",
+   "docket_ids": [
+    "Release No. 34-106917",
+    "File No. SR-MSRB-2026-05"
+   ],
+   "effective_on": null,
+   "eo_number": null,
+   "first_seen": "2026-11-20T13:36:00+00:00",
+   "flags": [
+    {
+     "code": "private_delegation",
+     "counters": [],
+     "elements_found": [
+      "private",
+      "binding",
+      "no_prior_review"
+     ],
+     "elements_total": 3,
+     "flagrance": 1,
+     "group": "structural",
+     "impact": 1,
+     "structural": true,
+     "tier": 1,
+     "tier_authority": "consumers_research",
+     "triggers": [
+      "issued by an agency-supervised private corporation"
+     ]
+    }
+   ],
+   "fr_agency_names": [
+    "Securities and Exchange Commission"
+   ],
+   "fr_agency_slugs": [
+    "securities-and-exchange-commission"
+   ],
+   "id": "fr:2026-23648",
+   "jurisdiction": "federal",
+   "outcome": "proposed",
+   "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-11-20/pdf/2026-23648.pdf",
+   "priority": 1,
+   "published": "2026-11-20",
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "self-regulatory filing"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
+   "severity": {
+    "flagrance": 1,
+    "impact": 1,
+    "score": 1
+   },
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Rule change by self-regulatory organization",
+   "subtype": "",
+   "summary": "",
+   "title": "Self-Regulatory Organizations; Municipal Securities Rulemaking Board; Notice of Filing and Immediate Effectiveness of a Proposed Rule Change To Amend MSRB Rule G-3, on Professional Qualification Requirements, To Reduce the Waiting Periods for Retaking Professional Qualification Examinations for Brokers, Dealers, and Municipal Securities Dealers and Municipal Advisors to Preserve Alignment With FINRA Rule 1210.06",
+   "url": "https://www.federalregister.gov/documents/2026/11/20/2026-23648/self-regulatory-organizations-municipal-securities-rulemaking-board-notice-of-filing-and-immediate"
   },
   {
    "action": "",
@@ -1644,6 +2030,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-11-20",
+   "date_basis": "published",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2026-P-14761"
@@ -1655,8 +2042,21 @@
    "jurisdiction": "federal",
    "outcome": "notice",
    "priority": 0,
+   "published": "2026-11-20",
    "regs_agency_id": "FDA",
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
    "severity": null,
    "source": "regulations_gov",
    "source_label": "Regulations.gov",
@@ -1676,6 +2076,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-11-20",
+   "date_basis": "published",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2026-V-9487"
@@ -1687,8 +2088,21 @@
    "jurisdiction": "federal",
    "outcome": "applied",
    "priority": 0,
+   "published": "2026-11-20",
    "regs_agency_id": "FDA",
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
    "severity": null,
    "source": "regulations_gov",
    "source_label": "Regulations.gov",
@@ -1708,6 +2122,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-11-20",
+   "date_basis": "published",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2026-V-13767"
@@ -1719,8 +2134,21 @@
    "jurisdiction": "federal",
    "outcome": "applied",
    "priority": 0,
+   "published": "2026-11-20",
    "regs_agency_id": "FDA",
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
    "severity": null,
    "source": "regulations_gov",
    "source_label": "Regulations.gov",
@@ -1740,6 +2168,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-11-20",
+   "date_basis": "published",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2026-V-14556"
@@ -1751,8 +2180,21 @@
    "jurisdiction": "federal",
    "outcome": "applied",
    "priority": 0,
+   "published": "2026-11-20",
    "regs_agency_id": "FDA",
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
    "severity": null,
    "source": "regulations_gov",
    "source_label": "Regulations.gov",
@@ -1772,6 +2214,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-11-20",
+   "date_basis": "published",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2026-V-13632"
@@ -1783,8 +2226,21 @@
    "jurisdiction": "federal",
    "outcome": "applied",
    "priority": 0,
+   "published": "2026-11-20",
    "regs_agency_id": "FDA",
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
    "severity": null,
    "source": "regulations_gov",
    "source_label": "Regulations.gov",
@@ -1804,6 +2260,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-11-20",
+   "date_basis": "published",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2026-V-13631"
@@ -1815,8 +2272,21 @@
    "jurisdiction": "federal",
    "outcome": "applied",
    "priority": 0,
+   "published": "2026-11-20",
    "regs_agency_id": "FDA",
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
    "severity": null,
    "source": "regulations_gov",
    "source_label": "Regulations.gov",
@@ -1836,6 +2306,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-11-20",
+   "date_basis": "published",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2026-V-14167"
@@ -1847,8 +2318,21 @@
    "jurisdiction": "federal",
    "outcome": "applied",
    "priority": 0,
+   "published": "2026-11-20",
    "regs_agency_id": "FDA",
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
    "severity": null,
    "source": "regulations_gov",
    "source_label": "Regulations.gov",
@@ -1868,6 +2352,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-11-20",
+   "date_basis": "published",
    "doc_type": "Notice",
    "docket_ids": [
     "Investment Company Act Release No. 36393",
@@ -1888,8 +2373,21 @@
    "outcome": "notice",
    "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-11-20/pdf/2026-23660.pdf",
    "priority": 0,
+   "published": "2026-11-20",
    "rins": [],
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
    "severity": null,
    "significant": false,
    "source": "federal_register",
@@ -1909,6 +2407,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-11-20",
+   "date_basis": "published",
    "doc_type": "Notice",
    "docket_ids": [
     "Investment Company Act Release No. 36392",
@@ -1929,8 +2428,21 @@
    "outcome": "notice",
    "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-11-20/pdf/2026-23658.pdf",
    "priority": 0,
+   "published": "2026-11-20",
    "rins": [],
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
    "severity": null,
    "significant": false,
    "source": "federal_register",
@@ -1950,6 +2462,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-11-20",
+   "date_basis": "published",
    "doc_type": "Notice",
    "docket_ids": [
     "Document Identifier: CMS-10858"
@@ -1971,13 +2484,26 @@
    "outcome": "notice",
    "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-11-20/pdf/2026-23628.pdf",
    "priority": 0,
+   "published": "2026-11-20",
    "rins": [],
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
    "severity": null,
    "significant": false,
    "source": "federal_register",
    "source_label": "Federal Register",
-   "subcategory": "Information collection, privacy or paperwork notice",
+   "subcategory": "Information collection, privacy, or paperwork notice",
    "subtype": "",
    "summary": "On November 13, 2026, CMS published a notice in the Federal Register that sought comment on a collection of information concerning CMS-10858 (OMB control number 0938-1474) entitled \"Rebate Reduction Requests under Sections 11101 and 11102 of the Inflation Reduction Act (IRA).\" The OMB control number is incorrectly listed in 35th line within the left column of the notice. This document corrects the error.",
    "title": "Agency Information Collection Activities: Submission for OMB Review; Comment Request; Correction",
@@ -1992,6 +2518,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-11-20",
+   "date_basis": "published",
    "doc_type": "Notice",
    "docket_ids": [
     "OMB Control No. 3235-0238"
@@ -2011,13 +2538,26 @@
    "outcome": "notice",
    "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-11-20/pdf/2026-23664.pdf",
    "priority": 0,
+   "published": "2026-11-20",
    "rins": [],
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
    "severity": null,
    "significant": false,
    "source": "federal_register",
    "source_label": "Federal Register",
-   "subcategory": "Information collection, privacy or paperwork notice",
+   "subcategory": "Information collection, privacy, or paperwork notice",
    "subtype": "",
    "summary": "",
    "title": "Agency Information Collection Activities; Submission for OMB Review; Comment Request; Extension: Form N-6F",
@@ -2032,6 +2572,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-11-20",
+   "date_basis": "published",
    "doc_type": "Notice",
    "docket_ids": [
     "OMB Control No. 3235-0639"
@@ -2051,13 +2592,26 @@
    "outcome": "notice",
    "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-11-20/pdf/2026-23663.pdf",
    "priority": 0,
+   "published": "2026-11-20",
    "rins": [],
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
    "severity": null,
    "significant": false,
    "source": "federal_register",
    "source_label": "Federal Register",
-   "subcategory": "Information collection, privacy or paperwork notice",
+   "subcategory": "Information collection, privacy, or paperwork notice",
    "subtype": "",
    "summary": "",
    "title": "Agency Information Collection Activities; Submission for OMB Review; Comment Request; Extension: Rule 12d1-4",
@@ -2072,6 +2626,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-11-20",
+   "date_basis": "published",
    "doc_type": "Notice",
    "docket_ids": [
     "OMB Control No. 3235-0807"
@@ -2091,13 +2646,26 @@
    "outcome": "notice",
    "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-11-20/pdf/2026-23662.pdf",
    "priority": 0,
+   "published": "2026-11-20",
    "rins": [],
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
    "severity": null,
    "significant": false,
    "source": "federal_register",
    "source_label": "Federal Register",
-   "subcategory": "Information collection, privacy or paperwork notice",
+   "subcategory": "Information collection, privacy, or paperwork notice",
    "subtype": "",
    "summary": "",
    "title": "Agency Information Collection Activities; Submission for OMB Review; Comment Request; Extension: Securities Act Rule 192",
@@ -2112,6 +2680,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-11-20",
+   "date_basis": "published",
    "doc_type": "Rule",
    "docket_ids": [
     "EPA-R04-OAR-2025-0244",
@@ -2132,8 +2701,21 @@
    "outcome": "final",
    "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-11-20/pdf/2026-23685.pdf",
    "priority": 0,
+   "published": "2026-11-20",
    "rins": [],
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 2,
+      "why": "binding rule"
+     }
+    ],
+    "level": 1,
+    "points": 2
+   },
    "severity": null,
    "significant": false,
    "source": "federal_register",
@@ -2153,6 +2735,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-11-20",
+   "date_basis": "published",
    "doc_type": "Notice",
    "docket_ids": [
     "Investment Company Act Release No. 36391",
@@ -2173,8 +2756,21 @@
    "outcome": "notice",
    "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-11-20/pdf/2026-23659.pdf",
    "priority": 0,
+   "published": "2026-11-20",
    "rins": [],
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
    "severity": null,
    "significant": false,
    "source": "federal_register",
@@ -2194,6 +2790,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-11-20",
+   "date_basis": "published",
    "doc_type": "Notice",
    "docket_ids": [],
    "effective_on": null,
@@ -2213,8 +2810,21 @@
    "outcome": "notice",
    "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-11-20/pdf/2026-23621.pdf",
    "priority": 0,
+   "published": "2026-11-20",
    "rins": [],
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
    "severity": null,
    "significant": false,
    "source": "federal_register",
@@ -2234,6 +2844,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-11-20",
+   "date_basis": "published",
    "doc_type": "Notice",
    "docket_ids": [],
    "effective_on": null,
@@ -2253,8 +2864,21 @@
    "outcome": "notice",
    "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-11-20/pdf/2026-23725.pdf",
    "priority": 0,
+   "published": "2026-11-20",
    "rins": [],
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
    "severity": null,
    "significant": false,
    "source": "federal_register",
@@ -2274,6 +2898,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-11-20",
+   "date_basis": "published",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2026-P-14761"
@@ -2285,8 +2910,21 @@
    "jurisdiction": "federal",
    "outcome": "notice",
    "priority": 0,
+   "published": "2026-11-20",
    "regs_agency_id": "FDA",
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
    "severity": null,
    "source": "regulations_gov",
    "source_label": "Regulations.gov",
@@ -2306,6 +2944,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-11-20",
+   "date_basis": "published",
    "doc_type": "Notice",
    "docket_ids": [],
    "effective_on": null,
@@ -2325,13 +2964,26 @@
    "outcome": "applied",
    "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-11-20/pdf/2026-23675.pdf",
    "priority": 0,
+   "published": "2026-11-20",
    "rins": [],
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
    "severity": null,
    "significant": false,
    "source": "federal_register",
    "source_label": "Federal Register",
-   "subcategory": "Applications, filings & licensing",
+   "subcategory": "Applications, filings, and licensing",
    "subtype": "",
    "summary": "",
    "title": "Combined Notice of Filings",
@@ -2346,6 +2998,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-11-20",
+   "date_basis": "published",
    "doc_type": "Notice",
    "docket_ids": [],
    "effective_on": null,
@@ -2365,13 +3018,26 @@
    "outcome": "applied",
    "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-11-20/pdf/2026-23672.pdf",
    "priority": 0,
+   "published": "2026-11-20",
    "rins": [],
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
    "severity": null,
    "significant": false,
    "source": "federal_register",
    "source_label": "Federal Register",
-   "subcategory": "Applications, filings & licensing",
+   "subcategory": "Applications, filings, and licensing",
    "subtype": "",
    "summary": "",
    "title": "Combined Notice of Filings #1",
@@ -2386,6 +3052,7 @@
    "comments_close": "2027-01-20",
    "corporation": null,
    "date": "2026-11-20",
+   "date_basis": "published",
    "doc_type": "Proposed Rule",
    "docket_ids": [
     "CMS-2026-3533"
@@ -2397,8 +3064,21 @@
    "jurisdiction": "federal",
    "outcome": "proposed",
    "priority": 0,
+   "published": "2026-11-20",
    "regs_agency_id": "CMS",
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 2,
+      "why": "binding rule"
+     }
+    ],
+    "level": 1,
+    "points": 2
+   },
    "severity": null,
    "source": "regulations_gov",
    "source_label": "Regulations.gov",
@@ -2418,6 +3098,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-11-20",
+   "date_basis": "published",
    "doc_type": "Notice",
    "docket_ids": [],
    "effective_on": null,
@@ -2437,8 +3118,21 @@
    "outcome": "notice",
    "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-11-20/pdf/2026-23703.pdf",
    "priority": 0,
+   "published": "2026-11-20",
    "rins": [],
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
    "severity": null,
    "significant": false,
    "source": "federal_register",
@@ -2458,6 +3152,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-11-20",
+   "date_basis": "published",
    "doc_type": "Notice",
    "docket_ids": [
     "Docket No. AC27-4-000"
@@ -2479,13 +3174,26 @@
    "outcome": "applied",
    "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-11-20/pdf/2026-23670.pdf",
    "priority": 0,
+   "published": "2026-11-20",
    "rins": [],
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
    "severity": null,
    "significant": false,
    "source": "federal_register",
    "source_label": "Federal Register",
-   "subcategory": "Applications, filings & licensing",
+   "subcategory": "Applications, filings, and licensing",
    "subtype": "",
    "summary": "",
    "title": "Empire Pipeline, Inc.; Notice Of Filing",
@@ -2500,6 +3208,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-11-20",
+   "date_basis": "published",
    "doc_type": "Notice",
    "docket_ids": [
     "FRL OPRM-FAD-249"
@@ -2519,8 +3228,21 @@
    "outcome": "notice",
    "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-11-20/pdf/2026-23699.pdf",
    "priority": 0,
+   "published": "2026-11-20",
    "rins": [],
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
    "severity": null,
    "significant": false,
    "source": "federal_register",
@@ -2539,6 +3261,7 @@
    "category": "enforcement",
    "corporation": null,
    "date": "2026-11-20",
+   "date_basis": "published",
    "doc_type": "Federal court action (litigation release)",
    "first_seen": "2026-11-21T13:22:09+00:00",
    "flags": [],
@@ -2546,7 +3269,20 @@
    "jurisdiction": "federal",
    "outcome": "initiated",
    "priority": 0,
+   "published": "2026-11-20",
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
    "severity": null,
    "source": "sec_litigation",
    "source_label": "SEC litigation releases (federal court actions)",
@@ -2565,6 +3301,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-11-20",
+   "date_basis": "published",
    "doc_type": "Notice",
    "docket_ids": [],
    "effective_on": null,
@@ -2582,8 +3319,21 @@
    "outcome": "notice",
    "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-11-20/pdf/2026-23714.pdf",
    "priority": 0,
+   "published": "2026-11-20",
    "rins": [],
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
    "severity": null,
    "significant": false,
    "source": "federal_register",
@@ -2603,6 +3353,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-11-20",
+   "date_basis": "published",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2026-P-6403"
@@ -2614,8 +3365,21 @@
    "jurisdiction": "federal",
    "outcome": "notice",
    "priority": 0,
+   "published": "2026-11-20",
    "regs_agency_id": "FDA",
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
    "severity": null,
    "source": "regulations_gov",
    "source_label": "Regulations.gov",
@@ -2635,6 +3399,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-11-20",
+   "date_basis": "published",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2026-P-6251"
@@ -2646,8 +3411,21 @@
    "jurisdiction": "federal",
    "outcome": "notice",
    "priority": 0,
+   "published": "2026-11-20",
    "regs_agency_id": "FDA",
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
    "severity": null,
    "source": "regulations_gov",
    "source_label": "Regulations.gov",
@@ -2667,6 +3445,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-11-20",
+   "date_basis": "published",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2026-P-5992"
@@ -2678,8 +3457,21 @@
    "jurisdiction": "federal",
    "outcome": "notice",
    "priority": 0,
+   "published": "2026-11-20",
    "regs_agency_id": "FDA",
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
    "severity": null,
    "source": "regulations_gov",
    "source_label": "Regulations.gov",
@@ -2698,6 +3490,7 @@
    "category": "enforcement",
    "corporation": null,
    "date": "2026-11-20",
+   "date_basis": "published",
    "doc_type": "Federal court action (litigation release)",
    "first_seen": "2026-11-21T13:22:09+00:00",
    "flags": [],
@@ -2705,7 +3498,20 @@
    "jurisdiction": "federal",
    "outcome": "initiated",
    "priority": 0,
+   "published": "2026-11-20",
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
    "severity": null,
    "source": "sec_litigation",
    "source_label": "SEC litigation releases (federal court actions)",
@@ -2724,6 +3530,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-11-20",
+   "date_basis": "published",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2015-N-0030"
@@ -2735,8 +3542,21 @@
    "jurisdiction": "federal",
    "outcome": "notice",
    "priority": 0,
+   "published": "2026-11-20",
    "regs_agency_id": "FDA",
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
    "severity": null,
    "source": "regulations_gov",
    "source_label": "Regulations.gov",
@@ -2756,6 +3576,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-11-20",
+   "date_basis": "published",
    "doc_type": "Rule",
    "docket_ids": [
     "EPA-HQ-OPP-2025-1444",
@@ -2776,8 +3597,21 @@
    "outcome": "final",
    "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-11-20/pdf/2026-23667.pdf",
    "priority": 0,
+   "published": "2026-11-20",
    "rins": [],
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 2,
+      "why": "binding rule"
+     }
+    ],
+    "level": 1,
+    "points": 2
+   },
    "severity": null,
    "significant": false,
    "source": "federal_register",
@@ -2797,6 +3631,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-11-20",
+   "date_basis": "published",
    "doc_type": "Notice",
    "docket_ids": [
     "Project No. 5930-003"
@@ -2818,8 +3653,21 @@
    "outcome": "notice",
    "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-11-20/pdf/2026-23673.pdf",
    "priority": 0,
+   "published": "2026-11-20",
    "rins": [],
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
    "severity": null,
    "significant": false,
    "source": "federal_register",
@@ -2839,6 +3687,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-11-20",
+   "date_basis": "published",
    "doc_type": "Notice",
    "docket_ids": [
     "Project No. 2188-304"
@@ -2860,8 +3709,21 @@
    "outcome": "notice",
    "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-11-20/pdf/2026-23671.pdf",
    "priority": 0,
+   "published": "2026-11-20",
    "rins": [],
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
    "severity": null,
    "significant": false,
    "source": "federal_register",
@@ -2881,6 +3743,7 @@
    "comments_close": "2027-01-20",
    "corporation": null,
    "date": "2026-11-20",
+   "date_basis": "published",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2007-D-0369"
@@ -2892,12 +3755,25 @@
    "jurisdiction": "federal",
    "outcome": "guidance",
    "priority": 0,
+   "published": "2026-11-20",
    "regs_agency_id": "FDA",
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
    "severity": null,
    "source": "regulations_gov",
    "source_label": "Regulations.gov",
-   "subcategory": "Guidance, interpretation or request for comment",
+   "subcategory": "Guidance, interpretation, or request for comment",
    "subtype": "Guidance",
    "summary": "",
    "title": "PSG_008915 - Draft Guidance on Carbinoxamine Maleate",
@@ -2913,6 +3789,7 @@
    "comments_close": "2027-01-20",
    "corporation": null,
    "date": "2026-11-20",
+   "date_basis": "published",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2007-D-0369"
@@ -2924,12 +3801,25 @@
    "jurisdiction": "federal",
    "outcome": "guidance",
    "priority": 0,
+   "published": "2026-11-20",
    "regs_agency_id": "FDA",
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
    "severity": null,
    "source": "regulations_gov",
    "source_label": "Regulations.gov",
-   "subcategory": "Guidance, interpretation or request for comment",
+   "subcategory": "Guidance, interpretation, or request for comment",
    "subtype": "Guidance",
    "summary": "",
    "title": "PSG_009829 - Draft Guidance on Pyridostigmine Bromide",
@@ -2945,6 +3835,7 @@
    "comments_close": "2027-01-20",
    "corporation": null,
    "date": "2026-11-20",
+   "date_basis": "published",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2007-D-0369"
@@ -2956,12 +3847,25 @@
    "jurisdiction": "federal",
    "outcome": "guidance",
    "priority": 0,
+   "published": "2026-11-20",
    "regs_agency_id": "FDA",
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
    "severity": null,
    "source": "regulations_gov",
    "source_label": "Regulations.gov",
-   "subcategory": "Guidance, interpretation or request for comment",
+   "subcategory": "Guidance, interpretation, or request for comment",
    "subtype": "Background Material",
    "summary": "",
    "title": "PSG_016324 - Draft Guidance on Azathioprine",
@@ -2977,6 +3881,7 @@
    "comments_close": "2027-01-20",
    "corporation": null,
    "date": "2026-11-20",
+   "date_basis": "published",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2007-D-0369"
@@ -2988,12 +3893,25 @@
    "jurisdiction": "federal",
    "outcome": "guidance",
    "priority": 0,
+   "published": "2026-11-20",
    "regs_agency_id": "FDA",
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
    "severity": null,
    "source": "regulations_gov",
    "source_label": "Regulations.gov",
-   "subcategory": "Guidance, interpretation or request for comment",
+   "subcategory": "Guidance, interpretation, or request for comment",
    "subtype": "Guidance",
    "summary": "",
    "title": "PSG_018705 - Draft Guidance on Nitroglycerin",
@@ -3009,6 +3927,7 @@
    "comments_close": "2027-01-20",
    "corporation": null,
    "date": "2026-11-20",
+   "date_basis": "published",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2007-D-0369"
@@ -3020,12 +3939,25 @@
    "jurisdiction": "federal",
    "outcome": "guidance",
    "priority": 0,
+   "published": "2026-11-20",
    "regs_agency_id": "FDA",
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
    "severity": null,
    "source": "regulations_gov",
    "source_label": "Regulations.gov",
-   "subcategory": "Guidance, interpretation or request for comment",
+   "subcategory": "Guidance, interpretation, or request for comment",
    "subtype": "Guidance",
    "summary": "",
    "title": "PSG_019845 - Draft Guidance on Betaxolol Hydrochloride",
@@ -3041,6 +3973,7 @@
    "comments_close": "2027-01-20",
    "corporation": null,
    "date": "2026-11-20",
+   "date_basis": "published",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2007-D-0369"
@@ -3052,12 +3985,25 @@
    "jurisdiction": "federal",
    "outcome": "guidance",
    "priority": 0,
+   "published": "2026-11-20",
    "regs_agency_id": "FDA",
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
    "severity": null,
    "source": "regulations_gov",
    "source_label": "Regulations.gov",
-   "subcategory": "Guidance, interpretation or request for comment",
+   "subcategory": "Guidance, interpretation, or request for comment",
    "subtype": "Background Material",
    "summary": "",
    "title": "PSG_020216 - Draft Guidance on Conjugated Estrogens",
@@ -3073,6 +4019,7 @@
    "comments_close": "2027-01-20",
    "corporation": null,
    "date": "2026-11-20",
+   "date_basis": "published",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2007-D-0369"
@@ -3084,12 +4031,25 @@
    "jurisdiction": "federal",
    "outcome": "guidance",
    "priority": 0,
+   "published": "2026-11-20",
    "regs_agency_id": "FDA",
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
    "severity": null,
    "source": "regulations_gov",
    "source_label": "Regulations.gov",
-   "subcategory": "Guidance, interpretation or request for comment",
+   "subcategory": "Guidance, interpretation, or request for comment",
    "subtype": "Guidance",
    "summary": "",
    "title": "PSG_021897 - Draft Guidance on Naltrexone",
@@ -3105,6 +4065,7 @@
    "comments_close": "2027-01-20",
    "corporation": null,
    "date": "2026-11-20",
+   "date_basis": "published",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2007-D-0369"
@@ -3116,12 +4077,25 @@
    "jurisdiction": "federal",
    "outcome": "guidance",
    "priority": 0,
+   "published": "2026-11-20",
    "regs_agency_id": "FDA",
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
    "severity": null,
    "source": "regulations_gov",
    "source_label": "Regulations.gov",
-   "subcategory": "Guidance, interpretation or request for comment",
+   "subcategory": "Guidance, interpretation, or request for comment",
    "subtype": "Guidance",
    "summary": "",
    "title": "PSG_022074 - Draft Guidance on Lanreotide Acetate",
@@ -3137,6 +4111,7 @@
    "comments_close": "2027-01-20",
    "corporation": null,
    "date": "2026-11-20",
+   "date_basis": "published",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2007-D-0369"
@@ -3148,12 +4123,25 @@
    "jurisdiction": "federal",
    "outcome": "guidance",
    "priority": 0,
+   "published": "2026-11-20",
    "regs_agency_id": "FDA",
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
    "severity": null,
    "source": "regulations_gov",
    "source_label": "Regulations.gov",
-   "subcategory": "Guidance, interpretation or request for comment",
+   "subcategory": "Guidance, interpretation, or request for comment",
    "subtype": "Guidance",
    "summary": "",
    "title": "PSG_022399 - Draft Guidance on Gabapentin Enacarbil",
@@ -3169,6 +4157,7 @@
    "comments_close": "2027-01-20",
    "corporation": null,
    "date": "2026-11-20",
+   "date_basis": "published",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2007-D-0369"
@@ -3180,12 +4169,25 @@
    "jurisdiction": "federal",
    "outcome": "guidance",
    "priority": 0,
+   "published": "2026-11-20",
    "regs_agency_id": "FDA",
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
    "severity": null,
    "source": "regulations_gov",
    "source_label": "Regulations.gov",
-   "subcategory": "Guidance, interpretation or request for comment",
+   "subcategory": "Guidance, interpretation, or request for comment",
    "subtype": "Guidance",
    "summary": "",
    "title": "PSG_205636 - Draft Guidance on Albuterol Sulfate",
@@ -3201,6 +4203,7 @@
    "comments_close": "2027-01-20",
    "corporation": null,
    "date": "2026-11-20",
+   "date_basis": "published",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2007-D-0369"
@@ -3212,12 +4215,25 @@
    "jurisdiction": "federal",
    "outcome": "guidance",
    "priority": 0,
+   "published": "2026-11-20",
    "regs_agency_id": "FDA",
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
    "severity": null,
    "source": "regulations_gov",
    "source_label": "Regulations.gov",
-   "subcategory": "Guidance, interpretation or request for comment",
+   "subcategory": "Guidance, interpretation, or request for comment",
    "subtype": "Guidance",
    "summary": "",
    "title": "PSG_206947 - Draft Guidance on Lenvatinib Mesylate",
@@ -3233,6 +4249,7 @@
    "comments_close": "2027-01-20",
    "corporation": null,
    "date": "2026-11-20",
+   "date_basis": "published",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2007-D-0369"
@@ -3244,12 +4261,25 @@
    "jurisdiction": "federal",
    "outcome": "guidance",
    "priority": 0,
+   "published": "2026-11-20",
    "regs_agency_id": "FDA",
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
    "severity": null,
    "source": "regulations_gov",
    "source_label": "Regulations.gov",
-   "subcategory": "Guidance, interpretation or request for comment",
+   "subcategory": "Guidance, interpretation, or request for comment",
    "subtype": "Guidance",
    "summary": "",
    "title": "PSG_208462 - Draft Guidance on Ixazomib Citrate",
@@ -3265,6 +4295,7 @@
    "comments_close": "2027-01-20",
    "corporation": null,
    "date": "2026-11-20",
+   "date_basis": "published",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2007-D-0369"
@@ -3276,12 +4307,25 @@
    "jurisdiction": "federal",
    "outcome": "guidance",
    "priority": 0,
+   "published": "2026-11-20",
    "regs_agency_id": "FDA",
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
    "severity": null,
    "source": "regulations_gov",
    "source_label": "Regulations.gov",
-   "subcategory": "Guidance, interpretation or request for comment",
+   "subcategory": "Guidance, interpretation, or request for comment",
    "subtype": "Guidance",
    "summary": "",
    "title": "PSG_211527 - Draft Guidance on Trifarotene",
@@ -3297,6 +4341,7 @@
    "comments_close": "2027-01-20",
    "corporation": null,
    "date": "2026-11-20",
+   "date_basis": "published",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2007-D-0369"
@@ -3308,12 +4353,25 @@
    "jurisdiction": "federal",
    "outcome": "guidance",
    "priority": 0,
+   "published": "2026-11-20",
    "regs_agency_id": "FDA",
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
    "severity": null,
    "source": "regulations_gov",
    "source_label": "Regulations.gov",
-   "subcategory": "Guidance, interpretation or request for comment",
+   "subcategory": "Guidance, interpretation, or request for comment",
    "subtype": "Guidance",
    "summary": "",
    "title": "PSG_215400 - Draft Guidance on Dihydroergotamine mesylate",
@@ -3329,6 +4387,7 @@
    "comments_close": "2027-01-20",
    "corporation": null,
    "date": "2026-11-20",
+   "date_basis": "published",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2007-D-0369"
@@ -3340,12 +4399,25 @@
    "jurisdiction": "federal",
    "outcome": "guidance",
    "priority": 0,
+   "published": "2026-11-20",
    "regs_agency_id": "FDA",
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
    "severity": null,
    "source": "regulations_gov",
    "source_label": "Regulations.gov",
-   "subcategory": "Guidance, interpretation or request for comment",
+   "subcategory": "Guidance, interpretation, or request for comment",
    "subtype": "Guidance",
    "summary": "",
    "title": "PSG_215430 - Draft Guidance on Bupropion Hydrochloride; Dextromethorphan Hydrobromide",
@@ -3361,6 +4433,7 @@
    "comments_close": "2027-01-20",
    "corporation": null,
    "date": "2026-11-20",
+   "date_basis": "published",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2007-D-0369"
@@ -3372,12 +4445,25 @@
    "jurisdiction": "federal",
    "outcome": "guidance",
    "priority": 0,
+   "published": "2026-11-20",
    "regs_agency_id": "FDA",
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
    "severity": null,
    "source": "regulations_gov",
    "source_label": "Regulations.gov",
-   "subcategory": "Guidance, interpretation or request for comment",
+   "subcategory": "Guidance, interpretation, or request for comment",
    "subtype": "Guidance",
    "summary": "",
    "title": "PSG_218436 - Draft Guidance on Remibrutinib",
@@ -3393,6 +4479,7 @@
    "comments_close": "2027-01-20",
    "corporation": null,
    "date": "2026-11-20",
+   "date_basis": "published",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2007-D-0369"
@@ -3404,12 +4491,25 @@
    "jurisdiction": "federal",
    "outcome": "guidance",
    "priority": 0,
+   "published": "2026-11-20",
    "regs_agency_id": "FDA",
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
    "severity": null,
    "source": "regulations_gov",
    "source_label": "Regulations.gov",
-   "subcategory": "Guidance, interpretation or request for comment",
+   "subcategory": "Guidance, interpretation, or request for comment",
    "subtype": "Guidance",
    "summary": "",
    "title": "PSG_218718 - Draft Guidance on Ethinyl Estradiol; Norethindrone Acetate",
@@ -3425,6 +4525,7 @@
    "comments_close": "2027-01-20",
    "corporation": null,
    "date": "2026-11-20",
+   "date_basis": "published",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2007-D-0369"
@@ -3436,12 +4537,25 @@
    "jurisdiction": "federal",
    "outcome": "guidance",
    "priority": 0,
+   "published": "2026-11-20",
    "regs_agency_id": "FDA",
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
    "severity": null,
    "source": "regulations_gov",
    "source_label": "Regulations.gov",
-   "subcategory": "Guidance, interpretation or request for comment",
+   "subcategory": "Guidance, interpretation, or request for comment",
    "subtype": "Guidance",
    "summary": "",
    "title": "PSG_218764 - Draft Guidance on Nerandomilast",
@@ -3457,6 +4571,7 @@
    "comments_close": "2027-01-20",
    "corporation": null,
    "date": "2026-11-20",
+   "date_basis": "published",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2007-D-0369"
@@ -3468,12 +4583,25 @@
    "jurisdiction": "federal",
    "outcome": "guidance",
    "priority": 0,
+   "published": "2026-11-20",
    "regs_agency_id": "FDA",
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
    "severity": null,
    "source": "regulations_gov",
    "source_label": "Regulations.gov",
-   "subcategory": "Guidance, interpretation or request for comment",
+   "subcategory": "Guidance, interpretation, or request for comment",
    "subtype": "Guidance",
    "summary": "",
    "title": "PSG_218879 - Draft Guidance on Lamotrigine",
@@ -3489,6 +4617,7 @@
    "comments_close": "2027-01-20",
    "corporation": null,
    "date": "2026-11-20",
+   "date_basis": "published",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2007-D-0369"
@@ -3500,12 +4629,25 @@
    "jurisdiction": "federal",
    "outcome": "guidance",
    "priority": 0,
+   "published": "2026-11-20",
    "regs_agency_id": "FDA",
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
    "severity": null,
    "source": "regulations_gov",
    "source_label": "Regulations.gov",
-   "subcategory": "Guidance, interpretation or request for comment",
+   "subcategory": "Guidance, interpretation, or request for comment",
    "subtype": "Guidance",
    "summary": "",
    "title": "PSG_218881 - Draft Guidance on Imlunestrant Tosylate",
@@ -3521,6 +4663,7 @@
    "comments_close": "2027-01-20",
    "corporation": null,
    "date": "2026-11-20",
+   "date_basis": "published",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2007-D-0369"
@@ -3532,12 +4675,25 @@
    "jurisdiction": "federal",
    "outcome": "guidance",
    "priority": 0,
+   "published": "2026-11-20",
    "regs_agency_id": "FDA",
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
    "severity": null,
    "source": "regulations_gov",
    "source_label": "Regulations.gov",
-   "subcategory": "Guidance, interpretation or request for comment",
+   "subcategory": "Guidance, interpretation, or request for comment",
    "subtype": "Guidance",
    "summary": "",
    "title": "PSG_219042 - Draft Guidance on Zongertinib",
@@ -3553,6 +4709,7 @@
    "comments_close": "2027-01-20",
    "corporation": null,
    "date": "2026-11-20",
+   "date_basis": "published",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2007-D-0369"
@@ -3564,12 +4721,25 @@
    "jurisdiction": "federal",
    "outcome": "guidance",
    "priority": 0,
+   "published": "2026-11-20",
    "regs_agency_id": "FDA",
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
    "severity": null,
    "source": "regulations_gov",
    "source_label": "Regulations.gov",
-   "subcategory": "Guidance, interpretation or request for comment",
+   "subcategory": "Guidance, interpretation, or request for comment",
    "subtype": "Guidance",
    "summary": "",
    "title": "PSG_219070 - Draft Guidance on Paltusotine Hydrochloride",
@@ -3585,6 +4755,7 @@
    "comments_close": "2027-01-20",
    "corporation": null,
    "date": "2026-11-20",
+   "date_basis": "published",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2007-D-0369"
@@ -3596,12 +4767,25 @@
    "jurisdiction": "federal",
    "outcome": "guidance",
    "priority": 0,
+   "published": "2026-11-20",
    "regs_agency_id": "FDA",
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
    "severity": null,
    "source": "regulations_gov",
    "source_label": "Regulations.gov",
-   "subcategory": "Guidance, interpretation or request for comment",
+   "subcategory": "Guidance, interpretation, or request for comment",
    "subtype": "Guidance",
    "summary": "",
    "title": "PSG_219083 - Draft Guidance on Aficamten",
@@ -3617,6 +4801,7 @@
    "comments_close": "2027-01-20",
    "corporation": null,
    "date": "2026-11-20",
+   "date_basis": "published",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2007-D-0369"
@@ -3628,12 +4813,25 @@
    "jurisdiction": "federal",
    "outcome": "guidance",
    "priority": 0,
+   "published": "2026-11-20",
    "regs_agency_id": "FDA",
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
    "severity": null,
    "source": "regulations_gov",
    "source_label": "Regulations.gov",
-   "subcategory": "Guidance, interpretation or request for comment",
+   "subcategory": "Guidance, interpretation, or request for comment",
    "subtype": "Guidance",
    "summary": "",
    "title": "PSG_219155 - Draft Guidance on Delgocitinib",
@@ -3649,6 +4847,7 @@
    "comments_close": "2027-01-20",
    "corporation": null,
    "date": "2026-11-20",
+   "date_basis": "published",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2007-D-0369"
@@ -3660,12 +4859,25 @@
    "jurisdiction": "federal",
    "outcome": "guidance",
    "priority": 0,
+   "published": "2026-11-20",
    "regs_agency_id": "FDA",
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
    "severity": null,
    "source": "regulations_gov",
    "source_label": "Regulations.gov",
-   "subcategory": "Guidance, interpretation or request for comment",
+   "subcategory": "Guidance, interpretation, or request for comment",
    "subtype": "Guidance",
    "summary": "",
    "title": "PSG_219500 - Draft Guidance on Bumetanide",
@@ -3681,6 +4893,7 @@
    "comments_close": "2027-01-20",
    "corporation": null,
    "date": "2026-11-20",
+   "date_basis": "published",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2007-D-0369"
@@ -3692,12 +4905,25 @@
    "jurisdiction": "federal",
    "outcome": "guidance",
    "priority": 0,
+   "published": "2026-11-20",
    "regs_agency_id": "FDA",
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
    "severity": null,
    "source": "regulations_gov",
    "source_label": "Regulations.gov",
-   "subcategory": "Guidance, interpretation or request for comment",
+   "subcategory": "Guidance, interpretation, or request for comment",
    "subtype": "Guidance",
    "summary": "",
    "title": "PSG_219666 - Draft Guidance on Sepiapterin",
@@ -3713,6 +4939,7 @@
    "comments_close": "2027-01-20",
    "corporation": null,
    "date": "2026-11-20",
+   "date_basis": "published",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2007-D-0369"
@@ -3724,12 +4951,25 @@
    "jurisdiction": "federal",
    "outcome": "guidance",
    "priority": 0,
+   "published": "2026-11-20",
    "regs_agency_id": "FDA",
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
    "severity": null,
    "source": "regulations_gov",
    "source_label": "Regulations.gov",
-   "subcategory": "Guidance, interpretation or request for comment",
+   "subcategory": "Guidance, interpretation, or request for comment",
    "subtype": "Guidance",
    "summary": "",
    "title": "PSG_219776 - Draft Guidance on Berotralstat Dihydrochloride",
@@ -3745,6 +4985,7 @@
    "comments_close": "2027-01-20",
    "corporation": null,
    "date": "2026-11-20",
+   "date_basis": "published",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2007-D-0369"
@@ -3756,12 +4997,25 @@
    "jurisdiction": "federal",
    "outcome": "guidance",
    "priority": 0,
+   "published": "2026-11-20",
    "regs_agency_id": "FDA",
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
    "severity": null,
    "source": "regulations_gov",
    "source_label": "Regulations.gov",
-   "subcategory": "Guidance, interpretation or request for comment",
+   "subcategory": "Guidance, interpretation, or request for comment",
    "subtype": "Guidance",
    "summary": "",
    "title": "PSG_219840 - Draft Guidance on Barium Sulfate",
@@ -3777,6 +5031,7 @@
    "comments_close": "2027-01-20",
    "corporation": null,
    "date": "2026-11-20",
+   "date_basis": "published",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2007-D-0369"
@@ -3788,12 +5043,25 @@
    "jurisdiction": "federal",
    "outcome": "guidance",
    "priority": 0,
+   "published": "2026-11-20",
    "regs_agency_id": "FDA",
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
    "severity": null,
    "source": "regulations_gov",
    "source_label": "Regulations.gov",
-   "subcategory": "Guidance, interpretation or request for comment",
+   "subcategory": "Guidance, interpretation, or request for comment",
    "subtype": "Guidance",
    "summary": "",
    "title": "PSG_220934 - Draft Guidance on Orforglipron Calcium",
@@ -3809,6 +5077,7 @@
    "comments_close": "2026-12-21",
    "corporation": null,
    "date": "2026-11-20",
+   "date_basis": "published",
    "doc_type": "Proposed Rule",
    "docket_ids": [
     "File No. R707002"
@@ -3828,8 +5097,21 @@
    "outcome": "proposed",
    "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-11-20/pdf/2026-23705.pdf",
    "priority": 0,
+   "published": "2026-11-20",
    "rins": [],
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 2,
+      "why": "binding rule"
+     }
+    ],
+    "level": 1,
+    "points": 2
+   },
    "severity": null,
    "significant": false,
    "source": "federal_register",
@@ -3849,6 +5131,7 @@
    "comments_close": "2027-01-19",
    "corporation": null,
    "date": "2026-11-20",
+   "date_basis": "published",
    "doc_type": "Notice",
    "docket_ids": [
     "Docket No. FDA-2007-D-0369"
@@ -3870,15 +5153,28 @@
    "outcome": "guidance",
    "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-11-20/pdf/2026-23692.pdf",
    "priority": 0,
+   "published": "2026-11-20",
    "rins": [],
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
    "severity": null,
    "significant": false,
    "source": "federal_register",
    "source_label": "Federal Register",
-   "subcategory": "Guidance, interpretation or request for comment",
+   "subcategory": "Guidance, interpretation, or request for comment",
    "subtype": "",
-   "summary": "The Food and Drug Administration (FDA or Agency) is announcing the availability of additional draft and revised draft product-specific guidances. The draft guidances provide product-specific recommendations on, among other things, the design of bioequivalence (BE) studies to support abbreviated new drug applications (ANDAs). In the Federal Register of June 11, 2010, FDA announced the availability of a guidance for industry titled \"Bioequivalence Recommendations for Specific Products\" that explained the process that would be used to make product-specific guidances available to the public on FDA's website. The draft guidances identified in this notice were developed using the process described in that guidance.",
+   "summary": "The Food and Drug Administration (FDA or Agency) is announcing the availability of additional draft and revised draft product-specific guidances. The draft guidances provide product-specific recommendations on, among other things, the design of bioequivalence (BE) studies to support abbreviated new drug applications (ANDAs). In the Federal Register of June 11, 2010, FDA announced the availability of a guidance for industry titled \"Bioequivalence Recommendations for Specific Products\" that explained the process that would be used to make product-specific guidances available to the public on FDA's website. The draft guidances identified in this notice were developed using the process…",
    "title": "Product-Specific Guidances; Draft and Revised Draft Guidances for Industry; Availability",
    "url": "https://www.federalregister.gov/documents/2026/11/20/2026-23692/product-specific-guidances-draft-and-revised-draft-guidances-for-industry-availability"
   },
@@ -3891,6 +5187,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-11-20",
+   "date_basis": "published",
    "doc_type": "Notice",
    "docket_ids": [
     "Docket No. RM98-1-000"
@@ -3912,8 +5209,21 @@
    "outcome": "notice",
    "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-11-20/pdf/2026-23674.pdf",
    "priority": 0,
+   "published": "2026-11-20",
    "rins": [],
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
    "severity": null,
    "significant": false,
    "source": "federal_register",
@@ -3933,6 +5243,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-11-20",
+   "date_basis": "published",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2024-D-1528"
@@ -3944,12 +5255,25 @@
    "jurisdiction": "federal",
    "outcome": "guidance",
    "priority": 0,
+   "published": "2026-11-20",
    "regs_agency_id": "FDA",
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
    "severity": null,
    "source": "regulations_gov",
    "source_label": "Regulations.gov",
-   "subcategory": "Guidance, interpretation or request for comment",
+   "subcategory": "Guidance, interpretation, or request for comment",
    "subtype": "Guidance",
    "summary": "",
    "title": "Transfer of a Premarket Notification (510(k)) Clearance – Questions and Answers; Guidance for Industry and Food and Drug Administration Staff",
@@ -3965,6 +5289,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-11-20",
+   "date_basis": "published",
    "doc_type": "Notice",
    "docket_ids": [
     "Docket No. FDA-2024-D-1528"
@@ -3986,13 +5311,26 @@
    "outcome": "guidance",
    "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-11-20/pdf/2026-23668.pdf",
    "priority": 0,
+   "published": "2026-11-20",
    "rins": [],
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
    "severity": null,
    "significant": false,
    "source": "federal_register",
    "source_label": "Federal Register",
-   "subcategory": "Guidance, interpretation or request for comment",
+   "subcategory": "Guidance, interpretation, or request for comment",
    "subtype": "",
    "summary": "The Food and Drug Administration (FDA or Agency) is announcing the availability of a final guidance titled \"Transfer of a Premarket Notification (510(k)) Clearance--Questions and Answers.\" This guidance provides information on the most frequently asked questions regarding the transfer or sale of a 510(k) clearance from one 510(k) holder to another.",
    "title": "Transfer of a Premarket Notification (510(k)) Clearance-Questions and Answers; Guidance for Industry and Food and Drug Administration Staff; Availability",
@@ -4007,6 +5345,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-11-20",
+   "date_basis": "published",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2026-V-9487"
@@ -4018,8 +5357,21 @@
    "jurisdiction": "federal",
    "outcome": "applied",
    "priority": 0,
+   "published": "2026-11-20",
    "regs_agency_id": "FDA",
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
    "severity": null,
    "source": "regulations_gov",
    "source_label": "Regulations.gov",
@@ -4039,6 +5391,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-11-20",
+   "date_basis": "published",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2026-V-13767"
@@ -4050,8 +5403,21 @@
    "jurisdiction": "federal",
    "outcome": "applied",
    "priority": 0,
+   "published": "2026-11-20",
    "regs_agency_id": "FDA",
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
    "severity": null,
    "source": "regulations_gov",
    "source_label": "Regulations.gov",
@@ -4071,6 +5437,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-11-20",
+   "date_basis": "published",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2026-V-14556"
@@ -4082,8 +5449,21 @@
    "jurisdiction": "federal",
    "outcome": "applied",
    "priority": 0,
+   "published": "2026-11-20",
    "regs_agency_id": "FDA",
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
    "severity": null,
    "source": "regulations_gov",
    "source_label": "Regulations.gov",
@@ -4103,6 +5483,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-11-20",
+   "date_basis": "published",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2026-V-13632"
@@ -4114,8 +5495,21 @@
    "jurisdiction": "federal",
    "outcome": "applied",
    "priority": 0,
+   "published": "2026-11-20",
    "regs_agency_id": "FDA",
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
    "severity": null,
    "source": "regulations_gov",
    "source_label": "Regulations.gov",
@@ -4135,6 +5529,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-11-20",
+   "date_basis": "published",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2026-V-13631"
@@ -4146,8 +5541,21 @@
    "jurisdiction": "federal",
    "outcome": "applied",
    "priority": 0,
+   "published": "2026-11-20",
    "regs_agency_id": "FDA",
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
    "severity": null,
    "source": "regulations_gov",
    "source_label": "Regulations.gov",
@@ -4167,6 +5575,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-11-20",
+   "date_basis": "published",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2026-V-14167"
@@ -4178,8 +5587,21 @@
    "jurisdiction": "federal",
    "outcome": "applied",
    "priority": 0,
+   "published": "2026-11-20",
    "regs_agency_id": "FDA",
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
    "severity": null,
    "source": "regulations_gov",
    "source_label": "Regulations.gov",
@@ -4199,6 +5621,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-11-20",
+   "date_basis": "published",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2026-V-9487"
@@ -4210,8 +5633,21 @@
    "jurisdiction": "federal",
    "outcome": "granted",
    "priority": 0,
+   "published": "2026-11-20",
    "regs_agency_id": "FDA",
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
    "severity": null,
    "source": "regulations_gov",
    "source_label": "Regulations.gov",
@@ -4231,6 +5667,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-11-20",
+   "date_basis": "published",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2026-V-13632"
@@ -4242,8 +5679,21 @@
    "jurisdiction": "federal",
    "outcome": "granted",
    "priority": 0,
+   "published": "2026-11-20",
    "regs_agency_id": "FDA",
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
    "severity": null,
    "source": "regulations_gov",
    "source_label": "Regulations.gov",
@@ -4263,6 +5713,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-11-20",
+   "date_basis": "published",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2026-V-14167"
@@ -4274,8 +5725,21 @@
    "jurisdiction": "federal",
    "outcome": "granted",
    "priority": 0,
+   "published": "2026-11-20",
    "regs_agency_id": "FDA",
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
    "severity": null,
    "source": "regulations_gov",
    "source_label": "Regulations.gov",
@@ -4295,6 +5759,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-11-20",
+   "date_basis": "published",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2026-V-13767"
@@ -4306,8 +5771,21 @@
    "jurisdiction": "federal",
    "outcome": "granted",
    "priority": 0,
+   "published": "2026-11-20",
    "regs_agency_id": "FDA",
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
    "severity": null,
    "source": "regulations_gov",
    "source_label": "Regulations.gov",
@@ -4327,6 +5805,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-11-20",
+   "date_basis": "published",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2026-V-14556"
@@ -4338,8 +5817,21 @@
    "jurisdiction": "federal",
    "outcome": "granted",
    "priority": 0,
+   "published": "2026-11-20",
    "regs_agency_id": "FDA",
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
    "severity": null,
    "source": "regulations_gov",
    "source_label": "Regulations.gov",
@@ -4359,6 +5851,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-11-20",
+   "date_basis": "published",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2026-V-13631"
@@ -4370,8 +5863,21 @@
    "jurisdiction": "federal",
    "outcome": "granted",
    "priority": 0,
+   "published": "2026-11-20",
    "regs_agency_id": "FDA",
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
    "severity": null,
    "source": "regulations_gov",
    "source_label": "Regulations.gov",
@@ -4391,6 +5897,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-11-20",
+   "date_basis": "published",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2020-V-2001"
@@ -4402,8 +5909,21 @@
    "jurisdiction": "federal",
    "outcome": "applied",
    "priority": 0,
+   "published": "2026-11-20",
    "regs_agency_id": "FDA",
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
    "severity": null,
    "source": "regulations_gov",
    "source_label": "Regulations.gov",
@@ -4423,6 +5943,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-11-20",
+   "date_basis": "published",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2026-V-9487"
@@ -4434,8 +5955,21 @@
    "jurisdiction": "federal",
    "outcome": "applied",
    "priority": 0,
+   "published": "2026-11-20",
    "regs_agency_id": "FDA",
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
    "severity": null,
    "source": "regulations_gov",
    "source_label": "Regulations.gov",

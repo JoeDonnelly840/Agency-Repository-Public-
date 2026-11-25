@@ -74,7 +74,9 @@ def parse_feed(xml_bytes, feed):
             "title": title,
             "summary": "" if _strip_html(_text(it, "description")) == title else _strip_html(_text(it, "description"))[:800],
             "action": "",
-            "date": _date(_text(it, "pubDate")),
+            "date": _date(_text(it, "pubDate")),      # the SEC's release date
+            "date_basis": "released",
+            "published": _date(_text(it, "pubDate")),
             "doc_type": feed["subcategory"],
             "subtype": "",
             "query_agencies": ["sec"],

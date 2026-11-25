@@ -59,8 +59,9 @@ def main():
         for k in ("query_agencies", "forced_category", "forced_subcategory"):
             it.pop(k, None)
 
-    new = store.merge_items(all_items, run_at)
-    run = {"run_at": run_at, "start": start, "end": end, "reports": reports, "items_found": len(all_items),
+    new, months = store.merge_items(all_items, run_at, today=now.date())
+    store.finish_storage(index, months, now.date())
+    run = {"run_at": run_at, "kind": "daily", "start": start, "end": end, "reports": reports, "items_found": len(all_items),
            "items_new": new, "requests": client.total_requests + (sec_client.total_requests if sec_client is not client else 0)}
     store.write_index(index, run)
 

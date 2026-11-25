@@ -42,7 +42,10 @@ def normalize(rec, endpoint_label):
         "title": f"{firm}: {product[:160]}{'…' if len(product) > 160 else ''}" if firm else product[:180],
         "summary": f"{cls}. {who}. Reason: {(rec.get('reason_for_recall') or '').strip()}"[:800],
         "action": "",
-        "date": _iso(rec.get("report_date")),
+        # The agency's action is FDA's classification of the recall; the weekly report date is when it was published.
+        "date": _iso(rec.get("center_classification_date")) or _iso(rec.get("report_date")),
+        "date_basis": "classified" if _iso(rec.get("center_classification_date")) else "published",
+        "published": _iso(rec.get("report_date")),
         "doc_type": "Recall enforcement report",
         "subtype": cls,
         "query_agencies": ["fda"],
@@ -70,7 +73,7 @@ def fetch(client, start, end):
         for rec in results:
             rec["_endpoint"] = ep["key"]
             it = normalize(rec, ep["label"])
-            if it["date"]:
+            if it["published"]:
                 items.append(it)
     if problems:
         report["status"] = "failed" if len(problems) == len(config.OPENFDA_ENDPOINTS) else "partial"

@@ -56,7 +56,7 @@ class SafetyTests(unittest.TestCase):
         c = PoliteClient(sleep=lambda s: None, opener=opener)
         c.get_json("https://www.federalregister.gov/api/v1/agencies.json", "fr")
         self.assertEqual(seen[0].get_method(), "GET")
-        self.assertIn("RegHunter", seen[0].get_header("User-agent"))
+        self.assertIn("RegCollect", seen[0].get_header("User-agent"))
 
     def test_waits_between_requests_to_same_host(self):
         sleeps, t = [], [0.0]
@@ -108,8 +108,9 @@ class ClassifyAndFlagTests(unittest.TestCase):
         it = process(fr_doc(title="In the Matter of Acme Corp.; Notice of Hearing Before an Administrative Law Judge",
                             abstract="The respondent faces civil money penalties."))
         self.assertEqual(it["category"], "adjudication")
-        self.assertEqual(it["priority"], 3)
+        self.assertEqual(it["priority"], 2)          # no common-law analogue: Arguable; penalty: Significant
         self.assertEqual(it["flags"][0]["code"], "agency_adjudication")
+        self.assertEqual(it["flags"][0]["tier"], 1)
         self.assertTrue(it["flags"][0]["structural"])
 
     def test_finra_filing_goes_to_corporations(self):
@@ -187,38 +188,53 @@ class SecFeedTests(unittest.TestCase):
 
 
 class SeverityTests(unittest.TestCase):
-    def test_jarkesy_pattern_is_flagrant_and_severe(self):
+    def test_jarkesy_pattern_is_flagrant(self):
         it = process(fr_doc(title="In the Matter of Acme Corp.; Order Instituting Proceedings",
                             abstract="The Division seeks civil money penalties for fraud under Rule 10b-5."))
         f = it["flags"][0]
-        self.assertEqual((f["code"], f["clarity"], f["impact"]), ("agency_adjudication", 3, 3))
-        self.assertEqual(it["severity"]["score"], 9)
+        self.assertEqual((f["code"], f["flagrance"], f["tier"]), ("agency_adjudication", 3, 3))
+        self.assertEqual(sorted(f["elements_found"]), ["common_law", "contested", "in_house", "penalty"])
+        self.assertEqual(it["seriousness"]["points"], 4)      # sanction 3 + reach 1
+        self.assertEqual(it["severity"], {"flagrance": 3, "impact": 2, "score": 6})
+
+    def test_large_penalty_is_severe(self):
+        it = process(fr_doc(title="In the Matter of Acme Corp.; Order Instituting Proceedings",
+                            abstract="The Division seeks a civil penalty of $150 million for fraud."))
+        self.assertEqual(it["seriousness"]["level"], 3)       # 3 + 3 + 1
 
     def test_settled_matter_is_only_arguable(self):
         it = process(fr_doc(title="In the Matter of Acme Corp.; Order Instituting Cease-and-Desist Proceedings",
-                            abstract="Acme submitted an offer of settlement and agreed to pay a civil money penalty."))
-        self.assertEqual(it["flags"][0]["clarity"], 1)
+                            abstract="Acme submitted an offer of settlement and agreed to pay a civil money penalty for fraud."))
+        f = it["flags"][0]
+        self.assertEqual((f["flagrance"], f["counters"]), (1, ["settled"]))
 
-    def test_fcc_forfeiture_lowered_after_fcc_v_att(self):
-        doc = fr_doc(title="Acme Wireless; Notice of Apparent Liability for Forfeiture", abstract="civil penalty",
+    def test_fcc_forfeiture_capped_after_fcc_v_att(self):
+        doc = fr_doc(title="Acme Wireless; Notice of Apparent Liability for Forfeiture", abstract="civil penalty for fraud",
                      agencies=[{"slug": "federal-communications-commission"}])
-        it = process(doc, query="fcc")
-        f = [x for x in it["flags"] if x["code"] == "agency_adjudication"][0]
-        self.assertEqual(f["clarity"], 1)
-        self.assertIn("forfeiture_nal", it["sanctions"])
+        f = [x for x in process(doc, query="fcc")["flags"] if x["code"] == "agency_adjudication"][0]
+        self.assertEqual(f["flagrance"], 1)
+        self.assertIn("fcc_forfeiture", f["counters"])
 
     def test_ieepa_tariffs_flagrant(self):
         doc = fr_doc(type="Presidential Document", subtype="Executive Order", title="Imposing Tariffs",
                      abstract="Under the International Emergency Economic Powers Act, a tariff of 25 percent applies.",
                      agencies=[{"slug": "executive-office-of-the-president"}])
-        it = process(doc, query="president")
-        f = [x for x in it["flags"] if x["code"] == "presidential_lawmaking"][0]
-        self.assertEqual((f["clarity"], f["impact"]), (3, 3))
+        f = [x for x in process(doc, query="president")["flags"] if x["code"] == "presidential_lawmaking"][0]
+        self.assertEqual((f["flagrance"], f["tier_authority"]), (3, "learning_resources"))
 
-    def test_every_flag_rating_is_red_orange_or_yellow(self):
-        for kind in __import__("collector.flags", fromlist=["export"]).export()["kinds"]:
-            self.assertIn(kind["default_clarity"], (1, 2, 3))
-            self.assertIn(kind["default_impact"], (1, 2, 3))
+    def test_rating_at_the_time_for_older_actions(self):
+        doc = fr_doc(type="Presidential Document", subtype="Executive Order", title="Imposing Tariffs",
+                     abstract="Under the International Emergency Economic Powers Act, a tariff of 25 percent applies.",
+                     publication_date="2025-04-03", agencies=[{"slug": "executive-office-of-the-president"}])
+        f = [x for x in process(doc, query="president")["flags"] if x["code"] == "presidential_lawmaking"][0]
+        self.assertEqual(f["at_the_time"], {"flagrance": 1, "because": "learning_resources"})
+
+    def test_every_issue_has_tested_elements_and_dated_authorities(self):
+        from collector import doctrine
+        for issue in doctrine.ISSUES:
+            self.assertTrue(issue["elements"], issue["code"])
+            for key in issue["authorities"] + [r["authority"] for r in issue["tiers"]]:
+                self.assertRegex(doctrine.AUTHORITIES[key]["decided"], r"^\d{4}-\d{2}-\d{2}$")
 
     def test_gag_terms_are_tagged(self):
         it = process(fr_doc(title="In the Matter of Beta LLC; Consent Order",
@@ -226,6 +242,43 @@ class SeverityTests(unittest.TestCase):
         self.assertIn("gag", it["sanctions"])
         self.assertIn("speech_restraint", [f["code"] for f in it["flags"]])
         self.assertEqual(it["outcome"], "settled")
+
+
+class DatesAndStorageTests(unittest.TestCase):
+    def test_signing_date_is_the_action_date(self):
+        doc = fr_doc(type="Presidential Document", subtype="Executive Order", title="An order",
+                     publication_date="2026-11-12", signing_date="2026-11-07",
+                     agencies=[{"slug": "executive-office-of-the-president"}])
+        it = federal_register._normalize(doc)
+        self.assertEqual((it["date"], it["published"], it["date_basis"]), ("2026-11-07", "2026-11-12", "signed"))
+
+    def test_openfda_uses_classification_date(self):
+        rec = {"recall_number": "F-1-2026", "recalling_firm": "A", "product_description": "B", "classification": "Class II",
+               "report_date": "20261111", "center_classification_date": "20261104", "_endpoint": "food"}
+        it = openfda.normalize(rec, "food")
+        self.assertEqual((it["date"], it["published"]), ("2026-11-04", "2026-11-11"))
+
+    def test_old_months_are_archived_with_chart_facts(self):
+        import datetime as dt
+        with tempfile.TemporaryDirectory() as root:
+            it = process(fr_doc(publication_date="2026-01-15"))
+            new, months = store.merge_items([it], "2026-11-20T00:00:00", root=root, today=dt.date(2026, 11, 20))
+            self.assertEqual((new, months), (1, {"2026-01"}))
+            idx = store.finish_storage(store.load_index(root), months, dt.date(2026, 11, 20), root=root)
+            self.assertEqual(idx["months"], {"2026-01": 1})
+            with open(os.path.join(root, "facts", "2026-01.json")) as f:
+                facts = json.load(f)
+            self.assertEqual(facts["rows"][0][0], "2026-01-15")
+
+    def test_exchange_fee_filing_is_routine(self):
+        it = process(fr_doc(title="Self-Regulatory Organizations; Nasdaq Stock Market LLC; Notice of Filing and Immediate "
+                                  "Effectiveness of a Proposed Rule Change To Amend the Exchange's Fee Schedule"))
+        self.assertEqual((it["corporation"], it["routine"]), ("other_sro", True))
+
+    def test_backfill_walks_back_month_by_month(self):
+        from collector import backfill
+        self.assertEqual(backfill._prev_month("2026-01"), "2025-12")
+        self.assertEqual(backfill._month_bounds("2024-02"), ("2024-02-01", "2024-02-29"))
 
 
 class FdaDocketTests(unittest.TestCase):
@@ -258,11 +311,11 @@ class AgencyFeedTests(unittest.TestCase):
       <updated>2026-11-10T12:00:00Z</updated><summary>Board decision</summary></entry></feed>"""
 
     def test_keeps_actions_drops_events(self):
-        feed = config.AGENCY_FEEDS[0]
+        feed = [f for f in config.AGENCY_FEEDS if f["key"] == "nlrb_press"][0]
         items = [i for i in agency_feeds.parse_feed(self.RSS, feed) if agency_feeds.keep(i, feed)]
         self.assertEqual([i["title"] for i in items], ["FTC Sues Acme Over Deceptive Subscriptions"])
         it = flag_item(classify(items[0]))
-        self.assertEqual(it["agencies"], ["ftc"])
+        self.assertEqual(it["agencies"], ["nlrb"])
         self.assertEqual(it["category"], "enforcement")
 
     def test_atom_with_fixed_category(self):
@@ -283,9 +336,10 @@ class AgencyFeedTests(unittest.TestCase):
         self.assertEqual(agency_feeds.discover_url(c, feed), "https://www.nlrb.gov/rss/rssBoard.xml")
 
     def test_new_hosts_allowed_but_finra_still_refused(self):
-        for host in ("www.ftc.gov", "www.nlrb.gov", "api.fda.gov"):
+        for host in ("www.nlrb.gov", "api.fda.gov"):
             self.assertIn(host, config.ALLOWED_HOSTS)
-        self.assertNotIn("www.finra.org", config.ALLOWED_HOSTS)
+        for host in ("www.finra.org", "www.ftc.gov", "www.fcc.gov"):   # FTC and FCC refuse automated readers
+            self.assertNotIn(host, config.ALLOWED_HOSTS)
 
 
 class OpenFdaTests(unittest.TestCase):
@@ -309,8 +363,9 @@ class StoreTests(unittest.TestCase):
         import datetime as dt
         with tempfile.TemporaryDirectory() as root:
             it = process(fr_doc())
-            self.assertEqual(store.merge_items([dict(it)], "2026-11-09T12:00:00", root=root), 1)
-            self.assertEqual(store.merge_items([dict(it)], "2026-11-10T12:00:00", root=root), 0)
+            day = dt.date(2026, 11, 10)
+            self.assertEqual(store.merge_items([dict(it)], "2026-11-09T12:00:00", root=root, today=day)[0], 1)
+            self.assertEqual(store.merge_items([dict(it)], "2026-11-10T12:00:00", root=root, today=day)[0], 0)
             with open(os.path.join(root, "days", "2026-11-09.json")) as f:
                 saved = json.load(f)["items"][0]
             self.assertEqual(saved["first_seen"], "2026-11-09T12:00:00")
@@ -321,6 +376,7 @@ class StoreTests(unittest.TestCase):
             run = {"run_at": "x", "start": "2026-10-11", "end": "2026-11-10", "items_new": 1,
                    "reports": [{"source": "federal_register", "label": "FR", "status": "ok", "detail": "",
                                 "agencies": {}}]}
+            store.finish_storage(idx, set(), day, root=root)
             idx = store.write_index(idx, run, root=root)
             self.assertEqual(store.compute_window(idx, dt.date(2026, 11, 11)), ("2026-11-07", "2026-11-11"))
             self.assertEqual(idx["days"], {"2026-11-09": 1})

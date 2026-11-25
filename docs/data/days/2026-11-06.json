@@ -2,6 +2,83 @@
  "date": "2026-11-06",
  "items": [
   {
+   "action": "Final rule; administrative change.",
+   "agencies": [
+    "epa"
+   ],
+   "category": "rulemaking",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-06",
+   "date_basis": "published",
+   "doc_type": "Rule",
+   "docket_ids": [
+    "EPA-R09-OAR-2024-0527",
+    "FRL-13582-01-R9"
+   ],
+   "effective_on": "2026-11-06",
+   "eo_number": null,
+   "first_seen": "2026-11-11T13:33:45+00:00",
+   "flags": [
+    {
+     "code": "fourth_amendment",
+     "counters": [],
+     "elements_found": [
+      "search"
+     ],
+     "elements_total": 2,
+     "flagrance": 1,
+     "group": "rights",
+     "impact": 1,
+     "structural": false,
+     "tier": 1,
+     "tier_authority": "burger",
+     "triggers": [
+      "inspection"
+     ]
+    }
+   ],
+   "fr_agency_names": [
+    "Environmental Protection Agency"
+   ],
+   "fr_agency_slugs": [
+    "environmental-protection-agency"
+   ],
+   "id": "fr:2026-22671",
+   "jurisdiction": "federal",
+   "outcome": "final",
+   "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-11-06/pdf/2026-22671.pdf",
+   "priority": 1,
+   "published": "2026-11-06",
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 2,
+      "why": "binding rule"
+     }
+    ],
+    "level": 1,
+    "points": 2
+   },
+   "severity": {
+    "flagrance": 1,
+    "impact": 1,
+    "score": 1
+   },
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Final rule",
+   "subtype": "",
+   "summary": "The U.S. Environmental Protection Agency (EPA) is revising the format for materials submitted by the State of California that are incorporated by reference into the California State Implementation Plan (SIP). The regulations and other materials affected by this format change have all been previously submitted by the State of California and approved by the EPA. This format revision will primarily affect the \"Identification of plan--in part\" sections, as well as the format of the SIP materials that will be available for public inspection at the EPA Regional Office and the National Archives and Records Administration (NARA). This action, which only relates to rules applicable within six…",
+   "title": "Air Plan Approval; California; Revised Format for Materials Incorporated by Reference",
+   "url": "https://www.federalregister.gov/documents/2026/11/06/2026-22671/air-plan-approval-california-revised-format-for-materials-incorporated-by-reference"
+  },
+  {
    "action": "",
    "agencies": [
     "sec"
@@ -9,41 +86,50 @@
    "category": "adjudication",
    "corporation": null,
    "date": "2026-11-06",
+   "date_basis": "published",
    "doc_type": "In-house administrative proceeding",
    "first_seen": "2026-11-12T16:13:55+00:00",
    "flags": [
     {
-     "authorities": [
-      "SEC v. Jarkesy, 603 U.S. 109 (2024)",
-      "Axon Enterprise, Inc. v. FTC, 598 U.S. 175 (2023)",
-      "FCC v. AT&T, Inc. (U.S. June 4, 2026) (FCC forfeiture orders upheld)",
-      "Granfinanciera, S.A. v. Nordberg, 492 U.S. 33 (1989)"
-     ],
-     "clarity": 2,
      "code": "agency_adjudication",
-     "group": "structural",
-     "impact": 2,
-     "label": "Agency adjudication of penalties (jury trial / Article III)",
-     "rating_notes": [
-      "no penalty wording found (seriousness lowered)",
-      "the SEC feed gives only the respondent's name; open the order to see whether penalties were sought"
+     "counters": [],
+     "elements_found": [
+      "in_house"
      ],
+     "elements_total": 4,
+     "flagrance": 1,
+     "group": "structural",
+     "impact": 1,
      "structural": true,
+     "tier": 1,
+     "tier_authority": "atlas_roofing",
      "triggers": [
       "SEC in-house administrative proceeding"
-     ],
-     "why": "The agency itself appears to be deciding a case that could carry penalties. Penalty cases resembling common-law suits may require a jury and an Article III court, and agency proceedings can combine prosecutor and judge in one body."
+     ]
     }
    ],
    "id": "sec_admin:b299ad4ddf436cf9",
    "jurisdiction": "federal",
    "outcome": "initiated",
-   "priority": 2,
+   "priority": 1,
+   "published": "2026-11-06",
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
    "severity": {
-    "clarity": 2,
-    "impact": 2,
-    "score": 4
+    "flagrance": 1,
+    "impact": 1,
+    "score": 1
    },
    "source": "sec_admin",
    "source_label": "SEC administrative proceedings (in-house)",
@@ -61,41 +147,50 @@
    "category": "adjudication",
    "corporation": null,
    "date": "2026-11-06",
+   "date_basis": "published",
    "doc_type": "In-house administrative proceeding",
    "first_seen": "2026-11-12T16:13:55+00:00",
    "flags": [
     {
-     "authorities": [
-      "SEC v. Jarkesy, 603 U.S. 109 (2024)",
-      "Axon Enterprise, Inc. v. FTC, 598 U.S. 175 (2023)",
-      "FCC v. AT&T, Inc. (U.S. June 4, 2026) (FCC forfeiture orders upheld)",
-      "Granfinanciera, S.A. v. Nordberg, 492 U.S. 33 (1989)"
-     ],
-     "clarity": 2,
      "code": "agency_adjudication",
-     "group": "structural",
-     "impact": 2,
-     "label": "Agency adjudication of penalties (jury trial / Article III)",
-     "rating_notes": [
-      "no penalty wording found (seriousness lowered)",
-      "the SEC feed gives only the respondent's name; open the order to see whether penalties were sought"
+     "counters": [],
+     "elements_found": [
+      "in_house"
      ],
+     "elements_total": 4,
+     "flagrance": 1,
+     "group": "structural",
+     "impact": 1,
      "structural": true,
+     "tier": 1,
+     "tier_authority": "atlas_roofing",
      "triggers": [
       "SEC in-house administrative proceeding"
-     ],
-     "why": "The agency itself appears to be deciding a case that could carry penalties. Penalty cases resembling common-law suits may require a jury and an Article III court, and agency proceedings can combine prosecutor and judge in one body."
+     ]
     }
    ],
    "id": "sec_admin:04f4f00b037293ef",
    "jurisdiction": "federal",
    "outcome": "initiated",
-   "priority": 2,
+   "priority": 1,
+   "published": "2026-11-06",
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
    "severity": {
-    "clarity": 2,
-    "impact": 2,
-    "score": 4
+    "flagrance": 1,
+    "impact": 1,
+    "score": 1
    },
    "source": "sec_admin",
    "source_label": "SEC administrative proceedings (in-house)",
@@ -114,6 +209,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-11-06",
+   "date_basis": "published",
    "doc_type": "Rule",
    "docket_ids": [
     "Docket No. ETA-2025-0006"
@@ -123,24 +219,22 @@
    "first_seen": "2026-11-11T13:33:45+00:00",
    "flags": [
     {
-     "authorities": [
-      "West Virginia v. EPA, 597 U.S. 697 (2022)",
-      "Biden v. Nebraska, 600 U.S. 477 (2023)",
-      "FCC v. Consumers' Research, 606 U.S. ___ (2025)"
-     ],
-     "clarity": 1,
      "code": "major_questions",
-     "group": "structural",
-     "impact": 3,
-     "label": "Delegation and major questions",
-     "rating_notes": [
-      "designated a significant or major rule (seriousness raised)"
+     "counters": [],
+     "elements_found": [
+      "rule",
+      "significance"
      ],
+     "elements_total": 3,
+     "flagrance": 1,
+     "group": "structural",
+     "impact": 1,
      "structural": true,
+     "tier": 1,
+     "tier_authority": "west_virginia",
      "triggers": [
       "designated a significant rule"
-     ],
-     "why": "Large or novel rules may exceed what Congress clearly authorized (major questions doctrine) or raise questions about how much lawmaking power Congress may hand to agencies (nondelegation)."
+     ]
     }
    ],
    "fr_agency_names": [
@@ -153,15 +247,28 @@
    "jurisdiction": "federal",
    "outcome": "final",
    "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-11-06/pdf/2026-22680.pdf",
-   "priority": 3,
+   "priority": 1,
+   "published": "2026-11-06",
    "rins": [
     "1205-AC21"
    ],
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 2,
+      "why": "binding rule designated significant"
+     }
+    ],
+    "level": 1,
+    "points": 2
+   },
    "severity": {
-    "clarity": 1,
-    "impact": 3,
-    "score": 3
+    "flagrance": 1,
+    "impact": 1,
+    "score": 1
    },
    "significant": true,
    "source": "federal_register",
@@ -173,69 +280,6 @@
    "url": "https://www.federalregister.gov/documents/2026/11/06/2026-22680/prohibiting-illegal-discrimination-in-registered-apprenticeship-programs"
   },
   {
-   "action": "Final rule; administrative change.",
-   "agencies": [
-    "epa"
-   ],
-   "category": "rulemaking",
-   "comments_close": null,
-   "corporation": null,
-   "date": "2026-11-06",
-   "doc_type": "Rule",
-   "docket_ids": [
-    "EPA-R09-OAR-2024-0527",
-    "FRL-13582-01-R9"
-   ],
-   "effective_on": "2026-11-06",
-   "eo_number": null,
-   "first_seen": "2026-11-11T13:33:45+00:00",
-   "flags": [
-    {
-     "authorities": [
-      "City of Los Angeles v. Patel, 576 U.S. 409 (2015)",
-      "Carpenter v. United States, 585 U.S. 296 (2018)"
-     ],
-     "clarity": 1,
-     "code": "fourth_amendment",
-     "group": "rights",
-     "impact": 2,
-     "label": "Searches, inspections, records demands or surveillance",
-     "rating_notes": [],
-     "structural": false,
-     "triggers": [
-      "inspection"
-     ],
-     "why": "Government inspections and demands for records or data can raise Fourth Amendment questions."
-    }
-   ],
-   "fr_agency_names": [
-    "Environmental Protection Agency"
-   ],
-   "fr_agency_slugs": [
-    "environmental-protection-agency"
-   ],
-   "id": "fr:2026-22671",
-   "jurisdiction": "federal",
-   "outcome": "final",
-   "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-11-06/pdf/2026-22671.pdf",
-   "priority": 2,
-   "rins": [],
-   "sanctions": [],
-   "severity": {
-    "clarity": 1,
-    "impact": 2,
-    "score": 2
-   },
-   "significant": false,
-   "source": "federal_register",
-   "source_label": "Federal Register",
-   "subcategory": "Final rule",
-   "subtype": "",
-   "summary": "The U.S. Environmental Protection Agency (EPA) is revising the format for materials submitted by the State of California that are incorporated by reference into the California State Implementation Plan (SIP). The regulations and other materials affected by this format change have all been previously submitted by the State of California and approved by the EPA. This format revision will primarily affect the \"Identification of plan--in part\" sections, as well as the format of the SIP materials that will be available for public inspection at the EPA Regional Office and the National Archives and Records Administration (NARA). This action, which only relates to rules applicable within six California air districts, is the fifth and final of a series of actions intended to change the format for the entire California SIP.",
-   "title": "Air Plan Approval; California; Revised Format for Materials Incorporated by Reference",
-   "url": "https://www.federalregister.gov/documents/2026/11/06/2026-22671/air-plan-approval-california-revised-format-for-materials-incorporated-by-reference"
-  },
-  {
    "action": "",
    "agencies": [
     "sec"
@@ -244,6 +288,7 @@
    "comments_close": null,
    "corporation": "other_sro",
    "date": "2026-11-06",
+   "date_basis": "published",
    "doc_type": "Notice",
    "docket_ids": [
     "Release No. 34-106802",
@@ -254,24 +299,23 @@
    "first_seen": "2026-11-11T13:33:45+00:00",
    "flags": [
     {
-     "authorities": [
-      "Carter v. Carter Coal Co., 298 U.S. 238 (1936)",
-      "Department of Transportation v. Association of American Railroads, 575 U.S. 43 (2015)",
-      "Alpine Securities Corp. v. FINRA, 121 F.4th 1314 (D.C. Cir. 2024)"
-     ],
-     "clarity": 1,
      "code": "private_delegation",
+     "counters": [],
+     "elements_found": [
+      "private",
+      "binding",
+      "no_prior_review"
+     ],
+     "elements_total": 3,
+     "flagrance": 1,
      "group": "structural",
      "impact": 1,
-     "label": "Government power exercised by a private corporation",
-     "rating_notes": [
-      "routine exchange or clearing-agency filing (seriousness lowered)"
-     ],
      "structural": true,
+     "tier": 1,
+     "tier_authority": "consumers_research",
      "triggers": [
       "issued by an agency-supervised private corporation"
-     ],
-     "why": "This action comes from a private, agency-supervised corporation. Delegating government power to private entities is limited by the private nondelegation doctrine and by Article II."
+     ]
     }
    ],
    "fr_agency_names": [
@@ -285,17 +329,30 @@
    "outcome": "proposed",
    "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-11-06/pdf/2026-22653.pdf",
    "priority": 1,
+   "published": "2026-11-06",
    "rins": [],
+   "routine": true,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "self-regulatory filing"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
    "severity": {
-    "clarity": 1,
+    "flagrance": 1,
     "impact": 1,
     "score": 1
    },
    "significant": false,
    "source": "federal_register",
    "source_label": "Federal Register",
-   "subcategory": "Rule filing by self-regulatory organization",
+   "subcategory": "Fee change by self-regulatory organization",
    "subtype": "",
    "summary": "",
    "title": "Self-Regulatory Organizations; Cboe BZX Exchange, Inc.; Notice of Filing and Immediate Effectiveness of a Proposed Rule Change To Introduce a Trade-by-Trade Report for BZX Options and To Amend Its Fee Schedule To Adopt Fees for the Trade-by-Trade Report",
@@ -310,6 +367,7 @@
    "comments_close": null,
    "corporation": "other_sro",
    "date": "2026-11-06",
+   "date_basis": "published",
    "doc_type": "Notice",
    "docket_ids": [
     "Release No. 34-106800",
@@ -320,24 +378,23 @@
    "first_seen": "2026-11-11T13:33:45+00:00",
    "flags": [
     {
-     "authorities": [
-      "Carter v. Carter Coal Co., 298 U.S. 238 (1936)",
-      "Department of Transportation v. Association of American Railroads, 575 U.S. 43 (2015)",
-      "Alpine Securities Corp. v. FINRA, 121 F.4th 1314 (D.C. Cir. 2024)"
-     ],
-     "clarity": 1,
      "code": "private_delegation",
+     "counters": [],
+     "elements_found": [
+      "private",
+      "binding",
+      "no_prior_review"
+     ],
+     "elements_total": 3,
+     "flagrance": 1,
      "group": "structural",
      "impact": 1,
-     "label": "Government power exercised by a private corporation",
-     "rating_notes": [
-      "routine exchange or clearing-agency filing (seriousness lowered)"
-     ],
      "structural": true,
+     "tier": 1,
+     "tier_authority": "consumers_research",
      "triggers": [
       "issued by an agency-supervised private corporation"
-     ],
-     "why": "This action comes from a private, agency-supervised corporation. Delegating government power to private entities is limited by the private nondelegation doctrine and by Article II."
+     ]
     }
    ],
    "fr_agency_names": [
@@ -351,17 +408,30 @@
    "outcome": "proposed",
    "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-11-06/pdf/2026-22652.pdf",
    "priority": 1,
+   "published": "2026-11-06",
    "rins": [],
+   "routine": true,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "self-regulatory filing"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
    "severity": {
-    "clarity": 1,
+    "flagrance": 1,
     "impact": 1,
     "score": 1
    },
    "significant": false,
    "source": "federal_register",
    "source_label": "Federal Register",
-   "subcategory": "Rule filing by self-regulatory organization",
+   "subcategory": "Fee change by self-regulatory organization",
    "subtype": "",
    "summary": "",
    "title": "Self-Regulatory Organizations; Cboe C2 Exchange, Inc.; Notice of Filing and Immediate Effectiveness of a Proposed Rule Change To Introduce a Trade-by-Trade Report for C2 Options and To Amend Its Fee Schedule To Adopt Fees for the Trade-by-Trade Report",
@@ -376,6 +446,7 @@
    "comments_close": null,
    "corporation": "other_sro",
    "date": "2026-11-06",
+   "date_basis": "published",
    "doc_type": "Notice",
    "docket_ids": [
     "Release No. 34-106803",
@@ -386,24 +457,23 @@
    "first_seen": "2026-11-11T13:33:45+00:00",
    "flags": [
     {
-     "authorities": [
-      "Carter v. Carter Coal Co., 298 U.S. 238 (1936)",
-      "Department of Transportation v. Association of American Railroads, 575 U.S. 43 (2015)",
-      "Alpine Securities Corp. v. FINRA, 121 F.4th 1314 (D.C. Cir. 2024)"
-     ],
-     "clarity": 1,
      "code": "private_delegation",
+     "counters": [],
+     "elements_found": [
+      "private",
+      "binding",
+      "no_prior_review"
+     ],
+     "elements_total": 3,
+     "flagrance": 1,
      "group": "structural",
      "impact": 1,
-     "label": "Government power exercised by a private corporation",
-     "rating_notes": [
-      "routine exchange or clearing-agency filing (seriousness lowered)"
-     ],
      "structural": true,
+     "tier": 1,
+     "tier_authority": "consumers_research",
      "triggers": [
       "issued by an agency-supervised private corporation"
-     ],
-     "why": "This action comes from a private, agency-supervised corporation. Delegating government power to private entities is limited by the private nondelegation doctrine and by Article II."
+     ]
     }
    ],
    "fr_agency_names": [
@@ -417,17 +487,30 @@
    "outcome": "proposed",
    "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-11-06/pdf/2026-22654.pdf",
    "priority": 1,
+   "published": "2026-11-06",
    "rins": [],
+   "routine": true,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "self-regulatory filing"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
    "severity": {
-    "clarity": 1,
+    "flagrance": 1,
     "impact": 1,
     "score": 1
    },
    "significant": false,
    "source": "federal_register",
    "source_label": "Federal Register",
-   "subcategory": "Rule filing by self-regulatory organization",
+   "subcategory": "Fee change by self-regulatory organization",
    "subtype": "",
    "summary": "",
    "title": "Self-Regulatory Organizations; Cboe EDGX Exchange, Inc.; Notice of Filing and Immediate Effectiveness of a Proposed Rule Change To Introduce a Trade by Trade Report for EDGX Options and To Amend Its Fee Schedule To Adopt Fees for the Trade by Trade Report",
@@ -442,6 +525,7 @@
    "comments_close": null,
    "corporation": "other_sro",
    "date": "2026-11-06",
+   "date_basis": "published",
    "doc_type": "Notice",
    "docket_ids": [
     "Release No. 34-106808",
@@ -452,24 +536,23 @@
    "first_seen": "2026-11-11T13:33:45+00:00",
    "flags": [
     {
-     "authorities": [
-      "Carter v. Carter Coal Co., 298 U.S. 238 (1936)",
-      "Department of Transportation v. Association of American Railroads, 575 U.S. 43 (2015)",
-      "Alpine Securities Corp. v. FINRA, 121 F.4th 1314 (D.C. Cir. 2024)"
-     ],
-     "clarity": 1,
      "code": "private_delegation",
+     "counters": [],
+     "elements_found": [
+      "private",
+      "binding",
+      "no_prior_review"
+     ],
+     "elements_total": 3,
+     "flagrance": 1,
      "group": "structural",
      "impact": 1,
-     "label": "Government power exercised by a private corporation",
-     "rating_notes": [
-      "routine exchange or clearing-agency filing (seriousness lowered)"
-     ],
      "structural": true,
+     "tier": 1,
+     "tier_authority": "consumers_research",
      "triggers": [
       "issued by an agency-supervised private corporation"
-     ],
-     "why": "This action comes from a private, agency-supervised corporation. Delegating government power to private entities is limited by the private nondelegation doctrine and by Article II."
+     ]
     }
    ],
    "fr_agency_names": [
@@ -483,17 +566,30 @@
    "outcome": "proposed",
    "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-11-06/pdf/2026-22656.pdf",
    "priority": 1,
+   "published": "2026-11-06",
    "rins": [],
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "self-regulatory filing"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
    "severity": {
-    "clarity": 1,
+    "flagrance": 1,
     "impact": 1,
     "score": 1
    },
    "significant": false,
    "source": "federal_register",
    "source_label": "Federal Register",
-   "subcategory": "Rule filing by self-regulatory organization",
+   "subcategory": "Rule change by self-regulatory organization",
    "subtype": "",
    "summary": "",
    "title": "Self-Regulatory Organizations; Nasdaq Texas, LLC; Notice of Filing and Immediate Effectiveness of a Proposal To Amend Equity 4 To Remove All References to the CORE FIX Order Entry Protocol",
@@ -508,6 +604,7 @@
    "comments_close": null,
    "corporation": "other_sro",
    "date": "2026-11-06",
+   "date_basis": "published",
    "doc_type": "Notice",
    "docket_ids": [
     "Release No. 34-106807",
@@ -518,24 +615,23 @@
    "first_seen": "2026-11-11T13:33:45+00:00",
    "flags": [
     {
-     "authorities": [
-      "Carter v. Carter Coal Co., 298 U.S. 238 (1936)",
-      "Department of Transportation v. Association of American Railroads, 575 U.S. 43 (2015)",
-      "Alpine Securities Corp. v. FINRA, 121 F.4th 1314 (D.C. Cir. 2024)"
-     ],
-     "clarity": 1,
      "code": "private_delegation",
+     "counters": [],
+     "elements_found": [
+      "private",
+      "binding",
+      "no_prior_review"
+     ],
+     "elements_total": 3,
+     "flagrance": 1,
      "group": "structural",
      "impact": 1,
-     "label": "Government power exercised by a private corporation",
-     "rating_notes": [
-      "routine exchange or clearing-agency filing (seriousness lowered)"
-     ],
      "structural": true,
+     "tier": 1,
+     "tier_authority": "consumers_research",
      "triggers": [
       "issued by an agency-supervised private corporation"
-     ],
-     "why": "This action comes from a private, agency-supervised corporation. Delegating government power to private entities is limited by the private nondelegation doctrine and by Article II."
+     ]
     }
    ],
    "fr_agency_names": [
@@ -549,17 +645,30 @@
    "outcome": "proposed",
    "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-11-06/pdf/2026-22655.pdf",
    "priority": 1,
+   "published": "2026-11-06",
    "rins": [],
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "self-regulatory filing"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
    "severity": {
-    "clarity": 1,
+    "flagrance": 1,
     "impact": 1,
     "score": 1
    },
    "significant": false,
    "source": "federal_register",
    "source_label": "Federal Register",
-   "subcategory": "Rule filing by self-regulatory organization",
+   "subcategory": "Rule change by self-regulatory organization",
    "subtype": "",
    "summary": "",
    "title": "Self-Regulatory Organizations; The Nasdaq Stock Market LLC; Notice of Filing and Immediate Effectiveness of a Proposal To Amend Equity 4 to Remove All References to the CORE FIX Order Entry Protocol",
@@ -574,6 +683,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-11-06",
+   "date_basis": "published",
    "doc_type": "Notice",
    "docket_ids": [
     "Investment Company Act Release No. 36377",
@@ -594,8 +704,21 @@
    "outcome": "notice",
    "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-11-06/pdf/2026-22648.pdf",
    "priority": 0,
+   "published": "2026-11-06",
    "rins": [],
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
    "severity": null,
    "significant": false,
    "source": "federal_register",
@@ -615,6 +738,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-11-06",
+   "date_basis": "published",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2026-P-14061"
@@ -626,8 +750,21 @@
    "jurisdiction": "federal",
    "outcome": "notice",
    "priority": 0,
+   "published": "2026-11-06",
    "regs_agency_id": "FDA",
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
    "severity": null,
    "source": "regulations_gov",
    "source_label": "Regulations.gov",
@@ -647,6 +784,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-11-06",
+   "date_basis": "published",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2026-V-10268"
@@ -658,8 +796,21 @@
    "jurisdiction": "federal",
    "outcome": "applied",
    "priority": 0,
+   "published": "2026-11-06",
    "regs_agency_id": "FDA",
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
    "severity": null,
    "source": "regulations_gov",
    "source_label": "Regulations.gov",
@@ -679,6 +830,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-11-06",
+   "date_basis": "published",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2026-V-11399"
@@ -690,8 +842,21 @@
    "jurisdiction": "federal",
    "outcome": "applied",
    "priority": 0,
+   "published": "2026-11-06",
    "regs_agency_id": "FDA",
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
    "severity": null,
    "source": "regulations_gov",
    "source_label": "Regulations.gov",
@@ -711,6 +876,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-11-06",
+   "date_basis": "published",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2026-V-13437"
@@ -722,8 +888,21 @@
    "jurisdiction": "federal",
    "outcome": "applied",
    "priority": 0,
+   "published": "2026-11-06",
    "regs_agency_id": "FDA",
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
    "severity": null,
    "source": "regulations_gov",
    "source_label": "Regulations.gov",
@@ -743,6 +922,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-11-06",
+   "date_basis": "published",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2026-V-13310"
@@ -754,8 +934,21 @@
    "jurisdiction": "federal",
    "outcome": "applied",
    "priority": 0,
+   "published": "2026-11-06",
    "regs_agency_id": "FDA",
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
    "severity": null,
    "source": "regulations_gov",
    "source_label": "Regulations.gov",
@@ -775,6 +968,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-11-06",
+   "date_basis": "published",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2026-V-13534"
@@ -786,8 +980,21 @@
    "jurisdiction": "federal",
    "outcome": "applied",
    "priority": 0,
+   "published": "2026-11-06",
    "regs_agency_id": "FDA",
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
    "severity": null,
    "source": "regulations_gov",
    "source_label": "Regulations.gov",
@@ -807,6 +1014,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-11-06",
+   "date_basis": "published",
    "doc_type": "Rule",
    "docket_ids": [
     "Release Nos. IA-7035",
@@ -828,17 +1036,30 @@
    "outcome": "final",
    "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-11-06/pdf/2026-22741.pdf",
    "priority": 0,
+   "published": "2026-11-06",
    "rins": [
     "3235-AN39"
    ],
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 2,
+      "why": "binding rule"
+     }
+    ],
+    "level": 1,
+    "points": 2
+   },
    "severity": null,
    "significant": false,
    "source": "federal_register",
    "source_label": "Federal Register",
    "subcategory": "Final rule",
    "subtype": "",
-   "summary": "The Securities and Exchange Commission (the \"Commission\" or the \"SEC\") is amending the definitions of \"small business\" and \"small organization\" (collectively, \"small entities\") that are used in connection with Commission rulemaking under the Investment Company Act of 1940 (the \"Investment Company Act\") and the Investment Advisers Act of 1940 (the \"Advisers Act\"). These definitions concern regulatory requirements applicable to registered investment companies and business development companies (collectively, \"funds\") as well as investment advisers. The definitions are used specifically for purposes of the Regulatory Flexibility Act (the \"RFA\"), which requires the Commission to consider the impact of its regulations on small entities. The amendments are designed to modernize the definitions, by increasing certain asset-based thresholds, including a mechanism for periodic future inflation adjustments, and eliminating the threshold based on total assets for advisers. In connection with these amendments, the Commission is making conforming amendments to Form ADV as well as the rule that allows certain small SEC-registered advisers to apply for a continuing hardship exemption from making Advisers Act filings electronically.",
+   "summary": "The Securities and Exchange Commission (the \"Commission\" or the \"SEC\") is amending the definitions of \"small business\" and \"small organization\" (collectively, \"small entities\") that are used in connection with Commission rulemaking under the Investment Company Act of 1940 (the \"Investment Company Act\") and the Investment Advisers Act of 1940 (the \"Advisers Act\"). These definitions concern regulatory requirements applicable to registered investment companies and business development companies (collectively, \"funds\") as well as investment advisers. The definitions are used specifically for purposes of the Regulatory Flexibility Act (the \"RFA\"), which requires the Commission to consider the…",
    "title": "Amendments to the “Small Business” and “Small Organization” Definitions for Investment Companies and Investment Advisers for Purposes of the Regulatory Flexibility Act",
    "url": "https://www.federalregister.gov/documents/2026/11/06/2026-22741/amendments-to-the-small-business-and-small-organization-definitions-for-investment-companies-and"
   },
@@ -851,6 +1072,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-11-06",
+   "date_basis": "published",
    "doc_type": "Notice",
    "docket_ids": [
     "Assistance Listing Number: 93.576"
@@ -872,15 +1094,33 @@
    "outcome": "notice",
    "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-11-06/pdf/2026-22676.pdf",
    "priority": 0,
+   "published": "2026-11-06",
    "rins": [],
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Money",
+      "points": 2,
+      "why": "$3,500,000 stated"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 2,
+    "points": 3
+   },
    "severity": null,
    "significant": false,
    "source": "federal_register",
    "source_label": "Federal Register",
    "subcategory": "Other notice",
    "subtype": "",
-   "summary": "The ACF, ORR announces the intent to award a single-source cooperative agreement in the amount of up to $3,500,000 to the Welcoming Initiative for Newcomers (WIN) in San Diego, California, for the next phase of the State Capacity and Readiness Initiative. Building on the nationwide baseline assessment and related readiness products completed under WIN's prior cooperative agreement, the proposed project will support an updated assessment of state capacity, support development of training and technical assistance resources, support for pilot implementation and learning, and engagement with states not participating in the pilots. The project will also identify service and capacity gaps and provide recommendations concerning additional grants, contracts, technical assistance, or other resources ORR may need to support a state-centered refugee resettlement model.",
+   "summary": "The ACF, ORR announces the intent to award a single-source cooperative agreement in the amount of up to $3,500,000 to the Welcoming Initiative for Newcomers (WIN) in San Diego, California, for the next phase of the State Capacity and Readiness Initiative. Building on the nationwide baseline assessment and related readiness products completed under WIN's prior cooperative agreement, the proposed project will support an updated assessment of state capacity, support development of training and technical assistance resources, support for pilot implementation and learning, and engagement with states not participating in the pilots. The project will also identify service and capacity gaps and…",
    "title": "Announcement of the Intent To Award a Single-Source Cooperative Agreement to the Welcoming Initiative for Newcomers in San Diego, California",
    "url": "https://www.federalregister.gov/documents/2026/11/06/2026-22676/announcement-of-the-intent-to-award-a-single-source-cooperative-agreement-to-the-welcoming"
   },
@@ -893,6 +1133,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-11-06",
+   "date_basis": "published",
    "doc_type": "Presidential Document",
    "docket_ids": [],
    "effective_on": null,
@@ -910,8 +1151,21 @@
    "outcome": "issued",
    "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-11-06/pdf/2026-22787.pdf",
    "priority": 0,
+   "published": "2026-11-06",
    "rins": [],
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 3,
+      "why": "presidential document"
+     }
+    ],
+    "level": 2,
+    "points": 3
+   },
    "severity": null,
    "significant": false,
    "source": "federal_register",
@@ -931,6 +1185,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-11-06",
+   "date_basis": "published",
    "doc_type": "Notice",
    "docket_ids": [
     "Project No. 3071-008"
@@ -952,8 +1207,21 @@
    "outcome": "notice",
    "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-11-06/pdf/2026-22714.pdf",
    "priority": 0,
+   "published": "2026-11-06",
    "rins": [],
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
    "severity": null,
    "significant": false,
    "source": "federal_register",
@@ -973,6 +1241,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-11-06",
+   "date_basis": "published",
    "doc_type": "Notice",
    "docket_ids": [],
    "effective_on": null,
@@ -992,8 +1261,21 @@
    "outcome": "notice",
    "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-11-06/pdf/2026-22662.pdf",
    "priority": 0,
+   "published": "2026-11-06",
    "rins": [],
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
    "severity": null,
    "significant": false,
    "source": "federal_register",
@@ -1013,6 +1295,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-11-06",
+   "date_basis": "published",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2026-P-14061"
@@ -1024,8 +1307,21 @@
    "jurisdiction": "federal",
    "outcome": "notice",
    "priority": 0,
+   "published": "2026-11-06",
    "regs_agency_id": "FDA",
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
    "severity": null,
    "source": "regulations_gov",
    "source_label": "Regulations.gov",
@@ -1045,6 +1341,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-11-06",
+   "date_basis": "published",
    "doc_type": "Notice",
    "docket_ids": [
     "Docket No. CP27-9-000"
@@ -1066,13 +1363,26 @@
    "outcome": "applied",
    "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-11-06/pdf/2026-22722.pdf",
    "priority": 0,
+   "published": "2026-11-06",
    "rins": [],
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
    "severity": null,
    "significant": false,
    "source": "federal_register",
    "source_label": "Federal Register",
-   "subcategory": "Applications, filings & licensing",
+   "subcategory": "Applications, filings, and licensing",
    "subtype": "",
    "summary": "",
    "title": "Columbia Gulf Transmission, LLC; Notice of Application and Establishing Intervention Deadline",
@@ -1087,6 +1397,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-11-06",
+   "date_basis": "published",
    "doc_type": "Notice",
    "docket_ids": [],
    "effective_on": null,
@@ -1106,13 +1417,26 @@
    "outcome": "applied",
    "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-11-06/pdf/2026-22719.pdf",
    "priority": 0,
+   "published": "2026-11-06",
    "rins": [],
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
    "severity": null,
    "significant": false,
    "source": "federal_register",
    "source_label": "Federal Register",
-   "subcategory": "Applications, filings & licensing",
+   "subcategory": "Applications, filings, and licensing",
    "subtype": "",
    "summary": "",
    "title": "Combined Notice of Filings",
@@ -1127,6 +1451,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-11-06",
+   "date_basis": "published",
    "doc_type": "Notice",
    "docket_ids": [],
    "effective_on": null,
@@ -1146,13 +1471,26 @@
    "outcome": "applied",
    "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-11-06/pdf/2026-22718.pdf",
    "priority": 0,
+   "published": "2026-11-06",
    "rins": [],
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
    "severity": null,
    "significant": false,
    "source": "federal_register",
    "source_label": "Federal Register",
-   "subcategory": "Applications, filings & licensing",
+   "subcategory": "Applications, filings, and licensing",
    "subtype": "",
    "summary": "",
    "title": "Combined Notice of Filings #1",
@@ -1167,6 +1505,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-11-06",
+   "date_basis": "published",
    "doc_type": "Notice",
    "docket_ids": [
     "Docket No. CP26-560-000"
@@ -1188,8 +1527,21 @@
    "outcome": "notice",
    "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-11-06/pdf/2026-22720.pdf",
    "priority": 0,
+   "published": "2026-11-06",
    "rins": [],
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
    "severity": null,
    "significant": false,
    "source": "federal_register",
@@ -1209,6 +1561,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-11-06",
+   "date_basis": "published",
    "doc_type": "Notice",
    "docket_ids": [
     "FRL OPRM-FAD-247"
@@ -1228,8 +1581,21 @@
    "outcome": "notice",
    "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-11-06/pdf/2026-22684.pdf",
    "priority": 0,
+   "published": "2026-11-06",
    "rins": [],
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
    "severity": null,
    "significant": false,
    "source": "federal_register",
@@ -1249,6 +1615,7 @@
    "comments_close": "2027-01-06",
    "corporation": null,
    "date": "2026-11-06",
+   "date_basis": "published",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2026-N-13135"
@@ -1260,8 +1627,21 @@
    "jurisdiction": "federal",
    "outcome": "notice",
    "priority": 0,
+   "published": "2026-11-06",
    "regs_agency_id": "FDA",
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
    "severity": null,
    "source": "regulations_gov",
    "source_label": "Regulations.gov",
@@ -1281,6 +1661,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-11-06",
+   "date_basis": "published",
    "doc_type": "Notice",
    "docket_ids": [],
    "effective_on": null,
@@ -1298,8 +1679,21 @@
    "outcome": "notice",
    "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-11-06/pdf/2026-22645.pdf",
    "priority": 0,
+   "published": "2026-11-06",
    "rins": [],
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
    "severity": null,
    "significant": false,
    "source": "federal_register",
@@ -1319,6 +1713,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-11-06",
+   "date_basis": "published",
    "doc_type": "Notice",
    "docket_ids": [
     "Docket No. RM23-9-000"
@@ -1340,8 +1735,21 @@
    "outcome": "notice",
    "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-11-06/pdf/2026-22723.pdf",
    "priority": 0,
+   "published": "2026-11-06",
    "rins": [],
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
    "severity": null,
    "significant": false,
    "source": "federal_register",
@@ -1361,6 +1769,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-11-06",
+   "date_basis": "published",
    "doc_type": "Rule",
    "docket_ids": [
     "Docket No. FDA-2026-F-4956"
@@ -1382,8 +1791,21 @@
    "outcome": "final",
    "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-11-06/pdf/2026-22663.pdf",
    "priority": 0,
+   "published": "2026-11-06",
    "rins": [],
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 2,
+      "why": "binding rule"
+     }
+    ],
+    "level": 1,
+    "points": 2
+   },
    "severity": null,
    "significant": false,
    "source": "federal_register",
@@ -1403,6 +1825,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-11-06",
+   "date_basis": "published",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2026-N-13135"
@@ -1414,8 +1837,21 @@
    "jurisdiction": "federal",
    "outcome": "notice",
    "priority": 0,
+   "published": "2026-11-06",
    "regs_agency_id": "FDA",
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
    "severity": null,
    "source": "regulations_gov",
    "source_label": "Regulations.gov",
@@ -1435,6 +1871,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-11-06",
+   "date_basis": "published",
    "doc_type": "Rule",
    "docket_ids": [
     "Docket No. FDA-2026-N-12125"
@@ -1456,8 +1893,21 @@
    "outcome": "final",
    "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-11-06/pdf/2026-22657.pdf",
    "priority": 0,
+   "published": "2026-11-06",
    "rins": [],
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 2,
+      "why": "binding rule"
+     }
+    ],
+    "level": 1,
+    "points": 2
+   },
    "severity": null,
    "significant": false,
    "source": "federal_register",
@@ -1477,6 +1927,7 @@
    "comments_close": "2027-01-04",
    "corporation": null,
    "date": "2026-11-06",
+   "date_basis": "published",
    "doc_type": "Rule",
    "docket_ids": [
     "CMS-1850-FC"
@@ -1498,17 +1949,30 @@
    "outcome": "final",
    "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-11-06/pdf/2026-22739.pdf",
    "priority": 0,
+   "published": "2026-11-06",
    "rins": [
     "0938-AV83"
    ],
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 2,
+      "why": "binding rule"
+     }
+    ],
+    "level": 1,
+    "points": 2
+   },
    "severity": null,
    "significant": false,
    "source": "federal_register",
    "source_label": "Federal Register",
    "subcategory": "Final rule",
    "subtype": "",
-   "summary": "This final rule with comment period revises the Medicare Hospital Outpatient Prospective Payment System (OPPS) and the Medicare Ambulatory Surgical Center (ASC) payment system for calendar year 2027 based on our continuing experience with these systems. We also describe the changes to the amounts and factors used to determine the payment rates for Medicare services paid under the OPPS and those paid under the ASC payment systems. In addition, this final rule with comment period updates and refines the requirements for the Hospital Outpatient Quality Reporting Program and the Ambulatory Surgical Center Quality Reporting Program. There are no changes to the Rural Emergency Hospital Quality Reporting Program. We finalized the expansion of the prior authorization requirement to include additional Botulinum Toxin Injection services. We also finalized implementation of certain provisions of the Consolidated Appropriations Act, 2026, for off-campus outpatient departments of a provider. In addition, this final rule with comment period announces notices of closure of teaching hospitals and opportunities to apply for available slots. Additionally, we finalized the policy that hospital accrediting organizations (AOs) with deeming authority may assess compliance with certain Emergency Medical Treatment and Labor Act (EMTALA) administrative requirements under 42 CFR 489.20 during accreditation and reaccreditation surveys.",
+   "summary": "This final rule with comment period revises the Medicare Hospital Outpatient Prospective Payment System (OPPS) and the Medicare Ambulatory Surgical Center (ASC) payment system for calendar year 2027 based on our continuing experience with these systems. We also describe the changes to the amounts and factors used to determine the payment rates for Medicare services paid under the OPPS and those paid under the ASC payment systems. In addition, this final rule with comment period updates and refines the requirements for the Hospital Outpatient Quality Reporting Program and the Ambulatory Surgical Center Quality Reporting Program. There are no changes to the Rural Emergency Hospital Quality…",
    "title": "Medicare Program: Hospital Outpatient Prospective Payment and Ambulatory Surgical Center Payment Systems; and Quality Reporting Programs; including the Hospital Outpatient Quality Reporting Program and Ambulatory Surgical Center Quality Program; Request for Information on Strengthening the Standardization and Comparability of Hospital Price Transparency (HPT) Data; Prior Authorization; Accrediting Organization (AO) Deeming for Emergency Medical Treatment and Labor Act (EMTALA); and Notices of Closure of Teaching Hospitals and Opportunities To Apply for Available Slots",
    "url": "https://www.federalregister.gov/documents/2026/11/06/2026-22739/medicare-program-hospital-outpatient-prospective-payment-and-ambulatory-surgical-center-payment"
   },
@@ -1521,6 +1985,7 @@
    "comments_close": "2027-01-06",
    "corporation": null,
    "date": "2026-11-06",
+   "date_basis": "published",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2026-N-13135"
@@ -1532,8 +1997,21 @@
    "jurisdiction": "federal",
    "outcome": "notice",
    "priority": 0,
+   "published": "2026-11-06",
    "regs_agency_id": "FDA",
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
    "severity": null,
    "source": "regulations_gov",
    "source_label": "Regulations.gov",
@@ -1553,6 +2031,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-11-06",
+   "date_basis": "published",
    "doc_type": "Notice",
    "docket_ids": [
     "Docket No. RM98-1-000"
@@ -1574,8 +2053,21 @@
    "outcome": "notice",
    "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-11-06/pdf/2026-22724.pdf",
    "priority": 0,
+   "published": "2026-11-06",
    "rins": [],
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
    "severity": null,
    "significant": false,
    "source": "federal_register",
@@ -1595,6 +2087,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-11-06",
+   "date_basis": "published",
    "doc_type": "Presidential Document",
    "docket_ids": [],
    "effective_on": null,
@@ -1612,8 +2105,21 @@
    "outcome": "issued",
    "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-11-06/pdf/2026-22789.pdf",
    "priority": 0,
+   "published": "2026-11-06",
    "rins": [],
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 3,
+      "why": "presidential document"
+     }
+    ],
+    "level": 2,
+    "points": 3
+   },
    "severity": null,
    "significant": false,
    "source": "federal_register",
@@ -1633,6 +2139,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-11-06",
+   "date_basis": "published",
    "doc_type": "Notice",
    "docket_ids": [
     "Docket No. CP26-576-000"
@@ -1654,8 +2161,21 @@
    "outcome": "notice",
    "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-11-06/pdf/2026-22721.pdf",
    "priority": 0,
+   "published": "2026-11-06",
    "rins": [],
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
    "severity": null,
    "significant": false,
    "source": "federal_register",
@@ -1675,6 +2195,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-11-06",
+   "date_basis": "published",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2026-V-13437"
@@ -1686,8 +2207,21 @@
    "jurisdiction": "federal",
    "outcome": "applied",
    "priority": 0,
+   "published": "2026-11-06",
    "regs_agency_id": "FDA",
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
    "severity": null,
    "source": "regulations_gov",
    "source_label": "Regulations.gov",
@@ -1707,6 +2241,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-11-06",
+   "date_basis": "published",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2026-V-13310"
@@ -1718,8 +2253,21 @@
    "jurisdiction": "federal",
    "outcome": "applied",
    "priority": 0,
+   "published": "2026-11-06",
    "regs_agency_id": "FDA",
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
    "severity": null,
    "source": "regulations_gov",
    "source_label": "Regulations.gov",
@@ -1739,6 +2287,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-11-06",
+   "date_basis": "published",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2026-V-10268"
@@ -1750,8 +2299,21 @@
    "jurisdiction": "federal",
    "outcome": "applied",
    "priority": 0,
+   "published": "2026-11-06",
    "regs_agency_id": "FDA",
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
    "severity": null,
    "source": "regulations_gov",
    "source_label": "Regulations.gov",
@@ -1771,6 +2333,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-11-06",
+   "date_basis": "published",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2026-V-13534"
@@ -1782,8 +2345,21 @@
    "jurisdiction": "federal",
    "outcome": "applied",
    "priority": 0,
+   "published": "2026-11-06",
    "regs_agency_id": "FDA",
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
    "severity": null,
    "source": "regulations_gov",
    "source_label": "Regulations.gov",
@@ -1803,6 +2379,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-11-06",
+   "date_basis": "published",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2026-V-11399"
@@ -1814,8 +2391,21 @@
    "jurisdiction": "federal",
    "outcome": "applied",
    "priority": 0,
+   "published": "2026-11-06",
    "regs_agency_id": "FDA",
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
    "severity": null,
    "source": "regulations_gov",
    "source_label": "Regulations.gov",
@@ -1835,6 +2425,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-11-06",
+   "date_basis": "published",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2026-V-13437"
@@ -1846,8 +2437,21 @@
    "jurisdiction": "federal",
    "outcome": "granted",
    "priority": 0,
+   "published": "2026-11-06",
    "regs_agency_id": "FDA",
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
    "severity": null,
    "source": "regulations_gov",
    "source_label": "Regulations.gov",
@@ -1867,6 +2471,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-11-06",
+   "date_basis": "published",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2026-V-10268"
@@ -1878,8 +2483,21 @@
    "jurisdiction": "federal",
    "outcome": "granted",
    "priority": 0,
+   "published": "2026-11-06",
    "regs_agency_id": "FDA",
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
    "severity": null,
    "source": "regulations_gov",
    "source_label": "Regulations.gov",
@@ -1899,6 +2517,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-11-06",
+   "date_basis": "published",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2026-V-11399"
@@ -1910,8 +2529,21 @@
    "jurisdiction": "federal",
    "outcome": "granted",
    "priority": 0,
+   "published": "2026-11-06",
    "regs_agency_id": "FDA",
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
    "severity": null,
    "source": "regulations_gov",
    "source_label": "Regulations.gov",
@@ -1931,6 +2563,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-11-06",
+   "date_basis": "published",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2026-V-13310"
@@ -1942,8 +2575,21 @@
    "jurisdiction": "federal",
    "outcome": "granted",
    "priority": 0,
+   "published": "2026-11-06",
    "regs_agency_id": "FDA",
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
    "severity": null,
    "source": "regulations_gov",
    "source_label": "Regulations.gov",
@@ -1963,6 +2609,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-11-06",
+   "date_basis": "published",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2026-V-13534"
@@ -1974,8 +2621,21 @@
    "jurisdiction": "federal",
    "outcome": "granted",
    "priority": 0,
+   "published": "2026-11-06",
    "regs_agency_id": "FDA",
+   "routine": false,
    "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
    "severity": null,
    "source": "regulations_gov",
    "source_label": "Regulations.gov",

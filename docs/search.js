@@ -1,4 +1,4 @@
-/* RegHunter research engine. Runs entirely in the browser; nothing typed is sent anywhere.
+/* RegCollect research engine. Runs entirely in the browser; nothing typed is sent anywhere.
  *
  * Version 1 matched requests against a fixed vocabulary and required every
  * recognized part to match, so anything phrased differently was left out.
@@ -108,7 +108,8 @@
     granted: ["granted", "approved"],
   };
   const SEVERITY_WORDS = [
-    [/\b(?:most )?flagrant\b|\bclearest\b|\bobvious(?:ly)? unconstitutional\b|\bworst\b/i, { axis: "clarity", min: 3 }],
+    [/\b(?:most )?flagrant\b|\bclearest\b|\bobvious(?:ly)? unconstitutional\b|\bworst\b/i, { axis: "flagrance", min: 3 }],
+    [/\b(?:highly |most )?flagran(?:t|ce)\b/i, { axis: "flagrance", min: 2 }],
     [/\b(?:most )?(?:severe|serious)\b|\bhigh[- ]impact\b|\bhigh[- ]stakes\b/i, { axis: "impact", min: 3 }],
     [/\b(?:un)?constitutional(?: issues?| problems?| violations?)?\b|\bflagged\b|\bconstitution\b/i, { axis: "any", min: 1 }],
     [/\bstructural\b|\bseparation of powers\b/i, { axis: "structural", min: 1 }],
@@ -193,6 +194,7 @@
       [/\blast year\b/i, () => [`${today.getFullYear() - 1}-01-01`, `${today.getFullYear() - 1}-12-31`, "last year"]],
       [new RegExp(`\\b(?:between|from) (${DATE_WORD}) (?:and|to|through|until|-) (${DATE_WORD})`, "i"), (m) => {
         const a = parseDay(m[1]), b = parseDay(m[2]); return a && b ? [startOf(a), endOf(b), `${m[1]} to ${m[2]}`] : null; }],
+      [/\b(?:since|after|starting in|beginning in|from) (20\d{2})\b(?![-/])/i, (m) => [`${m[1]}-01-01`, t, `since ${m[1]}`]],
       [new RegExp(`\\b(?:since|after|starting|beginning|from) (${DATE_WORD})`, "i"), (m) => { const a = parseDay(m[1]); return a ? [startOf(a), t, `since ${m[1]}`] : null; }],
       [new RegExp(`\\b(?:before|until|through|prior to) (${DATE_WORD})`, "i"), (m) => { const a = parseDay(m[1]); return a ? ["", endOf(a), `before ${m[1]}`] : null; }],
       [new RegExp(`\\b(?:in|during|for|on) (${DATE_WORD})`, "i"), (m) => { const a = parseDay(m[1]); return a ? [startOf(a), endOf(a), m[1]] : null; }],
@@ -229,7 +231,7 @@
       add((ctx.categories || {})[it.category], 1);
       ctx.entityOf(it).forEach((k) => { const e = ctx.byKey[k]; if (e) add(`${e.name} ${e.short}`, 2); });
       (it.sanctions || []).forEach((k) => { const s = sanctionLabel[k]; if (s) add(`${s.label} ${s.words.join(" ")}`, 1.5); });
-      (it.flags || []).forEach((f) => add(f.label, 1.5));
+      (it.flags || []).forEach((f) => add(kindLabel[f.code], 1.5));
       add(outcomeLabel[it.outcome], 0.8);
       let len = 0; tf.forEach((v) => { len += v; });
       return { it, tf, len };
@@ -264,7 +266,7 @@
       if (date) { out.date = date; blank(...date.span); }
       [[/\bby (?:constitutional )?(?:issue|violation|problem|flag)s?\b/, "issue"], [/\bby (?:type|category|kind)\b/, "category"],
        [/\b(?:timeline|over time|by (?:date|week|month)|chronolog\w*|trend\w*)\b/, "date"], [/\bby (?:agency|agencies|regulator)\b/, "agency"],
-       [/\bby (?:sanction|penalty|punishment)s?\b/, "sanction"], [/\bby (?:severity|clarity|seriousness)\b/, "severity"]]
+       [/\bby (?:sanction|penalty|punishment)s?\b/, "sanction"], [/\bby (?:severity|flagrance|clarity|seriousness)\b/, "severity"]]
         .forEach(([rx, g]) => { const m = text.match(rx); if (m && !out.hints.group) { out.hints.group = g; blank(m.index, m.index + m[0].length); } });
       const tm = text.match(/\b(?:as a |in a )?(?:table|spreadsheet)\b/);
       if (tm) { out.hints.view = "table"; blank(tm.index, tm.index + tm[0].length); }
@@ -323,7 +325,7 @@
 
     /**
      * query: parsed request (from parse) possibly edited by the user
-     * facets: { entities:[], categories:[], sanctions:[], issues:[], outcomes:[], clarity:[], impact:[], from, to }
+     * facets: { entities:[], categories:[], sanctions:[], issues:[], outcomes:[], flagrance:[], impact:[], from, to, routine }
      * strict: require every recognized concept
      */
     function search(parsed, facets, strict) {
@@ -345,7 +347,8 @@
         if (facets.sanctions && facets.sanctions.length && !(it.sanctions || []).some((k) => facets.sanctions.includes(k))) return;
         if (facets.issues && facets.issues.length && !(it.flags || []).some((f) => facets.issues.includes(f.code))) return;
         if (facets.outcomes && facets.outcomes.length && !facets.outcomes.includes(it.outcome)) return;
-        if (facets.clarity && facets.clarity.length && !(it.severity && facets.clarity.includes(it.severity.clarity))) return;
+        if (facets.flagrance && facets.flagrance.length && !(it.severity && facets.flagrance.includes(it.severity.flagrance))) return;
+        if (!facets.routine && it.routine && !ents.includes("other_sro")) return;
         if (facets.impact && facets.impact.length && !(it.severity && facets.impact.includes(it.severity.impact))) return;
         if ((parsed.severity || []).some((s) => !matchesSeverity(it, s))) return;
 
