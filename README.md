@@ -69,7 +69,7 @@ The memos are marked "Draft, not yet reviewed" (`REVIEW_STATUS` in `doctrine.py`
    - `REGULATIONS_GOV_API_KEY`: your api.data.gov key.
    - `SEC_CONTACT_EMAIL` (optional): sent only in request headers to the SEC, never published.
    - `DOL_API_KEY` (later): for Department of Labor enforcement data once that source is added.
-3. **First run:** Actions → "Collect agency data" → Run workflow. The backfill starts on its own schedule; it can also be started from Actions → "Backfill history".
+3. **First run:** Actions → "Collect agency data" → Run workflow. The backfill starts on its own schedule; it can also be started from Actions → "Fill history back to 2015".
 
 ## Changing things
 
