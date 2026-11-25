@@ -2,6 +2,433 @@
  "date": "2026-11-25",
  "items": [
   {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-25",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-H-14692"
+   ],
+   "first_seen": "2026-11-25T19:15:39+00:00",
+   "flags": [
+    {
+     "authorities": [
+      "SEC v. Jarkesy, 603 U.S. 109 (2024)",
+      "Axon Enterprise, Inc. v. FTC, 598 U.S. 175 (2023)",
+      "FCC v. AT&T, Inc. (U.S. June 4, 2026) (FCC forfeiture orders upheld)",
+      "Granfinanciera, S.A. v. Nordberg, 492 U.S. 33 (1989)"
+     ],
+     "clarity": 2,
+     "code": "agency_adjudication",
+     "group": "structural",
+     "impact": 2,
+     "label": "Agency adjudication of penalties (jury trial / Article III)",
+     "rating_notes": [
+      "no penalty wording found (seriousness lowered)",
+      "civil money penalty decided by an HHS administrative law judge"
+     ],
+     "structural": true,
+     "triggers": [
+      "civil money penalty complaint"
+     ],
+     "why": "The agency itself appears to be deciding a case that could carry penalties. Penalty cases resembling common-law suits may require a jury and an Article III court, and agency proceedings can combine prosecutor and judge in one body."
+    }
+   ],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-H-14692-0001",
+   "jurisdiction": "federal",
+   "outcome": "initiated",
+   "priority": 2,
+   "regs_agency_id": "FDA",
+   "sanctions": [
+    "civil_penalty"
+   ],
+   "severity": {
+    "clarity": 2,
+    "impact": 2,
+    "score": 4
+   },
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Civil money penalty complaint (FDA hearing docket, usually a tobacco retailer)",
+   "subtype": "Complaint",
+   "summary": "",
+   "title": "Complaint",
+   "url": "https://www.regulations.gov/document/FDA-2026-H-14692-0001",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-25",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-H-14723"
+   ],
+   "first_seen": "2026-11-25T19:15:39+00:00",
+   "flags": [
+    {
+     "authorities": [
+      "SEC v. Jarkesy, 603 U.S. 109 (2024)",
+      "Axon Enterprise, Inc. v. FTC, 598 U.S. 175 (2023)",
+      "FCC v. AT&T, Inc. (U.S. June 4, 2026) (FCC forfeiture orders upheld)",
+      "Granfinanciera, S.A. v. Nordberg, 492 U.S. 33 (1989)"
+     ],
+     "clarity": 2,
+     "code": "agency_adjudication",
+     "group": "structural",
+     "impact": 2,
+     "label": "Agency adjudication of penalties (jury trial / Article III)",
+     "rating_notes": [
+      "no penalty wording found (seriousness lowered)",
+      "civil money penalty decided by an HHS administrative law judge"
+     ],
+     "structural": true,
+     "triggers": [
+      "civil money penalty complaint"
+     ],
+     "why": "The agency itself appears to be deciding a case that could carry penalties. Penalty cases resembling common-law suits may require a jury and an Article III court, and agency proceedings can combine prosecutor and judge in one body."
+    }
+   ],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-H-14723-0001",
+   "jurisdiction": "federal",
+   "outcome": "initiated",
+   "priority": 2,
+   "regs_agency_id": "FDA",
+   "sanctions": [
+    "civil_penalty"
+   ],
+   "severity": {
+    "clarity": 2,
+    "impact": 2,
+    "score": 4
+   },
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Civil money penalty complaint (FDA hearing docket, usually a tobacco retailer)",
+   "subtype": "Complaint",
+   "summary": "",
+   "title": "Complaint",
+   "url": "https://www.regulations.gov/document/FDA-2026-H-14723-0001",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-25",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-H-14629"
+   ],
+   "first_seen": "2026-11-25T19:15:39+00:00",
+   "flags": [
+    {
+     "authorities": [
+      "SEC v. Jarkesy, 603 U.S. 109 (2024)",
+      "Axon Enterprise, Inc. v. FTC, 598 U.S. 175 (2023)",
+      "FCC v. AT&T, Inc. (U.S. June 4, 2026) (FCC forfeiture orders upheld)",
+      "Granfinanciera, S.A. v. Nordberg, 492 U.S. 33 (1989)"
+     ],
+     "clarity": 2,
+     "code": "agency_adjudication",
+     "group": "structural",
+     "impact": 2,
+     "label": "Agency adjudication of penalties (jury trial / Article III)",
+     "rating_notes": [
+      "no penalty wording found (seriousness lowered)",
+      "civil money penalty decided by an HHS administrative law judge"
+     ],
+     "structural": true,
+     "triggers": [
+      "civil money penalty complaint"
+     ],
+     "why": "The agency itself appears to be deciding a case that could carry penalties. Penalty cases resembling common-law suits may require a jury and an Article III court, and agency proceedings can combine prosecutor and judge in one body."
+    }
+   ],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-H-14629-0001",
+   "jurisdiction": "federal",
+   "outcome": "initiated",
+   "priority": 2,
+   "regs_agency_id": "FDA",
+   "sanctions": [
+    "civil_penalty"
+   ],
+   "severity": {
+    "clarity": 2,
+    "impact": 2,
+    "score": 4
+   },
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Civil money penalty complaint (FDA hearing docket, usually a tobacco retailer)",
+   "subtype": "Complaint",
+   "summary": "",
+   "title": "Complaint",
+   "url": "https://www.regulations.gov/document/FDA-2026-H-14629-0001",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-25",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-H-14627"
+   ],
+   "first_seen": "2026-11-25T19:15:39+00:00",
+   "flags": [
+    {
+     "authorities": [
+      "SEC v. Jarkesy, 603 U.S. 109 (2024)",
+      "Axon Enterprise, Inc. v. FTC, 598 U.S. 175 (2023)",
+      "FCC v. AT&T, Inc. (U.S. June 4, 2026) (FCC forfeiture orders upheld)",
+      "Granfinanciera, S.A. v. Nordberg, 492 U.S. 33 (1989)"
+     ],
+     "clarity": 2,
+     "code": "agency_adjudication",
+     "group": "structural",
+     "impact": 2,
+     "label": "Agency adjudication of penalties (jury trial / Article III)",
+     "rating_notes": [
+      "no penalty wording found (seriousness lowered)",
+      "civil money penalty decided by an HHS administrative law judge"
+     ],
+     "structural": true,
+     "triggers": [
+      "civil money penalty complaint"
+     ],
+     "why": "The agency itself appears to be deciding a case that could carry penalties. Penalty cases resembling common-law suits may require a jury and an Article III court, and agency proceedings can combine prosecutor and judge in one body."
+    }
+   ],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-H-14627-0001",
+   "jurisdiction": "federal",
+   "outcome": "initiated",
+   "priority": 2,
+   "regs_agency_id": "FDA",
+   "sanctions": [
+    "civil_penalty"
+   ],
+   "severity": {
+    "clarity": 2,
+    "impact": 2,
+    "score": 4
+   },
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Civil money penalty complaint (FDA hearing docket, usually a tobacco retailer)",
+   "subtype": "Complaint",
+   "summary": "",
+   "title": "Complaint",
+   "url": "https://www.regulations.gov/document/FDA-2026-H-14627-0001",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-25",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-H-14592"
+   ],
+   "first_seen": "2026-11-25T19:15:39+00:00",
+   "flags": [
+    {
+     "authorities": [
+      "SEC v. Jarkesy, 603 U.S. 109 (2024)",
+      "Axon Enterprise, Inc. v. FTC, 598 U.S. 175 (2023)",
+      "FCC v. AT&T, Inc. (U.S. June 4, 2026) (FCC forfeiture orders upheld)",
+      "Granfinanciera, S.A. v. Nordberg, 492 U.S. 33 (1989)"
+     ],
+     "clarity": 2,
+     "code": "agency_adjudication",
+     "group": "structural",
+     "impact": 2,
+     "label": "Agency adjudication of penalties (jury trial / Article III)",
+     "rating_notes": [
+      "no penalty wording found (seriousness lowered)",
+      "civil money penalty decided by an HHS administrative law judge"
+     ],
+     "structural": true,
+     "triggers": [
+      "civil money penalty complaint"
+     ],
+     "why": "The agency itself appears to be deciding a case that could carry penalties. Penalty cases resembling common-law suits may require a jury and an Article III court, and agency proceedings can combine prosecutor and judge in one body."
+    }
+   ],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-H-14592-0001",
+   "jurisdiction": "federal",
+   "outcome": "initiated",
+   "priority": 2,
+   "regs_agency_id": "FDA",
+   "sanctions": [
+    "civil_penalty"
+   ],
+   "severity": {
+    "clarity": 2,
+    "impact": 2,
+    "score": 4
+   },
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Civil money penalty complaint (FDA hearing docket, usually a tobacco retailer)",
+   "subtype": "Complaint",
+   "summary": "",
+   "title": "Complaint",
+   "url": "https://www.regulations.gov/document/FDA-2026-H-14592-0001",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-25",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-H-14606"
+   ],
+   "first_seen": "2026-11-25T19:15:39+00:00",
+   "flags": [
+    {
+     "authorities": [
+      "SEC v. Jarkesy, 603 U.S. 109 (2024)",
+      "Axon Enterprise, Inc. v. FTC, 598 U.S. 175 (2023)",
+      "FCC v. AT&T, Inc. (U.S. June 4, 2026) (FCC forfeiture orders upheld)",
+      "Granfinanciera, S.A. v. Nordberg, 492 U.S. 33 (1989)"
+     ],
+     "clarity": 2,
+     "code": "agency_adjudication",
+     "group": "structural",
+     "impact": 2,
+     "label": "Agency adjudication of penalties (jury trial / Article III)",
+     "rating_notes": [
+      "no penalty wording found (seriousness lowered)",
+      "civil money penalty decided by an HHS administrative law judge"
+     ],
+     "structural": true,
+     "triggers": [
+      "civil money penalty complaint"
+     ],
+     "why": "The agency itself appears to be deciding a case that could carry penalties. Penalty cases resembling common-law suits may require a jury and an Article III court, and agency proceedings can combine prosecutor and judge in one body."
+    }
+   ],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-H-14606-0001",
+   "jurisdiction": "federal",
+   "outcome": "initiated",
+   "priority": 2,
+   "regs_agency_id": "FDA",
+   "sanctions": [
+    "civil_penalty"
+   ],
+   "severity": {
+    "clarity": 2,
+    "impact": 2,
+    "score": 4
+   },
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Civil money penalty complaint (FDA hearing docket, usually a tobacco retailer)",
+   "subtype": "Complaint",
+   "summary": "",
+   "title": "Complaint",
+   "url": "https://www.regulations.gov/document/FDA-2026-H-14606-0001",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-25",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-H-14628"
+   ],
+   "first_seen": "2026-11-25T19:15:39+00:00",
+   "flags": [
+    {
+     "authorities": [
+      "SEC v. Jarkesy, 603 U.S. 109 (2024)",
+      "Axon Enterprise, Inc. v. FTC, 598 U.S. 175 (2023)",
+      "FCC v. AT&T, Inc. (U.S. June 4, 2026) (FCC forfeiture orders upheld)",
+      "Granfinanciera, S.A. v. Nordberg, 492 U.S. 33 (1989)"
+     ],
+     "clarity": 2,
+     "code": "agency_adjudication",
+     "group": "structural",
+     "impact": 2,
+     "label": "Agency adjudication of penalties (jury trial / Article III)",
+     "rating_notes": [
+      "no penalty wording found (seriousness lowered)",
+      "civil money penalty decided by an HHS administrative law judge"
+     ],
+     "structural": true,
+     "triggers": [
+      "civil money penalty complaint"
+     ],
+     "why": "The agency itself appears to be deciding a case that could carry penalties. Penalty cases resembling common-law suits may require a jury and an Article III court, and agency proceedings can combine prosecutor and judge in one body."
+    }
+   ],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-H-14628-0001",
+   "jurisdiction": "federal",
+   "outcome": "initiated",
+   "priority": 2,
+   "regs_agency_id": "FDA",
+   "sanctions": [
+    "civil_penalty"
+   ],
+   "severity": {
+    "clarity": 2,
+    "impact": 2,
+    "score": 4
+   },
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Civil money penalty complaint (FDA hearing docket, usually a tobacco retailer)",
+   "subtype": "Complaint",
+   "summary": "",
+   "title": "Complaint",
+   "url": "https://www.regulations.gov/document/FDA-2026-H-14628-0001",
+   "withdrawn": false
+  },
+  {
    "action": "Notification; extension of interim final rule--expiration date.",
    "agencies": [
     "hhs"
@@ -239,12 +666,460 @@
    "url": "https://www.federalregister.gov/documents/2026/11/25/2026-24007/anr-pipeline-company-notice-of-request-under-blanket-authorization-and-establishing-intervention-and"
   },
   {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-25",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-P-14951"
+   ],
+   "first_seen": "2026-11-25T19:15:39+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-P-14951-0002",
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "sanctions": [],
+   "severity": null,
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Citizen petition or FDA response",
+   "subtype": "Acknowledgement Letter/Receipt",
+   "summary": "",
+   "title": "Acknowledgement Letter from FDA DOD to Penmix Ltd.",
+   "url": "https://www.regulations.gov/document/FDA-2026-P-14951-0002",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-25",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-P-14952"
+   ],
+   "first_seen": "2026-11-25T19:15:39+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-P-14952-0002",
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "sanctions": [],
+   "severity": null,
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Citizen petition or FDA response",
+   "subtype": "Acknowledgement Letter/Receipt",
+   "summary": "",
+   "title": "Acknowledgement Letter from FDA DOD to Senores Pharmaceuticals, Inc.",
+   "url": "https://www.regulations.gov/document/FDA-2026-P-14952-0002",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "adjudication",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-25",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-V-14558"
+   ],
+   "first_seen": "2026-11-25T19:15:39+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-V-14558-0002",
+   "jurisdiction": "federal",
+   "outcome": "applied",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "sanctions": [],
+   "severity": null,
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Variance application or decision (product standard)",
+   "subtype": "Acknowledgement Letter/Receipt",
+   "summary": "",
+   "title": "Acknowledgment Letter from FDA DOD to 1st Street Music & Sound Company Inc",
+   "url": "https://www.regulations.gov/document/FDA-2026-V-14558-0002",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "adjudication",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-25",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-V-14559"
+   ],
+   "first_seen": "2026-11-25T19:15:39+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-V-14559-0002",
+   "jurisdiction": "federal",
+   "outcome": "applied",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "sanctions": [],
+   "severity": null,
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Variance application or decision (product standard)",
+   "subtype": "Acknowledgement Letter/Receipt",
+   "summary": "",
+   "title": "Acknowledgment Letter from FDA DOD to 1st Street Music & Sound Company Inc",
+   "url": "https://www.regulations.gov/document/FDA-2026-V-14559-0002",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "adjudication",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-25",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-V-13796"
+   ],
+   "first_seen": "2026-11-25T19:15:39+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-V-13796-0002",
+   "jurisdiction": "federal",
+   "outcome": "applied",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "sanctions": [],
+   "severity": null,
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Variance application or decision (product standard)",
+   "subtype": "Acknowledgement Letter/Receipt",
+   "summary": "",
+   "title": "Acknowledgment Letter from FDA DOD to Abenezer Markos",
+   "url": "https://www.regulations.gov/document/FDA-2026-V-13796-0002",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "adjudication",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-25",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-V-14687"
+   ],
+   "first_seen": "2026-11-25T19:15:39+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-V-14687-0002",
+   "jurisdiction": "federal",
+   "outcome": "applied",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "sanctions": [],
+   "severity": null,
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Variance application or decision (product standard)",
+   "subtype": "Acknowledgement Letter/Receipt",
+   "summary": "",
+   "title": "Acknowledgment Letter from FDA DOD to Adam Elinkowski",
+   "url": "https://www.regulations.gov/document/FDA-2026-V-14687-0002",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-25",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-P-15016"
+   ],
+   "first_seen": "2026-11-25T19:15:39+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-P-15016-0002",
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "sanctions": [],
+   "severity": null,
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Citizen petition or FDA response",
+   "subtype": "Acknowledgement Letter/Receipt",
+   "summary": "",
+   "title": "Acknowledgment Letter from FDA DOD to BPI Labs, LLC",
+   "url": "https://www.regulations.gov/document/FDA-2026-P-15016-0002",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "adjudication",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-25",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-V-14376"
+   ],
+   "first_seen": "2026-11-25T19:15:39+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-V-14376-0002",
+   "jurisdiction": "federal",
+   "outcome": "applied",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "sanctions": [],
+   "severity": null,
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Variance application or decision (product standard)",
+   "subtype": "Acknowledgement Letter/Receipt",
+   "summary": "",
+   "title": "Acknowledgment Letter from FDA DOD to Connor Elbert",
+   "url": "https://www.regulations.gov/document/FDA-2026-V-14376-0002",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "adjudication",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-25",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-V-14161"
+   ],
+   "first_seen": "2026-11-25T19:15:39+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-V-14161-0002",
+   "jurisdiction": "federal",
+   "outcome": "applied",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "sanctions": [],
+   "severity": null,
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Variance application or decision (product standard)",
+   "subtype": "Acknowledgement Letter/Receipt",
+   "summary": "",
+   "title": "Acknowledgment Letter from FDA DOD to Gametime Portraits LLC",
+   "url": "https://www.regulations.gov/document/FDA-2026-V-14161-0002",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "adjudication",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-25",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-V-13795"
+   ],
+   "first_seen": "2026-11-25T19:15:39+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-V-13795-0002",
+   "jurisdiction": "federal",
+   "outcome": "applied",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "sanctions": [],
+   "severity": null,
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Variance application or decision (product standard)",
+   "subtype": "Acknowledgement Letter/Receipt",
+   "summary": "",
+   "title": "Acknowledgment Letter from FDA DOD to Gloe Laser Show LLC",
+   "url": "https://www.regulations.gov/document/FDA-2026-V-13795-0002",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "adjudication",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-25",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-V-14834"
+   ],
+   "first_seen": "2026-11-25T19:15:39+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-V-14834-0002",
+   "jurisdiction": "federal",
+   "outcome": "applied",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "sanctions": [],
+   "severity": null,
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Variance application or decision (product standard)",
+   "subtype": "Acknowledgement Letter/Receipt",
+   "summary": "",
+   "title": "Acknowledgment Letter from FDA DOD to Maggie Maes - A British Pub Inc.",
+   "url": "https://www.regulations.gov/document/FDA-2026-V-14834-0002",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "adjudication",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-25",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-V-14785"
+   ],
+   "first_seen": "2026-11-25T19:15:39+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-V-14785-0002",
+   "jurisdiction": "federal",
+   "outcome": "applied",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "sanctions": [],
+   "severity": null,
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Variance application or decision (product standard)",
+   "subtype": "Acknowledgement Letter/Receipt",
+   "summary": "",
+   "title": "Acknowledgment Letter from FDA DOD to Nicholas Rachfal",
+   "url": "https://www.regulations.gov/document/FDA-2026-V-14785-0002",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "adjudication",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-25",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-V-14786"
+   ],
+   "first_seen": "2026-11-25T19:15:39+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-V-14786-0002",
+   "jurisdiction": "federal",
+   "outcome": "applied",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "sanctions": [],
+   "severity": null,
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Variance application or decision (product standard)",
+   "subtype": "Acknowledgement Letter/Receipt",
+   "summary": "",
+   "title": "Acknowledgment Letter from FDA DOD to Organic Matter Productions",
+   "url": "https://www.regulations.gov/document/FDA-2026-V-14786-0002",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-25",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-P-8559"
+   ],
+   "first_seen": "2026-11-25T19:15:39+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-P-8559-0011",
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "sanctions": [],
+   "severity": null,
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Citizen petition or FDA response",
+   "subtype": "Approval",
+   "summary": "",
+   "title": "Approval Letter",
+   "url": "https://www.regulations.gov/document/FDA-2026-P-8559-0011",
+   "withdrawn": false
+  },
+  {
    "action": "Final action; requirements and procedures.",
    "agencies": [
     "fcc"
    ],
    "category": "rulemaking",
-   "comments_close": "2027-01-20",
+   "comments_close": null,
    "corporation": null,
    "date": "2026-11-25",
    "doc_type": "Rule",
@@ -279,6 +1154,70 @@
    "summary": "This document summarizes the procedures, deadlines, upfront payment, and minimum opening bid amounts adopted in the Auction 115 Procedures Public Notice for the Federal Communications Commission's (Commission) upcoming auction of 3,248 new flexible-use licenses in the 3.98-4.14 GHz portion of the Upper C-band. The Auction 115 Procedures Public Notice summarized here provides details regarding the procedures, terms, conditions, dates, and deadlines governing participation in Auction 115 bidding, as well as an overview of the post-auction application and payment processes.",
    "title": "Auction of Flexible-Use Licenses in the Upper C-Band for Next-Generation Wireless Services; Notice and Filing Requirements, Minimum Opening Bids, Upfront Payments, and Other Procedures for Auction 115; Bidding Scheduled To Begin April 27, 2027",
    "url": "https://www.federalregister.gov/documents/2026/11/25/2026-24013/auction-of-flexible-use-licenses-in-the-upper-c-band-for-next-generation-wireless-services-notice"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-25",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-P-14951"
+   ],
+   "first_seen": "2026-11-25T19:15:39+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-P-14951-0001",
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "sanctions": [],
+   "severity": null,
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Citizen petition or FDA response",
+   "subtype": "Citizen Petition",
+   "summary": "",
+   "title": "Citizen Petition from Penmix Ltd.",
+   "url": "https://www.regulations.gov/document/FDA-2026-P-14951-0001",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-25",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-P-14952"
+   ],
+   "first_seen": "2026-11-25T19:15:39+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-P-14952-0001",
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "sanctions": [],
+   "severity": null,
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Citizen petition or FDA response",
+   "subtype": "Citizen Petition",
+   "summary": "",
+   "title": "Citizen Petition from Senores Pharmaceuticals, Inc.",
+   "url": "https://www.regulations.gov/document/FDA-2026-P-14952-0001",
+   "withdrawn": false
   },
   {
    "action": "",
@@ -442,7 +1381,7 @@
     "fda"
    ],
    "category": "rulemaking",
-   "comments_close": "2026-08-28",
+   "comments_close": "2027-02-25",
    "corporation": null,
    "date": "2026-11-25",
    "doc_type": "Notice",
@@ -477,6 +1416,38 @@
    "summary": "The Food and Drug Administration (FDA or the Agency) is extending the comment period for the notice of availability that appeared in the Federal Register of August 28, 2026. In the notice, FDA requested comments on the draft guidance for industry (GFI) #256B titled \"Compounding Animal Drugs from Bulk Drug Substances: Compounding under CGMP in Federally-Registered Facilities.\" The Agency is taking this action in response to requests for an extension to allow interested persons additional time to submit comments.",
    "title": "Compounding Animal Drugs From Bulk Drug Substances: Compounding Under CGMP in Federally-Registered Facilities; Draft Guidance for Industry; Extension of Comment Period",
    "url": "https://www.federalregister.gov/documents/2026/11/25/2026-23995/compounding-animal-drugs-from-bulk-drug-substances-compounding-under-cgmp-in-federally-registered"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-25",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-C-13763"
+   ],
+   "first_seen": "2026-11-25T19:15:39+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-C-13763-0002",
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "sanctions": [],
+   "severity": null,
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Other notice",
+   "subtype": "Assessment Document or Analysis",
+   "summary": "",
+   "title": "Environmental Assessment - Magnesium Fluoride-Aluminum Flake",
+   "url": "https://www.regulations.gov/document/FDA-2026-C-13763-0002",
+   "withdrawn": false
   },
   {
    "action": "Notice.",
@@ -795,6 +1766,56 @@
   {
    "action": "",
    "agencies": [
+    "sec"
+   ],
+   "category": "enforcement",
+   "corporation": null,
+   "date": "2026-11-25",
+   "doc_type": "Federal court action (litigation release)",
+   "first_seen": "2026-11-25T19:15:39+00:00",
+   "flags": [],
+   "id": "sec_litigation:a787b0d4ff43eea6",
+   "jurisdiction": "federal",
+   "outcome": "initiated",
+   "priority": 0,
+   "sanctions": [],
+   "severity": null,
+   "source": "sec_litigation",
+   "source_label": "SEC litigation releases (federal court actions)",
+   "subcategory": "Federal court action (litigation release)",
+   "subtype": "",
+   "summary": "",
+   "title": "Michael A. Smith; Douglas and Joshua Dalton",
+   "url": "https://www.sec.gov/enforcement-litigation/litigation-releases/lr-26696"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "sec"
+   ],
+   "category": "enforcement",
+   "corporation": null,
+   "date": "2026-11-25",
+   "doc_type": "Federal court action (litigation release)",
+   "first_seen": "2026-11-25T19:15:39+00:00",
+   "flags": [],
+   "id": "sec_litigation:522cc542dcce0e0d",
+   "jurisdiction": "federal",
+   "outcome": "initiated",
+   "priority": 0,
+   "sanctions": [],
+   "severity": null,
+   "source": "sec_litigation",
+   "source_label": "SEC litigation releases (federal court actions)",
+   "subcategory": "Federal court action (litigation release)",
+   "subtype": "",
+   "summary": "",
+   "title": "Michael P. Hanlon and J. Streicher Financial, LLC",
+   "url": "https://www.sec.gov/enforcement-litigation/litigation-releases/lr-26695"
+  },
+  {
+   "action": "",
+   "agencies": [
     "president"
    ],
    "category": "presidential",
@@ -910,6 +1931,38 @@
    "summary": "",
    "title": "Order Granting Exemptive Relief, Pursuant to Section 36(a)(1) of the Securities Exchange Act of 1934 and Rule 608(e) of Regulation NMS Under the Exchange Act, From Certain Requirements of the National Market System Plan Governing the Consolidated Audit Trail Related to the Recovery of Costs Incurred During Period 4 of the Financial Accountability Milestones",
    "url": "https://www.federalregister.gov/documents/2026/11/25/2026-23950/order-granting-exemptive-relief-pursuant-to-section-36a1-of-the-securities-exchange-act-of-1934-and"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "rulemaking",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-25",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2023-D-1188"
+   ],
+   "first_seen": "2026-11-25T19:15:39+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2023-D-1188-0007",
+   "jurisdiction": "federal",
+   "outcome": "guidance",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "sanctions": [],
+   "severity": null,
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Guidance, interpretation or request for comment",
+   "subtype": "Guidance",
+   "summary": "",
+   "title": "Over-the-Counter Monograph Order Requests: Format and Content; Guidance for Industry - Final Guidance",
+   "url": "https://www.regulations.gov/document/FDA-2023-D-1188-0007",
+   "withdrawn": false
   },
   {
    "action": "Notice of availability.",
@@ -1034,6 +2087,70 @@
    "url": "https://www.federalregister.gov/documents/2026/11/25/2026-24114/protecting-the-executives-privileges-and-enhancing-efficiencies-in-federal-contracting"
   },
   {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-25",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-1995-S-0036"
+   ],
+   "first_seen": "2026-11-25T19:15:39+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-1995-S-0036-0246",
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "sanctions": [],
+   "severity": null,
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Dietary supplement structure/function notification",
+   "subtype": "Public Disclosure",
+   "summary": "",
+   "title": "Public Disclosure from Jason L Sperry, MD, MPH",
+   "url": "https://www.regulations.gov/document/FDA-1995-S-0036-0246",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-25",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-P-15016"
+   ],
+   "first_seen": "2026-11-25T19:15:39+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-P-15016-0001",
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "sanctions": [],
+   "severity": null,
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Citizen petition or FDA response",
+   "subtype": "Petition(s)",
+   "summary": "",
+   "title": "Suitability Petition from BPI Labs, LLC",
+   "url": "https://www.regulations.gov/document/FDA-2026-P-15016-0001",
+   "withdrawn": false
+  },
+  {
    "action": "Notification of petition.",
    "agencies": [
     "fda"
@@ -1074,6 +2191,646 @@
    "summary": "The Food and Drug Administration (FDA or we) is announcing that we have filed a color additive petition, submitted by VIAVI Solutions, proposing that the color additive regulations be amended to provide for the safe use of magnesium fluoride-aluminum flake for use in nail polish at a maximum level of 16 percent of the final product.",
    "title": "VIAVI Solutions; Filing of Color Additive Petition",
    "url": "https://www.federalregister.gov/documents/2026/11/25/2026-24009/viavi-solutions-filing-of-color-additive-petition"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "adjudication",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-25",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-V-14558"
+   ],
+   "first_seen": "2026-11-25T19:15:39+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-V-14558-0001",
+   "jurisdiction": "federal",
+   "outcome": "applied",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "sanctions": [],
+   "severity": null,
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Variance application or decision (product standard)",
+   "subtype": "Application for Variance (VAR)",
+   "summary": "",
+   "title": "Variance Application from 1st Street Music & Sound Company Inc",
+   "url": "https://www.regulations.gov/document/FDA-2026-V-14558-0001",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "adjudication",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-25",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-V-14559"
+   ],
+   "first_seen": "2026-11-25T19:15:39+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-V-14559-0001",
+   "jurisdiction": "federal",
+   "outcome": "applied",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "sanctions": [],
+   "severity": null,
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Variance application or decision (product standard)",
+   "subtype": "Application for Variance (VAR)",
+   "summary": "",
+   "title": "Variance Application from 1st Street Music & Sound Company Inc",
+   "url": "https://www.regulations.gov/document/FDA-2026-V-14559-0001",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "adjudication",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-25",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-V-13796"
+   ],
+   "first_seen": "2026-11-25T19:15:39+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-V-13796-0001",
+   "jurisdiction": "federal",
+   "outcome": "applied",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "sanctions": [],
+   "severity": null,
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Variance application or decision (product standard)",
+   "subtype": "Application for Variance (VAR)",
+   "summary": "",
+   "title": "Variance Application from Abenezer Markos",
+   "url": "https://www.regulations.gov/document/FDA-2026-V-13796-0001",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "adjudication",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-25",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-V-14687"
+   ],
+   "first_seen": "2026-11-25T19:15:39+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-V-14687-0001",
+   "jurisdiction": "federal",
+   "outcome": "applied",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "sanctions": [],
+   "severity": null,
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Variance application or decision (product standard)",
+   "subtype": "Application for Variance (VAR)",
+   "summary": "",
+   "title": "Variance Application from Adam Elinkowski",
+   "url": "https://www.regulations.gov/document/FDA-2026-V-14687-0001",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "adjudication",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-25",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-V-14376"
+   ],
+   "first_seen": "2026-11-25T19:15:39+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-V-14376-0001",
+   "jurisdiction": "federal",
+   "outcome": "applied",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "sanctions": [],
+   "severity": null,
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Variance application or decision (product standard)",
+   "subtype": "Application for Variance (VAR)",
+   "summary": "",
+   "title": "Variance Application from Connor Elbert",
+   "url": "https://www.regulations.gov/document/FDA-2026-V-14376-0001",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "adjudication",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-25",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-V-14161"
+   ],
+   "first_seen": "2026-11-25T19:15:39+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-V-14161-0001",
+   "jurisdiction": "federal",
+   "outcome": "applied",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "sanctions": [],
+   "severity": null,
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Variance application or decision (product standard)",
+   "subtype": "Application for Variance (VAR)",
+   "summary": "",
+   "title": "Variance Application from Gametime Portraits LLC",
+   "url": "https://www.regulations.gov/document/FDA-2026-V-14161-0001",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "adjudication",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-25",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-V-13795"
+   ],
+   "first_seen": "2026-11-25T19:15:39+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-V-13795-0001",
+   "jurisdiction": "federal",
+   "outcome": "applied",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "sanctions": [],
+   "severity": null,
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Variance application or decision (product standard)",
+   "subtype": "Application for Variance (VAR)",
+   "summary": "",
+   "title": "Variance Application from Gloe Laser Show LLC",
+   "url": "https://www.regulations.gov/document/FDA-2026-V-13795-0001",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "adjudication",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-25",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-V-14834"
+   ],
+   "first_seen": "2026-11-25T19:15:39+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-V-14834-0001",
+   "jurisdiction": "federal",
+   "outcome": "applied",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "sanctions": [],
+   "severity": null,
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Variance application or decision (product standard)",
+   "subtype": "Application for Variance (VAR)",
+   "summary": "",
+   "title": "Variance Application from Maggie Maes - A British Pub Inc.",
+   "url": "https://www.regulations.gov/document/FDA-2026-V-14834-0001",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "adjudication",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-25",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-V-14785"
+   ],
+   "first_seen": "2026-11-25T19:15:39+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-V-14785-0001",
+   "jurisdiction": "federal",
+   "outcome": "applied",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "sanctions": [],
+   "severity": null,
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Variance application or decision (product standard)",
+   "subtype": "Application for Variance (VAR)",
+   "summary": "",
+   "title": "Variance Application from Nicholas Rachfal",
+   "url": "https://www.regulations.gov/document/FDA-2026-V-14785-0001",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "adjudication",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-25",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-V-14786"
+   ],
+   "first_seen": "2026-11-25T19:15:39+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-V-14786-0001",
+   "jurisdiction": "federal",
+   "outcome": "applied",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "sanctions": [],
+   "severity": null,
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Variance application or decision (product standard)",
+   "subtype": "Application for Variance (VAR)",
+   "summary": "",
+   "title": "Variance Application from Organic Matter Productions",
+   "url": "https://www.regulations.gov/document/FDA-2026-V-14786-0001",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "adjudication",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-25",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-V-14558"
+   ],
+   "first_seen": "2026-11-25T19:15:39+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-V-14558-0003",
+   "jurisdiction": "federal",
+   "outcome": "granted",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "sanctions": [],
+   "severity": null,
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Variance application or decision (product standard)",
+   "subtype": "Approval for Variance (VRA)",
+   "summary": "",
+   "title": "Variance Approval Letter from FDA CDRH to 1st Street Music & Sound Company Inc.",
+   "url": "https://www.regulations.gov/document/FDA-2026-V-14558-0003",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "adjudication",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-25",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-V-14559"
+   ],
+   "first_seen": "2026-11-25T19:15:39+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-V-14559-0003",
+   "jurisdiction": "federal",
+   "outcome": "granted",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "sanctions": [],
+   "severity": null,
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Variance application or decision (product standard)",
+   "subtype": "Approval for Variance (VRA)",
+   "summary": "",
+   "title": "Variance Approval Letter from FDA CDRH to 1st Street Music & Sound Company Inc.",
+   "url": "https://www.regulations.gov/document/FDA-2026-V-14559-0003",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "adjudication",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-25",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-V-13796"
+   ],
+   "first_seen": "2026-11-25T19:15:39+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-V-13796-0003",
+   "jurisdiction": "federal",
+   "outcome": "granted",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "sanctions": [],
+   "severity": null,
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Variance application or decision (product standard)",
+   "subtype": "Approval for Variance (VRA)",
+   "summary": "",
+   "title": "Variance Approval Letter from FDA CDRH to Abenezer Markos",
+   "url": "https://www.regulations.gov/document/FDA-2026-V-13796-0003",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "adjudication",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-25",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-V-14687"
+   ],
+   "first_seen": "2026-11-25T19:15:39+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-V-14687-0003",
+   "jurisdiction": "federal",
+   "outcome": "granted",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "sanctions": [],
+   "severity": null,
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Variance application or decision (product standard)",
+   "subtype": "Approval for Variance (VRA)",
+   "summary": "",
+   "title": "Variance Approval Letter from FDA CDRH to Adam Elinkowski",
+   "url": "https://www.regulations.gov/document/FDA-2026-V-14687-0003",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "adjudication",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-25",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-V-14376"
+   ],
+   "first_seen": "2026-11-25T19:15:39+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-V-14376-0003",
+   "jurisdiction": "federal",
+   "outcome": "granted",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "sanctions": [],
+   "severity": null,
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Variance application or decision (product standard)",
+   "subtype": "Approval for Variance (VRA)",
+   "summary": "",
+   "title": "Variance Approval Letter from FDA CDRH to Connor Elbert",
+   "url": "https://www.regulations.gov/document/FDA-2026-V-14376-0003",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "adjudication",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-25",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-V-14161"
+   ],
+   "first_seen": "2026-11-25T19:15:39+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-V-14161-0003",
+   "jurisdiction": "federal",
+   "outcome": "granted",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "sanctions": [],
+   "severity": null,
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Variance application or decision (product standard)",
+   "subtype": "Approval for Variance (VRA)",
+   "summary": "",
+   "title": "Variance Approval Letter from FDA CDRH to Gametime Portraits LLC",
+   "url": "https://www.regulations.gov/document/FDA-2026-V-14161-0003",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "adjudication",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-25",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-V-13795"
+   ],
+   "first_seen": "2026-11-25T19:15:39+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-V-13795-0003",
+   "jurisdiction": "federal",
+   "outcome": "granted",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "sanctions": [],
+   "severity": null,
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Variance application or decision (product standard)",
+   "subtype": "Approval for Variance (VRA)",
+   "summary": "",
+   "title": "Variance Approval Letter from FDA CDRH to Gloe Laser Show LLC",
+   "url": "https://www.regulations.gov/document/FDA-2026-V-13795-0003",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "adjudication",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-25",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-V-14834"
+   ],
+   "first_seen": "2026-11-25T19:15:39+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-V-14834-0003",
+   "jurisdiction": "federal",
+   "outcome": "granted",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "sanctions": [],
+   "severity": null,
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Variance application or decision (product standard)",
+   "subtype": "Approval for Variance (VRA)",
+   "summary": "",
+   "title": "Variance Approval Letter from FDA CDRH to Maggie Maes - A British Pub Inc.",
+   "url": "https://www.regulations.gov/document/FDA-2026-V-14834-0003",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "adjudication",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-25",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-V-14785"
+   ],
+   "first_seen": "2026-11-25T19:15:39+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-V-14785-0003",
+   "jurisdiction": "federal",
+   "outcome": "granted",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "sanctions": [],
+   "severity": null,
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Variance application or decision (product standard)",
+   "subtype": "Approval for Variance (VRA)",
+   "summary": "",
+   "title": "Variance Approval Letter from FDA CDRH to Nicholas Rachfal",
+   "url": "https://www.regulations.gov/document/FDA-2026-V-14785-0003",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "adjudication",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-25",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-V-14786"
+   ],
+   "first_seen": "2026-11-25T19:15:39+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-V-14786-0003",
+   "jurisdiction": "federal",
+   "outcome": "granted",
+   "priority": 0,
+   "regs_agency_id": "FDA",
+   "sanctions": [],
+   "severity": null,
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Variance application or decision (product standard)",
+   "subtype": "Approval for Variance (VRA)",
+   "summary": "",
+   "title": "Variance Approval Letter from FDA CDRH to Organic Matter Productions",
+   "url": "https://www.regulations.gov/document/FDA-2026-V-14786-0003",
+   "withdrawn": false
   }
  ]
 }

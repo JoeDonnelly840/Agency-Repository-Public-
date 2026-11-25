@@ -148,9 +148,9 @@
   "2026-11-18": 95,
   "2026-11-19": 65,
   "2026-11-20": 108,
-  "2026-11-23": 417,
-  "2026-11-24": 83,
-  "2026-11-25": 25
+  "2026-11-23": 418,
+  "2026-11-24": 87,
+  "2026-11-25": 74
  },
  "jurisdictions": [
   {
@@ -1373,6 +1373,171 @@
    "requests": 37,
    "run_at": "2026-11-25T13:44:30+00:00",
    "start": "2026-11-21"
+  },
+  {
+   "end": "2026-11-25",
+   "items_found": 578,
+   "items_new": 54,
+   "reports": [
+    {
+     "agencies": {
+      "cfpb": "ok",
+      "dol": "ok",
+      "epa": "ok",
+      "fcc": "ok",
+      "fda": "ok",
+      "ferc": "ok",
+      "ftc": "ok",
+      "hhs": "ok",
+      "nlrb": "ok",
+      "president": "ok",
+      "sec": "ok"
+     },
+     "detail": "",
+     "label": "Federal Register",
+     "source": "federal_register",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "cfpb": "ok",
+      "dol": "ok",
+      "epa": "ok",
+      "fcc": "ok",
+      "fda": "ok",
+      "ferc": "ok",
+      "ftc": "ok",
+      "hhs": "ok",
+      "nlrb": "ok",
+      "sec": "ok"
+     },
+     "detail": "",
+     "label": "Regulations.gov",
+     "source": "regulations_gov",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "sec": "ok"
+     },
+     "detail": "",
+     "label": "SEC litigation releases (federal court actions)",
+     "source": "sec_litigation",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "sec": "ok"
+     },
+     "detail": "",
+     "label": "SEC administrative proceedings (in-house)",
+     "source": "sec_admin",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "fda": "ok"
+     },
+     "detail": "",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "ftc": "error: Could not read https://www.ftc.gov/robots.txt (HTTP Error 403: Forbidden); skipped to be safe."
+     },
+     "detail": "Could not read https://www.ftc.gov/robots.txt (HTTP Error 403: Forbidden); skipped to be safe.",
+     "kind": "agency_website",
+     "label": "FTC consumer-protection press releases",
+     "source": "ftc_consumer",
+     "status": "failed"
+    },
+    {
+     "agencies": {
+      "ftc": "error: Could not read https://www.ftc.gov/robots.txt (HTTP Error 403: Forbidden); skipped to be safe."
+     },
+     "detail": "Could not read https://www.ftc.gov/robots.txt (HTTP Error 403: Forbidden); skipped to be safe.",
+     "kind": "agency_website",
+     "label": "FTC competition (antitrust) press releases",
+     "source": "ftc_competition",
+     "status": "failed"
+    },
+    {
+     "agencies": {
+      "nlrb": "error: Could not find the 'Board Decisions' feed on https://www.nlrb.gov/resources/rss-feeds."
+     },
+     "detail": "Could not find the 'Board Decisions' feed on https://www.nlrb.gov/resources/rss-feeds.",
+     "kind": "agency_website",
+     "label": "NLRB Board decisions",
+     "source": "nlrb_board",
+     "status": "failed"
+    },
+    {
+     "agencies": {
+      "nlrb": "error: Could not find the 'Judges'? Decisions' feed on https://www.nlrb.gov/resources/rss-feeds."
+     },
+     "detail": "Could not find the 'Judges'? Decisions' feed on https://www.nlrb.gov/resources/rss-feeds.",
+     "kind": "agency_website",
+     "label": "NLRB administrative law judge decisions",
+     "source": "nlrb_alj",
+     "status": "failed"
+    },
+    {
+     "agencies": {
+      "nlrb": "ok"
+     },
+     "detail": "Only announcements that describe an action (charges, settlements, orders, penalties and similar) are kept.",
+     "kind": "agency_website",
+     "label": "NLRB press releases",
+     "source": "nlrb_press",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "fcc": "error: Could not read https://www.fcc.gov/robots.txt (HTTP Error 403: Forbidden); skipped to be safe."
+     },
+     "detail": "Could not read https://www.fcc.gov/robots.txt (HTTP Error 403: Forbidden); skipped to be safe.",
+     "kind": "agency_website",
+     "label": "FCC Enforcement Bureau documents",
+     "source": "fcc_enforcement",
+     "status": "failed"
+    },
+    {
+     "agencies": {
+      "fcc": "error: Could not read https://www.fcc.gov/robots.txt (HTTP Error 403: Forbidden); skipped to be safe."
+     },
+     "detail": "Could not read https://www.fcc.gov/robots.txt (HTTP Error 403: Forbidden); skipped to be safe.",
+     "kind": "agency_website",
+     "label": "FCC notices of apparent liability (proposed forfeitures)",
+     "source": "fcc_nal",
+     "status": "failed"
+    },
+    {
+     "agencies": {
+      "fda": "ok"
+     },
+     "detail": "Only announcements that describe an action (charges, settlements, orders, penalties and similar) are kept.",
+     "kind": "agency_website",
+     "label": "FDA press releases",
+     "source": "fda_press",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "cfpb": "ok"
+     },
+     "detail": "Only announcements that describe an action (charges, settlements, orders, penalties and similar) are kept.",
+     "kind": "agency_website",
+     "label": "CFPB newsroom (enforcement announcements)",
+     "source": "cfpb_newsroom",
+     "status": "ok"
+    }
+   ],
+   "requests": 53,
+   "run_at": "2026-11-25T19:15:39+00:00",
+   "start": "2026-11-22"
   }
  ],
  "schema": 2,
@@ -1456,34 +1621,98 @@
   "sec_litigation": "SEC litigation releases (federal court actions)"
  },
  "sources": {
+  "cfpb_newsroom": {
+   "covered_through": "2026-11-25",
+   "label": "CFPB newsroom (enforcement announcements)",
+   "last_attempt": "2026-11-25T19:15:39+00:00",
+   "last_detail": "Only announcements that describe an action (charges, settlements, orders, penalties and similar) are kept.",
+   "last_status": "ok"
+  },
+  "fcc_enforcement": {
+   "label": "FCC Enforcement Bureau documents",
+   "last_attempt": "2026-11-25T19:15:39+00:00",
+   "last_detail": "Could not read https://www.fcc.gov/robots.txt (HTTP Error 403: Forbidden); skipped to be safe.",
+   "last_status": "failed"
+  },
+  "fcc_nal": {
+   "label": "FCC notices of apparent liability (proposed forfeitures)",
+   "last_attempt": "2026-11-25T19:15:39+00:00",
+   "last_detail": "Could not read https://www.fcc.gov/robots.txt (HTTP Error 403: Forbidden); skipped to be safe.",
+   "last_status": "failed"
+  },
+  "fda_press": {
+   "covered_through": "2026-11-25",
+   "label": "FDA press releases",
+   "last_attempt": "2026-11-25T19:15:39+00:00",
+   "last_detail": "Only announcements that describe an action (charges, settlements, orders, penalties and similar) are kept.",
+   "last_status": "ok"
+  },
   "federal_register": {
    "covered_through": "2026-11-25",
    "label": "Federal Register",
-   "last_attempt": "2026-11-25T13:44:30+00:00",
+   "last_attempt": "2026-11-25T19:15:39+00:00",
+   "last_detail": "",
+   "last_status": "ok"
+  },
+  "ftc_competition": {
+   "label": "FTC competition (antitrust) press releases",
+   "last_attempt": "2026-11-25T19:15:39+00:00",
+   "last_detail": "Could not read https://www.ftc.gov/robots.txt (HTTP Error 403: Forbidden); skipped to be safe.",
+   "last_status": "failed"
+  },
+  "ftc_consumer": {
+   "label": "FTC consumer-protection press releases",
+   "last_attempt": "2026-11-25T19:15:39+00:00",
+   "last_detail": "Could not read https://www.ftc.gov/robots.txt (HTTP Error 403: Forbidden); skipped to be safe.",
+   "last_status": "failed"
+  },
+  "nlrb_alj": {
+   "label": "NLRB administrative law judge decisions",
+   "last_attempt": "2026-11-25T19:15:39+00:00",
+   "last_detail": "Could not find the 'Judges'? Decisions' feed on https://www.nlrb.gov/resources/rss-feeds.",
+   "last_status": "failed"
+  },
+  "nlrb_board": {
+   "label": "NLRB Board decisions",
+   "last_attempt": "2026-11-25T19:15:39+00:00",
+   "last_detail": "Could not find the 'Board Decisions' feed on https://www.nlrb.gov/resources/rss-feeds.",
+   "last_status": "failed"
+  },
+  "nlrb_press": {
+   "covered_through": "2026-11-25",
+   "label": "NLRB press releases",
+   "last_attempt": "2026-11-25T19:15:39+00:00",
+   "last_detail": "Only announcements that describe an action (charges, settlements, orders, penalties and similar) are kept.",
+   "last_status": "ok"
+  },
+  "openfda": {
+   "covered_through": "2026-11-25",
+   "label": "openFDA recall enforcement reports",
+   "last_attempt": "2026-11-25T19:15:39+00:00",
    "last_detail": "",
    "last_status": "ok"
   },
   "regulations_gov": {
    "covered_through": "2026-11-25",
    "label": "Regulations.gov",
-   "last_attempt": "2026-11-25T13:44:30+00:00",
+   "last_attempt": "2026-11-25T19:15:39+00:00",
    "last_detail": "",
    "last_status": "ok"
   },
   "sec_admin": {
    "covered_through": "2026-11-25",
    "label": "SEC administrative proceedings (in-house)",
-   "last_attempt": "2026-11-25T13:44:30+00:00",
+   "last_attempt": "2026-11-25T19:15:39+00:00",
    "last_detail": "",
    "last_status": "ok"
   },
   "sec_litigation": {
    "covered_through": "2026-11-25",
    "label": "SEC litigation releases (federal court actions)",
-   "last_attempt": "2026-11-25T13:44:30+00:00",
+   "last_attempt": "2026-11-25T19:15:39+00:00",
    "last_detail": "",
    "last_status": "ok"
   }
  },
- "updated_at": "2026-11-25T13:44:30+00:00"
+ "updated_at": "2026-11-25T19:15:39+00:00"
 }
