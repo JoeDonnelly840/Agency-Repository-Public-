@@ -1,0 +1,46 @@
+name: Fill history back to 2015
+
+# Works backwards one month at a time, newest first, with the same politeness
+# limits as the daily run. Each run stops after about 280 requests. When the
+# history is complete, runs finish immediately; you can then disable this
+# workflow from the Actions tab.
+on:
+  schedule:
+    - cron: "41 */2 * * *"   # every two hours
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: collect          # never at the same time as the daily run
+  cancel-in-progress: false
+
+jobs:
+  backfill:
+    runs-on: ubuntu-latest
+    timeout-minutes: 50
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Fill history
+        env:
+          REGULATIONS_GOV_API_KEY: ${{ secrets.REGULATIONS_GOV_API_KEY }}
+        run: python -m collector.backfill
+
+      - name: Save results
+        run: |
+          git config user.name "regcollect-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/data
+          if git diff --cached --quiet; then
+            echo "No changes."
+          else
+            git commit -m "History backfill $(date -u +%Y-%m-%dT%H:%M)"
+            git pull --rebase
+            git push
+          fi

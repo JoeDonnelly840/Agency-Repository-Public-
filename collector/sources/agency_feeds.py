@@ -79,7 +79,9 @@ def parse_feed(xml_bytes, feed):
             "title": title,
             "summary": "" if summary == title else summary[:800],
             "action": "",
-            "date": when,
+            "date": when,          # the agency's release date
+            "date_basis": "released",
+            "published": when,
             "doc_type": "Agency announcement",
             "subtype": "",
             "query_agencies": [feed["agency"]],
@@ -117,6 +119,8 @@ def discover_url(client, feed):
 def fetch(client, start, end):
     items, reports = [], []
     for feed in config.AGENCY_FEEDS:
+        if feed.get("enabled") is False:
+            continue
         report = {"source": feed["key"], "label": feed["label"], "status": "ok", "detail": "",
                   "agencies": {}, "kind": "agency_website"}
         try:
@@ -140,7 +144,7 @@ def fetch(client, start, end):
             report["agencies"][feed["agency"]] = "ok"
         if feed.get("keep"):
             report["detail"] = (report["detail"] + " " if report["detail"] else "") + \
-                "Only announcements that describe an action (charges, settlements, orders, penalties and similar) are kept."
+                "Only announcements that describe an action (charges, settlements, orders, penalties, and similar) are kept."
         items.extend(kept)
         reports.append(report)
     return items, reports

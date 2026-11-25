@@ -1,7 +1,7 @@
 {
  "agencies": [
   {
-   "description": "Regulates the securities markets, public-company disclosure, brokers and investment advisers.",
+   "description": "Regulates the securities markets, public-company disclosure, brokers, and investment advisers.",
    "key": "sec",
    "kind": "commission",
    "name": "Securities and Exchange Commission",
@@ -15,14 +15,14 @@
    "short": "FTC"
   },
   {
-   "description": "Licenses and regulates broadcast, wireless, wire, cable and satellite communications.",
+   "description": "Licenses and regulates broadcast, wireless, wire, cable, and satellite communications.",
    "key": "fcc",
    "kind": "commission",
    "name": "Federal Communications Commission",
    "short": "FCC"
   },
   {
-   "description": "Sets and enforces national standards for air, water, chemicals, pesticides and waste.",
+   "description": "Sets and enforces national standards for air, water, chemicals, pesticides, and waste.",
    "key": "epa",
    "kind": "single",
    "name": "Environmental Protection Agency",
@@ -36,35 +36,35 @@
    "short": "NLRB"
   },
   {
-   "description": "Writes and enforces federal consumer-finance law for banks, lenders and other providers.",
+   "description": "Writes and enforces federal consumer-finance law for banks, lenders, and other providers.",
    "key": "cfpb",
    "kind": "single",
    "name": "Consumer Financial Protection Bureau",
    "short": "CFPB"
   },
   {
-   "description": "Enforces wage, workplace-safety, benefits and contractor laws through OSHA, WHD, EBSA and others.",
+   "description": "Enforces wage, workplace-safety, benefits, and contractor laws through OSHA, WHD, EBSA, and others.",
    "key": "dol",
    "kind": "single",
    "name": "Department of Labor",
    "short": "DOL"
   },
   {
-   "description": "Regulates food, drugs, medical devices, tobacco, cosmetics and dietary supplements.",
+   "description": "Regulates food, drugs, medical devices, tobacco, cosmetics, and dietary supplements.",
    "key": "fda",
    "kind": "single",
    "name": "Food and Drug Administration",
    "short": "FDA"
   },
   {
-   "description": "Runs Medicare, Medicaid, public-health and grant programs through CMS, CDC, NIH, OIG and others.",
+   "description": "Runs Medicare, Medicaid, public-health, and grant programs through CMS, CDC, NIH, OIG, and others.",
    "key": "hhs",
    "kind": "single",
    "name": "Department of Health and Human Services (excluding FDA)",
    "short": "HHS"
   },
   {
-   "description": "Regulates interstate electricity, natural-gas and oil pipelines, and hydropower licensing.",
+   "description": "Regulates interstate electricity, natural-gas pipelines, oil pipelines, and hydropower.",
    "key": "ferc",
    "kind": "commission",
    "name": "Federal Energy Regulatory Commission",
@@ -72,11 +72,12 @@
   }
  ],
  "app": {
-  "name": "RegHunter",
-  "version": "2.0"
+  "name": "RegCollect",
+  "version": "3.0"
  },
+ "archive_after_days": 70,
  "categories": {
-  "adjudication": "Adjudication & licensing",
+  "adjudication": "Adjudication and licensing",
   "enforcement": "Enforcement",
   "other": "Other notices",
   "presidential": "Presidential actions",
@@ -84,14 +85,14 @@
  },
  "corporations": [
   {
-   "description": "Private corporation that writes rules for, examines and disciplines broker-dealers, under SEC oversight.",
+   "description": "Private corporation that writes rules for, examines, and disciplines broker-dealers, under SEC oversight.",
    "key": "finra",
    "name": "Financial Industry Regulatory Authority",
    "overseer": "SEC",
    "short": "FINRA"
   },
   {
-   "description": "Nonprofit corporation that registers, inspects and disciplines auditors of public companies.",
+   "description": "Nonprofit corporation that registers, inspects, and disciplines auditors of public companies.",
    "key": "pcaob",
    "name": "Public Company Accounting Oversight Board",
    "overseer": "SEC",
@@ -105,7 +106,7 @@
    "short": "MSRB"
   },
   {
-   "description": "Other self-regulatory organizations, such as Nasdaq, NYSE, Cboe and the clearing agencies, whose rule changes the SEC must approve.",
+   "description": "Other self-regulatory organizations, such as Nasdaq, NYSE, Cboe, and the clearing agencies, whose rule changes the SEC must approve.",
    "key": "other_sro",
    "name": "Stock Exchanges and Clearing Agencies",
    "overseer": "SEC",
@@ -113,11 +114,11 @@
   }
  ],
  "coverage_notes": {
-  "adjudication": "Partly covered. Federal Register notices of hearings, applications and licensing; SEC in-house proceedings; NLRB Board and administrative-law-judge decisions (from the NLRB's own feeds); and FDA civil-money-penalty complaints on Regulations.gov. Not covered: ALJ and appeals-board decisions at the other agencies (for example the HHS Departmental Appeals Board, OSHRC, FERC initial decisions) unless they appear in the Federal Register.",
-  "enforcement": "Partly covered. Enforcement notices in the Federal Register and on Regulations.gov; the SEC's litigation-release and administrative-proceeding feeds; enforcement announcements in the FTC, NLRB, FDA and CFPB press feeds; FCC Enforcement Bureau documents and notices of apparent liability; and FDA recall enforcement reports. Not covered: EPA, DOL (OSHA, Wage and Hour), FERC and HHS-OIG enforcement announcements, and anything an agency never announces publicly.",
+  "adjudication": "Partly covered. Federal Register notices of hearings, applications, and licensing; SEC in-house proceedings; and FDA civil-money-penalty complaints on Regulations.gov. Not covered yet: NLRB Board and judges' decisions (the feed addresses still need confirming), and ALJ and appeals-board decisions at other agencies unless they appear in the Federal Register.",
+  "enforcement": "Partly covered. Enforcement notices in the Federal Register and on Regulations.gov (since 2015); the SEC's litigation-release and administrative-proceeding feeds, and agency press feeds from the NLRB, FDA, and CFPB (recent items only); and FDA recall enforcement reports (since 2015). Not covered: FTC and FCC press releases (their websites refuse automated readers), EPA, DOL, FERC, and HHS-OIG enforcement announcements, and anything an agency never announces publicly.",
   "other": "Everything else the Federal Register publishes for the agency (meetings, information-collection requests, and similar notices) and routine Regulations.gov postings.",
-  "presidential": "Well covered. Executive orders, memoranda and proclamations published in the Federal Register. Presidential actions that are never published (for example some directives and firings) are not.",
-  "rulemaking": "Well covered. Proposed and final rules must be published in the Federal Register, which is checked for every tracked agency. Guidance and policy statements appear only if the agency published them there or on Regulations.gov."
+  "presidential": "Well covered since 2015. Executive orders, memoranda, and proclamations published in the Federal Register. Presidential actions that are never published (for example, some directives and firings) are not.",
+  "rulemaking": "Well covered since 2015. Proposed and final rules must be published in the Federal Register, which is checked for every tracked agency. Guidance and policy statements appear only if the agency published them there or on Regulations.gov."
  },
  "days": {
   "2026-10-13": 90,
@@ -152,6 +153,7 @@
   "2026-11-24": 87,
   "2026-11-25": 74
  },
+ "history_start": "2015-01-01",
  "jurisdictions": [
   {
    "key": "federal",
@@ -165,18 +167,23 @@
    "status": "planned"
   }
  ],
+ "months": {},
  "not_tracked": [
   {
-   "what": "Agency websites without a published feed or API",
-   "why": "Reading ordinary web pages in bulk can breach a site's terms or load its servers, so RegHunter reads only feeds and interfaces published for software."
+   "what": "FTC and FCC press releases and enforcement pages",
+   "why": "Both websites refuse automated readers, even their robots.txt files. RegCollect respects that. FTC consent orders and FCC orders still appear when published in the Federal Register."
   },
   {
-   "what": "EPA enforcement cases (ECHO database)",
-   "why": "EPA offers an official ECHO web service; it is a planned addition but is not connected yet."
+   "what": "NLRB Board and administrative-law-judge decisions",
+   "why": "The NLRB publishes feeds for these, but their exact addresses still need confirming. NLRB press releases are tracked."
   },
   {
    "what": "Department of Labor enforcement (OSHA citations, Wage and Hour cases)",
-   "why": "DOL's enforcement data API needs a separate key and has not been connected yet."
+   "why": "DOL's enforcement data service needs a free key that has not been set up yet."
+  },
+  {
+   "what": "EPA enforcement cases (ECHO database)",
+   "why": "EPA offers an official ECHO web service; it is a planned addition."
   },
   {
    "what": "FERC enforcement settlements and orders not in the Federal Register",
@@ -184,10 +191,10 @@
   },
   {
    "what": "HHS Office of Inspector General exclusions and civil money penalties",
-   "why": "Published as monthly downloadable files; not connected yet."
+   "why": "Published as monthly downloadable files; a planned addition."
   },
   {
-   "what": "FINRA's disciplinary database, BrokerCheck and website",
+   "what": "FINRA's disciplinary database, BrokerCheck, and website",
    "why": "Not read, to respect FINRA's terms of use. FINRA matters appear only when the SEC publishes them."
   },
   {
@@ -196,27 +203,27 @@
   },
   {
    "what": "Court dockets (PACER) and Department of Justice actions",
-   "why": "PACER charges per page and DOJ is not a tracked agency in this version."
+   "why": "PACER charges per page, and DOJ is not a tracked agency in this version."
   },
   {
    "what": "Unpublished agency actions",
-   "why": "Investigations, subpoenas, closing letters, supervisory findings and anything an agency does not announce publicly cannot be seen by any outside tool."
+   "why": "Investigations, subpoenas, closing letters, supervisory findings, and anything an agency does not announce publicly cannot be seen by any outside tool."
   },
   {
-   "what": "Full text of documents",
-   "why": "Flags and search use each document's title, summary and type, not the full text."
+   "what": "History before 2015, and feed history",
+   "why": "History reaches back to January 1, 2015, for the Federal Register, Regulations.gov, and FDA recalls. The SEC and agency press feeds only hold recent items, so their history starts when RegCollect began reading them."
   },
   {
    "what": "State agencies",
    "why": "Planned for a future version."
   },
   {
-   "what": "Federal agencies other than those on the home screen",
+   "what": "Federal agencies other than those in the directory",
    "why": "More agencies can be added in collector/config.py."
   }
  ],
  "president": {
-  "description": "Executive orders, proclamations, memoranda, determinations and other presidential documents.",
+  "description": "Executive orders, proclamations, memoranda, determinations, and other presidential documents.",
   "key": "president",
   "kind": "president",
   "name": "The President",
@@ -1488,7 +1495,7 @@
      "agencies": {
       "nlrb": "ok"
      },
-     "detail": "Only announcements that describe an action (charges, settlements, orders, penalties and similar) are kept.",
+     "detail": "Only announcements that describe an action (charges, settlements, orders, penalties, and similar) are kept.",
      "kind": "agency_website",
      "label": "NLRB press releases",
      "source": "nlrb_press",
@@ -1518,7 +1525,7 @@
      "agencies": {
       "fda": "ok"
      },
-     "detail": "Only announcements that describe an action (charges, settlements, orders, penalties and similar) are kept.",
+     "detail": "Only announcements that describe an action (charges, settlements, orders, penalties, and similar) are kept.",
      "kind": "agency_website",
      "label": "FDA press releases",
      "source": "fda_press",
@@ -1528,7 +1535,7 @@
      "agencies": {
       "cfpb": "ok"
      },
-     "detail": "Only announcements that describe an action (charges, settlements, orders, penalties and similar) are kept.",
+     "detail": "Only announcements that describe an action (charges, settlements, orders, penalties, and similar) are kept.",
      "kind": "agency_website",
      "label": "CFPB newsroom (enforcement announcements)",
      "source": "cfpb_newsroom",
@@ -1540,16 +1547,10 @@
    "start": "2026-11-22"
   }
  ],
- "schema": 2,
+ "schema": 3,
  "source_agencies": {
   "cfpb_newsroom": [
    "cfpb"
-  ],
-  "fcc_enforcement": [
-   "fcc"
-  ],
-  "fcc_nal": [
-   "fcc"
   ],
   "fda_press": [
    "fda"
@@ -1566,18 +1567,6 @@
    "hhs",
    "ferc",
    "president"
-  ],
-  "ftc_competition": [
-   "ftc"
-  ],
-  "ftc_consumer": [
-   "ftc"
-  ],
-  "nlrb_alj": [
-   "nlrb"
-  ],
-  "nlrb_board": [
-   "nlrb"
   ],
   "nlrb_press": [
    "nlrb"
@@ -1606,12 +1595,8 @@
  },
  "source_labels": {
   "cfpb_newsroom": "CFPB newsroom (enforcement announcements)",
-  "fcc_enforcement": "FCC Enforcement Bureau documents",
-  "fcc_nal": "FCC notices of apparent liability (proposed forfeitures)",
   "fda_press": "FDA press releases",
   "federal_register": "Federal Register",
-  "ftc_competition": "FTC competition (antitrust) press releases",
-  "ftc_consumer": "FTC consumer-protection press releases",
   "nlrb_alj": "NLRB administrative law judge decisions",
   "nlrb_board": "NLRB Board decisions",
   "nlrb_press": "NLRB press releases",
@@ -1625,26 +1610,14 @@
    "covered_through": "2026-11-25",
    "label": "CFPB newsroom (enforcement announcements)",
    "last_attempt": "2026-11-25T19:15:39+00:00",
-   "last_detail": "Only announcements that describe an action (charges, settlements, orders, penalties and similar) are kept.",
+   "last_detail": "Only announcements that describe an action (charges, settlements, orders, penalties, and similar) are kept.",
    "last_status": "ok"
-  },
-  "fcc_enforcement": {
-   "label": "FCC Enforcement Bureau documents",
-   "last_attempt": "2026-11-25T19:15:39+00:00",
-   "last_detail": "Could not read https://www.fcc.gov/robots.txt (HTTP Error 403: Forbidden); skipped to be safe.",
-   "last_status": "failed"
-  },
-  "fcc_nal": {
-   "label": "FCC notices of apparent liability (proposed forfeitures)",
-   "last_attempt": "2026-11-25T19:15:39+00:00",
-   "last_detail": "Could not read https://www.fcc.gov/robots.txt (HTTP Error 403: Forbidden); skipped to be safe.",
-   "last_status": "failed"
   },
   "fda_press": {
    "covered_through": "2026-11-25",
    "label": "FDA press releases",
    "last_attempt": "2026-11-25T19:15:39+00:00",
-   "last_detail": "Only announcements that describe an action (charges, settlements, orders, penalties and similar) are kept.",
+   "last_detail": "Only announcements that describe an action (charges, settlements, orders, penalties, and similar) are kept.",
    "last_status": "ok"
   },
   "federal_register": {
@@ -1654,35 +1627,11 @@
    "last_detail": "",
    "last_status": "ok"
   },
-  "ftc_competition": {
-   "label": "FTC competition (antitrust) press releases",
-   "last_attempt": "2026-11-25T19:15:39+00:00",
-   "last_detail": "Could not read https://www.ftc.gov/robots.txt (HTTP Error 403: Forbidden); skipped to be safe.",
-   "last_status": "failed"
-  },
-  "ftc_consumer": {
-   "label": "FTC consumer-protection press releases",
-   "last_attempt": "2026-11-25T19:15:39+00:00",
-   "last_detail": "Could not read https://www.ftc.gov/robots.txt (HTTP Error 403: Forbidden); skipped to be safe.",
-   "last_status": "failed"
-  },
-  "nlrb_alj": {
-   "label": "NLRB administrative law judge decisions",
-   "last_attempt": "2026-11-25T19:15:39+00:00",
-   "last_detail": "Could not find the 'Judges'? Decisions' feed on https://www.nlrb.gov/resources/rss-feeds.",
-   "last_status": "failed"
-  },
-  "nlrb_board": {
-   "label": "NLRB Board decisions",
-   "last_attempt": "2026-11-25T19:15:39+00:00",
-   "last_detail": "Could not find the 'Board Decisions' feed on https://www.nlrb.gov/resources/rss-feeds.",
-   "last_status": "failed"
-  },
   "nlrb_press": {
    "covered_through": "2026-11-25",
    "label": "NLRB press releases",
    "last_attempt": "2026-11-25T19:15:39+00:00",
-   "last_detail": "Only announcements that describe an action (charges, settlements, orders, penalties and similar) are kept.",
+   "last_detail": "Only announcements that describe an action (charges, settlements, orders, penalties, and similar) are kept.",
    "last_status": "ok"
   },
   "openfda": {

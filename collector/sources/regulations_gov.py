@@ -40,7 +40,9 @@ def _normalize(doc, agency_key):
         "title": (a.get("title") or "").strip(),
         "summary": "",
         "action": "",
-        "date": (a.get("postedDate") or "")[:10],
+        "date": (a.get("postedDate") or "")[:10],   # the agency's posting date
+        "date_basis": "posted",
+        "published": (a.get("postedDate") or "")[:10],
         "doc_type": a.get("documentType") or "",
         "subtype": a.get("subtype") or "",
         "docket_ids": [a["docketId"]] if a.get("docketId") else [],

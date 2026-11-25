@@ -14,6 +14,7 @@ FIELDS = [
     "document_number", "title", "type", "subtype", "abstract", "action", "agencies",
     "publication_date", "html_url", "pdf_url", "docket_ids", "regulation_id_numbers",
     "significant", "comments_close_on", "effective_on", "executive_order_number", "cfr_references",
+    "signing_date",
 ]
 PER_PAGE = 500
 MAX_PAGES_PER_QUERY = 20
@@ -38,15 +39,18 @@ def _normalize(doc):
         "source": SOURCE,
         "source_label": "Federal Register",
         "url": doc.get("html_url"),
-        "pdf_url": doc.get("pdf_url"),
         "title": (doc.get("title") or "").strip(),
         "summary": (doc.get("abstract") or "").strip(),
         "action": (doc.get("action") or "").strip(),
-        "date": doc.get("publication_date"),
+        # The agency's (or President's) own action date is the signing date when the Federal
+        # Register records one; otherwise the publication date, which is itself the legal act
+        # of promulgation for rules and notices.
+        "date": doc.get("signing_date") or doc.get("publication_date"),
+        "date_basis": "signed" if doc.get("signing_date") else "published",
+        "published": doc.get("publication_date"),
         "doc_type": doc.get("type") or "",
         "subtype": doc.get("subtype") or "",
         "fr_agency_slugs": [a.get("slug") for a in agencies if a.get("slug")],
-        "fr_agency_names": [a.get("name") or a.get("raw_name") for a in agencies if a.get("name") or a.get("raw_name")],
         "docket_ids": doc.get("docket_ids") or [],
         "rins": doc.get("regulation_id_numbers") or [],
         "significant": bool(doc.get("significant")),

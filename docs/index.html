@@ -4,32 +4,35 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="color-scheme" content="dark">
-<meta name="description" content="RegHunter tracks what federal agencies and the President publish each day and flags arguable constitutional problems, rated by how clear and how serious they are.">
-<title>RegHunter</title>
+<meta name="description" content="RegCollect gathers what federal agencies and the President publish, sorts it, and flags arguable constitutional issues, rated by flagrance and seriousness.">
+<title>RegCollect</title>
 <link rel="icon" href="logo.svg" type="image/svg+xml">
+<link rel="preload" href="fonts/IBMPlexSans-Regular.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
 
 <header class="bar" id="bar">
-  <a class="brand" href="#home" aria-label="RegHunter home">
-    <img src="logo.svg" alt="" width="34" height="34">
-    <span class="wordmark">RegHunter</span>
+  <a class="brand" href="#home" aria-label="RegCollect home">
+    <img src="logo.svg" alt="" width="30" height="30">
+    <span class="wordmark">RegCollect</span>
   </a>
   <nav class="nav" aria-label="Main">
     <a href="#home" data-nav="home">Directory</a>
     <a href="#issues" data-nav="issues">Constitutional issues</a>
     <a href="#research" data-nav="research">Research</a>
+    <a href="#methods" data-nav="methods">Methodology</a>
     <a href="#coverage" data-nav="coverage">What we track</a>
     <a href="#manual" data-nav="manual">Manual</a>
   </nav>
   <form class="quick" id="quick" role="search" autocomplete="off">
     <label class="sr" for="quick-q">Search everything</label>
-    <input id="quick-q" type="search" placeholder="Search everything  ( / )">
+    <input id="quick-q" type="search" placeholder="Search  ( / )">
   </form>
   <div class="bar-tools">
     <button type="button" class="since-btn" id="since-btn" aria-haspopup="dialog" aria-expanded="false"></button>
+    <button type="button" class="bot-btn" id="bot-btn" aria-expanded="false" aria-controls="bot">Assistant</button>
     <button type="button" class="user-btn" id="user-btn" aria-haspopup="dialog" aria-expanded="false" title="Account"></button>
   </div>
 </header>
@@ -38,50 +41,54 @@
   <p class="pop-title">Show what's new since</p>
   <input type="date" id="since-date">
   <p class="muted small" id="since-note"></p>
-  <div class="row">
-    <button type="button" class="btn ghost" id="caught-up">Mark everything as read</button>
-  </div>
+  <div class="row"><button type="button" class="btn ghost" id="caught-up">Mark everything as read</button></div>
 </div>
 
 <div class="pop" id="user-pop" role="dialog" aria-label="Account" hidden>
-  <p class="pop-title">Signed in as <strong id="account-name"></strong></p>
+  <p class="pop-title">Signed in as <span id="account-name"></span></p>
   <p class="muted small">Copy this sync code to another browser to carry over your username and last-visit date.</p>
   <textarea id="account-sync" rows="2" readonly></textarea>
   <div class="row">
-    <button type="button" class="btn ghost" id="account-copy">Copy sync code</button>
-    <button type="button" class="btn ghost" id="account-tour">Take the tour</button>
-    <button type="button" class="btn ghost" id="account-switch">Switch user</button>
+    <button type="button" class="btn ghost small" id="account-copy">Copy sync code</button>
+    <button type="button" class="btn ghost small" id="account-tour">Take the tour</button>
+    <button type="button" class="btn ghost small" id="account-switch">Switch user</button>
   </div>
 </div>
 
-<main id="main" tabindex="-1">
-  <div id="view" class="view"></div>
-</main>
+<div class="shell">
+  <main id="main" tabindex="-1"><div id="view" class="view"></div></main>
+  <aside class="bot" id="bot" aria-label="RegCollect assistant" hidden>
+    <div class="bot-head"><img src="logo.svg" alt="" width="22" height="22"><strong>Assistant</strong>
+      <span class="muted small">Runs in this browser</span><button type="button" class="x" id="bot-close" aria-label="Close the assistant">×</button></div>
+    <div class="bot-log" id="bot-log" aria-live="polite"></div>
+    <div class="bot-sugg" id="bot-sugg"></div>
+    <form class="bot-form" id="bot-form" autocomplete="off">
+      <label class="sr" for="bot-q">Ask the assistant</label>
+      <input id="bot-q" type="text" placeholder="Ask or tell me what to do">
+      <button class="btn small" type="submit">Send</button>
+    </form>
+  </aside>
+</div>
 
 <footer class="foot">
-  <span>RegHunter 2.0. An automated screen of public government records; a flag is not a legal conclusion.</span>
+  <span>RegCollect 3.0. An automated screen of public government records; a flag is not a legal conclusion.</span>
   <a href="https://github.com/JoeDonnelly840/Agency-Repository-Public-" rel="noopener">Source code</a>
 </footer>
 
-<!-- Username dialog -->
 <div class="modal" id="welcome" hidden>
   <div class="modal-card" role="dialog" aria-labelledby="welcome-title">
-    <img src="logo.svg" alt="" width="64" height="64">
-    <h2 id="welcome-title">Welcome to RegHunter</h2>
-    <p>Choose a username so RegHunter can show you what's new each time you come back. No password is needed;
-      your username and last visit are kept only in this browser.</p>
+    <img src="logo.svg" alt="" width="48" height="48">
+    <h2 id="welcome-title">Welcome to RegCollect</h2>
+    <p>Choose a username so RegCollect can show you what's new each time you come back. No password is needed; your username and last visit are kept only in this browser.</p>
     <label for="welcome-name">Username</label>
     <input id="welcome-name" maxlength="40" autocomplete="username" placeholder="e.g. joe">
-    <details class="sync-in">
-      <summary>Coming from another browser? Paste a sync code</summary>
-      <textarea id="welcome-sync" rows="2" placeholder="Paste sync code"></textarea>
-    </details>
+    <details class="sync-in"><summary>Coming from another browser? Paste a sync code</summary>
+      <textarea id="welcome-sync" rows="2" placeholder="Paste sync code"></textarea></details>
     <p class="error" id="welcome-error" hidden></p>
-    <div class="row"><button type="button" class="btn" id="welcome-go">Open RegHunter</button></div>
+    <div class="row"><button type="button" class="btn" id="welcome-go">Open RegCollect</button></div>
   </div>
 </div>
 
-<!-- Tutorial overlay -->
 <div class="tour" id="tour" hidden>
   <div class="tour-spot" id="tour-spot"></div>
   <div class="tour-card" id="tour-card" role="dialog" aria-live="polite">
@@ -100,5 +107,6 @@
 <script src="search.js"></script>
 <script src="charts.js"></script>
 <script src="app.js"></script>
+<script src="assistant.js"></script>
 </body>
 </html>
