@@ -116,8 +116,9 @@
   "2026-11-18": 95,
   "2026-11-19": 65,
   "2026-11-20": 108,
-  "2026-11-23": 413,
-  "2026-11-24": 56
+  "2026-11-23": 417,
+  "2026-11-24": 83,
+  "2026-11-25": 25
  },
  "president": {
   "key": "president",
@@ -1210,6 +1211,71 @@
    "requests": 37,
    "run_at": "2026-11-24T13:39:41+00:00",
    "start": "2026-11-20"
+  },
+  {
+   "end": "2026-11-25",
+   "items_found": 525,
+   "items_new": 56,
+   "reports": [
+    {
+     "agencies": {
+      "cfpb": "ok",
+      "dol": "ok",
+      "epa": "ok",
+      "fcc": "ok",
+      "fda": "ok",
+      "ferc": "ok",
+      "ftc": "ok",
+      "hhs": "ok",
+      "nlrb": "ok",
+      "president": "ok",
+      "sec": "ok"
+     },
+     "detail": "",
+     "label": "Federal Register",
+     "source": "federal_register",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "cfpb": "ok",
+      "dol": "ok",
+      "epa": "ok",
+      "fcc": "ok",
+      "fda": "ok",
+      "ferc": "ok",
+      "ftc": "ok",
+      "hhs": "ok",
+      "nlrb": "ok",
+      "sec": "ok"
+     },
+     "detail": "",
+     "label": "Regulations.gov",
+     "source": "regulations_gov",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "sec": "ok"
+     },
+     "detail": "",
+     "label": "SEC litigation releases (federal court actions)",
+     "source": "sec_litigation",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "sec": "ok"
+     },
+     "detail": "",
+     "label": "SEC administrative proceedings (in-house)",
+     "source": "sec_admin",
+     "status": "ok"
+    }
+   ],
+   "requests": 37,
+   "run_at": "2026-11-25T13:44:30+00:00",
+   "start": "2026-11-21"
   }
  ],
  "schema": 1,
@@ -1248,33 +1314,33 @@
  },
  "sources": {
   "federal_register": {
-   "covered_through": "2026-11-24",
+   "covered_through": "2026-11-25",
    "label": "Federal Register",
-   "last_attempt": "2026-11-24T13:39:41+00:00",
+   "last_attempt": "2026-11-25T13:44:30+00:00",
    "last_detail": "",
    "last_status": "ok"
   },
   "regulations_gov": {
-   "covered_through": "2026-11-24",
+   "covered_through": "2026-11-25",
    "label": "Regulations.gov",
-   "last_attempt": "2026-11-24T13:39:41+00:00",
+   "last_attempt": "2026-11-25T13:44:30+00:00",
    "last_detail": "",
    "last_status": "ok"
   },
   "sec_admin": {
-   "covered_through": "2026-11-24",
+   "covered_through": "2026-11-25",
    "label": "SEC administrative proceedings (in-house)",
-   "last_attempt": "2026-11-24T13:39:41+00:00",
+   "last_attempt": "2026-11-25T13:44:30+00:00",
    "last_detail": "",
    "last_status": "ok"
   },
   "sec_litigation": {
-   "covered_through": "2026-11-24",
+   "covered_through": "2026-11-25",
    "label": "SEC litigation releases (federal court actions)",
-   "last_attempt": "2026-11-24T13:39:41+00:00",
+   "last_attempt": "2026-11-25T13:44:30+00:00",
    "last_detail": "",
    "last_status": "ok"
   }
  },
- "updated_at": "2026-11-24T13:39:41+00:00"
+ "updated_at": "2026-11-25T13:44:30+00:00"
 }
