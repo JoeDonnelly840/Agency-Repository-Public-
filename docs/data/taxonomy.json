@@ -1,0 +1,850 @@
+{
+ "groups": {
+  "rights": "Individual rights",
+  "structural": "Structural (separation of powers, federalism)"
+ },
+ "kinds": [
+  {
+   "authorities": [
+    "SEC v. Jarkesy, 603 U.S. 109 (2024)",
+    "Axon Enterprise, Inc. v. FTC, 598 U.S. 175 (2023)",
+    "FCC v. AT&T, Inc. (U.S. June 4, 2026) (FCC forfeiture orders upheld)",
+    "Granfinanciera, S.A. v. Nordberg, 492 U.S. 33 (1989)"
+   ],
+   "code": "agency_adjudication",
+   "default_clarity": 2,
+   "default_impact": 3,
+   "group": "structural",
+   "label": "Agency adjudication of penalties (jury trial / Article III)",
+   "lowers": "Clarity falls to Arguable for settled or consented matters, FCC forfeiture orders (FCC v. AT&T) and cease-and-desist orders without money penalties; seriousness falls when no penalty wording is found.",
+   "raises": "Clarity rises to Flagrant for SEC in-house civil penalties for fraud (Jarkesy).",
+   "why": "The agency itself appears to be deciding a case that could carry penalties. Penalty cases resembling common-law suits may require a jury and an Article III court, and agency proceedings can combine prosecutor and judge in one body."
+  },
+  {
+   "authorities": [
+    "Lucia v. SEC, 585 U.S. 237 (2018)",
+    "United States v. Arthrex, Inc., 594 U.S. 1 (2021)",
+    "Free Enterprise Fund v. PCAOB, 561 U.S. 477 (2010)"
+   ],
+   "code": "officer_appointment_removal",
+   "default_clarity": 2,
+   "default_impact": 2,
+   "group": "structural",
+   "label": "Appointment of officers (ALJs, hearing officers, board members)",
+   "lowers": "",
+   "raises": "",
+   "why": "Officers who exercise significant federal power must be appointed in a manner the Appointments Clause allows, and their decisions must be reviewable by a principal officer."
+  },
+  {
+   "authorities": [
+    "Carter v. Carter Coal Co., 298 U.S. 238 (1936)",
+    "Department of Transportation v. Association of American Railroads, 575 U.S. 43 (2015)",
+    "Alpine Securities Corp. v. FINRA, 121 F.4th 1314 (D.C. Cir. 2024)"
+   ],
+   "code": "private_delegation",
+   "default_clarity": 1,
+   "default_impact": 2,
+   "group": "structural",
+   "label": "Government power exercised by a private corporation",
+   "lowers": "Seriousness falls to Moderate for routine exchange and clearing-agency filings.",
+   "raises": "",
+   "why": "This action comes from a private, agency-supervised corporation. Delegating government power to private entities is limited by the private nondelegation doctrine and by Article II."
+  },
+  {
+   "authorities": [
+    "Alpine Securities Corp. v. FINRA, 121 F.4th 1314 (D.C. Cir. 2024)"
+   ],
+   "code": "private_discipline",
+   "default_clarity": 2,
+   "default_impact": 3,
+   "group": "structural",
+   "label": "Private corporation disciplining or expelling a member",
+   "lowers": "",
+   "raises": "",
+   "why": "A private, agency-supervised corporation appears to be imposing discipline. The D.C. Circuit has held that such a body may not expel a member without government review first."
+  },
+  {
+   "authorities": [
+    "West Virginia v. EPA, 597 U.S. 697 (2022)",
+    "Biden v. Nebraska, 600 U.S. 477 (2023)",
+    "FCC v. Consumers' Research, 606 U.S. ___ (2025)"
+   ],
+   "code": "major_questions",
+   "default_clarity": 1,
+   "default_impact": 2,
+   "group": "structural",
+   "label": "Delegation and major questions",
+   "lowers": "",
+   "raises": "Seriousness rises to Severe for rules designated significant or major.",
+   "why": "Large or novel rules may exceed what Congress clearly authorized (major questions doctrine) or raise questions about how much lawmaking power Congress may hand to agencies (nondelegation)."
+  },
+  {
+   "authorities": [
+    "Loper Bright Enterprises v. Raimondo, 603 U.S. 369 (2024)"
+   ],
+   "code": "statutory_deference",
+   "default_clarity": 1,
+   "default_impact": 2,
+   "group": "structural",
+   "label": "Agency interpretation of an ambiguous statute",
+   "lowers": "",
+   "raises": "Clarity rises to Substantial when the document itself invokes Chevron-style deference.",
+   "why": "Courts no longer defer to an agency's reading of an ambiguous statute; reliance on agency interpretation is a point to check."
+  },
+  {
+   "authorities": [
+    "Trump v. Slaughter (U.S. June 29, 2026)",
+    "Trump v. Cook (U.S. June 29, 2026)",
+    "Seila Law LLC v. CFPB, 591 U.S. 197 (2020)",
+    "Collins v. Yellen, 594 U.S. 220 (2021)"
+   ],
+   "code": "removal_independence",
+   "default_clarity": 1,
+   "default_impact": 2,
+   "group": "structural",
+   "label": "Presidential control and removal of agency leaders",
+   "lowers": "",
+   "raises": "",
+   "why": "In Trump v. Slaughter (2026) the Supreme Court overruled Humphrey's Executor and held that the President may remove FTC commissioners at will. Open questions remain about bodies the Court has treated differently, such as the Federal Reserve (Trump v. Cook, 2026), and about how far presidential direction of agency decisions may go."
+  },
+  {
+   "authorities": [
+    "Train v. City of New York, 420 U.S. 35 (1975)",
+    "CFPB v. Community Financial Services Ass'n, 601 U.S. 416 (2024)",
+    "Impoundment Control Act of 1974, 2 U.S.C. 681 et seq."
+   ],
+   "code": "spending_appropriations",
+   "default_clarity": 1,
+   "default_impact": 2,
+   "group": "structural",
+   "label": "Spending, funding and appropriations",
+   "lowers": "",
+   "raises": "Clarity and seriousness rise when appropriated money is withheld or rescinded.",
+   "why": "Congress holds the power of the purse. Withholding, redirecting or self-funding money can raise Appropriations Clause and separation-of-powers questions."
+  },
+  {
+   "authorities": [
+    "Myers v. United States, 272 U.S. 52 (1926)",
+    "Youngstown Sheet & Tube Co. v. Sawyer, 343 U.S. 579 (1952)"
+   ],
+   "code": "agency_structure_change",
+   "default_clarity": 1,
+   "default_impact": 2,
+   "group": "structural",
+   "label": "Creating, abolishing or restructuring agencies and offices",
+   "lowers": "",
+   "raises": "Clarity and seriousness rise when a statutory body is abolished or dismantled.",
+   "why": "Agencies and offices are created by statute; executive changes to their structure or functions may raise separation-of-powers questions."
+  },
+  {
+   "authorities": [
+    "Murphy v. NCAA, 584 U.S. 453 (2018)",
+    "NFIB v. Sebelius, 567 U.S. 519 (2012)",
+    "Printz v. United States, 521 U.S. 898 (1997)"
+   ],
+   "code": "federalism",
+   "default_clarity": 1,
+   "default_impact": 2,
+   "group": "structural",
+   "label": "Federalism (states, preemption, conditions on federal funds)",
+   "lowers": "",
+   "raises": "Clarity rises when state officials are directed to act (anti-commandeering).",
+   "why": "Federal action that directs states, overrides state law, or attaches conditions to federal money can raise Tenth Amendment and Spending Clause questions."
+  },
+  {
+   "authorities": [
+    "Youngstown Sheet & Tube Co. v. Sawyer, 343 U.S. 579 (1952)",
+    "Learning Resources, Inc. v. Trump (U.S. Feb. 20, 2026)"
+   ],
+   "code": "presidential_lawmaking",
+   "default_clarity": 1,
+   "default_impact": 3,
+   "group": "structural",
+   "label": "Executive action that may act like legislation",
+   "lowers": "",
+   "raises": "Clarity rises to Flagrant for tariffs imposed under the International Emergency Economic Powers Act.",
+   "why": "Presidential orders must rest on the Constitution or a statute. Orders that impose duties, tariffs or suspend laws invite scrutiny of their legal basis."
+  },
+  {
+   "authorities": [
+    "Powell v. SEC, 149 F.4th 1029 (9th Cir. 2025)",
+    "SEC v. Romeril, 15 F.4th 166 (2d Cir. 2021)",
+    "Nebraska Press Ass'n v. Stuart, 427 U.S. 539 (1976)"
+   ],
+   "code": "speech_restraint",
+   "default_clarity": 1,
+   "default_impact": 2,
+   "group": "rights",
+   "label": "Gag orders, no-deny terms and prior restraints on speech",
+   "lowers": "",
+   "raises": "Clarity rises when the document describes a gag order or prior restraint.",
+   "why": "Conditions that stop people from denying charges or discussing their case restrict speech. The SEC rescinded its no-deny rule in May 2026, but similar terms can appear in other agencies' settlements and orders."
+  },
+  {
+   "authorities": [
+    "Central Hudson Gas & Electric v. PSC, 447 U.S. 557 (1980)",
+    "Zauderer v. Office of Disciplinary Counsel, 471 U.S. 626 (1985)",
+    "NRA v. Vullo, 602 U.S. 175 (2024)"
+   ],
+   "code": "first_amendment",
+   "default_clarity": 1,
+   "default_impact": 2,
+   "group": "rights",
+   "label": "Speech, press, religion or association",
+   "lowers": "",
+   "raises": "",
+   "why": "Rules about what people say, must disclose, publish or believe can raise First Amendment issues."
+  },
+  {
+   "authorities": [
+    "City of Los Angeles v. Patel, 576 U.S. 409 (2015)",
+    "Carpenter v. United States, 585 U.S. 296 (2018)"
+   ],
+   "code": "fourth_amendment",
+   "default_clarity": 1,
+   "default_impact": 2,
+   "group": "rights",
+   "label": "Searches, inspections, records demands or surveillance",
+   "lowers": "",
+   "raises": "Clarity rises for warrantless searches.",
+   "why": "Government inspections and demands for records or data can raise Fourth Amendment questions."
+  },
+  {
+   "authorities": [
+    "Cedar Point Nursery v. Hassid, 594 U.S. 139 (2021)",
+    "Mathews v. Eldridge, 424 U.S. 319 (1976)",
+    "Culley v. Marshall, 601 U.S. 377 (2024)"
+   ],
+   "code": "due_process_takings",
+   "default_clarity": 1,
+   "default_impact": 2,
+   "group": "rights",
+   "label": "Property, takings or due process",
+   "lowers": "",
+   "raises": "Clarity rises for action without notice or hearing; seriousness rises for loss of property or a license.",
+   "why": "Taking property, revoking licenses or acting without notice and a hearing can raise Fifth Amendment due process or takings questions."
+  },
+  {
+   "authorities": [
+    "Timbs v. Indiana, 586 U.S. 146 (2019)",
+    "United States v. Bajakajian, 524 U.S. 321 (1998)"
+   ],
+   "code": "excessive_fines",
+   "default_clarity": 1,
+   "default_impact": 2,
+   "group": "rights",
+   "label": "Excessive fines and forfeitures",
+   "lowers": "",
+   "raises": "Triggered by penalties of a million dollars or more; seriousness rises for penalties in the billions.",
+   "why": "Very large penalties and forfeitures can be tested against the Eighth Amendment's Excessive Fines Clause, which asks whether a sanction is grossly disproportional to the offense."
+  },
+  {
+   "authorities": [
+    "Students for Fair Admissions v. Harvard, 600 U.S. 181 (2023)"
+   ],
+   "code": "equal_protection",
+   "default_clarity": 1,
+   "default_impact": 2,
+   "group": "rights",
+   "label": "Classifications by race, sex or other protected traits",
+   "lowers": "",
+   "raises": "Clarity rises to Flagrant for express racial classifications or set-asides.",
+   "why": "Government classifications by race or sex receive heightened scrutiny."
+  }
+ ],
+ "outcomes": [
+  {
+   "group": "rulemaking",
+   "key": "proposed",
+   "label": "Proposed rule or proposal"
+  },
+  {
+   "group": "rulemaking",
+   "key": "final",
+   "label": "Final rule"
+  },
+  {
+   "group": "rulemaking",
+   "key": "guidance",
+   "label": "Guidance, interpretation or request for comment"
+  },
+  {
+   "group": "action",
+   "key": "initiated",
+   "label": "Charged or proceeding started"
+  },
+  {
+   "group": "action",
+   "key": "settled",
+   "label": "Settled or consented"
+  },
+  {
+   "group": "action",
+   "key": "decided",
+   "label": "Decided or ordered after a contest"
+  },
+  {
+   "group": "action",
+   "key": "closed",
+   "label": "Dismissed, withdrawn or closed"
+  },
+  {
+   "group": "action",
+   "key": "recall",
+   "label": "Recall classified"
+  },
+  {
+   "group": "licensing",
+   "key": "applied",
+   "label": "Application or filing"
+  },
+  {
+   "group": "licensing",
+   "key": "granted",
+   "label": "Granted or approved"
+  },
+  {
+   "group": "licensing",
+   "key": "denied",
+   "label": "Denied"
+  },
+  {
+   "group": "presidential",
+   "key": "issued",
+   "label": "Issued (presidential)"
+  },
+  {
+   "group": "other",
+   "key": "notice",
+   "label": "Notice only"
+  }
+ ],
+ "sanction_families": [
+  {
+   "key": "monetary",
+   "label": "Money"
+  },
+  {
+   "key": "exclusion",
+   "label": "Exclusion from a market, profession or program"
+  },
+  {
+   "key": "license",
+   "label": "Licenses, registrations and permits"
+  },
+  {
+   "key": "orders",
+   "label": "Orders, injunctions and conduct restrictions"
+  },
+  {
+   "key": "speech",
+   "label": "Speech, disclosure and publicity"
+  },
+  {
+   "key": "product",
+   "label": "Products, goods and operations"
+  },
+  {
+   "key": "investigative",
+   "label": "Investigative and intrusive measures"
+  },
+  {
+   "key": "reputational",
+   "label": "Warnings and reputational sanctions"
+  },
+  {
+   "key": "funding",
+   "label": "Funding and program conditions"
+  },
+  {
+   "key": "criminal",
+   "label": "Criminal process"
+  }
+ ],
+ "sanctions": [
+  {
+   "family": "monetary",
+   "key": "civil_penalty",
+   "label": "Civil money penalties and fines",
+   "short": "Fines",
+   "words": [
+    "fine",
+    "fines",
+    "fined",
+    "penalty",
+    "penalties",
+    "civil penalty",
+    "money penalty",
+    "cmp"
+   ]
+  },
+  {
+   "family": "monetary",
+   "key": "forfeiture_nal",
+   "label": "FCC forfeitures and notices of apparent liability",
+   "short": "FCC forfeitures",
+   "words": [
+    "notice of apparent liability",
+    "nal",
+    "forfeiture order",
+    "fcc fine"
+   ]
+  },
+  {
+   "family": "monetary",
+   "key": "disgorgement",
+   "label": "Disgorgement of profits",
+   "short": "Disgorgement",
+   "words": [
+    "disgorgement",
+    "disgorge",
+    "ill-gotten gains",
+    "profits"
+   ]
+  },
+  {
+   "family": "monetary",
+   "key": "restitution",
+   "label": "Restitution, redress and refunds",
+   "short": "Restitution",
+   "words": [
+    "restitution",
+    "redress",
+    "refund",
+    "refunds",
+    "back wages",
+    "compensation"
+   ]
+  },
+  {
+   "family": "monetary",
+   "key": "asset_freeze",
+   "label": "Asset freezes and receiverships",
+   "short": "Asset freeze",
+   "words": [
+    "asset freeze",
+    "frozen assets",
+    "receiver",
+    "receivership"
+   ]
+  },
+  {
+   "family": "exclusion",
+   "key": "industry_bar",
+   "label": "Bars, bans and expulsions from an industry",
+   "short": "Bars & bans",
+   "words": [
+    "bar",
+    "bars",
+    "barred",
+    "barring",
+    "industry bar",
+    "ban",
+    "banned",
+    "banning",
+    "expel",
+    "expelled",
+    "expulsion",
+    "kicked out",
+    "blacklist",
+    "blacklisted"
+   ]
+  },
+  {
+   "family": "exclusion",
+   "key": "officer_director_bar",
+   "label": "Officer-and-director bars",
+   "short": "O&D bars",
+   "words": [
+    "officer and director bar",
+    "officer director bar",
+    "o&d bar"
+   ]
+  },
+  {
+   "family": "exclusion",
+   "key": "practice_suspension",
+   "label": "Suspension from practising before an agency (accountants, lawyers)",
+   "short": "Practice bans",
+   "words": [
+    "rule 102(e)",
+    "102e",
+    "practice before the commission",
+    "attorney suspension",
+    "accountant suspension"
+   ]
+  },
+  {
+   "family": "exclusion",
+   "key": "debarment",
+   "label": "Debarment and exclusion from government programs",
+   "short": "Debarment",
+   "words": [
+    "debarment",
+    "debar",
+    "debarred",
+    "exclusion",
+    "excluded",
+    "medicare exclusion",
+    "contract ban"
+   ]
+  },
+  {
+   "family": "exclusion",
+   "key": "trading_suspension",
+   "label": "Trading suspensions and halts",
+   "short": "Trading halts",
+   "words": [
+    "trading suspension",
+    "trading halt",
+    "halted trading"
+   ]
+  },
+  {
+   "family": "license",
+   "key": "suspension",
+   "label": "Suspension of a license, registration or membership",
+   "short": "Suspensions",
+   "words": [
+    "suspension",
+    "suspensions",
+    "suspend",
+    "suspended",
+    "license suspension"
+   ]
+  },
+  {
+   "family": "license",
+   "key": "revocation",
+   "label": "Revocation, termination or deregistration",
+   "short": "Revocations",
+   "words": [
+    "revocation",
+    "revoke",
+    "revoked",
+    "revoking",
+    "deregistration",
+    "license revoked",
+    "withdrawal of approval"
+   ]
+  },
+  {
+   "family": "license",
+   "key": "license_denial",
+   "label": "Denial of an application, license or renewal",
+   "short": "Denials",
+   "words": [
+    "denial",
+    "denied",
+    "deny",
+    "application denied",
+    "hearing designation order",
+    "hdo"
+   ]
+  },
+  {
+   "family": "orders",
+   "key": "cease_desist",
+   "label": "Cease-and-desist orders",
+   "short": "Cease & desist",
+   "words": [
+    "cease and desist",
+    "cease-and-desist",
+    "c&d"
+   ]
+  },
+  {
+   "family": "orders",
+   "key": "injunction",
+   "label": "Court injunctions and restraining orders",
+   "short": "Injunctions",
+   "words": [
+    "injunction",
+    "injunctions",
+    "injunctive",
+    "enjoin",
+    "enjoined",
+    "tro",
+    "restraining order"
+   ]
+  },
+  {
+   "family": "orders",
+   "key": "consent_order",
+   "label": "Consent orders, decrees and settlements",
+   "short": "Settlements",
+   "words": [
+    "consent order",
+    "consent decree",
+    "settlement",
+    "settlements",
+    "settled",
+    "settle",
+    "plea deal"
+   ]
+  },
+  {
+   "family": "orders",
+   "key": "undertakings",
+   "label": "Compliance undertakings, monitors and consultants",
+   "short": "Monitors",
+   "words": [
+    "monitor",
+    "monitorship",
+    "independent consultant",
+    "undertaking",
+    "undertakings"
+   ]
+  },
+  {
+   "family": "orders",
+   "key": "data_deletion",
+   "label": "Orders to delete data, models or algorithms",
+   "short": "Data deletion",
+   "words": [
+    "data deletion",
+    "delete data",
+    "algorithm",
+    "algorithmic disgorgement",
+    "ai model deletion"
+   ]
+  },
+  {
+   "family": "orders",
+   "key": "operations_order",
+   "label": "Stop-work, shutdown and emergency orders",
+   "short": "Shutdowns",
+   "words": [
+    "shutdown",
+    "shut down",
+    "stop work",
+    "stop-work",
+    "emergency order",
+    "imminent hazard",
+    "show cause"
+   ]
+  },
+  {
+   "family": "speech",
+   "key": "gag",
+   "label": "Gag orders, no-deny and confidentiality terms, prior restraints",
+   "short": "Gag orders",
+   "words": [
+    "gag",
+    "gag order",
+    "gag orders",
+    "gag rule",
+    "no deny",
+    "no-deny",
+    "neither admit nor deny",
+    "without admitting or denying",
+    "confidentiality",
+    "non-disparagement",
+    "nondisparagement",
+    "prior restraint",
+    "silence",
+    "silenced",
+    "speech restriction",
+    "nda",
+    "nondisclosure"
+   ]
+  },
+  {
+   "family": "speech",
+   "key": "corrective_disclosure",
+   "label": "Corrective advertising and compelled notices",
+   "short": "Compelled notices",
+   "words": [
+    "corrective advertising",
+    "corrective notice",
+    "compelled disclosure",
+    "compelled speech",
+    "notice to customers"
+   ]
+  },
+  {
+   "family": "product",
+   "key": "recall",
+   "label": "Recalls and market withdrawals",
+   "short": "Recalls",
+   "words": [
+    "recall",
+    "recalls",
+    "recalled",
+    "market withdrawal"
+   ]
+  },
+  {
+   "family": "product",
+   "key": "import_action",
+   "label": "Import alerts, detentions and refusals",
+   "short": "Import actions",
+   "words": [
+    "import alert",
+    "import detention",
+    "import refusal",
+    "border"
+   ]
+  },
+  {
+   "family": "product",
+   "key": "seizure",
+   "label": "Seizure, forfeiture and condemnation of property",
+   "short": "Seizures",
+   "words": [
+    "seizure",
+    "seized",
+    "seize",
+    "civil forfeiture",
+    "condemnation",
+    "confiscation",
+    "confiscated"
+   ]
+  },
+  {
+   "family": "investigative",
+   "key": "subpoena",
+   "label": "Subpoenas and civil investigative demands",
+   "short": "Subpoenas & CIDs",
+   "words": [
+    "subpoena",
+    "subpoenas",
+    "civil investigative demand",
+    "cid",
+    "cids",
+    "investigative demand",
+    "6(b) order"
+   ]
+  },
+  {
+   "family": "investigative",
+   "key": "inspection",
+   "label": "Inspections, audits and on-site examinations",
+   "short": "Inspections",
+   "words": [
+    "inspection",
+    "inspections",
+    "audit",
+    "audits",
+    "raid",
+    "search",
+    "warrantless"
+   ]
+  },
+  {
+   "family": "reputational",
+   "key": "warning",
+   "label": "Warning letters, citations and notices of violation",
+   "short": "Warnings",
+   "words": [
+    "warning letter",
+    "warning letters",
+    "warning",
+    "citation",
+    "citations",
+    "cited",
+    "notice of violation",
+    "untitled letter"
+   ]
+  },
+  {
+   "family": "reputational",
+   "key": "censure",
+   "label": "Censures and reprimands",
+   "short": "Censures",
+   "words": [
+    "censure",
+    "censured",
+    "reprimand",
+    "reprimanded"
+   ]
+  },
+  {
+   "family": "funding",
+   "key": "funding_cut",
+   "label": "Termination, suspension or conditioning of federal funds",
+   "short": "Funding cuts",
+   "words": [
+    "grant termination",
+    "funding cut",
+    "funding cuts",
+    "defund",
+    "defunded",
+    "withhold funds",
+    "clawback",
+    "recoupment",
+    "grant conditions"
+   ]
+  },
+  {
+   "family": "criminal",
+   "key": "criminal",
+   "label": "Criminal charges, pleas, convictions and referrals",
+   "short": "Criminal",
+   "words": [
+    "criminal",
+    "indictment",
+    "indicted",
+    "guilty",
+    "plea",
+    "sentenced",
+    "conviction",
+    "convicted",
+    "prosecution",
+    "arrested",
+    "jail",
+    "prison"
+   ]
+  }
+ ],
+ "scales": {
+  "clarity": {
+   "label": "Clarity",
+   "levels": [
+    {
+     "color": "red",
+     "meaning": "The action fits a pattern the Supreme Court has squarely held unlawful.",
+     "name": "Flagrant",
+     "value": 3
+    },
+    {
+     "color": "orange",
+     "meaning": "A strong argument under existing Supreme Court or federal appellate precedent.",
+     "name": "Substantial",
+     "value": 2
+    },
+    {
+     "color": "yellow",
+     "meaning": "An open or developing question that deserves a lawyer's review. Not a lesser concern; a less settled one.",
+     "name": "Arguable",
+     "value": 1
+    }
+   ],
+   "question": "How clearly does existing law condemn this kind of action?"
+  },
+  "impact": {
+   "label": "Seriousness",
+   "levels": [
+    {
+     "color": "red",
+     "meaning": "Penalties, bars, loss of livelihood or property, or economy-wide or presidential action.",
+     "name": "Severe",
+     "value": 3
+    },
+    {
+     "color": "orange",
+     "meaning": "Binding obligations on regulated parties or a whole industry.",
+     "name": "Significant",
+     "value": 2
+    },
+    {
+     "color": "yellow",
+     "meaning": "Narrower, procedural or preliminary effects. Still a constitutional concern.",
+     "name": "Moderate",
+     "value": 1
+    }
+   ],
+   "question": "How much is at stake if the action is unlawful?"
+  }
+ }
+}

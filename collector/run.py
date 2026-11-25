@@ -1,4 +1,4 @@
-"""Daily run: python -m collector.run
+"""RegHunter daily run: python -m collector.run
 
 Environment variables (set as GitHub secrets, never written into the code):
   REGULATIONS_GOV_API_KEY  free api.data.gov key (read-only use)
@@ -13,7 +13,7 @@ from . import config, store
 from .classify import classify
 from .flags import flag_item
 from .http_client import PoliteClient
-from .sources import federal_register, regulations_gov, sec_feeds
+from .sources import agency_feeds, federal_register, openfda, regulations_gov, sec_feeds
 
 
 def main():
@@ -23,7 +23,7 @@ def main():
     start, end = store.compute_window(index, now.date())
     start = os.environ.get("START_DATE") or start
     end = os.environ.get("END_DATE") or end
-    print(f"Agency Tracker run {run_at}: checking {start} to {end}")
+    print(f"{config.APP_NAME} run {run_at}: checking {start} to {end}")
 
     regs_key = os.environ.get("REGULATIONS_GOV_API_KEY", "").strip()
     contact = os.environ.get("SEC_CONTACT_EMAIL", "").strip()
@@ -42,6 +42,14 @@ def main():
     reports.append(rep)
 
     items, reps = sec_feeds.fetch(sec_client, start, end, contact)
+    all_items += items
+    reports += reps
+
+    items, rep = openfda.fetch(client, start, end)
+    all_items += items
+    reports.append(rep)
+
+    items, reps = agency_feeds.fetch(client, start, end)
     all_items += items
     reports += reps
 

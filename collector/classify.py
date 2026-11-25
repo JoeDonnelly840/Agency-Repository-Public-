@@ -1,7 +1,9 @@
-"""Sort each item into an agency (or agency-controlled corporation) and a category."""
+"""Sort each item into an agency (or agency-controlled corporation), a category,
+an outcome, and the types of sanction it describes."""
 import re
 
 from . import config
+from .taxonomy import outcome_of, sanctions_of, text_of  # noqa: F401  (text_of is re-exported for flags.py)
 
 _SLUG_TO_KEY = {slug: ag["key"] for ag in config.AGENCIES for slug in ag["fr"]}
 _EXCLUDES = {ag["key"]: set(ag.get("excludes", [])) for ag in config.AGENCIES}
@@ -14,15 +16,15 @@ def _rx(*words):
 
 ADJUDICATION = _rx(r"administrative law judge", r"initial decision", r"decision and order", r"opinion and order",
                    r"notice of (?:a )?hearing", r"hearing (?:on|to determine)", r"petition for review",
-                   r"in the matter of", r"order to show cause", r"remand")
+                   r"in the matter of", r"order to show cause", r"remand", r"notice of opportunity for hearing")
 LICENSING = _rx(r"combined notice of filings", r"notice of (?:filing|application|intent to (?:prepare|file))",
                 r"application(?:s)? for", r"licen[cs]e", r"certificate of public convenience",
                 r"permit(?:s)?\b", r"waiver", r"exemptive relief", r"notice of applications? for deregistration",
-                r"tariff", r"rate (?:filing|case|schedule)")
+                r"tariff", r"rate (?:filing|case|schedule)", r"variance")
 ENFORCEMENT = _rx(r"consent (?:agreement|order|decree)", r"civil (?:money )?penalt", r"cease[- ]and[- ]desist",
                   r"order instituting", r"settlement", r"notice of violation", r"debarment", r"enforcement",
                   r"proposed (?:consent )?order", r"complaint", r"forfeiture", r"revocation", r"trading suspension",
-                  r"disgorgement", r"sanction")
+                  r"disgorgement", r"sanction", r"notice of apparent liability", r"warning letter")
 STRONG = _rx(r"civil (?:money )?penalt(?:y|ies) (?:of|against)", r"consent (?:order|decree)", r"cease[- ]and[- ]desist",
              r"order instituting", r"debarment proceeding")
 GUIDANCE = _rx(r"guidance", r"policy statement", r"statement of policy", r"interpretive", r"interpretation",
@@ -32,10 +34,12 @@ RULE_HEARING = _rx(r"informal (?:public )?hearing", r"public hearing on (?:the )
 PAPERWORK = _rx(r"information collection", r"paperwork reduction act", r"agency information collection",
                 r"submission for (?:the )?office of management and budget", r"system of records", r"privacy act of 1974")
 MEETING = _rx(r"meeting", r"sunshine act", r"advisory committee", r"webinar", r"public workshop")
+# Penalty-inflation and similar housekeeping rules mention penalties without imposing any.
+INFLATION = _rx(r"inflation adjustment", r"adjustment of civil (?:monetary )?penalt", r"civil (?:monetary )?penalty (?:inflation )?adjustment",
+                r"no adjustment to .{0,40}penalt")
 
-
-def text_of(item):
-    return " ".join([item.get("title", ""), item.get("action", ""), item.get("summary", "")])
+# Regulations.gov FDA docket letters (FDA-YYYY-<letter>-NNNN).
+_FDA_DOCKET = re.compile(r"^FDA-\d{4}-([A-Z])-", re.I)
 
 
 def assign_agencies(item):
@@ -60,6 +64,33 @@ def assign_corporation(item):
     return None
 
 
+def _fda_docket_category(item):
+    """FDA posts many short, generically titled documents on Regulations.gov. The docket
+    letter says what they are, so they are sorted by it rather than by their titles."""
+    if item.get("source") != "regulations_gov" or "fda" not in item.get("agencies", []):
+        return None
+    m = _FDA_DOCKET.match((item.get("docket_ids") or [""])[0])
+    if not m:
+        return None
+    letter, title = m.group(1).upper(), item.get("title", "")
+    if letter == "H":
+        if re.search(r"complaint", title, re.I):
+            item["doc_subtype_hint"] = "cmp_complaint"
+            return "enforcement", "Civil money penalty complaint (FDA hearing docket, usually a tobacco retailer)"
+        return "adjudication", "Civil money penalty proceeding (FDA hearing docket)"
+    if letter == "S":
+        return "other", "Dietary supplement structure/function notification"
+    if letter == "V":
+        return "adjudication", "Variance application or decision (product standard)"
+    if letter == "P":
+        return "other", "Citizen petition or FDA response"
+    if letter == "N" and re.search(r"NOOH|opportunity for hearing", title, re.I):
+        return "adjudication", "Notice of opportunity for hearing"
+    if letter == "N" and re.search(r"GRAS", title):
+        return "other", "GRAS notice (food ingredient)"
+    return None
+
+
 def assign_category(item):
     """Returns (category, subcategory)."""
     if item.get("forced_category"):
@@ -78,9 +109,18 @@ def assign_category(item):
         if ENFORCEMENT.search(title_action) and re.search(r"disciplin|expel|\bbar\b", full, re.I):
             return "enforcement", "Disciplinary matter"
         return "rulemaking", "Rule filing by self-regulatory organization"
+    fda = _fda_docket_category(item)
+    if fda:
+        return fda
+    if dtype == "agency announcement":  # kept from a press feed because it describes an action
+        if ADJUDICATION.search(title_action) or re.search(r"\b(?:decision|ruling|judge)\b", title_action, re.I):
+            return "adjudication", "Decision announced by the agency"
+        return "enforcement", "Enforcement action announced by the agency"
     # Notices and everything else: decide from the wording.
     if PAPERWORK.search(title_action):
         return "other", "Information collection, privacy or paperwork notice"
+    if INFLATION.search(full):
+        return "other", "Penalty inflation adjustment"
     if RULE_HEARING.search(title_action):
         return "rulemaking", "Rulemaking hearing"
     if ADJUDICATION.search(title_action):
@@ -100,7 +140,10 @@ def assign_category(item):
 
 
 def classify(item):
+    item.setdefault("jurisdiction", "federal")
     item["agencies"] = assign_agencies(item)
     item["corporation"] = assign_corporation(item)
     item["category"], item["subcategory"] = assign_category(item)
+    item["sanctions"] = sanctions_of(item) if item["category"] in ("enforcement", "adjudication", "presidential") else []
+    item["outcome"] = outcome_of(item)
     return item
