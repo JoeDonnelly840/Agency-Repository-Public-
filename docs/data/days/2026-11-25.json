@@ -617,6 +617,67 @@
    "agencies": [
     "sec"
    ],
+   "category": "adjudication",
+   "corporation": null,
+   "date": "2026-11-25",
+   "date_basis": "released",
+   "doc_type": "In-house administrative proceeding",
+   "first_seen": "2026-11-26T13:43:03+00:00",
+   "flags": [
+    {
+     "code": "agency_adjudication",
+     "counters": [],
+     "elements_found": [
+      "in_house"
+     ],
+     "elements_total": 4,
+     "flagrance": 1,
+     "group": "structural",
+     "impact": 1,
+     "structural": true,
+     "tier": 1,
+     "tier_authority": "atlas_roofing",
+     "triggers": [
+      "SEC in-house administrative proceeding"
+     ]
+    }
+   ],
+   "id": "sec_admin:dcdb1364186c29b2",
+   "jurisdiction": "federal",
+   "outcome": "initiated",
+   "priority": 1,
+   "published": "2026-11-25",
+   "routine": false,
+   "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
+   "severity": {
+    "flagrance": 1,
+    "impact": 1,
+    "score": 1
+   },
+   "source": "sec_admin",
+   "source_label": "SEC administrative proceedings (in-house)",
+   "subcategory": "In-house administrative proceeding",
+   "subtype": "",
+   "summary": "",
+   "title": "Ivel Turner",
+   "url": "https://www.sec.gov/files/litigation/admin/2026/ia-7040.pdf"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "sec"
+   ],
    "category": "rulemaking",
    "comments_close": null,
    "corporation": "other_sro",
@@ -2996,7 +3057,7 @@
    "category": "enforcement",
    "corporation": null,
    "date": "2026-11-25",
-   "date_basis": "published",
+   "date_basis": "released",
    "doc_type": "Federal court action (litigation release)",
    "first_seen": "2026-11-25T19:15:39+00:00",
    "flags": [],
@@ -3035,7 +3096,7 @@
    "category": "enforcement",
    "corporation": null,
    "date": "2026-11-25",
-   "date_basis": "published",
+   "date_basis": "released",
    "doc_type": "Federal court action (litigation release)",
    "first_seen": "2026-11-25T19:15:39+00:00",
    "flags": [],

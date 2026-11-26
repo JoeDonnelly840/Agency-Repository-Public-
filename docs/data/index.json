@@ -192,7 +192,7 @@
   "2026-11-20": 108,
   "2026-11-23": 418,
   "2026-11-24": 87,
-  "2026-11-25": 91
+  "2026-11-25": 92
  },
  "history_start": "2015-01-01",
  "jurisdictions": [
@@ -4528,6 +4528,112 @@
    "requests": 300,
    "run_at": "2026-11-26T11:28:50+00:00",
    "start": "2015-01-01"
+  },
+  {
+   "end": "2026-11-26",
+   "items_found": 597,
+   "items_new": 1,
+   "kind": "daily",
+   "reports": [
+    {
+     "agencies": {
+      "cfpb": "ok",
+      "dol": "ok",
+      "epa": "ok",
+      "fcc": "ok",
+      "fda": "ok",
+      "ferc": "ok",
+      "ftc": "ok",
+      "hhs": "ok",
+      "nlrb": "ok",
+      "president": "ok",
+      "sec": "ok"
+     },
+     "detail": "",
+     "label": "Federal Register",
+     "source": "federal_register",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "cfpb": "ok",
+      "dol": "ok",
+      "epa": "ok",
+      "fcc": "ok",
+      "fda": "ok",
+      "ferc": "ok",
+      "ftc": "ok",
+      "hhs": "ok",
+      "nlrb": "ok",
+      "sec": "ok"
+     },
+     "detail": "",
+     "label": "Regulations.gov",
+     "source": "regulations_gov",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "sec": "ok"
+     },
+     "detail": "",
+     "label": "SEC litigation releases (federal court actions)",
+     "source": "sec_litigation",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "sec": "ok"
+     },
+     "detail": "",
+     "label": "SEC administrative proceedings (in-house)",
+     "source": "sec_admin",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "fda": "ok"
+     },
+     "detail": "",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "nlrb": "ok"
+     },
+     "detail": "Only announcements that describe an action (charges, settlements, orders, penalties, and similar) are kept.",
+     "kind": "agency_website",
+     "label": "NLRB press releases",
+     "source": "nlrb_press",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "fda": "ok"
+     },
+     "detail": "Only announcements that describe an action (charges, settlements, orders, penalties, and similar) are kept.",
+     "kind": "agency_website",
+     "label": "FDA press releases",
+     "source": "fda_press",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "cfpb": "ok"
+     },
+     "detail": "Only announcements that describe an action (charges, settlements, orders, penalties, and similar) are kept.",
+     "kind": "agency_website",
+     "label": "CFPB newsroom (enforcement announcements)",
+     "source": "cfpb_newsroom",
+     "status": "ok"
+    }
+   ],
+   "requests": 47,
+   "run_at": "2026-11-26T13:43:03+00:00",
+   "start": "2026-11-22"
   }
  ],
  "schema": 3,
@@ -4590,61 +4696,61 @@
  },
  "sources": {
   "cfpb_newsroom": {
-   "covered_through": "2026-11-25",
+   "covered_through": "2026-11-26",
    "label": "CFPB newsroom (enforcement announcements)",
-   "last_attempt": "2026-11-25T19:15:39+00:00",
+   "last_attempt": "2026-11-26T13:43:03+00:00",
    "last_detail": "Only announcements that describe an action (charges, settlements, orders, penalties, and similar) are kept.",
    "last_status": "ok"
   },
   "fda_press": {
-   "covered_through": "2026-11-25",
+   "covered_through": "2026-11-26",
    "label": "FDA press releases",
-   "last_attempt": "2026-11-25T19:15:39+00:00",
+   "last_attempt": "2026-11-26T13:43:03+00:00",
    "last_detail": "Only announcements that describe an action (charges, settlements, orders, penalties, and similar) are kept.",
    "last_status": "ok"
   },
   "federal_register": {
-   "covered_through": "2026-11-25",
+   "covered_through": "2026-11-26",
    "label": "Federal Register",
-   "last_attempt": "2026-11-25T19:15:39+00:00",
+   "last_attempt": "2026-11-26T13:43:03+00:00",
    "last_detail": "",
    "last_status": "ok"
   },
   "nlrb_press": {
-   "covered_through": "2026-11-25",
+   "covered_through": "2026-11-26",
    "label": "NLRB press releases",
-   "last_attempt": "2026-11-25T19:15:39+00:00",
+   "last_attempt": "2026-11-26T13:43:03+00:00",
    "last_detail": "Only announcements that describe an action (charges, settlements, orders, penalties, and similar) are kept.",
    "last_status": "ok"
   },
   "openfda": {
-   "covered_through": "2026-11-25",
+   "covered_through": "2026-11-26",
    "label": "openFDA recall enforcement reports",
-   "last_attempt": "2026-11-25T19:15:39+00:00",
+   "last_attempt": "2026-11-26T13:43:03+00:00",
    "last_detail": "",
    "last_status": "ok"
   },
   "regulations_gov": {
-   "covered_through": "2026-11-25",
+   "covered_through": "2026-11-26",
    "label": "Regulations.gov",
-   "last_attempt": "2026-11-25T19:15:39+00:00",
+   "last_attempt": "2026-11-26T13:43:03+00:00",
    "last_detail": "",
    "last_status": "ok"
   },
   "sec_admin": {
-   "covered_through": "2026-11-25",
+   "covered_through": "2026-11-26",
    "label": "SEC administrative proceedings (in-house)",
-   "last_attempt": "2026-11-25T19:15:39+00:00",
+   "last_attempt": "2026-11-26T13:43:03+00:00",
    "last_detail": "",
    "last_status": "ok"
   },
   "sec_litigation": {
-   "covered_through": "2026-11-25",
+   "covered_through": "2026-11-26",
    "label": "SEC litigation releases (federal court actions)",
-   "last_attempt": "2026-11-25T19:15:39+00:00",
+   "last_attempt": "2026-11-26T13:43:03+00:00",
    "last_detail": "",
    "last_status": "ok"
   }
  },
- "updated_at": "2026-11-26T11:28:50+00:00"
+ "updated_at": "2026-11-26T13:43:03+00:00"
 }
