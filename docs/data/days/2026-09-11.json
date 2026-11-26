@@ -2,6 +2,83 @@
  "date": "2026-09-11",
  "items": [
   {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-09-11",
+   "date_basis": "posted",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-H-10465"
+   ],
+   "first_seen": "2026-11-26T13:53:06+00:00",
+   "flags": [
+    {
+     "code": "agency_adjudication",
+     "counters": [],
+     "elements_found": [
+      "penalty",
+      "in_house",
+      "contested"
+     ],
+     "elements_total": 4,
+     "flagrance": 1,
+     "group": "structural",
+     "impact": 2,
+     "structural": true,
+     "tier": 1,
+     "tier_authority": "atlas_roofing",
+     "triggers": [
+      "civil money penalty complaint"
+     ]
+    }
+   ],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-H-10465-0001",
+   "jurisdiction": "federal",
+   "outcome": "initiated",
+   "priority": 2,
+   "published": "2026-09-11",
+   "regs_agency_id": "FDA",
+   "routine": false,
+   "sanctions": [
+    "civil_penalty"
+   ],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 3,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 2,
+    "points": 4
+   },
+   "severity": {
+    "flagrance": 1,
+    "impact": 2,
+    "score": 2
+   },
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Civil money penalty complaint (FDA hearing docket, usually a tobacco retailer)",
+   "subtype": "Complaint",
+   "summary": "",
+   "title": "Complaint",
+   "url": "https://www.regulations.gov/document/FDA-2026-H-10465-0001",
+   "withdrawn": false
+  },
+  {
    "action": "Notice.",
    "agencies": [
     "fcc"
@@ -747,6 +824,52 @@
   {
    "action": "",
    "agencies": [
+    "fda"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-09-11",
+   "date_basis": "posted",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-P-10660"
+   ],
+   "first_seen": "2026-11-26T13:53:06+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-P-10660-0002",
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 0,
+   "published": "2026-09-11",
+   "regs_agency_id": "FDA",
+   "routine": false,
+   "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
+   "severity": null,
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Citizen petition or FDA response",
+   "subtype": "Acknowledgement Letter/Receipt",
+   "summary": "",
+   "title": "Acknowledgement Letter from FDA DMB to Jacob Hassell",
+   "url": "https://www.regulations.gov/document/FDA-2026-P-10660-0002",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
     "sec"
    ],
    "category": "other",
@@ -1352,6 +1475,52 @@
   {
    "action": "",
    "agencies": [
+    "fda"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-09-11",
+   "date_basis": "posted",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-P-2144"
+   ],
+   "first_seen": "2026-11-26T13:53:06+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-P-2144-0007",
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 0,
+   "published": "2026-09-11",
+   "regs_agency_id": "FDA",
+   "routine": false,
+   "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
+   "severity": null,
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Citizen petition or FDA response",
+   "subtype": "Approval",
+   "summary": "",
+   "title": "Approval Letter",
+   "url": "https://www.regulations.gov/document/FDA-2026-P-2144-0007",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
     "hhs"
    ],
    "category": "other",
@@ -1397,6 +1566,52 @@
    "summary": "",
    "title": "Center for Scientific Review; Notice of Closed Meetings",
    "url": "https://www.federalregister.gov/documents/2026/09/11/2026-18512/center-for-scientific-review-notice-of-closed-meetings"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-09-11",
+   "date_basis": "posted",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-P-10660"
+   ],
+   "first_seen": "2026-11-26T13:53:06+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-P-10660-0001",
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 0,
+   "published": "2026-09-11",
+   "regs_agency_id": "FDA",
+   "routine": false,
+   "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
+   "severity": null,
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Citizen petition or FDA response",
+   "subtype": "Citizen Petition",
+   "summary": "",
+   "title": "Citizen Petition from Jacob Hassell",
+   "url": "https://www.regulations.gov/document/FDA-2026-P-10660-0001",
+   "withdrawn": false
   },
   {
    "action": "",
@@ -1697,6 +1912,98 @@
    "url": "https://www.federalregister.gov/documents/2026/09/11/2026-18514/national-institute-on-aging-amended-notice-of-meeting"
   },
   {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "other",
+   "comments_close": "2026-10-13",
+   "corporation": null,
+   "date": "2026-09-11",
+   "date_basis": "posted",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-N-9737"
+   ],
+   "first_seen": "2026-11-26T13:53:06+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-N-9737-0001",
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 0,
+   "published": "2026-09-11",
+   "regs_agency_id": "FDA",
+   "routine": false,
+   "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
+   "severity": null,
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Other notice",
+   "subtype": "Memorandum",
+   "summary": "",
+   "title": "Notice of Data Availability and Announcement of Open Public Comment Period: Pharmacokinetics and Safety of Commonly Used Drugs in Lactating Women and Breastfed Infants - Nifedipine",
+   "url": "https://www.regulations.gov/document/FDA-2026-N-9737-0001",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-09-11",
+   "date_basis": "posted",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2016-N-3120"
+   ],
+   "first_seen": "2026-11-26T13:53:06+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2016-N-3120-0583",
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 0,
+   "published": "2026-09-11",
+   "regs_agency_id": "FDA",
+   "routine": false,
+   "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
+   "severity": null,
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Other notice",
+   "subtype": "Public Participation",
+   "summary": "",
+   "title": "Notice of Participation",
+   "url": "https://www.regulations.gov/document/FDA-2016-N-3120-0583",
+   "withdrawn": false
+  },
+  {
    "action": "Notice of supplemental funding.",
    "agencies": [
     "hhs"
@@ -1945,6 +2252,98 @@
    "summary": "In this document, the Federal Communications Commission (Commission or FCC) takes further steps to strengthen its equipment authorization program against national security risks to the communications supply chain. The Commission closes a component-part loophole by prohibiting authorization of devices that incorporate logic-bearing hardware components produced by an entity identified on the Commission's Covered List, where the device would itself be prohibited from authorization had the Covered List entity produced the entire device. The Commission also requires that any modification or permissive change to equipment by an entity identified on the Covered List undergo full certification,…",
    "title": "Protecting Against National Security Threats to the Communications Supply Chain Through the Equipment Authorization Program",
    "url": "https://www.federalregister.gov/documents/2026/09/11/2026-18535/protecting-against-national-security-threats-to-the-communications-supply-chain-through-the"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-09-11",
+   "date_basis": "posted",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2025-N-7130"
+   ],
+   "first_seen": "2026-11-26T13:53:06+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2025-N-7130-0236",
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 0,
+   "published": "2026-09-11",
+   "regs_agency_id": "FDA",
+   "routine": false,
+   "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
+   "severity": null,
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Other notice",
+   "subtype": "Request for Extension",
+   "summary": "",
+   "title": "Request for Extension from RAI Services Company",
+   "url": "https://www.regulations.gov/document/FDA-2025-N-7130-0236",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-09-11",
+   "date_basis": "posted",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2025-P-5305"
+   ],
+   "first_seen": "2026-11-26T13:53:06+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2025-P-5305-0004",
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 0,
+   "published": "2026-09-11",
+   "regs_agency_id": "FDA",
+   "routine": false,
+   "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
+   "severity": null,
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Citizen petition or FDA response",
+   "subtype": "Denial of Petition",
+   "summary": "",
+   "title": "Response Letter",
+   "url": "https://www.regulations.gov/document/FDA-2025-P-5305-0004",
+   "withdrawn": false
   },
   {
    "action": "Notice.",

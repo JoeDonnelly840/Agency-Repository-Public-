@@ -10,7 +10,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-10-23",
-   "date_basis": "published",
+   "date_basis": "posted",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2026-H-12775"
@@ -87,7 +87,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-10-23",
-   "date_basis": "published",
+   "date_basis": "posted",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2026-H-12772"
@@ -164,7 +164,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-10-23",
-   "date_basis": "published",
+   "date_basis": "posted",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2026-H-12809"
@@ -241,7 +241,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-10-23",
-   "date_basis": "published",
+   "date_basis": "posted",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2026-H-12776"
@@ -318,7 +318,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-10-23",
-   "date_basis": "published",
+   "date_basis": "posted",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2026-H-12805"
@@ -395,7 +395,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-10-23",
-   "date_basis": "published",
+   "date_basis": "posted",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2026-H-12773"
@@ -472,7 +472,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-10-23",
-   "date_basis": "published",
+   "date_basis": "posted",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2026-H-12808"
@@ -549,7 +549,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-10-23",
-   "date_basis": "published",
+   "date_basis": "posted",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2026-H-12774"
@@ -626,7 +626,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-10-23",
-   "date_basis": "published",
+   "date_basis": "posted",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2026-H-12806"
@@ -1062,7 +1062,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-10-23",
-   "date_basis": "published",
+   "date_basis": "posted",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2026-P-12970"
@@ -1108,7 +1108,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-10-23",
-   "date_basis": "published",
+   "date_basis": "posted",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2026-P-13173"
@@ -1154,7 +1154,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-10-23",
-   "date_basis": "published",
+   "date_basis": "posted",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2026-P-12749"
@@ -1200,7 +1200,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-10-23",
-   "date_basis": "published",
+   "date_basis": "posted",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2026-P-13203"
@@ -1242,11 +1242,57 @@
    "agencies": [
     "fda"
    ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-10-23",
+   "date_basis": "posted",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-P-13003"
+   ],
+   "first_seen": "2026-11-26T13:53:06+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-P-13003-0002",
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 0,
+   "published": "2026-10-23",
+   "regs_agency_id": "FDA",
+   "routine": false,
+   "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
+   "severity": null,
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Citizen petition or FDA response",
+   "subtype": "Acknowledgement Letter/Receipt",
+   "summary": "",
+   "title": "Acknowledgement Letter from FDA DOD to Senores Pharmaeuticals, Inc.",
+   "url": "https://www.regulations.gov/document/FDA-2026-P-13003-0002",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
    "category": "adjudication",
    "comments_close": null,
    "corporation": null,
    "date": "2026-10-23",
-   "date_basis": "published",
+   "date_basis": "posted",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2026-V-12393"
@@ -1292,7 +1338,7 @@
    "comments_close": "2026-12-23",
    "corporation": null,
    "date": "2026-10-23",
-   "date_basis": "published",
+   "date_basis": "posted",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2025-D-4023"
@@ -1937,7 +1983,53 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-10-23",
-   "date_basis": "published",
+   "date_basis": "posted",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-P-12970"
+   ],
+   "first_seen": "2026-11-26T13:53:06+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-P-12970-0001",
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 0,
+   "published": "2026-10-23",
+   "regs_agency_id": "FDA",
+   "routine": false,
+   "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
+   "severity": null,
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Citizen petition or FDA response",
+   "subtype": "Citizen Petition",
+   "summary": "",
+   "title": "Citizen Petition from Foley & Lardner LLP",
+   "url": "https://www.regulations.gov/document/FDA-2026-P-12970-0001",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-10-23",
+   "date_basis": "posted",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2026-P-13173"
@@ -1983,7 +2075,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-10-23",
-   "date_basis": "published",
+   "date_basis": "posted",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2026-P-12749"
@@ -2029,7 +2121,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-10-23",
-   "date_basis": "published",
+   "date_basis": "posted",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2026-P-13203"
@@ -2075,7 +2167,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-10-23",
-   "date_basis": "published",
+   "date_basis": "posted",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2026-P-13003"
@@ -2121,7 +2213,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-10-23",
-   "date_basis": "published",
+   "date_basis": "posted",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2026-R-12782"
@@ -2167,7 +2259,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-10-23",
-   "date_basis": "published",
+   "date_basis": "posted",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2026-R-12783"
@@ -2328,7 +2420,7 @@
    "comments_close": "2026-11-24",
    "corporation": null,
    "date": "2026-10-23",
-   "date_basis": "published",
+   "date_basis": "posted",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2026-N-13038"
@@ -2425,7 +2517,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-10-23",
-   "date_basis": "published",
+   "date_basis": "posted",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2026-P-7182"
@@ -2471,7 +2563,53 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-10-23",
-   "date_basis": "published",
+   "date_basis": "posted",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-P-4103"
+   ],
+   "first_seen": "2026-11-26T13:53:06+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-P-4103-0007",
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 0,
+   "published": "2026-10-23",
+   "regs_agency_id": "FDA",
+   "routine": false,
+   "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
+   "severity": null,
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Citizen petition or FDA response",
+   "subtype": "Letter(s)",
+   "summary": "",
+   "title": "Final Response",
+   "url": "https://www.regulations.gov/document/FDA-2026-P-4103-0007",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-10-23",
+   "date_basis": "posted",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2026-P-5984"
@@ -2517,7 +2655,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-10-23",
-   "date_basis": "published",
+   "date_basis": "posted",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2024-P-5807"
@@ -2612,7 +2750,7 @@
    "comments_close": "2027-01-22",
    "corporation": null,
    "date": "2026-10-23",
-   "date_basis": "published",
+   "date_basis": "posted",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2016-D-2343"
@@ -2918,7 +3056,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-10-23",
-   "date_basis": "published",
+   "date_basis": "posted",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2025-D-2246"
@@ -3064,7 +3202,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-10-23",
-   "date_basis": "published",
+   "date_basis": "posted",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2026-V-12393"
@@ -3110,7 +3248,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-10-23",
-   "date_basis": "published",
+   "date_basis": "posted",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2026-V-12393"
@@ -3156,7 +3294,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-10-23",
-   "date_basis": "published",
+   "date_basis": "posted",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2005-P-0268"
