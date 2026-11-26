@@ -83,7 +83,7 @@
    "regulations_gov": false
   },
   "next": {
-   "federal_register": "2024-11",
+   "federal_register": "2022-11",
    "openfda": "2026-11",
    "regulations_gov": "2026-11"
   },
@@ -209,6 +209,30 @@
   }
  ],
  "months": {
+  "2022-12": 789,
+  "2023-01": 777,
+  "2023-02": 728,
+  "2023-03": 955,
+  "2023-04": 740,
+  "2023-05": 860,
+  "2023-06": 814,
+  "2023-07": 734,
+  "2023-08": 886,
+  "2023-09": 894,
+  "2023-10": 841,
+  "2023-11": 754,
+  "2023-12": 813,
+  "2024-01": 774,
+  "2024-02": 861,
+  "2024-03": 857,
+  "2024-04": 793,
+  "2024-05": 876,
+  "2024-06": 712,
+  "2024-07": 829,
+  "2024-08": 865,
+  "2024-09": 944,
+  "2024-10": 879,
+  "2024-11": 821,
   "2024-12": 1055,
   "2025-01": 809,
   "2025-02": 471,
@@ -2075,6 +2099,473 @@
    "requests": 288,
    "run_at": "2026-11-26T01:56:14+00:00",
    "start": "2024-12-01"
+  },
+  {
+   "end": "2024-11-30",
+   "items_found": 19796,
+   "items_new": 19796,
+   "kind": "backfill",
+   "reports": [
+    {
+     "agencies": {
+      "cfpb": "ok",
+      "dol": "ok",
+      "epa": "ok",
+      "fcc": "ok",
+      "fda": "ok",
+      "ferc": "ok",
+      "ftc": "ok",
+      "hhs": "ok",
+      "nlrb": "ok",
+      "president": "ok",
+      "sec": "ok"
+     },
+     "detail": "History 2024-11:",
+     "label": "Federal Register",
+     "source": "federal_register",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "cfpb": "ok",
+      "dol": "ok",
+      "epa": "ok",
+      "fcc": "ok",
+      "fda": "ok",
+      "ferc": "ok",
+      "ftc": "ok",
+      "hhs": "ok",
+      "nlrb": "ok",
+      "president": "ok",
+      "sec": "ok"
+     },
+     "detail": "History 2024-10:",
+     "label": "Federal Register",
+     "source": "federal_register",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "cfpb": "ok",
+      "dol": "ok",
+      "epa": "ok",
+      "fcc": "ok",
+      "fda": "ok",
+      "ferc": "ok",
+      "ftc": "ok",
+      "hhs": "ok",
+      "nlrb": "ok",
+      "president": "ok",
+      "sec": "ok"
+     },
+     "detail": "History 2024-09:",
+     "label": "Federal Register",
+     "source": "federal_register",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "cfpb": "ok",
+      "dol": "ok",
+      "epa": "ok",
+      "fcc": "ok",
+      "fda": "ok",
+      "ferc": "ok",
+      "ftc": "ok",
+      "hhs": "ok",
+      "nlrb": "ok",
+      "president": "ok",
+      "sec": "ok"
+     },
+     "detail": "History 2024-08:",
+     "label": "Federal Register",
+     "source": "federal_register",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "cfpb": "ok",
+      "dol": "ok",
+      "epa": "ok",
+      "fcc": "ok",
+      "fda": "ok",
+      "ferc": "ok",
+      "ftc": "ok",
+      "hhs": "ok",
+      "nlrb": "ok",
+      "president": "ok",
+      "sec": "ok"
+     },
+     "detail": "History 2024-07:",
+     "label": "Federal Register",
+     "source": "federal_register",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "cfpb": "ok",
+      "dol": "ok",
+      "epa": "ok",
+      "fcc": "ok",
+      "fda": "ok",
+      "ferc": "ok",
+      "ftc": "ok",
+      "hhs": "ok",
+      "nlrb": "ok",
+      "president": "ok",
+      "sec": "ok"
+     },
+     "detail": "History 2024-06:",
+     "label": "Federal Register",
+     "source": "federal_register",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "cfpb": "ok",
+      "dol": "ok",
+      "epa": "ok",
+      "fcc": "ok",
+      "fda": "ok",
+      "ferc": "ok",
+      "ftc": "ok",
+      "hhs": "ok",
+      "nlrb": "ok",
+      "president": "ok",
+      "sec": "ok"
+     },
+     "detail": "History 2024-05:",
+     "label": "Federal Register",
+     "source": "federal_register",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "cfpb": "ok",
+      "dol": "ok",
+      "epa": "ok",
+      "fcc": "ok",
+      "fda": "ok",
+      "ferc": "ok",
+      "ftc": "ok",
+      "hhs": "ok",
+      "nlrb": "ok",
+      "president": "ok",
+      "sec": "ok"
+     },
+     "detail": "History 2024-04:",
+     "label": "Federal Register",
+     "source": "federal_register",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "cfpb": "ok",
+      "dol": "ok",
+      "epa": "ok",
+      "fcc": "ok",
+      "fda": "ok",
+      "ferc": "ok",
+      "ftc": "ok",
+      "hhs": "ok",
+      "nlrb": "ok",
+      "president": "ok",
+      "sec": "ok"
+     },
+     "detail": "History 2024-03:",
+     "label": "Federal Register",
+     "source": "federal_register",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "cfpb": "ok",
+      "dol": "ok",
+      "epa": "ok",
+      "fcc": "ok",
+      "fda": "ok",
+      "ferc": "ok",
+      "ftc": "ok",
+      "hhs": "ok",
+      "nlrb": "ok",
+      "president": "ok",
+      "sec": "ok"
+     },
+     "detail": "History 2024-02:",
+     "label": "Federal Register",
+     "source": "federal_register",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "cfpb": "ok",
+      "dol": "ok",
+      "epa": "ok",
+      "fcc": "ok",
+      "fda": "ok",
+      "ferc": "ok",
+      "ftc": "ok",
+      "hhs": "ok",
+      "nlrb": "ok",
+      "president": "ok",
+      "sec": "ok"
+     },
+     "detail": "History 2024-01:",
+     "label": "Federal Register",
+     "source": "federal_register",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "cfpb": "ok",
+      "dol": "ok",
+      "epa": "ok",
+      "fcc": "ok",
+      "fda": "ok",
+      "ferc": "ok",
+      "ftc": "ok",
+      "hhs": "ok",
+      "nlrb": "ok",
+      "president": "ok",
+      "sec": "ok"
+     },
+     "detail": "History 2023-12:",
+     "label": "Federal Register",
+     "source": "federal_register",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "cfpb": "ok",
+      "dol": "ok",
+      "epa": "ok",
+      "fcc": "ok",
+      "fda": "ok",
+      "ferc": "ok",
+      "ftc": "ok",
+      "hhs": "ok",
+      "nlrb": "ok",
+      "president": "ok",
+      "sec": "ok"
+     },
+     "detail": "History 2023-11:",
+     "label": "Federal Register",
+     "source": "federal_register",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "cfpb": "ok",
+      "dol": "ok",
+      "epa": "ok",
+      "fcc": "ok",
+      "fda": "ok",
+      "ferc": "ok",
+      "ftc": "ok",
+      "hhs": "ok",
+      "nlrb": "ok",
+      "president": "ok",
+      "sec": "ok"
+     },
+     "detail": "History 2023-10:",
+     "label": "Federal Register",
+     "source": "federal_register",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "cfpb": "ok",
+      "dol": "ok",
+      "epa": "ok",
+      "fcc": "ok",
+      "fda": "ok",
+      "ferc": "ok",
+      "ftc": "ok",
+      "hhs": "ok",
+      "nlrb": "ok",
+      "president": "ok",
+      "sec": "ok"
+     },
+     "detail": "History 2023-09:",
+     "label": "Federal Register",
+     "source": "federal_register",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "cfpb": "ok",
+      "dol": "ok",
+      "epa": "ok",
+      "fcc": "ok",
+      "fda": "ok",
+      "ferc": "ok",
+      "ftc": "ok",
+      "hhs": "ok",
+      "nlrb": "ok",
+      "president": "ok",
+      "sec": "ok"
+     },
+     "detail": "History 2023-08:",
+     "label": "Federal Register",
+     "source": "federal_register",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "cfpb": "ok",
+      "dol": "ok",
+      "epa": "ok",
+      "fcc": "ok",
+      "fda": "ok",
+      "ferc": "ok",
+      "ftc": "ok",
+      "hhs": "ok",
+      "nlrb": "ok",
+      "president": "ok",
+      "sec": "ok"
+     },
+     "detail": "History 2023-07:",
+     "label": "Federal Register",
+     "source": "federal_register",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "cfpb": "ok",
+      "dol": "ok",
+      "epa": "ok",
+      "fcc": "ok",
+      "fda": "ok",
+      "ferc": "ok",
+      "ftc": "ok",
+      "hhs": "ok",
+      "nlrb": "ok",
+      "president": "ok",
+      "sec": "ok"
+     },
+     "detail": "History 2023-06:",
+     "label": "Federal Register",
+     "source": "federal_register",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "cfpb": "ok",
+      "dol": "ok",
+      "epa": "ok",
+      "fcc": "ok",
+      "fda": "ok",
+      "ferc": "ok",
+      "ftc": "ok",
+      "hhs": "ok",
+      "nlrb": "ok",
+      "president": "ok",
+      "sec": "ok"
+     },
+     "detail": "History 2023-05:",
+     "label": "Federal Register",
+     "source": "federal_register",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "cfpb": "ok",
+      "dol": "ok",
+      "epa": "ok",
+      "fcc": "ok",
+      "fda": "ok",
+      "ferc": "ok",
+      "ftc": "ok",
+      "hhs": "ok",
+      "nlrb": "ok",
+      "president": "ok",
+      "sec": "ok"
+     },
+     "detail": "History 2023-04:",
+     "label": "Federal Register",
+     "source": "federal_register",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "cfpb": "ok",
+      "dol": "ok",
+      "epa": "ok",
+      "fcc": "ok",
+      "fda": "ok",
+      "ferc": "ok",
+      "ftc": "ok",
+      "hhs": "ok",
+      "nlrb": "ok",
+      "president": "ok",
+      "sec": "ok"
+     },
+     "detail": "History 2023-03:",
+     "label": "Federal Register",
+     "source": "federal_register",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "cfpb": "ok",
+      "dol": "ok",
+      "epa": "ok",
+      "fcc": "ok",
+      "fda": "ok",
+      "ferc": "ok",
+      "ftc": "ok",
+      "hhs": "ok",
+      "nlrb": "ok",
+      "president": "ok",
+      "sec": "ok"
+     },
+     "detail": "History 2023-02:",
+     "label": "Federal Register",
+     "source": "federal_register",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "cfpb": "ok",
+      "dol": "ok",
+      "epa": "ok",
+      "fcc": "ok",
+      "fda": "ok",
+      "ferc": "ok",
+      "ftc": "ok",
+      "hhs": "ok",
+      "nlrb": "ok",
+      "president": "ok",
+      "sec": "ok"
+     },
+     "detail": "History 2023-01:",
+     "label": "Federal Register",
+     "source": "federal_register",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "cfpb": "ok",
+      "dol": "ok",
+      "epa": "ok",
+      "fcc": "ok",
+      "fda": "ok",
+      "ferc": "ok",
+      "ftc": "ok",
+      "hhs": "ok",
+      "nlrb": "ok",
+      "president": "ok",
+      "sec": "ok"
+     },
+     "detail": "History 2022-12:",
+     "label": "Federal Register",
+     "source": "federal_register",
+     "status": "ok"
+    }
+   ],
+   "requests": 288,
+   "run_at": "2026-11-26T03:34:47+00:00",
+   "start": "2022-12-01"
   }
  ],
  "schema": 3,
@@ -2193,5 +2684,5 @@
    "last_status": "ok"
   }
  },
- "updated_at": "2026-11-26T01:56:14+00:00"
+ "updated_at": "2026-11-26T03:34:47+00:00"
 }
