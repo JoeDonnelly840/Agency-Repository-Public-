@@ -10,7 +10,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-11-10",
-   "date_basis": "published",
+   "date_basis": "posted",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2026-H-12875"
@@ -731,7 +731,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-11-10",
-   "date_basis": "published",
+   "date_basis": "posted",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2026-P-14191"
@@ -1026,7 +1026,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-11-10",
-   "date_basis": "published",
+   "date_basis": "posted",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2026-P-14191"
@@ -1468,7 +1468,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-11-10",
-   "date_basis": "published",
+   "date_basis": "posted",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2026-P-5454"
@@ -1514,7 +1514,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-11-10",
-   "date_basis": "published",
+   "date_basis": "posted",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2026-P-5976"
@@ -1613,7 +1613,7 @@
    "comments_close": "2027-01-10",
    "corporation": null,
    "date": "2026-11-10",
-   "date_basis": "published",
+   "date_basis": "posted",
    "doc_type": "Other",
    "docket_ids": [
     "EPA-HQ-OW-2026-9837"
@@ -1659,7 +1659,7 @@
    "comments_close": "2026-12-02",
    "corporation": null,
    "date": "2026-11-10",
-   "date_basis": "published",
+   "date_basis": "posted",
    "doc_type": "Other",
    "docket_ids": [
     "OSHA-2016-0005"
@@ -1758,7 +1758,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-11-10",
-   "date_basis": "published",
+   "date_basis": "posted",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2026-N-8449"
@@ -1951,7 +1951,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-11-10",
-   "date_basis": "published",
+   "date_basis": "posted",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2018-N-4626"
@@ -2197,7 +2197,53 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-11-10",
-   "date_basis": "published",
+   "date_basis": "posted",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2025-N-3262"
+   ],
+   "first_seen": "2026-11-12T13:37:14+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2025-N-3262-0888",
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 0,
+   "published": "2026-11-10",
+   "regs_agency_id": "FDA",
+   "routine": false,
+   "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
+   "severity": null,
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Other notice",
+   "subtype": "Request for Extension",
+   "summary": "",
+   "title": "Request for Extension from Anonymous",
+   "url": "https://www.regulations.gov/document/FDA-2025-N-3262-0888",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-10",
+   "date_basis": "posted",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2025-N-3262"
@@ -2243,53 +2289,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-11-10",
-   "date_basis": "published",
-   "doc_type": "Other",
-   "docket_ids": [
-    "FDA-2025-N-3262"
-   ],
-   "first_seen": "2026-11-12T13:37:14+00:00",
-   "flags": [],
-   "fr_doc_num": null,
-   "id": "regs:FDA-2025-N-3262-0888",
-   "jurisdiction": "federal",
-   "outcome": "notice",
-   "priority": 0,
-   "published": "2026-11-10",
-   "regs_agency_id": "FDA",
-   "routine": false,
-   "sanctions": [],
-   "seriousness": {
-    "breakdown": [
-     {
-      "marker": "Reach",
-      "points": 1,
-      "why": "action against particular parties"
-     }
-    ],
-    "level": 1,
-    "points": 1
-   },
-   "severity": null,
-   "source": "regulations_gov",
-   "source_label": "Regulations.gov",
-   "subcategory": "Other notice",
-   "subtype": "Request for Extension",
-   "summary": "",
-   "title": "Request for Extension from Food Contact Safety Council, et al.",
-   "url": "https://www.regulations.gov/document/FDA-2025-N-3262-0888",
-   "withdrawn": false
-  },
-  {
-   "action": "",
-   "agencies": [
-    "fda"
-   ],
-   "category": "other",
-   "comments_close": null,
-   "corporation": null,
-   "date": "2026-11-10",
-   "date_basis": "published",
+   "date_basis": "posted",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2025-N-3262"
@@ -2335,7 +2335,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-11-10",
-   "date_basis": "published",
+   "date_basis": "posted",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2025-N-3262"
@@ -2381,7 +2381,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-11-10",
-   "date_basis": "published",
+   "date_basis": "posted",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2025-N-3262"
@@ -2528,7 +2528,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-11-10",
-   "date_basis": "published",
+   "date_basis": "posted",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2024-D-2707"
@@ -2625,7 +2625,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-11-10",
-   "date_basis": "published",
+   "date_basis": "posted",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2017-V-6518"
@@ -2671,7 +2671,7 @@
    "comments_close": null,
    "corporation": null,
    "date": "2026-11-10",
-   "date_basis": "published",
+   "date_basis": "posted",
    "doc_type": "Other",
    "docket_ids": [
     "FDA-2024-V-5053"
