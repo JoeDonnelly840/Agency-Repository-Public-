@@ -85,7 +85,7 @@
   "next": {
    "federal_register": "2014-12",
    "openfda": "2026-11",
-   "regulations_gov": "2022-08"
+   "regulations_gov": "2021-10"
   },
   "target_start": "2015-01-01"
  },
@@ -291,16 +291,16 @@
   "2021-08": 789,
   "2021-09": 865,
   "2021-10": 836,
-  "2021-11": 821,
-  "2021-12": 786,
-  "2022-01": 852,
-  "2022-02": 790,
-  "2022-03": 928,
-  "2022-04": 862,
-  "2022-05": 882,
-  "2022-06": 831,
-  "2022-07": 767,
-  "2022-08": 805,
+  "2021-11": 1240,
+  "2021-12": 1813,
+  "2022-01": 1684,
+  "2022-02": 1148,
+  "2022-03": 1677,
+  "2022-04": 1386,
+  "2022-05": 1627,
+  "2022-06": 1634,
+  "2022-07": 1520,
+  "2022-08": 1677,
   "2022-09": 1812,
   "2022-10": 1275,
   "2022-11": 1545,
@@ -5589,6 +5589,197 @@
    "requests": 298,
    "run_at": "2026-11-26T21:26:42+00:00",
    "start": "2022-09-01"
+  },
+  {
+   "end": "2022-08-31",
+   "items_found": 7082,
+   "items_new": 7082,
+   "kind": "backfill",
+   "reports": [
+    {
+     "agencies": {
+      "cfpb": "ok",
+      "dol": "ok",
+      "epa": "partial: too many results",
+      "fcc": "ok",
+      "fda": "ok",
+      "ferc": "ok",
+      "ftc": "ok",
+      "hhs": "ok",
+      "nlrb": "ok",
+      "sec": "ok"
+     },
+     "detail": "History 2022-08:",
+     "label": "Regulations.gov",
+     "source": "regulations_gov",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "cfpb": "ok",
+      "dol": "ok",
+      "epa": "partial: too many results",
+      "fcc": "ok",
+      "fda": "ok",
+      "ferc": "ok",
+      "ftc": "ok",
+      "hhs": "ok",
+      "nlrb": "ok",
+      "sec": "ok"
+     },
+     "detail": "History 2022-07:",
+     "label": "Regulations.gov",
+     "source": "regulations_gov",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "cfpb": "ok",
+      "dol": "ok",
+      "epa": "partial: too many results",
+      "fcc": "ok",
+      "fda": "ok",
+      "ferc": "ok",
+      "ftc": "ok",
+      "hhs": "ok",
+      "nlrb": "ok",
+      "sec": "ok"
+     },
+     "detail": "History 2022-06:",
+     "label": "Regulations.gov",
+     "source": "regulations_gov",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "cfpb": "ok",
+      "dol": "ok",
+      "epa": "partial: too many results",
+      "fcc": "ok",
+      "fda": "ok",
+      "ferc": "ok",
+      "ftc": "ok",
+      "hhs": "ok",
+      "nlrb": "ok",
+      "sec": "ok"
+     },
+     "detail": "History 2022-05:",
+     "label": "Regulations.gov",
+     "source": "regulations_gov",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "cfpb": "ok",
+      "dol": "ok",
+      "epa": "partial: too many results",
+      "fcc": "ok",
+      "fda": "ok",
+      "ferc": "ok",
+      "ftc": "ok",
+      "hhs": "ok",
+      "nlrb": "ok",
+      "sec": "ok"
+     },
+     "detail": "History 2022-04:",
+     "label": "Regulations.gov",
+     "source": "regulations_gov",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "cfpb": "ok",
+      "dol": "ok",
+      "epa": "partial: too many results",
+      "fcc": "ok",
+      "fda": "ok",
+      "ferc": "ok",
+      "ftc": "ok",
+      "hhs": "ok",
+      "nlrb": "ok",
+      "sec": "ok"
+     },
+     "detail": "History 2022-03:",
+     "label": "Regulations.gov",
+     "source": "regulations_gov",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "cfpb": "ok",
+      "dol": "ok",
+      "epa": "ok",
+      "fcc": "ok",
+      "fda": "ok",
+      "ferc": "ok",
+      "ftc": "ok",
+      "hhs": "ok",
+      "nlrb": "ok",
+      "sec": "ok"
+     },
+     "detail": "History 2022-02:",
+     "label": "Regulations.gov",
+     "source": "regulations_gov",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "cfpb": "ok",
+      "dol": "ok",
+      "epa": "partial: too many results",
+      "fcc": "ok",
+      "fda": "ok",
+      "ferc": "ok",
+      "ftc": "ok",
+      "hhs": "ok",
+      "nlrb": "ok",
+      "sec": "ok"
+     },
+     "detail": "History 2022-01:",
+     "label": "Regulations.gov",
+     "source": "regulations_gov",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "cfpb": "ok",
+      "dol": "ok",
+      "epa": "partial: too many results",
+      "fcc": "ok",
+      "fda": "ok",
+      "ferc": "ok",
+      "ftc": "ok",
+      "hhs": "ok",
+      "nlrb": "ok",
+      "sec": "ok"
+     },
+     "detail": "History 2021-12:",
+     "label": "Regulations.gov",
+     "source": "regulations_gov",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "cfpb": "ok",
+      "dol": "ok",
+      "epa": "partial: too many results",
+      "fcc": "ok",
+      "fda": "ok",
+      "ferc": "error: FERC: Per-run request ceiling reached; stopping to stay polite.",
+      "ftc": "ok",
+      "hhs": "error: CDC: Per-run request ceiling reached; stopping to stay polite.; error: HRSA: Per-run request ceiling reached; stopping to stay polite.; error: ACF: Per-run request ceiling reached; stopping to stay polite.",
+      "nlrb": "ok",
+      "sec": "ok"
+     },
+     "detail": "History 2021-11: CDC: Per-run request ceiling reached; stopping to stay polite.; HRSA: Per-run request ceiling reached; stopping to stay polite.; ACF: Per-run request ceiling reached; stopping to stay polite.; FERC: Per-run request ceiling reached; stopping to stay polite.",
+     "label": "Regulations.gov",
+     "source": "regulations_gov",
+     "status": "partial"
+    }
+   ],
+   "requests": 300,
+   "run_at": "2026-11-26T23:29:34+00:00",
+   "start": "2021-11-01"
   }
  ],
  "schema": 3,
@@ -5707,5 +5898,5 @@
    "last_status": "ok"
   }
  },
- "updated_at": "2026-11-26T21:26:42+00:00"
+ "updated_at": "2026-11-26T23:29:34+00:00"
 }
