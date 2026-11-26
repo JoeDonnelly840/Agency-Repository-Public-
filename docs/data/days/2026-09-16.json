@@ -1,0 +1,1860 @@
+{
+ "date": "2026-09-16",
+ "items": [
+  {
+   "action": "",
+   "agencies": [
+    "president"
+   ],
+   "category": "presidential",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-09-11",
+   "date_basis": "signed",
+   "doc_type": "Presidential Document",
+   "docket_ids": [],
+   "effective_on": null,
+   "eo_number": null,
+   "first_seen": "2026-11-26T01:56:14+00:00",
+   "flags": [
+    {
+     "code": "presidential_lawmaking",
+     "counters": [],
+     "elements_found": [
+      "presidential",
+      "weak_basis"
+     ],
+     "elements_total": 3,
+     "flagrance": 1,
+     "group": "structural",
+     "impact": 2,
+     "structural": true,
+     "tier": 1,
+     "tier_authority": "youngstown",
+     "triggers": [
+      "national emergency"
+     ]
+    }
+   ],
+   "fr_agency_slugs": [
+    "executive-office-of-the-president"
+   ],
+   "id": "fr:2026-19053",
+   "jurisdiction": "federal",
+   "outcome": "issued",
+   "priority": 2,
+   "published": "2026-09-16",
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 3,
+      "why": "presidential document"
+     }
+    ],
+    "level": 2,
+    "points": 3
+   },
+   "severity": {
+    "flagrance": 1,
+    "impact": 2,
+    "score": 2
+   },
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Notice",
+   "subtype": "Notice",
+   "summary": "",
+   "title": "Continuation of the National Emergency With Respect to Persons Who Commit, Threaten To Commit, or Support Terrorism",
+   "url": "https://www.federalregister.gov/documents/2026/09/16/2026-19053/continuation-of-the-national-emergency-with-respect-to-persons-who-commit-threaten-to-commit-or"
+  },
+  {
+   "action": "Final rule.",
+   "agencies": [
+    "dol"
+   ],
+   "category": "rulemaking",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-09-16",
+   "date_basis": "published",
+   "doc_type": "Rule",
+   "docket_ids": [
+    "Docket ETA-2025-0004"
+   ],
+   "effective_on": "2026-11-16",
+   "eo_number": null,
+   "first_seen": "2026-11-26T01:56:14+00:00",
+   "flags": [
+    {
+     "code": "major_questions",
+     "counters": [],
+     "elements_found": [
+      "rule",
+      "significance"
+     ],
+     "elements_total": 3,
+     "flagrance": 1,
+     "group": "structural",
+     "impact": 1,
+     "structural": true,
+     "tier": 1,
+     "tier_authority": "west_virginia",
+     "triggers": [
+      "designated a significant rule"
+     ]
+    }
+   ],
+   "fr_agency_slugs": [
+    "labor-department",
+    "employment-and-training-administration"
+   ],
+   "id": "fr:2026-18978",
+   "jurisdiction": "federal",
+   "outcome": "final",
+   "priority": 1,
+   "published": "2026-09-16",
+   "rins": [
+    "1205-AC11"
+   ],
+   "routine": false,
+   "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 2,
+      "why": "binding rule designated significant"
+     }
+    ],
+    "level": 1,
+    "points": 2
+   },
+   "severity": {
+    "flagrance": 1,
+    "impact": 1,
+    "score": 1
+   },
+   "significant": true,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Final rule",
+   "subtype": "",
+   "summary": "The Department of Labor (DOL or the Department) is issuing this final rule to require the disclosure of confidential unemployment compensation (UC) information to Federal officials for purposes of UC program oversight and audits. This rule will ensure that Federal officials, including the Department's Office of Inspector General (DOL- OIG), are able to obtain the information needed from State UC agencies to ensure proper oversight of the UC programs and to hold State UC agencies accountable for identifying and addressing fraud in UC programs.",
+   "title": "Federal-State Unemployment Compensation (UC) Program; Data Availability",
+   "url": "https://www.federalregister.gov/documents/2026/09/16/2026-18978/federal-state-unemployment-compensation-uc-program-data-availability"
+  },
+  {
+   "action": "Notice.",
+   "agencies": [
+    "hhs"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-09-16",
+   "date_basis": "published",
+   "doc_type": "Notice",
+   "docket_ids": [
+    "CMS-4213-N"
+   ],
+   "effective_on": "2027-01-01",
+   "eo_number": null,
+   "first_seen": "2026-11-26T01:56:14+00:00",
+   "flags": [
+    {
+     "code": "officer_appointment_removal",
+     "counters": [],
+     "elements_found": [
+      "official",
+      "significant"
+     ],
+     "elements_total": 3,
+     "flagrance": 1,
+     "group": "structural",
+     "impact": 1,
+     "structural": true,
+     "tier": 1,
+     "tier_authority": "arthrex",
+     "triggers": [
+      "administrative law judge"
+     ]
+    }
+   ],
+   "fr_agency_slugs": [
+    "health-and-human-services-department",
+    "centers-for-medicare-medicaid-services"
+   ],
+   "id": "fr:2026-19016",
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 1,
+   "published": "2026-09-16",
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Money",
+      "points": 1,
+      "why": "$2,000 stated"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 2
+   },
+   "severity": {
+    "flagrance": 1,
+    "impact": 1,
+    "score": 1
+   },
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Other notice",
+   "subtype": "",
+   "summary": "This notice announces the annual adjustment in the amount in controversy (AIC) threshold amounts for Administrative Law Judge (ALJ) hearings and judicial review under the Medicare appeals process. The adjustment to the AIC threshold amounts will be effective for requests for ALJ hearings and judicial review filed on or after January 1, 2027. The calendar year 2027 AIC threshold amounts are $200 for ALJ hearings and $2,000 for judicial review.",
+   "title": "Medicare Program; Medicare Appeals; Adjustment to the Amount in Controversy Threshold Amounts for Calendar Year 2027",
+   "url": "https://www.federalregister.gov/documents/2026/09/16/2026-19016/medicare-program-medicare-appeals-adjustment-to-the-amount-in-controversy-threshold-amounts-for"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "sec"
+   ],
+   "category": "rulemaking",
+   "comments_close": null,
+   "corporation": "other_sro",
+   "date": "2026-09-16",
+   "date_basis": "published",
+   "doc_type": "Notice",
+   "docket_ids": [
+    "Release No. 34-106341",
+    "File No. SR-IEX-2026-29"
+   ],
+   "effective_on": null,
+   "eo_number": null,
+   "first_seen": "2026-11-26T01:56:14+00:00",
+   "flags": [
+    {
+     "code": "private_delegation",
+     "counters": [],
+     "elements_found": [
+      "private",
+      "binding",
+      "no_prior_review"
+     ],
+     "elements_total": 3,
+     "flagrance": 1,
+     "group": "structural",
+     "impact": 1,
+     "structural": true,
+     "tier": 1,
+     "tier_authority": "consumers_research",
+     "triggers": [
+      "issued by an agency-supervised private corporation"
+     ]
+    }
+   ],
+   "fr_agency_slugs": [
+    "securities-and-exchange-commission"
+   ],
+   "id": "fr:2026-18930",
+   "jurisdiction": "federal",
+   "outcome": "proposed",
+   "priority": 1,
+   "published": "2026-09-16",
+   "rins": [],
+   "routine": true,
+   "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "self-regulatory filing"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
+   "severity": {
+    "flagrance": 1,
+    "impact": 1,
+    "score": 1
+   },
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Fee change by self-regulatory organization",
+   "subtype": "",
+   "summary": "",
+   "title": "Self-Regulatory Organizations; Investors Exchange LLC; Notice of Filing and Immediate Effectiveness of Proposed Rule Change Pursuant to IEX Rule 15.110(a) and (c) To Provide That Extranet Providers, in Addition to Data Subscribers, Are also Eligible To Earn the External Distribution Rebate by Enlisting New Data Subscribers of Real-Time IEX Market Data Products",
+   "url": "https://www.federalregister.gov/documents/2026/09/16/2026-18930/self-regulatory-organizations-investors-exchange-llc-notice-of-filing-and-immediate-effectiveness-of"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "sec"
+   ],
+   "category": "rulemaking",
+   "comments_close": null,
+   "corporation": "other_sro",
+   "date": "2026-09-16",
+   "date_basis": "published",
+   "doc_type": "Notice",
+   "docket_ids": [
+    "Release No. 34-106317",
+    "File No. SR-MIAX-2026-37"
+   ],
+   "effective_on": null,
+   "eo_number": null,
+   "first_seen": "2026-11-26T01:56:14+00:00",
+   "flags": [
+    {
+     "code": "private_delegation",
+     "counters": [],
+     "elements_found": [
+      "private",
+      "binding",
+      "no_prior_review"
+     ],
+     "elements_total": 3,
+     "flagrance": 1,
+     "group": "structural",
+     "impact": 1,
+     "structural": true,
+     "tier": 1,
+     "tier_authority": "consumers_research",
+     "triggers": [
+      "issued by an agency-supervised private corporation"
+     ]
+    }
+   ],
+   "fr_agency_slugs": [
+    "securities-and-exchange-commission"
+   ],
+   "id": "fr:2026-18928",
+   "jurisdiction": "federal",
+   "outcome": "proposed",
+   "priority": 1,
+   "published": "2026-09-16",
+   "rins": [],
+   "routine": true,
+   "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "self-regulatory filing"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
+   "severity": {
+    "flagrance": 1,
+    "impact": 1,
+    "score": 1
+   },
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Fee change by self-regulatory organization",
+   "subtype": "",
+   "summary": "",
+   "title": "Self-Regulatory Organizations; Miami International Securities Exchange, LLC; Notice of Filing and Immediate Effectiveness of a Proposed Rule Change To Amend the Fee Schedule To Modify the Priority Customer Rebate Program Table for Certain Transactions in Complex Orders",
+   "url": "https://www.federalregister.gov/documents/2026/09/16/2026-18928/self-regulatory-organizations-miami-international-securities-exchange-llc-notice-of-filing-and"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "sec"
+   ],
+   "category": "rulemaking",
+   "comments_close": null,
+   "corporation": "other_sro",
+   "date": "2026-09-16",
+   "date_basis": "published",
+   "doc_type": "Notice",
+   "docket_ids": [
+    "Release No. 34-106334",
+    "File No. SR-NYSEAMER-2026-78"
+   ],
+   "effective_on": null,
+   "eo_number": null,
+   "first_seen": "2026-11-26T01:56:14+00:00",
+   "flags": [
+    {
+     "code": "private_delegation",
+     "counters": [],
+     "elements_found": [
+      "private",
+      "binding",
+      "no_prior_review"
+     ],
+     "elements_total": 3,
+     "flagrance": 1,
+     "group": "structural",
+     "impact": 1,
+     "structural": true,
+     "tier": 1,
+     "tier_authority": "consumers_research",
+     "triggers": [
+      "issued by an agency-supervised private corporation"
+     ]
+    }
+   ],
+   "fr_agency_slugs": [
+    "securities-and-exchange-commission"
+   ],
+   "id": "fr:2026-18934",
+   "jurisdiction": "federal",
+   "outcome": "proposed",
+   "priority": 1,
+   "published": "2026-09-16",
+   "rins": [],
+   "routine": true,
+   "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "self-regulatory filing"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
+   "severity": {
+    "flagrance": 1,
+    "impact": 1,
+    "score": 1
+   },
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Fee change by self-regulatory organization",
+   "subtype": "",
+   "summary": "",
+   "title": "Self-Regulatory Organizations; NYSE American LLC; Notice of Filing and Immediate Effectiveness of Proposed Change To Amend NYSE American Equities Price List and Fee Schedule",
+   "url": "https://www.federalregister.gov/documents/2026/09/16/2026-18934/self-regulatory-organizations-nyse-american-llc-notice-of-filing-and-immediate-effectiveness-of"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "sec"
+   ],
+   "category": "rulemaking",
+   "comments_close": null,
+   "corporation": "other_sro",
+   "date": "2026-09-16",
+   "date_basis": "published",
+   "doc_type": "Notice",
+   "docket_ids": [
+    "Release No. 34-106337",
+    "File No. SR-Phlx-2026-55"
+   ],
+   "effective_on": null,
+   "eo_number": null,
+   "first_seen": "2026-11-26T01:56:14+00:00",
+   "flags": [
+    {
+     "code": "private_delegation",
+     "counters": [],
+     "elements_found": [
+      "private",
+      "binding",
+      "no_prior_review"
+     ],
+     "elements_total": 3,
+     "flagrance": 1,
+     "group": "structural",
+     "impact": 1,
+     "structural": true,
+     "tier": 1,
+     "tier_authority": "consumers_research",
+     "triggers": [
+      "issued by an agency-supervised private corporation"
+     ]
+    }
+   ],
+   "fr_agency_slugs": [
+    "securities-and-exchange-commission"
+   ],
+   "id": "fr:2026-18931",
+   "jurisdiction": "federal",
+   "outcome": "proposed",
+   "priority": 1,
+   "published": "2026-09-16",
+   "rins": [],
+   "routine": true,
+   "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "self-regulatory filing"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
+   "severity": {
+    "flagrance": 1,
+    "impact": 1,
+    "score": 1
+   },
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Fee change by self-regulatory organization",
+   "subtype": "",
+   "summary": "",
+   "title": "Self-Regulatory Organizations; Nasdaq PHLX LLC; Notice of Filing and Immediate Effectiveness of Proposed Rule Change To Introduce Conforming Changes to Nasdaq Phlx Rules in Connection With the Establishment of Fees for Nasdaq TotalView Plus and Nasdaq Basic Plus",
+   "url": "https://www.federalregister.gov/documents/2026/09/16/2026-18931/self-regulatory-organizations-nasdaq-phlx-llc-notice-of-filing-and-immediate-effectiveness-of"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "sec"
+   ],
+   "category": "rulemaking",
+   "comments_close": null,
+   "corporation": "other_sro",
+   "date": "2026-09-16",
+   "date_basis": "published",
+   "doc_type": "Notice",
+   "docket_ids": [
+    "Release No. 34-106335",
+    "File No. SR-NasdaqTX-2026-043"
+   ],
+   "effective_on": null,
+   "eo_number": null,
+   "first_seen": "2026-11-26T01:56:14+00:00",
+   "flags": [
+    {
+     "code": "private_delegation",
+     "counters": [],
+     "elements_found": [
+      "private",
+      "binding",
+      "no_prior_review"
+     ],
+     "elements_total": 3,
+     "flagrance": 1,
+     "group": "structural",
+     "impact": 1,
+     "structural": true,
+     "tier": 1,
+     "tier_authority": "consumers_research",
+     "triggers": [
+      "issued by an agency-supervised private corporation"
+     ]
+    }
+   ],
+   "fr_agency_slugs": [
+    "securities-and-exchange-commission"
+   ],
+   "id": "fr:2026-18933",
+   "jurisdiction": "federal",
+   "outcome": "proposed",
+   "priority": 1,
+   "published": "2026-09-16",
+   "rins": [],
+   "routine": true,
+   "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "self-regulatory filing"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
+   "severity": {
+    "flagrance": 1,
+    "impact": 1,
+    "score": 1
+   },
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Fee change by self-regulatory organization",
+   "subtype": "",
+   "summary": "",
+   "title": "Self-Regulatory Organizations; Nasdaq Texas, LLC; Notice of Filing and Immediate Effectiveness of Proposed Rule Change To Introduce Conforming Changes to Nasdaq Texas Rules in Connection With the Establishment of Fees for Nasdaq TotalView Plus and Nasdaq Basic Plus by the Nasdaq Stock Exchange",
+   "url": "https://www.federalregister.gov/documents/2026/09/16/2026-18933/self-regulatory-organizations-nasdaq-texas-llc-notice-of-filing-and-immediate-effectiveness-of"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "sec"
+   ],
+   "category": "rulemaking",
+   "comments_close": null,
+   "corporation": "other_sro",
+   "date": "2026-09-16",
+   "date_basis": "published",
+   "doc_type": "Notice",
+   "docket_ids": [
+    "Release No. 34-106343",
+    "File No. SR-TXSE-2026-028"
+   ],
+   "effective_on": null,
+   "eo_number": null,
+   "first_seen": "2026-11-26T01:56:14+00:00",
+   "flags": [
+    {
+     "code": "private_delegation",
+     "counters": [],
+     "elements_found": [
+      "private",
+      "binding",
+      "no_prior_review"
+     ],
+     "elements_total": 3,
+     "flagrance": 1,
+     "group": "structural",
+     "impact": 1,
+     "structural": true,
+     "tier": 1,
+     "tier_authority": "consumers_research",
+     "triggers": [
+      "issued by an agency-supervised private corporation"
+     ]
+    }
+   ],
+   "fr_agency_slugs": [
+    "securities-and-exchange-commission"
+   ],
+   "id": "fr:2026-18929",
+   "jurisdiction": "federal",
+   "outcome": "proposed",
+   "priority": 1,
+   "published": "2026-09-16",
+   "rins": [],
+   "routine": true,
+   "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "self-regulatory filing"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
+   "severity": {
+    "flagrance": 1,
+    "impact": 1,
+    "score": 1
+   },
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Fee change by self-regulatory organization",
+   "subtype": "",
+   "summary": "",
+   "title": "Self-Regulatory Organizations; Texas Stock Exchange LLC; Notice of Filing and Immediate Effectiveness of a Proposed Rule Change To Amend the Fee Schedule To Establish Fees for Industry Members Related to Certain Historical Costs of the National Market System Plan Governing the Consolidated Audit Trail",
+   "url": "https://www.federalregister.gov/documents/2026/09/16/2026-18929/self-regulatory-organizations-texas-stock-exchange-llc-notice-of-filing-and-immediate-effectiveness"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "sec"
+   ],
+   "category": "rulemaking",
+   "comments_close": null,
+   "corporation": "other_sro",
+   "date": "2026-09-16",
+   "date_basis": "published",
+   "doc_type": "Notice",
+   "docket_ids": [
+    "Release No. 34-106336",
+    "File No. SR-NASDAQ-2026-076"
+   ],
+   "effective_on": null,
+   "eo_number": null,
+   "first_seen": "2026-11-26T01:56:14+00:00",
+   "flags": [
+    {
+     "code": "private_delegation",
+     "counters": [],
+     "elements_found": [
+      "private",
+      "binding",
+      "no_prior_review"
+     ],
+     "elements_total": 3,
+     "flagrance": 1,
+     "group": "structural",
+     "impact": 1,
+     "structural": true,
+     "tier": 1,
+     "tier_authority": "consumers_research",
+     "triggers": [
+      "issued by an agency-supervised private corporation"
+     ]
+    }
+   ],
+   "fr_agency_slugs": [
+    "securities-and-exchange-commission"
+   ],
+   "id": "fr:2026-18932",
+   "jurisdiction": "federal",
+   "outcome": "proposed",
+   "priority": 1,
+   "published": "2026-09-16",
+   "rins": [],
+   "routine": true,
+   "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "self-regulatory filing"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
+   "severity": {
+    "flagrance": 1,
+    "impact": 1,
+    "score": 1
+   },
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Fee change by self-regulatory organization",
+   "subtype": "",
+   "summary": "",
+   "title": "Self-Regulatory Organizations; The Nasdaq Stock Market LLC; Notice of Filing and Immediate Effectiveness of Proposed Rule Change To Set Fees for Nasdaq TotalView Plus and Nasdaq Basic Plus",
+   "url": "https://www.federalregister.gov/documents/2026/09/16/2026-18932/self-regulatory-organizations-the-nasdaq-stock-market-llc-notice-of-filing-and-immediate"
+  },
+  {
+   "action": "Notice.",
+   "agencies": [
+    "fda"
+   ],
+   "category": "other",
+   "comments_close": "2026-10-16",
+   "corporation": null,
+   "date": "2026-09-16",
+   "date_basis": "published",
+   "doc_type": "Notice",
+   "docket_ids": [
+    "Docket No. FDA-2026-N-0027"
+   ],
+   "effective_on": null,
+   "eo_number": null,
+   "first_seen": "2026-11-26T01:56:14+00:00",
+   "flags": [],
+   "fr_agency_slugs": [
+    "health-and-human-services-department",
+    "food-and-drug-administration"
+   ],
+   "id": "fr:2026-18946",
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 0,
+   "published": "2026-09-16",
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
+   "severity": null,
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Information collection, privacy, or paperwork notice",
+   "subtype": "",
+   "summary": "The Food and Drug Administration (FDA, Agency, or we) is announcing that a proposed collection of information has been submitted to the Office of Management and Budget (OMB) for review and clearance under the Paperwork Reduction Act of 1995.",
+   "title": "Agency Information Collection Activities; Submission for Office of Management and Budget Review; Comment Request; Biological Products: Reporting of Biological Product Deviations and Human Cells, Tissues, and Cellular and Tissue-Based Product Deviations in Manufacturing",
+   "url": "https://www.federalregister.gov/documents/2026/09/16/2026-18946/agency-information-collection-activities-submission-for-office-of-management-and-budget-review"
+  },
+  {
+   "action": "Notice.",
+   "agencies": [
+    "hhs"
+   ],
+   "category": "other",
+   "comments_close": "2026-10-16",
+   "corporation": null,
+   "date": "2026-09-16",
+   "date_basis": "published",
+   "doc_type": "Notice",
+   "docket_ids": [
+    "Document Identifier: OS-0990-0473"
+   ],
+   "effective_on": null,
+   "eo_number": null,
+   "first_seen": "2026-11-26T01:56:14+00:00",
+   "flags": [],
+   "fr_agency_slugs": [
+    "health-and-human-services-department"
+   ],
+   "id": "fr:2026-18950",
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 0,
+   "published": "2026-09-16",
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
+   "severity": null,
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Information collection, privacy, or paperwork notice",
+   "subtype": "",
+   "summary": "In compliance with the requirement of the Paperwork Reduction Act of 1995, the Office of the Secretary (OS), Department of Health and Human Services, submitted an Information Collection Request (ICR) to the Office of Management and Budget (OMB) for review and approval. OMB will accept further comments from the public during the review and approval period.",
+   "title": "Agency Information Collection Request; 30-Day Public Comment Request",
+   "url": "https://www.federalregister.gov/documents/2026/09/16/2026-18950/agency-information-collection-request-30-day-public-comment-request"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "ferc"
+   ],
+   "category": "adjudication",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-09-16",
+   "date_basis": "published",
+   "doc_type": "Notice",
+   "docket_ids": [
+    "Project No. 14787-004"
+   ],
+   "effective_on": null,
+   "eo_number": null,
+   "first_seen": "2026-11-26T01:56:14+00:00",
+   "flags": [],
+   "fr_agency_slugs": [
+    "energy-department",
+    "federal-energy-regulatory-commission"
+   ],
+   "id": "fr:2026-18988",
+   "jurisdiction": "federal",
+   "outcome": "applied",
+   "priority": 0,
+   "published": "2026-09-16",
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
+   "severity": null,
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Applications, filings, and licensing",
+   "subtype": "",
+   "summary": "",
+   "title": "Black Canyon Hydro, LLC; Notice of Intent To Prepare a Supplemental Environmental Impact Statement for the Seminoe Pumped Storage Project, Schedule for Environmental Review, and Request For Comments",
+   "url": "https://www.federalregister.gov/documents/2026/09/16/2026-18988/black-canyon-hydro-llc-notice-of-intent-to-prepare-a-supplemental-environmental-impact-statement-for"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "hhs"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-09-16",
+   "date_basis": "published",
+   "doc_type": "Notice",
+   "docket_ids": [],
+   "effective_on": null,
+   "eo_number": null,
+   "first_seen": "2026-11-26T01:56:14+00:00",
+   "flags": [],
+   "fr_agency_slugs": [
+    "health-and-human-services-department",
+    "national-institutes-of-health"
+   ],
+   "id": "fr:2026-18951",
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 0,
+   "published": "2026-09-16",
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
+   "severity": null,
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Meeting or event",
+   "subtype": "",
+   "summary": "",
+   "title": "Center for Scientific Review; Amended Notice of Meeting",
+   "url": "https://www.federalregister.gov/documents/2026/09/16/2026-18951/center-for-scientific-review-amended-notice-of-meeting"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "hhs"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-09-16",
+   "date_basis": "published",
+   "doc_type": "Notice",
+   "docket_ids": [],
+   "effective_on": null,
+   "eo_number": null,
+   "first_seen": "2026-11-26T01:56:14+00:00",
+   "flags": [],
+   "fr_agency_slugs": [
+    "health-and-human-services-department",
+    "national-institutes-of-health"
+   ],
+   "id": "fr:2026-18952",
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 0,
+   "published": "2026-09-16",
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
+   "severity": null,
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Meeting or event",
+   "subtype": "",
+   "summary": "",
+   "title": "Center for Scientific Review; Amended Notice of Meeting",
+   "url": "https://www.federalregister.gov/documents/2026/09/16/2026-18952/center-for-scientific-review-amended-notice-of-meeting"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "hhs"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-09-16",
+   "date_basis": "published",
+   "doc_type": "Notice",
+   "docket_ids": [],
+   "effective_on": null,
+   "eo_number": null,
+   "first_seen": "2026-11-26T01:56:14+00:00",
+   "flags": [],
+   "fr_agency_slugs": [
+    "health-and-human-services-department",
+    "national-institutes-of-health"
+   ],
+   "id": "fr:2026-18953",
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 0,
+   "published": "2026-09-16",
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
+   "severity": null,
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Meeting or event",
+   "subtype": "",
+   "summary": "",
+   "title": "Center for Scientific Review; Notice of Closed Meetings",
+   "url": "https://www.federalregister.gov/documents/2026/09/16/2026-18953/center-for-scientific-review-notice-of-closed-meetings"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "hhs"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-09-16",
+   "date_basis": "published",
+   "doc_type": "Notice",
+   "docket_ids": [],
+   "effective_on": null,
+   "eo_number": null,
+   "first_seen": "2026-11-26T01:56:14+00:00",
+   "flags": [],
+   "fr_agency_slugs": [
+    "health-and-human-services-department",
+    "national-institutes-of-health"
+   ],
+   "id": "fr:2026-19001",
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 0,
+   "published": "2026-09-16",
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
+   "severity": null,
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Meeting or event",
+   "subtype": "",
+   "summary": "",
+   "title": "Center for Scientific Review; Notice of Closed Meetings",
+   "url": "https://www.federalregister.gov/documents/2026/09/16/2026-19001/center-for-scientific-review-notice-of-closed-meetings"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "ferc"
+   ],
+   "category": "adjudication",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-09-16",
+   "date_basis": "published",
+   "doc_type": "Notice",
+   "docket_ids": [],
+   "effective_on": null,
+   "eo_number": null,
+   "first_seen": "2026-11-26T01:56:14+00:00",
+   "flags": [],
+   "fr_agency_slugs": [
+    "energy-department",
+    "federal-energy-regulatory-commission"
+   ],
+   "id": "fr:2026-18994",
+   "jurisdiction": "federal",
+   "outcome": "applied",
+   "priority": 0,
+   "published": "2026-09-16",
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
+   "severity": null,
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Applications, filings, and licensing",
+   "subtype": "",
+   "summary": "",
+   "title": "Combined Notice of Filings #1",
+   "url": "https://www.federalregister.gov/documents/2026/09/16/2026-18994/combined-notice-of-filings-1"
+  },
+  {
+   "action": "Notice of information collection and request for comments.",
+   "agencies": [
+    "ferc"
+   ],
+   "category": "other",
+   "comments_close": "2026-10-16",
+   "corporation": null,
+   "date": "2026-09-16",
+   "date_basis": "published",
+   "doc_type": "Notice",
+   "docket_ids": [
+    "Docket No. IC26-32-000"
+   ],
+   "effective_on": null,
+   "eo_number": null,
+   "first_seen": "2026-11-26T01:56:14+00:00",
+   "flags": [],
+   "fr_agency_slugs": [
+    "energy-department",
+    "federal-energy-regulatory-commission"
+   ],
+   "id": "fr:2026-19011",
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 0,
+   "published": "2026-09-16",
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
+   "severity": null,
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Information collection, privacy, or paperwork notice",
+   "subtype": "",
+   "summary": "In compliance with the requirements of the Paperwork Reduction Act of 1995, the Federal Energy Regulatory Commission (Commission or FERC) is soliciting public comment on the currently approved information collection, FERC-555: Preservation of Records for Public Utilities and Licensees, Natural Gas and Oil Pipeline Companies (OMB Control No. 1902-0098) which will be submitted to the Office of Management and Budget (OMB) for a review of the information collection requirements. There are no proposed changes to the record keeping requirements. The 60-day notice period ended on September 8, 2026, with no comments received.",
+   "title": "Commission Information Collection Activities (Ferc-555); Comment Request; Extension",
+   "url": "https://www.federalregister.gov/documents/2026/09/16/2026-19011/commission-information-collection-activities-ferc-555-comment-request-extension"
+  },
+  {
+   "action": "Notice.",
+   "agencies": [
+    "hhs"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-09-16",
+   "date_basis": "published",
+   "doc_type": "Notice",
+   "docket_ids": [],
+   "effective_on": null,
+   "eo_number": null,
+   "first_seen": "2026-11-26T01:56:14+00:00",
+   "flags": [],
+   "fr_agency_slugs": [
+    "health-and-human-services-department",
+    "national-institutes-of-health"
+   ],
+   "id": "fr:2026-18954",
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 0,
+   "published": "2026-09-16",
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
+   "severity": null,
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Other notice",
+   "subtype": "",
+   "summary": "The National Institute of Allergy and Infectious Diseases (NIAID), an institute of the National Institutes of Health (NIH), Department of Health and Human Services (HHS), is giving notice of the invention listed below, which is owned by an agency of the U.S. Government and is available for licensing to achieve expeditious commercialization of results of federally funded research and development. Foreign patent applications are filed on selected inventions to extend market coverage for companies and may also be available for licensing.",
+   "title": "Government-Owned Inventions; Availability for Licensing",
+   "url": "https://www.federalregister.gov/documents/2026/09/16/2026-18954/government-owned-inventions-availability-for-licensing"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "ferc"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-09-16",
+   "date_basis": "published",
+   "doc_type": "Notice",
+   "docket_ids": [
+    "Project No. 2572-141"
+   ],
+   "effective_on": null,
+   "eo_number": null,
+   "first_seen": "2026-11-26T01:56:14+00:00",
+   "flags": [],
+   "fr_agency_slugs": [
+    "energy-department",
+    "federal-energy-regulatory-commission"
+   ],
+   "id": "fr:2026-18989",
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 0,
+   "published": "2026-09-16",
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
+   "severity": null,
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Other notice",
+   "subtype": "",
+   "summary": "",
+   "title": "Great Lakes Hydro America, LLC; Notice of Reasonable Period of Time for Water Quality Certification Application",
+   "url": "https://www.federalregister.gov/documents/2026/09/16/2026-18989/great-lakes-hydro-america-llc-notice-of-reasonable-period-of-time-for-water-quality-certification"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "ferc"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-09-16",
+   "date_basis": "published",
+   "doc_type": "Notice",
+   "docket_ids": [
+    "Project No. 2458-273"
+   ],
+   "effective_on": null,
+   "eo_number": null,
+   "first_seen": "2026-11-26T01:56:14+00:00",
+   "flags": [],
+   "fr_agency_slugs": [
+    "energy-department",
+    "federal-energy-regulatory-commission"
+   ],
+   "id": "fr:2026-18990",
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 0,
+   "published": "2026-09-16",
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
+   "severity": null,
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Other notice",
+   "subtype": "",
+   "summary": "",
+   "title": "Great Lakes Hydro America, LLC; Notice of Reasonable Period of Time for Water Quality Certification Application",
+   "url": "https://www.federalregister.gov/documents/2026/09/16/2026-18990/great-lakes-hydro-america-llc-notice-of-reasonable-period-of-time-for-water-quality-certification"
+  },
+  {
+   "action": "Notice of availability; request for comments.",
+   "agencies": [
+    "epa"
+   ],
+   "category": "rulemaking",
+   "comments_close": "2026-11-16",
+   "corporation": null,
+   "date": "2026-09-16",
+   "date_basis": "published",
+   "doc_type": "Proposed Rule",
+   "docket_ids": [
+    "EPA-HQ-OLEM-2026-4326",
+    "FRL-13459-01-OLEM"
+   ],
+   "effective_on": null,
+   "eo_number": null,
+   "first_seen": "2026-11-26T01:56:14+00:00",
+   "flags": [],
+   "fr_agency_slugs": [
+    "environmental-protection-agency"
+   ],
+   "id": "fr:2026-19027",
+   "jurisdiction": "federal",
+   "outcome": "proposed",
+   "priority": 0,
+   "published": "2026-09-16",
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 2,
+      "why": "binding rule"
+     }
+    ],
+    "level": 1,
+    "points": 2
+   },
+   "severity": null,
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Proposed rule",
+   "subtype": "",
+   "summary": "The Environmental Protection Agency (EPA or the Agency) is proposing to approve Indiana's Coal Combustion Residuals (CCR) partial permit program under the Resource Conservation and Recovery Act (RCRA). After reviewing the CCR permit program application submitted by the Indiana Department of Environmental Management (IDEM), EPA has preliminarily determined that Indiana's CCR permit program meets the standard for partial approval under RCRA. If approved, Indiana's CCR permit program will operate in lieu of the Federal CCR program, with the exception of the specific provisions noted below. EPA is seeking comment on this proposal during a 60-day public comment period and will hold a hybrid…",
+   "title": "Indiana: Approval of State Coal Combustion Residuals Permit Program",
+   "url": "https://www.federalregister.gov/documents/2026/09/16/2026-19027/indiana-approval-of-state-coal-combustion-residuals-permit-program"
+  },
+  {
+   "action": "Notice.",
+   "agencies": [
+    "hhs"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-09-16",
+   "date_basis": "published",
+   "doc_type": "Notice",
+   "docket_ids": [
+    "CMS-1864-N"
+   ],
+   "effective_on": null,
+   "eo_number": null,
+   "first_seen": "2026-11-26T01:56:14+00:00",
+   "flags": [],
+   "fr_agency_slugs": [
+    "health-and-human-services-department",
+    "centers-for-medicare-medicaid-services"
+   ],
+   "id": "fr:2026-19015",
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 0,
+   "published": "2026-09-16",
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
+   "severity": null,
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Meeting or event",
+   "subtype": "",
+   "summary": "This notice announces the second biannual Healthcare Common Procedure Coding System (HCPCS) Level II public meeting of 2026 to discuss the CMS preliminary coding, Medicare benefit category, and Medicare payment determinations, if applicable, for new revisions to the HCPCS Level II code set for non-drug and non-biological items and services, as well as how to register for the meeting.",
+   "title": "Medicare Program; Public Meeting for New Revisions to the Healthcare Common Procedure Coding System (HCPCS) Level II Coding",
+   "url": "https://www.federalregister.gov/documents/2026/09/16/2026-19015/medicare-program-public-meeting-for-new-revisions-to-the-healthcare-common-procedure-coding-system"
+  },
+  {
+   "action": "Notice; establishment of a public docket; request for comments.",
+   "agencies": [
+    "fda"
+   ],
+   "category": "rulemaking",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-09-16",
+   "date_basis": "published",
+   "doc_type": "Notice",
+   "docket_ids": [
+    "Docket No. FDA-2026-N-8692"
+   ],
+   "effective_on": null,
+   "eo_number": null,
+   "first_seen": "2026-11-26T01:56:14+00:00",
+   "flags": [],
+   "fr_agency_slugs": [
+    "health-and-human-services-department",
+    "food-and-drug-administration"
+   ],
+   "id": "fr:2026-18920",
+   "jurisdiction": "federal",
+   "outcome": "guidance",
+   "priority": 0,
+   "published": "2026-09-16",
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
+   "severity": null,
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Guidance, interpretation, or request for comment",
+   "subtype": "",
+   "summary": "The Food and Drug Administration (FDA) announces a forthcoming public advisory committee meeting of the Microbiology Devices Panel of the Medical Devices Advisory Committee (the Committee). The general function of the Committee is to provide advice and recommendations to FDA. In addition, the Committee will meet to discuss and provide advice to FDA on examining the scientific, clinical, and public health dimensions of the use of pathogen-agnostic sequencing as it relates to emergency preparedness and response efforts, and to support discussion of opportunities, implementation considerations, and potential priorities for future coordination. The preparedness use could cover local and…",
+   "title": "Microbiology Devices Panel of the Medical Devices Advisory Committee; Notice of Meeting; Establishment of a Public Docket; Request for Comments-Pathogen-Agnostic Sequencing",
+   "url": "https://www.federalregister.gov/documents/2026/09/16/2026-18920/microbiology-devices-panel-of-the-medical-devices-advisory-committee-notice-of-meeting-establishment"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "ferc"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-09-16",
+   "date_basis": "published",
+   "doc_type": "Notice",
+   "docket_ids": [
+    "Docket No. CP26-534-000"
+   ],
+   "effective_on": null,
+   "eo_number": null,
+   "first_seen": "2026-11-26T01:56:14+00:00",
+   "flags": [],
+   "fr_agency_slugs": [
+    "energy-department",
+    "federal-energy-regulatory-commission"
+   ],
+   "id": "fr:2026-18993",
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 0,
+   "published": "2026-09-16",
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
+   "severity": null,
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Other notice",
+   "subtype": "",
+   "summary": "",
+   "title": "Northern Natural Gas Company; Notice of Schedule for the Preparation of an Environmental Assessment for the Permian Basin Expansion Project",
+   "url": "https://www.federalregister.gov/documents/2026/09/16/2026-18993/northern-natural-gas-company-notice-of-schedule-for-the-preparation-of-an-environmental-assessment"
+  },
+  {
+   "action": "Notice.",
+   "agencies": [
+    "hhs"
+   ],
+   "category": "other",
+   "comments_close": "2026-10-01",
+   "corporation": null,
+   "date": "2026-09-16",
+   "date_basis": "published",
+   "doc_type": "Notice",
+   "docket_ids": [],
+   "effective_on": null,
+   "eo_number": null,
+   "first_seen": "2026-11-26T01:56:14+00:00",
+   "flags": [],
+   "fr_agency_slugs": [
+    "health-and-human-services-department"
+   ],
+   "id": "fr:2026-18987",
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 0,
+   "published": "2026-09-16",
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
+   "severity": null,
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Other notice",
+   "subtype": "",
+   "summary": "The Office of Research Integrity (ORI) announces an ongoing opportunity for non-federal public and private sector entities to co- sponsor conferences, workshops, symposia, meetings, roundtables, or other similar events (collectively, \"Events\") with ORI. ORI co- sponsors a limited number of Events with non-federal entities each year. Potential co-sponsors must have demonstrated interest and experience in the responsible conduct of research or handling allegations of research misconduct and must be willing to substantively contribute to the co-sponsored Event. This notice supersedes ORI's October 21, 2022, co-sponsorship opportunity notice at 87 FR 64067.",
+   "title": "Opportunity To Co-Sponsor Events With the Office of Research Integrity",
+   "url": "https://www.federalregister.gov/documents/2026/09/16/2026-18987/opportunity-to-co-sponsor-events-with-the-office-of-research-integrity"
+  },
+  {
+   "action": "Notice with comment period.",
+   "agencies": [
+    "hhs"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-09-16",
+   "date_basis": "published",
+   "doc_type": "Notice",
+   "docket_ids": [
+    "Docket No. CDC-2026-0892"
+   ],
+   "effective_on": "2026-09-11",
+   "eo_number": null,
+   "first_seen": "2026-11-26T01:56:14+00:00",
+   "flags": [],
+   "fr_agency_slugs": [
+    "health-and-human-services-department",
+    "centers-for-disease-control-and-prevention"
+   ],
+   "id": "fr:2026-18948",
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 0,
+   "published": "2026-09-16",
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
+   "severity": null,
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Other notice",
+   "subtype": "",
+   "summary": "The Centers for Disease Control and Prevention (CDC), a component of the Department of Health and Human Services (HHS), announces it is issuing an Order under Sections 362 and 365 of the Public Health Service Act, and associated implementing regulations, continuing the suspension of the right to introduce certain persons from countries where an outbreak of a quarantinable communicable disease exists. This Order was issued on September 11 and shall remain in effect through 4:59 p.m. Eastern Daylight Time (EDT) on Sunday, October 11, 2026. This Order may be amended or rescinded prior to that time at the discretion of the Director.",
+   "title": "Order Under Sections 362 and 365 of the Public Health Service Act Continuing the Suspension of the Right To Introduce Certain Persons From Countries Where a Quarantinable Communicable Disease Exists",
+   "url": "https://www.federalregister.gov/documents/2026/09/16/2026-18948/order-under-sections-362-and-365-of-the-public-health-service-act-continuing-the-suspension-of-the"
+  },
+  {
+   "action": "Notice.",
+   "agencies": [
+    "hhs"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-09-16",
+   "date_basis": "published",
+   "doc_type": "Notice",
+   "docket_ids": [],
+   "effective_on": "2026-11-16",
+   "eo_number": null,
+   "first_seen": "2026-11-26T01:56:14+00:00",
+   "flags": [],
+   "fr_agency_slugs": [
+    "health-and-human-services-department",
+    "national-institutes-of-health"
+   ],
+   "id": "fr:2026-18937",
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 0,
+   "published": "2026-09-16",
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
+   "severity": null,
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Other notice",
+   "subtype": "",
+   "summary": "The NIH Intramural Research Program (IRP) relies on a trustworthy research record to sustain public confidence and advance public health. NIH maintains procedures in compliance with NIH policy and 42 CFR part 93 to evaluate allegations of research misconduct, including falsification, fabrication, and plagiarism, through a fair, consistent, and peer-informed process. The proposed web-based reporting form will help the Agency Intramural Research Integrity Officer (AIRIO) receive sufficient information needed to assess concerns and determine appropriate next steps. Reports may be submitted anonymously, with optional contact information for follow-up. Concerns may also be reported in person, by…",
+   "title": "Proposed Collection; 60-Day Comment Request; NIH Intramural Reporting of Research Misconduct (IRRM) Web Form (Office of the Director/Office of Intramural Research)",
+   "url": "https://www.federalregister.gov/documents/2026/09/16/2026-18937/proposed-collection-60-day-comment-request-nih-intramural-reporting-of-research-misconduct-irrm-web"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "ferc"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-09-16",
+   "date_basis": "published",
+   "doc_type": "Notice",
+   "docket_ids": [
+    "Docket No. CP26-543-000"
+   ],
+   "effective_on": null,
+   "eo_number": null,
+   "first_seen": "2026-11-26T01:56:14+00:00",
+   "flags": [],
+   "fr_agency_slugs": [
+    "energy-department",
+    "federal-energy-regulatory-commission"
+   ],
+   "id": "fr:2026-18992",
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 0,
+   "published": "2026-09-16",
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
+   "severity": null,
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Other notice",
+   "subtype": "",
+   "summary": "",
+   "title": "Southeast Supply Header, LLC; Notice of Schedule for the Preparation of an Environmental Assessment for the Tupelo Trail Project",
+   "url": "https://www.federalregister.gov/documents/2026/09/16/2026-18992/southeast-supply-header-llc-notice-of-schedule-for-the-preparation-of-an-environmental-assessment"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "ferc"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-09-16",
+   "date_basis": "published",
+   "doc_type": "Notice",
+   "docket_ids": [
+    "Docket No. CP26-540-000"
+   ],
+   "effective_on": null,
+   "eo_number": null,
+   "first_seen": "2026-11-26T01:56:14+00:00",
+   "flags": [],
+   "fr_agency_slugs": [
+    "energy-department",
+    "federal-energy-regulatory-commission"
+   ],
+   "id": "fr:2026-18995",
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 0,
+   "published": "2026-09-16",
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
+   "severity": null,
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Other notice",
+   "subtype": "",
+   "summary": "",
+   "title": "Tennessee Gas Pipeline Company L.L.C.; Notice of Schedule for the Preparation of an Environmental Assessment for the South Texas Enhancement Project",
+   "url": "https://www.federalregister.gov/documents/2026/09/16/2026-18995/tennessee-gas-pipeline-company-llc-notice-of-schedule-for-the-preparation-of-an-environmental"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "ferc"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-09-16",
+   "date_basis": "published",
+   "doc_type": "Notice",
+   "docket_ids": [
+    "Docket No. CP26-544-000"
+   ],
+   "effective_on": null,
+   "eo_number": null,
+   "first_seen": "2026-11-26T01:56:14+00:00",
+   "flags": [],
+   "fr_agency_slugs": [
+    "energy-department",
+    "federal-energy-regulatory-commission"
+   ],
+   "id": "fr:2026-18991",
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 0,
+   "published": "2026-09-16",
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
+   "severity": null,
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Other notice",
+   "subtype": "",
+   "summary": "",
+   "title": "Vinton Dome Storage Hub, LLC; Notice of Schedule for the Preparation of an Environmental Assessment for the Vinton Dome Storage Hub Project",
+   "url": "https://www.federalregister.gov/documents/2026/09/16/2026-18991/vinton-dome-storage-hub-llc-notice-of-schedule-for-the-preparation-of-an-environmental-assessment"
+  }
+ ]
+}

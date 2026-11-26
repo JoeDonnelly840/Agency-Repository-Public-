@@ -1,0 +1,2674 @@
+{
+ "date": "2026-09-10",
+ "items": [
+  {
+   "action": "Proposed rule; rescission.",
+   "agencies": [
+    "sec"
+   ],
+   "category": "rulemaking",
+   "comments_close": "2026-11-09",
+   "corporation": null,
+   "date": "2026-09-10",
+   "date_basis": "published",
+   "doc_type": "Proposed Rule",
+   "docket_ids": [
+    "Release No. IA-6994",
+    "File No. S7-2026-31"
+   ],
+   "effective_on": "2026-09-10",
+   "eo_number": null,
+   "first_seen": "2026-11-26T01:56:14+00:00",
+   "flags": [
+    {
+     "code": "spending_appropriations",
+     "counters": [],
+     "elements_found": [
+      "withhold",
+      "no_authority",
+      "broad"
+     ],
+     "elements_total": 3,
+     "flagrance": 2,
+     "group": "structural",
+     "impact": 1,
+     "structural": true,
+     "tier": 2,
+     "tier_authority": "train",
+     "triggers": [
+      "rescission"
+     ]
+    },
+    {
+     "code": "first_amendment",
+     "counters": [],
+     "elements_found": [],
+     "elements_total": 2,
+     "flagrance": 1,
+     "group": "rights",
+     "impact": 1,
+     "structural": false,
+     "tier": 1,
+     "tier_authority": "central_hudson",
+     "triggers": [
+      "political contribution"
+     ]
+    }
+   ],
+   "fr_agency_slugs": [
+    "securities-and-exchange-commission"
+   ],
+   "id": "fr:2026-18424",
+   "jurisdiction": "federal",
+   "outcome": "proposed",
+   "priority": 2,
+   "published": "2026-09-10",
+   "rins": [
+    "3235-AN65"
+   ],
+   "routine": false,
+   "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 2,
+      "why": "binding rule"
+     }
+    ],
+    "level": 1,
+    "points": 2
+   },
+   "severity": {
+    "flagrance": 2,
+    "impact": 1,
+    "score": 2
+   },
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Proposed rule",
+   "subtype": "",
+   "summary": "The Securities and Exchange Commission (the \"Commission\" or the \"SEC\") is proposing to rescind the political contribution rule under the Investment Advisers Act of 1940 (the \"Advisers Act\"), which prohibits investment advisers from providing investment advisory services for compensation to a government client for two years after an adviser or any covered associate of the adviser makes a contribution to certain categories of elected officials or candidates, among other prohibitions. In the more than fifteen years since the rule was adopted, implementation challenges associated with the political contribution rule have resulted in a range of significant unintended consequences, including…",
+   "title": "Political Contributions by Certain Investment Advisers",
+   "url": "https://www.federalregister.gov/documents/2026/09/10/2026-18424/political-contributions-by-certain-investment-advisers"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "president"
+   ],
+   "category": "presidential",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-09-08",
+   "date_basis": "signed",
+   "doc_type": "Presidential Document",
+   "docket_ids": [],
+   "effective_on": null,
+   "eo_number": null,
+   "first_seen": "2026-11-26T01:56:14+00:00",
+   "flags": [
+    {
+     "code": "presidential_lawmaking",
+     "counters": [],
+     "elements_found": [
+      "presidential",
+      "weak_basis"
+     ],
+     "elements_total": 3,
+     "flagrance": 1,
+     "group": "structural",
+     "impact": 2,
+     "structural": true,
+     "tier": 1,
+     "tier_authority": "youngstown",
+     "triggers": [
+      "national emergency"
+     ]
+    }
+   ],
+   "fr_agency_slugs": [
+    "executive-office-of-the-president"
+   ],
+   "id": "fr:2026-18589",
+   "jurisdiction": "federal",
+   "outcome": "issued",
+   "priority": 2,
+   "published": "2026-09-10",
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 3,
+      "why": "presidential document"
+     }
+    ],
+    "level": 2,
+    "points": 3
+   },
+   "severity": {
+    "flagrance": 1,
+    "impact": 2,
+    "score": 2
+   },
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Notice",
+   "subtype": "Notice",
+   "summary": "",
+   "title": "Continuation of the National Emergency With Respect to Certain Terrorist Attacks",
+   "url": "https://www.federalregister.gov/documents/2026/09/10/2026-18589/continuation-of-the-national-emergency-with-respect-to-certain-terrorist-attacks"
+  },
+  {
+   "action": "Notice.",
+   "agencies": [
+    "epa"
+   ],
+   "category": "other",
+   "comments_close": "2026-11-09",
+   "corporation": null,
+   "date": "2026-09-10",
+   "date_basis": "published",
+   "doc_type": "Notice",
+   "docket_ids": [
+    "EPA-HQ-OPPT-2020-0616",
+    "FRL-13319-01-OCSPP"
+   ],
+   "effective_on": null,
+   "eo_number": null,
+   "first_seen": "2026-11-26T01:56:14+00:00",
+   "flags": [
+    {
+     "code": "spending_appropriations",
+     "counters": [],
+     "elements_found": [
+      "no_authority"
+     ],
+     "elements_total": 3,
+     "flagrance": 1,
+     "group": "structural",
+     "impact": 1,
+     "structural": true,
+     "tier": 1,
+     "tier_authority": "cfsa",
+     "triggers": [
+      "user fees"
+     ]
+    }
+   ],
+   "fr_agency_slugs": [
+    "environmental-protection-agency"
+   ],
+   "id": "fr:2026-18435",
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 1,
+   "published": "2026-09-10",
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
+   "severity": {
+    "flagrance": 1,
+    "impact": 1,
+    "score": 1
+   },
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Information collection, privacy, or paperwork notice",
+   "subtype": "",
+   "summary": "In compliance with the Paperwork Reduction Act (PRA), this document announces the availability of and solicits public comment on the following Information Collection Request (ICR) that EPA is planning to submit to the Office of Management and Budget (OMB): User Fees for the Administration of the Toxic Substances Control Act (TSCA) (EPA ICR No. 2569.07 and OMB Control No. 2070-0208). This ICR represents a renewal of an existing ICR that is currently approved through May 31, 2027. Before submitting the ICR to OMB for review and approval under the PRA, EPA is soliciting comments on specific aspects of the information collection that is summarized in this document. The ICR and accompanying…",
+   "title": "Agency Information Collection Activities; Proposed Renewal Collection and Request for Comment; User Fees for the Administration of the Toxic Substances Control Act (TSCA)",
+   "url": "https://www.federalregister.gov/documents/2026/09/10/2026-18435/agency-information-collection-activities-proposed-renewal-collection-and-request-for-comment-user"
+  },
+  {
+   "action": "Notice.",
+   "agencies": [
+    "fda"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-09-10",
+   "date_basis": "published",
+   "doc_type": "Notice",
+   "docket_ids": [
+    "Docket No. FDA-2026-N-9047"
+   ],
+   "effective_on": "2026-10-01",
+   "eo_number": null,
+   "first_seen": "2026-11-26T01:56:14+00:00",
+   "flags": [
+    {
+     "code": "spending_appropriations",
+     "counters": [],
+     "elements_found": [
+      "no_authority"
+     ],
+     "elements_total": 3,
+     "flagrance": 1,
+     "group": "structural",
+     "impact": 1,
+     "structural": true,
+     "tier": 1,
+     "tier_authority": "cfsa",
+     "triggers": [
+      "user fees"
+     ]
+    }
+   ],
+   "fr_agency_slugs": [
+    "health-and-human-services-department",
+    "food-and-drug-administration"
+   ],
+   "id": "fr:2026-18464",
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 1,
+   "published": "2026-09-10",
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
+   "severity": {
+    "flagrance": 1,
+    "impact": 1,
+    "score": 1
+   },
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Other notice",
+   "subtype": "",
+   "summary": "The Food and Drug Administration (FDA or the Agency) is announcing the fee rate for using a priority review voucher for fiscal year (FY) 2027. The Federal Food, Drug, and Cosmetic Act (FD&C Act), as amended, authorizes FDA to determine and collect priority review user fees for certain applications for review of human drug or biological products when those applications use a tropical disease, rare pediatric disease, or material threat medical countermeasure (MCM) priority review voucher. These vouchers are awarded to the sponsors of tropical disease, rare pediatric disease, or material threat MCM product applications, respectively, that meet the requirements of the FD&C Act, upon FDA…",
+   "title": "Fee Rate for Using a Priority Review Voucher in Fiscal Year 2027",
+   "url": "https://www.federalregister.gov/documents/2026/09/10/2026-18464/fee-rate-for-using-a-priority-review-voucher-in-fiscal-year-2027"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "sec"
+   ],
+   "category": "rulemaking",
+   "comments_close": null,
+   "corporation": "other_sro",
+   "date": "2026-09-10",
+   "date_basis": "published",
+   "doc_type": "Notice",
+   "docket_ids": [
+    "Release No. 34-106280",
+    "File No. SR-24X-2026-22"
+   ],
+   "effective_on": null,
+   "eo_number": null,
+   "first_seen": "2026-11-26T01:56:14+00:00",
+   "flags": [
+    {
+     "code": "private_delegation",
+     "counters": [],
+     "elements_found": [
+      "private",
+      "binding",
+      "no_prior_review"
+     ],
+     "elements_total": 3,
+     "flagrance": 1,
+     "group": "structural",
+     "impact": 1,
+     "structural": true,
+     "tier": 1,
+     "tier_authority": "consumers_research",
+     "triggers": [
+      "issued by an agency-supervised private corporation"
+     ]
+    }
+   ],
+   "fr_agency_slugs": [
+    "securities-and-exchange-commission"
+   ],
+   "id": "fr:2026-18398",
+   "jurisdiction": "federal",
+   "outcome": "proposed",
+   "priority": 1,
+   "published": "2026-09-10",
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "self-regulatory filing"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
+   "severity": {
+    "flagrance": 1,
+    "impact": 1,
+    "score": 1
+   },
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Rule change by self-regulatory organization",
+   "subtype": "",
+   "summary": "",
+   "title": "Self-Regulatory Organizations; 24X National Exchange LLC; Notice of Filing and Immediate Effectiveness of Proposed Rule Change To Amend 24X Rule 13.4(a) To Reflect Name Changes and the Operation of Texas Stock Exchange LLC",
+   "url": "https://www.federalregister.gov/documents/2026/09/10/2026-18398/self-regulatory-organizations-24x-national-exchange-llc-notice-of-filing-and-immediate-effectiveness"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "sec"
+   ],
+   "category": "rulemaking",
+   "comments_close": null,
+   "corporation": "other_sro",
+   "date": "2026-09-10",
+   "date_basis": "published",
+   "doc_type": "Notice",
+   "docket_ids": [
+    "Release No. 34-106279",
+    "File No. SR-ICC-2026-010"
+   ],
+   "effective_on": null,
+   "eo_number": null,
+   "first_seen": "2026-11-26T01:56:14+00:00",
+   "flags": [
+    {
+     "code": "private_delegation",
+     "counters": [],
+     "elements_found": [
+      "private",
+      "binding",
+      "no_prior_review"
+     ],
+     "elements_total": 3,
+     "flagrance": 1,
+     "group": "structural",
+     "impact": 1,
+     "structural": true,
+     "tier": 1,
+     "tier_authority": "consumers_research",
+     "triggers": [
+      "issued by an agency-supervised private corporation"
+     ]
+    }
+   ],
+   "fr_agency_slugs": [
+    "securities-and-exchange-commission"
+   ],
+   "id": "fr:2026-18397",
+   "jurisdiction": "federal",
+   "outcome": "proposed",
+   "priority": 1,
+   "published": "2026-09-10",
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "self-regulatory filing"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
+   "severity": {
+    "flagrance": 1,
+    "impact": 1,
+    "score": 1
+   },
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Rule change by self-regulatory organization",
+   "subtype": "",
+   "summary": "",
+   "title": "Self-Regulatory Organizations; ICE Clear Credit LLC; Notice of Filing and Immediate Effectiveness of Proposed Rule Change Relating to ICC's Model Validation Framework and Treasury Operations Policies and Procedures",
+   "url": "https://www.federalregister.gov/documents/2026/09/10/2026-18397/self-regulatory-organizations-ice-clear-credit-llc-notice-of-filing-and-immediate-effectiveness-of"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "sec"
+   ],
+   "category": "rulemaking",
+   "comments_close": null,
+   "corporation": "other_sro",
+   "date": "2026-09-10",
+   "date_basis": "published",
+   "doc_type": "Notice",
+   "docket_ids": [
+    "Release No. 34-106283",
+    "File No. SR-NYSEAMER-2026-79"
+   ],
+   "effective_on": null,
+   "eo_number": null,
+   "first_seen": "2026-11-26T01:56:14+00:00",
+   "flags": [
+    {
+     "code": "private_delegation",
+     "counters": [],
+     "elements_found": [
+      "private",
+      "binding",
+      "no_prior_review"
+     ],
+     "elements_total": 3,
+     "flagrance": 1,
+     "group": "structural",
+     "impact": 1,
+     "structural": true,
+     "tier": 1,
+     "tier_authority": "consumers_research",
+     "triggers": [
+      "issued by an agency-supervised private corporation"
+     ]
+    }
+   ],
+   "fr_agency_slugs": [
+    "securities-and-exchange-commission"
+   ],
+   "id": "fr:2026-18401",
+   "jurisdiction": "federal",
+   "outcome": "proposed",
+   "priority": 1,
+   "published": "2026-09-10",
+   "rins": [],
+   "routine": true,
+   "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "self-regulatory filing"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
+   "severity": {
+    "flagrance": 1,
+    "impact": 1,
+    "score": 1
+   },
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Fee change by self-regulatory organization",
+   "subtype": "",
+   "summary": "",
+   "title": "Self-Regulatory Organizations; NYSE American LLC; Notice of Filing and Immediate Effectiveness of Proposed Rule Change To Amend the Connectivity Fee Schedule",
+   "url": "https://www.federalregister.gov/documents/2026/09/10/2026-18401/self-regulatory-organizations-nyse-american-llc-notice-of-filing-and-immediate-effectiveness-of"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "sec"
+   ],
+   "category": "rulemaking",
+   "comments_close": null,
+   "corporation": "other_sro",
+   "date": "2026-09-10",
+   "date_basis": "published",
+   "doc_type": "Notice",
+   "docket_ids": [
+    "Release No. 34-106282",
+    "File No. SR-NYSEARCA-2026-92"
+   ],
+   "effective_on": null,
+   "eo_number": null,
+   "first_seen": "2026-11-26T01:56:14+00:00",
+   "flags": [
+    {
+     "code": "private_delegation",
+     "counters": [],
+     "elements_found": [
+      "private",
+      "binding",
+      "no_prior_review"
+     ],
+     "elements_total": 3,
+     "flagrance": 1,
+     "group": "structural",
+     "impact": 1,
+     "structural": true,
+     "tier": 1,
+     "tier_authority": "consumers_research",
+     "triggers": [
+      "issued by an agency-supervised private corporation"
+     ]
+    }
+   ],
+   "fr_agency_slugs": [
+    "securities-and-exchange-commission"
+   ],
+   "id": "fr:2026-18400",
+   "jurisdiction": "federal",
+   "outcome": "proposed",
+   "priority": 1,
+   "published": "2026-09-10",
+   "rins": [],
+   "routine": true,
+   "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "self-regulatory filing"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
+   "severity": {
+    "flagrance": 1,
+    "impact": 1,
+    "score": 1
+   },
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Fee change by self-regulatory organization",
+   "subtype": "",
+   "summary": "",
+   "title": "Self-Regulatory Organizations; NYSE Arca, Inc.; Notice of Filing and Immediate Effectiveness of Proposed Rule Change To Amend the Connectivity Fee Schedule",
+   "url": "https://www.federalregister.gov/documents/2026/09/10/2026-18400/self-regulatory-organizations-nyse-arca-inc-notice-of-filing-and-immediate-effectiveness-of-proposed"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "sec"
+   ],
+   "category": "rulemaking",
+   "comments_close": null,
+   "corporation": "other_sro",
+   "date": "2026-09-10",
+   "date_basis": "published",
+   "doc_type": "Notice",
+   "docket_ids": [
+    "Release No. 34-106281",
+    "File No. SR-NYSENAT-2026-24"
+   ],
+   "effective_on": null,
+   "eo_number": null,
+   "first_seen": "2026-11-26T01:56:14+00:00",
+   "flags": [
+    {
+     "code": "private_delegation",
+     "counters": [],
+     "elements_found": [
+      "private",
+      "binding",
+      "no_prior_review"
+     ],
+     "elements_total": 3,
+     "flagrance": 1,
+     "group": "structural",
+     "impact": 1,
+     "structural": true,
+     "tier": 1,
+     "tier_authority": "consumers_research",
+     "triggers": [
+      "issued by an agency-supervised private corporation"
+     ]
+    }
+   ],
+   "fr_agency_slugs": [
+    "securities-and-exchange-commission"
+   ],
+   "id": "fr:2026-18399",
+   "jurisdiction": "federal",
+   "outcome": "proposed",
+   "priority": 1,
+   "published": "2026-09-10",
+   "rins": [],
+   "routine": true,
+   "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "self-regulatory filing"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
+   "severity": {
+    "flagrance": 1,
+    "impact": 1,
+    "score": 1
+   },
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Fee change by self-regulatory organization",
+   "subtype": "",
+   "summary": "",
+   "title": "Self-Regulatory Organizations; NYSE National, Inc.; Notice of Filing and Immediate Effectiveness of Proposed Rule Change To Amend the Connectivity Fee Schedule",
+   "url": "https://www.federalregister.gov/documents/2026/09/10/2026-18399/self-regulatory-organizations-nyse-national-inc-notice-of-filing-and-immediate-effectiveness-of"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "sec"
+   ],
+   "category": "rulemaking",
+   "comments_close": null,
+   "corporation": "other_sro",
+   "date": "2026-09-10",
+   "date_basis": "published",
+   "doc_type": "Notice",
+   "docket_ids": [
+    "Release No. 34-106286",
+    "File No. SR-NYSE-2026-42"
+   ],
+   "effective_on": null,
+   "eo_number": null,
+   "first_seen": "2026-11-26T01:56:14+00:00",
+   "flags": [
+    {
+     "code": "private_delegation",
+     "counters": [],
+     "elements_found": [
+      "private",
+      "binding",
+      "no_prior_review"
+     ],
+     "elements_total": 3,
+     "flagrance": 1,
+     "group": "structural",
+     "impact": 1,
+     "structural": true,
+     "tier": 1,
+     "tier_authority": "consumers_research",
+     "triggers": [
+      "issued by an agency-supervised private corporation"
+     ]
+    }
+   ],
+   "fr_agency_slugs": [
+    "securities-and-exchange-commission"
+   ],
+   "id": "fr:2026-18402",
+   "jurisdiction": "federal",
+   "outcome": "proposed",
+   "priority": 1,
+   "published": "2026-09-10",
+   "rins": [],
+   "routine": true,
+   "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "self-regulatory filing"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
+   "severity": {
+    "flagrance": 1,
+    "impact": 1,
+    "score": 1
+   },
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Fee change by self-regulatory organization",
+   "subtype": "",
+   "summary": "",
+   "title": "Self-Regulatory Organizations; New York Stock Exchange LLC; Notice of Filing and Immediate Effectiveness of Proposed Rule Change To Amend the Connectivity Fee Schedule",
+   "url": "https://www.federalregister.gov/documents/2026/09/10/2026-18402/self-regulatory-organizations-new-york-stock-exchange-llc-notice-of-filing-and-immediate"
+  },
+  {
+   "action": "Notice.",
+   "agencies": [
+    "dol"
+   ],
+   "category": "other",
+   "comments_close": "2026-11-09",
+   "corporation": null,
+   "date": "2026-09-10",
+   "date_basis": "published",
+   "doc_type": "Notice",
+   "docket_ids": [],
+   "effective_on": null,
+   "eo_number": null,
+   "first_seen": "2026-11-26T01:56:14+00:00",
+   "flags": [],
+   "fr_agency_slugs": [
+    "labor-department",
+    "employment-and-training-administration"
+   ],
+   "id": "fr:2026-18499",
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 0,
+   "published": "2026-09-10",
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
+   "severity": null,
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Information collection, privacy, or paperwork notice",
+   "subtype": "",
+   "summary": "The Department of Labor's (DOL) Employment and Training Administration (ETA) is soliciting comments concerning a proposed revision for the authority to conduct the information collection request (ICR) titled, \"Migrant and Seasonal Farmworker (MSFW) Monitoring Report and Complaint/Apparent Violation Form.\" This comment request is part of continuing Departmental efforts to reduce paperwork and respondent burden in accordance with the Paperwork Reduction Act of 1995 (PRA).",
+   "title": "Agency Information Collection Activities; Comment Request; Migrant and Seasonal Farmworker Monitoring Report and Complaint/Apparent Violation Form",
+   "url": "https://www.federalregister.gov/documents/2026/09/10/2026-18499/agency-information-collection-activities-comment-request-migrant-and-seasonal-farmworker-monitoring"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "sec"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-09-10",
+   "date_basis": "published",
+   "doc_type": "Notice",
+   "docket_ids": [
+    "OMB Control No. 3235-0518"
+   ],
+   "effective_on": null,
+   "eo_number": null,
+   "first_seen": "2026-11-26T01:56:14+00:00",
+   "flags": [],
+   "fr_agency_slugs": [
+    "securities-and-exchange-commission"
+   ],
+   "id": "fr:2026-18509",
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 0,
+   "published": "2026-09-10",
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
+   "severity": null,
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Information collection, privacy, or paperwork notice",
+   "subtype": "",
+   "summary": "",
+   "title": "Agency Information Collection Activities; Proposed Collection; Comment Request; Extension: Form CB-Tender Offer/Rights Offering Notification Form",
+   "url": "https://www.federalregister.gov/documents/2026/09/10/2026-18509/agency-information-collection-activities-proposed-collection-comment-request-extension-form"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "sec"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-09-10",
+   "date_basis": "published",
+   "doc_type": "Notice",
+   "docket_ids": [
+    "OMB Control No. 3235-0521"
+   ],
+   "effective_on": null,
+   "eo_number": null,
+   "first_seen": "2026-11-26T01:56:14+00:00",
+   "flags": [],
+   "fr_agency_slugs": [
+    "securities-and-exchange-commission"
+   ],
+   "id": "fr:2026-18508",
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 0,
+   "published": "2026-09-10",
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
+   "severity": null,
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Information collection, privacy, or paperwork notice",
+   "subtype": "",
+   "summary": "",
+   "title": "Agency Information Collection Activities; Proposed Collection; Comment Request; Extension: Rule 425",
+   "url": "https://www.federalregister.gov/documents/2026/09/10/2026-18508/agency-information-collection-activities-proposed-collection-comment-request-extension-rule-425"
+  },
+  {
+   "action": "Notice.",
+   "agencies": [
+    "epa"
+   ],
+   "category": "other",
+   "comments_close": "2026-11-09",
+   "corporation": null,
+   "date": "2026-09-10",
+   "date_basis": "published",
+   "doc_type": "Notice",
+   "docket_ids": [
+    "EPA-HQ-OPPT-2023-0105",
+    "FRL-13293-01-OCSPP"
+   ],
+   "effective_on": null,
+   "eo_number": null,
+   "first_seen": "2026-11-26T01:56:14+00:00",
+   "flags": [],
+   "fr_agency_slugs": [
+    "environmental-protection-agency"
+   ],
+   "id": "fr:2026-18434",
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 0,
+   "published": "2026-09-10",
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
+   "severity": null,
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Information collection, privacy, or paperwork notice",
+   "subtype": "",
+   "summary": "In compliance with the Paperwork Reduction Act (PRA), this document announces the availability of and solicits public comment on the following Information Collection Request (ICR) that EPA is planning to submit to the Office of Management and Budget (OMB): Regulation of Persistent, Bioaccumulative, and Toxic Chemicals Under TSCA Section 6(h) identified by EPA ICR No. 2599.04 and OMB Control No. 2070-0213. This ICR represents a renewal of an existing ICR that is currently approved through April 31, 2027. In addition, this renewal consolidates the information collections covered under EPA ICR No. 2779.02 and OMB Control No. 2070-0230 with EPA ICR No. 2599.04. Before submitting the ICR to OMB…",
+   "title": "Agency Information Collection Activities; Proposed Renewal Collection and Request for Comment; Regulation of Persistent, Bioaccumulative, and Toxic Chemicals Under TSCA Section 6(h)",
+   "url": "https://www.federalregister.gov/documents/2026/09/10/2026-18434/agency-information-collection-activities-proposed-renewal-collection-and-request-for-comment"
+  },
+  {
+   "action": "Notice of information collection; request for comments.",
+   "agencies": [
+    "dol"
+   ],
+   "category": "other",
+   "comments_close": "2026-11-09",
+   "corporation": null,
+   "date": "2026-09-10",
+   "date_basis": "published",
+   "doc_type": "Notice",
+   "docket_ids": [],
+   "effective_on": null,
+   "eo_number": null,
+   "first_seen": "2026-11-26T01:56:14+00:00",
+   "flags": [],
+   "fr_agency_slugs": [
+    "labor-department",
+    "veterans-employment-and-training-service"
+   ],
+   "id": "fr:2026-18498",
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 0,
+   "published": "2026-09-10",
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
+   "severity": null,
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Information collection, privacy, or paperwork notice",
+   "subtype": "",
+   "summary": "The Department of Labor (DOL) Veterans' Employment and Training Service (VETS is soliciting comments on the information collection request (ICR) for OMB Control No. 1293-0018 Homeless Veterans' Reintegration Program Budget and Narrative, for which VETS proposes to revise the title to Homeless Veterans' Reintegration Program Applicant Forms. The Homeless Veterans' Reintegration Program (HVRP) is authorized under 38 U.S.C. 2021. HVRP funds over 150 discretionary grants that serve nearly 16,000 veterans experiencing homelessness, veterans at-risk of homelessness, and incarcerated veterans annually, and along with nearly 40 Stand Down events. This collection contains forms submitted by HVRP…",
+   "title": "Agency Information Collection Activities; Submission for OMB Review; Comment Request; OMB Control No. 1293-0018",
+   "url": "https://www.federalregister.gov/documents/2026/09/10/2026-18498/agency-information-collection-activities-submission-for-omb-review-comment-request-omb-control-no"
+  },
+  {
+   "action": "Notice of availability; request for comments.",
+   "agencies": [
+    "dol"
+   ],
+   "category": "other",
+   "comments_close": "2026-10-13",
+   "corporation": null,
+   "date": "2026-09-10",
+   "date_basis": "published",
+   "doc_type": "Notice",
+   "docket_ids": [],
+   "effective_on": null,
+   "eo_number": null,
+   "first_seen": "2026-11-26T01:56:14+00:00",
+   "flags": [],
+   "fr_agency_slugs": [
+    "labor-department"
+   ],
+   "id": "fr:2026-18506",
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 0,
+   "published": "2026-09-10",
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
+   "severity": null,
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Information collection, privacy, or paperwork notice",
+   "subtype": "",
+   "summary": "The Department of Labor (DOL) is submitting this Wage and Hour Division (WHD)-sponsored information collection request (ICR) to the Office of Management and Budget (OMB) for review and approval in accordance with the Paperwork Reduction Act of 1995 (PRA). Public comments on the ICR are invited.",
+   "title": "Agency Information Collection Activities; Submission for OMB Review; Comment Request; Requests To Approve Conformed Wage Classifications and Unconventional Fringe Benefit Plans Under the Davis-Bacon and Related Acts and Contract Work Hours and Safety Standards Act",
+   "url": "https://www.federalregister.gov/documents/2026/09/10/2026-18506/agency-information-collection-activities-submission-for-omb-review-comment-request-requests-to"
+  },
+  {
+   "action": "Notice of issuance of single-source award.",
+   "agencies": [
+    "hhs"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-09-10",
+   "date_basis": "published",
+   "doc_type": "Notice",
+   "docket_ids": [],
+   "effective_on": null,
+   "eo_number": null,
+   "first_seen": "2026-11-26T01:56:14+00:00",
+   "flags": [],
+   "fr_agency_slugs": [
+    "health-and-human-services-department",
+    "community-living-administration"
+   ],
+   "id": "fr:2026-18415",
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 0,
+   "published": "2026-09-10",
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Money",
+      "points": 2,
+      "why": "$1,226,000 stated"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 2,
+    "points": 3
+   },
+   "severity": null,
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Other notice",
+   "subtype": "",
+   "summary": "The Administration for Community Living (ACL) announces the intent to award a single-source supplement to the current cooperative agreement held by the Northeast Iowa Area Agency on Aging (NEI3A) for the SMP Resource Center. The administrative supplement for FY 2026 will be in the amount of $226,000, bringing the total award for FY 2026 to $1,226,000. The supplement will allow the grantee to expand activities that began in FY 2025, which includes testing new communications strategies, expanding the functionality of their SMP smart phone app, exploring partnerships with technology companies, and other activities all aimed at expanding the reach of SMP messaging.",
+   "title": "Announcing the Intent To Award a Single-Source Supplement to the Senior Medicare Patrol (SMP) Resource Center",
+   "url": "https://www.federalregister.gov/documents/2026/09/10/2026-18415/announcing-the-intent-to-award-a-single-source-supplement-to-the-senior-medicare-patrol-smp-resource"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "hhs"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-09-10",
+   "date_basis": "published",
+   "doc_type": "Notice",
+   "docket_ids": [],
+   "effective_on": null,
+   "eo_number": null,
+   "first_seen": "2026-11-26T01:56:14+00:00",
+   "flags": [],
+   "fr_agency_slugs": [
+    "health-and-human-services-department",
+    "national-institutes-of-health"
+   ],
+   "id": "fr:2026-18441",
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 0,
+   "published": "2026-09-10",
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
+   "severity": null,
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Meeting or event",
+   "subtype": "",
+   "summary": "",
+   "title": "Center for Scientific Review; Notice of Closed Meetings",
+   "url": "https://www.federalregister.gov/documents/2026/09/10/2026-18441/center-for-scientific-review-notice-of-closed-meetings"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "ferc"
+   ],
+   "category": "adjudication",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-09-10",
+   "date_basis": "published",
+   "doc_type": "Notice",
+   "docket_ids": [],
+   "effective_on": null,
+   "eo_number": null,
+   "first_seen": "2026-11-26T01:56:14+00:00",
+   "flags": [],
+   "fr_agency_slugs": [
+    "energy-department",
+    "federal-energy-regulatory-commission"
+   ],
+   "id": "fr:2026-18452",
+   "jurisdiction": "federal",
+   "outcome": "applied",
+   "priority": 0,
+   "published": "2026-09-10",
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
+   "severity": null,
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Applications, filings, and licensing",
+   "subtype": "",
+   "summary": "",
+   "title": "Combined Notice of Filings",
+   "url": "https://www.federalregister.gov/documents/2026/09/10/2026-18452/combined-notice-of-filings"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "ferc"
+   ],
+   "category": "adjudication",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-09-10",
+   "date_basis": "published",
+   "doc_type": "Notice",
+   "docket_ids": [],
+   "effective_on": null,
+   "eo_number": null,
+   "first_seen": "2026-11-26T01:56:14+00:00",
+   "flags": [],
+   "fr_agency_slugs": [
+    "energy-department",
+    "federal-energy-regulatory-commission"
+   ],
+   "id": "fr:2026-18451",
+   "jurisdiction": "federal",
+   "outcome": "applied",
+   "priority": 0,
+   "published": "2026-09-10",
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
+   "severity": null,
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Applications, filings, and licensing",
+   "subtype": "",
+   "summary": "",
+   "title": "Combined Notice of Filings #1",
+   "url": "https://www.federalregister.gov/documents/2026/09/10/2026-18451/combined-notice-of-filings-1"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "ferc"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-09-10",
+   "date_basis": "published",
+   "doc_type": "Notice",
+   "docket_ids": [
+    "Docket No. CP03-75-000"
+   ],
+   "effective_on": null,
+   "eo_number": null,
+   "first_seen": "2026-11-26T01:56:14+00:00",
+   "flags": [],
+   "fr_agency_slugs": [
+    "energy-department",
+    "federal-energy-regulatory-commission"
+   ],
+   "id": "fr:2026-18453",
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 0,
+   "published": "2026-09-10",
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
+   "severity": null,
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Other notice",
+   "subtype": "",
+   "summary": "",
+   "title": "Freeport LNG Development, L.P.; Notice of Schedule for the Preparation of an Environmental Assessment for the Regasification Terminal Disconnect Project",
+   "url": "https://www.federalregister.gov/documents/2026/09/10/2026-18453/freeport-lng-development-lp-notice-of-schedule-for-the-preparation-of-an-environmental-assessment"
+  },
+  {
+   "action": "Notification; withdrawal of petition.",
+   "agencies": [
+    "fda"
+   ],
+   "category": "rulemaking",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-09-10",
+   "date_basis": "published",
+   "doc_type": "Proposed Rule",
+   "docket_ids": [
+    "Docket No. FDA-2025-F-6173"
+   ],
+   "effective_on": null,
+   "eo_number": null,
+   "first_seen": "2026-11-26T01:56:14+00:00",
+   "flags": [],
+   "fr_agency_slugs": [
+    "health-and-human-services-department",
+    "food-and-drug-administration"
+   ],
+   "id": "fr:2026-18469",
+   "jurisdiction": "federal",
+   "outcome": "proposed",
+   "priority": 0,
+   "published": "2026-09-10",
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 2,
+      "why": "binding rule"
+     }
+    ],
+    "level": 1,
+    "points": 2
+   },
+   "severity": null,
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Proposed rule",
+   "subtype": "",
+   "summary": "The Food and Drug Administration (FDA or we) is announcing the withdrawal, without prejudice to a future filing, of a food additive petition (FAP 2323) proposing that the food additive regulations be amended to provide for the safe use of hydrolyzed lignin as a source of neutral detergent soluble fiber in food for broiler chickens, laying hens, turkeys, growing swine, sows, lactating dairy cows, beef cattle, sheep, goats, salmonids, and adult dogs at no more than 1% of the food on a weight basis or 10 kilograms per metric ton of food.",
+   "title": "Green Innovation GmbH; Withdrawal of Food Additive Petition (Animal Use)",
+   "url": "https://www.federalregister.gov/documents/2026/09/10/2026-18469/green-innovation-gmbh-withdrawal-of-food-additive-petition-animal-use"
+  },
+  {
+   "action": "Notice of publication of Horseracing Integrity and Safety Authority 2027 proposed budget; request for public comment.",
+   "agencies": [
+    "ftc"
+   ],
+   "category": "other",
+   "comments_close": "2026-09-24",
+   "corporation": null,
+   "date": "2026-09-10",
+   "date_basis": "published",
+   "doc_type": "Notice",
+   "docket_ids": [
+    "File No. P222100"
+   ],
+   "effective_on": null,
+   "eo_number": null,
+   "first_seen": "2026-11-26T01:56:14+00:00",
+   "flags": [],
+   "fr_agency_slugs": [
+    "federal-trade-commission"
+   ],
+   "id": "fr:2026-18505",
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 0,
+   "published": "2026-09-10",
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
+   "severity": null,
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Other notice",
+   "subtype": "",
+   "summary": "The Federal Trade Commission publishes the 2027 proposed budget of the Horseracing Integrity and Safety Authority and seeks public comment on whether the Commission should approve, disapprove, or modify the proposed budget.",
+   "title": "Horseracing Integrity And Safety Authority Proposed 2027 Budget",
+   "url": "https://www.federalregister.gov/documents/2026/09/10/2026-18505/horseracing-integrity-and-safety-authority-proposed-2027-budget"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "ferc"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-09-10",
+   "date_basis": "published",
+   "doc_type": "Notice",
+   "docket_ids": [
+    "Project No. 1971-079"
+   ],
+   "effective_on": null,
+   "eo_number": null,
+   "first_seen": "2026-11-26T01:56:14+00:00",
+   "flags": [],
+   "fr_agency_slugs": [
+    "energy-department",
+    "federal-energy-regulatory-commission"
+   ],
+   "id": "fr:2026-18456",
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 0,
+   "published": "2026-09-10",
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
+   "severity": null,
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Other notice",
+   "subtype": "",
+   "summary": "",
+   "title": "Idaho Power Company; Notice of Availability of the Final Supplemental Environmental Impact Statement for the Hells Canyon Hydroelectric Project",
+   "url": "https://www.federalregister.gov/documents/2026/09/10/2026-18456/idaho-power-company-notice-of-availability-of-the-final-supplemental-environmental-impact-statement"
+  },
+  {
+   "action": "Notice; request for comments.",
+   "agencies": [
+    "fcc"
+   ],
+   "category": "other",
+   "comments_close": "2026-11-09",
+   "corporation": null,
+   "date": "2026-09-10",
+   "date_basis": "published",
+   "doc_type": "Notice",
+   "docket_ids": [
+    "OMB 3060-0678",
+    "FR ID 366354"
+   ],
+   "effective_on": null,
+   "eo_number": null,
+   "first_seen": "2026-11-26T01:56:14+00:00",
+   "flags": [],
+   "fr_agency_slugs": [
+    "federal-communications-commission"
+   ],
+   "id": "fr:2026-18414",
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 0,
+   "published": "2026-09-10",
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
+   "severity": null,
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Information collection, privacy, or paperwork notice",
+   "subtype": "",
+   "summary": "As part of its continuing effort to reduce paperwork burdens, and as required by the Paperwork Reduction Act of 1995 (PRA), the Federal Communications Commission (FCC or Commission) invites the general public and other Federal agencies to take this opportunity to comment on the following information collections. Comments are requested concerning: whether the proposed collection of information is necessary for the proper performance of the functions of the Commission, including whether the information shall have practical utility; the accuracy of the Commission's burden estimate; ways to enhance the quality, utility, and clarity of the information collected; ways to minimize the burden of…",
+   "title": "Information Collection Being Reviewed by the Federal Communications Commission",
+   "url": "https://www.federalregister.gov/documents/2026/09/10/2026-18414/information-collection-being-reviewed-by-the-federal-communications-commission"
+  },
+  {
+   "action": "Notice; request for comments.",
+   "agencies": [
+    "fcc"
+   ],
+   "category": "other",
+   "comments_close": "2026-11-09",
+   "corporation": null,
+   "date": "2026-09-10",
+   "date_basis": "published",
+   "doc_type": "Notice",
+   "docket_ids": [
+    "OMB 3060-1166",
+    "FR ID 365865"
+   ],
+   "effective_on": null,
+   "eo_number": null,
+   "first_seen": "2026-11-26T01:56:14+00:00",
+   "flags": [],
+   "fr_agency_slugs": [
+    "federal-communications-commission"
+   ],
+   "id": "fr:2026-18411",
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 0,
+   "published": "2026-09-10",
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
+   "severity": null,
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Information collection, privacy, or paperwork notice",
+   "subtype": "",
+   "summary": "As part of its continuing effort to reduce paperwork burdens, and as required by the Paperwork Reduction Act of 1995 (PRA), the Federal Communications Commission (FCC or Commission) invites the general public and other Federal agencies to take this opportunity to comment on the following information collections. Comments are requested concerning: whether the proposed collection of information is necessary for the proper performance of the functions of the Commission, including whether the information shall have practical utility; the accuracy of the Commission's burden estimate; ways to enhance the quality, utility, and clarity of the information collected; ways to minimize the burden of…",
+   "title": "Information Collection Being Reviewed by the Federal Communications Commission Under Delegated Authority",
+   "url": "https://www.federalregister.gov/documents/2026/09/10/2026-18411/information-collection-being-reviewed-by-the-federal-communications-commission-under-delegated"
+  },
+  {
+   "action": "Notice; request for comments.",
+   "agencies": [
+    "fcc"
+   ],
+   "category": "other",
+   "comments_close": "2026-11-09",
+   "corporation": null,
+   "date": "2026-09-10",
+   "date_basis": "published",
+   "doc_type": "Notice",
+   "docket_ids": [
+    "OMB 3060-0952",
+    "FR ID 366111"
+   ],
+   "effective_on": null,
+   "eo_number": null,
+   "first_seen": "2026-11-26T01:56:14+00:00",
+   "flags": [],
+   "fr_agency_slugs": [
+    "federal-communications-commission"
+   ],
+   "id": "fr:2026-18412",
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 0,
+   "published": "2026-09-10",
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
+   "severity": null,
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Information collection, privacy, or paperwork notice",
+   "subtype": "",
+   "summary": "As part of its continuing effort to reduce paperwork burdens, and as required by the Paperwork Reduction Act (PRA) of 1995, the Federal Communications Commission (FCC or the Commission) invites the general public and other Federal agencies to take this opportunity to comment on the following information collection. Comments are requested concerning: whether the proposed collection of information is necessary for the proper performance of the functions of the Commission, including whether the information shall have practical utility; the accuracy of the Commission's burden estimate; ways to enhance the quality, utility, and clarity of the information collected; ways to minimize the burden of…",
+   "title": "Information Collection Being Reviewed by the Federal Communications Commission Under Delegated Authority",
+   "url": "https://www.federalregister.gov/documents/2026/09/10/2026-18412/information-collection-being-reviewed-by-the-federal-communications-commission-under-delegated"
+  },
+  {
+   "action": "Notice; request for comments.",
+   "agencies": [
+    "fcc"
+   ],
+   "category": "other",
+   "comments_close": "2026-11-09",
+   "corporation": null,
+   "date": "2026-09-10",
+   "date_basis": "published",
+   "doc_type": "Notice",
+   "docket_ids": [
+    "OMB 3060-0562",
+    "FR ID 366234"
+   ],
+   "effective_on": null,
+   "eo_number": null,
+   "first_seen": "2026-11-26T01:56:14+00:00",
+   "flags": [],
+   "fr_agency_slugs": [
+    "federal-communications-commission"
+   ],
+   "id": "fr:2026-18413",
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 0,
+   "published": "2026-09-10",
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
+   "severity": null,
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Information collection, privacy, or paperwork notice",
+   "subtype": "",
+   "summary": "As part of its continuing effort to reduce paperwork burdens, and as required by the Paperwork Reduction Act of 1995 (PRA), the Federal Communications Commission (FCC or Commission) invites the general public and other Federal agencies to take this opportunity to comment on the following information collections. Comments are requested concerning: whether the proposed collection of information is necessary for the proper performance of the functions of the Commission, including whether the information shall have practical utility; the accuracy of the Commission's burden estimate; ways to enhance the quality, utility, and clarity of the information collected; ways to minimize the burden of…",
+   "title": "Information Collection Being Reviewed by the Federal Communications Commission Under Delegated Authority",
+   "url": "https://www.federalregister.gov/documents/2026/09/10/2026-18413/information-collection-being-reviewed-by-the-federal-communications-commission-under-delegated"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "president"
+   ],
+   "category": "presidential",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-09-04",
+   "date_basis": "signed",
+   "doc_type": "Presidential Document",
+   "docket_ids": [],
+   "effective_on": null,
+   "eo_number": null,
+   "first_seen": "2026-11-26T01:56:14+00:00",
+   "flags": [],
+   "fr_agency_slugs": [
+    "executive-office-of-the-president"
+   ],
+   "id": "fr:2026-18573",
+   "jurisdiction": "federal",
+   "outcome": "issued",
+   "priority": 0,
+   "published": "2026-09-10",
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 3,
+      "why": "presidential document"
+     }
+    ],
+    "level": 2,
+    "points": 3
+   },
+   "severity": null,
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Proclamation",
+   "subtype": "Proclamation",
+   "summary": "",
+   "title": "Labor Day, 2026",
+   "url": "https://www.federalregister.gov/documents/2026/09/10/2026-18573/labor-day-2026"
+  },
+  {
+   "action": "Final amendment; final order.",
+   "agencies": [
+    "fda"
+   ],
+   "category": "rulemaking",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-09-10",
+   "date_basis": "published",
+   "doc_type": "Rule",
+   "docket_ids": [
+    "Docket No. FDA-2026-N-9906"
+   ],
+   "effective_on": "2026-09-10",
+   "eo_number": null,
+   "first_seen": "2026-11-26T01:56:14+00:00",
+   "flags": [],
+   "fr_agency_slugs": [
+    "health-and-human-services-department",
+    "food-and-drug-administration"
+   ],
+   "id": "fr:2026-18431",
+   "jurisdiction": "federal",
+   "outcome": "final",
+   "priority": 0,
+   "published": "2026-09-10",
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 2,
+      "why": "binding rule"
+     }
+    ],
+    "level": 1,
+    "points": 2
+   },
+   "severity": null,
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Final rule",
+   "subtype": "",
+   "summary": "The Food and Drug Administration (FDA) is classifying the extravascular support for an arteriovenous fistula for vascular access into class II (special controls). The special controls that apply to the device type are identified in this order and will be part of the codified language for classification of the extravascular support for an arteriovenous fistula for vascular access. We are taking this action because we have determined that classifying the device into class II will provide a reasonable assurance of the safety and effectiveness of the device. We believe this action will also enhance patients' access to beneficial innovative devices, in part by reducing regulatory burdens.",
+   "title": "Medical Devices; Cardiovascular Devices; Classification of the Extravascular Support for an Arteriovenous Fistula for Vascular Access",
+   "url": "https://www.federalregister.gov/documents/2026/09/10/2026-18431/medical-devices-cardiovascular-devices-classification-of-the-extravascular-support-for-an"
+  },
+  {
+   "action": "Final amendment; final order.",
+   "agencies": [
+    "fda"
+   ],
+   "category": "rulemaking",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-09-10",
+   "date_basis": "published",
+   "doc_type": "Rule",
+   "docket_ids": [
+    "Docket No. FDA-2026-N-9905"
+   ],
+   "effective_on": "2026-09-10",
+   "eo_number": null,
+   "first_seen": "2026-11-26T01:56:14+00:00",
+   "flags": [],
+   "fr_agency_slugs": [
+    "health-and-human-services-department",
+    "food-and-drug-administration"
+   ],
+   "id": "fr:2026-18433",
+   "jurisdiction": "federal",
+   "outcome": "final",
+   "priority": 0,
+   "published": "2026-09-10",
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 2,
+      "why": "binding rule"
+     }
+    ],
+    "level": 1,
+    "points": 2
+   },
+   "severity": null,
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Final rule",
+   "subtype": "",
+   "summary": "The Food and Drug Administration (FDA) is classifying the mechanical deviation device for esophageal protection during cardiac ablation procedures into class II (special controls). The special controls that apply to the device type are identified in this order and will be part of the codified language for classification of the mechanical deviation device for esophageal protection during cardiac ablation procedures. We are taking this action because we have determined that classifying the device into class II will provide a reasonable assurance of the safety and effectiveness of the device. We believe this action will also enhance patients' access to beneficial innovative devices, in part by…",
+   "title": "Medical Devices; Cardiovascular Devices; Classification of the Mechanical Deviation Device for Esophageal Protection During Cardiac Ablation Procedures",
+   "url": "https://www.federalregister.gov/documents/2026/09/10/2026-18433/medical-devices-cardiovascular-devices-classification-of-the-mechanical-deviation-device-for"
+  },
+  {
+   "action": "Final amendment; final order.",
+   "agencies": [
+    "fda"
+   ],
+   "category": "rulemaking",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-09-10",
+   "date_basis": "published",
+   "doc_type": "Rule",
+   "docket_ids": [
+    "Docket No. FDA-2026-N-9910"
+   ],
+   "effective_on": "2026-09-10",
+   "eo_number": null,
+   "first_seen": "2026-11-26T01:56:14+00:00",
+   "flags": [],
+   "fr_agency_slugs": [
+    "health-and-human-services-department",
+    "food-and-drug-administration"
+   ],
+   "id": "fr:2026-18432",
+   "jurisdiction": "federal",
+   "outcome": "final",
+   "priority": 0,
+   "published": "2026-09-10",
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 2,
+      "why": "binding rule"
+     }
+    ],
+    "level": 1,
+    "points": 2
+   },
+   "severity": null,
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Final rule",
+   "subtype": "",
+   "summary": "The Food and Drug Administration (FDA) is classifying the temperature regulation device for esophageal protection during cardiac ablation procedures into class II (special controls). The special controls that apply to the device type are identified in this order and will be part of the codified language for classification of the temperature regulation device for esophageal protection during cardiac ablation procedures. We are taking this action because we have determined that classifying the device into class II will provide a reasonable assurance of the safety and effectiveness of the device. We believe this action will also enhance patients' access to beneficial innovative devices, in…",
+   "title": "Medical Devices; Cardiovascular Devices; Classification of the Temperature Regulation Device for Esophageal Protection During Cardiac Ablation Procedures",
+   "url": "https://www.federalregister.gov/documents/2026/09/10/2026-18432/medical-devices-cardiovascular-devices-classification-of-the-temperature-regulation-device-for"
+  },
+  {
+   "action": "Final amendment; final order.",
+   "agencies": [
+    "fda"
+   ],
+   "category": "rulemaking",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-09-10",
+   "date_basis": "published",
+   "doc_type": "Rule",
+   "docket_ids": [
+    "Docket No. FDA-2026-N-9911"
+   ],
+   "effective_on": "2026-09-10",
+   "eo_number": null,
+   "first_seen": "2026-11-26T01:56:14+00:00",
+   "flags": [],
+   "fr_agency_slugs": [
+    "health-and-human-services-department",
+    "food-and-drug-administration"
+   ],
+   "id": "fr:2026-18430",
+   "jurisdiction": "federal",
+   "outcome": "final",
+   "priority": 0,
+   "published": "2026-09-10",
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 2,
+      "why": "binding rule"
+     }
+    ],
+    "level": 1,
+    "points": 2
+   },
+   "severity": null,
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Final rule",
+   "subtype": "",
+   "summary": "The Food and Drug Administration (FDA) is classifying the anti-tumor necrosis factor alpha monoclonal antibody test system for inflammatory bowel disease into class II (special controls). The special controls that apply to the device type are identified in this order and will be part of the codified language for classification of the anti-tumor necrosis factor alpha monoclonal antibody test system for inflammatory bowel disease. We are taking this action because we have determined that classifying the device into class II will provide a reasonable assurance of the safety and effectiveness of the device. We believe this action will also enhance patients' access to beneficial innovative…",
+   "title": "Medical Devices; Clinical Chemistry and Clinical Toxicology Devices; Classification of the Anti-Tumor Necrosis Factor Alpha Monoclonal Antibody Test System for Inflammatory Bowel Disease",
+   "url": "https://www.federalregister.gov/documents/2026/09/10/2026-18430/medical-devices-clinical-chemistry-and-clinical-toxicology-devices-classification-of-the-anti-tumor"
+  },
+  {
+   "action": "Final amendment; final order.",
+   "agencies": [
+    "fda"
+   ],
+   "category": "rulemaking",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-09-10",
+   "date_basis": "published",
+   "doc_type": "Rule",
+   "docket_ids": [
+    "Docket No. FDA-2026-N-9902"
+   ],
+   "effective_on": "2026-09-10",
+   "eo_number": null,
+   "first_seen": "2026-11-26T01:56:14+00:00",
+   "flags": [],
+   "fr_agency_slugs": [
+    "health-and-human-services-department",
+    "food-and-drug-administration"
+   ],
+   "id": "fr:2026-18429",
+   "jurisdiction": "federal",
+   "outcome": "final",
+   "priority": 0,
+   "published": "2026-09-10",
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 2,
+      "why": "binding rule"
+     }
+    ],
+    "level": 1,
+    "points": 2
+   },
+   "severity": null,
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Final rule",
+   "subtype": "",
+   "summary": "The Food and Drug Administration (FDA) is classifying the cooperative powered surgical assist device for ear, nose, and throat (ENT) surgery into class II (special controls). The special controls that apply to the device type are identified in this order and will be part of the codified language for classification of the cooperative powered surgical assist device for ENT surgery. We are taking this action because we have determined that classifying the device into class II will provide a reasonable assurance of the safety and effectiveness of the device. We believe this action will also enhance patients' access to beneficial innovative devices, in part by reducing regulatory burdens.",
+   "title": "Medical Devices; Ear, Nose, and Throat Devices; Classification of the Cooperative Powered Surgical Assist Device for ENT Surgery",
+   "url": "https://www.federalregister.gov/documents/2026/09/10/2026-18429/medical-devices-ear-nose-and-throat-devices-classification-of-the-cooperative-powered-surgical"
+  },
+  {
+   "action": "Final amendment; final order.",
+   "agencies": [
+    "fda"
+   ],
+   "category": "rulemaking",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-09-10",
+   "date_basis": "published",
+   "doc_type": "Rule",
+   "docket_ids": [
+    "Docket No. FDA-2026-N-9908"
+   ],
+   "effective_on": "2026-09-10",
+   "eo_number": null,
+   "first_seen": "2026-11-26T01:56:14+00:00",
+   "flags": [],
+   "fr_agency_slugs": [
+    "health-and-human-services-department",
+    "food-and-drug-administration"
+   ],
+   "id": "fr:2026-18428",
+   "jurisdiction": "federal",
+   "outcome": "final",
+   "priority": 0,
+   "published": "2026-09-10",
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 2,
+      "why": "binding rule"
+     }
+    ],
+    "level": 1,
+    "points": 2
+   },
+   "severity": null,
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Final rule",
+   "subtype": "",
+   "summary": "The Food and Drug Administration (FDA) is classifying the implanted tibial electrical urinary continence device into class II (special controls). The special controls that apply to the device type are identified in this order and will be part of the codified language for classification of the implanted tibial electrical urinary continence device. We are taking this action because we have determined that classifying the device into class II will provide a reasonable assurance of the safety and effectiveness of the device. We believe this action will also enhance patients' access to beneficial innovative devices, in part by reducing regulatory burdens.",
+   "title": "Medical Devices; Gastroenterology-Urology Devices; Classification of the Implanted Tibial Electrical Urinary Continence Device",
+   "url": "https://www.federalregister.gov/documents/2026/09/10/2026-18428/medical-devices-gastroenterology-urology-devices-classification-of-the-implanted-tibial-electrical"
+  },
+  {
+   "action": "Final amendment; final order.",
+   "agencies": [
+    "fda"
+   ],
+   "category": "rulemaking",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-09-10",
+   "date_basis": "published",
+   "doc_type": "Rule",
+   "docket_ids": [
+    "Docket No. FDA-2026-N-9909"
+   ],
+   "effective_on": "2026-09-10",
+   "eo_number": null,
+   "first_seen": "2026-11-26T01:56:14+00:00",
+   "flags": [],
+   "fr_agency_slugs": [
+    "health-and-human-services-department",
+    "food-and-drug-administration"
+   ],
+   "id": "fr:2026-18426",
+   "jurisdiction": "federal",
+   "outcome": "final",
+   "priority": 0,
+   "published": "2026-09-10",
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 2,
+      "why": "binding rule"
+     }
+    ],
+    "level": 1,
+    "points": 2
+   },
+   "severity": null,
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Final rule",
+   "subtype": "",
+   "summary": "The Food and Drug Administration (FDA) is classifying the whole room microbial reduction device into class II (special controls). The special controls that apply to the device type are identified in this order and will be part of the codified language for classification of the whole room microbial reduction device. We are taking this action because we have determined that classifying the device into class II will provide a reasonable assurance of the safety and effectiveness of the device. We believe this action will also enhance patients' access to beneficial innovative devices, in part by reducing regulatory burdens.",
+   "title": "Medical Devices; General Hospital and Personal Use Devices; Classification of the Whole Room Microbial Reduction Device",
+   "url": "https://www.federalregister.gov/documents/2026/09/10/2026-18426/medical-devices-general-hospital-and-personal-use-devices-classification-of-the-whole-room-microbial"
+  },
+  {
+   "action": "Final amendment; final order.",
+   "agencies": [
+    "fda"
+   ],
+   "category": "rulemaking",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-09-10",
+   "date_basis": "published",
+   "doc_type": "Rule",
+   "docket_ids": [
+    "Docket No. FDA-2026-N-9904"
+   ],
+   "effective_on": "2026-09-10",
+   "eo_number": null,
+   "first_seen": "2026-11-26T01:56:14+00:00",
+   "flags": [],
+   "fr_agency_slugs": [
+    "health-and-human-services-department",
+    "food-and-drug-administration"
+   ],
+   "id": "fr:2026-18427",
+   "jurisdiction": "federal",
+   "outcome": "final",
+   "priority": 0,
+   "published": "2026-09-10",
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 2,
+      "why": "binding rule"
+     }
+    ],
+    "level": 1,
+    "points": 2
+   },
+   "severity": null,
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Final rule",
+   "subtype": "",
+   "summary": "The Food and Drug Administration (FDA) is classifying the vaginal hydrogel packing system into class II (special controls). The special controls that apply to the device type are identified in this order and will be part of the codified language for classification of the vaginal hydrogel packing system. We are taking this action because we have determined that classifying the device into class II will provide a reasonable assurance of the safety and effectiveness of the device. We believe this action will also enhance patients' access to beneficial innovative devices, in part by reducing regulatory burdens.",
+   "title": "Medical Devices; Radiology Devices; Classification of the Vaginal Hydrogel Packing System",
+   "url": "https://www.federalregister.gov/documents/2026/09/10/2026-18427/medical-devices-radiology-devices-classification-of-the-vaginal-hydrogel-packing-system"
+  },
+  {
+   "action": "Notice; announcement of public forum.",
+   "agencies": [
+    "hhs"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-09-10",
+   "date_basis": "published",
+   "doc_type": "Notice",
+   "docket_ids": [],
+   "effective_on": null,
+   "eo_number": null,
+   "first_seen": "2026-11-26T01:56:14+00:00",
+   "flags": [],
+   "fr_agency_slugs": [
+    "health-and-human-services-department",
+    "national-institutes-of-health"
+   ],
+   "id": "fr:2026-18440",
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 0,
+   "published": "2026-09-10",
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
+   "severity": null,
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Other notice",
+   "subtype": "",
+   "summary": "The National Center for Advancing Translational Sciences (NCATS) will host a public online roundtable to share the latest updates on how NCATS is advancing translational science research and provide an opportunity for an interactive discussion with NCATS director Dr. Joni Rutter.",
+   "title": "National Center for Advancing Translational Sciences; Notice of Public Online Roundtable",
+   "url": "https://www.federalregister.gov/documents/2026/09/10/2026-18440/national-center-for-advancing-translational-sciences-notice-of-public-online-roundtable"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "ferc"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-09-10",
+   "date_basis": "published",
+   "doc_type": "Notice",
+   "docket_ids": [
+    "Docket No. CP26-46-000"
+   ],
+   "effective_on": null,
+   "eo_number": null,
+   "first_seen": "2026-11-26T01:56:14+00:00",
+   "flags": [],
+   "fr_agency_slugs": [
+    "energy-department",
+    "federal-energy-regulatory-commission"
+   ],
+   "id": "fr:2026-18454",
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 0,
+   "published": "2026-09-10",
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
+   "severity": null,
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Other notice",
+   "subtype": "",
+   "summary": "",
+   "title": "Natural Gas Pipeline Company of America LLC; Notice of Availability of the Environmental Assessment for the Proposed Texas-Arkansas Power Project",
+   "url": "https://www.federalregister.gov/documents/2026/09/10/2026-18454/natural-gas-pipeline-company-of-america-llc-notice-of-availability-of-the-environmental-assessment"
+  },
+  {
+   "action": "Notice of supplemental funding.",
+   "agencies": [
+    "hhs"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-09-10",
+   "date_basis": "published",
+   "doc_type": "Notice",
+   "docket_ids": [],
+   "effective_on": null,
+   "eo_number": null,
+   "first_seen": "2026-11-26T01:56:14+00:00",
+   "flags": [],
+   "fr_agency_slugs": [
+    "health-and-human-services-department",
+    "health-resources-and-services-administration"
+   ],
+   "id": "fr:2026-18425",
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 0,
+   "published": "2026-09-10",
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
+   "severity": null,
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Other notice",
+   "subtype": "",
+   "summary": "HRSA is providing additional fiscal year 2026 funding under the Medicare Rural Hospital Flexibility (Flex) Program using the program's established funding methodology, including a baseline increase for all recipients and an additional adjustment for states with newly designated Critical Access Hospitals (CAHs). This funding will support state efforts to strengthen CAHs, improve quality and performance, and sustain access to essential rural health care services.",
+   "title": "Notice of Supplemental Funding, Medicare Rural Hospital Flexibility Program",
+   "url": "https://www.federalregister.gov/documents/2026/09/10/2026-18425/notice-of-supplemental-funding-medicare-rural-hospital-flexibility-program"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "president"
+   ],
+   "category": "presidential",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-09-04",
+   "date_basis": "signed",
+   "doc_type": "Presidential Document",
+   "docket_ids": [],
+   "effective_on": null,
+   "eo_number": "14424",
+   "first_seen": "2026-11-26T01:56:14+00:00",
+   "flags": [],
+   "fr_agency_slugs": [
+    "executive-office-of-the-president"
+   ],
+   "id": "fr:2026-18567",
+   "jurisdiction": "federal",
+   "outcome": "issued",
+   "priority": 0,
+   "published": "2026-09-10",
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 3,
+      "why": "presidential document"
+     }
+    ],
+    "level": 2,
+    "points": 3
+   },
+   "severity": null,
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Executive Order",
+   "subtype": "Executive Order",
+   "summary": "",
+   "title": "Promoting Fair Competition in Livestock Markets and Expanding Market Access for American Meat Producers",
+   "url": "https://www.federalregister.gov/documents/2026/09/10/2026-18567/promoting-fair-competition-in-livestock-markets-and-expanding-market-access-for-american-meat"
+  },
+  {
+   "action": "Request for public comments.",
+   "agencies": [
+    "dol"
+   ],
+   "category": "other",
+   "comments_close": "2026-11-09",
+   "corporation": null,
+   "date": "2026-09-10",
+   "date_basis": "published",
+   "doc_type": "Notice",
+   "docket_ids": [
+    "OMB Control No. 1230-0NEW"
+   ],
+   "effective_on": null,
+   "eo_number": null,
+   "first_seen": "2026-11-26T01:56:14+00:00",
+   "flags": [],
+   "fr_agency_slugs": [
+    "labor-department",
+    "disability-employment-policy-office"
+   ],
+   "id": "fr:2026-18502",
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 0,
+   "published": "2026-09-10",
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
+   "severity": null,
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Information collection, privacy, or paperwork notice",
+   "subtype": "",
+   "summary": "The Department of Labor, as part of its continuing effort to reduce paperwork and respondent burden, conducts a pre-clearance request for comment to provide the general public and Federal agencies with an opportunity to comment on proposed collections of information in accordance with the Paperwork Reduction Act of 1995. This request helps to ensure that: requested data can be provided in the desired format; reporting burden (time and financial resources) is minimized; collection instruments are clearly understood; and the impact of collection requirements on respondents can be properly assessed. Currently, the Office of Disability Employment Policy, Department of Labor, (ODEP) is…",
+   "title": "Proposed Information Collection; NEON Provider Organization",
+   "url": "https://www.federalregister.gov/documents/2026/09/10/2026-18502/proposed-information-collection-neon-provider-organization"
+  },
+  {
+   "action": "Request for public comments.",
+   "agencies": [
+    "dol"
+   ],
+   "category": "other",
+   "comments_close": "2026-11-09",
+   "corporation": null,
+   "date": "2026-09-10",
+   "date_basis": "published",
+   "doc_type": "Notice",
+   "docket_ids": [
+    "OMB Control No. 1240-0045"
+   ],
+   "effective_on": null,
+   "eo_number": null,
+   "first_seen": "2026-11-26T01:56:14+00:00",
+   "flags": [],
+   "fr_agency_slugs": [
+    "labor-department",
+    "workers-compensation-programs-office"
+   ],
+   "id": "fr:2026-18503",
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 0,
+   "published": "2026-09-10",
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
+   "severity": null,
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Information collection, privacy, or paperwork notice",
+   "subtype": "",
+   "summary": "The Department of Labor, as part of its continuing effort to reduce paperwork and respondent burden, conducts a pre-clearance request for comment to provide the general public and Federal agencies with an opportunity to comment on proposed collections of information in accordance with the Paperwork Reduction Act of 1995. This request helps to ensure that: requested data can be provided in the desired format; reporting burden (time and financial resources) is minimized; collection instruments are clearly understood; and the impact of collection requirements on respondents can be properly assessed. Currently, the Office of Workers' Compensation Programs (OWCP) is soliciting comments on the…",
+   "title": "Proposed Revision of Information Collection: Rehabilitation Plan and Award.",
+   "url": "https://www.federalregister.gov/documents/2026/09/10/2026-18503/proposed-revision-of-information-collection-rehabilitation-plan-and-award"
+  },
+  {
+   "action": "Appointment of members of the Performance Review Board.",
+   "agencies": [
+    "dol"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-09-10",
+   "date_basis": "published",
+   "doc_type": "Notice",
+   "docket_ids": [],
+   "effective_on": null,
+   "eo_number": null,
+   "first_seen": "2026-11-26T01:56:14+00:00",
+   "flags": [],
+   "fr_agency_slugs": [
+    "labor-department"
+   ],
+   "id": "fr:2026-18500",
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 0,
+   "published": "2026-09-10",
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
+   "severity": null,
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Other notice",
+   "subtype": "",
+   "summary": "Title 5 U.S.C. 4314(c)(4) provides that Notice of the Appointment of the individual to serve as a member of the Performance Review Board of the Senior Executive Service shall be published in the Federal Register.",
+   "title": "Senior Executive Service; Appointment of Members to the Performance Review Board",
+   "url": "https://www.federalregister.gov/documents/2026/09/10/2026-18500/senior-executive-service-appointment-of-members-to-the-performance-review-board"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "president"
+   ],
+   "category": "presidential",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-09-04",
+   "date_basis": "signed",
+   "doc_type": "Presidential Document",
+   "docket_ids": [],
+   "effective_on": null,
+   "eo_number": "14425",
+   "first_seen": "2026-11-26T01:56:14+00:00",
+   "flags": [],
+   "fr_agency_slugs": [
+    "executive-office-of-the-president"
+   ],
+   "id": "fr:2026-18571",
+   "jurisdiction": "federal",
+   "outcome": "issued",
+   "priority": 0,
+   "published": "2026-09-10",
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 3,
+      "why": "presidential document"
+     }
+    ],
+    "level": 2,
+    "points": 3
+   },
+   "severity": null,
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Executive Order",
+   "subtype": "Executive Order",
+   "summary": "",
+   "title": "Supporting America's Ranchers",
+   "url": "https://www.federalregister.gov/documents/2026/09/10/2026-18571/supporting-americas-ranchers"
+  },
+  {
+   "action": "Final rule.",
+   "agencies": [
+    "fcc"
+   ],
+   "category": "rulemaking",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-09-10",
+   "date_basis": "published",
+   "doc_type": "Rule",
+   "docket_ids": [
+    "CG Docket No. 03-123, GN Docket No. 25-133",
+    "FCC 26-56",
+    "FR ID 366314"
+   ],
+   "effective_on": "2026-10-13",
+   "eo_number": null,
+   "first_seen": "2026-11-26T01:56:14+00:00",
+   "flags": [],
+   "fr_agency_slugs": [
+    "federal-communications-commission"
+   ],
+   "id": "fr:2026-18478",
+   "jurisdiction": "federal",
+   "outcome": "final",
+   "priority": 0,
+   "published": "2026-09-10",
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 2,
+      "why": "binding rule"
+     }
+    ],
+    "level": 1,
+    "points": 2
+   },
+   "severity": null,
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Final rule",
+   "subtype": "",
+   "summary": "In this document, the Federal Communications Commission (Commission) amends its rules to eliminate the requirement that Text Telephone (TTY)-based Telecommunications Relay Services (TRS) be capable of communicating in the American Standard Code for Information Interchange (ASCII) format. By removing this outdated regulatory mandate, the Commission relieves TRS providers of the obligation to maintain costly and obsolete ASCII-compatible hardware and software systems. Eliminating this requirement will reduce inefficiencies, preserve the integrity of the TRS Fund, and allow providers to redirect resources toward modern relay technologies, all without adversely impacting functional equivalence…",
+   "title": "Telecommunications Relay Service ASCII Format Requirement",
+   "url": "https://www.federalregister.gov/documents/2026/09/10/2026-18478/telecommunications-relay-service-ascii-format-requirement"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "ferc"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-09-10",
+   "date_basis": "published",
+   "doc_type": "Notice",
+   "docket_ids": [
+    "Project No. 7274-035"
+   ],
+   "effective_on": null,
+   "eo_number": null,
+   "first_seen": "2026-11-26T01:56:14+00:00",
+   "flags": [],
+   "fr_agency_slugs": [
+    "energy-department",
+    "federal-energy-regulatory-commission"
+   ],
+   "id": "fr:2026-18457",
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 0,
+   "published": "2026-09-10",
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
+   "severity": null,
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Other notice",
+   "subtype": "",
+   "summary": "",
+   "title": "Town of Wells; Notice of Availability of Environmental Assessment",
+   "url": "https://www.federalregister.gov/documents/2026/09/10/2026-18457/town-of-wells-notice-of-availability-of-environmental-assessment"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "ferc"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-09-10",
+   "date_basis": "published",
+   "doc_type": "Notice",
+   "docket_ids": [
+    "Docket No. CP26-80-000"
+   ],
+   "effective_on": null,
+   "eo_number": null,
+   "first_seen": "2026-11-26T01:56:14+00:00",
+   "flags": [],
+   "fr_agency_slugs": [
+    "energy-department",
+    "federal-energy-regulatory-commission"
+   ],
+   "id": "fr:2026-18455",
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 0,
+   "published": "2026-09-10",
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
+   "seriousness": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
+   "severity": null,
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Other notice",
+   "subtype": "",
+   "summary": "",
+   "title": "Transwestern Pipeline Company, LLC; Notice of Availability of the Environmental Assessment for the Proposed Green Chile Project",
+   "url": "https://www.federalregister.gov/documents/2026/09/10/2026-18455/transwestern-pipeline-company-llc-notice-of-availability-of-the-environmental-assessment-for-the"
+  }
+ ]
+}
