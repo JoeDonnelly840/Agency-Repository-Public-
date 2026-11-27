@@ -2,135 +2,6 @@
  "date": "2026-11-25",
  "items": [
   {
-   "action": "Notification; extension of interim final rule--expiration date.",
-   "agencies": [
-    "hhs"
-   ],
-   "category": "rulemaking",
-   "comments_close": null,
-   "corporation": null,
-   "date": "2026-11-25",
-   "date_basis": "published",
-   "doc_type": "Rule",
-   "docket_ids": [],
-   "effective_on": null,
-   "eo_number": null,
-   "first_seen": "2026-11-25T13:44:30+00:00",
-   "flags": [
-    {
-     "authority": "mathews",
-     "code": "due_process_takings",
-     "elements_found": [
-      "deprivation",
-      "no_hearing"
-     ],
-     "elements_total": 3,
-     "full_text_elements": [
-      "deprivation"
-     ],
-     "group": "rights",
-     "level": 1,
-     "precedent": "analogy",
-     "structural": false,
-     "triggers": [
-      "forfeit",
-      "interim final rule"
-     ],
-     "weighed": []
-    },
-    {
-     "authority": "burger",
-     "code": "fourth_amendment",
-     "elements_found": [
-      "search"
-     ],
-     "elements_total": 2,
-     "full_text_elements": [
-      "search"
-     ],
-     "group": "rights",
-     "level": 0,
-     "precedent": "open",
-     "structural": false,
-     "triggers": [
-      "surveillance"
-     ],
-     "weighed": [
-      "closely_regulated"
-     ]
-    },
-    {
-     "authority": "smith",
-     "code": "free_exercise",
-     "elements_found": [
-      "religion",
-      "burden",
-      "not_neutral"
-     ],
-     "elements_total": 4,
-     "full_text_elements": [
-      "religion"
-     ],
-     "group": "rights",
-     "level": 0,
-     "precedent": "open",
-     "structural": false,
-     "triggers": [
-      "ministr"
-     ],
-     "weighed": []
-    }
-   ],
-   "fr_agency_slugs": [
-    "health-and-human-services-department"
-   ],
-   "ft": {
-    "read": "2026-11-27",
-    "terms": [
-     "good_cause"
-    ],
-    "v": 1
-   },
-   "id": "fr:2026-23990",
-   "impact": {
-    "breakdown": [
-     {
-      "marker": "Reach",
-      "points": 2,
-      "why": "binding rule"
-     }
-    ],
-    "level": 1,
-    "points": 2
-   },
-   "jurisdiction": "federal",
-   "outcome": "final",
-   "priority": 1,
-   "published": "2026-11-25",
-   "rating": {
-    "issues": 1,
-    "level": 1
-   },
-   "raw_text_url": "https://www.federalregister.gov/documents/full_text/text/2026/11/25/2026-23990.txt",
-   "rins": [
-    "0920-AA88"
-   ],
-   "routine": false,
-   "sanctions": [],
-   "significant": false,
-   "source": "federal_register",
-   "source_label": "Federal Register",
-   "statutes": [
-    "apa_good_cause",
-    "phsa361"
-   ],
-   "subcategory": "Final rule",
-   "subtype": "",
-   "summary": "The Centers for Disease Control and Prevention (CDC), in the Department of Health and Human Services (HHS), is extending the expiration date of the interim final rule published on May 27, 2026. This interim final rule removes an exemption for lawful permanent residents from application of regulations implementing section 362 of the Public Health Service (PHS) Act, which authorizes the Secretary, acting through the CDC Director or other delegate, to suspend the introduction of persons from designated countries or places, if required, in the interest of public health.",
-   "title": "Control of Communicable Diseases; Foreign Quarantine",
-   "url": "https://www.federalregister.gov/documents/2026/11/25/2026-23990/control-of-communicable-diseases-foreign-quarantine"
-  },
-  {
    "action": "",
    "agencies": [
     "ferc"
@@ -1641,6 +1512,109 @@
    "url": "https://www.federalregister.gov/documents/2026/11/25/2026-23995/compounding-animal-drugs-from-bulk-drug-substances-compounding-under-cgmp-in-federally-registered"
   },
   {
+   "action": "Notification; extension of interim final rule--expiration date.",
+   "agencies": [
+    "hhs"
+   ],
+   "category": "rulemaking",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-25",
+   "date_basis": "published",
+   "doc_type": "Rule",
+   "docket_ids": [],
+   "effective_on": null,
+   "eo_number": null,
+   "first_seen": "2026-11-25T13:44:30+00:00",
+   "flags": [
+    {
+     "authority": "mathews",
+     "code": "due_process_takings",
+     "elements_found": [
+      "deprivation"
+     ],
+     "elements_total": 4,
+     "full_text_elements": [
+      "deprivation"
+     ],
+     "group": "rights",
+     "level": 0,
+     "precedent": "open",
+     "structural": false,
+     "triggers": [
+      "forfeit"
+     ],
+     "weighed": []
+    },
+    {
+     "authority": "burger",
+     "code": "fourth_amendment",
+     "elements_found": [
+      "search"
+     ],
+     "elements_total": 2,
+     "full_text_elements": [
+      "search"
+     ],
+     "group": "rights",
+     "level": 0,
+     "precedent": "open",
+     "structural": false,
+     "triggers": [
+      "surveillance"
+     ],
+     "weighed": [
+      "closely_regulated"
+     ]
+    }
+   ],
+   "fr_agency_slugs": [
+    "health-and-human-services-department"
+   ],
+   "ft": {
+    "read": "2026-11-27",
+    "terms": [
+     "good_cause"
+    ],
+    "v": 2
+   },
+   "id": "fr:2026-23990",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 2,
+      "why": "binding rule"
+     }
+    ],
+    "level": 1,
+    "points": 2
+   },
+   "jurisdiction": "federal",
+   "outcome": "final",
+   "priority": 0,
+   "published": "2026-11-25",
+   "rating": null,
+   "raw_text_url": "https://www.federalregister.gov/documents/full_text/text/2026/11/25/2026-23990.txt",
+   "rins": [
+    "0920-AA88"
+   ],
+   "routine": false,
+   "sanctions": [],
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "statutes": [
+    "apa_good_cause",
+    "phsa361"
+   ],
+   "subcategory": "Final rule",
+   "subtype": "",
+   "summary": "The Centers for Disease Control and Prevention (CDC), in the Department of Health and Human Services (HHS), is extending the expiration date of the interim final rule published on May 27, 2026. This interim final rule removes an exemption for lawful permanent residents from application of regulations implementing section 362 of the Public Health Service (PHS) Act, which authorizes the Secretary, acting through the CDC Director or other delegate, to suspend the introduction of persons from designated countries or places, if required, in the interest of public health.",
+   "title": "Control of Communicable Diseases; Foreign Quarantine",
+   "url": "https://www.federalregister.gov/documents/2026/11/25/2026-23990/control-of-communicable-diseases-foreign-quarantine"
+  },
+  {
    "action": "",
    "agencies": [
     "fda"
@@ -2915,7 +2889,7 @@
    ],
    "ft": {
     "read": "2026-11-27",
-    "v": 1
+    "v": 2
    },
    "id": "fr:2026-24113",
    "impact": {
@@ -3220,7 +3194,7 @@
    ],
    "ft": {
     "read": "2026-11-27",
-    "v": 1
+    "v": 2
    },
    "id": "fr:2026-24114",
    "impact": {

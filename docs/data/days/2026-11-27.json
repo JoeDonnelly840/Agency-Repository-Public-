@@ -48,6 +48,98 @@
    "withdrawn": false
   },
   {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-27",
+   "date_basis": "posted",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-P-15093"
+   ],
+   "first_seen": "2026-11-27T21:09:34+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-P-15093-0002",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 0,
+   "published": "2026-11-27",
+   "rating": null,
+   "regs_agency_id": "FDA",
+   "routine": false,
+   "sanctions": [],
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Citizen petition or FDA response",
+   "subtype": "Acknowledgement Letter/Receipt",
+   "summary": "",
+   "title": "Acknowledgement Letter from FDA DOD to Hyman, Phelps & McNamara, P.C.",
+   "url": "https://www.regulations.gov/document/FDA-2026-P-15093-0002",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-27",
+   "date_basis": "posted",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-P-15092"
+   ],
+   "first_seen": "2026-11-27T21:09:34+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-P-15092-0002",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 0,
+   "published": "2026-11-27",
+   "rating": null,
+   "regs_agency_id": "FDA",
+   "routine": false,
+   "sanctions": [],
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Citizen petition or FDA response",
+   "subtype": "Acknowledgement Letter/Receipt",
+   "summary": "",
+   "title": "Acknowledgement Letter from FDA DOD to The Quinism Foundation",
+   "url": "https://www.regulations.gov/document/FDA-2026-P-15092-0002",
+   "withdrawn": false
+  },
+  {
    "action": "Notice.",
    "agencies": [
     "hhs"
@@ -424,24 +516,7 @@
    "effective_on": null,
    "eo_number": null,
    "first_seen": "2026-11-27T13:39:44+00:00",
-   "flags": [
-    {
-     "authority": "burger",
-     "code": "fourth_amendment",
-     "elements_found": [
-      "search"
-     ],
-     "elements_total": 2,
-     "group": "rights",
-     "level": 0,
-     "precedent": "open",
-     "structural": false,
-     "triggers": [
-      "inspection"
-     ],
-     "weighed": []
-    }
-   ],
+   "flags": [],
    "fr_agency_slugs": [
     "environmental-protection-agency"
    ],
@@ -586,6 +661,62 @@
   {
    "action": "",
    "agencies": [
+    "sec"
+   ],
+   "category": "adjudication",
+   "corporation": null,
+   "date": "2026-11-27",
+   "date_basis": "released",
+   "doc_type": "In-house administrative proceeding",
+   "first_seen": "2026-11-27T21:09:34+00:00",
+   "flags": [
+    {
+     "authority": "atlas_roofing",
+     "code": "agency_adjudication",
+     "elements_found": [
+      "in_house"
+     ],
+     "elements_total": 3,
+     "group": "structural",
+     "level": 0,
+     "precedent": "open",
+     "structural": true,
+     "triggers": [
+      "SEC in-house administrative proceeding"
+     ],
+     "weighed": []
+    }
+   ],
+   "id": "sec_admin:a500e0f375213d2d",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
+   "jurisdiction": "federal",
+   "outcome": "initiated",
+   "priority": 0,
+   "published": "2026-11-27",
+   "rating": null,
+   "routine": false,
+   "sanctions": [],
+   "source": "sec_admin",
+   "source_label": "SEC administrative proceedings (in-house)",
+   "subcategory": "In-house administrative proceeding",
+   "subtype": "",
+   "summary": "",
+   "title": "Cantella & Co., Inc.",
+   "url": "https://www.sec.gov/files/litigation/admin/2026/34-106997.pdf"
+  },
+  {
+   "action": "",
+   "agencies": [
     "hhs"
    ],
    "category": "other",
@@ -677,6 +808,98 @@
    "summary": "",
    "title": "Citizen Petition from Center for Biological Diversity and Food & Water Watch",
    "url": "https://www.regulations.gov/document/FDA-2026-P-14846-0001",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-27",
+   "date_basis": "posted",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-P-15093"
+   ],
+   "first_seen": "2026-11-27T21:09:34+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-P-15093-0001",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 0,
+   "published": "2026-11-27",
+   "rating": null,
+   "regs_agency_id": "FDA",
+   "routine": false,
+   "sanctions": [],
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Citizen petition or FDA response",
+   "subtype": "Citizen Petition",
+   "summary": "",
+   "title": "Citizen Petition from Hyman, Phelps & McNamara, P.C.",
+   "url": "https://www.regulations.gov/document/FDA-2026-P-15093-0001",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-27",
+   "date_basis": "posted",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-P-15092"
+   ],
+   "first_seen": "2026-11-27T21:09:34+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-P-15092-0001",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 0,
+   "published": "2026-11-27",
+   "rating": null,
+   "regs_agency_id": "FDA",
+   "routine": false,
+   "sanctions": [],
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Citizen petition or FDA response",
+   "subtype": "Citizen Petition",
+   "summary": "",
+   "title": "Citizen Petition from The Quinism Foundation",
+   "url": "https://www.regulations.gov/document/FDA-2026-P-15092-0001",
    "withdrawn": false
   },
   {
@@ -782,6 +1005,1006 @@
   {
    "action": "",
    "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-27",
+   "date_basis": "posted",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-H-14700"
+   ],
+   "first_seen": "2026-11-27T21:09:34+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-H-14700-0001",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 3,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 2,
+    "points": 4
+   },
+   "jurisdiction": "federal",
+   "outcome": "initiated",
+   "priority": 0,
+   "published": "2026-11-27",
+   "rating": null,
+   "regs_agency_id": "FDA",
+   "routine": false,
+   "sanctions": [
+    "civil_penalty"
+   ],
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Civil money penalty complaint (FDA hearing docket, usually a tobacco retailer)",
+   "subtype": "Complaint",
+   "summary": "",
+   "title": "Complaint",
+   "url": "https://www.regulations.gov/document/FDA-2026-H-14700-0001",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-27",
+   "date_basis": "posted",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-R-14755"
+   ],
+   "first_seen": "2026-11-27T21:09:34+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-R-14755-0001",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
+   "jurisdiction": "federal",
+   "outcome": "initiated",
+   "priority": 0,
+   "published": "2026-11-27",
+   "rating": null,
+   "regs_agency_id": "FDA",
+   "routine": false,
+   "sanctions": [],
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Enforcement notice",
+   "subtype": "Complaint",
+   "summary": "",
+   "title": "Complaint",
+   "url": "https://www.regulations.gov/document/FDA-2026-R-14755-0001",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-27",
+   "date_basis": "posted",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-H-14698"
+   ],
+   "first_seen": "2026-11-27T21:09:34+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-H-14698-0001",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 3,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 2,
+    "points": 4
+   },
+   "jurisdiction": "federal",
+   "outcome": "initiated",
+   "priority": 0,
+   "published": "2026-11-27",
+   "rating": null,
+   "regs_agency_id": "FDA",
+   "routine": false,
+   "sanctions": [
+    "civil_penalty"
+   ],
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Civil money penalty complaint (FDA hearing docket, usually a tobacco retailer)",
+   "subtype": "Complaint",
+   "summary": "",
+   "title": "Complaint",
+   "url": "https://www.regulations.gov/document/FDA-2026-H-14698-0001",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-27",
+   "date_basis": "posted",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-H-14324"
+   ],
+   "first_seen": "2026-11-27T21:09:34+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-H-14324-0001",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 3,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 2,
+    "points": 4
+   },
+   "jurisdiction": "federal",
+   "outcome": "initiated",
+   "priority": 0,
+   "published": "2026-11-27",
+   "rating": null,
+   "regs_agency_id": "FDA",
+   "routine": false,
+   "sanctions": [
+    "civil_penalty"
+   ],
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Civil money penalty complaint (FDA hearing docket, usually a tobacco retailer)",
+   "subtype": "Complaint",
+   "summary": "",
+   "title": "Complaint",
+   "url": "https://www.regulations.gov/document/FDA-2026-H-14324-0001",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-27",
+   "date_basis": "posted",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-H-14753"
+   ],
+   "first_seen": "2026-11-27T21:09:34+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-H-14753-0001",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 3,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 2,
+    "points": 4
+   },
+   "jurisdiction": "federal",
+   "outcome": "initiated",
+   "priority": 0,
+   "published": "2026-11-27",
+   "rating": null,
+   "regs_agency_id": "FDA",
+   "routine": false,
+   "sanctions": [
+    "civil_penalty"
+   ],
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Civil money penalty complaint (FDA hearing docket, usually a tobacco retailer)",
+   "subtype": "Complaint",
+   "summary": "",
+   "title": "Complaint",
+   "url": "https://www.regulations.gov/document/FDA-2026-H-14753-0001",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-27",
+   "date_basis": "posted",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-H-14593"
+   ],
+   "first_seen": "2026-11-27T21:09:34+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-H-14593-0001",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 3,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 2,
+    "points": 4
+   },
+   "jurisdiction": "federal",
+   "outcome": "initiated",
+   "priority": 0,
+   "published": "2026-11-27",
+   "rating": null,
+   "regs_agency_id": "FDA",
+   "routine": false,
+   "sanctions": [
+    "civil_penalty"
+   ],
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Civil money penalty complaint (FDA hearing docket, usually a tobacco retailer)",
+   "subtype": "Complaint",
+   "summary": "",
+   "title": "Complaint",
+   "url": "https://www.regulations.gov/document/FDA-2026-H-14593-0001",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-27",
+   "date_basis": "posted",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-H-14721"
+   ],
+   "first_seen": "2026-11-27T21:09:34+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-H-14721-0001",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 3,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 2,
+    "points": 4
+   },
+   "jurisdiction": "federal",
+   "outcome": "initiated",
+   "priority": 0,
+   "published": "2026-11-27",
+   "rating": null,
+   "regs_agency_id": "FDA",
+   "routine": false,
+   "sanctions": [
+    "civil_penalty"
+   ],
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Civil money penalty complaint (FDA hearing docket, usually a tobacco retailer)",
+   "subtype": "Complaint",
+   "summary": "",
+   "title": "Complaint",
+   "url": "https://www.regulations.gov/document/FDA-2026-H-14721-0001",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-27",
+   "date_basis": "posted",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-H-14699"
+   ],
+   "first_seen": "2026-11-27T21:09:34+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-H-14699-0001",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 3,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 2,
+    "points": 4
+   },
+   "jurisdiction": "federal",
+   "outcome": "initiated",
+   "priority": 0,
+   "published": "2026-11-27",
+   "rating": null,
+   "regs_agency_id": "FDA",
+   "routine": false,
+   "sanctions": [
+    "civil_penalty"
+   ],
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Civil money penalty complaint (FDA hearing docket, usually a tobacco retailer)",
+   "subtype": "Complaint",
+   "summary": "",
+   "title": "Complaint",
+   "url": "https://www.regulations.gov/document/FDA-2026-H-14699-0001",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-27",
+   "date_basis": "posted",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-H-14759"
+   ],
+   "first_seen": "2026-11-27T21:09:34+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-H-14759-0001",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 3,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 2,
+    "points": 4
+   },
+   "jurisdiction": "federal",
+   "outcome": "initiated",
+   "priority": 0,
+   "published": "2026-11-27",
+   "rating": null,
+   "regs_agency_id": "FDA",
+   "routine": false,
+   "sanctions": [
+    "civil_penalty"
+   ],
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Civil money penalty complaint (FDA hearing docket, usually a tobacco retailer)",
+   "subtype": "Complaint",
+   "summary": "",
+   "title": "Complaint",
+   "url": "https://www.regulations.gov/document/FDA-2026-H-14759-0001",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-27",
+   "date_basis": "posted",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-H-14720"
+   ],
+   "first_seen": "2026-11-27T21:09:34+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-H-14720-0001",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 3,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 2,
+    "points": 4
+   },
+   "jurisdiction": "federal",
+   "outcome": "initiated",
+   "priority": 0,
+   "published": "2026-11-27",
+   "rating": null,
+   "regs_agency_id": "FDA",
+   "routine": false,
+   "sanctions": [
+    "civil_penalty"
+   ],
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Civil money penalty complaint (FDA hearing docket, usually a tobacco retailer)",
+   "subtype": "Complaint",
+   "summary": "",
+   "title": "Complaint",
+   "url": "https://www.regulations.gov/document/FDA-2026-H-14720-0001",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-27",
+   "date_basis": "posted",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-H-14595"
+   ],
+   "first_seen": "2026-11-27T21:09:34+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-H-14595-0001",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 3,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 2,
+    "points": 4
+   },
+   "jurisdiction": "federal",
+   "outcome": "initiated",
+   "priority": 0,
+   "published": "2026-11-27",
+   "rating": null,
+   "regs_agency_id": "FDA",
+   "routine": false,
+   "sanctions": [
+    "civil_penalty"
+   ],
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Civil money penalty complaint (FDA hearing docket, usually a tobacco retailer)",
+   "subtype": "Complaint",
+   "summary": "",
+   "title": "Complaint",
+   "url": "https://www.regulations.gov/document/FDA-2026-H-14595-0001",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-27",
+   "date_basis": "posted",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-H-14594"
+   ],
+   "first_seen": "2026-11-27T21:09:34+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-H-14594-0001",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 3,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 2,
+    "points": 4
+   },
+   "jurisdiction": "federal",
+   "outcome": "initiated",
+   "priority": 0,
+   "published": "2026-11-27",
+   "rating": null,
+   "regs_agency_id": "FDA",
+   "routine": false,
+   "sanctions": [
+    "civil_penalty"
+   ],
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Civil money penalty complaint (FDA hearing docket, usually a tobacco retailer)",
+   "subtype": "Complaint",
+   "summary": "",
+   "title": "Complaint",
+   "url": "https://www.regulations.gov/document/FDA-2026-H-14594-0001",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-27",
+   "date_basis": "posted",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-H-14596"
+   ],
+   "first_seen": "2026-11-27T21:09:34+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-H-14596-0001",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 3,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 2,
+    "points": 4
+   },
+   "jurisdiction": "federal",
+   "outcome": "initiated",
+   "priority": 0,
+   "published": "2026-11-27",
+   "rating": null,
+   "regs_agency_id": "FDA",
+   "routine": false,
+   "sanctions": [
+    "civil_penalty"
+   ],
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Civil money penalty complaint (FDA hearing docket, usually a tobacco retailer)",
+   "subtype": "Complaint",
+   "summary": "",
+   "title": "Complaint",
+   "url": "https://www.regulations.gov/document/FDA-2026-H-14596-0001",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-27",
+   "date_basis": "posted",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-H-14760"
+   ],
+   "first_seen": "2026-11-27T21:09:34+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-H-14760-0001",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 3,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 2,
+    "points": 4
+   },
+   "jurisdiction": "federal",
+   "outcome": "initiated",
+   "priority": 0,
+   "published": "2026-11-27",
+   "rating": null,
+   "regs_agency_id": "FDA",
+   "routine": false,
+   "sanctions": [
+    "civil_penalty"
+   ],
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Civil money penalty complaint (FDA hearing docket, usually a tobacco retailer)",
+   "subtype": "Complaint",
+   "summary": "",
+   "title": "Complaint",
+   "url": "https://www.regulations.gov/document/FDA-2026-H-14760-0001",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-27",
+   "date_basis": "posted",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-H-14697"
+   ],
+   "first_seen": "2026-11-27T21:09:34+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-H-14697-0001",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 3,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 2,
+    "points": 4
+   },
+   "jurisdiction": "federal",
+   "outcome": "initiated",
+   "priority": 0,
+   "published": "2026-11-27",
+   "rating": null,
+   "regs_agency_id": "FDA",
+   "routine": false,
+   "sanctions": [
+    "civil_penalty"
+   ],
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Civil money penalty complaint (FDA hearing docket, usually a tobacco retailer)",
+   "subtype": "Complaint",
+   "summary": "",
+   "title": "Complaint",
+   "url": "https://www.regulations.gov/document/FDA-2026-H-14697-0001",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-27",
+   "date_basis": "posted",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-H-14701"
+   ],
+   "first_seen": "2026-11-27T21:09:34+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-H-14701-0001",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 3,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 2,
+    "points": 4
+   },
+   "jurisdiction": "federal",
+   "outcome": "initiated",
+   "priority": 0,
+   "published": "2026-11-27",
+   "rating": null,
+   "regs_agency_id": "FDA",
+   "routine": false,
+   "sanctions": [
+    "civil_penalty"
+   ],
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Civil money penalty complaint (FDA hearing docket, usually a tobacco retailer)",
+   "subtype": "Complaint",
+   "summary": "",
+   "title": "Complaint",
+   "url": "https://www.regulations.gov/document/FDA-2026-H-14701-0001",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-27",
+   "date_basis": "posted",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-H-14758"
+   ],
+   "first_seen": "2026-11-27T21:09:34+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-H-14758-0001",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 3,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 2,
+    "points": 4
+   },
+   "jurisdiction": "federal",
+   "outcome": "initiated",
+   "priority": 0,
+   "published": "2026-11-27",
+   "rating": null,
+   "regs_agency_id": "FDA",
+   "routine": false,
+   "sanctions": [
+    "civil_penalty"
+   ],
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Civil money penalty complaint (FDA hearing docket, usually a tobacco retailer)",
+   "subtype": "Complaint",
+   "summary": "",
+   "title": "Complaint",
+   "url": "https://www.regulations.gov/document/FDA-2026-H-14758-0001",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-27",
+   "date_basis": "posted",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-H-14719"
+   ],
+   "first_seen": "2026-11-27T21:09:34+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-H-14719-0001",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 3,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 2,
+    "points": 4
+   },
+   "jurisdiction": "federal",
+   "outcome": "initiated",
+   "priority": 0,
+   "published": "2026-11-27",
+   "rating": null,
+   "regs_agency_id": "FDA",
+   "routine": false,
+   "sanctions": [
+    "civil_penalty"
+   ],
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Civil money penalty complaint (FDA hearing docket, usually a tobacco retailer)",
+   "subtype": "Complaint",
+   "summary": "",
+   "title": "Complaint",
+   "url": "https://www.regulations.gov/document/FDA-2026-H-14719-0001",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-27",
+   "date_basis": "posted",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-H-14756"
+   ],
+   "first_seen": "2026-11-27T21:09:34+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-H-14756-0001",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 3,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 2,
+    "points": 4
+   },
+   "jurisdiction": "federal",
+   "outcome": "initiated",
+   "priority": 0,
+   "published": "2026-11-27",
+   "rating": null,
+   "regs_agency_id": "FDA",
+   "routine": false,
+   "sanctions": [
+    "civil_penalty"
+   ],
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Civil money penalty complaint (FDA hearing docket, usually a tobacco retailer)",
+   "subtype": "Complaint",
+   "summary": "",
+   "title": "Complaint",
+   "url": "https://www.regulations.gov/document/FDA-2026-H-14756-0001",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
     "epa"
    ],
    "category": "other",
@@ -851,7 +2074,7 @@
    ],
    "ft": {
     "read": "2026-11-27",
-    "v": 1
+    "v": 2
    },
    "id": "fr:2026-24236",
    "impact": {
@@ -882,6 +2105,52 @@
    "summary": "",
    "title": "Expeditious Enforcement of Capital Sentences and the Pursuit of Justice for Victims of Heinous Crimes",
    "url": "https://www.federalregister.gov/documents/2026/11/27/2026-24236/expeditious-enforcement-of-capital-sentences-and-the-pursuit-of-justice-for-victims-of-heinous"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "epa"
+   ],
+   "category": "rulemaking",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-27",
+   "date_basis": "posted",
+   "doc_type": "Rule",
+   "docket_ids": [
+    "EPA-HQ-OW-2000-10693"
+   ],
+   "first_seen": "2026-11-27T21:09:34+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:EPA-HQ-OW-2000-10693-0003",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 2,
+      "why": "binding rule"
+     }
+    ],
+    "level": 1,
+    "points": 2
+   },
+   "jurisdiction": "federal",
+   "outcome": "final",
+   "priority": 0,
+   "published": "2026-11-27",
+   "rating": null,
+   "regs_agency_id": "EPA",
+   "routine": false,
+   "sanctions": [],
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Final rule",
+   "subtype": "Final Rule",
+   "summary": "",
+   "title": "Federal Register of August 19, 1998, [63 FR 44512] [FRL-6145-3]",
+   "url": "https://www.regulations.gov/document/EPA-HQ-OW-2000-10693-0003",
+   "withdrawn": false
   },
   {
    "action": "Notice of availability; extension of comment period.",
@@ -934,6 +2203,52 @@
    "summary": "The Food and Drug Administration (FDA or the Agency) is extending the comment period for the draft guidance for industry titled \"Individualized Human Genome Editing Products: Considerations for BLA Submission and Postapproval Management\" that appeared in the Federal Register of October 28, 2026. In the notice of availability for the draft guidance, FDA requested comments on the draft guidance. The Agency is taking this action in response to requests for an extension to allow interested persons additional time to submit comments.",
    "title": "Individualized Human Genome Editing Products: Considerations for BLA Submission and Postapproval Management; Draft Guidance for Industry; Extension of Comment Period",
    "url": "https://www.federalregister.gov/documents/2026/11/27/2026-24021/individualized-human-genome-editing-products-considerations-for-bla-submission-and-postapproval"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-27",
+   "date_basis": "posted",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-P-6256"
+   ],
+   "first_seen": "2026-11-27T21:09:34+00:00",
+   "flags": [],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-P-6256-0004",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 0,
+   "published": "2026-11-27",
+   "rating": null,
+   "regs_agency_id": "FDA",
+   "routine": false,
+   "sanctions": [],
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Citizen petition or FDA response",
+   "subtype": "Letter(s)",
+   "summary": "",
+   "title": "Interim Response",
+   "url": "https://www.regulations.gov/document/FDA-2026-P-6256-0004",
+   "withdrawn": false
   },
   {
    "action": "",

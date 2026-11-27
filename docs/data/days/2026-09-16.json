@@ -2,146 +2,6 @@
  "date": "2026-09-16",
  "items": [
   {
-   "action": "Final rule.",
-   "agencies": [
-    "dol"
-   ],
-   "category": "rulemaking",
-   "comments_close": null,
-   "corporation": null,
-   "date": "2026-09-16",
-   "date_basis": "published",
-   "doc_type": "Rule",
-   "docket_ids": [
-    "Docket ETA-2025-0004"
-   ],
-   "effective_on": "2026-11-16",
-   "eo_number": null,
-   "first_seen": "2026-11-26T01:56:14+00:00",
-   "flags": [
-    {
-     "authority": "printz",
-     "code": "federalism",
-     "elements_found": [
-      "states",
-      "command",
-      "coercive_condition"
-     ],
-     "elements_total": 3,
-     "full_text_elements": [
-      "command",
-      "coercive_condition"
-     ],
-     "group": "structural",
-     "level": 2,
-     "precedent": "analogy",
-     "structural": true,
-     "triggers": [
-      "commandeer",
-      "tenth amendment"
-     ],
-     "weighed": []
-    },
-    {
-     "authority": "west_virginia",
-     "code": "major_questions",
-     "elements_found": [
-      "rule",
-      "significance"
-     ],
-     "elements_total": 4,
-     "group": "structural",
-     "level": 0,
-     "precedent": "open",
-     "structural": true,
-     "triggers": [
-      "major questions"
-     ],
-     "weighed": []
-    },
-    {
-     "authority": "mathews",
-     "code": "due_process_takings",
-     "elements_found": [
-      "no_hearing"
-     ],
-     "elements_total": 3,
-     "full_text_elements": [
-      "no_hearing"
-     ],
-     "group": "rights",
-     "level": 0,
-     "precedent": "open",
-     "structural": false,
-     "triggers": [
-      "retroactiv"
-     ],
-     "weighed": []
-    },
-    {
-     "authority": "burger",
-     "code": "fourth_amendment",
-     "elements_found": [
-      "search"
-     ],
-     "elements_total": 2,
-     "group": "rights",
-     "level": 0,
-     "precedent": "open",
-     "structural": false,
-     "triggers": [
-      "fourth amendment"
-     ],
-     "weighed": []
-    }
-   ],
-   "fr_agency_slugs": [
-    "labor-department",
-    "employment-and-training-administration"
-   ],
-   "ft": {
-    "terms": [
-     "due_process",
-     "fourth_amendment",
-     "major_questions",
-     "tenth_amendment"
-    ]
-   },
-   "id": "fr:2026-18978",
-   "impact": {
-    "breakdown": [
-     {
-      "marker": "Reach",
-      "points": 2,
-      "why": "binding rule designated significant"
-     }
-    ],
-    "level": 1,
-    "points": 2
-   },
-   "jurisdiction": "federal",
-   "outcome": "final",
-   "priority": 2,
-   "published": "2026-09-16",
-   "rating": {
-    "issues": 1,
-    "level": 2
-   },
-   "rins": [
-    "1205-AC11"
-   ],
-   "routine": false,
-   "sanctions": [],
-   "significant": true,
-   "source": "federal_register",
-   "source_label": "Federal Register",
-   "subcategory": "Final rule",
-   "subtype": "",
-   "summary": "The Department of Labor (DOL or the Department) is issuing this final rule to require the disclosure of confidential unemployment compensation (UC) information to Federal officials for purposes of UC program oversight and audits. This rule will ensure that Federal officials, including the Department's Office of Inspector General (DOL- OIG), are able to obtain the information needed from State UC agencies to ensure proper oversight of the UC programs and to hold State UC agencies accountable for identifying and addressing fraud in UC programs.",
-   "title": "Federal-State Unemployment Compensation (UC) Program; Data Availability",
-   "url": "https://www.federalregister.gov/documents/2026/09/16/2026-18978/federal-state-unemployment-compensation-uc-program-data-availability"
-  },
-  {
    "action": "",
    "agencies": [
     "fda"
@@ -2517,6 +2377,123 @@
    "url": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22H-1330-2026%22"
   },
   {
+   "action": "Final rule.",
+   "agencies": [
+    "dol"
+   ],
+   "category": "rulemaking",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-09-16",
+   "date_basis": "published",
+   "doc_type": "Rule",
+   "docket_ids": [
+    "Docket ETA-2025-0004"
+   ],
+   "effective_on": "2026-11-16",
+   "eo_number": null,
+   "first_seen": "2026-11-26T01:56:14+00:00",
+   "flags": [
+    {
+     "authority": "dole",
+     "code": "federalism",
+     "elements_found": [
+      "command",
+      "coercive_condition"
+     ],
+     "elements_total": 3,
+     "full_text_elements": [
+      "command",
+      "coercive_condition"
+     ],
+     "group": "structural",
+     "level": 0,
+     "precedent": "open",
+     "structural": true,
+     "triggers": [
+      "commandeer",
+      "tenth amendment"
+     ],
+     "weighed": []
+    },
+    {
+     "authority": "west_virginia",
+     "code": "major_questions",
+     "elements_found": [
+      "rule",
+      "significance"
+     ],
+     "elements_total": 4,
+     "group": "structural",
+     "level": 0,
+     "precedent": "open",
+     "structural": true,
+     "triggers": [
+      "major questions"
+     ],
+     "weighed": []
+    },
+    {
+     "authority": "burger",
+     "code": "fourth_amendment",
+     "elements_found": [
+      "search"
+     ],
+     "elements_total": 2,
+     "group": "rights",
+     "level": 0,
+     "precedent": "open",
+     "structural": false,
+     "triggers": [
+      "fourth amendment"
+     ],
+     "weighed": []
+    }
+   ],
+   "fr_agency_slugs": [
+    "labor-department",
+    "employment-and-training-administration"
+   ],
+   "ft": {
+    "terms": [
+     "due_process",
+     "fourth_amendment",
+     "major_questions",
+     "tenth_amendment"
+    ]
+   },
+   "id": "fr:2026-18978",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 2,
+      "why": "binding rule designated significant"
+     }
+    ],
+    "level": 1,
+    "points": 2
+   },
+   "jurisdiction": "federal",
+   "outcome": "final",
+   "priority": 0,
+   "published": "2026-09-16",
+   "rating": null,
+   "rins": [
+    "1205-AC11"
+   ],
+   "routine": false,
+   "sanctions": [],
+   "significant": true,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Final rule",
+   "subtype": "",
+   "summary": "The Department of Labor (DOL or the Department) is issuing this final rule to require the disclosure of confidential unemployment compensation (UC) information to Federal officials for purposes of UC program oversight and audits. This rule will ensure that Federal officials, including the Department's Office of Inspector General (DOL- OIG), are able to obtain the information needed from State UC agencies to ensure proper oversight of the UC programs and to hold State UC agencies accountable for identifying and addressing fraud in UC programs.",
+   "title": "Federal-State Unemployment Compensation (UC) Program; Data Availability",
+   "url": "https://www.federalregister.gov/documents/2026/09/16/2026-18978/federal-state-unemployment-compensation-uc-program-data-availability"
+  },
+  {
    "action": "",
    "agencies": [
     "fda"
@@ -3218,8 +3195,7 @@
      "authority": "arthrex",
      "code": "officer_appointment_removal",
      "elements_found": [
-      "official",
-      "significant"
+      "official"
      ],
      "elements_total": 3,
      "group": "structural",

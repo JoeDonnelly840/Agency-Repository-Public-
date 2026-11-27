@@ -2,97 +2,6 @@
  "date": "2026-09-23",
  "items": [
   {
-   "action": "Interim final rule with comment period.",
-   "agencies": [
-    "hhs"
-   ],
-   "category": "rulemaking",
-   "comments_close": null,
-   "corporation": null,
-   "date": "2026-09-23",
-   "date_basis": "published",
-   "doc_type": "Rule",
-   "docket_ids": [
-    "CMS-9872-IFC"
-   ],
-   "effective_on": "2026-09-22",
-   "eo_number": null,
-   "first_seen": "2026-11-26T01:56:14+00:00",
-   "flags": [
-    {
-     "authority": "mathews",
-     "code": "due_process_takings",
-     "elements_found": [
-      "deprivation",
-      "no_hearing"
-     ],
-     "elements_total": 3,
-     "group": "rights",
-     "level": 1,
-     "precedent": "analogy",
-     "structural": false,
-     "triggers": [
-      "interim final rule",
-      "moratorium"
-     ],
-     "weighed": []
-    },
-    {
-     "authority": "west_virginia",
-     "code": "major_questions",
-     "elements_found": [
-      "rule",
-      "novelty"
-     ],
-     "elements_total": 4,
-     "group": "structural",
-     "level": 0,
-     "precedent": "open",
-     "structural": true,
-     "triggers": [
-      "moratorium"
-     ],
-     "weighed": []
-    }
-   ],
-   "fr_agency_slugs": [
-    "health-and-human-services-department"
-   ],
-   "id": "fr:2026-19493",
-   "impact": {
-    "breakdown": [
-     {
-      "marker": "Reach",
-      "points": 2,
-      "why": "binding rule"
-     }
-    ],
-    "level": 1,
-    "points": 2
-   },
-   "jurisdiction": "federal",
-   "outcome": "final",
-   "priority": 1,
-   "published": "2026-09-23",
-   "rating": {
-    "issues": 1,
-    "level": 1
-   },
-   "rins": [
-    "0938-AW26"
-   ],
-   "routine": false,
-   "sanctions": [],
-   "significant": false,
-   "source": "federal_register",
-   "source_label": "Federal Register",
-   "subcategory": "Final rule",
-   "subtype": "",
-   "summary": "This interim final rule with comment period (IFC) codifies the Department of Health and Human Services' (HHS) authority to impose a temporary moratorium pausing the registration of agents and brokers that do not have a current Plan Year registration with the Federally- facilitated Exchanges at the time the moratorium is effective and are seeking to enter into Exchange agreements with the Centers for Medicare & Medicaid Services (CMS) to assist consumers with enrollment through the Federally-facilitated Exchange (FFE) and State-based Exchanges that use the Federal platform (SBE-FPs) (hereinafter collectively referred to as the \"Federally-facilitated Exchanges\"). HHS is issuing this rule on…",
-   "title": "Patient Protection and Affordable Care Act; Temporary Moratoria on Certain Agent and Broker Registration To Participate in the Exchanges",
-   "url": "https://www.federalregister.gov/documents/2026/09/23/2026-19493/patient-protection-and-affordable-care-act-temporary-moratoria-on-certain-agent-and-broker"
-  },
-  {
    "action": "",
    "agencies": [
     "fda"
@@ -8917,6 +8826,76 @@
    "summary": "Class II. Voluntary: Firm initiated. Reason: Product may be contaminated with Salmonella",
    "title": "Panorama Produce Sales Inc.: Martina brand Fresh Whole Mangoes; Individual whole mangoes, variable weight; 9 mangoes per carton box",
    "url": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22H-1342-2026%22"
+  },
+  {
+   "action": "Interim final rule with comment period.",
+   "agencies": [
+    "hhs"
+   ],
+   "category": "rulemaking",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-09-23",
+   "date_basis": "published",
+   "doc_type": "Rule",
+   "docket_ids": [
+    "CMS-9872-IFC"
+   ],
+   "effective_on": "2026-09-22",
+   "eo_number": null,
+   "first_seen": "2026-11-26T01:56:14+00:00",
+   "flags": [
+    {
+     "authority": "west_virginia",
+     "code": "major_questions",
+     "elements_found": [
+      "rule",
+      "novelty"
+     ],
+     "elements_total": 4,
+     "group": "structural",
+     "level": 0,
+     "precedent": "open",
+     "structural": true,
+     "triggers": [
+      "moratorium"
+     ],
+     "weighed": []
+    }
+   ],
+   "fr_agency_slugs": [
+    "health-and-human-services-department"
+   ],
+   "id": "fr:2026-19493",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 2,
+      "why": "binding rule"
+     }
+    ],
+    "level": 1,
+    "points": 2
+   },
+   "jurisdiction": "federal",
+   "outcome": "final",
+   "priority": 0,
+   "published": "2026-09-23",
+   "rating": null,
+   "rins": [
+    "0938-AW26"
+   ],
+   "routine": false,
+   "sanctions": [],
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Final rule",
+   "subtype": "",
+   "summary": "This interim final rule with comment period (IFC) codifies the Department of Health and Human Services' (HHS) authority to impose a temporary moratorium pausing the registration of agents and brokers that do not have a current Plan Year registration with the Federally- facilitated Exchanges at the time the moratorium is effective and are seeking to enter into Exchange agreements with the Centers for Medicare & Medicaid Services (CMS) to assist consumers with enrollment through the Federally-facilitated Exchange (FFE) and State-based Exchanges that use the Federal platform (SBE-FPs) (hereinafter collectively referred to as the \"Federally-facilitated Exchanges\"). HHS is issuing this rule on…",
+   "title": "Patient Protection and Affordable Care Act; Temporary Moratoria on Certain Agent and Broker Registration To Participate in the Exchanges",
+   "url": "https://www.federalregister.gov/documents/2026/09/23/2026-19493/patient-protection-and-affordable-care-act-temporary-moratoria-on-certain-agent-and-broker"
   },
   {
    "action": "",

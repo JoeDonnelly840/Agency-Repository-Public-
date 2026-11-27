@@ -2,265 +2,6 @@
  "date": "2026-11-06",
  "items": [
   {
-   "action": "Final rule.",
-   "agencies": [
-    "dol"
-   ],
-   "category": "rulemaking",
-   "comments_close": null,
-   "corporation": null,
-   "date": "2026-11-06",
-   "date_basis": "published",
-   "doc_type": "Rule",
-   "docket_ids": [
-    "Docket No. ETA-2025-0006"
-   ],
-   "effective_on": "2027-01-05",
-   "eo_number": null,
-   "first_seen": "2026-11-11T13:33:45+00:00",
-   "flags": [
-    {
-     "authority": "loper_bright",
-     "code": "statutory_deference",
-     "elements_found": [
-      "interpretation",
-      "ambiguity",
-      "deference"
-     ],
-     "elements_total": 3,
-     "full_text_elements": [
-      "interpretation",
-      "ambiguity",
-      "deference"
-     ],
-     "group": "structural",
-     "level": 3,
-     "precedent": "direct",
-     "structural": true,
-     "triggers": [
-      "ambiguous",
-      "deference"
-     ],
-     "weighed": []
-    },
-    {
-     "authority": "sffa",
-     "code": "equal_protection",
-     "elements_found": [
-      "classification",
-      "preference"
-     ],
-     "elements_total": 2,
-     "full_text_elements": [
-      "classification",
-      "preference"
-     ],
-     "group": "rights",
-     "level": 2,
-     "precedent": "analogy",
-     "structural": false,
-     "triggers": [
-      "race-conscious"
-     ],
-     "weighed": []
-    },
-    {
-     "authority": "west_virginia",
-     "code": "major_questions",
-     "elements_found": [
-      "rule",
-      "significance"
-     ],
-     "elements_total": 4,
-     "group": "structural",
-     "level": 0,
-     "precedent": "open",
-     "structural": true,
-     "triggers": [
-      "designated a significant rule"
-     ],
-     "weighed": []
-    },
-    {
-     "authority": "smith",
-     "code": "free_exercise",
-     "elements_found": [
-      "religion",
-      "burden",
-      "not_neutral"
-     ],
-     "elements_total": 4,
-     "full_text_elements": [
-      "religion",
-      "not_neutral"
-     ],
-     "group": "rights",
-     "level": 0,
-     "precedent": "open",
-     "structural": false,
-     "triggers": [
-      "religio"
-     ],
-     "weighed": [
-      "accommodation"
-     ]
-    },
-    {
-     "authority": "central_hudson",
-     "code": "free_speech",
-     "elements_found": [
-      "speech"
-     ],
-     "elements_total": 3,
-     "full_text_elements": [
-      "speech"
-     ],
-     "group": "rights",
-     "level": 0,
-     "precedent": "open",
-     "structural": false,
-     "triggers": [
-      "first amendment"
-     ],
-     "weighed": []
-    }
-   ],
-   "fr_agency_slugs": [
-    "labor-department"
-   ],
-   "ft": {
-    "terms": [
-     "due_process",
-     "equal_protection",
-     "first_amendment",
-     "loper_bright",
-     "race_conscious",
-     "rfra"
-    ]
-   },
-   "id": "fr:2026-22680",
-   "impact": {
-    "breakdown": [
-     {
-      "marker": "Reach",
-      "points": 2,
-      "why": "binding rule designated significant"
-     }
-    ],
-    "level": 1,
-    "points": 2
-   },
-   "jurisdiction": "federal",
-   "outcome": "final",
-   "priority": 3,
-   "published": "2026-11-06",
-   "rating": {
-    "issues": 2,
-    "level": 3
-   },
-   "rins": [
-    "1205-AC21"
-   ],
-   "routine": false,
-   "sanctions": [],
-   "significant": true,
-   "source": "federal_register",
-   "source_label": "Federal Register",
-   "statutes": [
-    "rfra"
-   ],
-   "subcategory": "Final rule",
-   "subtype": "",
-   "summary": "The Department of Labor (DOL or the Department) is issuing this final rule to remove the onerous and legally questionable affirmative action requirements that were previously imposed by the Department on Registered Apprenticeship program sponsors. This final rule also streamlines and simplifies nondiscrimination obligations for all program sponsors, while clarifying that sponsors are accountable for compliance with Federal and State nondiscrimination protections. It also makes conforming, technical changes to the Department's regulation that addresses Labor Standards for the Registration of Apprenticeship Programs.",
-   "title": "Prohibiting Illegal Discrimination in Registered Apprenticeship Programs",
-   "url": "https://www.federalregister.gov/documents/2026/11/06/2026-22680/prohibiting-illegal-discrimination-in-registered-apprenticeship-programs"
-  },
-  {
-   "action": "Final rule with comment period.",
-   "agencies": [
-    "hhs"
-   ],
-   "category": "rulemaking",
-   "comments_close": "2027-01-04",
-   "corporation": null,
-   "date": "2026-11-06",
-   "date_basis": "published",
-   "doc_type": "Rule",
-   "docket_ids": [
-    "CMS-1850-FC"
-   ],
-   "effective_on": "2027-01-01",
-   "eo_number": null,
-   "first_seen": "2026-11-11T13:33:45+00:00",
-   "flags": [
-    {
-     "authority": "loper_bright",
-     "code": "statutory_deference",
-     "elements_found": [
-      "interpretation",
-      "deference"
-     ],
-     "elements_total": 3,
-     "full_text_elements": [
-      "interpretation",
-      "deference"
-     ],
-     "group": "structural",
-     "level": 2,
-     "precedent": "direct",
-     "structural": true,
-     "triggers": [
-      "chevron framework",
-      "chevron u.s.a"
-     ],
-     "weighed": []
-    }
-   ],
-   "fr_agency_slugs": [
-    "health-and-human-services-department",
-    "centers-for-medicare-medicaid-services"
-   ],
-   "ft": {
-    "terms": [
-     "chevron",
-     "loper_bright"
-    ]
-   },
-   "id": "fr:2026-22739",
-   "impact": {
-    "breakdown": [
-     {
-      "marker": "Reach",
-      "points": 2,
-      "why": "binding rule"
-     }
-    ],
-    "level": 1,
-    "points": 2
-   },
-   "jurisdiction": "federal",
-   "outcome": "final",
-   "priority": 2,
-   "published": "2026-11-06",
-   "rating": {
-    "issues": 1,
-    "level": 2
-   },
-   "rins": [
-    "0938-AV83"
-   ],
-   "routine": false,
-   "sanctions": [],
-   "significant": false,
-   "source": "federal_register",
-   "source_label": "Federal Register",
-   "subcategory": "Final rule",
-   "subtype": "",
-   "summary": "This final rule with comment period revises the Medicare Hospital Outpatient Prospective Payment System (OPPS) and the Medicare Ambulatory Surgical Center (ASC) payment system for calendar year 2027 based on our continuing experience with these systems. We also describe the changes to the amounts and factors used to determine the payment rates for Medicare services paid under the OPPS and those paid under the ASC payment systems. In addition, this final rule with comment period updates and refines the requirements for the Hospital Outpatient Quality Reporting Program and the Ambulatory Surgical Center Quality Reporting Program. There are no changes to the Rural Emergency Hospital Quality…",
-   "title": "Medicare Program: Hospital Outpatient Prospective Payment and Ambulatory Surgical Center Payment Systems; and Quality Reporting Programs; including the Hospital Outpatient Quality Reporting Program and Ambulatory Surgical Center Quality Program; Request for Information on Strengthening the Standardization and Comparability of Hospital Price Transparency (HPT) Data; Prior Authorization; Accrediting Organization (AO) Deeming for Emergency Medical Treatment and Labor Act (EMTALA); and Notices of Closure of Teaching Hospitals and Opportunities To Apply for Available Slots",
-   "url": "https://www.federalregister.gov/documents/2026/11/06/2026-22739/medicare-program-hospital-outpatient-prospective-payment-and-ambulatory-surgical-center-payment"
-  },
-  {
    "action": "Notice.",
    "agencies": [
     "sec"
@@ -605,24 +346,7 @@
    "effective_on": "2026-11-06",
    "eo_number": null,
    "first_seen": "2026-11-11T13:33:45+00:00",
-   "flags": [
-    {
-     "authority": "burger",
-     "code": "fourth_amendment",
-     "elements_found": [
-      "search"
-     ],
-     "elements_total": 2,
-     "group": "rights",
-     "level": 0,
-     "precedent": "open",
-     "structural": false,
-     "triggers": [
-      "inspection"
-     ],
-     "weighed": []
-    }
-   ],
+   "flags": [],
    "fr_agency_slugs": [
     "environmental-protection-agency"
    ],
@@ -1565,6 +1289,91 @@
    "url": "https://www.federalregister.gov/documents/2026/11/06/2026-22657/medical-devices-ear-nose-and-throat-devices-classification-of-the-external-mechanical-stimulator-for"
   },
   {
+   "action": "Final rule with comment period.",
+   "agencies": [
+    "hhs"
+   ],
+   "category": "rulemaking",
+   "comments_close": "2027-01-04",
+   "corporation": null,
+   "date": "2026-11-06",
+   "date_basis": "published",
+   "doc_type": "Rule",
+   "docket_ids": [
+    "CMS-1850-FC"
+   ],
+   "effective_on": "2027-01-01",
+   "eo_number": null,
+   "first_seen": "2026-11-11T13:33:45+00:00",
+   "flags": [
+    {
+     "authority": "loper_bright",
+     "code": "statutory_deference",
+     "elements_found": [
+      "interpretation",
+      "deference"
+     ],
+     "elements_total": 3,
+     "full_text_elements": [
+      "interpretation",
+      "deference"
+     ],
+     "group": "structural",
+     "level": 0,
+     "precedent": "open",
+     "structural": true,
+     "triggers": [
+      "chevron framework",
+      "chevron u.s.a. inc. v."
+     ],
+     "unrated_by": "post_loper",
+     "weighed": [
+      "post_loper"
+     ]
+    }
+   ],
+   "fr_agency_slugs": [
+    "health-and-human-services-department",
+    "centers-for-medicare-medicaid-services"
+   ],
+   "ft": {
+    "terms": [
+     "chevron",
+     "loper_bright"
+    ]
+   },
+   "id": "fr:2026-22739",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 2,
+      "why": "binding rule"
+     }
+    ],
+    "level": 1,
+    "points": 2
+   },
+   "jurisdiction": "federal",
+   "outcome": "final",
+   "priority": 0,
+   "published": "2026-11-06",
+   "rating": null,
+   "rins": [
+    "0938-AV83"
+   ],
+   "routine": false,
+   "sanctions": [],
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Final rule",
+   "subtype": "",
+   "summary": "This final rule with comment period revises the Medicare Hospital Outpatient Prospective Payment System (OPPS) and the Medicare Ambulatory Surgical Center (ASC) payment system for calendar year 2027 based on our continuing experience with these systems. We also describe the changes to the amounts and factors used to determine the payment rates for Medicare services paid under the OPPS and those paid under the ASC payment systems. In addition, this final rule with comment period updates and refines the requirements for the Hospital Outpatient Quality Reporting Program and the Ambulatory Surgical Center Quality Reporting Program. There are no changes to the Rural Emergency Hospital Quality…",
+   "title": "Medicare Program: Hospital Outpatient Prospective Payment and Ambulatory Surgical Center Payment Systems; and Quality Reporting Programs; including the Hospital Outpatient Quality Reporting Program and Ambulatory Surgical Center Quality Program; Request for Information on Strengthening the Standardization and Comparability of Hospital Price Transparency (HPT) Data; Prior Authorization; Accrediting Organization (AO) Deeming for Emergency Medical Treatment and Labor Act (EMTALA); and Notices of Closure of Teaching Hospitals and Opportunities To Apply for Available Slots",
+   "url": "https://www.federalregister.gov/documents/2026/11/06/2026-22739/medicare-program-hospital-outpatient-prospective-payment-and-ambulatory-surgical-center-payment"
+  },
+  {
    "action": "",
    "agencies": [
     "sec"
@@ -1619,6 +1428,151 @@
    "summary": "",
    "title": "NPB Financial Group, LLC",
    "url": "https://www.sec.gov/files/litigation/admin/2026/34-106837.pdf"
+  },
+  {
+   "action": "Final rule.",
+   "agencies": [
+    "dol"
+   ],
+   "category": "rulemaking",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-06",
+   "date_basis": "published",
+   "doc_type": "Rule",
+   "docket_ids": [
+    "Docket No. ETA-2025-0006"
+   ],
+   "effective_on": "2027-01-05",
+   "eo_number": null,
+   "first_seen": "2026-11-11T13:33:45+00:00",
+   "flags": [
+    {
+     "authority": "west_virginia",
+     "code": "major_questions",
+     "elements_found": [
+      "rule",
+      "significance"
+     ],
+     "elements_total": 4,
+     "group": "structural",
+     "level": 0,
+     "precedent": "open",
+     "structural": true,
+     "triggers": [
+      "designated a significant rule"
+     ],
+     "weighed": []
+    },
+    {
+     "authority": "adarand",
+     "code": "equal_protection",
+     "elements_found": [
+      "classification",
+      "preference"
+     ],
+     "elements_total": 2,
+     "full_text_elements": [
+      "classification",
+      "preference"
+     ],
+     "group": "rights",
+     "level": 0,
+     "precedent": "open",
+     "structural": false,
+     "triggers": [
+      "race-conscious"
+     ],
+     "weighed": []
+    },
+    {
+     "authority": "smith",
+     "code": "free_exercise",
+     "elements_found": [
+      "religion",
+      "burden"
+     ],
+     "elements_total": 4,
+     "full_text_elements": [
+      "religion"
+     ],
+     "group": "rights",
+     "level": 0,
+     "precedent": "open",
+     "structural": false,
+     "triggers": [
+      "religio"
+     ],
+     "weighed": [
+      "accommodation"
+     ]
+    },
+    {
+     "authority": "central_hudson",
+     "code": "free_speech",
+     "elements_found": [
+      "speech"
+     ],
+     "elements_total": 3,
+     "full_text_elements": [
+      "speech"
+     ],
+     "group": "rights",
+     "level": 0,
+     "precedent": "open",
+     "structural": false,
+     "triggers": [
+      "first amendment"
+     ],
+     "weighed": []
+    }
+   ],
+   "fr_agency_slugs": [
+    "labor-department"
+   ],
+   "ft": {
+    "terms": [
+     "due_process",
+     "equal_protection",
+     "first_amendment",
+     "loper_bright",
+     "race_conscious",
+     "rfra"
+    ]
+   },
+   "id": "fr:2026-22680",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 2,
+      "why": "binding rule designated significant"
+     }
+    ],
+    "level": 1,
+    "points": 2
+   },
+   "jurisdiction": "federal",
+   "outcome": "final",
+   "priority": 0,
+   "published": "2026-11-06",
+   "rating": null,
+   "rins": [
+    "1205-AC21"
+   ],
+   "routine": false,
+   "sanctions": [],
+   "significant": true,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "statutes": [
+    "rfra"
+   ],
+   "subcategory": "Final rule",
+   "subtype": "",
+   "summary": "The Department of Labor (DOL or the Department) is issuing this final rule to remove the onerous and legally questionable affirmative action requirements that were previously imposed by the Department on Registered Apprenticeship program sponsors. This final rule also streamlines and simplifies nondiscrimination obligations for all program sponsors, while clarifying that sponsors are accountable for compliance with Federal and State nondiscrimination protections. It also makes conforming, technical changes to the Department's regulation that addresses Labor Standards for the Registration of Apprenticeship Programs.",
+   "title": "Prohibiting Illegal Discrimination in Registered Apprenticeship Programs",
+   "url": "https://www.federalregister.gov/documents/2026/11/06/2026-22680/prohibiting-illegal-discrimination-in-registered-apprenticeship-programs"
   },
   {
    "action": "",

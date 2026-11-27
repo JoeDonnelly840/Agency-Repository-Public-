@@ -66,6 +66,11 @@
     "decided": "1998-06-22",
     "held": "A punitive forfeiture violates the Excessive Fines Clause if grossly disproportional to the offense."
    },
+   "bi_metallic": {
+    "cite": "Bi-Metallic Investment Co. v. State Board of Equalization, 239 U.S. 441 (1915)",
+    "decided": "1915-12-20",
+    "held": "Due process does not require a hearing before the government adopts a rule of general application; it protects particular parties singled out for action."
+   },
    "biden_missouri": {
     "cite": "Biden v. Missouri, 595 U.S. 87 (2022) (per curiam)",
     "decided": "2022-01-13",
@@ -142,9 +147,9 @@
     "held": "The Universal Service Fund survives nondelegation challenge, and the FCC's reliance on a private administrator is lawful because the administrator is subordinate to the FCC."
    },
    "cook": {
-    "cite": "Trump v. Cook (U.S. June 29, 2026)",
+    "cite": "Trump v. Cook, No. 25A312 (U.S. June 29, 2026)",
     "decided": "2026-06-29",
-    "held": "Upheld an injunction against the attempted removal of a Federal Reserve governor, treating the Federal Reserve differently."
+    "held": "On narrow, interim grounds, the Court (5 to 4) left in place a lower-court order keeping a Federal Reserve governor in office while her challenge to her removal proceeds, treating the Federal Reserve differently from other agencies."
    },
    "creative_303": {
     "cite": "303 Creative LLC v. Elenis, 600 U.S. 570 (2023)",
@@ -155,6 +160,11 @@
     "cite": "Culley v. Marshall, 601 U.S. 377 (2024)",
     "decided": "2024-05-09",
     "held": "Due process requires a timely forfeiture hearing but not a separate preliminary retention hearing."
+   },
+   "cutter": {
+    "cite": "Cutter v. Wilkinson, 544 U.S. 709 (2005)",
+    "decided": "2005-05-31",
+    "held": "RLUIPA's protections for institutionalized persons are a permissible accommodation of religion."
    },
    "dames_moore": {
     "cite": "Dames & Moore v. Regan, 453 U.S. 654 (1981)",
@@ -167,7 +177,7 @@
     "held": "Congress may attach clear, related, non-coercive conditions to federal grants."
    },
    "fcc_att": {
-    "cite": "FCC v. AT&T, Inc., No. 25-406 (U.S. June 4, 2026)",
+    "cite": "FCC v. AT&T, Inc., No. 25-406 (U.S. June 4, 2026) (8 to 1)",
     "decided": "2026-06-04",
     "held": "FCC forfeiture orders do not violate the Seventh Amendment because they do not definitively resolve liability and the FCC's findings are not conclusive in a later collection suit."
    },
@@ -235,6 +245,11 @@
     "cite": "Kisor v. Wilkie, 588 U.S. 558 (2019)",
     "decided": "2019-06-26",
     "held": "Deference to an agency's reading of its own regulation survives only for genuinely ambiguous rules and within strict limits."
+   },
+   "larson": {
+    "cite": "Larson v. Valente, 456 U.S. 228 (1982)",
+    "decided": "1982-04-21",
+    "held": "Laws that grant denominational preferences are subject to strict scrutiny under the Establishment Clause."
    },
    "learning_resources": {
     "cite": "Learning Resources, Inc. v. Trump (U.S. Feb. 20, 2026)",
@@ -510,13 +525,16 @@
       "text": "The matter is decided in the agency's own forum"
      }
     ],
+    "excludes": "",
     "group": "structural",
     "label": "Agency adjudication of penalties (jury trial and Article III)",
+    "max_level": 3,
     "open_questions": [
      "How far Jarkesy reaches beyond fraud-like claims (for example, purely regulatory violations).",
      "Whether consent settlements negotiated under threat of in-house proceedings raise separate concerns.",
      "How FCC v. AT&T's reasoning applies to other agencies whose penalty orders are not self-executing."
     ],
+    "open_rated": true,
     "precedent": [
      {
       "authority": "jarkesy",
@@ -537,23 +555,26 @@
       "before": "open",
       "label": "Open question",
       "level": "open",
-      "note": "No common-law analogue identified: Atlas Roofing may still permit agency adjudication of a purely statutory claim."
+      "note": "No common-law analogue found: whether Jarkesy reaches purely statutory penalty claims (Atlas Roofing) is open."
      }
     ],
     "question": "Is an agency deciding, in its own forum and without a jury, a penalty claim of the kind the Seventh Amendment and Article III reserve to the courts?",
-    "test": "Under Jarkesy, the jury right attaches when (1) the government seeks a legal remedy such as a civil penalty, (2) for a claim that resembles a common-law action (fraud is the paradigm), and (3) the public-rights exception does not apply. A structural problem arises when such a claim is (4) decided in the agency's own forum.",
+    "test": "Under Jarkesy the Seventh Amendment jury right attaches when (1) the government seeks a legal remedy such as a civil penalty (2) for a claim that resembles a common-law action, fraud being the paradigm. When such a claim is (3) decided in the agency's own forum, the defendant is denied a jury. The public-rights exception (customs, immigration, public lands, benefits, taxes) is weighed against a violation. FCC v. AT&T (2026) upheld FCC forfeiture orders because they do not definitively resolve liability.",
     "weighed": [
      {
+      "effect": "noted",
       "id": "settled",
       "lowers": false,
       "text": "Described as settled or consented. Noted only: a settlement does not cure the forum, and people settle for many reasons."
      },
      {
+      "effect": "unrates",
       "id": "fcc_forfeiture",
-      "lowers": true,
-      "text": "FCC forfeiture order: FCC v. AT&T (2026) held these do not violate the Seventh Amendment"
+      "lowers": false,
+      "text": "FCC forfeiture order or notice of apparent liability: the Supreme Court upheld this practice in FCC v. AT&T (2026)"
      },
      {
+      "effect": "lowers",
       "id": "public_rights",
       "lowers": true,
       "text": "Subject matter traditionally treated as a public right (customs, immigration, public lands, benefits, taxes)"
@@ -572,25 +593,28 @@
      {
       "gate": true,
       "id": "official",
-      "text": "An adjudicator or officer (ALJ, hearing officer, board member) is involved"
+      "text": "An adjudicator or officer (ALJ, hearing officer, administrative judge, board member) is involved"
      },
      {
       "gate": false,
       "id": "significant",
-      "text": "The official exercises significant authority (decides cases, issues orders)"
+      "text": "The official decides cases or issues binding decisions"
      },
      {
       "gate": true,
       "id": "defect",
-      "text": "The document indicates an appointment, review, or removal problem"
+      "text": "The document describes an appointment, review, or removal defect"
      }
     ],
+    "excludes": "ratifications",
     "group": "structural",
-    "label": "Appointment and supervision of officers (ALJs, hearing officers, and board members)",
+    "label": "Appointment and review of officers (ALJs, hearing officers, and board members)",
+    "max_level": 3,
     "open_questions": [
      "Whether multi-level removal protection for ALJs survives after Free Enterprise Fund and Slaughter.",
      "What remedy follows a removal defect after Collins v. Yellen."
     ],
+    "open_rated": true,
     "precedent": [
      {
       "authority": "lucia",
@@ -607,15 +631,9 @@
       "note": "No specific appointment or review defect is described."
      }
     ],
-    "question": "Are officials exercising significant federal authority appointed, supervised, and reviewable as Article II requires?",
-    "test": "An official who holds a continuing position and exercises significant authority under federal law is an officer (Lucia) and must be appointed by the President, a department head, or a court of law; an inferior officer's final decisions must be reviewable by a principal officer (Arthrex).",
-    "weighed": [
-     {
-      "id": "ratified",
-      "lowers": true,
-      "text": "The agency head ratified the appointment, which usually cures an appointment defect going forward"
-     }
-    ]
+    "question": "Are officials exercising significant federal authority appointed and reviewable as Article II requires?",
+    "test": "An official who holds a continuing position and exercises significant authority under federal law is an officer (Lucia) and must be appointed by the President, a department head, or a court of law; an inferior officer's final decisions must be reviewable by a principal officer (Arthrex). Ratification by a properly appointed official cures an appointment defect going forward, so ratification notices are not flagged.",
+    "weighed": []
    },
    {
     "authorities": [
@@ -643,12 +661,15 @@
       "text": "Effective without prior agency approval (for example, immediately effective under 19(b)(3)(A))"
      }
     ],
+    "excludes": "",
     "group": "structural",
     "label": "Government power exercised by a private corporation",
+    "max_level": 3,
     "open_questions": [
      "Whether immediately effective rule and fee changes give the SEC enough prior control.",
      "Whether FINRA and the exchanges are themselves government actors for constitutional purposes."
     ],
+    "open_rated": false,
     "precedent": [
      {
       "authority": "consumers_research",
@@ -659,7 +680,7 @@
      }
     ],
     "question": "Is a private self-regulatory organization exercising government power without adequate agency control?",
-    "test": "Private bodies may help administer federal law only if they function subordinately to an agency that retains final authority (Adkins; Consumers' Research). Delegating binding power to private parties without that control is forbidden (Carter Coal).",
+    "test": "Private bodies may help administer federal law only if they function subordinately to an agency that retains final authority (Adkins; Consumers' Research). Delegating binding power to private parties without that control is forbidden (Carter Coal). Because no court has applied this to the thousands of routine immediately effective filings, they are listed as possible issues rather than rated.",
     "weighed": []
    },
    {
@@ -686,18 +707,21 @@
       "text": "The sanction is expulsion or a bar"
      }
     ],
+    "excludes": "",
     "group": "structural",
     "label": "Private corporation disciplining or expelling a member",
+    "max_level": 3,
     "open_questions": [
      "Whether Alpine's reasoning extends to fines and suspensions, and outside the D.C. Circuit."
     ],
+    "open_rated": true,
     "precedent": [
      {
       "authority": "alpine",
       "before": "open",
       "label": "Close analogy",
       "level": "analogy",
-      "note": "A federal court of appeals has held this practice unlawful (Alpine)."
+      "note": "Expulsion or a bar: a federal court of appeals has held this practice unlawful (Alpine)."
      },
      {
       "authority": "alpine",
@@ -731,43 +755,46 @@
      {
       "gate": true,
       "id": "significance",
-      "text": "Vast economic or political significance (economically significant, major, nationwide, or billions at stake)"
+      "text": "Vast economic or political significance (designated economically significant or major, or billions of dollars or a whole industry at stake)"
      },
      {
       "gate": false,
       "id": "novelty",
-      "text": "A novel or expansive assertion of power (unprecedented, first-ever, transformative, emergency)"
+      "text": "A novel or expansive claim of power (unprecedented, first-ever, newly asserted authority, emergency standard, moratorium)"
      },
      {
       "gate": false,
       "id": "thin_basis",
-      "text": "Rests on a broad, general, or long-standing statutory provision (or emergency authority)"
+      "text": "Rests on a broad or general grant of power (a general rulemaking or catch-all provision, or an emergency statute)"
      }
     ],
+    "excludes": "",
     "group": "structural",
     "label": "Agency authority, delegation, and major questions",
+    "max_level": 3,
     "open_questions": [
      "What counts as 'vast' significance, and whether the doctrine applies to deregulatory rules.",
      "Whether the major questions doctrine applies to the President's own actions as it does to agencies."
     ],
+    "open_rated": true,
     "precedent": [
      {
       "authority": "west_virginia",
       "before": "open",
       "label": "Close analogy",
       "level": "analogy",
-      "note": "West Virginia v. EPA, Alabama Realtors, and NFIB v. OSHA apply by close analogy."
+      "note": "Significance, a novel claim of power, and a thin statutory basis together: West Virginia v. EPA, Alabama Realtors, and NFIB v. OSHA apply by close analogy."
      },
      {
       "authority": "west_virginia",
       "before": "open",
       "label": "Open question",
       "level": "open",
-      "note": "Significance alone does not establish a major-questions problem."
+      "note": "Significance alone, or without a novel claim of power, is an open question."
      }
     ],
-    "question": "Does the rule decide a question of vast economic or political significance, or claim a power, without clear congressional authorization?",
-    "test": "Agencies need clear congressional authorization for rules of vast economic and political significance, especially when they claim newfound power in a long-standing statute (West Virginia v. EPA; Alabama Realtors; NFIB v. OSHA). Agencies have only the power Congress gives them.",
+    "question": "Does the action decide a question of vast economic or political significance, or claim a power, without clear congressional authorization?",
+    "test": "The executive branch has only the powers the Constitution and Congress give it. Agencies need clear congressional authorization for rules of vast economic and political significance, especially when they claim newfound power in a long-standing statute (West Virginia v. EPA; Alabama Realtors; NFIB v. OSHA; Biden v. Nebraska).",
     "weighed": []
    },
    {
@@ -785,27 +812,30 @@
      {
       "gate": false,
       "id": "ambiguity",
-      "text": "The agency invokes ambiguity or gap-filling"
+      "text": "The agency invokes ambiguity, silence, or gap-filling"
      },
      {
       "gate": true,
       "id": "deference",
-      "text": "The agency relies on deference to its own reading"
+      "text": "The agency relies on deference to its own reading (Chevron)"
      }
     ],
+    "excludes": "",
     "group": "structural",
     "label": "Agency interpretation of an ambiguous statute (Chevron and Loper Bright)",
+    "max_level": 1,
     "open_questions": [
      "How much weight courts still give agency views under Skidmore after Loper Bright.",
-     "Loper Bright did not reopen past cases that upheld rules under Chevron (statutory stare decisis)."
+     "Which rules upheld under Chevron can be challenged again after Loper Bright and Corner Post."
     ],
+    "open_rated": true,
     "precedent": [
      {
       "authority": "loper_bright",
-      "before": "open",
+      "before": "lawful",
       "label": "Direct holding",
       "level": "direct",
-      "note": "Loper Bright squarely rejects deference to agency statutory interpretation. Rules relying on Chevron stood on governing law when issued."
+      "note": "Loper Bright overruled Chevron, so reliance on Chevron deference is open to challenge; rated Likely at most because Loper Bright preserved earlier cases upholding rules under Chevron."
      },
      {
       "authority": "loper_bright",
@@ -816,8 +846,15 @@
      }
     ],
     "question": "Does the action rest on deference to the agency's own reading of a statute?",
-    "test": "Courts decide what statutes mean without deferring to agencies (Loper Bright). Reliance on Chevron-style deference rests on overruled law, even for rules issued while Chevron governed.",
-    "weighed": []
+    "test": "Loper Bright (2024) overruled Chevron: courts, not agencies, decide what statutes mean, and they may not defer to an agency's reading because a statute is ambiguous. An action that rests on Chevron deference is therefore open to challenge. Loper Bright also said earlier cases that upheld rules under Chevron keep their force, so these flags are rated Likely (arguable) rather than higher.",
+    "weighed": [
+     {
+      "effect": "unrates",
+      "id": "post_loper",
+      "lowers": false,
+      "text": "Issued after Loper Bright and discusses it, which usually means the agency is explaining that it does not rely on Chevron"
+     }
+    ]
    },
    {
     "authorities": [
@@ -832,37 +869,41 @@
      {
       "gate": true,
       "id": "control",
-      "text": "The action removes or directs agency leaders"
+      "text": "The action removes, or directs the decisions of, agency leaders"
      },
      {
       "gate": true,
       "id": "protected_body",
-      "text": "The body is one the Court still treats as protected (for example, the Federal Reserve)"
+      "text": "The body is one the Court still treats as protected (the Federal Reserve)"
      }
     ],
+    "excludes": "",
     "group": "structural",
     "label": "Presidential control and removal of agency leaders",
+    "max_level": 3,
     "open_questions": [
-     "Which bodies, beyond the Federal Reserve, remain outside the President's at-will removal power."
+     "Which bodies, beyond the Federal Reserve, remain outside the President's at-will removal power.",
+     "What process is due before removing a Federal Reserve governor for cause (Cook remains in litigation)."
     ],
+    "open_rated": true,
     "precedent": [
      {
       "authority": "cook",
       "before": "open",
       "label": "Close analogy",
       "level": "analogy",
-      "note": "Trump v. Cook protects Federal Reserve governors."
+      "note": "Federal Reserve governors: Trump v. Cook applies by close analogy."
      },
      {
       "authority": "slaughter",
       "before": "open",
       "label": "Open question",
       "level": "open",
-      "note": "After Slaughter, presidential removal of commissioners is generally lawful."
+      "note": "After Slaughter, presidential removal of other commissioners is generally lawful."
      }
     ],
     "question": "Does the action remove or direct officials whose independence the law still protects?",
-    "test": "After Trump v. Slaughter (2026), the President may remove commissioners of agencies wielding executive power. Bodies the Court treats differently, such as the Federal Reserve (Trump v. Cook), remain protected.",
+    "test": "After Trump v. Slaughter (2026), the President may remove commissioners of agencies wielding executive power. The Federal Reserve is treated differently: in Trump v. Cook (2026) the Court, on narrow interim grounds, left in place a lower-court order keeping a Federal Reserve governor in office.",
     "weighed": []
    },
    {
@@ -876,43 +917,53 @@
      {
       "gate": true,
       "id": "withhold",
-      "text": "Appropriated money is withheld, paused, or terminated"
-     },
-     {
-      "gate": false,
-      "id": "no_authority",
-      "text": "No statutory process (such as an Impoundment Control Act message) is cited"
+      "text": "Appropriated money is withheld, paused, frozen, or terminated"
      },
      {
       "gate": false,
       "id": "broad",
-      "text": "The action is broad (all grants, a whole program, or government-wide)"
+      "text": "The action is broad (a whole program, a category of awards, or government-wide)"
+     },
+     {
+      "gate": false,
+      "id": "policy_reason",
+      "text": "The reason given is policy disagreement rather than a statutory ground"
      }
     ],
+    "excludes": "",
     "group": "structural",
     "label": "Spending, funding, and appropriations",
+    "max_level": 3,
     "open_questions": [
      "Whether courts will enforce the Impoundment Control Act at the behest of private grantees."
     ],
+    "open_rated": true,
     "precedent": [
      {
       "authority": "train",
       "before": "open",
       "label": "Close analogy",
       "level": "analogy",
-      "note": "Train and the Impoundment Control Act apply by close analogy."
+      "note": "Broad or policy-based withholding of appropriated funds: Train and the Impoundment Control Act apply by close analogy."
      },
      {
       "authority": "cfsa",
       "before": "open",
       "label": "Open question",
       "level": "open",
-      "note": "Funding questions without withholding are open."
+      "note": "A narrow funding action is an open question."
      }
     ],
-    "question": "Is the executive withholding, redirecting, or self-funding money contrary to Congress's appropriations?",
-    "test": "The executive must spend funds as Congress directs (Train) and may withhold them only through the Impoundment Control Act's procedures.",
-    "weighed": []
+    "question": "Is the executive withholding or redirecting money contrary to Congress's appropriations?",
+    "test": "Congress holds the power of the purse. The executive must spend funds as Congress directs (Train) and may withhold them only through the Impoundment Control Act's procedures. Withholding broad categories of funds for policy reasons, rather than for reasons the statute allows, is the core concern.",
+    "weighed": [
+     {
+      "effect": "lowers",
+      "id": "ica_message",
+      "lowers": true,
+      "text": "The President sent a special message under the Impoundment Control Act"
+     }
+    ]
    },
    {
     "authorities": [
@@ -938,18 +989,21 @@
       "text": "The body or function was created by statute"
      }
     ],
+    "excludes": "",
     "group": "structural",
     "label": "Creating, abolishing, or restructuring agencies and offices",
+    "max_level": 3,
     "open_questions": [
      "Whether large reductions in force can effectively abolish a statutory function."
     ],
+    "open_rated": true,
     "precedent": [
      {
       "authority": "aiken",
       "before": "open",
       "label": "Close analogy",
       "level": "analogy",
-      "note": "Aiken County and Youngstown apply by close analogy when a statutory function is abandoned."
+      "note": "A statutory body or function is abandoned: Aiken County and Youngstown apply by close analogy."
      },
      {
       "authority": "youngstown",
@@ -960,7 +1014,7 @@
      }
     ],
     "question": "Is the executive restructuring or abolishing a body that Congress created by statute?",
-    "test": "Congress creates agencies and assigns their functions by statute; the executive may manage but not abolish them without authority (Youngstown framework; In re Aiken County).",
+    "test": "Congress creates agencies and assigns their functions by statute; the executive may manage but not abolish them or abandon their statutory duties without authority (Youngstown framework; In re Aiken County).",
     "weighed": []
    },
    {
@@ -975,7 +1029,7 @@
      {
       "gate": true,
       "id": "states",
-      "text": "The action is directed at states or localities"
+      "text": "The action is directed at state or local governments"
      },
      {
       "gate": false,
@@ -988,32 +1042,35 @@
       "text": "It conditions existing federal funds on compliance"
      }
     ],
+    "excludes": "",
     "group": "structural",
-    "label": "Federalism (states, preemption, and conditions on federal funds)",
+    "label": "Federalism (commandeering and conditions on federal funds)",
+    "max_level": 3,
     "open_questions": [
      "When executive (rather than congressional) funding conditions are unauthorized as well as coercive."
     ],
+    "open_rated": true,
     "precedent": [
      {
       "authority": "printz",
       "before": "open",
       "label": "Close analogy",
       "level": "analogy",
-      "note": "Printz and Murphy apply by close analogy."
+      "note": "A command to state officials: Printz and Murphy apply by close analogy."
      },
      {
       "authority": "nfib_sebelius",
       "before": "open",
       "label": "Close analogy",
       "level": "analogy",
-      "note": "NFIB v. Sebelius applies by close analogy."
+      "note": "Existing funds conditioned on compliance: NFIB v. Sebelius applies by close analogy."
      },
      {
       "authority": "dole",
       "before": "open",
       "label": "Open question",
       "level": "open",
-      "note": "Preemption and ordinary grant conditions are usually lawful."
+      "note": "Ordinary grant conditions are usually lawful."
      }
     ],
     "question": "Does the action command state officials or coerce states through funding conditions?",
@@ -1036,7 +1093,7 @@
      {
       "gate": true,
       "id": "binding",
-      "text": "Imposes duties, tariffs, fees, or prohibitions on the public, or suspends or waives a statute"
+      "text": "Imposes duties, tariffs, or prohibitions on the public, or suspends or refuses to enforce a statute"
      },
      {
       "gate": false,
@@ -1046,21 +1103,24 @@
      {
       "gate": false,
       "id": "no_clear_authority",
-      "text": "The power claimed is one the cited statute does not clearly give (for example, tariffs under IEEPA, or overriding a statute)"
+      "text": "The power claimed is one the cited statute does not give (tariffs under IEEPA), or the action suspends a statute without congressional authorization"
      },
      {
       "gate": false,
       "id": "public_effect",
-      "text": "Applies to private parties or the public (importers, businesses, people), not just to agencies"
+      "text": "Applies to private parties (importers, businesses, people), not just to agencies"
      }
     ],
+    "excludes": "",
     "group": "structural",
-    "label": "Executive action that makes law (emergency powers, tariffs, and suspending or rewriting statutes)",
+    "label": "Executive action that makes law (emergency powers, tariffs, and suspending statutes)",
+    "max_level": 3,
     "open_questions": [
      "The limits of tariff authority under Sections 122, 232, and 301 after Learning Resources.",
      "Whether the major questions doctrine constrains the President directly, or only agencies.",
      "When nonenforcement policies become a refusal to execute the law."
     ],
+    "open_rated": true,
     "precedent": [
      {
       "authority": "learning_resources",
@@ -1074,7 +1134,7 @@
       "before": "analogy",
       "label": "Close analogy",
       "level": "analogy",
-      "note": "Suspending, waiving, or refusing to enforce a statute: Clinton v. City of New York and In re Aiken County apply by close analogy."
+      "note": "Suspending or refusing to enforce a statute without congressional authorization: Clinton v. City of New York and In re Aiken County apply by close analogy."
      },
      {
       "authority": "learning_resources",
@@ -1088,18 +1148,20 @@
       "before": "open",
       "label": "Open question",
       "level": "open",
-      "note": "Other bases (Sections 232, 301, 122, 212(f), and emergency statutes) must be checked one by one under Youngstown."
+      "note": "Other bases (Sections 232, 301, 122, 212(f), and emergency statutes) are open questions under Youngstown."
      }
     ],
     "question": "Does an executive action impose duties, taxes, or prohibitions on the public, or set aside a statute, without a power the Constitution or Congress actually gives?",
-    "test": "The President's power to act must come from the Constitution or a statute (Youngstown). Jackson's framework: power is greatest with Congress's authorization, weakest when the action is incompatible with Congress's will. Taxes and tariffs are Congress's power (Art. I, sec. 8), and IEEPA does not delegate it (Learning Resources). The executive may not cancel or suspend duly enacted statutes (Clinton v. City of New York; In re Aiken County). Courts read general or emergency statutes narrowly when they are used for sweeping measures.",
+    "test": "The President's power to act must come from the Constitution or a statute (Youngstown). Taxes and tariffs are Congress's power (Art. I, sec. 8), and IEEPA does not delegate it (Learning Resources). The executive may not cancel or suspend duly enacted statutes (Clinton v. City of New York; In re Aiken County). Waivers and exemptions that Congress itself authorized are not flagged. Other trade and entry statutes (Sections 232, 301, 122, and 212(f)) are checked one by one.",
     "weighed": [
      {
+      "effect": "lowers",
       "id": "specific_trade_statute",
       "lowers": true,
       "text": "Also rests on a trade statute courts have read broadly (Section 232, 301, 122, or 201)"
      },
      {
+      "effect": "lowers",
       "id": "entry_power",
       "lowers": true,
       "text": "Restricts entry of noncitizens under INA 212(f), which Trump v. Hawaii read broadly"
@@ -1131,11 +1193,14 @@
       "text": "Applies to public statements"
      }
     ],
+    "excludes": "",
     "group": "rights",
     "label": "Gag orders, no-deny terms, and prior restraints on speech",
+    "max_level": 3,
     "open_questions": [
      "Whether the Supreme Court will review no-deny provisions, and whether rescission moots the issue."
     ],
+    "open_rated": true,
     "precedent": [
      {
       "authority": "nebraska_press",
@@ -1146,9 +1211,10 @@
      }
     ],
     "question": "Does the government condition a settlement or order on silence about the case?",
-    "test": "Prior restraints are presumptively invalid (Nebraska Press). Courts have so far upheld no-deny settlement terms as voluntary waivers (Powell; Romeril; Rumery), though the SEC rescinded its policy in May 2026.",
+    "test": "Prior restraints are presumptively invalid (Nebraska Press). Courts of appeals have so far upheld no-deny settlement terms as voluntary waivers (Powell; Romeril; Rumery), so the issue is arguable but contested.",
     "weighed": [
      {
+      "effect": "lowers",
       "id": "courts_upheld",
       "lowers": true,
       "text": "Courts of appeals have upheld no-deny terms as voluntary waivers (Powell; Romeril)"
@@ -1172,7 +1238,7 @@
      {
       "gate": true,
       "id": "speech",
-      "text": "Regulates speech, advertising, labels, disclosures, publishing, or editorial choices"
+      "text": "Regulates or compels speech, advertising, warnings, publishing, broadcasting, or editorial choices"
      },
      {
       "gate": false,
@@ -1182,22 +1248,32 @@
      {
       "gate": false,
       "id": "not_factual",
-      "text": "Compels opinion, controversial, or non-factual statements, or targets protected expression"
+      "text": "Compels opinion or controversial statements, or targets protected expression or editorial judgment"
      }
     ],
+    "excludes": "",
     "group": "rights",
     "label": "Freedom of speech and the press",
+    "max_level": 3,
     "open_questions": [
      "How Zauderer applies to disclosures that are arguably not purely factual or uncontroversial (for example, climate or ESG disclosures).",
      "How Moody applies to agency rules affecting platform moderation."
     ],
+    "open_rated": true,
     "precedent": [
+     {
+      "authority": "vullo",
+      "before": "open",
+      "label": "Close analogy",
+      "level": "analogy",
+      "note": "Pressure on third parties to suppress speech: Vullo applies by close analogy."
+     },
      {
       "authority": "nifla",
       "before": "open",
       "label": "Close analogy",
       "level": "analogy",
-      "note": "NIFLA, Reed, and Vullo apply by close analogy to content-based or non-factual compulsion."
+      "note": "Content-based restrictions or compelled non-factual statements: NIFLA and Reed apply by close analogy."
      },
      {
       "authority": "central_hudson",
@@ -1208,12 +1284,13 @@
      }
     ],
     "question": "Does the action restrict or compel speech, or pressure others to suppress it?",
-    "test": "Content-based restrictions face strict scrutiny (Reed); commercial-speech restrictions face intermediate scrutiny (Central Hudson), heightened when speaker- or content-based (Sorrell). Compelled disclosures are allowed only if purely factual, uncontroversial, and reasonably related to preventing deception (Zauderer); others face heightened scrutiny (NIFLA). Government may not compel expressive work (303 Creative), override editorial judgment (Moody), or coerce third parties to suppress speech (Vullo).",
+    "test": "Content-based restrictions face strict scrutiny (Reed); commercial-speech restrictions face intermediate scrutiny (Central Hudson), heightened when speaker- or content-based (Sorrell). Compelled disclosures are allowed when purely factual, uncontroversial, and reasonably related to preventing deception (Zauderer); compelled opinions or controversial statements face heightened scrutiny (NIFLA). Government may not compel expressive work (303 Creative), override editorial judgment (Moody), or coerce third parties to suppress speech (Vullo).",
     "weighed": [
      {
+      "effect": "lowers",
       "id": "factual_disclosure",
       "lowers": true,
-      "text": "Requires only factual, uncontroversial information about the speaker's own products (Zauderer)"
+      "text": "Requires only purely factual, uncontroversial information about the speaker's own products or services (Zauderer)"
      }
     ]
    },
@@ -1225,6 +1302,7 @@
      "tandon",
      "carson",
      "kennedy",
+     "larson",
      "catholic_charities",
      "mahmoud",
      "rfra_statute",
@@ -1234,7 +1312,8 @@
      "little_sisters",
      "tanzin",
      "rluipa_statute",
-     "holt"
+     "holt",
+     "cutter"
     ],
     "code": "free_exercise",
     "elements": [
@@ -1246,12 +1325,12 @@
      {
       "gate": true,
       "id": "burden",
-      "text": "Imposes a requirement, penalty, or loss of benefits that burdens that exercise"
+      "text": "Imposes a requirement, penalty, exclusion, or loss of benefits that bears on that exercise"
      },
      {
       "gate": false,
       "id": "not_neutral",
-      "text": "Not neutral or generally applicable (singles out religion, has exemptions for secular reasons, or discretionary exemptions)"
+      "text": "Not neutral or generally applicable (singles out religion, has secular exemptions, or discretionary exemptions)"
      },
      {
       "gate": false,
@@ -1259,20 +1338,37 @@
       "text": "No religious exemption or accommodation is provided, or one is removed"
      }
     ],
+    "excludes": "",
     "group": "rights",
-    "label": "Religious liberty (Free Exercise, Establishment, RFRA, and RLUIPA)",
+    "label": "Religious liberty (Free Exercise, Establishment Clause, RFRA, and RLUIPA)",
+    "max_level": 3,
     "open_questions": [
      "Whether the Court will overrule Smith (several Justices have urged it).",
      "How Mahmoud's parental-rights reasoning applies to federal programs and conditions on funds.",
      "How RLUIPA applies when federal agencies set conditions for state prisons or land-use programs."
     ],
+    "open_rated": true,
     "precedent": [
+     {
+      "authority": "catholic_charities",
+      "before": "open",
+      "label": "Close analogy",
+      "level": "analogy",
+      "note": "Lines drawn between denominations or a religious test: Larson and Catholic Charities apply by close analogy (Establishment Clause)."
+     },
+     {
+      "authority": "holt",
+      "before": "open",
+      "label": "Close analogy",
+      "level": "analogy",
+      "note": "Prisons, detention, or land use: RLUIPA (and, for federal action, RFRA) applies by close analogy (Holt)."
+     },
      {
       "authority": "fulton",
       "before": "open",
       "label": "Close analogy",
       "level": "analogy",
-      "note": "Fulton, Tandon, and Lukumi apply by close analogy; for federal action RFRA independently requires strict scrutiny (Hobby Lobby)."
+      "note": "Not neutral or generally applicable, with no accommodation: Fulton, Tandon, and Lukumi apply by close analogy; for federal action RFRA independently requires strict scrutiny."
      },
      {
       "authority": "hobby_lobby",
@@ -1280,6 +1376,13 @@
       "label": "Close analogy",
       "level": "analogy",
       "note": "A federal requirement that burdens religious exercise without accommodation: RFRA and Hobby Lobby apply by close analogy."
+     },
+     {
+      "authority": "carson",
+      "before": "open",
+      "label": "Close analogy",
+      "level": "analogy",
+      "note": "Religious groups excluded from a public benefit: Carson v. Makin applies by close analogy."
      },
      {
       "authority": "smith",
@@ -1290,9 +1393,10 @@
      }
     ],
     "question": "Does the action burden religious exercise, discriminate against religion, or favor one religion over another?",
-    "test": "Constitution: a neutral, generally applicable rule that incidentally burdens religion gets rational-basis review (Smith); a rule that targets religion, is not neutral, allows individualized exemptions (Fulton), or treats any comparable secular activity better (Tandon) must survive strict scrutiny (Lukumi). Government may not exclude religious groups from public benefits (Carson) or draw lines between denominations (Catholic Charities). Statutes: for federal action RFRA applies strict scrutiny even to neutral, generally applicable rules: a substantial burden must be the least restrictive means of serving a compelling interest (Hobby Lobby; O Centro). RLUIPA applies the same test to land-use rules and to federally funded prisons and institutions (Holt).",
+    "test": "Free Exercise: a neutral, generally applicable rule that incidentally burdens religion gets rational-basis review (Smith); a rule that targets religion, allows individualized exemptions (Fulton), or treats comparable secular activity better (Tandon) must survive strict scrutiny (Lukumi). Government may not exclude religious groups from public benefits because they are religious (Carson). Establishment Clause: government may not prefer one denomination over another (Larson; Catholic Charities). RFRA: for federal action, a substantial burden on religious exercise must be the least restrictive means of serving a compelling interest, even under a neutral rule (Hobby Lobby). RLUIPA applies the same test to land-use rules and to prisons and other institutions that receive federal funds (Holt).",
     "weighed": [
      {
+      "effect": "lowers",
       "id": "accommodation",
       "lowers": true,
       "text": "Provides a religious exemption or accommodation"
@@ -1315,7 +1419,7 @@
      {
       "gate": false,
       "id": "broad",
-      "text": "Applies broadly or in bulk rather than case by case"
+      "text": "Applies in bulk rather than case by case"
      },
      {
       "gate": false,
@@ -1323,18 +1427,21 @@
       "text": "The information may be made public or shared widely"
      }
     ],
+    "excludes": "",
     "group": "rights",
     "label": "Freedom of association and donor privacy",
+    "max_level": 3,
     "open_questions": [
      "How Americans for Prosperity applies to federal beneficial-ownership and political-disclosure rules."
     ],
+    "open_rated": true,
     "precedent": [
      {
       "authority": "afpf",
       "before": "open",
       "label": "Close analogy",
       "level": "analogy",
-      "note": "Americans for Prosperity applies by close analogy to broad donor or member disclosure."
+      "note": "Bulk donor or member disclosure that may become public: Americans for Prosperity applies by close analogy."
      },
      {
       "authority": "naacp_alabama",
@@ -1368,18 +1475,21 @@
       "text": "Without a warrant or precompliance review"
      }
     ],
+    "excludes": "",
     "group": "rights",
     "label": "Searches, inspections, records demands, or surveillance",
+    "max_level": 3,
     "open_questions": [
      "How Carpenter applies to bulk data demands made to companies about their customers."
     ],
+    "open_rated": true,
     "precedent": [
      {
       "authority": "patel",
       "before": "open",
       "label": "Close analogy",
       "level": "analogy",
-      "note": "See v. Seattle and Patel apply by close analogy."
+      "note": "A search or records demand without a warrant or precompliance review: See v. Seattle and Patel apply by close analogy."
      },
      {
       "authority": "burger",
@@ -1390,9 +1500,10 @@
      }
     ],
     "question": "Does the action authorize searches or records demands without a warrant or neutral review?",
-    "test": "Administrative inspections generally require a warrant (See v. Seattle), and records demands require a chance for precompliance review (Patel), except in closely regulated industries (Burger).",
+    "test": "Administrative inspections generally require a warrant (See v. Seattle), and records demands require a chance for precompliance review (Patel), except in closely regulated industries (Burger). Historical location records require a warrant (Carpenter).",
     "weighed": [
      {
+      "effect": "lowers",
       "id": "closely_regulated",
       "lowers": true,
       "text": "A closely regulated industry (the Burger exception may apply)"
@@ -1401,6 +1512,7 @@
    },
    {
     "authorities": [
+     "bi_metallic",
      "mathews",
      "fox",
      "cedar_point",
@@ -1411,12 +1523,17 @@
      {
       "gate": true,
       "id": "deprivation",
-      "text": "Property, money, or a license is taken or suspended"
+      "text": "Property, money, or a license is taken, seized, revoked, or suspended"
      },
      {
       "gate": true,
-      "id": "no_hearing",
-      "text": "Without prior notice or a hearing, or without fair notice of the standard"
+      "id": "particular",
+      "text": "Directed at particular parties (an enforcement or adjudicative action), or a rule granting physical access"
+     },
+     {
+      "gate": true,
+      "id": "no_process",
+      "text": "Without prior notice, a hearing, or fair notice of the standard; or a right of physical access to property"
      },
      {
       "gate": false,
@@ -1424,25 +1541,28 @@
       "text": "A physical occupation or right of access to private property"
      }
     ],
+    "excludes": "",
     "group": "rights",
     "label": "Property, takings, or due process",
+    "max_level": 3,
     "open_questions": [
-     "When interim final rules adopted without comment also deny constitutionally adequate notice."
+     "When summary suspensions of licenses are justified by emergencies without a prior hearing."
     ],
+    "open_rated": true,
     "precedent": [
      {
       "authority": "cedar_point",
       "before": "open",
       "label": "Close analogy",
       "level": "analogy",
-      "note": "Cedar Point applies by close analogy to a right of access."
+      "note": "A right of physical access to private property: Cedar Point applies by close analogy."
      },
      {
       "authority": "mathews",
       "before": "open",
       "label": "Close analogy",
       "level": "analogy",
-      "note": "Mathews and Fox apply by close analogy."
+      "note": "A deprivation imposed on particular parties without notice or a hearing: Mathews and Fox apply by close analogy."
      },
      {
       "authority": "mathews",
@@ -1452,8 +1572,8 @@
       "note": "Due process is a fact-specific balance."
      }
     ],
-    "question": "Does the action take property or a license without the notice and hearing due process requires, or without fair notice of the rule?",
-    "test": "The process due turns on the Mathews balance; agencies must give fair notice of prohibited conduct before sanctioning it (Fox); a right of physical access to property is a per se taking (Cedar Point).",
+    "question": "Does an action against particular parties take property or a license without the notice and hearing due process requires, or does a rule take property by granting physical access?",
+    "test": "Due process applies to actions directed at particular parties, not to rules of general application (Bi-Metallic). The process due turns on the Mathews balance, and agencies must give fair notice of prohibited conduct before sanctioning it (Fox). A rule granting a right of physical access to private property is a per se taking (Cedar Point).",
     "weighed": []
    },
    {
@@ -1480,11 +1600,14 @@
       "text": "The underlying violation is described as technical, recordkeeping, or reporting only"
      }
     ],
+    "excludes": "",
     "group": "rights",
     "label": "Excessive fines and forfeitures",
+    "max_level": 3,
     "open_questions": [
      "How courts measure proportionality for corporate penalties calculated per violation."
     ],
+    "open_rated": true,
     "precedent": [
      {
       "authority": "bajakajian",
@@ -1505,6 +1628,7 @@
     "test": "Punitive fines and forfeitures violate the Eighth Amendment if grossly disproportional to the gravity of the offense (Bajakajian); civil forfeitures that partly punish are covered (Austin).",
     "weighed": [
      {
+      "effect": "lowers",
       "id": "restitution",
       "lowers": true,
       "text": "The money is described as restitution to victims, which is generally remedial"
@@ -1527,21 +1651,24 @@
      {
       "gate": true,
       "id": "preference",
-      "text": "It grants an express preference, presumption, or set-aside"
+      "text": "It grants an express preference, presumption, set-aside, or quota based on race or sex"
      }
     ],
+    "excludes": "",
     "group": "rights",
     "label": "Classifications by race, sex, or other protected traits",
+    "max_level": 3,
     "open_questions": [
      "How SFFA applies to federal contracting presumptions of disadvantage."
     ],
+    "open_rated": true,
     "precedent": [
      {
       "authority": "sffa",
       "before": "analogy",
       "label": "Close analogy",
       "level": "analogy",
-      "note": "SFFA and Adarand apply by close analogy; strict scrutiny is rarely satisfied."
+      "note": "An express racial or sex preference: SFFA and Adarand apply by close analogy; strict scrutiny is rarely satisfied."
      },
      {
       "authority": "adarand",
@@ -1580,27 +1707,29 @@
   },
   "rubric": {
    "constitutionality": [
-    "The rating measures one thing: how likely it is that the action is unconstitutional, or exceeds the limits on executive power, under the law as it stands today. Impact is recorded separately and never affects it.",
+    "The rating measures one thing: how likely it is that the action is unlawful under the Constitution or the limits on executive power, under the law as it stands today. Impact is recorded separately and never affects it.",
+    "Each memo states a test broken into elements. Gate elements are the essential ones: an issue is rated only when every gate element appears; otherwise it is listed as a possible issue.",
     "Precedent strength comes from the first rule in the memo that matches: a direct holding (a court has held this practice unlawful), a close analogy (a Supreme Court holding applies closely, or an appeals court has held the same practice unlawful), or an open question.",
-    "Gate elements must all appear before an action is rated. Without them, the issue is listed as a possible issue and not rated.",
-    "Almost certainly unconstitutional: a direct holding and every element found. Very likely: a direct holding with at least half the elements, or a close analogy with every element. Likely: any other rated issue.",
-    "Elements are looked for in the title, action line, and summary, and in the full text when RegCollect has read it. Each flag says which elements came from the full text.",
-    "Weighed factors (such as a contrary holding or a closely regulated industry) lower the rating by one step each but never remove it. Settlements are noted and do not lower it.",
-    "When a court has ruled on the specific action, the ruling sets the rating: Supreme Court, almost certainly; court of appeals, very likely; district court, likely. A ruling that upheld the action lowers the rating one step.",
+    "Likely unlawful is generous, because RegCollect is built to surface arguable issues: the gate elements and at least half of all elements, with any precedent. Very likely unlawful: a direct holding with at least half the elements, or a close analogy with every element. Almost certainly unlawful: a direct holding with every element.",
+    "Very likely and almost certainly require the elements to appear in the document's operative text: its title, action line, and summary; the whole of a presidential document; or a rule's authority line and regulatory text. Elements found only in other passages of the full text (preambles, comment responses) can support Likely at most. Each flag says which elements came from the full text.",
+    "Weighed factors (such as a closely regulated industry) lower the rating by one step each but never below Likely. When the Supreme Court has upheld the very practice (for example, FCC forfeiture orders in FCC v. AT&T), the issue is listed as a possible issue with that reason. Settlements are noted only.",
+    "When a court has ruled on the specific action, the ruling sets the rating: Supreme Court, almost certainly; court of appeals, very likely; district court, likely. Each such flag states what the court held. A ruling that upheld the action lowers the rating one step.",
+    "Some memos cap their ratings: reliance on Chevron deference is rated Likely at most, because Loper Bright preserved earlier cases that upheld rules under Chevron.",
     "Ratings apply today's law. When the controlling decision came after the action, the flag notes that the action may have been lawful under the precedent at the time."
    ],
    "impact": [
-    "Impact is noted for context only. It is not color-coded and does not affect the constitutionality rating.",
+    "Impact is noted for context only. It is not color-coded and does not affect the lawfulness rating.",
     "Sanction points: 4 for criminal charges, bars, expulsions, debarment, revocations, and practice bans; 3 for civil penalties, forfeitures, disgorgement, seizures, asset freezes, and funding cuts; 2 for cease-and-desist orders, injunctions, suspensions, denials, shutdowns, gag terms, trading halts, data-deletion orders, monitors, recalls, and import actions; 1 for warnings, censures, subpoenas, inspections, compelled notices, restitution, and settlements.",
     "Money points: 3 for at least $100 million, 2 for at least $1 million, 1 for any stated amount.",
     "Reach points: 3 for presidential documents and rules designated economically significant or major; 2 for other final or proposed rules; 1 for actions against particular parties and self-regulatory filings.",
     "Lower Impact: 1 to 3 points. Significant Impact: 4 to 6. Serious Impact: 7 or more."
    ]
   },
-  "rubric_version": "3.1",
+  "rubric_version": "3.2",
   "rulings": [
    {
     "authority": "learning_resources",
+    "caution": "",
     "count": 25,
     "court": "supreme",
     "court_label": "Supreme Court",
@@ -1614,6 +1743,7 @@
    },
    {
     "authority": "west_virginia",
+    "caution": "",
     "count": 1,
     "court": "supreme",
     "court_label": "Supreme Court",
@@ -1627,6 +1757,7 @@
    },
    {
     "authority": "alabama_realtors",
+    "caution": "",
     "count": 7,
     "court": "supreme",
     "court_label": "Supreme Court",
@@ -1640,6 +1771,7 @@
    },
    {
     "authority": "nfib_osha",
+    "caution": "The Supreme Court ruled on a stay application, not a final judgment; OSHA later withdrew the standard. Verify before relying.",
     "count": 3,
     "court": "supreme",
     "court_label": "Supreme Court",
@@ -1653,6 +1785,7 @@
    },
    {
     "authority": "biden_missouri",
+    "caution": "",
     "count": 1,
     "court": "supreme",
     "court_label": "Supreme Court",
@@ -1666,6 +1799,7 @@
    },
    {
     "authority": "georgia_wheeler",
+    "caution": "District court ruling; the 2015 rule was later repealed and replaced. Verify before relying.",
     "count": 1,
     "court": "district",
     "court_label": "Federal district court",
@@ -1679,6 +1813,7 @@
    },
    {
     "authority": "ch_dol_fiduciary",
+    "caution": "One court of appeals (Fifth Circuit). Verify before relying.",
     "count": 1,
     "court": "appeals",
     "court_label": "Federal court of appeals",
@@ -1692,6 +1827,7 @@
    },
    {
     "authority": "ohio_telecom",
+    "caution": "One court of appeals (Sixth Circuit). Verify before relying.",
     "count": 1,
     "court": "appeals",
     "court_label": "Federal court of appeals",
@@ -1705,6 +1841,7 @@
    },
    {
     "authority": "napfm",
+    "caution": "One court of appeals (Fifth Circuit). Verify before relying.",
     "count": 1,
     "court": "appeals",
     "court_label": "Federal court of appeals",
@@ -1718,6 +1855,7 @@
    },
    {
     "authority": "ryan_ftc",
+    "caution": "District court ruling; the FTC later dropped its appeals. Verify before relying.",
     "count": 1,
     "court": "district",
     "court_label": "Federal district court",
@@ -1731,6 +1869,7 @@
    },
    {
     "authority": "texas_dol_2024",
+    "caution": "District court ruling. Verify before relying.",
     "count": 1,
     "court": "district",
     "court_label": "Federal district court",
@@ -1744,6 +1883,7 @@
    },
    {
     "authority": "nevada_dol",
+    "caution": "District court ruling. Verify before relying.",
     "count": 1,
     "court": "district",
     "court_label": "Federal district court",
@@ -1757,6 +1897,7 @@
    },
    {
     "authority": "chamber_nlrb",
+    "caution": "District court ruling. Verify before relying.",
     "count": 1,
     "court": "district",
     "court_label": "Federal district court",
@@ -1770,6 +1911,7 @@
    },
    {
     "authority": "franciscan",
+    "caution": "District court ruling, later followed by further litigation and new rules. Verify before relying.",
     "count": 1,
     "court": "district",
     "court_label": "Federal district court",
@@ -1878,7 +2020,7 @@
   {
    "code": "officer_appointment_removal",
    "group": "structural",
-   "label": "Appointment and supervision of officers (ALJs, hearing officers, and board members)"
+   "label": "Appointment and review of officers (ALJs, hearing officers, and board members)"
   },
   {
    "code": "private_delegation",
@@ -1918,12 +2060,12 @@
   {
    "code": "federalism",
    "group": "structural",
-   "label": "Federalism (states, preemption, and conditions on federal funds)"
+   "label": "Federalism (commandeering and conditions on federal funds)"
   },
   {
    "code": "presidential_lawmaking",
    "group": "structural",
-   "label": "Executive action that makes law (emergency powers, tariffs, and suspending or rewriting statutes)"
+   "label": "Executive action that makes law (emergency powers, tariffs, and suspending statutes)"
   },
   {
    "code": "speech_restraint",
@@ -1938,7 +2080,7 @@
   {
    "code": "free_exercise",
    "group": "rights",
-   "label": "Religious liberty (Free Exercise, Establishment, RFRA, and RLUIPA)"
+   "label": "Religious liberty (Free Exercise, Establishment Clause, RFRA, and RLUIPA)"
   },
   {
    "code": "association",
@@ -2033,7 +2175,7 @@
    "label": "Notice only"
   }
  ],
- "rubric_version": "3.1",
+ "rubric_version": "3.2",
  "sanction_families": [
   {
    "key": "monetary",
@@ -2514,34 +2656,34 @@
  ],
  "scales": {
   "constitutionality": {
-   "label": "Constitutionality",
+   "label": "Lawfulness",
    "levels": [
     {
      "color": "red",
-     "full": "Almost certainly unconstitutional",
-     "meaning": "A court has squarely held this practice (or this very action) unlawful, and every element of the test appears.",
+     "full": "Almost certainly unlawful",
+     "meaning": "A court has squarely held this practice (or this very action) unlawful, and every element of the test appears in the document's operative text.",
      "name": "Near certain",
      "value": 3
     },
     {
      "color": "orange",
-     "full": "Very likely unconstitutional",
-     "meaning": "A direct holding with at least half the elements, or a close analogy (or an appeals-court holding) with every element.",
+     "full": "Very likely unlawful",
+     "meaning": "A direct holding with at least half the elements, or a close analogy (or an appeals-court holding) with every element, in the document's operative text.",
      "name": "Very likely",
      "value": 2
     },
     {
      "color": "yellow",
-     "full": "Likely unconstitutional",
-     "meaning": "The gate elements are present and the governing law points toward a violation, but the precedent is less direct or fewer elements were found.",
+     "full": "Likely unlawful",
+     "meaning": "An arguable case: the essential (gate) elements appear, with at least half the elements of the test. Worth a lawyer's look.",
      "name": "Likely",
      "value": 1
     }
    ],
-   "prefix": "Unconstitutional",
-   "question": "How likely is it that this action is unconstitutional, or exceeds the limits on executive power, under the law today?",
+   "prefix": "Unlawful",
+   "question": "How likely is it that this action is unlawful under the Constitution or the limits on executive power, under the law today?",
    "unrated": {
-    "meaning": "Wording tied to an issue appears, but the elements needed for a rating were not found. Not rated and not counted as a flag.",
+    "meaning": "Wording tied to an issue appears, but the essential elements were not found, or the Supreme Court has upheld this very practice. Not rated and not counted as a flag.",
     "name": "Possible issue"
    }
   },

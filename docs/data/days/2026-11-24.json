@@ -18,45 +18,21 @@
    "first_seen": "2026-11-24T13:39:41+00:00",
    "flags": [
     {
-     "authority": "loper_bright",
-     "code": "statutory_deference",
-     "elements_found": [
-      "interpretation",
-      "deference"
-     ],
-     "elements_total": 3,
-     "full_text_elements": [
-      "interpretation",
-      "deference"
-     ],
-     "group": "structural",
-     "level": 2,
-     "precedent": "direct",
-     "structural": true,
-     "triggers": [
-      "chevron deference",
-      "deference",
-      "interpretation of section"
-     ],
-     "weighed": []
-    },
-    {
-     "authority": "afpf",
+     "authority": "naacp_alabama",
+     "basis": "passages",
      "code": "association",
      "elements_found": [
       "disclosure",
-      "broad",
       "public_release"
      ],
      "elements_total": 3,
      "full_text_elements": [
       "disclosure",
-      "broad",
       "public_release"
      ],
      "group": "rights",
-     "level": 2,
-     "precedent": "analogy",
+     "level": 1,
+     "precedent": "open",
      "structural": false,
      "triggers": [
       "beneficial owner"
@@ -70,9 +46,6 @@
       "executive"
      ],
      "elements_total": 3,
-     "full_text_elements": [
-      "executive"
-     ],
      "group": "structural",
      "level": 0,
      "precedent": "open",
@@ -100,15 +73,53 @@
      "weighed": []
     },
     {
-     "authority": "adarand",
-     "code": "equal_protection",
+     "authority": "cook",
+     "code": "removal_independence",
      "elements_found": [
-      "preference"
+      "protected_body"
      ],
      "elements_total": 2,
      "full_text_elements": [
-      "preference"
+      "protected_body"
      ],
+     "group": "structural",
+     "level": 0,
+     "precedent": "analogy",
+     "structural": true,
+     "triggers": [
+      "federal reserve"
+     ],
+     "weighed": []
+    },
+    {
+     "authority": "loper_bright",
+     "code": "statutory_deference",
+     "elements_found": [
+      "interpretation",
+      "deference"
+     ],
+     "elements_total": 3,
+     "full_text_elements": [
+      "interpretation",
+      "deference"
+     ],
+     "group": "structural",
+     "level": 0,
+     "precedent": "open",
+     "structural": true,
+     "triggers": [
+      "chevron deference"
+     ],
+     "unrated_by": "post_loper",
+     "weighed": [
+      "post_loper"
+     ]
+    },
+    {
+     "authority": "adarand",
+     "code": "equal_protection",
+     "elements_found": [],
+     "elements_total": 2,
      "group": "rights",
      "level": 0,
      "precedent": "open",
@@ -116,25 +127,6 @@
      "triggers": [
       "dei",
       "diversity, equity"
-     ],
-     "weighed": []
-    },
-    {
-     "authority": "burger",
-     "code": "fourth_amendment",
-     "elements_found": [
-      "search"
-     ],
-     "elements_total": 2,
-     "full_text_elements": [
-      "search"
-     ],
-     "group": "rights",
-     "level": 0,
-     "precedent": "open",
-     "structural": false,
-     "triggers": [
-      "inspection"
      ],
      "weighed": []
     },
@@ -147,7 +139,8 @@
      ],
      "elements_total": 4,
      "full_text_elements": [
-      "religion"
+      "religion",
+      "burden"
      ],
      "group": "rights",
      "level": 0,
@@ -170,7 +163,7 @@
      "loper_bright",
      "major_questions"
     ],
-    "v": 1
+    "v": 2
    },
    "id": "fr:2026-23936",
    "impact": {
@@ -186,11 +179,11 @@
    },
    "jurisdiction": "federal",
    "outcome": "proposed",
-   "priority": 2,
+   "priority": 1,
    "published": "2026-11-24",
    "rating": {
-    "issues": 2,
-    "level": 2
+    "issues": 1,
+    "level": 1
    },
    "raw_text_url": "https://www.federalregister.gov/documents/full_text/text/2026/11/24/2026-23936.txt",
    "rins": [
@@ -206,6 +199,151 @@
    "summary": "In this proposed rule, the Department of Labor (Department) clarifies the fiduciary duty of loyalty under the Employee Retirement Income Security Act of 1974 (ERISA). The proposed rule affirms that ERISA's duty of loyalty requires fiduciaries to act with the exclusive purpose of ensuring retirement security and providing promised benefits to plan participants and their beneficiaries. The amendments clarify the neutral application of ERISA's fiduciary duties of prudence and loyalty to selecting investments and investment courses of action, and to exercising shareholder rights, including proxy voting, the use of written proxy voting policies and guidelines, and shareholder engagement…",
    "title": "Loyalty and the Exclusive Purpose Rule in Selecting Plan Investments and Exercising Shareholder Rights",
    "url": "https://www.federalregister.gov/documents/2026/11/24/2026-23936/loyalty-and-the-exclusive-purpose-rule-in-selecting-plan-investments-and-exercising-shareholder"
+  },
+  {
+   "action": "Proposed rule.",
+   "agencies": [
+    "sec"
+   ],
+   "category": "rulemaking",
+   "comments_close": "2027-01-25",
+   "corporation": null,
+   "date": "2026-11-24",
+   "date_basis": "published",
+   "doc_type": "Proposed Rule",
+   "docket_ids": [
+    "Release No. 34-106950",
+    "File No. S7-2026-40"
+   ],
+   "effective_on": "2026-11-24",
+   "eo_number": null,
+   "first_seen": "2026-11-24T13:39:41+00:00",
+   "flags": [
+    {
+     "authority": "west_virginia",
+     "basis": "passages",
+     "code": "major_questions",
+     "elements_found": [
+      "rule",
+      "significance",
+      "novelty"
+     ],
+     "elements_total": 4,
+     "full_text_elements": [
+      "novelty"
+     ],
+     "group": "structural",
+     "level": 1,
+     "precedent": "open",
+     "structural": true,
+     "triggers": [
+      "industry-wide",
+      "unprecedented"
+     ],
+     "weighed": []
+    },
+    {
+     "authority": "mathews",
+     "code": "due_process_takings",
+     "elements_found": [
+      "deprivation"
+     ],
+     "elements_total": 4,
+     "full_text_elements": [
+      "deprivation"
+     ],
+     "group": "rights",
+     "level": 0,
+     "precedent": "open",
+     "structural": false,
+     "triggers": [
+      "forfeit"
+     ],
+     "weighed": []
+    },
+    {
+     "authority": "burger",
+     "code": "fourth_amendment",
+     "elements_found": [],
+     "elements_total": 2,
+     "group": "rights",
+     "level": 0,
+     "precedent": "open",
+     "structural": false,
+     "triggers": [
+      "fourth amendment"
+     ],
+     "weighed": []
+    },
+    {
+     "authority": "central_hudson",
+     "code": "free_speech",
+     "elements_found": [
+      "speech",
+      "content",
+      "not_factual"
+     ],
+     "elements_total": 3,
+     "full_text_elements": [
+      "speech",
+      "content",
+      "not_factual"
+     ],
+     "group": "rights",
+     "level": 0,
+     "precedent": "open",
+     "structural": false,
+     "triggers": [
+      "first amendment"
+     ],
+     "weighed": []
+    }
+   ],
+   "fr_agency_slugs": [
+    "securities-and-exchange-commission"
+   ],
+   "ft": {
+    "read": "2026-11-27",
+    "terms": [
+     "first_amendment",
+     "fourth_amendment"
+    ],
+    "v": 2
+   },
+   "id": "fr:2026-23951",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 2,
+      "why": "binding rule designated significant"
+     }
+    ],
+    "level": 1,
+    "points": 2
+   },
+   "jurisdiction": "federal",
+   "outcome": "proposed",
+   "priority": 1,
+   "published": "2026-11-24",
+   "rating": {
+    "issues": 1,
+    "level": 1
+   },
+   "raw_text_url": "https://www.federalregister.gov/documents/full_text/text/2026/11/24/2026-23951.txt",
+   "rins": [
+    "3235-AN54"
+   ],
+   "routine": false,
+   "sanctions": [],
+   "significant": true,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Proposed rule",
+   "subtype": "",
+   "summary": "Although the consolidated audit trail (the \"CAT\") continues to be a necessary regulatory tool, its decentralized governance has presented certain challenges to administering the CAT. To address those shortcomings, the Securities and Exchange Commission (the \"Commission\" or the \"SEC\") proposes to assume direct control of the CAT. Specifically, the Commission is proposing amendments to Regulation NMS under the Securities Exchange Act of 1934 (\"Exchange Act\") that would rescind Rule 613, which obligates the national securities exchanges and national securities associations (collectively, the \"SROs\") to act jointly to develop a national market system plan to develop, implement, and maintain the…",
+   "title": "Restructuring the Governance and Funding Model of the Consolidated Audit Trail",
+   "url": "https://www.federalregister.gov/documents/2026/11/24/2026-23951/restructuring-the-governance-and-funding-model-of-the-consolidated-audit-trail"
   },
   {
    "action": "",
@@ -2628,165 +2766,6 @@
    "title": "Response Letter",
    "url": "https://www.regulations.gov/document/FDA-2026-P-7623-0007",
    "withdrawn": false
-  },
-  {
-   "action": "Proposed rule.",
-   "agencies": [
-    "sec"
-   ],
-   "category": "rulemaking",
-   "comments_close": "2027-01-25",
-   "corporation": null,
-   "date": "2026-11-24",
-   "date_basis": "published",
-   "doc_type": "Proposed Rule",
-   "docket_ids": [
-    "Release No. 34-106950",
-    "File No. S7-2026-40"
-   ],
-   "effective_on": "2026-11-24",
-   "eo_number": null,
-   "first_seen": "2026-11-24T13:39:41+00:00",
-   "flags": [
-    {
-     "authority": "west_virginia",
-     "code": "major_questions",
-     "elements_found": [
-      "rule",
-      "significance",
-      "novelty"
-     ],
-     "elements_total": 4,
-     "full_text_elements": [
-      "novelty"
-     ],
-     "group": "structural",
-     "level": 0,
-     "precedent": "open",
-     "structural": true,
-     "triggers": [
-      "transform",
-      "unprecedented"
-     ],
-     "weighed": []
-    },
-    {
-     "authority": "mathews",
-     "code": "due_process_takings",
-     "elements_found": [
-      "deprivation"
-     ],
-     "elements_total": 3,
-     "full_text_elements": [
-      "deprivation"
-     ],
-     "group": "rights",
-     "level": 0,
-     "precedent": "open",
-     "structural": false,
-     "triggers": [
-      "forfeit"
-     ],
-     "weighed": []
-    },
-    {
-     "authority": "burger",
-     "code": "fourth_amendment",
-     "elements_found": [],
-     "elements_total": 2,
-     "group": "rights",
-     "level": 0,
-     "precedent": "open",
-     "structural": false,
-     "triggers": [
-      "fourth amendment"
-     ],
-     "weighed": []
-    },
-    {
-     "authority": "central_hudson",
-     "code": "free_speech",
-     "elements_found": [
-      "speech",
-      "content"
-     ],
-     "elements_total": 3,
-     "full_text_elements": [
-      "speech",
-      "content"
-     ],
-     "group": "rights",
-     "level": 0,
-     "precedent": "open",
-     "structural": false,
-     "triggers": [
-      "first amendment"
-     ],
-     "weighed": []
-    },
-    {
-     "authority": "nebraska_press",
-     "code": "speech_restraint",
-     "elements_found": [
-      "restriction",
-      "government"
-     ],
-     "elements_total": 3,
-     "full_text_elements": [
-      "restriction"
-     ],
-     "group": "rights",
-     "level": 0,
-     "precedent": "open",
-     "structural": false,
-     "triggers": [
-      "confidentiality requirement"
-     ],
-     "weighed": []
-    }
-   ],
-   "fr_agency_slugs": [
-    "securities-and-exchange-commission"
-   ],
-   "ft": {
-    "read": "2026-11-27",
-    "terms": [
-     "first_amendment",
-     "fourth_amendment"
-    ],
-    "v": 1
-   },
-   "id": "fr:2026-23951",
-   "impact": {
-    "breakdown": [
-     {
-      "marker": "Reach",
-      "points": 2,
-      "why": "binding rule designated significant"
-     }
-    ],
-    "level": 1,
-    "points": 2
-   },
-   "jurisdiction": "federal",
-   "outcome": "proposed",
-   "priority": 0,
-   "published": "2026-11-24",
-   "rating": null,
-   "raw_text_url": "https://www.federalregister.gov/documents/full_text/text/2026/11/24/2026-23951.txt",
-   "rins": [
-    "3235-AN54"
-   ],
-   "routine": false,
-   "sanctions": [],
-   "significant": true,
-   "source": "federal_register",
-   "source_label": "Federal Register",
-   "subcategory": "Proposed rule",
-   "subtype": "",
-   "summary": "Although the consolidated audit trail (the \"CAT\") continues to be a necessary regulatory tool, its decentralized governance has presented certain challenges to administering the CAT. To address those shortcomings, the Securities and Exchange Commission (the \"Commission\" or the \"SEC\") proposes to assume direct control of the CAT. Specifically, the Commission is proposing amendments to Regulation NMS under the Securities Exchange Act of 1934 (\"Exchange Act\") that would rescind Rule 613, which obligates the national securities exchanges and national securities associations (collectively, the \"SROs\") to act jointly to develop a national market system plan to develop, implement, and maintain the…",
-   "title": "Restructuring the Governance and Funding Model of the Consolidated Audit Trail",
-   "url": "https://www.federalregister.gov/documents/2026/11/24/2026-23951/restructuring-the-governance-and-funding-model-of-the-consolidated-audit-trail"
   },
   {
    "action": "",
