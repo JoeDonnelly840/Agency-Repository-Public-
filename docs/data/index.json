@@ -73,7 +73,7 @@
  ],
  "app": {
   "name": "RegCollect",
-  "version": "3.0"
+  "version": "3.1"
  },
  "archive_after_days": 70,
  "backfill": {
@@ -193,7 +193,7 @@
   "2026-11-23": 418,
   "2026-11-24": 87,
   "2026-11-25": 92,
-  "2026-11-27": 49
+  "2026-11-27": 51
  },
  "history_start": "2015-01-01",
  "jurisdictions": [
@@ -412,6 +412,7 @@
   "name": "The President",
   "short": "President"
  },
+ "rubric_version": "3.1",
  "runs": [
   {
    "end": "2026-11-11",
@@ -7397,6 +7398,119 @@
    "requests": 296,
    "run_at": "2026-11-27T15:33:19+00:00",
    "start": "2015-04-01"
+  },
+  {
+   "end": "2026-11-27",
+   "items_found": 230,
+   "items_new": 2,
+   "kind": "daily",
+   "reports": [
+    {
+     "agencies": {
+      "cfpb": "ok",
+      "dol": "ok",
+      "epa": "ok",
+      "fcc": "ok",
+      "fda": "ok",
+      "ferc": "ok",
+      "ftc": "ok",
+      "hhs": "ok",
+      "nlrb": "ok",
+      "president": "ok",
+      "sec": "ok"
+     },
+     "detail": "",
+     "label": "Federal Register",
+     "source": "federal_register",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "cfpb": "ok",
+      "dol": "ok",
+      "epa": "ok",
+      "fcc": "ok",
+      "fda": "ok",
+      "ferc": "ok",
+      "ftc": "ok",
+      "hhs": "ok",
+      "nlrb": "ok",
+      "sec": "ok"
+     },
+     "detail": "",
+     "label": "Regulations.gov",
+     "source": "regulations_gov",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "sec": "ok"
+     },
+     "detail": "",
+     "label": "SEC litigation releases (federal court actions)",
+     "source": "sec_litigation",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "sec": "ok"
+     },
+     "detail": "",
+     "label": "SEC administrative proceedings (in-house)",
+     "source": "sec_admin",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "fda": "ok"
+     },
+     "detail": "",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "nlrb": "ok"
+     },
+     "detail": "Only announcements that describe an action (charges, settlements, orders, penalties, and similar) are kept.",
+     "kind": "agency_website",
+     "label": "NLRB press releases",
+     "source": "nlrb_press",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "fda": "error: Could not read https://www.fda.gov/robots.txt (HTTP Error 404: Not Found); skipped to be safe."
+     },
+     "detail": "Could not read https://www.fda.gov/robots.txt (HTTP Error 404: Not Found); skipped to be safe.",
+     "kind": "agency_website",
+     "label": "FDA press releases",
+     "source": "fda_press",
+     "status": "failed"
+    },
+    {
+     "agencies": {
+      "cfpb": "ok"
+     },
+     "detail": "Only announcements that describe an action (charges, settlements, orders, penalties, and similar) are kept.",
+     "kind": "agency_website",
+     "label": "CFPB newsroom (enforcement announcements)",
+     "source": "cfpb_newsroom",
+     "status": "ok"
+    },
+    {
+     "agencies": {},
+     "detail": "8 documents matched legal-term searches (60 requests); 7 documents read in full",
+     "label": "Federal Register full text",
+     "source": "federal_register_fulltext",
+     "status": "ok"
+    }
+   ],
+   "requests": 112,
+   "run_at": "2026-11-27T17:18:44+00:00",
+   "start": "2026-11-24"
   }
  ],
  "schema": 3,
@@ -7408,6 +7522,19 @@
    "fda"
   ],
   "federal_register": [
+   "sec",
+   "ftc",
+   "fcc",
+   "epa",
+   "nlrb",
+   "cfpb",
+   "dol",
+   "fda",
+   "hhs",
+   "ferc",
+   "president"
+  ],
+  "federal_register_fulltext": [
    "sec",
    "ftc",
    "fcc",
@@ -7449,6 +7576,7 @@
   "cfpb_newsroom": "CFPB newsroom (enforcement announcements)",
   "fda_press": "FDA press releases",
   "federal_register": "Federal Register",
+  "federal_register_fulltext": "Federal Register full text (legal-term searches and full reads)",
   "nlrb_alj": "NLRB administrative law judge decisions",
   "nlrb_board": "NLRB Board decisions",
   "nlrb_press": "NLRB press releases",
@@ -7461,59 +7589,66 @@
   "cfpb_newsroom": {
    "covered_through": "2026-11-27",
    "label": "CFPB newsroom (enforcement announcements)",
-   "last_attempt": "2026-11-27T13:39:44+00:00",
+   "last_attempt": "2026-11-27T17:18:44+00:00",
    "last_detail": "Only announcements that describe an action (charges, settlements, orders, penalties, and similar) are kept.",
    "last_status": "ok"
   },
   "fda_press": {
    "covered_through": "2026-11-27",
    "label": "FDA press releases",
-   "last_attempt": "2026-11-27T13:39:44+00:00",
-   "last_detail": "Only announcements that describe an action (charges, settlements, orders, penalties, and similar) are kept.",
-   "last_status": "ok"
+   "last_attempt": "2026-11-27T17:18:44+00:00",
+   "last_detail": "Could not read https://www.fda.gov/robots.txt (HTTP Error 404: Not Found); skipped to be safe.",
+   "last_status": "failed"
   },
   "federal_register": {
    "covered_through": "2026-11-27",
    "label": "Federal Register",
-   "last_attempt": "2026-11-27T13:39:44+00:00",
+   "last_attempt": "2026-11-27T17:18:44+00:00",
    "last_detail": "",
+   "last_status": "ok"
+  },
+  "federal_register_fulltext": {
+   "covered_through": "2026-11-27",
+   "label": "Federal Register full text",
+   "last_attempt": "2026-11-27T17:18:44+00:00",
+   "last_detail": "8 documents matched legal-term searches (60 requests); 7 documents read in full",
    "last_status": "ok"
   },
   "nlrb_press": {
    "covered_through": "2026-11-27",
    "label": "NLRB press releases",
-   "last_attempt": "2026-11-27T13:39:44+00:00",
+   "last_attempt": "2026-11-27T17:18:44+00:00",
    "last_detail": "Only announcements that describe an action (charges, settlements, orders, penalties, and similar) are kept.",
    "last_status": "ok"
   },
   "openfda": {
    "covered_through": "2026-11-27",
    "label": "openFDA recall enforcement reports",
-   "last_attempt": "2026-11-27T13:39:44+00:00",
+   "last_attempt": "2026-11-27T17:18:44+00:00",
    "last_detail": "",
    "last_status": "ok"
   },
   "regulations_gov": {
    "covered_through": "2026-11-27",
    "label": "Regulations.gov",
-   "last_attempt": "2026-11-27T13:39:44+00:00",
+   "last_attempt": "2026-11-27T17:18:44+00:00",
    "last_detail": "",
    "last_status": "ok"
   },
   "sec_admin": {
    "covered_through": "2026-11-27",
    "label": "SEC administrative proceedings (in-house)",
-   "last_attempt": "2026-11-27T13:39:44+00:00",
+   "last_attempt": "2026-11-27T17:18:44+00:00",
    "last_detail": "",
    "last_status": "ok"
   },
   "sec_litigation": {
    "covered_through": "2026-11-27",
    "label": "SEC litigation releases (federal court actions)",
-   "last_attempt": "2026-11-27T13:39:44+00:00",
+   "last_attempt": "2026-11-27T17:18:44+00:00",
    "last_detail": "",
    "last_status": "ok"
   }
  },
- "updated_at": "2026-11-27T15:33:19+00:00"
+ "updated_at": "2026-11-27T17:18:44+00:00"
 }

@@ -6,1125 +6,6 @@
    "agencies": [
     "fda"
    ],
-   "category": "enforcement",
-   "comments_close": null,
-   "corporation": null,
-   "date": "2026-11-09",
-   "date_basis": "posted",
-   "doc_type": "Other",
-   "docket_ids": [
-    "FDA-2026-H-10633"
-   ],
-   "first_seen": "2026-11-12T13:37:14+00:00",
-   "flags": [
-    {
-     "code": "agency_adjudication",
-     "counters": [],
-     "elements_found": [
-      "penalty",
-      "in_house",
-      "contested"
-     ],
-     "elements_total": 4,
-     "flagrance": 1,
-     "group": "structural",
-     "impact": 2,
-     "structural": true,
-     "tier": 1,
-     "tier_authority": "atlas_roofing",
-     "triggers": [
-      "civil money penalty complaint"
-     ]
-    }
-   ],
-   "fr_doc_num": null,
-   "id": "regs:FDA-2026-H-10633-0001",
-   "jurisdiction": "federal",
-   "outcome": "initiated",
-   "priority": 2,
-   "published": "2026-11-09",
-   "regs_agency_id": "FDA",
-   "routine": false,
-   "sanctions": [
-    "civil_penalty"
-   ],
-   "seriousness": {
-    "breakdown": [
-     {
-      "marker": "Sanction",
-      "points": 3,
-      "why": "most serious sanction named"
-     },
-     {
-      "marker": "Reach",
-      "points": 1,
-      "why": "action against particular parties"
-     }
-    ],
-    "level": 2,
-    "points": 4
-   },
-   "severity": {
-    "flagrance": 1,
-    "impact": 2,
-    "score": 2
-   },
-   "source": "regulations_gov",
-   "source_label": "Regulations.gov",
-   "subcategory": "Civil money penalty complaint (FDA hearing docket, usually a tobacco retailer)",
-   "subtype": "Complaint",
-   "summary": "",
-   "title": "Complaint",
-   "url": "https://www.regulations.gov/document/FDA-2026-H-10633-0001",
-   "withdrawn": false
-  },
-  {
-   "action": "",
-   "agencies": [
-    "fda"
-   ],
-   "category": "enforcement",
-   "comments_close": null,
-   "corporation": null,
-   "date": "2026-11-09",
-   "date_basis": "posted",
-   "doc_type": "Other",
-   "docket_ids": [
-    "FDA-2026-H-13408"
-   ],
-   "first_seen": "2026-11-12T13:37:14+00:00",
-   "flags": [
-    {
-     "code": "agency_adjudication",
-     "counters": [],
-     "elements_found": [
-      "penalty",
-      "in_house",
-      "contested"
-     ],
-     "elements_total": 4,
-     "flagrance": 1,
-     "group": "structural",
-     "impact": 2,
-     "structural": true,
-     "tier": 1,
-     "tier_authority": "atlas_roofing",
-     "triggers": [
-      "civil money penalty complaint"
-     ]
-    }
-   ],
-   "fr_doc_num": null,
-   "id": "regs:FDA-2026-H-13408-0001",
-   "jurisdiction": "federal",
-   "outcome": "initiated",
-   "priority": 2,
-   "published": "2026-11-09",
-   "regs_agency_id": "FDA",
-   "routine": false,
-   "sanctions": [
-    "civil_penalty"
-   ],
-   "seriousness": {
-    "breakdown": [
-     {
-      "marker": "Sanction",
-      "points": 3,
-      "why": "most serious sanction named"
-     },
-     {
-      "marker": "Reach",
-      "points": 1,
-      "why": "action against particular parties"
-     }
-    ],
-    "level": 2,
-    "points": 4
-   },
-   "severity": {
-    "flagrance": 1,
-    "impact": 2,
-    "score": 2
-   },
-   "source": "regulations_gov",
-   "source_label": "Regulations.gov",
-   "subcategory": "Civil money penalty complaint (FDA hearing docket, usually a tobacco retailer)",
-   "subtype": "Complaint",
-   "summary": "",
-   "title": "Complaint",
-   "url": "https://www.regulations.gov/document/FDA-2026-H-13408-0001",
-   "withdrawn": false
-  },
-  {
-   "action": "",
-   "agencies": [
-    "hhs"
-   ],
-   "category": "other",
-   "comments_close": "2027-01-12",
-   "corporation": null,
-   "date": "2026-11-09",
-   "date_basis": "published",
-   "doc_type": "Notice",
-   "docket_ids": [
-    "CDC-2026-1783"
-   ],
-   "first_seen": "2026-11-12T13:37:14+00:00",
-   "flags": [
-    {
-     "code": "fourth_amendment",
-     "counters": [],
-     "elements_found": [
-      "search"
-     ],
-     "elements_total": 2,
-     "flagrance": 1,
-     "group": "rights",
-     "impact": 1,
-     "structural": false,
-     "tier": 1,
-     "tier_authority": "burger",
-     "triggers": [
-      "surveillance"
-     ]
-    }
-   ],
-   "fr_doc_num": null,
-   "id": "regs:CDC-2026-1783-0001",
-   "jurisdiction": "federal",
-   "outcome": "notice",
-   "priority": 1,
-   "published": "2026-11-09",
-   "regs_agency_id": "CDC",
-   "routine": false,
-   "sanctions": [],
-   "seriousness": {
-    "breakdown": [
-     {
-      "marker": "Reach",
-      "points": 1,
-      "why": "action against particular parties"
-     }
-    ],
-    "level": 1,
-    "points": 1
-   },
-   "severity": {
-    "flagrance": 1,
-    "impact": 1,
-    "score": 1
-   },
-   "source": "regulations_gov",
-   "source_label": "Regulations.gov",
-   "subcategory": "Other notice",
-   "subtype": "",
-   "summary": "",
-   "title": "National Surveillance of Community Water Systems and Corresponding Populations with the Recommended Fluoridation Level -22821",
-   "url": "https://www.regulations.gov/document/CDC-2026-1783-0001",
-   "withdrawn": false
-  },
-  {
-   "action": "Notice with comment period.",
-   "agencies": [
-    "hhs"
-   ],
-   "category": "other",
-   "comments_close": "2027-01-08",
-   "corporation": null,
-   "date": "2026-11-09",
-   "date_basis": "published",
-   "doc_type": "Notice",
-   "docket_ids": [
-    "60Day-27-1319",
-    "Docket No. CDC-2026-1783"
-   ],
-   "effective_on": null,
-   "eo_number": null,
-   "first_seen": "2026-11-11T13:33:45+00:00",
-   "flags": [
-    {
-     "code": "fourth_amendment",
-     "counters": [],
-     "elements_found": [
-      "search"
-     ],
-     "elements_total": 2,
-     "flagrance": 1,
-     "group": "rights",
-     "impact": 1,
-     "structural": false,
-     "tier": 1,
-     "tier_authority": "burger",
-     "triggers": [
-      "surveillance"
-     ]
-    }
-   ],
-   "fr_agency_slugs": [
-    "health-and-human-services-department",
-    "centers-for-disease-control-and-prevention"
-   ],
-   "id": "fr:2026-22821",
-   "jurisdiction": "federal",
-   "outcome": "notice",
-   "priority": 1,
-   "published": "2026-11-09",
-   "rins": [],
-   "routine": false,
-   "sanctions": [],
-   "seriousness": {
-    "breakdown": [
-     {
-      "marker": "Reach",
-      "points": 1,
-      "why": "action against particular parties"
-     }
-    ],
-    "level": 1,
-    "points": 1
-   },
-   "severity": {
-    "flagrance": 1,
-    "impact": 1,
-    "score": 1
-   },
-   "significant": false,
-   "source": "federal_register",
-   "source_label": "Federal Register",
-   "subcategory": "Other notice",
-   "subtype": "",
-   "summary": "The Centers for Disease Control and Prevention (CDC), as part of its continuing effort to reduce public burden and maximize the utility of government information, invites the general public and other federal agencies the opportunity to comment on a continuing information collection, as required by the Paperwork Reduction Act of 1995. This notice invites comment on an existing information collection project titled National Surveillance of Community Water Systems and Corresponding Populations with the Recommended Fluoridation Level. This surveillance program collects the fluoridation status of, and population served by the nation's 52,000 community water systems (CWS) which serve the 50…",
-   "title": "Proposed Data Collection Submitted for Public Comment and Recommendations",
-   "url": "https://www.federalregister.gov/documents/2026/11/09/2026-22821/proposed-data-collection-submitted-for-public-comment-and-recommendations"
-  },
-  {
-   "action": "Final rule.",
-   "agencies": [
-    "dol"
-   ],
-   "category": "rulemaking",
-   "comments_close": null,
-   "corporation": null,
-   "date": "2026-11-09",
-   "date_basis": "published",
-   "doc_type": "Rule",
-   "docket_ids": [],
-   "effective_on": "2026-12-09",
-   "eo_number": null,
-   "first_seen": "2026-11-11T13:33:45+00:00",
-   "flags": [
-    {
-     "code": "officer_appointment_removal",
-     "counters": [],
-     "elements_found": [
-      "official",
-      "significant"
-     ],
-     "elements_total": 3,
-     "flagrance": 1,
-     "group": "structural",
-     "impact": 1,
-     "structural": true,
-     "tier": 1,
-     "tier_authority": "arthrex",
-     "triggers": [
-      "administrative law judge"
-     ]
-    }
-   ],
-   "fr_agency_slugs": [
-    "labor-department"
-   ],
-   "id": "fr:2026-22761",
-   "jurisdiction": "federal",
-   "outcome": "final",
-   "priority": 1,
-   "published": "2026-11-09",
-   "rins": [
-    "1290-AA36"
-   ],
-   "routine": false,
-   "sanctions": [],
-   "seriousness": {
-    "breakdown": [
-     {
-      "marker": "Reach",
-      "points": 2,
-      "why": "binding rule"
-     }
-    ],
-    "level": 1,
-    "points": 2
-   },
-   "severity": {
-    "flagrance": 1,
-    "impact": 1,
-    "score": 1
-   },
-   "significant": false,
-   "source": "federal_register",
-   "source_label": "Federal Register",
-   "subcategory": "Final rule",
-   "subtype": "",
-   "summary": "This action finalizes the Department of Labor's (DOL or Department) proposal to require electronic filing (e-filing) in proceedings before the Office of Administrative Law Judges (OALJ), published on January 11, 2021. The Department has reviewed the comments received in response to the proposal and is now implementing the rule as described in the proposed rule of January 11, 2021, with appropriate exceptions for good cause shown and self-represented parties.",
-   "title": "Rules of Practice and Procedure for Administrative Hearings Before the Office of Administrative Law Judges",
-   "url": "https://www.federalregister.gov/documents/2026/11/09/2026-22761/rules-of-practice-and-procedure-for-administrative-hearings-before-the-office-of-administrative-law"
-  },
-  {
-   "action": "",
-   "agencies": [
-    "sec"
-   ],
-   "category": "rulemaking",
-   "comments_close": null,
-   "corporation": "other_sro",
-   "date": "2026-11-09",
-   "date_basis": "published",
-   "doc_type": "Notice",
-   "docket_ids": [
-    "Release No. 34-106819",
-    "File No. SR-BOX-2026-21"
-   ],
-   "effective_on": null,
-   "eo_number": null,
-   "first_seen": "2026-11-11T13:33:45+00:00",
-   "flags": [
-    {
-     "code": "private_delegation",
-     "counters": [],
-     "elements_found": [
-      "private",
-      "binding",
-      "no_prior_review"
-     ],
-     "elements_total": 3,
-     "flagrance": 1,
-     "group": "structural",
-     "impact": 1,
-     "structural": true,
-     "tier": 1,
-     "tier_authority": "consumers_research",
-     "triggers": [
-      "issued by an agency-supervised private corporation"
-     ]
-    }
-   ],
-   "fr_agency_slugs": [
-    "securities-and-exchange-commission"
-   ],
-   "id": "fr:2026-22756",
-   "jurisdiction": "federal",
-   "outcome": "proposed",
-   "priority": 1,
-   "published": "2026-11-09",
-   "rins": [],
-   "routine": false,
-   "sanctions": [],
-   "seriousness": {
-    "breakdown": [
-     {
-      "marker": "Reach",
-      "points": 1,
-      "why": "self-regulatory filing"
-     }
-    ],
-    "level": 1,
-    "points": 1
-   },
-   "severity": {
-    "flagrance": 1,
-    "impact": 1,
-    "score": 1
-   },
-   "significant": false,
-   "source": "federal_register",
-   "source_label": "Federal Register",
-   "subcategory": "Rule change by self-regulatory organization",
-   "subtype": "",
-   "summary": "",
-   "title": "Self-Regulatory Organizations; BOX Exchange LLC; Notice of Filing and Immediate Effectiveness of Proposed Rule Change To Adopt Rules To Govern the Trading of FLEX Equity Options in Electronic Auctions",
-   "url": "https://www.federalregister.gov/documents/2026/11/09/2026-22756/self-regulatory-organizations-box-exchange-llc-notice-of-filing-and-immediate-effectiveness-of"
-  },
-  {
-   "action": "",
-   "agencies": [
-    "sec"
-   ],
-   "category": "rulemaking",
-   "comments_close": null,
-   "corporation": "other_sro",
-   "date": "2026-11-09",
-   "date_basis": "published",
-   "doc_type": "Notice",
-   "docket_ids": [
-    "Release No. 34-106809",
-    "File No. SR-CBOE-2026-084"
-   ],
-   "effective_on": null,
-   "eo_number": null,
-   "first_seen": "2026-11-11T13:33:45+00:00",
-   "flags": [
-    {
-     "code": "private_delegation",
-     "counters": [],
-     "elements_found": [
-      "private",
-      "binding",
-      "no_prior_review"
-     ],
-     "elements_total": 3,
-     "flagrance": 1,
-     "group": "structural",
-     "impact": 1,
-     "structural": true,
-     "tier": 1,
-     "tier_authority": "consumers_research",
-     "triggers": [
-      "issued by an agency-supervised private corporation"
-     ]
-    }
-   ],
-   "fr_agency_slugs": [
-    "securities-and-exchange-commission"
-   ],
-   "id": "fr:2026-22751",
-   "jurisdiction": "federal",
-   "outcome": "proposed",
-   "priority": 1,
-   "published": "2026-11-09",
-   "rins": [],
-   "routine": false,
-   "sanctions": [],
-   "seriousness": {
-    "breakdown": [
-     {
-      "marker": "Reach",
-      "points": 1,
-      "why": "self-regulatory filing"
-     }
-    ],
-    "level": 1,
-    "points": 1
-   },
-   "severity": {
-    "flagrance": 1,
-    "impact": 1,
-    "score": 1
-   },
-   "significant": false,
-   "source": "federal_register",
-   "source_label": "Federal Register",
-   "subcategory": "Rule change by self-regulatory organization",
-   "subtype": "",
-   "summary": "",
-   "title": "Self-Regulatory Organizations; Cboe Exchange, Inc.; Notice of Filing and Immediate Effectiveness of a Proposed Rule Change To Amend the Definition of Clearing Corporation in its Rules and Make Corresponding Changes Throughout its Rules",
-   "url": "https://www.federalregister.gov/documents/2026/11/09/2026-22751/self-regulatory-organizations-cboe-exchange-inc-notice-of-filing-and-immediate-effectiveness-of-a"
-  },
-  {
-   "action": "",
-   "agencies": [
-    "sec"
-   ],
-   "category": "rulemaking",
-   "comments_close": null,
-   "corporation": "other_sro",
-   "date": "2026-11-09",
-   "date_basis": "published",
-   "doc_type": "Notice",
-   "docket_ids": [
-    "Release No. 34-106815",
-    "File No. SR-FICC-2026-011"
-   ],
-   "effective_on": null,
-   "eo_number": null,
-   "first_seen": "2026-11-11T13:33:45+00:00",
-   "flags": [
-    {
-     "code": "private_delegation",
-     "counters": [],
-     "elements_found": [
-      "private",
-      "binding",
-      "no_prior_review"
-     ],
-     "elements_total": 3,
-     "flagrance": 1,
-     "group": "structural",
-     "impact": 1,
-     "structural": true,
-     "tier": 1,
-     "tier_authority": "consumers_research",
-     "triggers": [
-      "issued by an agency-supervised private corporation"
-     ]
-    }
-   ],
-   "fr_agency_slugs": [
-    "securities-and-exchange-commission"
-   ],
-   "id": "fr:2026-22755",
-   "jurisdiction": "federal",
-   "outcome": "proposed",
-   "priority": 1,
-   "published": "2026-11-09",
-   "rins": [],
-   "routine": false,
-   "sanctions": [],
-   "seriousness": {
-    "breakdown": [
-     {
-      "marker": "Reach",
-      "points": 1,
-      "why": "self-regulatory filing"
-     }
-    ],
-    "level": 1,
-    "points": 1
-   },
-   "severity": {
-    "flagrance": 1,
-    "impact": 1,
-    "score": 1
-   },
-   "significant": false,
-   "source": "federal_register",
-   "source_label": "Federal Register",
-   "subcategory": "Rule change by self-regulatory organization",
-   "subtype": "",
-   "summary": "",
-   "title": "Self-Regulatory Organizations; Fixed Income Clearing Corporation; Notice of Filing and Immediate Effectiveness of a Proposed Rule Change To Remove a Requirement That Sponsoring Members Report Certain Events Impacting Their Sponsored Members",
-   "url": "https://www.federalregister.gov/documents/2026/11/09/2026-22755/self-regulatory-organizations-fixed-income-clearing-corporation-notice-of-filing-and-immediate"
-  },
-  {
-   "action": "",
-   "agencies": [
-    "sec"
-   ],
-   "category": "rulemaking",
-   "comments_close": null,
-   "corporation": "other_sro",
-   "date": "2026-11-09",
-   "date_basis": "published",
-   "doc_type": "Notice",
-   "docket_ids": [
-    "Release No. 34-106825",
-    "File No. SR-ICC-2026-013"
-   ],
-   "effective_on": null,
-   "eo_number": null,
-   "first_seen": "2026-11-11T13:33:45+00:00",
-   "flags": [
-    {
-     "code": "private_delegation",
-     "counters": [],
-     "elements_found": [
-      "private",
-      "binding",
-      "no_prior_review"
-     ],
-     "elements_total": 3,
-     "flagrance": 1,
-     "group": "structural",
-     "impact": 1,
-     "structural": true,
-     "tier": 1,
-     "tier_authority": "consumers_research",
-     "triggers": [
-      "issued by an agency-supervised private corporation"
-     ]
-    }
-   ],
-   "fr_agency_slugs": [
-    "securities-and-exchange-commission"
-   ],
-   "id": "fr:2026-22760",
-   "jurisdiction": "federal",
-   "outcome": "proposed",
-   "priority": 1,
-   "published": "2026-11-09",
-   "rins": [],
-   "routine": true,
-   "sanctions": [],
-   "seriousness": {
-    "breakdown": [
-     {
-      "marker": "Reach",
-      "points": 1,
-      "why": "self-regulatory filing"
-     }
-    ],
-    "level": 1,
-    "points": 1
-   },
-   "severity": {
-    "flagrance": 1,
-    "impact": 1,
-    "score": 1
-   },
-   "significant": false,
-   "source": "federal_register",
-   "source_label": "Federal Register",
-   "subcategory": "Fee change by self-regulatory organization",
-   "subtype": "",
-   "summary": "",
-   "title": "Self-Regulatory Organizations; ICE Clear Credit LLC; Notice of Filing and Immediate Effectiveness of Proposed Rule Change Relating to ICC's Fee Schedule",
-   "url": "https://www.federalregister.gov/documents/2026/11/09/2026-22760/self-regulatory-organizations-ice-clear-credit-llc-notice-of-filing-and-immediate-effectiveness-of"
-  },
-  {
-   "action": "",
-   "agencies": [
-    "sec"
-   ],
-   "category": "rulemaking",
-   "comments_close": null,
-   "corporation": "other_sro",
-   "date": "2026-11-09",
-   "date_basis": "published",
-   "doc_type": "Notice",
-   "docket_ids": [
-    "Release No. 34-106811",
-    "File No. SR-IEX-2026-44"
-   ],
-   "effective_on": null,
-   "eo_number": null,
-   "first_seen": "2026-11-11T13:33:45+00:00",
-   "flags": [
-    {
-     "code": "private_delegation",
-     "counters": [],
-     "elements_found": [
-      "private",
-      "binding",
-      "no_prior_review"
-     ],
-     "elements_total": 3,
-     "flagrance": 1,
-     "group": "structural",
-     "impact": 1,
-     "structural": true,
-     "tier": 1,
-     "tier_authority": "consumers_research",
-     "triggers": [
-      "issued by an agency-supervised private corporation"
-     ]
-    }
-   ],
-   "fr_agency_slugs": [
-    "securities-and-exchange-commission"
-   ],
-   "id": "fr:2026-22753",
-   "jurisdiction": "federal",
-   "outcome": "proposed",
-   "priority": 1,
-   "published": "2026-11-09",
-   "rins": [],
-   "routine": true,
-   "sanctions": [],
-   "seriousness": {
-    "breakdown": [
-     {
-      "marker": "Reach",
-      "points": 1,
-      "why": "self-regulatory filing"
-     }
-    ],
-    "level": 1,
-    "points": 1
-   },
-   "severity": {
-    "flagrance": 1,
-    "impact": 1,
-    "score": 1
-   },
-   "significant": false,
-   "source": "federal_register",
-   "source_label": "Federal Register",
-   "subcategory": "Fee change by self-regulatory organization",
-   "subtype": "",
-   "summary": "",
-   "title": "Self-Regulatory Organizations; Investors Exchange LLC; Notice of Filing and Immediate Effectiveness of Proposed Rule Change Pursuant to IEX Rule 15.110(a) and (c) To Amend the IEX Equities Fee Schedule",
-   "url": "https://www.federalregister.gov/documents/2026/11/09/2026-22753/self-regulatory-organizations-investors-exchange-llc-notice-of-filing-and-immediate-effectiveness-of"
-  },
-  {
-   "action": "",
-   "agencies": [
-    "sec"
-   ],
-   "category": "rulemaking",
-   "comments_close": null,
-   "corporation": "other_sro",
-   "date": "2026-11-09",
-   "date_basis": "published",
-   "doc_type": "Notice",
-   "docket_ids": [
-    "Release No. 34-106810",
-    "File No. SR-IEX-2026-45"
-   ],
-   "effective_on": null,
-   "eo_number": null,
-   "first_seen": "2026-11-11T13:33:45+00:00",
-   "flags": [
-    {
-     "code": "private_delegation",
-     "counters": [],
-     "elements_found": [
-      "private",
-      "binding",
-      "no_prior_review"
-     ],
-     "elements_total": 3,
-     "flagrance": 1,
-     "group": "structural",
-     "impact": 1,
-     "structural": true,
-     "tier": 1,
-     "tier_authority": "consumers_research",
-     "triggers": [
-      "issued by an agency-supervised private corporation"
-     ]
-    }
-   ],
-   "fr_agency_slugs": [
-    "securities-and-exchange-commission"
-   ],
-   "id": "fr:2026-22752",
-   "jurisdiction": "federal",
-   "outcome": "proposed",
-   "priority": 1,
-   "published": "2026-11-09",
-   "rins": [],
-   "routine": false,
-   "sanctions": [],
-   "seriousness": {
-    "breakdown": [
-     {
-      "marker": "Reach",
-      "points": 1,
-      "why": "self-regulatory filing"
-     }
-    ],
-    "level": 1,
-    "points": 1
-   },
-   "severity": {
-    "flagrance": 1,
-    "impact": 1,
-    "score": 1
-   },
-   "significant": false,
-   "source": "federal_register",
-   "source_label": "Federal Register",
-   "subcategory": "Rule change by self-regulatory organization",
-   "subtype": "",
-   "summary": "",
-   "title": "Self-Regulatory Organizations; Investors Exchange LLC; Notice of Filing and Immediate Effectiveness of Proposed Rule Change To Amend Rule 11.271 Regarding the Resumption of Trading Following a Level 3 Market-Wide Circuit Breaker Halt",
-   "url": "https://www.federalregister.gov/documents/2026/11/09/2026-22752/self-regulatory-organizations-investors-exchange-llc-notice-of-filing-and-immediate-effectiveness-of"
-  },
-  {
-   "action": "",
-   "agencies": [
-    "sec"
-   ],
-   "category": "rulemaking",
-   "comments_close": null,
-   "corporation": "other_sro",
-   "date": "2026-11-09",
-   "date_basis": "published",
-   "doc_type": "Notice",
-   "docket_ids": [
-    "Release No. 34-106812",
-    "File No. SR-SAPPHIRE-2026-37"
-   ],
-   "effective_on": null,
-   "eo_number": null,
-   "first_seen": "2026-11-11T13:33:45+00:00",
-   "flags": [
-    {
-     "code": "private_delegation",
-     "counters": [],
-     "elements_found": [
-      "private",
-      "binding",
-      "no_prior_review"
-     ],
-     "elements_total": 3,
-     "flagrance": 1,
-     "group": "structural",
-     "impact": 1,
-     "structural": true,
-     "tier": 1,
-     "tier_authority": "consumers_research",
-     "triggers": [
-      "issued by an agency-supervised private corporation"
-     ]
-    }
-   ],
-   "fr_agency_slugs": [
-    "securities-and-exchange-commission"
-   ],
-   "id": "fr:2026-22754",
-   "jurisdiction": "federal",
-   "outcome": "proposed",
-   "priority": 1,
-   "published": "2026-11-09",
-   "rins": [],
-   "routine": true,
-   "sanctions": [],
-   "seriousness": {
-    "breakdown": [
-     {
-      "marker": "Reach",
-      "points": 1,
-      "why": "self-regulatory filing"
-     }
-    ],
-    "level": 1,
-    "points": 1
-   },
-   "severity": {
-    "flagrance": 1,
-    "impact": 1,
-    "score": 1
-   },
-   "significant": false,
-   "source": "federal_register",
-   "source_label": "Federal Register",
-   "subcategory": "Fee change by self-regulatory organization",
-   "subtype": "",
-   "summary": "",
-   "title": "Self-Regulatory Organizations; MIAX Sapphire, LLC; Notice of Filing and Immediate Effectiveness of a Proposed Rule Change To Amend Fees Applicable to the Floor Market Maker Fee and Floor Broker Breakup Credit for Transactions in Non-Penny Classes",
-   "url": "https://www.federalregister.gov/documents/2026/11/09/2026-22754/self-regulatory-organizations-miax-sapphire-llc-notice-of-filing-and-immediate-effectiveness-of-a"
-  },
-  {
-   "action": "",
-   "agencies": [
-    "sec"
-   ],
-   "category": "rulemaking",
-   "comments_close": null,
-   "corporation": "other_sro",
-   "date": "2026-11-09",
-   "date_basis": "published",
-   "doc_type": "Notice",
-   "docket_ids": [
-    "Release No. 34-106823",
-    "File No. SR-Phlx-2026-68"
-   ],
-   "effective_on": null,
-   "eo_number": null,
-   "first_seen": "2026-11-11T13:33:45+00:00",
-   "flags": [
-    {
-     "code": "private_delegation",
-     "counters": [],
-     "elements_found": [
-      "private",
-      "binding",
-      "no_prior_review"
-     ],
-     "elements_total": 3,
-     "flagrance": 1,
-     "group": "structural",
-     "impact": 1,
-     "structural": true,
-     "tier": 1,
-     "tier_authority": "consumers_research",
-     "triggers": [
-      "issued by an agency-supervised private corporation"
-     ]
-    }
-   ],
-   "fr_agency_slugs": [
-    "securities-and-exchange-commission"
-   ],
-   "id": "fr:2026-22758",
-   "jurisdiction": "federal",
-   "outcome": "proposed",
-   "priority": 1,
-   "published": "2026-11-09",
-   "rins": [],
-   "routine": true,
-   "sanctions": [],
-   "seriousness": {
-    "breakdown": [
-     {
-      "marker": "Reach",
-      "points": 1,
-      "why": "self-regulatory filing"
-     }
-    ],
-    "level": 1,
-    "points": 1
-   },
-   "severity": {
-    "flagrance": 1,
-    "impact": 1,
-    "score": 1
-   },
-   "significant": false,
-   "source": "federal_register",
-   "source_label": "Federal Register",
-   "subcategory": "Fee change by self-regulatory organization",
-   "subtype": "",
-   "summary": "",
-   "title": "Self-Regulatory Organizations; Nasdaq PHLX LLC; Notice of Filing and Immediate Effectiveness of Proposed Rule Change To Introduce Conforming Changes to Nasdaq Phlx Rules in Connection With the Establishment of Fees for Nasdaq TotalView Plus and Nasdaq Basic Plus",
-   "url": "https://www.federalregister.gov/documents/2026/11/09/2026-22758/self-regulatory-organizations-nasdaq-phlx-llc-notice-of-filing-and-immediate-effectiveness-of"
-  },
-  {
-   "action": "",
-   "agencies": [
-    "sec"
-   ],
-   "category": "rulemaking",
-   "comments_close": null,
-   "corporation": "other_sro",
-   "date": "2026-11-09",
-   "date_basis": "published",
-   "doc_type": "Notice",
-   "docket_ids": [
-    "Release No. 34-106822",
-    "File No. SR-NasdaqTX-2026-054"
-   ],
-   "effective_on": null,
-   "eo_number": null,
-   "first_seen": "2026-11-11T13:33:45+00:00",
-   "flags": [
-    {
-     "code": "private_delegation",
-     "counters": [],
-     "elements_found": [
-      "private",
-      "binding",
-      "no_prior_review"
-     ],
-     "elements_total": 3,
-     "flagrance": 1,
-     "group": "structural",
-     "impact": 1,
-     "structural": true,
-     "tier": 1,
-     "tier_authority": "consumers_research",
-     "triggers": [
-      "issued by an agency-supervised private corporation"
-     ]
-    }
-   ],
-   "fr_agency_slugs": [
-    "securities-and-exchange-commission"
-   ],
-   "id": "fr:2026-22757",
-   "jurisdiction": "federal",
-   "outcome": "proposed",
-   "priority": 1,
-   "published": "2026-11-09",
-   "rins": [],
-   "routine": true,
-   "sanctions": [],
-   "seriousness": {
-    "breakdown": [
-     {
-      "marker": "Reach",
-      "points": 1,
-      "why": "self-regulatory filing"
-     }
-    ],
-    "level": 1,
-    "points": 1
-   },
-   "severity": {
-    "flagrance": 1,
-    "impact": 1,
-    "score": 1
-   },
-   "significant": false,
-   "source": "federal_register",
-   "source_label": "Federal Register",
-   "subcategory": "Fee change by self-regulatory organization",
-   "subtype": "",
-   "summary": "",
-   "title": "Self-Regulatory Organizations; Nasdaq Texas, LLC; Notice of Filing and Immediate Effectiveness of Proposed Rule Change To Introduce Conforming Changes to Nasdaq Texas Rules in Connection With the Establishment of Fees for Nasdaq TotalView Plus and Nasdaq Basic Plus",
-   "url": "https://www.federalregister.gov/documents/2026/11/09/2026-22757/self-regulatory-organizations-nasdaq-texas-llc-notice-of-filing-and-immediate-effectiveness-of"
-  },
-  {
-   "action": "",
-   "agencies": [
-    "sec"
-   ],
-   "category": "rulemaking",
-   "comments_close": null,
-   "corporation": "other_sro",
-   "date": "2026-11-09",
-   "date_basis": "published",
-   "doc_type": "Notice",
-   "docket_ids": [
-    "Release No. 34-106824",
-    "File No. SR-NASDAQ-2026-095"
-   ],
-   "effective_on": null,
-   "eo_number": null,
-   "first_seen": "2026-11-11T13:33:45+00:00",
-   "flags": [
-    {
-     "code": "private_delegation",
-     "counters": [],
-     "elements_found": [
-      "private",
-      "binding",
-      "no_prior_review"
-     ],
-     "elements_total": 3,
-     "flagrance": 1,
-     "group": "structural",
-     "impact": 1,
-     "structural": true,
-     "tier": 1,
-     "tier_authority": "consumers_research",
-     "triggers": [
-      "issued by an agency-supervised private corporation"
-     ]
-    }
-   ],
-   "fr_agency_slugs": [
-    "securities-and-exchange-commission"
-   ],
-   "id": "fr:2026-22759",
-   "jurisdiction": "federal",
-   "outcome": "proposed",
-   "priority": 1,
-   "published": "2026-11-09",
-   "rins": [],
-   "routine": true,
-   "sanctions": [],
-   "seriousness": {
-    "breakdown": [
-     {
-      "marker": "Reach",
-      "points": 1,
-      "why": "self-regulatory filing"
-     }
-    ],
-    "level": 1,
-    "points": 1
-   },
-   "severity": {
-    "flagrance": 1,
-    "impact": 1,
-    "score": 1
-   },
-   "significant": false,
-   "source": "federal_register",
-   "source_label": "Federal Register",
-   "subcategory": "Fee change by self-regulatory organization",
-   "subtype": "",
-   "summary": "",
-   "title": "Self-Regulatory Organizations; The Nasdaq Stock Market LLC; Notice of Filing and Immediate Effectiveness of Proposed Rule Change to Set Fees for Nasdaq TotalView Plus and Nasdaq Basic Plus",
-   "url": "https://www.federalregister.gov/documents/2026/11/09/2026-22759/self-regulatory-organizations-the-nasdaq-stock-market-llc-notice-of-filing-and-immediate"
-  },
-  {
-   "action": "",
-   "agencies": [
-    "fda"
-   ],
    "category": "other",
    "comments_close": null,
    "corporation": null,
@@ -1138,14 +19,7 @@
    "flags": [],
    "fr_doc_num": null,
    "id": "regs:FDA-2026-P-14093-0002",
-   "jurisdiction": "federal",
-   "outcome": "notice",
-   "priority": 0,
-   "published": "2026-11-09",
-   "regs_agency_id": "FDA",
-   "routine": false,
-   "sanctions": [],
-   "seriousness": {
+   "impact": {
     "breakdown": [
      {
       "marker": "Reach",
@@ -1156,7 +30,14 @@
     "level": 1,
     "points": 1
    },
-   "severity": null,
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 0,
+   "published": "2026-11-09",
+   "rating": null,
+   "regs_agency_id": "FDA",
+   "routine": false,
+   "sanctions": [],
    "source": "regulations_gov",
    "source_label": "Regulations.gov",
    "subcategory": "Citizen petition or FDA response",
@@ -1184,14 +65,7 @@
    "flags": [],
    "fr_doc_num": null,
    "id": "regs:FDA-2026-P-13994-0002",
-   "jurisdiction": "federal",
-   "outcome": "notice",
-   "priority": 0,
-   "published": "2026-11-09",
-   "regs_agency_id": "FDA",
-   "routine": false,
-   "sanctions": [],
-   "seriousness": {
+   "impact": {
     "breakdown": [
      {
       "marker": "Reach",
@@ -1202,7 +76,14 @@
     "level": 1,
     "points": 1
    },
-   "severity": null,
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 0,
+   "published": "2026-11-09",
+   "rating": null,
+   "regs_agency_id": "FDA",
+   "routine": false,
+   "sanctions": [],
    "source": "regulations_gov",
    "source_label": "Regulations.gov",
    "subcategory": "Citizen petition or FDA response",
@@ -1230,14 +111,7 @@
    "flags": [],
    "fr_doc_num": null,
    "id": "regs:FDA-2026-P-14092-0002",
-   "jurisdiction": "federal",
-   "outcome": "notice",
-   "priority": 0,
-   "published": "2026-11-09",
-   "regs_agency_id": "FDA",
-   "routine": false,
-   "sanctions": [],
-   "seriousness": {
+   "impact": {
     "breakdown": [
      {
       "marker": "Reach",
@@ -1248,7 +122,14 @@
     "level": 1,
     "points": 1
    },
-   "severity": null,
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 0,
+   "published": "2026-11-09",
+   "rating": null,
+   "regs_agency_id": "FDA",
+   "routine": false,
+   "sanctions": [],
    "source": "regulations_gov",
    "source_label": "Regulations.gov",
    "subcategory": "Citizen petition or FDA response",
@@ -1281,14 +162,7 @@
     "centers-for-disease-control-and-prevention"
    ],
    "id": "fr:2026-22819",
-   "jurisdiction": "federal",
-   "outcome": "notice",
-   "priority": 0,
-   "published": "2026-11-09",
-   "rins": [],
-   "routine": false,
-   "sanctions": [],
-   "seriousness": {
+   "impact": {
     "breakdown": [
      {
       "marker": "Reach",
@@ -1299,7 +173,14 @@
     "level": 1,
     "points": 1
    },
-   "severity": null,
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 0,
+   "published": "2026-11-09",
+   "rating": null,
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
    "significant": false,
    "source": "federal_register",
    "source_label": "Federal Register",
@@ -1332,14 +213,7 @@
     "centers-for-disease-control-and-prevention"
    ],
    "id": "fr:2026-22820",
-   "jurisdiction": "federal",
-   "outcome": "notice",
-   "priority": 0,
-   "published": "2026-11-09",
-   "rins": [],
-   "routine": false,
-   "sanctions": [],
-   "seriousness": {
+   "impact": {
     "breakdown": [
      {
       "marker": "Reach",
@@ -1350,7 +224,14 @@
     "level": 1,
     "points": 1
    },
-   "severity": null,
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 0,
+   "published": "2026-11-09",
+   "rating": null,
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
    "significant": false,
    "source": "federal_register",
    "source_label": "Federal Register",
@@ -1383,14 +264,7 @@
     "centers-for-medicare-medicaid-services"
    ],
    "id": "fr:2026-22794",
-   "jurisdiction": "federal",
-   "outcome": "notice",
-   "priority": 0,
-   "published": "2026-11-09",
-   "rins": [],
-   "routine": false,
-   "sanctions": [],
-   "seriousness": {
+   "impact": {
     "breakdown": [
      {
       "marker": "Reach",
@@ -1401,7 +275,14 @@
     "level": 1,
     "points": 1
    },
-   "severity": null,
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 0,
+   "published": "2026-11-09",
+   "rating": null,
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
    "significant": false,
    "source": "federal_register",
    "source_label": "Federal Register",
@@ -1432,14 +313,7 @@
     "health-resources-and-services-administration"
    ],
    "id": "fr:C1-2026-21857",
-   "jurisdiction": "federal",
-   "outcome": "notice",
-   "priority": 0,
-   "published": "2026-11-09",
-   "rins": [],
-   "routine": false,
-   "sanctions": [],
-   "seriousness": {
+   "impact": {
     "breakdown": [
      {
       "marker": "Reach",
@@ -1450,7 +324,14 @@
     "level": 1,
     "points": 1
    },
-   "severity": null,
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 0,
+   "published": "2026-11-09",
+   "rating": null,
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
    "significant": false,
    "source": "federal_register",
    "source_label": "Federal Register",
@@ -1483,16 +364,7 @@
     "centers-for-medicare-medicaid-services"
    ],
    "id": "fr:2026-22750",
-   "jurisdiction": "federal",
-   "outcome": "final",
-   "priority": 0,
-   "published": "2026-11-09",
-   "rins": [
-    "0938-AV80"
-   ],
-   "routine": false,
-   "sanctions": [],
-   "seriousness": {
+   "impact": {
     "breakdown": [
      {
       "marker": "Reach",
@@ -1503,7 +375,16 @@
     "level": 1,
     "points": 2
    },
-   "severity": null,
+   "jurisdiction": "federal",
+   "outcome": "final",
+   "priority": 0,
+   "published": "2026-11-09",
+   "rating": null,
+   "rins": [
+    "0938-AV80"
+   ],
+   "routine": false,
+   "sanctions": [],
    "significant": false,
    "source": "federal_register",
    "source_label": "Federal Register",
@@ -1531,14 +412,7 @@
    "flags": [],
    "fr_doc_num": null,
    "id": "regs:FDA-2026-P-13994-0001",
-   "jurisdiction": "federal",
-   "outcome": "notice",
-   "priority": 0,
-   "published": "2026-11-09",
-   "regs_agency_id": "FDA",
-   "routine": false,
-   "sanctions": [],
-   "seriousness": {
+   "impact": {
     "breakdown": [
      {
       "marker": "Reach",
@@ -1549,7 +423,14 @@
     "level": 1,
     "points": 1
    },
-   "severity": null,
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 0,
+   "published": "2026-11-09",
+   "rating": null,
+   "regs_agency_id": "FDA",
+   "routine": false,
+   "sanctions": [],
    "source": "regulations_gov",
    "source_label": "Regulations.gov",
    "subcategory": "Citizen petition or FDA response",
@@ -1577,14 +458,7 @@
    "flags": [],
    "fr_doc_num": null,
    "id": "regs:FDA-2026-P-14092-0001",
-   "jurisdiction": "federal",
-   "outcome": "notice",
-   "priority": 0,
-   "published": "2026-11-09",
-   "regs_agency_id": "FDA",
-   "routine": false,
-   "sanctions": [],
-   "seriousness": {
+   "impact": {
     "breakdown": [
      {
       "marker": "Reach",
@@ -1595,7 +469,14 @@
     "level": 1,
     "points": 1
    },
-   "severity": null,
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 0,
+   "published": "2026-11-09",
+   "rating": null,
+   "regs_agency_id": "FDA",
+   "routine": false,
+   "sanctions": [],
    "source": "regulations_gov",
    "source_label": "Regulations.gov",
    "subcategory": "Citizen petition or FDA response",
@@ -1623,14 +504,7 @@
    "flags": [],
    "fr_doc_num": null,
    "id": "regs:FDA-2026-P-14093-0001",
-   "jurisdiction": "federal",
-   "outcome": "notice",
-   "priority": 0,
-   "published": "2026-11-09",
-   "regs_agency_id": "FDA",
-   "routine": false,
-   "sanctions": [],
-   "seriousness": {
+   "impact": {
     "breakdown": [
      {
       "marker": "Reach",
@@ -1641,7 +515,14 @@
     "level": 1,
     "points": 1
    },
-   "severity": null,
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 0,
+   "published": "2026-11-09",
+   "rating": null,
+   "regs_agency_id": "FDA",
+   "routine": false,
+   "sanctions": [],
    "source": "regulations_gov",
    "source_label": "Regulations.gov",
    "subcategory": "Citizen petition or FDA response",
@@ -1672,14 +553,7 @@
     "federal-energy-regulatory-commission"
    ],
    "id": "fr:2026-22791",
-   "jurisdiction": "federal",
-   "outcome": "applied",
-   "priority": 0,
-   "published": "2026-11-09",
-   "rins": [],
-   "routine": false,
-   "sanctions": [],
-   "seriousness": {
+   "impact": {
     "breakdown": [
      {
       "marker": "Reach",
@@ -1690,7 +564,14 @@
     "level": 1,
     "points": 1
    },
-   "severity": null,
+   "jurisdiction": "federal",
+   "outcome": "applied",
+   "priority": 0,
+   "published": "2026-11-09",
+   "rating": null,
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
    "significant": false,
    "source": "federal_register",
    "source_label": "Federal Register",
@@ -1721,14 +602,7 @@
     "federal-energy-regulatory-commission"
    ],
    "id": "fr:2026-22790",
-   "jurisdiction": "federal",
-   "outcome": "applied",
-   "priority": 0,
-   "published": "2026-11-09",
-   "rins": [],
-   "routine": false,
-   "sanctions": [],
-   "seriousness": {
+   "impact": {
     "breakdown": [
      {
       "marker": "Reach",
@@ -1739,7 +613,14 @@
     "level": 1,
     "points": 1
    },
-   "severity": null,
+   "jurisdiction": "federal",
+   "outcome": "applied",
+   "priority": 0,
+   "published": "2026-11-09",
+   "rating": null,
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
    "significant": false,
    "source": "federal_register",
    "source_label": "Federal Register",
@@ -1748,6 +629,148 @@
    "summary": "",
    "title": "Combined Notice of Filings #1",
    "url": "https://www.federalregister.gov/documents/2026/11/09/2026-22790/combined-notice-of-filings-1"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-09",
+   "date_basis": "posted",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-H-10633"
+   ],
+   "first_seen": "2026-11-12T13:37:14+00:00",
+   "flags": [
+    {
+     "authority": "atlas_roofing",
+     "code": "agency_adjudication",
+     "elements_found": [
+      "penalty",
+      "in_house"
+     ],
+     "elements_total": 3,
+     "group": "structural",
+     "level": 0,
+     "precedent": "open",
+     "structural": true,
+     "triggers": [
+      "civil money penalty complaint"
+     ],
+     "weighed": []
+    }
+   ],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-H-10633-0001",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 3,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 2,
+    "points": 4
+   },
+   "jurisdiction": "federal",
+   "outcome": "initiated",
+   "priority": 0,
+   "published": "2026-11-09",
+   "rating": null,
+   "regs_agency_id": "FDA",
+   "routine": false,
+   "sanctions": [
+    "civil_penalty"
+   ],
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Civil money penalty complaint (FDA hearing docket, usually a tobacco retailer)",
+   "subtype": "Complaint",
+   "summary": "",
+   "title": "Complaint",
+   "url": "https://www.regulations.gov/document/FDA-2026-H-10633-0001",
+   "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-09",
+   "date_basis": "posted",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-H-13408"
+   ],
+   "first_seen": "2026-11-12T13:37:14+00:00",
+   "flags": [
+    {
+     "authority": "atlas_roofing",
+     "code": "agency_adjudication",
+     "elements_found": [
+      "penalty",
+      "in_house"
+     ],
+     "elements_total": 3,
+     "group": "structural",
+     "level": 0,
+     "precedent": "open",
+     "structural": true,
+     "triggers": [
+      "civil money penalty complaint"
+     ],
+     "weighed": []
+    }
+   ],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-H-13408-0001",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 3,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 2,
+    "points": 4
+   },
+   "jurisdiction": "federal",
+   "outcome": "initiated",
+   "priority": 0,
+   "published": "2026-11-09",
+   "rating": null,
+   "regs_agency_id": "FDA",
+   "routine": false,
+   "sanctions": [
+    "civil_penalty"
+   ],
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Civil money penalty complaint (FDA hearing docket, usually a tobacco retailer)",
+   "subtype": "Complaint",
+   "summary": "",
+   "title": "Complaint",
+   "url": "https://www.regulations.gov/document/FDA-2026-H-13408-0001",
+   "withdrawn": false
   },
   {
    "action": "Notice.",
@@ -1772,14 +795,7 @@
     "securities-and-exchange-commission"
    ],
    "id": "fr:2026-22749",
-   "jurisdiction": "federal",
-   "outcome": "notice",
-   "priority": 0,
-   "published": "2026-11-09",
-   "rins": [],
-   "routine": false,
-   "sanctions": [],
-   "seriousness": {
+   "impact": {
     "breakdown": [
      {
       "marker": "Reach",
@@ -1790,7 +806,14 @@
     "level": 1,
     "points": 1
    },
-   "severity": null,
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 0,
+   "published": "2026-11-09",
+   "rating": null,
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
    "significant": false,
    "source": "federal_register",
    "source_label": "Federal Register",
@@ -1823,14 +846,7 @@
     "federal-energy-regulatory-commission"
    ],
    "id": "fr:2026-22808",
-   "jurisdiction": "federal",
-   "outcome": "notice",
-   "priority": 0,
-   "published": "2026-11-09",
-   "rins": [],
-   "routine": false,
-   "sanctions": [],
-   "seriousness": {
+   "impact": {
     "breakdown": [
      {
       "marker": "Reach",
@@ -1841,7 +857,14 @@
     "level": 1,
     "points": 1
    },
-   "severity": null,
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 0,
+   "published": "2026-11-09",
+   "rating": null,
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
    "significant": false,
    "source": "federal_register",
    "source_label": "Federal Register",
@@ -1874,14 +897,7 @@
     "federal-energy-regulatory-commission"
    ],
    "id": "fr:2026-22801",
-   "jurisdiction": "federal",
-   "outcome": "notice",
-   "priority": 0,
-   "published": "2026-11-09",
-   "rins": [],
-   "routine": false,
-   "sanctions": [],
-   "seriousness": {
+   "impact": {
     "breakdown": [
      {
       "marker": "Reach",
@@ -1892,7 +908,14 @@
     "level": 1,
     "points": 1
    },
-   "severity": null,
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 0,
+   "published": "2026-11-09",
+   "rating": null,
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
    "significant": false,
    "source": "federal_register",
    "source_label": "Federal Register",
@@ -1920,14 +943,7 @@
    "flags": [],
    "fr_doc_num": null,
    "id": "regs:FDA-2026-P-5977-0003",
-   "jurisdiction": "federal",
-   "outcome": "notice",
-   "priority": 0,
-   "published": "2026-11-09",
-   "regs_agency_id": "FDA",
-   "routine": false,
-   "sanctions": [],
-   "seriousness": {
+   "impact": {
     "breakdown": [
      {
       "marker": "Reach",
@@ -1938,7 +954,14 @@
     "level": 1,
     "points": 1
    },
-   "severity": null,
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 0,
+   "published": "2026-11-09",
+   "rating": null,
+   "regs_agency_id": "FDA",
+   "routine": false,
+   "sanctions": [],
    "source": "regulations_gov",
    "source_label": "Regulations.gov",
    "subcategory": "Citizen petition or FDA response",
@@ -1971,16 +994,7 @@
     "centers-for-medicare-medicaid-services"
    ],
    "id": "fr:2026-22792",
-   "jurisdiction": "federal",
-   "outcome": "final",
-   "priority": 0,
-   "published": "2026-11-09",
-   "rins": [
-    "0938-AV90"
-   ],
-   "routine": false,
-   "sanctions": [],
-   "seriousness": {
+   "impact": {
     "breakdown": [
      {
       "marker": "Reach",
@@ -1991,7 +1005,16 @@
     "level": 1,
     "points": 2
    },
-   "severity": null,
+   "jurisdiction": "federal",
+   "outcome": "final",
+   "priority": 0,
+   "published": "2026-11-09",
+   "rating": null,
+   "rins": [
+    "0938-AV90"
+   ],
+   "routine": false,
+   "sanctions": [],
    "significant": false,
    "source": "federal_register",
    "source_label": "Federal Register",
@@ -2024,16 +1047,7 @@
     "centers-for-medicare-medicaid-services"
    ],
    "id": "fr:2026-22807",
-   "jurisdiction": "federal",
-   "outcome": "proposed",
-   "priority": 0,
-   "published": "2026-11-09",
-   "rins": [
-    "0938-AV88"
-   ],
-   "routine": false,
-   "sanctions": [],
-   "seriousness": {
+   "impact": {
     "breakdown": [
      {
       "marker": "Reach",
@@ -2044,7 +1058,16 @@
     "level": 1,
     "points": 2
    },
-   "severity": null,
+   "jurisdiction": "federal",
+   "outcome": "proposed",
+   "priority": 0,
+   "published": "2026-11-09",
+   "rating": null,
+   "rins": [
+    "0938-AV88"
+   ],
+   "routine": false,
+   "sanctions": [],
    "significant": false,
    "source": "federal_register",
    "source_label": "Federal Register",
@@ -2077,16 +1100,7 @@
     "centers-for-medicare-medicaid-services"
    ],
    "id": "fr:2026-22743",
-   "jurisdiction": "federal",
-   "outcome": "final",
-   "priority": 0,
-   "published": "2026-11-09",
-   "rins": [
-    "0938-AV82"
-   ],
-   "routine": false,
-   "sanctions": [],
-   "seriousness": {
+   "impact": {
     "breakdown": [
      {
       "marker": "Reach",
@@ -2097,7 +1111,16 @@
     "level": 1,
     "points": 2
    },
-   "severity": null,
+   "jurisdiction": "federal",
+   "outcome": "final",
+   "priority": 0,
+   "published": "2026-11-09",
+   "rating": null,
+   "rins": [
+    "0938-AV82"
+   ],
+   "routine": false,
+   "sanctions": [],
    "significant": false,
    "source": "federal_register",
    "source_label": "Federal Register",
@@ -2128,14 +1151,7 @@
     "centers-for-disease-control-and-prevention"
    ],
    "id": "fr:2026-22775",
-   "jurisdiction": "federal",
-   "outcome": "notice",
-   "priority": 0,
-   "published": "2026-11-09",
-   "rins": [],
-   "routine": false,
-   "sanctions": [],
-   "seriousness": {
+   "impact": {
     "breakdown": [
      {
       "marker": "Reach",
@@ -2146,7 +1162,14 @@
     "level": 1,
     "points": 1
    },
-   "severity": null,
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 0,
+   "published": "2026-11-09",
+   "rating": null,
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
    "significant": false,
    "source": "federal_register",
    "source_label": "Federal Register",
@@ -2179,16 +1202,7 @@
     "environmental-protection-agency"
    ],
    "id": "fr:2026-22788",
-   "jurisdiction": "federal",
-   "outcome": "final",
-   "priority": 0,
-   "published": "2026-11-09",
-   "rins": [
-    "2060-AR73"
-   ],
-   "routine": false,
-   "sanctions": [],
-   "seriousness": {
+   "impact": {
     "breakdown": [
      {
       "marker": "Reach",
@@ -2199,7 +1213,16 @@
     "level": 1,
     "points": 2
    },
-   "severity": null,
+   "jurisdiction": "federal",
+   "outcome": "final",
+   "priority": 0,
+   "published": "2026-11-09",
+   "rating": null,
+   "rins": [
+    "2060-AR73"
+   ],
+   "routine": false,
+   "sanctions": [],
    "significant": false,
    "source": "federal_register",
    "source_label": "Federal Register",
@@ -2230,14 +1253,7 @@
     "national-institutes-of-health"
    ],
    "id": "fr:2026-22800",
-   "jurisdiction": "federal",
-   "outcome": "notice",
-   "priority": 0,
-   "published": "2026-11-09",
-   "rins": [],
-   "routine": false,
-   "sanctions": [],
-   "seriousness": {
+   "impact": {
     "breakdown": [
      {
       "marker": "Reach",
@@ -2248,7 +1264,14 @@
     "level": 1,
     "points": 1
    },
-   "severity": null,
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 0,
+   "published": "2026-11-09",
+   "rating": null,
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
    "significant": false,
    "source": "federal_register",
    "source_label": "Federal Register",
@@ -2257,6 +1280,69 @@
    "summary": "",
    "title": "National Institute of Arthritis and Musculoskeletal and Skin Diseases; Notice of Meeting",
    "url": "https://www.federalregister.gov/documents/2026/11/09/2026-22800/national-institute-of-arthritis-and-musculoskeletal-and-skin-diseases-notice-of-meeting"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "hhs"
+   ],
+   "category": "other",
+   "comments_close": "2027-01-12",
+   "corporation": null,
+   "date": "2026-11-09",
+   "date_basis": "published",
+   "doc_type": "Notice",
+   "docket_ids": [
+    "CDC-2026-1783"
+   ],
+   "first_seen": "2026-11-12T13:37:14+00:00",
+   "flags": [
+    {
+     "authority": "burger",
+     "code": "fourth_amendment",
+     "elements_found": [
+      "search"
+     ],
+     "elements_total": 2,
+     "group": "rights",
+     "level": 0,
+     "precedent": "open",
+     "structural": false,
+     "triggers": [
+      "surveillance"
+     ],
+     "weighed": []
+    }
+   ],
+   "fr_doc_num": null,
+   "id": "regs:CDC-2026-1783-0001",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 0,
+   "published": "2026-11-09",
+   "rating": null,
+   "regs_agency_id": "CDC",
+   "routine": false,
+   "sanctions": [],
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Other notice",
+   "subtype": "",
+   "summary": "",
+   "title": "National Surveillance of Community Water Systems and Corresponding Populations with the Recommended Fluoridation Level -22821",
+   "url": "https://www.regulations.gov/document/CDC-2026-1783-0001",
+   "withdrawn": false
   },
   {
    "action": "",
@@ -2281,14 +1367,7 @@
     "federal-energy-regulatory-commission"
    ],
    "id": "fr:2026-22803",
-   "jurisdiction": "federal",
-   "outcome": "notice",
-   "priority": 0,
-   "published": "2026-11-09",
-   "rins": [],
-   "routine": false,
-   "sanctions": [],
-   "seriousness": {
+   "impact": {
     "breakdown": [
      {
       "marker": "Reach",
@@ -2299,7 +1378,14 @@
     "level": 1,
     "points": 1
    },
-   "severity": null,
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 0,
+   "published": "2026-11-09",
+   "rating": null,
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
    "significant": false,
    "source": "federal_register",
    "source_label": "Federal Register",
@@ -2332,14 +1418,7 @@
     "federal-energy-regulatory-commission"
    ],
    "id": "fr:2026-22804",
-   "jurisdiction": "federal",
-   "outcome": "notice",
-   "priority": 0,
-   "published": "2026-11-09",
-   "rins": [],
-   "routine": false,
-   "sanctions": [],
-   "seriousness": {
+   "impact": {
     "breakdown": [
      {
       "marker": "Reach",
@@ -2350,7 +1429,14 @@
     "level": 1,
     "points": 1
    },
-   "severity": null,
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 0,
+   "published": "2026-11-09",
+   "rating": null,
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
    "significant": false,
    "source": "federal_register",
    "source_label": "Federal Register",
@@ -2383,14 +1469,7 @@
     "securities-and-exchange-commission"
    ],
    "id": "fr:2026-22740",
-   "jurisdiction": "federal",
-   "outcome": "granted",
-   "priority": 0,
-   "published": "2026-11-09",
-   "rins": [],
-   "routine": false,
-   "sanctions": [],
-   "seriousness": {
+   "impact": {
     "breakdown": [
      {
       "marker": "Reach",
@@ -2401,7 +1480,14 @@
     "level": 1,
     "points": 1
    },
-   "severity": null,
+   "jurisdiction": "federal",
+   "outcome": "granted",
+   "priority": 0,
+   "published": "2026-11-09",
+   "rating": null,
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
    "significant": false,
    "source": "federal_register",
    "source_label": "Federal Register",
@@ -2434,14 +1520,7 @@
     "environmental-protection-agency"
    ],
    "id": "fr:2026-22769",
-   "jurisdiction": "federal",
-   "outcome": "notice",
-   "priority": 0,
-   "published": "2026-11-09",
-   "rins": [],
-   "routine": false,
-   "sanctions": [],
-   "seriousness": {
+   "impact": {
     "breakdown": [
      {
       "marker": "Reach",
@@ -2452,7 +1531,14 @@
     "level": 1,
     "points": 1
    },
-   "severity": null,
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 0,
+   "published": "2026-11-09",
+   "rating": null,
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
    "significant": false,
    "source": "federal_register",
    "source_label": "Federal Register",
@@ -2461,6 +1547,75 @@
    "summary": "This document announces the Agency's receipt of and solicits comments on requests by registrants to voluntarily cancel their pesticide registration of certain products and/or to amend their product registrations to terminate one or more uses. In accordance with the Federal Insecticide, Fungicide, and Rodenticide Act (FIFRA), EPA provides a periodic notice of receipt addressing requests received by EPA since the last notice of receipt was issued and uses the month and year in the title to help distinguish one document from the other. EPA intends to grant these requests at the close of the comment period for this announcement unless the Agency receives substantive comments during the comment…",
    "title": "Pesticides; Notice of Receipt of Requests to Voluntarily Cancel Certain Pesticide Registrations and/or Amend Registrations To Terminate Certain Uses With a 30-Day Comment Period (June 2026)",
    "url": "https://www.federalregister.gov/documents/2026/11/09/2026-22769/pesticides-notice-of-receipt-of-requests-to-voluntarily-cancel-certain-pesticide-registrations-andor"
+  },
+  {
+   "action": "Notice with comment period.",
+   "agencies": [
+    "hhs"
+   ],
+   "category": "other",
+   "comments_close": "2027-01-08",
+   "corporation": null,
+   "date": "2026-11-09",
+   "date_basis": "published",
+   "doc_type": "Notice",
+   "docket_ids": [
+    "60Day-27-1319",
+    "Docket No. CDC-2026-1783"
+   ],
+   "effective_on": null,
+   "eo_number": null,
+   "first_seen": "2026-11-11T13:33:45+00:00",
+   "flags": [
+    {
+     "authority": "burger",
+     "code": "fourth_amendment",
+     "elements_found": [
+      "search"
+     ],
+     "elements_total": 2,
+     "group": "rights",
+     "level": 0,
+     "precedent": "open",
+     "structural": false,
+     "triggers": [
+      "surveillance"
+     ],
+     "weighed": []
+    }
+   ],
+   "fr_agency_slugs": [
+    "health-and-human-services-department",
+    "centers-for-disease-control-and-prevention"
+   ],
+   "id": "fr:2026-22821",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 0,
+   "published": "2026-11-09",
+   "rating": null,
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Other notice",
+   "subtype": "",
+   "summary": "The Centers for Disease Control and Prevention (CDC), as part of its continuing effort to reduce public burden and maximize the utility of government information, invites the general public and other federal agencies the opportunity to comment on a continuing information collection, as required by the Paperwork Reduction Act of 1995. This notice invites comment on an existing information collection project titled National Surveillance of Community Water Systems and Corresponding Populations with the Recommended Fluoridation Level. This surveillance program collects the fluoridation status of, and population served by the nation's 52,000 community water systems (CWS) which serve the 50…",
+   "title": "Proposed Data Collection Submitted for Public Comment and Recommendations",
+   "url": "https://www.federalregister.gov/documents/2026/11/09/2026-22821/proposed-data-collection-submitted-for-public-comment-and-recommendations"
   },
   {
    "action": "",
@@ -2485,14 +1640,7 @@
     "federal-energy-regulatory-commission"
    ],
    "id": "fr:2026-22805",
-   "jurisdiction": "federal",
-   "outcome": "notice",
-   "priority": 0,
-   "published": "2026-11-09",
-   "rins": [],
-   "routine": false,
-   "sanctions": [],
-   "seriousness": {
+   "impact": {
     "breakdown": [
      {
       "marker": "Reach",
@@ -2503,7 +1651,14 @@
     "level": 1,
     "points": 1
    },
-   "severity": null,
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 0,
+   "published": "2026-11-09",
+   "rating": null,
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
    "significant": false,
    "source": "federal_register",
    "source_label": "Federal Register",
@@ -2536,14 +1691,7 @@
     "federal-energy-regulatory-commission"
    ],
    "id": "fr:2026-22762",
-   "jurisdiction": "federal",
-   "outcome": "notice",
-   "priority": 0,
-   "published": "2026-11-09",
-   "rins": [],
-   "routine": false,
-   "sanctions": [],
-   "seriousness": {
+   "impact": {
     "breakdown": [
      {
       "marker": "Reach",
@@ -2554,7 +1702,14 @@
     "level": 1,
     "points": 1
    },
-   "severity": null,
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 0,
+   "published": "2026-11-09",
+   "rating": null,
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
    "significant": false,
    "source": "federal_register",
    "source_label": "Federal Register",
@@ -2582,14 +1737,7 @@
    "flags": [],
    "fr_doc_num": null,
    "id": "regs:FDA-2018-D-4533-2396",
-   "jurisdiction": "federal",
-   "outcome": "notice",
-   "priority": 0,
-   "published": "2026-11-09",
-   "regs_agency_id": "FDA",
-   "routine": false,
-   "sanctions": [],
-   "seriousness": {
+   "impact": {
     "breakdown": [
      {
       "marker": "Reach",
@@ -2600,7 +1748,14 @@
     "level": 1,
     "points": 1
    },
-   "severity": null,
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 0,
+   "published": "2026-11-09",
+   "rating": null,
+   "regs_agency_id": "FDA",
+   "routine": false,
+   "sanctions": [],
    "source": "regulations_gov",
    "source_label": "Regulations.gov",
    "subcategory": "Other notice",
@@ -2628,14 +1783,7 @@
    "flags": [],
    "fr_doc_num": null,
    "id": "regs:FDA-2018-D-4533-2397",
-   "jurisdiction": "federal",
-   "outcome": "notice",
-   "priority": 0,
-   "published": "2026-11-09",
-   "regs_agency_id": "FDA",
-   "routine": false,
-   "sanctions": [],
-   "seriousness": {
+   "impact": {
     "breakdown": [
      {
       "marker": "Reach",
@@ -2646,7 +1794,14 @@
     "level": 1,
     "points": 1
    },
-   "severity": null,
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 0,
+   "published": "2026-11-09",
+   "rating": null,
+   "regs_agency_id": "FDA",
+   "routine": false,
+   "sanctions": [],
    "source": "regulations_gov",
    "source_label": "Regulations.gov",
    "subcategory": "Other notice",
@@ -2674,14 +1829,7 @@
    "flags": [],
    "fr_doc_num": null,
    "id": "regs:FDA-2018-D-4533-2395",
-   "jurisdiction": "federal",
-   "outcome": "notice",
-   "priority": 0,
-   "published": "2026-11-09",
-   "regs_agency_id": "FDA",
-   "routine": false,
-   "sanctions": [],
-   "seriousness": {
+   "impact": {
     "breakdown": [
      {
       "marker": "Reach",
@@ -2692,7 +1840,14 @@
     "level": 1,
     "points": 1
    },
-   "severity": null,
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 0,
+   "published": "2026-11-09",
+   "rating": null,
+   "regs_agency_id": "FDA",
+   "routine": false,
+   "sanctions": [],
    "source": "regulations_gov",
    "source_label": "Regulations.gov",
    "subcategory": "Other notice",
@@ -2720,14 +1875,7 @@
    "flags": [],
    "fr_doc_num": null,
    "id": "regs:FDA-2025-P-4155-0017",
-   "jurisdiction": "federal",
-   "outcome": "notice",
-   "priority": 0,
-   "published": "2026-11-09",
-   "regs_agency_id": "FDA",
-   "routine": false,
-   "sanctions": [],
-   "seriousness": {
+   "impact": {
     "breakdown": [
      {
       "marker": "Reach",
@@ -2738,7 +1886,14 @@
     "level": 1,
     "points": 1
    },
-   "severity": null,
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 0,
+   "published": "2026-11-09",
+   "rating": null,
+   "regs_agency_id": "FDA",
+   "routine": false,
+   "sanctions": [],
    "source": "regulations_gov",
    "source_label": "Regulations.gov",
    "subcategory": "Citizen petition or FDA response",
@@ -2766,14 +1921,7 @@
    "flags": [],
    "fr_doc_num": null,
    "id": "regs:FDA-2026-P-13003-0003",
-   "jurisdiction": "federal",
-   "outcome": "notice",
-   "priority": 0,
-   "published": "2026-11-09",
-   "regs_agency_id": "FDA",
-   "routine": false,
-   "sanctions": [],
-   "seriousness": {
+   "impact": {
     "breakdown": [
      {
       "marker": "Reach",
@@ -2784,7 +1932,14 @@
     "level": 1,
     "points": 1
    },
-   "severity": null,
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 0,
+   "published": "2026-11-09",
+   "rating": null,
+   "regs_agency_id": "FDA",
+   "routine": false,
+   "sanctions": [],
    "source": "regulations_gov",
    "source_label": "Regulations.gov",
    "subcategory": "Citizen petition or FDA response",
@@ -2793,6 +1948,774 @@
    "title": "Response Letter",
    "url": "https://www.regulations.gov/document/FDA-2026-P-13003-0003",
    "withdrawn": false
+  },
+  {
+   "action": "Final rule.",
+   "agencies": [
+    "dol"
+   ],
+   "category": "rulemaking",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-09",
+   "date_basis": "published",
+   "doc_type": "Rule",
+   "docket_ids": [],
+   "effective_on": "2026-12-09",
+   "eo_number": null,
+   "first_seen": "2026-11-11T13:33:45+00:00",
+   "flags": [
+    {
+     "authority": "arthrex",
+     "code": "officer_appointment_removal",
+     "elements_found": [
+      "official",
+      "significant"
+     ],
+     "elements_total": 3,
+     "group": "structural",
+     "level": 0,
+     "precedent": "open",
+     "structural": true,
+     "triggers": [
+      "administrative law judge"
+     ],
+     "weighed": []
+    }
+   ],
+   "fr_agency_slugs": [
+    "labor-department"
+   ],
+   "id": "fr:2026-22761",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 2,
+      "why": "binding rule"
+     }
+    ],
+    "level": 1,
+    "points": 2
+   },
+   "jurisdiction": "federal",
+   "outcome": "final",
+   "priority": 0,
+   "published": "2026-11-09",
+   "rating": null,
+   "rins": [
+    "1290-AA36"
+   ],
+   "routine": false,
+   "sanctions": [],
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Final rule",
+   "subtype": "",
+   "summary": "This action finalizes the Department of Labor's (DOL or Department) proposal to require electronic filing (e-filing) in proceedings before the Office of Administrative Law Judges (OALJ), published on January 11, 2021. The Department has reviewed the comments received in response to the proposal and is now implementing the rule as described in the proposed rule of January 11, 2021, with appropriate exceptions for good cause shown and self-represented parties.",
+   "title": "Rules of Practice and Procedure for Administrative Hearings Before the Office of Administrative Law Judges",
+   "url": "https://www.federalregister.gov/documents/2026/11/09/2026-22761/rules-of-practice-and-procedure-for-administrative-hearings-before-the-office-of-administrative-law"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "sec"
+   ],
+   "category": "rulemaking",
+   "comments_close": null,
+   "corporation": "other_sro",
+   "date": "2026-11-09",
+   "date_basis": "published",
+   "doc_type": "Notice",
+   "docket_ids": [
+    "Release No. 34-106819",
+    "File No. SR-BOX-2026-21"
+   ],
+   "effective_on": null,
+   "eo_number": null,
+   "first_seen": "2026-11-11T13:33:45+00:00",
+   "flags": [
+    {
+     "authority": "consumers_research",
+     "code": "private_delegation",
+     "elements_found": [
+      "private",
+      "binding",
+      "no_prior_review"
+     ],
+     "elements_total": 3,
+     "group": "structural",
+     "level": 0,
+     "precedent": "open",
+     "structural": true,
+     "triggers": [
+      "issued by an agency-supervised private corporation"
+     ],
+     "weighed": []
+    }
+   ],
+   "fr_agency_slugs": [
+    "securities-and-exchange-commission"
+   ],
+   "id": "fr:2026-22756",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "self-regulatory filing"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
+   "jurisdiction": "federal",
+   "outcome": "proposed",
+   "priority": 0,
+   "published": "2026-11-09",
+   "rating": null,
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Rule change by self-regulatory organization",
+   "subtype": "",
+   "summary": "",
+   "title": "Self-Regulatory Organizations; BOX Exchange LLC; Notice of Filing and Immediate Effectiveness of Proposed Rule Change To Adopt Rules To Govern the Trading of FLEX Equity Options in Electronic Auctions",
+   "url": "https://www.federalregister.gov/documents/2026/11/09/2026-22756/self-regulatory-organizations-box-exchange-llc-notice-of-filing-and-immediate-effectiveness-of"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "sec"
+   ],
+   "category": "rulemaking",
+   "comments_close": null,
+   "corporation": "other_sro",
+   "date": "2026-11-09",
+   "date_basis": "published",
+   "doc_type": "Notice",
+   "docket_ids": [
+    "Release No. 34-106809",
+    "File No. SR-CBOE-2026-084"
+   ],
+   "effective_on": null,
+   "eo_number": null,
+   "first_seen": "2026-11-11T13:33:45+00:00",
+   "flags": [
+    {
+     "authority": "consumers_research",
+     "code": "private_delegation",
+     "elements_found": [
+      "private",
+      "binding",
+      "no_prior_review"
+     ],
+     "elements_total": 3,
+     "group": "structural",
+     "level": 0,
+     "precedent": "open",
+     "structural": true,
+     "triggers": [
+      "issued by an agency-supervised private corporation"
+     ],
+     "weighed": []
+    }
+   ],
+   "fr_agency_slugs": [
+    "securities-and-exchange-commission"
+   ],
+   "id": "fr:2026-22751",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "self-regulatory filing"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
+   "jurisdiction": "federal",
+   "outcome": "proposed",
+   "priority": 0,
+   "published": "2026-11-09",
+   "rating": null,
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Rule change by self-regulatory organization",
+   "subtype": "",
+   "summary": "",
+   "title": "Self-Regulatory Organizations; Cboe Exchange, Inc.; Notice of Filing and Immediate Effectiveness of a Proposed Rule Change To Amend the Definition of Clearing Corporation in its Rules and Make Corresponding Changes Throughout its Rules",
+   "url": "https://www.federalregister.gov/documents/2026/11/09/2026-22751/self-regulatory-organizations-cboe-exchange-inc-notice-of-filing-and-immediate-effectiveness-of-a"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "sec"
+   ],
+   "category": "rulemaking",
+   "comments_close": null,
+   "corporation": "other_sro",
+   "date": "2026-11-09",
+   "date_basis": "published",
+   "doc_type": "Notice",
+   "docket_ids": [
+    "Release No. 34-106815",
+    "File No. SR-FICC-2026-011"
+   ],
+   "effective_on": null,
+   "eo_number": null,
+   "first_seen": "2026-11-11T13:33:45+00:00",
+   "flags": [
+    {
+     "authority": "consumers_research",
+     "code": "private_delegation",
+     "elements_found": [
+      "private",
+      "binding",
+      "no_prior_review"
+     ],
+     "elements_total": 3,
+     "group": "structural",
+     "level": 0,
+     "precedent": "open",
+     "structural": true,
+     "triggers": [
+      "issued by an agency-supervised private corporation"
+     ],
+     "weighed": []
+    }
+   ],
+   "fr_agency_slugs": [
+    "securities-and-exchange-commission"
+   ],
+   "id": "fr:2026-22755",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "self-regulatory filing"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
+   "jurisdiction": "federal",
+   "outcome": "proposed",
+   "priority": 0,
+   "published": "2026-11-09",
+   "rating": null,
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Rule change by self-regulatory organization",
+   "subtype": "",
+   "summary": "",
+   "title": "Self-Regulatory Organizations; Fixed Income Clearing Corporation; Notice of Filing and Immediate Effectiveness of a Proposed Rule Change To Remove a Requirement That Sponsoring Members Report Certain Events Impacting Their Sponsored Members",
+   "url": "https://www.federalregister.gov/documents/2026/11/09/2026-22755/self-regulatory-organizations-fixed-income-clearing-corporation-notice-of-filing-and-immediate"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "sec"
+   ],
+   "category": "rulemaking",
+   "comments_close": null,
+   "corporation": "other_sro",
+   "date": "2026-11-09",
+   "date_basis": "published",
+   "doc_type": "Notice",
+   "docket_ids": [
+    "Release No. 34-106825",
+    "File No. SR-ICC-2026-013"
+   ],
+   "effective_on": null,
+   "eo_number": null,
+   "first_seen": "2026-11-11T13:33:45+00:00",
+   "flags": [
+    {
+     "authority": "consumers_research",
+     "code": "private_delegation",
+     "elements_found": [
+      "private",
+      "binding",
+      "no_prior_review"
+     ],
+     "elements_total": 3,
+     "group": "structural",
+     "level": 0,
+     "precedent": "open",
+     "structural": true,
+     "triggers": [
+      "issued by an agency-supervised private corporation"
+     ],
+     "weighed": []
+    }
+   ],
+   "fr_agency_slugs": [
+    "securities-and-exchange-commission"
+   ],
+   "id": "fr:2026-22760",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "self-regulatory filing"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
+   "jurisdiction": "federal",
+   "outcome": "proposed",
+   "priority": 0,
+   "published": "2026-11-09",
+   "rating": null,
+   "rins": [],
+   "routine": true,
+   "sanctions": [],
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Fee change by self-regulatory organization",
+   "subtype": "",
+   "summary": "",
+   "title": "Self-Regulatory Organizations; ICE Clear Credit LLC; Notice of Filing and Immediate Effectiveness of Proposed Rule Change Relating to ICC's Fee Schedule",
+   "url": "https://www.federalregister.gov/documents/2026/11/09/2026-22760/self-regulatory-organizations-ice-clear-credit-llc-notice-of-filing-and-immediate-effectiveness-of"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "sec"
+   ],
+   "category": "rulemaking",
+   "comments_close": null,
+   "corporation": "other_sro",
+   "date": "2026-11-09",
+   "date_basis": "published",
+   "doc_type": "Notice",
+   "docket_ids": [
+    "Release No. 34-106811",
+    "File No. SR-IEX-2026-44"
+   ],
+   "effective_on": null,
+   "eo_number": null,
+   "first_seen": "2026-11-11T13:33:45+00:00",
+   "flags": [
+    {
+     "authority": "consumers_research",
+     "code": "private_delegation",
+     "elements_found": [
+      "private",
+      "binding",
+      "no_prior_review"
+     ],
+     "elements_total": 3,
+     "group": "structural",
+     "level": 0,
+     "precedent": "open",
+     "structural": true,
+     "triggers": [
+      "issued by an agency-supervised private corporation"
+     ],
+     "weighed": []
+    }
+   ],
+   "fr_agency_slugs": [
+    "securities-and-exchange-commission"
+   ],
+   "id": "fr:2026-22753",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "self-regulatory filing"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
+   "jurisdiction": "federal",
+   "outcome": "proposed",
+   "priority": 0,
+   "published": "2026-11-09",
+   "rating": null,
+   "rins": [],
+   "routine": true,
+   "sanctions": [],
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Fee change by self-regulatory organization",
+   "subtype": "",
+   "summary": "",
+   "title": "Self-Regulatory Organizations; Investors Exchange LLC; Notice of Filing and Immediate Effectiveness of Proposed Rule Change Pursuant to IEX Rule 15.110(a) and (c) To Amend the IEX Equities Fee Schedule",
+   "url": "https://www.federalregister.gov/documents/2026/11/09/2026-22753/self-regulatory-organizations-investors-exchange-llc-notice-of-filing-and-immediate-effectiveness-of"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "sec"
+   ],
+   "category": "rulemaking",
+   "comments_close": null,
+   "corporation": "other_sro",
+   "date": "2026-11-09",
+   "date_basis": "published",
+   "doc_type": "Notice",
+   "docket_ids": [
+    "Release No. 34-106810",
+    "File No. SR-IEX-2026-45"
+   ],
+   "effective_on": null,
+   "eo_number": null,
+   "first_seen": "2026-11-11T13:33:45+00:00",
+   "flags": [
+    {
+     "authority": "consumers_research",
+     "code": "private_delegation",
+     "elements_found": [
+      "private",
+      "binding",
+      "no_prior_review"
+     ],
+     "elements_total": 3,
+     "group": "structural",
+     "level": 0,
+     "precedent": "open",
+     "structural": true,
+     "triggers": [
+      "issued by an agency-supervised private corporation"
+     ],
+     "weighed": []
+    }
+   ],
+   "fr_agency_slugs": [
+    "securities-and-exchange-commission"
+   ],
+   "id": "fr:2026-22752",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "self-regulatory filing"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
+   "jurisdiction": "federal",
+   "outcome": "proposed",
+   "priority": 0,
+   "published": "2026-11-09",
+   "rating": null,
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Rule change by self-regulatory organization",
+   "subtype": "",
+   "summary": "",
+   "title": "Self-Regulatory Organizations; Investors Exchange LLC; Notice of Filing and Immediate Effectiveness of Proposed Rule Change To Amend Rule 11.271 Regarding the Resumption of Trading Following a Level 3 Market-Wide Circuit Breaker Halt",
+   "url": "https://www.federalregister.gov/documents/2026/11/09/2026-22752/self-regulatory-organizations-investors-exchange-llc-notice-of-filing-and-immediate-effectiveness-of"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "sec"
+   ],
+   "category": "rulemaking",
+   "comments_close": null,
+   "corporation": "other_sro",
+   "date": "2026-11-09",
+   "date_basis": "published",
+   "doc_type": "Notice",
+   "docket_ids": [
+    "Release No. 34-106812",
+    "File No. SR-SAPPHIRE-2026-37"
+   ],
+   "effective_on": null,
+   "eo_number": null,
+   "first_seen": "2026-11-11T13:33:45+00:00",
+   "flags": [
+    {
+     "authority": "consumers_research",
+     "code": "private_delegation",
+     "elements_found": [
+      "private",
+      "binding",
+      "no_prior_review"
+     ],
+     "elements_total": 3,
+     "group": "structural",
+     "level": 0,
+     "precedent": "open",
+     "structural": true,
+     "triggers": [
+      "issued by an agency-supervised private corporation"
+     ],
+     "weighed": []
+    }
+   ],
+   "fr_agency_slugs": [
+    "securities-and-exchange-commission"
+   ],
+   "id": "fr:2026-22754",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "self-regulatory filing"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
+   "jurisdiction": "federal",
+   "outcome": "proposed",
+   "priority": 0,
+   "published": "2026-11-09",
+   "rating": null,
+   "rins": [],
+   "routine": true,
+   "sanctions": [],
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Fee change by self-regulatory organization",
+   "subtype": "",
+   "summary": "",
+   "title": "Self-Regulatory Organizations; MIAX Sapphire, LLC; Notice of Filing and Immediate Effectiveness of a Proposed Rule Change To Amend Fees Applicable to the Floor Market Maker Fee and Floor Broker Breakup Credit for Transactions in Non-Penny Classes",
+   "url": "https://www.federalregister.gov/documents/2026/11/09/2026-22754/self-regulatory-organizations-miax-sapphire-llc-notice-of-filing-and-immediate-effectiveness-of-a"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "sec"
+   ],
+   "category": "rulemaking",
+   "comments_close": null,
+   "corporation": "other_sro",
+   "date": "2026-11-09",
+   "date_basis": "published",
+   "doc_type": "Notice",
+   "docket_ids": [
+    "Release No. 34-106823",
+    "File No. SR-Phlx-2026-68"
+   ],
+   "effective_on": null,
+   "eo_number": null,
+   "first_seen": "2026-11-11T13:33:45+00:00",
+   "flags": [
+    {
+     "authority": "consumers_research",
+     "code": "private_delegation",
+     "elements_found": [
+      "private",
+      "binding",
+      "no_prior_review"
+     ],
+     "elements_total": 3,
+     "group": "structural",
+     "level": 0,
+     "precedent": "open",
+     "structural": true,
+     "triggers": [
+      "issued by an agency-supervised private corporation"
+     ],
+     "weighed": []
+    }
+   ],
+   "fr_agency_slugs": [
+    "securities-and-exchange-commission"
+   ],
+   "id": "fr:2026-22758",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "self-regulatory filing"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
+   "jurisdiction": "federal",
+   "outcome": "proposed",
+   "priority": 0,
+   "published": "2026-11-09",
+   "rating": null,
+   "rins": [],
+   "routine": true,
+   "sanctions": [],
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Fee change by self-regulatory organization",
+   "subtype": "",
+   "summary": "",
+   "title": "Self-Regulatory Organizations; Nasdaq PHLX LLC; Notice of Filing and Immediate Effectiveness of Proposed Rule Change To Introduce Conforming Changes to Nasdaq Phlx Rules in Connection With the Establishment of Fees for Nasdaq TotalView Plus and Nasdaq Basic Plus",
+   "url": "https://www.federalregister.gov/documents/2026/11/09/2026-22758/self-regulatory-organizations-nasdaq-phlx-llc-notice-of-filing-and-immediate-effectiveness-of"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "sec"
+   ],
+   "category": "rulemaking",
+   "comments_close": null,
+   "corporation": "other_sro",
+   "date": "2026-11-09",
+   "date_basis": "published",
+   "doc_type": "Notice",
+   "docket_ids": [
+    "Release No. 34-106822",
+    "File No. SR-NasdaqTX-2026-054"
+   ],
+   "effective_on": null,
+   "eo_number": null,
+   "first_seen": "2026-11-11T13:33:45+00:00",
+   "flags": [
+    {
+     "authority": "consumers_research",
+     "code": "private_delegation",
+     "elements_found": [
+      "private",
+      "binding",
+      "no_prior_review"
+     ],
+     "elements_total": 3,
+     "group": "structural",
+     "level": 0,
+     "precedent": "open",
+     "structural": true,
+     "triggers": [
+      "issued by an agency-supervised private corporation"
+     ],
+     "weighed": []
+    }
+   ],
+   "fr_agency_slugs": [
+    "securities-and-exchange-commission"
+   ],
+   "id": "fr:2026-22757",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "self-regulatory filing"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
+   "jurisdiction": "federal",
+   "outcome": "proposed",
+   "priority": 0,
+   "published": "2026-11-09",
+   "rating": null,
+   "rins": [],
+   "routine": true,
+   "sanctions": [],
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Fee change by self-regulatory organization",
+   "subtype": "",
+   "summary": "",
+   "title": "Self-Regulatory Organizations; Nasdaq Texas, LLC; Notice of Filing and Immediate Effectiveness of Proposed Rule Change To Introduce Conforming Changes to Nasdaq Texas Rules in Connection With the Establishment of Fees for Nasdaq TotalView Plus and Nasdaq Basic Plus",
+   "url": "https://www.federalregister.gov/documents/2026/11/09/2026-22757/self-regulatory-organizations-nasdaq-texas-llc-notice-of-filing-and-immediate-effectiveness-of"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "sec"
+   ],
+   "category": "rulemaking",
+   "comments_close": null,
+   "corporation": "other_sro",
+   "date": "2026-11-09",
+   "date_basis": "published",
+   "doc_type": "Notice",
+   "docket_ids": [
+    "Release No. 34-106824",
+    "File No. SR-NASDAQ-2026-095"
+   ],
+   "effective_on": null,
+   "eo_number": null,
+   "first_seen": "2026-11-11T13:33:45+00:00",
+   "flags": [
+    {
+     "authority": "consumers_research",
+     "code": "private_delegation",
+     "elements_found": [
+      "private",
+      "binding",
+      "no_prior_review"
+     ],
+     "elements_total": 3,
+     "group": "structural",
+     "level": 0,
+     "precedent": "open",
+     "structural": true,
+     "triggers": [
+      "issued by an agency-supervised private corporation"
+     ],
+     "weighed": []
+    }
+   ],
+   "fr_agency_slugs": [
+    "securities-and-exchange-commission"
+   ],
+   "id": "fr:2026-22759",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "self-regulatory filing"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
+   "jurisdiction": "federal",
+   "outcome": "proposed",
+   "priority": 0,
+   "published": "2026-11-09",
+   "rating": null,
+   "rins": [],
+   "routine": true,
+   "sanctions": [],
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Fee change by self-regulatory organization",
+   "subtype": "",
+   "summary": "",
+   "title": "Self-Regulatory Organizations; The Nasdaq Stock Market LLC; Notice of Filing and Immediate Effectiveness of Proposed Rule Change to Set Fees for Nasdaq TotalView Plus and Nasdaq Basic Plus",
+   "url": "https://www.federalregister.gov/documents/2026/11/09/2026-22759/self-regulatory-organizations-the-nasdaq-stock-market-llc-notice-of-filing-and-immediate"
   },
   {
    "action": "",
@@ -2812,14 +2735,7 @@
    "flags": [],
    "fr_doc_num": null,
    "id": "regs:FDA-2017-N-2562-0039",
-   "jurisdiction": "federal",
-   "outcome": "notice",
-   "priority": 0,
-   "published": "2026-11-09",
-   "regs_agency_id": "FDA",
-   "routine": false,
-   "sanctions": [],
-   "seriousness": {
+   "impact": {
     "breakdown": [
      {
       "marker": "Reach",
@@ -2830,7 +2746,14 @@
     "level": 1,
     "points": 1
    },
-   "severity": null,
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 0,
+   "published": "2026-11-09",
+   "rating": null,
+   "regs_agency_id": "FDA",
+   "routine": false,
+   "sanctions": [],
    "source": "regulations_gov",
    "source_label": "Regulations.gov",
    "subcategory": "Other notice",
@@ -2858,14 +2781,7 @@
    "flags": [],
    "fr_doc_num": null,
    "id": "regs:FDA-2024-P-5378-0013",
-   "jurisdiction": "federal",
-   "outcome": "notice",
-   "priority": 0,
-   "published": "2026-11-09",
-   "regs_agency_id": "FDA",
-   "routine": false,
-   "sanctions": [],
-   "seriousness": {
+   "impact": {
     "breakdown": [
      {
       "marker": "Reach",
@@ -2876,7 +2792,14 @@
     "level": 1,
     "points": 1
    },
-   "severity": null,
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 0,
+   "published": "2026-11-09",
+   "rating": null,
+   "regs_agency_id": "FDA",
+   "routine": false,
+   "sanctions": [],
    "source": "regulations_gov",
    "source_label": "Regulations.gov",
    "subcategory": "Citizen petition or FDA response",
@@ -2911,14 +2834,7 @@
     "federal-communications-commission"
    ],
    "id": "fr:2026-22833",
-   "jurisdiction": "federal",
-   "outcome": "proposed",
-   "priority": 0,
-   "published": "2026-11-09",
-   "rins": [],
-   "routine": false,
-   "sanctions": [],
-   "seriousness": {
+   "impact": {
     "breakdown": [
      {
       "marker": "Reach",
@@ -2929,7 +2845,14 @@
     "level": 1,
     "points": 2
    },
-   "severity": null,
+   "jurisdiction": "federal",
+   "outcome": "proposed",
+   "priority": 0,
+   "published": "2026-11-09",
+   "rating": null,
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
    "significant": false,
    "source": "federal_register",
    "source_label": "Federal Register",
@@ -2957,14 +2880,7 @@
    "flags": [],
    "fr_doc_num": null,
    "id": "regs:FDA-2022-V-2362-0005",
-   "jurisdiction": "federal",
-   "outcome": "granted",
-   "priority": 0,
-   "published": "2026-11-09",
-   "regs_agency_id": "FDA",
-   "routine": false,
-   "sanctions": [],
-   "seriousness": {
+   "impact": {
     "breakdown": [
      {
       "marker": "Reach",
@@ -2975,7 +2891,14 @@
     "level": 1,
     "points": 1
    },
-   "severity": null,
+   "jurisdiction": "federal",
+   "outcome": "granted",
+   "priority": 0,
+   "published": "2026-11-09",
+   "rating": null,
+   "regs_agency_id": "FDA",
+   "routine": false,
+   "sanctions": [],
    "source": "regulations_gov",
    "source_label": "Regulations.gov",
    "subcategory": "Variance application or decision (product standard)",
@@ -3003,14 +2926,7 @@
    "flags": [],
    "fr_doc_num": null,
    "id": "regs:FDA-2018-V-4261-0005",
-   "jurisdiction": "federal",
-   "outcome": "granted",
-   "priority": 0,
-   "published": "2026-11-09",
-   "regs_agency_id": "FDA",
-   "routine": false,
-   "sanctions": [],
-   "seriousness": {
+   "impact": {
     "breakdown": [
      {
       "marker": "Reach",
@@ -3021,7 +2937,14 @@
     "level": 1,
     "points": 1
    },
-   "severity": null,
+   "jurisdiction": "federal",
+   "outcome": "granted",
+   "priority": 0,
+   "published": "2026-11-09",
+   "rating": null,
+   "regs_agency_id": "FDA",
+   "routine": false,
+   "sanctions": [],
    "source": "regulations_gov",
    "source_label": "Regulations.gov",
    "subcategory": "Variance application or decision (product standard)",

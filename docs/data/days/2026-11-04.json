@@ -6,967 +6,6 @@
    "agencies": [
     "fda"
    ],
-   "category": "enforcement",
-   "comments_close": null,
-   "corporation": null,
-   "date": "2026-11-04",
-   "date_basis": "posted",
-   "doc_type": "Other",
-   "docket_ids": [
-    "FDA-2026-H-13438"
-   ],
-   "first_seen": "2026-11-12T16:13:55+00:00",
-   "flags": [
-    {
-     "code": "agency_adjudication",
-     "counters": [],
-     "elements_found": [
-      "penalty",
-      "in_house",
-      "contested"
-     ],
-     "elements_total": 4,
-     "flagrance": 1,
-     "group": "structural",
-     "impact": 2,
-     "structural": true,
-     "tier": 1,
-     "tier_authority": "atlas_roofing",
-     "triggers": [
-      "civil money penalty complaint"
-     ]
-    }
-   ],
-   "fr_doc_num": null,
-   "id": "regs:FDA-2026-H-13438-0001",
-   "jurisdiction": "federal",
-   "outcome": "initiated",
-   "priority": 2,
-   "published": "2026-11-04",
-   "regs_agency_id": "FDA",
-   "routine": false,
-   "sanctions": [
-    "civil_penalty"
-   ],
-   "seriousness": {
-    "breakdown": [
-     {
-      "marker": "Sanction",
-      "points": 3,
-      "why": "most serious sanction named"
-     },
-     {
-      "marker": "Reach",
-      "points": 1,
-      "why": "action against particular parties"
-     }
-    ],
-    "level": 2,
-    "points": 4
-   },
-   "severity": {
-    "flagrance": 1,
-    "impact": 2,
-    "score": 2
-   },
-   "source": "regulations_gov",
-   "source_label": "Regulations.gov",
-   "subcategory": "Civil money penalty complaint (FDA hearing docket, usually a tobacco retailer)",
-   "subtype": "Complaint",
-   "summary": "",
-   "title": "Complaint",
-   "url": "https://www.regulations.gov/document/FDA-2026-H-13438-0001",
-   "withdrawn": false
-  },
-  {
-   "action": "",
-   "agencies": [
-    "sec"
-   ],
-   "category": "rulemaking",
-   "comments_close": null,
-   "corporation": "pcaob",
-   "date": "2026-11-04",
-   "date_basis": "published",
-   "doc_type": "Notice",
-   "docket_ids": [
-    "Release No. 34-106791",
-    "File No. PCAOB-2026-01"
-   ],
-   "effective_on": null,
-   "eo_number": null,
-   "first_seen": "2026-11-11T13:33:45+00:00",
-   "flags": [
-    {
-     "code": "private_delegation",
-     "counters": [],
-     "elements_found": [
-      "private",
-      "binding"
-     ],
-     "elements_total": 3,
-     "flagrance": 1,
-     "group": "structural",
-     "impact": 1,
-     "structural": true,
-     "tier": 1,
-     "tier_authority": "consumers_research",
-     "triggers": [
-      "issued by an agency-supervised private corporation"
-     ]
-    }
-   ],
-   "fr_agency_slugs": [
-    "securities-and-exchange-commission"
-   ],
-   "id": "fr:2026-22483",
-   "jurisdiction": "federal",
-   "outcome": "proposed",
-   "priority": 1,
-   "published": "2026-11-04",
-   "rins": [],
-   "routine": false,
-   "sanctions": [],
-   "seriousness": {
-    "breakdown": [
-     {
-      "marker": "Reach",
-      "points": 1,
-      "why": "self-regulatory filing"
-     }
-    ],
-    "level": 1,
-    "points": 1
-   },
-   "severity": {
-    "flagrance": 1,
-    "impact": 1,
-    "score": 1
-   },
-   "significant": false,
-   "source": "federal_register",
-   "source_label": "Federal Register",
-   "subcategory": "Rule change by self-regulatory organization",
-   "subtype": "",
-   "summary": "",
-   "title": "Public Company Accounting Oversight Board; Order Granting Approval of Amendments to QC 1000, A Firm's System of Quality Control, and Related Rule and Forms",
-   "url": "https://www.federalregister.gov/documents/2026/11/04/2026-22483/public-company-accounting-oversight-board-order-granting-approval-of-amendments-to-qc-1000-a-firms"
-  },
-  {
-   "action": "",
-   "agencies": [
-    "sec"
-   ],
-   "category": "adjudication",
-   "corporation": null,
-   "date": "2026-11-04",
-   "date_basis": "published",
-   "doc_type": "In-house administrative proceeding",
-   "first_seen": "2026-11-12T16:13:55+00:00",
-   "flags": [
-    {
-     "code": "agency_adjudication",
-     "counters": [],
-     "elements_found": [
-      "in_house"
-     ],
-     "elements_total": 4,
-     "flagrance": 1,
-     "group": "structural",
-     "impact": 1,
-     "structural": true,
-     "tier": 1,
-     "tier_authority": "atlas_roofing",
-     "triggers": [
-      "SEC in-house administrative proceeding"
-     ]
-    }
-   ],
-   "id": "sec_admin:95f7b8cc71fbde44",
-   "jurisdiction": "federal",
-   "outcome": "initiated",
-   "priority": 1,
-   "published": "2026-11-04",
-   "routine": false,
-   "sanctions": [],
-   "seriousness": {
-    "breakdown": [
-     {
-      "marker": "Reach",
-      "points": 1,
-      "why": "action against particular parties"
-     }
-    ],
-    "level": 1,
-    "points": 1
-   },
-   "severity": {
-    "flagrance": 1,
-    "impact": 1,
-    "score": 1
-   },
-   "source": "sec_admin",
-   "source_label": "SEC administrative proceedings (in-house)",
-   "subcategory": "In-house administrative proceeding",
-   "subtype": "",
-   "summary": "",
-   "title": "Reyna Guiffaro",
-   "url": "https://www.sec.gov/files/litigation/admin/2026/34-106817.pdf"
-  },
-  {
-   "action": "",
-   "agencies": [
-    "sec"
-   ],
-   "category": "rulemaking",
-   "comments_close": null,
-   "corporation": "other_sro",
-   "date": "2026-11-04",
-   "date_basis": "published",
-   "doc_type": "Notice",
-   "docket_ids": [
-    "Release No. 34-106779",
-    "File No. SR-LTSE-2026-25"
-   ],
-   "effective_on": null,
-   "eo_number": null,
-   "first_seen": "2026-11-11T13:33:45+00:00",
-   "flags": [
-    {
-     "code": "private_delegation",
-     "counters": [],
-     "elements_found": [
-      "private",
-      "binding",
-      "no_prior_review"
-     ],
-     "elements_total": 3,
-     "flagrance": 1,
-     "group": "structural",
-     "impact": 1,
-     "structural": true,
-     "tier": 1,
-     "tier_authority": "consumers_research",
-     "triggers": [
-      "issued by an agency-supervised private corporation"
-     ]
-    }
-   ],
-   "fr_agency_slugs": [
-    "securities-and-exchange-commission"
-   ],
-   "id": "fr:2026-22452",
-   "jurisdiction": "federal",
-   "outcome": "proposed",
-   "priority": 1,
-   "published": "2026-11-04",
-   "rins": [],
-   "routine": false,
-   "sanctions": [],
-   "seriousness": {
-    "breakdown": [
-     {
-      "marker": "Reach",
-      "points": 1,
-      "why": "self-regulatory filing"
-     }
-    ],
-    "level": 1,
-    "points": 1
-   },
-   "severity": {
-    "flagrance": 1,
-    "impact": 1,
-    "score": 1
-   },
-   "significant": false,
-   "source": "federal_register",
-   "source_label": "Federal Register",
-   "subcategory": "Rule change by self-regulatory organization",
-   "subtype": "",
-   "summary": "",
-   "title": "Self-Regulatory Organizations: Long-Term Stock Exchange, Inc.; Notice of Filing and Immediate Effectiveness of Proposed Rule Change To Amend LTSE Rule 3.291",
-   "url": "https://www.federalregister.gov/documents/2026/11/04/2026-22452/self-regulatory-organizations-long-term-stock-exchange-inc-notice-of-filing-and-immediate"
-  },
-  {
-   "action": "",
-   "agencies": [
-    "sec"
-   ],
-   "category": "rulemaking",
-   "comments_close": null,
-   "corporation": "other_sro",
-   "date": "2026-11-04",
-   "date_basis": "published",
-   "doc_type": "Notice",
-   "docket_ids": [
-    "Release No. 34-106787",
-    "File No. SR-CboeBZX-2026-088"
-   ],
-   "effective_on": null,
-   "eo_number": null,
-   "first_seen": "2026-11-11T13:33:45+00:00",
-   "flags": [
-    {
-     "code": "private_delegation",
-     "counters": [],
-     "elements_found": [
-      "private",
-      "binding",
-      "no_prior_review"
-     ],
-     "elements_total": 3,
-     "flagrance": 1,
-     "group": "structural",
-     "impact": 1,
-     "structural": true,
-     "tier": 1,
-     "tier_authority": "consumers_research",
-     "triggers": [
-      "issued by an agency-supervised private corporation"
-     ]
-    }
-   ],
-   "fr_agency_slugs": [
-    "securities-and-exchange-commission"
-   ],
-   "id": "fr:2026-22460",
-   "jurisdiction": "federal",
-   "outcome": "proposed",
-   "priority": 1,
-   "published": "2026-11-04",
-   "rins": [],
-   "routine": false,
-   "sanctions": [],
-   "seriousness": {
-    "breakdown": [
-     {
-      "marker": "Reach",
-      "points": 1,
-      "why": "self-regulatory filing"
-     }
-    ],
-    "level": 1,
-    "points": 1
-   },
-   "severity": {
-    "flagrance": 1,
-    "impact": 1,
-    "score": 1
-   },
-   "significant": false,
-   "source": "federal_register",
-   "source_label": "Federal Register",
-   "subcategory": "Rule change by self-regulatory organization",
-   "subtype": "",
-   "summary": "",
-   "title": "Self-Regulatory Organizations; Cboe BZX Exchange, Inc.; Notice of Filing and Immediate Effectiveness of a Proposed Rule Change To Introduce Enhancements to the Missed Liquidity Report Offered as Part of the Cboe Timestamping Service",
-   "url": "https://www.federalregister.gov/documents/2026/11/04/2026-22460/self-regulatory-organizations-cboe-bzx-exchange-inc-notice-of-filing-and-immediate-effectiveness-of"
-  },
-  {
-   "action": "",
-   "agencies": [
-    "sec"
-   ],
-   "category": "rulemaking",
-   "comments_close": null,
-   "corporation": "other_sro",
-   "date": "2026-11-04",
-   "date_basis": "published",
-   "doc_type": "Notice",
-   "docket_ids": [
-    "Release No. 34-106786",
-    "File No. SR-C2-2026-028"
-   ],
-   "effective_on": null,
-   "eo_number": null,
-   "first_seen": "2026-11-11T13:33:45+00:00",
-   "flags": [
-    {
-     "code": "private_delegation",
-     "counters": [],
-     "elements_found": [
-      "private",
-      "binding",
-      "no_prior_review"
-     ],
-     "elements_total": 3,
-     "flagrance": 1,
-     "group": "structural",
-     "impact": 1,
-     "structural": true,
-     "tier": 1,
-     "tier_authority": "consumers_research",
-     "triggers": [
-      "issued by an agency-supervised private corporation"
-     ]
-    }
-   ],
-   "fr_agency_slugs": [
-    "securities-and-exchange-commission"
-   ],
-   "id": "fr:2026-22459",
-   "jurisdiction": "federal",
-   "outcome": "proposed",
-   "priority": 1,
-   "published": "2026-11-04",
-   "rins": [],
-   "routine": false,
-   "sanctions": [],
-   "seriousness": {
-    "breakdown": [
-     {
-      "marker": "Reach",
-      "points": 1,
-      "why": "self-regulatory filing"
-     }
-    ],
-    "level": 1,
-    "points": 1
-   },
-   "severity": {
-    "flagrance": 1,
-    "impact": 1,
-    "score": 1
-   },
-   "significant": false,
-   "source": "federal_register",
-   "source_label": "Federal Register",
-   "subcategory": "Rule change by self-regulatory organization",
-   "subtype": "",
-   "summary": "",
-   "title": "Self-Regulatory Organizations; Cboe C2 Exchange, Inc.; Notice of Filing and Immediate Effectiveness of a Proposed Rule Change To Introduce Enhancements to the Missed Liquidity Report Offered as Part of the Cboe Timestamping Service",
-   "url": "https://www.federalregister.gov/documents/2026/11/04/2026-22459/self-regulatory-organizations-cboe-c2-exchange-inc-notice-of-filing-and-immediate-effectiveness-of-a"
-  },
-  {
-   "action": "",
-   "agencies": [
-    "sec"
-   ],
-   "category": "rulemaking",
-   "comments_close": null,
-   "corporation": "other_sro",
-   "date": "2026-11-04",
-   "date_basis": "published",
-   "doc_type": "Notice",
-   "docket_ids": [
-    "Release No. 34-106788",
-    "File No. SR-CboeEDGX-2026-073"
-   ],
-   "effective_on": null,
-   "eo_number": null,
-   "first_seen": "2026-11-11T13:33:45+00:00",
-   "flags": [
-    {
-     "code": "private_delegation",
-     "counters": [],
-     "elements_found": [
-      "private",
-      "binding",
-      "no_prior_review"
-     ],
-     "elements_total": 3,
-     "flagrance": 1,
-     "group": "structural",
-     "impact": 1,
-     "structural": true,
-     "tier": 1,
-     "tier_authority": "consumers_research",
-     "triggers": [
-      "issued by an agency-supervised private corporation"
-     ]
-    }
-   ],
-   "fr_agency_slugs": [
-    "securities-and-exchange-commission"
-   ],
-   "id": "fr:2026-22461",
-   "jurisdiction": "federal",
-   "outcome": "proposed",
-   "priority": 1,
-   "published": "2026-11-04",
-   "rins": [],
-   "routine": false,
-   "sanctions": [],
-   "seriousness": {
-    "breakdown": [
-     {
-      "marker": "Reach",
-      "points": 1,
-      "why": "self-regulatory filing"
-     }
-    ],
-    "level": 1,
-    "points": 1
-   },
-   "severity": {
-    "flagrance": 1,
-    "impact": 1,
-    "score": 1
-   },
-   "significant": false,
-   "source": "federal_register",
-   "source_label": "Federal Register",
-   "subcategory": "Rule change by self-regulatory organization",
-   "subtype": "",
-   "summary": "",
-   "title": "Self-Regulatory Organizations; Cboe EDGX Exchange, Inc.; Notice of Filing and Immediate Effectiveness of a Proposed Rule Change To Introduce Enhancements to the Missed Liquidity Report Offered as Part of the Cboe Timestamping Service",
-   "url": "https://www.federalregister.gov/documents/2026/11/04/2026-22461/self-regulatory-organizations-cboe-edgx-exchange-inc-notice-of-filing-and-immediate-effectiveness-of"
-  },
-  {
-   "action": "",
-   "agencies": [
-    "sec"
-   ],
-   "category": "rulemaking",
-   "comments_close": null,
-   "corporation": "other_sro",
-   "date": "2026-11-04",
-   "date_basis": "published",
-   "doc_type": "Notice",
-   "docket_ids": [
-    "Release No. 34-106785",
-    "File No. SR-CBOE-2026-083"
-   ],
-   "effective_on": null,
-   "eo_number": null,
-   "first_seen": "2026-11-11T13:33:45+00:00",
-   "flags": [
-    {
-     "code": "private_delegation",
-     "counters": [],
-     "elements_found": [
-      "private",
-      "binding",
-      "no_prior_review"
-     ],
-     "elements_total": 3,
-     "flagrance": 1,
-     "group": "structural",
-     "impact": 1,
-     "structural": true,
-     "tier": 1,
-     "tier_authority": "consumers_research",
-     "triggers": [
-      "issued by an agency-supervised private corporation"
-     ]
-    }
-   ],
-   "fr_agency_slugs": [
-    "securities-and-exchange-commission"
-   ],
-   "id": "fr:2026-22458",
-   "jurisdiction": "federal",
-   "outcome": "proposed",
-   "priority": 1,
-   "published": "2026-11-04",
-   "rins": [],
-   "routine": false,
-   "sanctions": [],
-   "seriousness": {
-    "breakdown": [
-     {
-      "marker": "Reach",
-      "points": 1,
-      "why": "self-regulatory filing"
-     }
-    ],
-    "level": 1,
-    "points": 1
-   },
-   "severity": {
-    "flagrance": 1,
-    "impact": 1,
-    "score": 1
-   },
-   "significant": false,
-   "source": "federal_register",
-   "source_label": "Federal Register",
-   "subcategory": "Rule change by self-regulatory organization",
-   "subtype": "",
-   "summary": "",
-   "title": "Self-Regulatory Organizations; Cboe Exchange, Inc.; Notice of Filing and Immediate Effectiveness of a Proposed Rule Change To Introduce Enhancements to the Missed Liquidity Report Offered as Part of the Cboe Timestamping Service",
-   "url": "https://www.federalregister.gov/documents/2026/11/04/2026-22458/self-regulatory-organizations-cboe-exchange-inc-notice-of-filing-and-immediate-effectiveness-of-a"
-  },
-  {
-   "action": "",
-   "agencies": [
-    "sec"
-   ],
-   "category": "rulemaking",
-   "comments_close": null,
-   "corporation": "other_sro",
-   "date": "2026-11-04",
-   "date_basis": "published",
-   "doc_type": "Notice",
-   "docket_ids": [
-    "Release No. 34-106780",
-    "File No. SR-ISE-2026-53"
-   ],
-   "effective_on": null,
-   "eo_number": null,
-   "first_seen": "2026-11-11T13:33:45+00:00",
-   "flags": [
-    {
-     "code": "private_delegation",
-     "counters": [],
-     "elements_found": [
-      "private",
-      "binding"
-     ],
-     "elements_total": 3,
-     "flagrance": 1,
-     "group": "structural",
-     "impact": 1,
-     "structural": true,
-     "tier": 1,
-     "tier_authority": "consumers_research",
-     "triggers": [
-      "issued by an agency-supervised private corporation"
-     ]
-    }
-   ],
-   "fr_agency_slugs": [
-    "securities-and-exchange-commission"
-   ],
-   "id": "fr:2026-22453",
-   "jurisdiction": "federal",
-   "outcome": "proposed",
-   "priority": 1,
-   "published": "2026-11-04",
-   "rins": [],
-   "routine": false,
-   "sanctions": [],
-   "seriousness": {
-    "breakdown": [
-     {
-      "marker": "Reach",
-      "points": 1,
-      "why": "self-regulatory filing"
-     }
-    ],
-    "level": 1,
-    "points": 1
-   },
-   "severity": {
-    "flagrance": 1,
-    "impact": 1,
-    "score": 1
-   },
-   "significant": false,
-   "source": "federal_register",
-   "source_label": "Federal Register",
-   "subcategory": "Rule change by self-regulatory organization",
-   "subtype": "",
-   "summary": "",
-   "title": "Self-Regulatory Organizations; Nasdaq ISE, LLC; Notice of Filing of Proposed Rule Change To Amend the Strike Price Intervals for Options on Certain Exchange-Traded Fund Shares That Meet the Qualifying Securities Criteria",
-   "url": "https://www.federalregister.gov/documents/2026/11/04/2026-22453/self-regulatory-organizations-nasdaq-ise-llc-notice-of-filing-of-proposed-rule-change-to-amend-the"
-  },
-  {
-   "action": "",
-   "agencies": [
-    "sec"
-   ],
-   "category": "rulemaking",
-   "comments_close": null,
-   "corporation": "other_sro",
-   "date": "2026-11-04",
-   "date_basis": "published",
-   "doc_type": "Notice",
-   "docket_ids": [
-    "Release No. 34-106781",
-    "File No. SR-PHLX-2026-66"
-   ],
-   "effective_on": null,
-   "eo_number": null,
-   "first_seen": "2026-11-11T13:33:45+00:00",
-   "flags": [
-    {
-     "code": "private_delegation",
-     "counters": [],
-     "elements_found": [
-      "private",
-      "binding",
-      "no_prior_review"
-     ],
-     "elements_total": 3,
-     "flagrance": 1,
-     "group": "structural",
-     "impact": 1,
-     "structural": true,
-     "tier": 1,
-     "tier_authority": "consumers_research",
-     "triggers": [
-      "issued by an agency-supervised private corporation"
-     ]
-    }
-   ],
-   "fr_agency_slugs": [
-    "securities-and-exchange-commission"
-   ],
-   "id": "fr:2026-22454",
-   "jurisdiction": "federal",
-   "outcome": "proposed",
-   "priority": 1,
-   "published": "2026-11-04",
-   "rins": [],
-   "routine": true,
-   "sanctions": [],
-   "seriousness": {
-    "breakdown": [
-     {
-      "marker": "Reach",
-      "points": 1,
-      "why": "self-regulatory filing"
-     }
-    ],
-    "level": 1,
-    "points": 1
-   },
-   "severity": {
-    "flagrance": 1,
-    "impact": 1,
-    "score": 1
-   },
-   "significant": false,
-   "source": "federal_register",
-   "source_label": "Federal Register",
-   "subcategory": "Fee change by self-regulatory organization",
-   "subtype": "",
-   "summary": "",
-   "title": "Self-Regulatory Organizations; Nasdaq PHLX LLC; Notice of Filing and Immediate Effectiveness of a Proposed Rule Change To Amend the Exchange's Transaction Fees at Equity 7, Section 3, To Delete Obsolete References to the CORE FIX Order Entry Protocol",
-   "url": "https://www.federalregister.gov/documents/2026/11/04/2026-22454/self-regulatory-organizations-nasdaq-phlx-llc-notice-of-filing-and-immediate-effectiveness-of-a"
-  },
-  {
-   "action": "",
-   "agencies": [
-    "sec"
-   ],
-   "category": "rulemaking",
-   "comments_close": null,
-   "corporation": "other_sro",
-   "date": "2026-11-04",
-   "date_basis": "published",
-   "doc_type": "Notice",
-   "docket_ids": [
-    "Release No. 34-106782",
-    "File No. SR-NasdaqTX-2026-052"
-   ],
-   "effective_on": null,
-   "eo_number": null,
-   "first_seen": "2026-11-11T13:33:45+00:00",
-   "flags": [
-    {
-     "code": "private_delegation",
-     "counters": [],
-     "elements_found": [
-      "private",
-      "binding",
-      "no_prior_review"
-     ],
-     "elements_total": 3,
-     "flagrance": 1,
-     "group": "structural",
-     "impact": 1,
-     "structural": true,
-     "tier": 1,
-     "tier_authority": "consumers_research",
-     "triggers": [
-      "issued by an agency-supervised private corporation"
-     ]
-    }
-   ],
-   "fr_agency_slugs": [
-    "securities-and-exchange-commission"
-   ],
-   "id": "fr:2026-22455",
-   "jurisdiction": "federal",
-   "outcome": "proposed",
-   "priority": 1,
-   "published": "2026-11-04",
-   "rins": [],
-   "routine": true,
-   "sanctions": [],
-   "seriousness": {
-    "breakdown": [
-     {
-      "marker": "Reach",
-      "points": 1,
-      "why": "self-regulatory filing"
-     }
-    ],
-    "level": 1,
-    "points": 1
-   },
-   "severity": {
-    "flagrance": 1,
-    "impact": 1,
-    "score": 1
-   },
-   "significant": false,
-   "source": "federal_register",
-   "source_label": "Federal Register",
-   "subcategory": "Fee change by self-regulatory organization",
-   "subtype": "",
-   "summary": "",
-   "title": "Self-Regulatory Organizations; Nasdaq Texas, LLC; Notice of Filing and Immediate Effectiveness of a Proposed Rule Change To Amend the Exchange's Transaction Fees at Equity 7, Sections 115 and 130, To Delete Obsolete References to the CORE FIX Order Entry Protocol",
-   "url": "https://www.federalregister.gov/documents/2026/11/04/2026-22455/self-regulatory-organizations-nasdaq-texas-llc-notice-of-filing-and-immediate-effectiveness-of-a"
-  },
-  {
-   "action": "",
-   "agencies": [
-    "sec"
-   ],
-   "category": "rulemaking",
-   "comments_close": null,
-   "corporation": "other_sro",
-   "date": "2026-11-04",
-   "date_basis": "published",
-   "doc_type": "Notice",
-   "docket_ids": [
-    "Release No. 34-106784",
-    "File No. SR-NSCC-2026-012"
-   ],
-   "effective_on": null,
-   "eo_number": null,
-   "first_seen": "2026-11-11T13:33:45+00:00",
-   "flags": [
-    {
-     "code": "private_delegation",
-     "counters": [],
-     "elements_found": [
-      "private",
-      "binding",
-      "no_prior_review"
-     ],
-     "elements_total": 3,
-     "flagrance": 1,
-     "group": "structural",
-     "impact": 1,
-     "structural": true,
-     "tier": 1,
-     "tier_authority": "consumers_research",
-     "triggers": [
-      "issued by an agency-supervised private corporation"
-     ]
-    }
-   ],
-   "fr_agency_slugs": [
-    "securities-and-exchange-commission"
-   ],
-   "id": "fr:2026-22457",
-   "jurisdiction": "federal",
-   "outcome": "proposed",
-   "priority": 1,
-   "published": "2026-11-04",
-   "rins": [],
-   "routine": false,
-   "sanctions": [],
-   "seriousness": {
-    "breakdown": [
-     {
-      "marker": "Reach",
-      "points": 1,
-      "why": "self-regulatory filing"
-     }
-    ],
-    "level": 1,
-    "points": 1
-   },
-   "severity": {
-    "flagrance": 1,
-    "impact": 1,
-    "score": 1
-   },
-   "significant": false,
-   "source": "federal_register",
-   "source_label": "Federal Register",
-   "subcategory": "Rule change by self-regulatory organization",
-   "subtype": "",
-   "summary": "",
-   "title": "Self-Regulatory Organizations; National Securities Clearing Corporation; Notice of Filing and Immediate Effectiveness of a Proposed Rule Change To Enhance Automated Reasonability Checks for the Submission of ETF Creation and Exemption Transactions",
-   "url": "https://www.federalregister.gov/documents/2026/11/04/2026-22457/self-regulatory-organizations-national-securities-clearing-corporation-notice-of-filing-and"
-  },
-  {
-   "action": "",
-   "agencies": [
-    "sec"
-   ],
-   "category": "rulemaking",
-   "comments_close": null,
-   "corporation": "other_sro",
-   "date": "2026-11-04",
-   "date_basis": "published",
-   "doc_type": "Notice",
-   "docket_ids": [
-    "Release No. 34-106783",
-    "File No. SR-NASDAQ-2026-093"
-   ],
-   "effective_on": null,
-   "eo_number": null,
-   "first_seen": "2026-11-11T13:33:45+00:00",
-   "flags": [
-    {
-     "code": "private_delegation",
-     "counters": [],
-     "elements_found": [
-      "private",
-      "binding",
-      "no_prior_review"
-     ],
-     "elements_total": 3,
-     "flagrance": 1,
-     "group": "structural",
-     "impact": 1,
-     "structural": true,
-     "tier": 1,
-     "tier_authority": "consumers_research",
-     "triggers": [
-      "issued by an agency-supervised private corporation"
-     ]
-    }
-   ],
-   "fr_agency_slugs": [
-    "securities-and-exchange-commission"
-   ],
-   "id": "fr:2026-22456",
-   "jurisdiction": "federal",
-   "outcome": "proposed",
-   "priority": 1,
-   "published": "2026-11-04",
-   "rins": [],
-   "routine": true,
-   "sanctions": [],
-   "seriousness": {
-    "breakdown": [
-     {
-      "marker": "Reach",
-      "points": 1,
-      "why": "self-regulatory filing"
-     }
-    ],
-    "level": 1,
-    "points": 1
-   },
-   "severity": {
-    "flagrance": 1,
-    "impact": 1,
-    "score": 1
-   },
-   "significant": false,
-   "source": "federal_register",
-   "source_label": "Federal Register",
-   "subcategory": "Fee change by self-regulatory organization",
-   "subtype": "",
-   "summary": "",
-   "title": "Self-Regulatory Organizations; The Nasdaq Stock Market LLC; Notice of Filing and Immediate Effectiveness of a Proposed Rule Change To Amend the Exchange's Transaction Fees at Equity 7, Sections 115 and 130, To Delete Obsolete References to the CORE FIX Order Entry Protocol",
-   "url": "https://www.federalregister.gov/documents/2026/11/04/2026-22456/self-regulatory-organizations-the-nasdaq-stock-market-llc-notice-of-filing-and-immediate"
-  },
-  {
-   "action": "",
-   "agencies": [
-    "fda"
-   ],
    "category": "other",
    "comments_close": null,
    "corporation": null,
@@ -980,14 +19,7 @@
    "flags": [],
    "fr_doc_num": null,
    "id": "regs:FDA-2026-P-13729-0002",
-   "jurisdiction": "federal",
-   "outcome": "notice",
-   "priority": 0,
-   "published": "2026-11-04",
-   "regs_agency_id": "FDA",
-   "routine": false,
-   "sanctions": [],
-   "seriousness": {
+   "impact": {
     "breakdown": [
      {
       "marker": "Reach",
@@ -998,7 +30,14 @@
     "level": 1,
     "points": 1
    },
-   "severity": null,
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 0,
+   "published": "2026-11-04",
+   "rating": null,
+   "regs_agency_id": "FDA",
+   "routine": false,
+   "sanctions": [],
    "source": "regulations_gov",
    "source_label": "Regulations.gov",
    "subcategory": "Citizen petition or FDA response",
@@ -1026,14 +65,7 @@
    "flags": [],
    "fr_doc_num": null,
    "id": "regs:FDA-2026-P-13828-0002",
-   "jurisdiction": "federal",
-   "outcome": "notice",
-   "priority": 0,
-   "published": "2026-11-04",
-   "regs_agency_id": "FDA",
-   "routine": false,
-   "sanctions": [],
-   "seriousness": {
+   "impact": {
     "breakdown": [
      {
       "marker": "Reach",
@@ -1044,7 +76,14 @@
     "level": 1,
     "points": 1
    },
-   "severity": null,
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 0,
+   "published": "2026-11-04",
+   "rating": null,
+   "regs_agency_id": "FDA",
+   "routine": false,
+   "sanctions": [],
    "source": "regulations_gov",
    "source_label": "Regulations.gov",
    "subcategory": "Citizen petition or FDA response",
@@ -1072,14 +111,7 @@
    "flags": [],
    "fr_doc_num": null,
    "id": "regs:CMS-2026-2344-2188",
-   "jurisdiction": "federal",
-   "outcome": "notice",
-   "priority": 0,
-   "published": "2026-11-04",
-   "regs_agency_id": "CMS",
-   "routine": false,
-   "sanctions": [],
-   "seriousness": {
+   "impact": {
     "breakdown": [
      {
       "marker": "Reach",
@@ -1090,7 +122,14 @@
     "level": 1,
     "points": 1
    },
-   "severity": null,
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 0,
+   "published": "2026-11-04",
+   "rating": null,
+   "regs_agency_id": "CMS",
+   "routine": false,
+   "sanctions": [],
    "source": "regulations_gov",
    "source_label": "Regulations.gov",
    "subcategory": "Other notice",
@@ -1118,14 +157,7 @@
    "flags": [],
    "fr_doc_num": null,
    "id": "regs:FDA-2026-P-13729-0001",
-   "jurisdiction": "federal",
-   "outcome": "notice",
-   "priority": 0,
-   "published": "2026-11-04",
-   "regs_agency_id": "FDA",
-   "routine": false,
-   "sanctions": [],
-   "seriousness": {
+   "impact": {
     "breakdown": [
      {
       "marker": "Reach",
@@ -1136,7 +168,14 @@
     "level": 1,
     "points": 1
    },
-   "severity": null,
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 0,
+   "published": "2026-11-04",
+   "rating": null,
+   "regs_agency_id": "FDA",
+   "routine": false,
+   "sanctions": [],
    "source": "regulations_gov",
    "source_label": "Regulations.gov",
    "subcategory": "Citizen petition or FDA response",
@@ -1164,14 +203,7 @@
    "flags": [],
    "fr_doc_num": null,
    "id": "regs:FDA-2026-P-13828-0001",
-   "jurisdiction": "federal",
-   "outcome": "notice",
-   "priority": 0,
-   "published": "2026-11-04",
-   "regs_agency_id": "FDA",
-   "routine": false,
-   "sanctions": [],
-   "seriousness": {
+   "impact": {
     "breakdown": [
      {
       "marker": "Reach",
@@ -1182,7 +214,14 @@
     "level": 1,
     "points": 1
    },
-   "severity": null,
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 0,
+   "published": "2026-11-04",
+   "rating": null,
+   "regs_agency_id": "FDA",
+   "routine": false,
+   "sanctions": [],
    "source": "regulations_gov",
    "source_label": "Regulations.gov",
    "subcategory": "Citizen petition or FDA response",
@@ -1213,14 +252,7 @@
     "federal-energy-regulatory-commission"
    ],
    "id": "fr:2026-22492",
-   "jurisdiction": "federal",
-   "outcome": "applied",
-   "priority": 0,
-   "published": "2026-11-04",
-   "rins": [],
-   "routine": false,
-   "sanctions": [],
-   "seriousness": {
+   "impact": {
     "breakdown": [
      {
       "marker": "Reach",
@@ -1231,7 +263,14 @@
     "level": 1,
     "points": 1
    },
-   "severity": null,
+   "jurisdiction": "federal",
+   "outcome": "applied",
+   "priority": 0,
+   "published": "2026-11-04",
+   "rating": null,
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
    "significant": false,
    "source": "federal_register",
    "source_label": "Federal Register",
@@ -1262,14 +301,7 @@
     "federal-energy-regulatory-commission"
    ],
    "id": "fr:2026-22490",
-   "jurisdiction": "federal",
-   "outcome": "applied",
-   "priority": 0,
-   "published": "2026-11-04",
-   "rins": [],
-   "routine": false,
-   "sanctions": [],
-   "seriousness": {
+   "impact": {
     "breakdown": [
      {
       "marker": "Reach",
@@ -1280,7 +312,14 @@
     "level": 1,
     "points": 1
    },
-   "severity": null,
+   "jurisdiction": "federal",
+   "outcome": "applied",
+   "priority": 0,
+   "published": "2026-11-04",
+   "rating": null,
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
    "significant": false,
    "source": "federal_register",
    "source_label": "Federal Register",
@@ -1311,14 +350,7 @@
     "federal-energy-regulatory-commission"
    ],
    "id": "fr:2026-22491",
-   "jurisdiction": "federal",
-   "outcome": "applied",
-   "priority": 0,
-   "published": "2026-11-04",
-   "rins": [],
-   "routine": false,
-   "sanctions": [],
-   "seriousness": {
+   "impact": {
     "breakdown": [
      {
       "marker": "Reach",
@@ -1329,7 +361,14 @@
     "level": 1,
     "points": 1
    },
-   "severity": null,
+   "jurisdiction": "federal",
+   "outcome": "applied",
+   "priority": 0,
+   "published": "2026-11-04",
+   "rating": null,
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
    "significant": false,
    "source": "federal_register",
    "source_label": "Federal Register",
@@ -1338,6 +377,77 @@
    "summary": "",
    "title": "Combined Notice of Filings #2",
    "url": "https://www.federalregister.gov/documents/2026/11/04/2026-22491/combined-notice-of-filings-2"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-04",
+   "date_basis": "posted",
+   "doc_type": "Other",
+   "docket_ids": [
+    "FDA-2026-H-13438"
+   ],
+   "first_seen": "2026-11-12T16:13:55+00:00",
+   "flags": [
+    {
+     "authority": "atlas_roofing",
+     "code": "agency_adjudication",
+     "elements_found": [
+      "penalty",
+      "in_house"
+     ],
+     "elements_total": 3,
+     "group": "structural",
+     "level": 0,
+     "precedent": "open",
+     "structural": true,
+     "triggers": [
+      "civil money penalty complaint"
+     ],
+     "weighed": []
+    }
+   ],
+   "fr_doc_num": null,
+   "id": "regs:FDA-2026-H-13438-0001",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 3,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 2,
+    "points": 4
+   },
+   "jurisdiction": "federal",
+   "outcome": "initiated",
+   "priority": 0,
+   "published": "2026-11-04",
+   "rating": null,
+   "regs_agency_id": "FDA",
+   "routine": false,
+   "sanctions": [
+    "civil_penalty"
+   ],
+   "source": "regulations_gov",
+   "source_label": "Regulations.gov",
+   "subcategory": "Civil money penalty complaint (FDA hearing docket, usually a tobacco retailer)",
+   "subtype": "Complaint",
+   "summary": "",
+   "title": "Complaint",
+   "url": "https://www.regulations.gov/document/FDA-2026-H-13438-0001",
+   "withdrawn": false
   },
   {
    "action": "Notice of applications for deregistration under section 8(f) of the Investment Company Act of 1940.",
@@ -1361,16 +471,7 @@
     "securities-and-exchange-commission"
    ],
    "id": "fr:2026-22449",
-   "jurisdiction": "federal",
-   "outcome": "applied",
-   "priority": 0,
-   "published": "2026-11-04",
-   "rins": [],
-   "routine": false,
-   "sanctions": [
-    "revocation"
-   ],
-   "seriousness": {
+   "impact": {
     "breakdown": [
      {
       "marker": "Sanction",
@@ -1391,7 +492,16 @@
     "level": 3,
     "points": 7
    },
-   "severity": null,
+   "jurisdiction": "federal",
+   "outcome": "applied",
+   "priority": 0,
+   "published": "2026-11-04",
+   "rating": null,
+   "rins": [],
+   "routine": false,
+   "sanctions": [
+    "revocation"
+   ],
    "significant": false,
    "source": "federal_register",
    "source_label": "Federal Register",
@@ -1424,14 +534,7 @@
     "centers-for-medicare-medicaid-services"
    ],
    "id": "fr:2026-22494",
-   "jurisdiction": "federal",
-   "outcome": "notice",
-   "priority": 0,
-   "published": "2026-11-04",
-   "rins": [],
-   "routine": false,
-   "sanctions": [],
-   "seriousness": {
+   "impact": {
     "breakdown": [
      {
       "marker": "Reach",
@@ -1442,7 +545,14 @@
     "level": 1,
     "points": 1
    },
-   "severity": null,
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 0,
+   "published": "2026-11-04",
+   "rating": null,
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
    "significant": false,
    "source": "federal_register",
    "source_label": "Federal Register",
@@ -1470,14 +580,7 @@
    "flags": [],
    "fr_doc_num": null,
    "id": "regs:EPA-R05-OAR-2026-7591-0001",
-   "jurisdiction": "federal",
-   "outcome": "notice",
-   "priority": 0,
-   "published": "2026-11-04",
-   "regs_agency_id": "EPA",
-   "routine": false,
-   "sanctions": [],
-   "seriousness": {
+   "impact": {
     "breakdown": [
      {
       "marker": "Reach",
@@ -1488,7 +591,14 @@
     "level": 1,
     "points": 1
    },
-   "severity": null,
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 0,
+   "published": "2026-11-04",
+   "rating": null,
+   "regs_agency_id": "EPA",
+   "routine": false,
+   "sanctions": [],
    "source": "regulations_gov",
    "source_label": "Regulations.gov",
    "subcategory": "Other notice",
@@ -1521,14 +631,7 @@
     "federal-energy-regulatory-commission"
    ],
    "id": "fr:2026-22513",
-   "jurisdiction": "federal",
-   "outcome": "notice",
-   "priority": 0,
-   "published": "2026-11-04",
-   "rins": [],
-   "routine": false,
-   "sanctions": [],
-   "seriousness": {
+   "impact": {
     "breakdown": [
      {
       "marker": "Reach",
@@ -1539,7 +642,14 @@
     "level": 1,
     "points": 1
    },
-   "severity": null,
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 0,
+   "published": "2026-11-04",
+   "rating": null,
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
    "significant": false,
    "source": "federal_register",
    "source_label": "Federal Register",
@@ -1571,14 +681,7 @@
     "securities-and-exchange-commission"
    ],
    "id": "fr:2026-22521",
-   "jurisdiction": "federal",
-   "outcome": "notice",
-   "priority": 0,
-   "published": "2026-11-04",
-   "rins": [],
-   "routine": false,
-   "sanctions": [],
-   "seriousness": {
+   "impact": {
     "breakdown": [
      {
       "marker": "Reach",
@@ -1589,7 +692,14 @@
     "level": 1,
     "points": 1
    },
-   "severity": null,
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 0,
+   "published": "2026-11-04",
+   "rating": null,
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
    "significant": false,
    "source": "federal_register",
    "source_label": "Federal Register",
@@ -1622,14 +732,7 @@
     "securities-and-exchange-commission"
    ],
    "id": "fr:2026-22493",
-   "jurisdiction": "federal",
-   "outcome": "granted",
-   "priority": 0,
-   "published": "2026-11-04",
-   "rins": [],
-   "routine": false,
-   "sanctions": [],
-   "seriousness": {
+   "impact": {
     "breakdown": [
      {
       "marker": "Reach",
@@ -1640,7 +743,14 @@
     "level": 1,
     "points": 1
    },
-   "severity": null,
+   "jurisdiction": "federal",
+   "outcome": "granted",
+   "priority": 0,
+   "published": "2026-11-04",
+   "rating": null,
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
    "significant": false,
    "source": "federal_register",
    "source_label": "Federal Register",
@@ -1673,14 +783,7 @@
     "federal-energy-regulatory-commission"
    ],
    "id": "fr:2026-22515",
-   "jurisdiction": "federal",
-   "outcome": "notice",
-   "priority": 0,
-   "published": "2026-11-04",
-   "rins": [],
-   "routine": false,
-   "sanctions": [],
-   "seriousness": {
+   "impact": {
     "breakdown": [
      {
       "marker": "Reach",
@@ -1691,7 +794,14 @@
     "level": 1,
     "points": 1
    },
-   "severity": null,
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 0,
+   "published": "2026-11-04",
+   "rating": null,
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
    "significant": false,
    "source": "federal_register",
    "source_label": "Federal Register",
@@ -1724,14 +834,7 @@
     "federal-energy-regulatory-commission"
    ],
    "id": "fr:2026-22516",
-   "jurisdiction": "federal",
-   "outcome": "notice",
-   "priority": 0,
-   "published": "2026-11-04",
-   "rins": [],
-   "routine": false,
-   "sanctions": [],
-   "seriousness": {
+   "impact": {
     "breakdown": [
      {
       "marker": "Reach",
@@ -1742,7 +845,14 @@
     "level": 1,
     "points": 1
    },
-   "severity": null,
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 0,
+   "published": "2026-11-04",
+   "rating": null,
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
    "significant": false,
    "source": "federal_register",
    "source_label": "Federal Register",
@@ -1773,14 +883,7 @@
     "federal-energy-regulatory-commission"
    ],
    "id": "fr:2026-22511",
-   "jurisdiction": "federal",
-   "outcome": "notice",
-   "priority": 0,
-   "published": "2026-11-04",
-   "rins": [],
-   "routine": false,
-   "sanctions": [],
-   "seriousness": {
+   "impact": {
     "breakdown": [
      {
       "marker": "Reach",
@@ -1791,7 +894,14 @@
     "level": 1,
     "points": 1
    },
-   "severity": null,
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 0,
+   "published": "2026-11-04",
+   "rating": null,
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
    "significant": false,
    "source": "federal_register",
    "source_label": "Federal Register",
@@ -1800,6 +910,830 @@
    "summary": "Pursuant to the Privacy Act of 1974 and Office of Management and Budget (OMB) Circular A-108, the Federal Energy Regulatory Commission (Commission or FERC) proposes to rescind an existing system of records notice (SORN). Specifically, the following SORN is being proposed for rescindment \"Commission Temporary Work-at-Home Program (FERC-39).\" The basis for rescindment is explained below.",
    "title": "Privacy Act of 1974; Systems of Records",
    "url": "https://www.federalregister.gov/documents/2026/11/04/2026-22511/privacy-act-of-1974-systems-of-records"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "sec"
+   ],
+   "category": "rulemaking",
+   "comments_close": null,
+   "corporation": "pcaob",
+   "date": "2026-11-04",
+   "date_basis": "published",
+   "doc_type": "Notice",
+   "docket_ids": [
+    "Release No. 34-106791",
+    "File No. PCAOB-2026-01"
+   ],
+   "effective_on": null,
+   "eo_number": null,
+   "first_seen": "2026-11-11T13:33:45+00:00",
+   "flags": [
+    {
+     "authority": "consumers_research",
+     "code": "private_delegation",
+     "elements_found": [
+      "private",
+      "binding"
+     ],
+     "elements_total": 3,
+     "group": "structural",
+     "level": 0,
+     "precedent": "open",
+     "structural": true,
+     "triggers": [
+      "issued by an agency-supervised private corporation"
+     ],
+     "weighed": []
+    }
+   ],
+   "fr_agency_slugs": [
+    "securities-and-exchange-commission"
+   ],
+   "id": "fr:2026-22483",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "self-regulatory filing"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
+   "jurisdiction": "federal",
+   "outcome": "proposed",
+   "priority": 0,
+   "published": "2026-11-04",
+   "rating": null,
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Rule change by self-regulatory organization",
+   "subtype": "",
+   "summary": "",
+   "title": "Public Company Accounting Oversight Board; Order Granting Approval of Amendments to QC 1000, A Firm's System of Quality Control, and Related Rule and Forms",
+   "url": "https://www.federalregister.gov/documents/2026/11/04/2026-22483/public-company-accounting-oversight-board-order-granting-approval-of-amendments-to-qc-1000-a-firms"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "sec"
+   ],
+   "category": "adjudication",
+   "corporation": null,
+   "date": "2026-11-04",
+   "date_basis": "published",
+   "doc_type": "In-house administrative proceeding",
+   "first_seen": "2026-11-12T16:13:55+00:00",
+   "flags": [
+    {
+     "authority": "atlas_roofing",
+     "code": "agency_adjudication",
+     "elements_found": [
+      "in_house"
+     ],
+     "elements_total": 3,
+     "group": "structural",
+     "level": 0,
+     "precedent": "open",
+     "structural": true,
+     "triggers": [
+      "SEC in-house administrative proceeding"
+     ],
+     "weighed": []
+    }
+   ],
+   "id": "sec_admin:95f7b8cc71fbde44",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
+   "jurisdiction": "federal",
+   "outcome": "initiated",
+   "priority": 0,
+   "published": "2026-11-04",
+   "rating": null,
+   "routine": false,
+   "sanctions": [],
+   "source": "sec_admin",
+   "source_label": "SEC administrative proceedings (in-house)",
+   "subcategory": "In-house administrative proceeding",
+   "subtype": "",
+   "summary": "",
+   "title": "Reyna Guiffaro",
+   "url": "https://www.sec.gov/files/litigation/admin/2026/34-106817.pdf"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "sec"
+   ],
+   "category": "rulemaking",
+   "comments_close": null,
+   "corporation": "other_sro",
+   "date": "2026-11-04",
+   "date_basis": "published",
+   "doc_type": "Notice",
+   "docket_ids": [
+    "Release No. 34-106779",
+    "File No. SR-LTSE-2026-25"
+   ],
+   "effective_on": null,
+   "eo_number": null,
+   "first_seen": "2026-11-11T13:33:45+00:00",
+   "flags": [
+    {
+     "authority": "consumers_research",
+     "code": "private_delegation",
+     "elements_found": [
+      "private",
+      "binding",
+      "no_prior_review"
+     ],
+     "elements_total": 3,
+     "group": "structural",
+     "level": 0,
+     "precedent": "open",
+     "structural": true,
+     "triggers": [
+      "issued by an agency-supervised private corporation"
+     ],
+     "weighed": []
+    }
+   ],
+   "fr_agency_slugs": [
+    "securities-and-exchange-commission"
+   ],
+   "id": "fr:2026-22452",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "self-regulatory filing"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
+   "jurisdiction": "federal",
+   "outcome": "proposed",
+   "priority": 0,
+   "published": "2026-11-04",
+   "rating": null,
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Rule change by self-regulatory organization",
+   "subtype": "",
+   "summary": "",
+   "title": "Self-Regulatory Organizations: Long-Term Stock Exchange, Inc.; Notice of Filing and Immediate Effectiveness of Proposed Rule Change To Amend LTSE Rule 3.291",
+   "url": "https://www.federalregister.gov/documents/2026/11/04/2026-22452/self-regulatory-organizations-long-term-stock-exchange-inc-notice-of-filing-and-immediate"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "sec"
+   ],
+   "category": "rulemaking",
+   "comments_close": null,
+   "corporation": "other_sro",
+   "date": "2026-11-04",
+   "date_basis": "published",
+   "doc_type": "Notice",
+   "docket_ids": [
+    "Release No. 34-106787",
+    "File No. SR-CboeBZX-2026-088"
+   ],
+   "effective_on": null,
+   "eo_number": null,
+   "first_seen": "2026-11-11T13:33:45+00:00",
+   "flags": [
+    {
+     "authority": "consumers_research",
+     "code": "private_delegation",
+     "elements_found": [
+      "private",
+      "binding",
+      "no_prior_review"
+     ],
+     "elements_total": 3,
+     "group": "structural",
+     "level": 0,
+     "precedent": "open",
+     "structural": true,
+     "triggers": [
+      "issued by an agency-supervised private corporation"
+     ],
+     "weighed": []
+    }
+   ],
+   "fr_agency_slugs": [
+    "securities-and-exchange-commission"
+   ],
+   "id": "fr:2026-22460",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "self-regulatory filing"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
+   "jurisdiction": "federal",
+   "outcome": "proposed",
+   "priority": 0,
+   "published": "2026-11-04",
+   "rating": null,
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Rule change by self-regulatory organization",
+   "subtype": "",
+   "summary": "",
+   "title": "Self-Regulatory Organizations; Cboe BZX Exchange, Inc.; Notice of Filing and Immediate Effectiveness of a Proposed Rule Change To Introduce Enhancements to the Missed Liquidity Report Offered as Part of the Cboe Timestamping Service",
+   "url": "https://www.federalregister.gov/documents/2026/11/04/2026-22460/self-regulatory-organizations-cboe-bzx-exchange-inc-notice-of-filing-and-immediate-effectiveness-of"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "sec"
+   ],
+   "category": "rulemaking",
+   "comments_close": null,
+   "corporation": "other_sro",
+   "date": "2026-11-04",
+   "date_basis": "published",
+   "doc_type": "Notice",
+   "docket_ids": [
+    "Release No. 34-106786",
+    "File No. SR-C2-2026-028"
+   ],
+   "effective_on": null,
+   "eo_number": null,
+   "first_seen": "2026-11-11T13:33:45+00:00",
+   "flags": [
+    {
+     "authority": "consumers_research",
+     "code": "private_delegation",
+     "elements_found": [
+      "private",
+      "binding",
+      "no_prior_review"
+     ],
+     "elements_total": 3,
+     "group": "structural",
+     "level": 0,
+     "precedent": "open",
+     "structural": true,
+     "triggers": [
+      "issued by an agency-supervised private corporation"
+     ],
+     "weighed": []
+    }
+   ],
+   "fr_agency_slugs": [
+    "securities-and-exchange-commission"
+   ],
+   "id": "fr:2026-22459",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "self-regulatory filing"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
+   "jurisdiction": "federal",
+   "outcome": "proposed",
+   "priority": 0,
+   "published": "2026-11-04",
+   "rating": null,
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Rule change by self-regulatory organization",
+   "subtype": "",
+   "summary": "",
+   "title": "Self-Regulatory Organizations; Cboe C2 Exchange, Inc.; Notice of Filing and Immediate Effectiveness of a Proposed Rule Change To Introduce Enhancements to the Missed Liquidity Report Offered as Part of the Cboe Timestamping Service",
+   "url": "https://www.federalregister.gov/documents/2026/11/04/2026-22459/self-regulatory-organizations-cboe-c2-exchange-inc-notice-of-filing-and-immediate-effectiveness-of-a"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "sec"
+   ],
+   "category": "rulemaking",
+   "comments_close": null,
+   "corporation": "other_sro",
+   "date": "2026-11-04",
+   "date_basis": "published",
+   "doc_type": "Notice",
+   "docket_ids": [
+    "Release No. 34-106788",
+    "File No. SR-CboeEDGX-2026-073"
+   ],
+   "effective_on": null,
+   "eo_number": null,
+   "first_seen": "2026-11-11T13:33:45+00:00",
+   "flags": [
+    {
+     "authority": "consumers_research",
+     "code": "private_delegation",
+     "elements_found": [
+      "private",
+      "binding",
+      "no_prior_review"
+     ],
+     "elements_total": 3,
+     "group": "structural",
+     "level": 0,
+     "precedent": "open",
+     "structural": true,
+     "triggers": [
+      "issued by an agency-supervised private corporation"
+     ],
+     "weighed": []
+    }
+   ],
+   "fr_agency_slugs": [
+    "securities-and-exchange-commission"
+   ],
+   "id": "fr:2026-22461",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "self-regulatory filing"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
+   "jurisdiction": "federal",
+   "outcome": "proposed",
+   "priority": 0,
+   "published": "2026-11-04",
+   "rating": null,
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Rule change by self-regulatory organization",
+   "subtype": "",
+   "summary": "",
+   "title": "Self-Regulatory Organizations; Cboe EDGX Exchange, Inc.; Notice of Filing and Immediate Effectiveness of a Proposed Rule Change To Introduce Enhancements to the Missed Liquidity Report Offered as Part of the Cboe Timestamping Service",
+   "url": "https://www.federalregister.gov/documents/2026/11/04/2026-22461/self-regulatory-organizations-cboe-edgx-exchange-inc-notice-of-filing-and-immediate-effectiveness-of"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "sec"
+   ],
+   "category": "rulemaking",
+   "comments_close": null,
+   "corporation": "other_sro",
+   "date": "2026-11-04",
+   "date_basis": "published",
+   "doc_type": "Notice",
+   "docket_ids": [
+    "Release No. 34-106785",
+    "File No. SR-CBOE-2026-083"
+   ],
+   "effective_on": null,
+   "eo_number": null,
+   "first_seen": "2026-11-11T13:33:45+00:00",
+   "flags": [
+    {
+     "authority": "consumers_research",
+     "code": "private_delegation",
+     "elements_found": [
+      "private",
+      "binding",
+      "no_prior_review"
+     ],
+     "elements_total": 3,
+     "group": "structural",
+     "level": 0,
+     "precedent": "open",
+     "structural": true,
+     "triggers": [
+      "issued by an agency-supervised private corporation"
+     ],
+     "weighed": []
+    }
+   ],
+   "fr_agency_slugs": [
+    "securities-and-exchange-commission"
+   ],
+   "id": "fr:2026-22458",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "self-regulatory filing"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
+   "jurisdiction": "federal",
+   "outcome": "proposed",
+   "priority": 0,
+   "published": "2026-11-04",
+   "rating": null,
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Rule change by self-regulatory organization",
+   "subtype": "",
+   "summary": "",
+   "title": "Self-Regulatory Organizations; Cboe Exchange, Inc.; Notice of Filing and Immediate Effectiveness of a Proposed Rule Change To Introduce Enhancements to the Missed Liquidity Report Offered as Part of the Cboe Timestamping Service",
+   "url": "https://www.federalregister.gov/documents/2026/11/04/2026-22458/self-regulatory-organizations-cboe-exchange-inc-notice-of-filing-and-immediate-effectiveness-of-a"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "sec"
+   ],
+   "category": "rulemaking",
+   "comments_close": null,
+   "corporation": "other_sro",
+   "date": "2026-11-04",
+   "date_basis": "published",
+   "doc_type": "Notice",
+   "docket_ids": [
+    "Release No. 34-106780",
+    "File No. SR-ISE-2026-53"
+   ],
+   "effective_on": null,
+   "eo_number": null,
+   "first_seen": "2026-11-11T13:33:45+00:00",
+   "flags": [
+    {
+     "authority": "consumers_research",
+     "code": "private_delegation",
+     "elements_found": [
+      "private",
+      "binding"
+     ],
+     "elements_total": 3,
+     "group": "structural",
+     "level": 0,
+     "precedent": "open",
+     "structural": true,
+     "triggers": [
+      "issued by an agency-supervised private corporation"
+     ],
+     "weighed": []
+    }
+   ],
+   "fr_agency_slugs": [
+    "securities-and-exchange-commission"
+   ],
+   "id": "fr:2026-22453",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "self-regulatory filing"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
+   "jurisdiction": "federal",
+   "outcome": "proposed",
+   "priority": 0,
+   "published": "2026-11-04",
+   "rating": null,
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Rule change by self-regulatory organization",
+   "subtype": "",
+   "summary": "",
+   "title": "Self-Regulatory Organizations; Nasdaq ISE, LLC; Notice of Filing of Proposed Rule Change To Amend the Strike Price Intervals for Options on Certain Exchange-Traded Fund Shares That Meet the Qualifying Securities Criteria",
+   "url": "https://www.federalregister.gov/documents/2026/11/04/2026-22453/self-regulatory-organizations-nasdaq-ise-llc-notice-of-filing-of-proposed-rule-change-to-amend-the"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "sec"
+   ],
+   "category": "rulemaking",
+   "comments_close": null,
+   "corporation": "other_sro",
+   "date": "2026-11-04",
+   "date_basis": "published",
+   "doc_type": "Notice",
+   "docket_ids": [
+    "Release No. 34-106781",
+    "File No. SR-PHLX-2026-66"
+   ],
+   "effective_on": null,
+   "eo_number": null,
+   "first_seen": "2026-11-11T13:33:45+00:00",
+   "flags": [
+    {
+     "authority": "consumers_research",
+     "code": "private_delegation",
+     "elements_found": [
+      "private",
+      "binding",
+      "no_prior_review"
+     ],
+     "elements_total": 3,
+     "group": "structural",
+     "level": 0,
+     "precedent": "open",
+     "structural": true,
+     "triggers": [
+      "issued by an agency-supervised private corporation"
+     ],
+     "weighed": []
+    }
+   ],
+   "fr_agency_slugs": [
+    "securities-and-exchange-commission"
+   ],
+   "id": "fr:2026-22454",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "self-regulatory filing"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
+   "jurisdiction": "federal",
+   "outcome": "proposed",
+   "priority": 0,
+   "published": "2026-11-04",
+   "rating": null,
+   "rins": [],
+   "routine": true,
+   "sanctions": [],
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Fee change by self-regulatory organization",
+   "subtype": "",
+   "summary": "",
+   "title": "Self-Regulatory Organizations; Nasdaq PHLX LLC; Notice of Filing and Immediate Effectiveness of a Proposed Rule Change To Amend the Exchange's Transaction Fees at Equity 7, Section 3, To Delete Obsolete References to the CORE FIX Order Entry Protocol",
+   "url": "https://www.federalregister.gov/documents/2026/11/04/2026-22454/self-regulatory-organizations-nasdaq-phlx-llc-notice-of-filing-and-immediate-effectiveness-of-a"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "sec"
+   ],
+   "category": "rulemaking",
+   "comments_close": null,
+   "corporation": "other_sro",
+   "date": "2026-11-04",
+   "date_basis": "published",
+   "doc_type": "Notice",
+   "docket_ids": [
+    "Release No. 34-106782",
+    "File No. SR-NasdaqTX-2026-052"
+   ],
+   "effective_on": null,
+   "eo_number": null,
+   "first_seen": "2026-11-11T13:33:45+00:00",
+   "flags": [
+    {
+     "authority": "consumers_research",
+     "code": "private_delegation",
+     "elements_found": [
+      "private",
+      "binding",
+      "no_prior_review"
+     ],
+     "elements_total": 3,
+     "group": "structural",
+     "level": 0,
+     "precedent": "open",
+     "structural": true,
+     "triggers": [
+      "issued by an agency-supervised private corporation"
+     ],
+     "weighed": []
+    }
+   ],
+   "fr_agency_slugs": [
+    "securities-and-exchange-commission"
+   ],
+   "id": "fr:2026-22455",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "self-regulatory filing"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
+   "jurisdiction": "federal",
+   "outcome": "proposed",
+   "priority": 0,
+   "published": "2026-11-04",
+   "rating": null,
+   "rins": [],
+   "routine": true,
+   "sanctions": [],
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Fee change by self-regulatory organization",
+   "subtype": "",
+   "summary": "",
+   "title": "Self-Regulatory Organizations; Nasdaq Texas, LLC; Notice of Filing and Immediate Effectiveness of a Proposed Rule Change To Amend the Exchange's Transaction Fees at Equity 7, Sections 115 and 130, To Delete Obsolete References to the CORE FIX Order Entry Protocol",
+   "url": "https://www.federalregister.gov/documents/2026/11/04/2026-22455/self-regulatory-organizations-nasdaq-texas-llc-notice-of-filing-and-immediate-effectiveness-of-a"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "sec"
+   ],
+   "category": "rulemaking",
+   "comments_close": null,
+   "corporation": "other_sro",
+   "date": "2026-11-04",
+   "date_basis": "published",
+   "doc_type": "Notice",
+   "docket_ids": [
+    "Release No. 34-106784",
+    "File No. SR-NSCC-2026-012"
+   ],
+   "effective_on": null,
+   "eo_number": null,
+   "first_seen": "2026-11-11T13:33:45+00:00",
+   "flags": [
+    {
+     "authority": "consumers_research",
+     "code": "private_delegation",
+     "elements_found": [
+      "private",
+      "binding",
+      "no_prior_review"
+     ],
+     "elements_total": 3,
+     "group": "structural",
+     "level": 0,
+     "precedent": "open",
+     "structural": true,
+     "triggers": [
+      "issued by an agency-supervised private corporation"
+     ],
+     "weighed": []
+    }
+   ],
+   "fr_agency_slugs": [
+    "securities-and-exchange-commission"
+   ],
+   "id": "fr:2026-22457",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "self-regulatory filing"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
+   "jurisdiction": "federal",
+   "outcome": "proposed",
+   "priority": 0,
+   "published": "2026-11-04",
+   "rating": null,
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Rule change by self-regulatory organization",
+   "subtype": "",
+   "summary": "",
+   "title": "Self-Regulatory Organizations; National Securities Clearing Corporation; Notice of Filing and Immediate Effectiveness of a Proposed Rule Change To Enhance Automated Reasonability Checks for the Submission of ETF Creation and Exemption Transactions",
+   "url": "https://www.federalregister.gov/documents/2026/11/04/2026-22457/self-regulatory-organizations-national-securities-clearing-corporation-notice-of-filing-and"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "sec"
+   ],
+   "category": "rulemaking",
+   "comments_close": null,
+   "corporation": "other_sro",
+   "date": "2026-11-04",
+   "date_basis": "published",
+   "doc_type": "Notice",
+   "docket_ids": [
+    "Release No. 34-106783",
+    "File No. SR-NASDAQ-2026-093"
+   ],
+   "effective_on": null,
+   "eo_number": null,
+   "first_seen": "2026-11-11T13:33:45+00:00",
+   "flags": [
+    {
+     "authority": "consumers_research",
+     "code": "private_delegation",
+     "elements_found": [
+      "private",
+      "binding",
+      "no_prior_review"
+     ],
+     "elements_total": 3,
+     "group": "structural",
+     "level": 0,
+     "precedent": "open",
+     "structural": true,
+     "triggers": [
+      "issued by an agency-supervised private corporation"
+     ],
+     "weighed": []
+    }
+   ],
+   "fr_agency_slugs": [
+    "securities-and-exchange-commission"
+   ],
+   "id": "fr:2026-22456",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "self-regulatory filing"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
+   "jurisdiction": "federal",
+   "outcome": "proposed",
+   "priority": 0,
+   "published": "2026-11-04",
+   "rating": null,
+   "rins": [],
+   "routine": true,
+   "sanctions": [],
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Fee change by self-regulatory organization",
+   "subtype": "",
+   "summary": "",
+   "title": "Self-Regulatory Organizations; The Nasdaq Stock Market LLC; Notice of Filing and Immediate Effectiveness of a Proposed Rule Change To Amend the Exchange's Transaction Fees at Equity 7, Sections 115 and 130, To Delete Obsolete References to the CORE FIX Order Entry Protocol",
+   "url": "https://www.federalregister.gov/documents/2026/11/04/2026-22456/self-regulatory-organizations-the-nasdaq-stock-market-llc-notice-of-filing-and-immediate"
   },
   {
    "action": "Request for public comments.",
@@ -1824,14 +1758,7 @@
     "children-and-families-administration"
    ],
    "id": "fr:2026-22462",
-   "jurisdiction": "federal",
-   "outcome": "notice",
-   "priority": 0,
-   "published": "2026-11-04",
-   "rins": [],
-   "routine": false,
-   "sanctions": [],
-   "seriousness": {
+   "impact": {
     "breakdown": [
      {
       "marker": "Reach",
@@ -1842,7 +1769,14 @@
     "level": 1,
     "points": 1
    },
-   "severity": null,
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 0,
+   "published": "2026-11-04",
+   "rating": null,
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
    "significant": false,
    "source": "federal_register",
    "source_label": "Federal Register",
@@ -1870,14 +1804,7 @@
    "flags": [],
    "fr_doc_num": null,
    "id": "regs:EPA-R05-OAR-2026-7591-0002",
-   "jurisdiction": "federal",
-   "outcome": "notice",
-   "priority": 0,
-   "published": "2026-11-04",
-   "regs_agency_id": "EPA",
-   "routine": false,
-   "sanctions": [],
-   "seriousness": {
+   "impact": {
     "breakdown": [
      {
       "marker": "Reach",
@@ -1888,7 +1815,14 @@
     "level": 1,
     "points": 1
    },
-   "severity": null,
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 0,
+   "published": "2026-11-04",
+   "rating": null,
+   "regs_agency_id": "EPA",
+   "routine": false,
+   "sanctions": [],
    "source": "regulations_gov",
    "source_label": "Regulations.gov",
    "subcategory": "Other notice",
@@ -1921,14 +1855,7 @@
     "federal-energy-regulatory-commission"
    ],
    "id": "fr:2026-22514",
-   "jurisdiction": "federal",
-   "outcome": "notice",
-   "priority": 0,
-   "published": "2026-11-04",
-   "rins": [],
-   "routine": false,
-   "sanctions": [],
-   "seriousness": {
+   "impact": {
     "breakdown": [
      {
       "marker": "Reach",
@@ -1939,7 +1866,14 @@
     "level": 1,
     "points": 1
    },
-   "severity": null,
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 0,
+   "published": "2026-11-04",
+   "rating": null,
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
    "significant": false,
    "source": "federal_register",
    "source_label": "Federal Register",

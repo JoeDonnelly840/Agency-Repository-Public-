@@ -4,450 +4,6 @@
   {
    "action": "Notice.",
    "agencies": [
-    "hhs"
-   ],
-   "category": "other",
-   "comments_close": null,
-   "corporation": null,
-   "date": "2026-09-09",
-   "date_basis": "published",
-   "doc_type": "Notice",
-   "docket_ids": [],
-   "effective_on": "2026-09-04",
-   "eo_number": null,
-   "first_seen": "2026-11-26T01:56:14+00:00",
-   "flags": [
-    {
-     "code": "agency_structure_change",
-     "counters": [],
-     "elements_found": [],
-     "elements_total": 2,
-     "flagrance": 1,
-     "group": "structural",
-     "impact": 1,
-     "structural": true,
-     "tier": 1,
-     "tier_authority": "youngstown",
-     "triggers": [
-      "reorganiz"
-     ]
-    }
-   ],
-   "fr_agency_slugs": [
-    "health-and-human-services-department",
-    "centers-for-disease-control-and-prevention"
-   ],
-   "id": "fr:2026-18263",
-   "jurisdiction": "federal",
-   "outcome": "notice",
-   "priority": 1,
-   "published": "2026-09-09",
-   "rins": [],
-   "routine": false,
-   "sanctions": [],
-   "seriousness": {
-    "breakdown": [
-     {
-      "marker": "Reach",
-      "points": 1,
-      "why": "action against particular parties"
-     }
-    ],
-    "level": 1,
-    "points": 1
-   },
-   "severity": {
-    "flagrance": 1,
-    "impact": 1,
-    "score": 1
-   },
-   "significant": false,
-   "source": "federal_register",
-   "source_label": "Federal Register",
-   "subcategory": "Other notice",
-   "subtype": "",
-   "summary": "CDC has modified its structure. This notice announces the reorganization of the National Center for Immunization and Respiratory Diseases (NCIRD). NCIRD has consolidated offices, retitled divisions and branches, and modified mission and function statements.",
-   "title": "Reorganization of the National Center for Immunization and Respiratory Diseases",
-   "url": "https://www.federalregister.gov/documents/2026/09/09/2026-18263/reorganization-of-the-national-center-for-immunization-and-respiratory-diseases"
-  },
-  {
-   "action": "",
-   "agencies": [
-    "sec"
-   ],
-   "category": "rulemaking",
-   "comments_close": null,
-   "corporation": "finra",
-   "date": "2026-09-09",
-   "date_basis": "published",
-   "doc_type": "Notice",
-   "docket_ids": [
-    "Release No. 34-106269",
-    "File No. SR-FINRA-2026-019"
-   ],
-   "effective_on": null,
-   "eo_number": null,
-   "first_seen": "2026-11-26T01:56:14+00:00",
-   "flags": [
-    {
-     "code": "private_delegation",
-     "counters": [],
-     "elements_found": [
-      "private",
-      "binding"
-     ],
-     "elements_total": 3,
-     "flagrance": 1,
-     "group": "structural",
-     "impact": 1,
-     "structural": true,
-     "tier": 1,
-     "tier_authority": "consumers_research",
-     "triggers": [
-      "issued by an agency-supervised private corporation"
-     ]
-    }
-   ],
-   "fr_agency_slugs": [
-    "securities-and-exchange-commission"
-   ],
-   "id": "fr:2026-18292",
-   "jurisdiction": "federal",
-   "outcome": "proposed",
-   "priority": 1,
-   "published": "2026-09-09",
-   "rins": [],
-   "routine": false,
-   "sanctions": [],
-   "seriousness": {
-    "breakdown": [
-     {
-      "marker": "Reach",
-      "points": 1,
-      "why": "self-regulatory filing"
-     }
-    ],
-    "level": 1,
-    "points": 1
-   },
-   "severity": {
-    "flagrance": 1,
-    "impact": 1,
-    "score": 1
-   },
-   "significant": false,
-   "source": "federal_register",
-   "source_label": "Federal Register",
-   "subcategory": "Rule change by self-regulatory organization",
-   "subtype": "",
-   "summary": "",
-   "title": "Self-Regulatory Organizations; Financial Industry Regulatory Authority, Inc.; Notice of Filing of a Proposed Rule Change To Amend FINRA Rule 4522 (Periodic Security Counts, Verifications and Comparisons) To Simplify Position Statement and Reconciliation Requirements for Certain Alternative Investments",
-   "url": "https://www.federalregister.gov/documents/2026/09/09/2026-18292/self-regulatory-organizations-financial-industry-regulatory-authority-inc-notice-of-filing-of-a"
-  },
-  {
-   "action": "",
-   "agencies": [
-    "sec"
-   ],
-   "category": "rulemaking",
-   "comments_close": null,
-   "corporation": "finra",
-   "date": "2026-09-09",
-   "date_basis": "published",
-   "doc_type": "Notice",
-   "docket_ids": [
-    "Release No. 34-106275",
-    "File No. SR-FINRA-2026-018"
-   ],
-   "effective_on": null,
-   "eo_number": null,
-   "first_seen": "2026-11-26T01:56:14+00:00",
-   "flags": [
-    {
-     "code": "private_delegation",
-     "counters": [],
-     "elements_found": [
-      "private",
-      "binding"
-     ],
-     "elements_total": 3,
-     "flagrance": 1,
-     "group": "structural",
-     "impact": 1,
-     "structural": true,
-     "tier": 1,
-     "tier_authority": "consumers_research",
-     "triggers": [
-      "issued by an agency-supervised private corporation"
-     ]
-    }
-   ],
-   "fr_agency_slugs": [
-    "securities-and-exchange-commission"
-   ],
-   "id": "fr:2026-18293",
-   "jurisdiction": "federal",
-   "outcome": "proposed",
-   "priority": 1,
-   "published": "2026-09-09",
-   "rins": [],
-   "routine": false,
-   "sanctions": [],
-   "seriousness": {
-    "breakdown": [
-     {
-      "marker": "Reach",
-      "points": 1,
-      "why": "self-regulatory filing"
-     }
-    ],
-    "level": 1,
-    "points": 1
-   },
-   "severity": {
-    "flagrance": 1,
-    "impact": 1,
-    "score": 1
-   },
-   "significant": false,
-   "source": "federal_register",
-   "source_label": "Federal Register",
-   "subcategory": "Rule change by self-regulatory organization",
-   "subtype": "",
-   "summary": "",
-   "title": "Self-Regulatory Organizations; Financial Industry Regulatory Authority, Inc.; Notice of Filing of a Proposed Rule Change To Amend FINRA Rules 0150 (Application of Rules to Exempted Securities Except Municipal Securities), 2165 (Financial Exploitation of Specified Adults) and 4512 (Customer Account Information) and To Adopt FINRA Rule 2166 (Temporary Delays for Suspected Fraud)",
-   "url": "https://www.federalregister.gov/documents/2026/09/09/2026-18293/self-regulatory-organizations-financial-industry-regulatory-authority-inc-notice-of-filing-of-a"
-  },
-  {
-   "action": "",
-   "agencies": [
-    "sec"
-   ],
-   "category": "rulemaking",
-   "comments_close": null,
-   "corporation": "other_sro",
-   "date": "2026-09-09",
-   "date_basis": "published",
-   "doc_type": "Notice",
-   "docket_ids": [
-    "Release No. 34-106276",
-    "File No. SR-NYSETEX-2026-33"
-   ],
-   "effective_on": null,
-   "eo_number": null,
-   "first_seen": "2026-11-26T01:56:14+00:00",
-   "flags": [
-    {
-     "code": "private_delegation",
-     "counters": [],
-     "elements_found": [
-      "private",
-      "binding",
-      "no_prior_review"
-     ],
-     "elements_total": 3,
-     "flagrance": 1,
-     "group": "structural",
-     "impact": 1,
-     "structural": true,
-     "tier": 1,
-     "tier_authority": "consumers_research",
-     "triggers": [
-      "issued by an agency-supervised private corporation"
-     ]
-    }
-   ],
-   "fr_agency_slugs": [
-    "securities-and-exchange-commission"
-   ],
-   "id": "fr:2026-18295",
-   "jurisdiction": "federal",
-   "outcome": "proposed",
-   "priority": 1,
-   "published": "2026-09-09",
-   "rins": [],
-   "routine": true,
-   "sanctions": [],
-   "seriousness": {
-    "breakdown": [
-     {
-      "marker": "Reach",
-      "points": 1,
-      "why": "self-regulatory filing"
-     }
-    ],
-    "level": 1,
-    "points": 1
-   },
-   "severity": {
-    "flagrance": 1,
-    "impact": 1,
-    "score": 1
-   },
-   "significant": false,
-   "source": "federal_register",
-   "source_label": "Federal Register",
-   "subcategory": "Fee change by self-regulatory organization",
-   "subtype": "",
-   "summary": "",
-   "title": "Self-Regulatory Organizations; NYSE Texas, Inc.; Notice of Filing and Immediate Effectiveness of Proposed Rule Change To Amend the Connectivity Fee Schedule",
-   "url": "https://www.federalregister.gov/documents/2026/09/09/2026-18295/self-regulatory-organizations-nyse-texas-inc-notice-of-filing-and-immediate-effectiveness-of"
-  },
-  {
-   "action": "",
-   "agencies": [
-    "sec"
-   ],
-   "category": "rulemaking",
-   "comments_close": null,
-   "corporation": "other_sro",
-   "date": "2026-09-09",
-   "date_basis": "published",
-   "doc_type": "Notice",
-   "docket_ids": [
-    "Release No. 34-106268",
-    "File No. SR-NasdaqTX-2026-039"
-   ],
-   "effective_on": null,
-   "eo_number": null,
-   "first_seen": "2026-11-26T01:56:14+00:00",
-   "flags": [
-    {
-     "code": "private_delegation",
-     "counters": [],
-     "elements_found": [
-      "private",
-      "binding"
-     ],
-     "elements_total": 3,
-     "flagrance": 1,
-     "group": "structural",
-     "impact": 1,
-     "structural": true,
-     "tier": 1,
-     "tier_authority": "consumers_research",
-     "triggers": [
-      "issued by an agency-supervised private corporation"
-     ]
-    }
-   ],
-   "fr_agency_slugs": [
-    "securities-and-exchange-commission"
-   ],
-   "id": "fr:2026-18291",
-   "jurisdiction": "federal",
-   "outcome": "proposed",
-   "priority": 1,
-   "published": "2026-09-09",
-   "rins": [],
-   "routine": false,
-   "sanctions": [],
-   "seriousness": {
-    "breakdown": [
-     {
-      "marker": "Reach",
-      "points": 1,
-      "why": "self-regulatory filing"
-     }
-    ],
-    "level": 1,
-    "points": 1
-   },
-   "severity": {
-    "flagrance": 1,
-    "impact": 1,
-    "score": 1
-   },
-   "significant": false,
-   "source": "federal_register",
-   "source_label": "Federal Register",
-   "subcategory": "Rule change by self-regulatory organization",
-   "subtype": "",
-   "summary": "",
-   "title": "Self-Regulatory Organizations; Nasdaq Texas, LLC; Notice of Filing, and Order Granting Accelerated Approval of, a Proposed Rule Change To Amend Rule 5711(d) (Commodity-Based Trust Shares)",
-   "url": "https://www.federalregister.gov/documents/2026/09/09/2026-18291/self-regulatory-organizations-nasdaq-texas-llc-notice-of-filing-and-order-granting-accelerated"
-  },
-  {
-   "action": "Supplemental notice of proposed rulemaking.",
-   "agencies": [
-    "epa"
-   ],
-   "category": "rulemaking",
-   "comments_close": "2026-10-09",
-   "corporation": null,
-   "date": "2026-09-09",
-   "date_basis": "published",
-   "doc_type": "Proposed Rule",
-   "docket_ids": [
-    "EPA-HQ-OW-2025-0322",
-    "FRL 11132.1-04-OW"
-   ],
-   "effective_on": null,
-   "eo_number": null,
-   "first_seen": "2026-11-26T01:56:14+00:00",
-   "flags": [
-    {
-     "code": "major_questions",
-     "counters": [],
-     "elements_found": [
-      "rule",
-      "significance"
-     ],
-     "elements_total": 3,
-     "flagrance": 1,
-     "group": "structural",
-     "impact": 1,
-     "structural": true,
-     "tier": 1,
-     "tier_authority": "west_virginia",
-     "triggers": [
-      "designated a significant rule"
-     ]
-    }
-   ],
-   "fr_agency_slugs": [
-    "defense-department",
-    "engineers-corps",
-    "environmental-protection-agency"
-   ],
-   "id": "fr:2026-18317",
-   "jurisdiction": "federal",
-   "outcome": "proposed",
-   "priority": 1,
-   "published": "2026-09-09",
-   "rins": [
-    "2040-AG44"
-   ],
-   "routine": false,
-   "sanctions": [],
-   "seriousness": {
-    "breakdown": [
-     {
-      "marker": "Reach",
-      "points": 2,
-      "why": "binding rule designated significant"
-     }
-    ],
-    "level": 1,
-    "points": 2
-   },
-   "severity": {
-    "flagrance": 1,
-    "impact": 1,
-    "score": 1
-   },
-   "significant": true,
-   "source": "federal_register",
-   "source_label": "Federal Register",
-   "subcategory": "Proposed rule",
-   "subtype": "",
-   "summary": "The purpose of this supplemental notice of proposed rulemaking is for the U.S. Environmental Protection Agency (EPA) and the Department of the Army (\"the agencies\") to supplement and seek additional comment on certain aspects of an earlier proposal, published on November 20, 2025, to revise the regulations defining the scope of waters federally covered under the Clean Water Act in light of the U.S. Supreme Court's 2023 decision in Sackett v. Environmental Protection Agency. As stated in the agencies' November 20, 2025 Notice of Proposed Rulemaking (NPRM), the agencies intend for this rulemaking to provide greater regulatory certainty and increase Clean Water Act program predictability and…",
-   "title": "Updated Definition of “Waters of the United States”",
-   "url": "https://www.federalregister.gov/documents/2026/09/09/2026-18317/updated-definition-of-waters-of-the-united-states"
-  },
-  {
-   "action": "Notice.",
-   "agencies": [
     "sec"
    ],
    "category": "other",
@@ -468,14 +24,7 @@
     "securities-and-exchange-commission"
    ],
    "id": "fr:2026-18294",
-   "jurisdiction": "federal",
-   "outcome": "notice",
-   "priority": 0,
-   "published": "2026-09-09",
-   "rins": [],
-   "routine": false,
-   "sanctions": [],
-   "seriousness": {
+   "impact": {
     "breakdown": [
      {
       "marker": "Reach",
@@ -486,7 +35,14 @@
     "level": 1,
     "points": 1
    },
-   "severity": null,
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 0,
+   "published": "2026-09-09",
+   "rating": null,
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
    "significant": false,
    "source": "federal_register",
    "source_label": "Federal Register",
@@ -519,14 +75,7 @@
     "food-and-drug-administration"
    ],
    "id": "fr:2026-18333",
-   "jurisdiction": "federal",
-   "outcome": "notice",
-   "priority": 0,
-   "published": "2026-09-09",
-   "rins": [],
-   "routine": false,
-   "sanctions": [],
-   "seriousness": {
+   "impact": {
     "breakdown": [
      {
       "marker": "Reach",
@@ -537,7 +86,14 @@
     "level": 1,
     "points": 1
    },
-   "severity": null,
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 0,
+   "published": "2026-09-09",
+   "rating": null,
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
    "significant": false,
    "source": "federal_register",
    "source_label": "Federal Register",
@@ -570,14 +126,7 @@
     "food-and-drug-administration"
    ],
    "id": "fr:2026-18299",
-   "jurisdiction": "federal",
-   "outcome": "notice",
-   "priority": 0,
-   "published": "2026-09-09",
-   "rins": [],
-   "routine": false,
-   "sanctions": [],
-   "seriousness": {
+   "impact": {
     "breakdown": [
      {
       "marker": "Reach",
@@ -588,7 +137,14 @@
     "level": 1,
     "points": 1
    },
-   "severity": null,
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 0,
+   "published": "2026-09-09",
+   "rating": null,
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
    "significant": false,
    "source": "federal_register",
    "source_label": "Federal Register",
@@ -621,14 +177,7 @@
     "environmental-protection-agency"
    ],
    "id": "fr:2026-18281",
-   "jurisdiction": "federal",
-   "outcome": "notice",
-   "priority": 0,
-   "published": "2026-09-09",
-   "rins": [],
-   "routine": false,
-   "sanctions": [],
-   "seriousness": {
+   "impact": {
     "breakdown": [
      {
       "marker": "Reach",
@@ -639,7 +188,14 @@
     "level": 1,
     "points": 1
    },
-   "severity": null,
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 0,
+   "published": "2026-09-09",
+   "rating": null,
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
    "significant": false,
    "source": "federal_register",
    "source_label": "Federal Register",
@@ -672,14 +228,7 @@
     "environmental-protection-agency"
    ],
    "id": "fr:2026-18324",
-   "jurisdiction": "federal",
-   "outcome": "final",
-   "priority": 0,
-   "published": "2026-09-09",
-   "rins": [],
-   "routine": false,
-   "sanctions": [],
-   "seriousness": {
+   "impact": {
     "breakdown": [
      {
       "marker": "Reach",
@@ -690,7 +239,14 @@
     "level": 1,
     "points": 2
    },
-   "severity": null,
+   "jurisdiction": "federal",
+   "outcome": "final",
+   "priority": 0,
+   "published": "2026-09-09",
+   "rating": null,
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
    "significant": false,
    "source": "federal_register",
    "source_label": "Federal Register",
@@ -723,14 +279,7 @@
     "environmental-protection-agency"
    ],
    "id": "fr:2026-18290",
-   "jurisdiction": "federal",
-   "outcome": "proposed",
-   "priority": 0,
-   "published": "2026-09-09",
-   "rins": [],
-   "routine": false,
-   "sanctions": [],
-   "seriousness": {
+   "impact": {
     "breakdown": [
      {
       "marker": "Reach",
@@ -741,7 +290,14 @@
     "level": 1,
     "points": 2
    },
-   "severity": null,
+   "jurisdiction": "federal",
+   "outcome": "proposed",
+   "priority": 0,
+   "published": "2026-09-09",
+   "rating": null,
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
    "significant": false,
    "source": "federal_register",
    "source_label": "Federal Register",
@@ -774,14 +330,7 @@
     "environmental-protection-agency"
    ],
    "id": "fr:2026-18334",
-   "jurisdiction": "federal",
-   "outcome": "final",
-   "priority": 0,
-   "published": "2026-09-09",
-   "rins": [],
-   "routine": false,
-   "sanctions": [],
-   "seriousness": {
+   "impact": {
     "breakdown": [
      {
       "marker": "Reach",
@@ -792,7 +341,14 @@
     "level": 1,
     "points": 2
    },
-   "severity": null,
+   "jurisdiction": "federal",
+   "outcome": "final",
+   "priority": 0,
+   "published": "2026-09-09",
+   "rating": null,
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
    "significant": false,
    "source": "federal_register",
    "source_label": "Federal Register",
@@ -825,14 +381,7 @@
     "environmental-protection-agency"
    ],
    "id": "fr:2026-18285",
-   "jurisdiction": "federal",
-   "outcome": "granted",
-   "priority": 0,
-   "published": "2026-09-09",
-   "rins": [],
-   "routine": false,
-   "sanctions": [],
-   "seriousness": {
+   "impact": {
     "breakdown": [
      {
       "marker": "Reach",
@@ -843,7 +392,14 @@
     "level": 1,
     "points": 1
    },
-   "severity": null,
+   "jurisdiction": "federal",
+   "outcome": "granted",
+   "priority": 0,
+   "published": "2026-09-09",
+   "rating": null,
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
    "significant": false,
    "source": "federal_register",
    "source_label": "Federal Register",
@@ -876,14 +432,7 @@
     "environmental-protection-agency"
    ],
    "id": "fr:2026-18288",
-   "jurisdiction": "federal",
-   "outcome": "granted",
-   "priority": 0,
-   "published": "2026-09-09",
-   "rins": [],
-   "routine": false,
-   "sanctions": [],
-   "seriousness": {
+   "impact": {
     "breakdown": [
      {
       "marker": "Reach",
@@ -894,7 +443,14 @@
     "level": 1,
     "points": 1
    },
-   "severity": null,
+   "jurisdiction": "federal",
+   "outcome": "granted",
+   "priority": 0,
+   "published": "2026-09-09",
+   "rating": null,
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
    "significant": false,
    "source": "federal_register",
    "source_label": "Federal Register",
@@ -927,14 +483,7 @@
     "environmental-protection-agency"
    ],
    "id": "fr:2026-18286",
-   "jurisdiction": "federal",
-   "outcome": "granted",
-   "priority": 0,
-   "published": "2026-09-09",
-   "rins": [],
-   "routine": false,
-   "sanctions": [],
-   "seriousness": {
+   "impact": {
     "breakdown": [
      {
       "marker": "Reach",
@@ -945,7 +494,14 @@
     "level": 1,
     "points": 1
    },
-   "severity": null,
+   "jurisdiction": "federal",
+   "outcome": "granted",
+   "priority": 0,
+   "published": "2026-09-09",
+   "rating": null,
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
    "significant": false,
    "source": "federal_register",
    "source_label": "Federal Register",
@@ -978,14 +534,7 @@
     "federal-energy-regulatory-commission"
    ],
    "id": "fr:2026-18356",
-   "jurisdiction": "federal",
-   "outcome": "notice",
-   "priority": 0,
-   "published": "2026-09-09",
-   "rins": [],
-   "routine": false,
-   "sanctions": [],
-   "seriousness": {
+   "impact": {
     "breakdown": [
      {
       "marker": "Reach",
@@ -996,7 +545,14 @@
     "level": 1,
     "points": 1
    },
-   "severity": null,
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 0,
+   "published": "2026-09-09",
+   "rating": null,
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
    "significant": false,
    "source": "federal_register",
    "source_label": "Federal Register",
@@ -1029,14 +585,7 @@
     "federal-energy-regulatory-commission"
    ],
    "id": "fr:2026-18362",
-   "jurisdiction": "federal",
-   "outcome": "notice",
-   "priority": 0,
-   "published": "2026-09-09",
-   "rins": [],
-   "routine": false,
-   "sanctions": [],
-   "seriousness": {
+   "impact": {
     "breakdown": [
      {
       "marker": "Reach",
@@ -1047,7 +596,14 @@
     "level": 1,
     "points": 1
    },
-   "severity": null,
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 0,
+   "published": "2026-09-09",
+   "rating": null,
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
    "significant": false,
    "source": "federal_register",
    "source_label": "Federal Register",
@@ -1080,14 +636,7 @@
     "federal-energy-regulatory-commission"
    ],
    "id": "fr:2026-18358",
-   "jurisdiction": "federal",
-   "outcome": "applied",
-   "priority": 0,
-   "published": "2026-09-09",
-   "rins": [],
-   "routine": false,
-   "sanctions": [],
-   "seriousness": {
+   "impact": {
     "breakdown": [
      {
       "marker": "Reach",
@@ -1098,7 +647,14 @@
     "level": 1,
     "points": 1
    },
-   "severity": null,
+   "jurisdiction": "federal",
+   "outcome": "applied",
+   "priority": 0,
+   "published": "2026-09-09",
+   "rating": null,
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
    "significant": false,
    "source": "federal_register",
    "source_label": "Federal Register",
@@ -1129,14 +685,7 @@
     "federal-energy-regulatory-commission"
    ],
    "id": "fr:2026-18357",
-   "jurisdiction": "federal",
-   "outcome": "applied",
-   "priority": 0,
-   "published": "2026-09-09",
-   "rins": [],
-   "routine": false,
-   "sanctions": [],
-   "seriousness": {
+   "impact": {
     "breakdown": [
      {
       "marker": "Reach",
@@ -1147,7 +696,14 @@
     "level": 1,
     "points": 1
    },
-   "severity": null,
+   "jurisdiction": "federal",
+   "outcome": "applied",
+   "priority": 0,
+   "published": "2026-09-09",
+   "rating": null,
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
    "significant": false,
    "source": "federal_register",
    "source_label": "Federal Register",
@@ -1180,14 +736,7 @@
     "securities-and-exchange-commission"
    ],
    "id": "fr:2026-18387",
-   "jurisdiction": "federal",
-   "outcome": "notice",
-   "priority": 0,
-   "published": "2026-09-09",
-   "rins": [],
-   "routine": false,
-   "sanctions": [],
-   "seriousness": {
+   "impact": {
     "breakdown": [
      {
       "marker": "Reach",
@@ -1198,7 +747,14 @@
     "level": 1,
     "points": 1
    },
-   "severity": null,
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 0,
+   "published": "2026-09-09",
+   "rating": null,
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
    "significant": false,
    "source": "federal_register",
    "source_label": "Federal Register",
@@ -1231,14 +787,7 @@
     "food-and-drug-administration"
    ],
    "id": "fr:2026-18300",
-   "jurisdiction": "federal",
-   "outcome": "notice",
-   "priority": 0,
-   "published": "2026-09-09",
-   "rins": [],
-   "routine": false,
-   "sanctions": [],
-   "seriousness": {
+   "impact": {
     "breakdown": [
      {
       "marker": "Reach",
@@ -1249,7 +798,14 @@
     "level": 1,
     "points": 1
    },
-   "severity": null,
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 0,
+   "published": "2026-09-09",
+   "rating": null,
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
    "significant": false,
    "source": "federal_register",
    "source_label": "Federal Register",
@@ -1286,14 +842,7 @@
     "food-and-drug-administration"
    ],
    "id": "fr:2026-18297",
-   "jurisdiction": "federal",
-   "outcome": "notice",
-   "priority": 0,
-   "published": "2026-09-09",
-   "rins": [],
-   "routine": false,
-   "sanctions": [],
-   "seriousness": {
+   "impact": {
     "breakdown": [
      {
       "marker": "Reach",
@@ -1304,7 +853,14 @@
     "level": 1,
     "points": 1
    },
-   "severity": null,
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 0,
+   "published": "2026-09-09",
+   "rating": null,
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
    "significant": false,
    "source": "federal_register",
    "source_label": "Federal Register",
@@ -1337,14 +893,7 @@
     "food-and-drug-administration"
    ],
    "id": "fr:2026-18298",
-   "jurisdiction": "federal",
-   "outcome": "notice",
-   "priority": 0,
-   "published": "2026-09-09",
-   "rins": [],
-   "routine": false,
-   "sanctions": [],
-   "seriousness": {
+   "impact": {
     "breakdown": [
      {
       "marker": "Reach",
@@ -1355,7 +904,14 @@
     "level": 1,
     "points": 1
    },
-   "severity": null,
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 0,
+   "published": "2026-09-09",
+   "rating": null,
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
    "significant": false,
    "source": "federal_register",
    "source_label": "Federal Register",
@@ -1388,14 +944,7 @@
     "federal-energy-regulatory-commission"
    ],
    "id": "fr:2026-18360",
-   "jurisdiction": "federal",
-   "outcome": "applied",
-   "priority": 0,
-   "published": "2026-09-09",
-   "rins": [],
-   "routine": false,
-   "sanctions": [],
-   "seriousness": {
+   "impact": {
     "breakdown": [
      {
       "marker": "Reach",
@@ -1406,7 +955,14 @@
     "level": 1,
     "points": 1
    },
-   "severity": null,
+   "jurisdiction": "federal",
+   "outcome": "applied",
+   "priority": 0,
+   "published": "2026-09-09",
+   "rating": null,
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
    "significant": false,
    "source": "federal_register",
    "source_label": "Federal Register",
@@ -1439,14 +995,7 @@
     "federal-energy-regulatory-commission"
    ],
    "id": "fr:2026-18359",
-   "jurisdiction": "federal",
-   "outcome": "notice",
-   "priority": 0,
-   "published": "2026-09-09",
-   "rins": [],
-   "routine": false,
-   "sanctions": [],
-   "seriousness": {
+   "impact": {
     "breakdown": [
      {
       "marker": "Reach",
@@ -1457,7 +1006,14 @@
     "level": 1,
     "points": 1
    },
-   "severity": null,
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 0,
+   "published": "2026-09-09",
+   "rating": null,
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
    "significant": false,
    "source": "federal_register",
    "source_label": "Federal Register",
@@ -1492,14 +1048,7 @@
     "federal-communications-commission"
    ],
    "id": "fr:2026-18366",
-   "jurisdiction": "federal",
-   "outcome": "proposed",
-   "priority": 0,
-   "published": "2026-09-09",
-   "rins": [],
-   "routine": false,
-   "sanctions": [],
-   "seriousness": {
+   "impact": {
     "breakdown": [
      {
       "marker": "Reach",
@@ -1510,7 +1059,14 @@
     "level": 1,
     "points": 2
    },
-   "severity": null,
+   "jurisdiction": "federal",
+   "outcome": "proposed",
+   "priority": 0,
+   "published": "2026-09-09",
+   "rating": null,
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
    "significant": false,
    "source": "federal_register",
    "source_label": "Federal Register",
@@ -1538,14 +1094,7 @@
    "flags": [],
    "fr_doc_num": null,
    "id": "regs:FDA-2022-N-2390-0865",
-   "jurisdiction": "federal",
-   "outcome": "notice",
-   "priority": 0,
-   "published": "2026-09-09",
-   "regs_agency_id": "FDA",
-   "routine": false,
-   "sanctions": [],
-   "seriousness": {
+   "impact": {
     "breakdown": [
      {
       "marker": "Reach",
@@ -1556,7 +1105,14 @@
     "level": 1,
     "points": 1
    },
-   "severity": null,
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 0,
+   "published": "2026-09-09",
+   "rating": null,
+   "regs_agency_id": "FDA",
+   "routine": false,
+   "sanctions": [],
    "source": "regulations_gov",
    "source_label": "Regulations.gov",
    "subcategory": "Other notice",
@@ -1587,14 +1143,7 @@
     "health-resources-and-services-administration"
    ],
    "id": "fr:2026-18283",
-   "jurisdiction": "federal",
-   "outcome": "notice",
-   "priority": 0,
-   "published": "2026-09-09",
-   "rins": [],
-   "routine": false,
-   "sanctions": [],
-   "seriousness": {
+   "impact": {
     "breakdown": [
      {
       "marker": "Reach",
@@ -1605,7 +1154,14 @@
     "level": 1,
     "points": 1
    },
-   "severity": null,
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 0,
+   "published": "2026-09-09",
+   "rating": null,
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
    "significant": false,
    "source": "federal_register",
    "source_label": "Federal Register",
@@ -1638,14 +1194,7 @@
     "federal-energy-regulatory-commission"
    ],
    "id": "fr:2026-18355",
-   "jurisdiction": "federal",
-   "outcome": "notice",
-   "priority": 0,
-   "published": "2026-09-09",
-   "rins": [],
-   "routine": false,
-   "sanctions": [],
-   "seriousness": {
+   "impact": {
     "breakdown": [
      {
       "marker": "Reach",
@@ -1656,7 +1205,14 @@
     "level": 1,
     "points": 1
    },
-   "severity": null,
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 0,
+   "published": "2026-09-09",
+   "rating": null,
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
    "significant": false,
    "source": "federal_register",
    "source_label": "Federal Register",
@@ -1688,14 +1244,7 @@
     "securities-and-exchange-commission"
    ],
    "id": "fr:2026-18278",
-   "jurisdiction": "federal",
-   "outcome": "notice",
-   "priority": 0,
-   "published": "2026-09-09",
-   "rins": [],
-   "routine": false,
-   "sanctions": [],
-   "seriousness": {
+   "impact": {
     "breakdown": [
      {
       "marker": "Reach",
@@ -1706,7 +1255,14 @@
     "level": 1,
     "points": 1
    },
-   "severity": null,
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 0,
+   "published": "2026-09-09",
+   "rating": null,
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
    "significant": false,
    "source": "federal_register",
    "source_label": "Federal Register",
@@ -1737,14 +1293,7 @@
     "centers-for-medicare-medicaid-services"
    ],
    "id": "fr:2026-18316",
-   "jurisdiction": "federal",
-   "outcome": "notice",
-   "priority": 0,
-   "published": "2026-09-09",
-   "rins": [],
-   "routine": false,
-   "sanctions": [],
-   "seriousness": {
+   "impact": {
     "breakdown": [
      {
       "marker": "Reach",
@@ -1755,7 +1304,14 @@
     "level": 1,
     "points": 1
    },
-   "severity": null,
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 0,
+   "published": "2026-09-09",
+   "rating": null,
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
    "significant": false,
    "source": "federal_register",
    "source_label": "Federal Register",
@@ -1787,14 +1343,7 @@
     "environmental-protection-agency"
    ],
    "id": "fr:2026-18284",
-   "jurisdiction": "federal",
-   "outcome": "notice",
-   "priority": 0,
-   "published": "2026-09-09",
-   "rins": [],
-   "routine": false,
-   "sanctions": [],
-   "seriousness": {
+   "impact": {
     "breakdown": [
      {
       "marker": "Reach",
@@ -1805,7 +1354,14 @@
     "level": 1,
     "points": 1
    },
-   "severity": null,
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 0,
+   "published": "2026-09-09",
+   "rating": null,
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
    "significant": false,
    "source": "federal_register",
    "source_label": "Federal Register",
@@ -1838,14 +1394,7 @@
     "environmental-protection-agency"
    ],
    "id": "fr:2026-18287",
-   "jurisdiction": "federal",
-   "outcome": "applied",
-   "priority": 0,
-   "published": "2026-09-09",
-   "rins": [],
-   "routine": false,
-   "sanctions": [],
-   "seriousness": {
+   "impact": {
     "breakdown": [
      {
       "marker": "Reach",
@@ -1856,7 +1405,14 @@
     "level": 1,
     "points": 1
    },
-   "severity": null,
+   "jurisdiction": "federal",
+   "outcome": "applied",
+   "priority": 0,
+   "published": "2026-09-09",
+   "rating": null,
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
    "significant": false,
    "source": "federal_register",
    "source_label": "Federal Register",
@@ -1865,6 +1421,70 @@
    "summary": "On July 10, 2026, the U.S. Environmental Protection Agency (EPA), Region IX posted the Notification of Coverage (NOC) from the Costco Wholesale Corporation (\"Permittee\") under the Clean Air Act's Tribal Minor New Source Review (NSR) Program. The Permittee submitted the NOC under the Air Quality Permit by Rule for New or Modified True Minor Source Gasoline Dispensing Facilities in Indian Country (\"GDF- PBR\") for Costco Fuel Facility, Location No. 1834 (\"Source\"). The publication of the NOC is final agency action with respect to applicability of the GDF-PBR to the Source under the Tribal Minor NSR Program.",
    "title": "Publication of Notification of Coverage Under the Air Quality Permit by Rule for New or Modified True Minor Source Gasoline Dispensing Facilities in Indian Country for Costco Fuel Facility, Location No. 1834",
    "url": "https://www.federalregister.gov/documents/2026/09/09/2026-18287/publication-of-notification-of-coverage-under-the-air-quality-permit-by-rule-for-new-or-modified"
+  },
+  {
+   "action": "Notice.",
+   "agencies": [
+    "hhs"
+   ],
+   "category": "other",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-09-09",
+   "date_basis": "published",
+   "doc_type": "Notice",
+   "docket_ids": [],
+   "effective_on": "2026-09-04",
+   "eo_number": null,
+   "first_seen": "2026-11-26T01:56:14+00:00",
+   "flags": [
+    {
+     "authority": "youngstown",
+     "code": "agency_structure_change",
+     "elements_found": [],
+     "elements_total": 3,
+     "group": "structural",
+     "level": 0,
+     "precedent": "open",
+     "structural": true,
+     "triggers": [
+      "reorganiz"
+     ],
+     "weighed": []
+    }
+   ],
+   "fr_agency_slugs": [
+    "health-and-human-services-department",
+    "centers-for-disease-control-and-prevention"
+   ],
+   "id": "fr:2026-18263",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 0,
+   "published": "2026-09-09",
+   "rating": null,
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Other notice",
+   "subtype": "",
+   "summary": "CDC has modified its structure. This notice announces the reorganization of the National Center for Immunization and Respiratory Diseases (NCIRD). NCIRD has consolidated offices, retitled divisions and branches, and modified mission and function statements.",
+   "title": "Reorganization of the National Center for Immunization and Respiratory Diseases",
+   "url": "https://www.federalregister.gov/documents/2026/09/09/2026-18263/reorganization-of-the-national-center-for-immunization-and-respiratory-diseases"
   },
   {
    "action": "",
@@ -1884,14 +1504,7 @@
    "flags": [],
    "fr_doc_num": null,
    "id": "regs:EPA-R08-OAR-2026-3631-0030",
-   "jurisdiction": "federal",
-   "outcome": "notice",
-   "priority": 0,
-   "published": "2026-09-09",
-   "regs_agency_id": "EPA",
-   "routine": false,
-   "sanctions": [],
-   "seriousness": {
+   "impact": {
     "breakdown": [
      {
       "marker": "Reach",
@@ -1902,7 +1515,14 @@
     "level": 1,
     "points": 1
    },
-   "severity": null,
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 0,
+   "published": "2026-09-09",
+   "rating": null,
+   "regs_agency_id": "EPA",
+   "routine": false,
+   "sanctions": [],
    "source": "regulations_gov",
    "source_label": "Regulations.gov",
    "subcategory": "Other notice",
@@ -1911,6 +1531,283 @@
    "title": "SMC Kevlar Coating Plant Final TV Letter to Permittee",
    "url": "https://www.regulations.gov/document/EPA-R08-OAR-2026-3631-0030",
    "withdrawn": false
+  },
+  {
+   "action": "",
+   "agencies": [
+    "sec"
+   ],
+   "category": "rulemaking",
+   "comments_close": null,
+   "corporation": "finra",
+   "date": "2026-09-09",
+   "date_basis": "published",
+   "doc_type": "Notice",
+   "docket_ids": [
+    "Release No. 34-106269",
+    "File No. SR-FINRA-2026-019"
+   ],
+   "effective_on": null,
+   "eo_number": null,
+   "first_seen": "2026-11-26T01:56:14+00:00",
+   "flags": [
+    {
+     "authority": "consumers_research",
+     "code": "private_delegation",
+     "elements_found": [
+      "private",
+      "binding"
+     ],
+     "elements_total": 3,
+     "group": "structural",
+     "level": 0,
+     "precedent": "open",
+     "structural": true,
+     "triggers": [
+      "issued by an agency-supervised private corporation"
+     ],
+     "weighed": []
+    }
+   ],
+   "fr_agency_slugs": [
+    "securities-and-exchange-commission"
+   ],
+   "id": "fr:2026-18292",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "self-regulatory filing"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
+   "jurisdiction": "federal",
+   "outcome": "proposed",
+   "priority": 0,
+   "published": "2026-09-09",
+   "rating": null,
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Rule change by self-regulatory organization",
+   "subtype": "",
+   "summary": "",
+   "title": "Self-Regulatory Organizations; Financial Industry Regulatory Authority, Inc.; Notice of Filing of a Proposed Rule Change To Amend FINRA Rule 4522 (Periodic Security Counts, Verifications and Comparisons) To Simplify Position Statement and Reconciliation Requirements for Certain Alternative Investments",
+   "url": "https://www.federalregister.gov/documents/2026/09/09/2026-18292/self-regulatory-organizations-financial-industry-regulatory-authority-inc-notice-of-filing-of-a"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "sec"
+   ],
+   "category": "rulemaking",
+   "comments_close": null,
+   "corporation": "finra",
+   "date": "2026-09-09",
+   "date_basis": "published",
+   "doc_type": "Notice",
+   "docket_ids": [
+    "Release No. 34-106275",
+    "File No. SR-FINRA-2026-018"
+   ],
+   "effective_on": null,
+   "eo_number": null,
+   "first_seen": "2026-11-26T01:56:14+00:00",
+   "flags": [
+    {
+     "authority": "consumers_research",
+     "code": "private_delegation",
+     "elements_found": [
+      "private",
+      "binding"
+     ],
+     "elements_total": 3,
+     "group": "structural",
+     "level": 0,
+     "precedent": "open",
+     "structural": true,
+     "triggers": [
+      "issued by an agency-supervised private corporation"
+     ],
+     "weighed": []
+    }
+   ],
+   "fr_agency_slugs": [
+    "securities-and-exchange-commission"
+   ],
+   "id": "fr:2026-18293",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "self-regulatory filing"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
+   "jurisdiction": "federal",
+   "outcome": "proposed",
+   "priority": 0,
+   "published": "2026-09-09",
+   "rating": null,
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Rule change by self-regulatory organization",
+   "subtype": "",
+   "summary": "",
+   "title": "Self-Regulatory Organizations; Financial Industry Regulatory Authority, Inc.; Notice of Filing of a Proposed Rule Change To Amend FINRA Rules 0150 (Application of Rules to Exempted Securities Except Municipal Securities), 2165 (Financial Exploitation of Specified Adults) and 4512 (Customer Account Information) and To Adopt FINRA Rule 2166 (Temporary Delays for Suspected Fraud)",
+   "url": "https://www.federalregister.gov/documents/2026/09/09/2026-18293/self-regulatory-organizations-financial-industry-regulatory-authority-inc-notice-of-filing-of-a"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "sec"
+   ],
+   "category": "rulemaking",
+   "comments_close": null,
+   "corporation": "other_sro",
+   "date": "2026-09-09",
+   "date_basis": "published",
+   "doc_type": "Notice",
+   "docket_ids": [
+    "Release No. 34-106276",
+    "File No. SR-NYSETEX-2026-33"
+   ],
+   "effective_on": null,
+   "eo_number": null,
+   "first_seen": "2026-11-26T01:56:14+00:00",
+   "flags": [
+    {
+     "authority": "consumers_research",
+     "code": "private_delegation",
+     "elements_found": [
+      "private",
+      "binding",
+      "no_prior_review"
+     ],
+     "elements_total": 3,
+     "group": "structural",
+     "level": 0,
+     "precedent": "open",
+     "structural": true,
+     "triggers": [
+      "issued by an agency-supervised private corporation"
+     ],
+     "weighed": []
+    }
+   ],
+   "fr_agency_slugs": [
+    "securities-and-exchange-commission"
+   ],
+   "id": "fr:2026-18295",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "self-regulatory filing"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
+   "jurisdiction": "federal",
+   "outcome": "proposed",
+   "priority": 0,
+   "published": "2026-09-09",
+   "rating": null,
+   "rins": [],
+   "routine": true,
+   "sanctions": [],
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Fee change by self-regulatory organization",
+   "subtype": "",
+   "summary": "",
+   "title": "Self-Regulatory Organizations; NYSE Texas, Inc.; Notice of Filing and Immediate Effectiveness of Proposed Rule Change To Amend the Connectivity Fee Schedule",
+   "url": "https://www.federalregister.gov/documents/2026/09/09/2026-18295/self-regulatory-organizations-nyse-texas-inc-notice-of-filing-and-immediate-effectiveness-of"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "sec"
+   ],
+   "category": "rulemaking",
+   "comments_close": null,
+   "corporation": "other_sro",
+   "date": "2026-09-09",
+   "date_basis": "published",
+   "doc_type": "Notice",
+   "docket_ids": [
+    "Release No. 34-106268",
+    "File No. SR-NasdaqTX-2026-039"
+   ],
+   "effective_on": null,
+   "eo_number": null,
+   "first_seen": "2026-11-26T01:56:14+00:00",
+   "flags": [
+    {
+     "authority": "consumers_research",
+     "code": "private_delegation",
+     "elements_found": [
+      "private",
+      "binding"
+     ],
+     "elements_total": 3,
+     "group": "structural",
+     "level": 0,
+     "precedent": "open",
+     "structural": true,
+     "triggers": [
+      "issued by an agency-supervised private corporation"
+     ],
+     "weighed": []
+    }
+   ],
+   "fr_agency_slugs": [
+    "securities-and-exchange-commission"
+   ],
+   "id": "fr:2026-18291",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "self-regulatory filing"
+     }
+    ],
+    "level": 1,
+    "points": 1
+   },
+   "jurisdiction": "federal",
+   "outcome": "proposed",
+   "priority": 0,
+   "published": "2026-09-09",
+   "rating": null,
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Rule change by self-regulatory organization",
+   "subtype": "",
+   "summary": "",
+   "title": "Self-Regulatory Organizations; Nasdaq Texas, LLC; Notice of Filing, and Order Granting Accelerated Approval of, a Proposed Rule Change To Amend Rule 5711(d) (Commodity-Based Trust Shares)",
+   "url": "https://www.federalregister.gov/documents/2026/09/09/2026-18291/self-regulatory-organizations-nasdaq-texas-llc-notice-of-filing-and-order-granting-accelerated"
   },
   {
    "action": "",
@@ -1930,14 +1827,7 @@
    "flags": [],
    "fr_doc_num": null,
    "id": "regs:EPA-R08-OAR-2026-3631-0031",
-   "jurisdiction": "federal",
-   "outcome": "applied",
-   "priority": 0,
-   "published": "2026-09-09",
-   "regs_agency_id": "EPA",
-   "routine": false,
-   "sanctions": [],
-   "seriousness": {
+   "impact": {
     "breakdown": [
      {
       "marker": "Reach",
@@ -1948,7 +1838,14 @@
     "level": 1,
     "points": 1
    },
-   "severity": null,
+   "jurisdiction": "federal",
+   "outcome": "applied",
+   "priority": 0,
+   "published": "2026-09-09",
+   "rating": null,
+   "regs_agency_id": "EPA",
+   "routine": false,
+   "sanctions": [],
    "source": "regulations_gov",
    "source_label": "Regulations.gov",
    "subcategory": "Applications, filings, and licensing",
@@ -1976,14 +1873,7 @@
    "flags": [],
    "fr_doc_num": null,
    "id": "regs:FDA-2022-N-2390-0866",
-   "jurisdiction": "federal",
-   "outcome": "notice",
-   "priority": 0,
-   "published": "2026-09-09",
-   "regs_agency_id": "FDA",
-   "routine": false,
-   "sanctions": [],
-   "seriousness": {
+   "impact": {
     "breakdown": [
      {
       "marker": "Reach",
@@ -1994,7 +1884,14 @@
     "level": 1,
     "points": 1
    },
-   "severity": null,
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 0,
+   "published": "2026-09-09",
+   "rating": null,
+   "regs_agency_id": "FDA",
+   "routine": false,
+   "sanctions": [],
    "source": "regulations_gov",
    "source_label": "Regulations.gov",
    "subcategory": "Other notice",
@@ -2025,14 +1922,7 @@
     "federal-energy-regulatory-commission"
    ],
    "id": "fr:2026-18361",
-   "jurisdiction": "federal",
-   "outcome": "notice",
-   "priority": 0,
-   "published": "2026-09-09",
-   "rins": [],
-   "routine": false,
-   "sanctions": [],
-   "seriousness": {
+   "impact": {
     "breakdown": [
      {
       "marker": "Reach",
@@ -2043,7 +1933,14 @@
     "level": 1,
     "points": 1
    },
-   "severity": null,
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 0,
+   "published": "2026-09-09",
+   "rating": null,
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
    "significant": false,
    "source": "federal_register",
    "source_label": "Federal Register",
@@ -2076,14 +1973,7 @@
     "food-and-drug-administration"
    ],
    "id": "fr:2026-18368",
-   "jurisdiction": "federal",
-   "outcome": "guidance",
-   "priority": 0,
-   "published": "2026-09-09",
-   "rins": [],
-   "routine": false,
-   "sanctions": [],
-   "seriousness": {
+   "impact": {
     "breakdown": [
      {
       "marker": "Reach",
@@ -2094,7 +1984,14 @@
     "level": 1,
     "points": 1
    },
-   "severity": null,
+   "jurisdiction": "federal",
+   "outcome": "guidance",
+   "priority": 0,
+   "published": "2026-09-09",
+   "rating": null,
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
    "significant": false,
    "source": "federal_register",
    "source_label": "Federal Register",
@@ -2122,14 +2019,7 @@
    "flags": [],
    "fr_doc_num": null,
    "id": "regs:FDA-2026-D-9571-0002",
-   "jurisdiction": "federal",
-   "outcome": "guidance",
-   "priority": 0,
-   "published": "2026-09-09",
-   "regs_agency_id": "FDA",
-   "routine": false,
-   "sanctions": [],
-   "seriousness": {
+   "impact": {
     "breakdown": [
      {
       "marker": "Reach",
@@ -2140,7 +2030,14 @@
     "level": 1,
     "points": 1
    },
-   "severity": null,
+   "jurisdiction": "federal",
+   "outcome": "guidance",
+   "priority": 0,
+   "published": "2026-09-09",
+   "rating": null,
+   "regs_agency_id": "FDA",
+   "routine": false,
+   "sanctions": [],
    "source": "regulations_gov",
    "source_label": "Regulations.gov",
    "subcategory": "Guidance, interpretation, or request for comment",
@@ -2173,14 +2070,7 @@
     "environmental-protection-agency"
    ],
    "id": "fr:2026-18289",
-   "jurisdiction": "federal",
-   "outcome": "notice",
-   "priority": 0,
-   "published": "2026-09-09",
-   "rins": [],
-   "routine": false,
-   "sanctions": [],
-   "seriousness": {
+   "impact": {
     "breakdown": [
      {
       "marker": "Reach",
@@ -2191,7 +2081,14 @@
     "level": 1,
     "points": 1
    },
-   "severity": null,
+   "jurisdiction": "federal",
+   "outcome": "notice",
+   "priority": 0,
+   "published": "2026-09-09",
+   "rating": null,
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
    "significant": false,
    "source": "federal_register",
    "source_label": "Federal Register",
@@ -2200,6 +2097,79 @@
    "summary": "The United States Environmental Protection Agency's (EPA's) Office of Enforcement and Compliance Assurance (OECA) intends to authorize a contractor and several subcontractors to access information that will be submitted to the EPA under the Clean Air Act (CAA), the Act to Prevent Pollution from Ships (APPS), and the American Innovation and Manufacturing Act (AIM) that may be claimed as, or may be determined to be, confidential business information (CBI).",
    "title": "U.S. Environmental Protection Agency (EPA) Contractor and Subcontractor Access to Confidential Business Information (CBI) Submitted Under Clean Air Act (CAA), Act To Prevent Pollution From Ships (APPS), and American Innovation and Manufacturing Act (AIM)",
    "url": "https://www.federalregister.gov/documents/2026/09/09/2026-18289/us-environmental-protection-agency-epa-contractor-and-subcontractor-access-to-confidential-business"
+  },
+  {
+   "action": "Supplemental notice of proposed rulemaking.",
+   "agencies": [
+    "epa"
+   ],
+   "category": "rulemaking",
+   "comments_close": "2026-10-09",
+   "corporation": null,
+   "date": "2026-09-09",
+   "date_basis": "published",
+   "doc_type": "Proposed Rule",
+   "docket_ids": [
+    "EPA-HQ-OW-2025-0322",
+    "FRL 11132.1-04-OW"
+   ],
+   "effective_on": null,
+   "eo_number": null,
+   "first_seen": "2026-11-26T01:56:14+00:00",
+   "flags": [
+    {
+     "authority": "west_virginia",
+     "code": "major_questions",
+     "elements_found": [
+      "rule",
+      "significance"
+     ],
+     "elements_total": 4,
+     "group": "structural",
+     "level": 0,
+     "precedent": "open",
+     "structural": true,
+     "triggers": [
+      "designated a significant rule"
+     ],
+     "weighed": []
+    }
+   ],
+   "fr_agency_slugs": [
+    "defense-department",
+    "engineers-corps",
+    "environmental-protection-agency"
+   ],
+   "id": "fr:2026-18317",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 2,
+      "why": "binding rule designated significant"
+     }
+    ],
+    "level": 1,
+    "points": 2
+   },
+   "jurisdiction": "federal",
+   "outcome": "proposed",
+   "priority": 0,
+   "published": "2026-09-09",
+   "rating": null,
+   "rins": [
+    "2040-AG44"
+   ],
+   "routine": false,
+   "sanctions": [],
+   "significant": true,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Proposed rule",
+   "subtype": "",
+   "summary": "The purpose of this supplemental notice of proposed rulemaking is for the U.S. Environmental Protection Agency (EPA) and the Department of the Army (\"the agencies\") to supplement and seek additional comment on certain aspects of an earlier proposal, published on November 20, 2025, to revise the regulations defining the scope of waters federally covered under the Clean Water Act in light of the U.S. Supreme Court's 2023 decision in Sackett v. Environmental Protection Agency. As stated in the agencies' November 20, 2025 Notice of Proposed Rulemaking (NPRM), the agencies intend for this rulemaking to provide greater regulatory certainty and increase Clean Water Act program predictability and…",
+   "title": "Updated Definition of “Waters of the United States”",
+   "url": "https://www.federalregister.gov/documents/2026/09/09/2026-18317/updated-definition-of-waters-of-the-united-states"
   },
   {
    "action": "Notice; establishment of a public docket; request for comments.",
@@ -2224,14 +2194,7 @@
     "food-and-drug-administration"
    ],
    "id": "fr:2026-18349",
-   "jurisdiction": "federal",
-   "outcome": "guidance",
-   "priority": 0,
-   "published": "2026-09-09",
-   "rins": [],
-   "routine": false,
-   "sanctions": [],
-   "seriousness": {
+   "impact": {
     "breakdown": [
      {
       "marker": "Reach",
@@ -2242,7 +2205,14 @@
     "level": 1,
     "points": 1
    },
-   "severity": null,
+   "jurisdiction": "federal",
+   "outcome": "guidance",
+   "priority": 0,
+   "published": "2026-09-09",
+   "rating": null,
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
    "significant": false,
    "source": "federal_register",
    "source_label": "Federal Register",
