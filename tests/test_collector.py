@@ -66,6 +66,26 @@ class SafetyTests(unittest.TestCase):
         c.get("https://www.federalregister.gov/b", "fr")
         self.assertAlmostEqual(sum(sleeps), config.MIN_SECONDS_BETWEEN_REQUESTS["www.federalregister.gov"])
 
+    def test_robots_crawl_delay_only_slows_requests_down(self):
+        import urllib.robotparser
+        sleeps, t = [], [0.0]
+        c = PoliteClient(sleep=lambda s: (sleeps.append(s), t.__setitem__(0, t[0] + s)),
+                         clock=lambda: t[0], opener=lambda *a, **k: FakeResponse(b"{}"))
+        rp = urllib.robotparser.RobotFileParser(); rp.parse(["User-agent: *", "Crawl-delay: 9"])
+        c._robots["www.federalregister.gov"] = rp
+        c.get("https://www.federalregister.gov/a", "fr"); c.get("https://www.federalregister.gov/b", "fr")
+        self.assertAlmostEqual(sum(sleeps), 9.0)
+        rp2 = urllib.robotparser.RobotFileParser(); rp2.parse(["User-agent: *", "Crawl-delay: 0.5"])
+        c._robots["www.federalregister.gov"] = rp2; sleeps.clear()
+        c.get("https://www.federalregister.gov/c", "fr")
+        self.assertAlmostEqual(sum(sleeps), config.MIN_SECONDS_BETWEEN_REQUESTS["www.federalregister.gov"])
+
+    def test_reading_only_runs_get_a_larger_but_bounded_budget(self):
+        c = PoliteClient(sleep=lambda s: None, opener=lambda *a, **k: FakeResponse(b"{}"), max_requests=config.DEEPREAD_MAX_REQUESTS)
+        self.assertGreater(c.max_requests, config.BACKFILL_MAX_REQUESTS)
+        self.assertLessEqual(config.DEEPREAD_MAX_REQUESTS, 600)
+        self.assertEqual(PoliteClient().max_requests, config.MAX_REQUESTS_PER_RUN)
+
     def test_request_ceiling(self):
         c = PoliteClient(sleep=lambda s: None, opener=lambda *a, **k: FakeResponse(b"{}"))
         c.total_requests = config.MAX_REQUESTS_PER_RUN

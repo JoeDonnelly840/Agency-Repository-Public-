@@ -31,8 +31,9 @@ class SourceUnavailable(Exception):
 
 class PoliteClient:
     def __init__(self, user_agent=config.USER_AGENT, sleep=time.sleep, clock=time.monotonic,
-                 opener=None):
+                 opener=None, max_requests=None):
         self.user_agent = user_agent
+        self.max_requests = max_requests or config.MAX_REQUESTS_PER_RUN
         self._sleep = sleep
         self._clock = clock
         self._open = opener or urllib.request.urlopen
@@ -48,12 +49,18 @@ class PoliteClient:
             raise RequestRefused(f"Refused non-HTTPS URL: {url}")
         if parts.hostname not in config.ALLOWED_HOSTS:
             raise RequestRefused(f"Refused host not on the allow-list: {parts.hostname}")
-        if self.total_requests >= config.MAX_REQUESTS_PER_RUN:
+        if self.total_requests >= self.max_requests:
             raise RequestRefused("Per-run request ceiling reached; stopping to stay polite.")
         return parts.hostname
 
     def _wait_turn(self, host):
         gap = config.MIN_SECONDS_BETWEEN_REQUESTS.get(host, config.DEFAULT_SECONDS_BETWEEN_REQUESTS)
+        rp = self._robots.get(host)
+        if rp is not None:                     # a Crawl-delay in robots.txt only ever slows us down
+            try:
+                gap = max(gap, float(rp.crawl_delay(self.user_agent) or 0))
+            except (TypeError, ValueError):
+                pass
         last = self._last_request_at.get(host)
         if last is not None:
             remaining = gap - (self._clock() - last)

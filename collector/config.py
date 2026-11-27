@@ -46,6 +46,8 @@ FIRST_RUN_BACKFILL_DAYS = 30       # how far back the very first run looks
 HISTORY_START = "2015-01-01"       # the backfill job fills history back to this date
 ARCHIVE_AFTER_DAYS = 70            # day files older than this are combined into one file per month
 BACKFILL_MAX_REQUESTS = 280        # per backfill run, all sources together
+DEEPREAD_MAX_REQUESTS = 600        # per run once history is complete and the job only reads Federal Register
+                                   # full texts: one request at a time, 2+ seconds apart (about 25 minutes)
 FULLTEXT_SWEEP_BUDGET = 90         # daily: Federal Register full-text searches for legal terms (2 per term)
 FULLTEXT_READS_PER_RUN = 60        # daily: documents read in full (presidential documents and flagged actions first)
 OVERLAP_DAYS = 3                   # re-check recent days to catch late postings and corrections

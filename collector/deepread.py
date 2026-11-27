@@ -96,13 +96,34 @@ def read_month(client, month, budget, root=None):
     return reads, touched, True
 
 
+def _read(client, rd, budget, root, log):
+    """Read documents month by month, newest first, until the budget is spent."""
+    touched = set()
+    while not rd["done"] and client.total_requests < budget:
+        month = rd["next_month"]
+        if month < config.HISTORY_START[:7]:
+            rd["done"] = True
+            break
+        reads, t, finished = read_month(client, month, budget, root)
+        touched |= t
+        log.append(f"read {month}: {reads} documents")
+        if finished:
+            y, m = int(month[:4]), int(month[5:7])
+            rd["next_month"] = f"{y - (m == 1)}-{(m - 2) % 12 + 1:02d}"
+    return touched
+
+
 def run(client, budget, root=None, today=None):
     """Use the client's remaining budget (up to `budget` total requests) on sweeps, then full reads."""
     today = today or dt.date.today()
     state = fulltext.load_state(root)
     first_year = int(config.HISTORY_START[:4])
     touched, log = set(), []
-    sw = state["sweep"]
+    sw, rd = state["sweep"], state["read"]
+    # Reading whole documents (which finds their operative text) comes first; until the term sweeps
+    # are finished they get the last third of the budget.
+    read_budget = budget if sw["done"] else budget - budget // 3
+    touched |= _read(client, rd, read_budget, root, log)
     while not sw["done"] and client.total_requests < budget:
         year = sw["next_year"]
         if year < first_year:
@@ -118,18 +139,7 @@ def run(client, budget, root=None, today=None):
         else:
             sw["term"] = nxt
             break
-    rd = state["read"]
-    while sw["done"] and not rd["done"] and client.total_requests < budget:
-        month = rd["next_month"]
-        if month < config.HISTORY_START[:7]:
-            rd["done"] = True
-            break
-        reads, t, finished = read_month(client, month, budget, root)
-        touched |= t
-        log.append(f"read {month}: {reads} documents")
-        if finished:
-            y, m = int(month[:4]), int(month[5:7])
-            rd["next_month"] = f"{y - (m == 1)}-{(m - 2) % 12 + 1:02d}"
+    touched |= _read(client, rd, budget, root, log)
     state["log"] = (state.get("log", []) + log)[-200:]
     fulltext.save_state(state, root)
     return touched, log
@@ -137,8 +147,8 @@ def run(client, budget, root=None, today=None):
 
 def main():
     today = dt.date.today()
-    client = PoliteClient()
-    touched, log = run(client, config.BACKFILL_MAX_REQUESTS, today=today)
+    client = PoliteClient(max_requests=config.DEEPREAD_MAX_REQUESTS)
+    touched, log = run(client, config.DEEPREAD_MAX_REQUESTS, today=today)
     index = store.load_index()
     store.finish_storage(index, {m for m in touched if store.is_archived_month(m, today)}, today)
     state = fulltext.load_state()
