@@ -1,26 +1,27 @@
 # RegCollect doctrine library and rating rubric
 
-Rubric version 3.1. Status: **Draft, not yet reviewed**. Reviewer: (none yet). Last reviewed: (never).
+Rubric version 3.2. Status: **Draft, not yet reviewed**. Reviewer: (none yet). Last reviewed: (never).
 
 This memo is generated from `collector/doctrine.py` and `collector/rulings.py`, which the app uses to rate every flag. Edit those files (not this one), then run `python -m collector.doctrine_md` and `python -m collector.reclassify`.
 Holdings are short paraphrases for screening purposes; verify every citation before relying on it.
 
 ## How ratings are computed
 
-### Constitutionality
+### Lawfulness
 
-- The rating measures one thing: how likely it is that the action is unconstitutional, or exceeds the limits on executive power, under the law as it stands today. Impact is recorded separately and never affects it.
+- The rating measures one thing: how likely it is that the action is unlawful under the Constitution or the limits on executive power, under the law as it stands today. Impact is recorded separately and never affects it.
+- Each memo states a test broken into elements. Gate elements are the essential ones: an issue is rated only when every gate element appears; otherwise it is listed as a possible issue.
 - Precedent strength comes from the first rule in the memo that matches: a direct holding (a court has held this practice unlawful), a close analogy (a Supreme Court holding applies closely, or an appeals court has held the same practice unlawful), or an open question.
-- Gate elements must all appear before an action is rated. Without them, the issue is listed as a possible issue and not rated.
-- Almost certainly unconstitutional: a direct holding and every element found. Very likely: a direct holding with at least half the elements, or a close analogy with every element. Likely: any other rated issue.
-- Elements are looked for in the title, action line, and summary, and in the full text when RegCollect has read it. Each flag says which elements came from the full text.
-- Weighed factors (such as a contrary holding or a closely regulated industry) lower the rating by one step each but never remove it. Settlements are noted and do not lower it.
-- When a court has ruled on the specific action, the ruling sets the rating: Supreme Court, almost certainly; court of appeals, very likely; district court, likely. A ruling that upheld the action lowers the rating one step.
+- Likely unlawful is generous, because RegCollect is built to surface arguable issues: the gate elements and at least half of all elements, with any precedent. Very likely unlawful: a direct holding with at least half the elements, or a close analogy with every element. Almost certainly unlawful: a direct holding with every element.
+- Very likely and almost certainly require the elements to appear in the document's operative text: its title, action line, and summary; the whole of a presidential document; or a rule's authority line and regulatory text. Elements found only in other passages of the full text (preambles, comment responses) can support Likely at most. Each flag says which elements came from the full text.
+- Weighed factors (such as a closely regulated industry) lower the rating by one step each but never below Likely. When the Supreme Court has upheld the very practice (for example, FCC forfeiture orders in FCC v. AT&T), the issue is listed as a possible issue with that reason. Settlements are noted only.
+- When a court has ruled on the specific action, the ruling sets the rating: Supreme Court, almost certainly; court of appeals, very likely; district court, likely. Each such flag states what the court held. A ruling that upheld the action lowers the rating one step.
+- Some memos cap their ratings: reliance on Chevron deference is rated Likely at most, because Loper Bright preserved earlier cases that upheld rules under Chevron.
 - Ratings apply today's law. When the controlling decision came after the action, the flag notes that the action may have been lawful under the precedent at the time.
 
 ### Impact (context only)
 
-- Impact is noted for context only. It is not color-coded and does not affect the constitutionality rating.
+- Impact is noted for context only. It is not color-coded and does not affect the lawfulness rating.
 - Sanction points: 4 for criminal charges, bars, expulsions, debarment, revocations, and practice bans; 3 for civil penalties, forfeitures, disgorgement, seizures, asset freezes, and funding cuts; 2 for cease-and-desist orders, injunctions, suspensions, denials, shutdowns, gag terms, trading halts, data-deletion orders, monitors, recalls, and import actions; 1 for warnings, censures, subpoenas, inspections, compelled notices, restitution, and settlements.
 - Money points: 3 for at least $100 million, 2 for at least $1 million, 1 for any stated amount.
 - Reach points: 3 for presidential documents and rules designated economically significant or major; 2 for other final or proposed rules; 1 for actions against particular parties and self-regulatory filings.
@@ -36,22 +37,22 @@ Every memo sorts its precedent into the same three levels:
 
 ## Known rulings on specific actions
 
-| Action | Court | Result | Rating | Kind of holding | Case |
+| Action | Court | Result | Rating | What the court held | Caution |
 |---|---|---|---|---|---|
-| IEEPA tariff orders | Supreme Court | unlawful | 3 | statutory | *Learning Resources, Inc. v. Trump (U.S. Feb. 20, 2026)* |
-| Clean Power Plan | Supreme Court | unlawful | 3 | statutory | *West Virginia v. EPA, 597 U.S. 697 (2022)* |
-| CDC eviction moratorium | Supreme Court | unlawful | 3 | statutory | *Alabama Ass'n of Realtors v. HHS, 594 U.S. 758 (2021) (per curiam)* |
-| OSHA vaccine-or-test emergency standard | Supreme Court | unlawful | 2 | statutory | *NFIB v. OSHA, 595 U.S. 109 (2022) (per curiam)* |
-| CMS health-care staff vaccination rule | Supreme Court | upheld | lowers one step | statutory | *Biden v. Missouri, 595 U.S. 87 (2022) (per curiam)* |
-| 2015 Clean Water Rule | Federal district court | unlawful | 1 | statutory | *Georgia v. Wheeler, 418 F. Supp. 3d 1336 (S.D. Ga. 2019)* |
-| Department of Labor fiduciary rule (2016) | Federal court of appeals | unlawful | 2 | statutory | *Chamber of Commerce v. U.S. Department of Labor, 885 F.3d 360 (5th Cir. 2018)* |
-| FCC net-neutrality order (2024) | Federal court of appeals | unlawful | 2 | statutory | *Ohio Telecom Ass'n v. FCC, 124 F.4th 993 (6th Cir. 2025)* |
-| SEC private fund adviser rules | Federal court of appeals | unlawful | 2 | statutory | *National Ass'n of Private Fund Managers v. SEC, 103 F.4th 1097 (5th Cir. 2024)* |
-| FTC non-compete rule | Federal district court | unlawful | 1 | statutory | *Ryan, LLC v. FTC, 746 F. Supp. 3d 369 (N.D. Tex. 2024)* |
-| Department of Labor overtime rule (2024) | Federal district court | unlawful | 1 | statutory | *Texas v. U.S. Department of Labor, No. 4:24-cv-499 (E.D. Tex. Nov. 15, 2024)* |
-| Department of Labor overtime rule (2016) | Federal district court | unlawful | 1 | statutory | *Nevada v. U.S. Department of Labor, 275 F. Supp. 3d 795 (E.D. Tex. 2017)* |
-| NLRB joint-employer rule (2023) | Federal district court | unlawful | 1 | statutory | *Chamber of Commerce v. NLRB, No. 6:23-cv-553 (E.D. Tex. Mar. 8, 2024)* |
-| HHS Section 1557 rule (2016) | Federal district court | unlawful | 1 | statutory and constitutional | *Franciscan Alliance, Inc. v. Burwell, 227 F. Supp. 3d 660 (N.D. Tex. 2016)* |
+| IEEPA tariff orders | Supreme Court | unlawful | Almost certainly unlawful | The International Emergency Economic Powers Act does not authorize the President to impose tariffs. (*Learning Resources, Inc. v. Trump (U.S. Feb. 20, 2026)*) |  |
+| Clean Power Plan | Supreme Court | unlawful | Almost certainly unlawful | Agencies need clear congressional authorization to decide questions of vast economic and political significance; the Clean Power Plan's generation-shifting approach exceeded the Clean Air Act. (*West Virginia v. EPA, 597 U.S. 697 (2022)*) |  |
+| CDC eviction moratorium | Supreme Court | unlawful | Almost certainly unlawful | The CDC's nationwide eviction moratorium exceeded its authority under section 361 of the Public Health Service Act. (*Alabama Ass'n of Realtors v. HHS, 594 U.S. 758 (2021) (per curiam)*) |  |
+| OSHA vaccine-or-test emergency standard | Supreme Court | unlawful | Very likely unlawful | OSHA's workplace vaccine-or-test mandate likely exceeded its statutory authority; the Court stayed it. (*NFIB v. OSHA, 595 U.S. 109 (2022) (per curiam)*) | The Supreme Court ruled on a stay application, not a final judgment; OSHA later withdrew the standard. Verify before relying. |
+| CMS health-care staff vaccination rule | Supreme Court | upheld | lowers one step | Allowed the CMS rule requiring vaccination of staff at Medicare- and Medicaid-funded facilities to take effect. (*Biden v. Missouri, 595 U.S. 87 (2022) (per curiam)*) |  |
+| 2015 Clean Water Rule | Federal district court | unlawful | Likely unlawful | Held the 2015 Clean Water Rule unlawful as exceeding the agencies' authority under the Clean Water Act. (*Georgia v. Wheeler, 418 F. Supp. 3d 1336 (S.D. Ga. 2019)*) | District court ruling; the 2015 rule was later repealed and replaced. Verify before relying. |
+| Department of Labor fiduciary rule (2016) | Federal court of appeals | unlawful | Very likely unlawful | Vacated the Department of Labor's 2016 fiduciary rule in its entirety as exceeding ERISA. (*Chamber of Commerce v. U.S. Department of Labor, 885 F.3d 360 (5th Cir. 2018)*) | One court of appeals (Fifth Circuit). Verify before relying. |
+| FCC net-neutrality order (2024) | Federal court of appeals | unlawful | Very likely unlawful | Set aside the FCC's 2024 net-neutrality order; broadband is an information service the FCC may not regulate as common carriage. (*Ohio Telecom Ass'n v. FCC, 124 F.4th 993 (6th Cir. 2025)*) | One court of appeals (Sixth Circuit). Verify before relying. |
+| SEC private fund adviser rules | Federal court of appeals | unlawful | Very likely unlawful | Vacated the SEC's private fund adviser rules as exceeding its statutory authority. (*National Ass'n of Private Fund Managers v. SEC, 103 F.4th 1097 (5th Cir. 2024)*) | One court of appeals (Fifth Circuit). Verify before relying. |
+| FTC non-compete rule | Federal district court | unlawful | Likely unlawful | Set aside the FTC's non-compete rule as exceeding the FTC's rulemaking authority and as arbitrary and capricious. (*Ryan, LLC v. FTC, 746 F. Supp. 3d 369 (N.D. Tex. 2024)*) | District court ruling; the FTC later dropped its appeals. Verify before relying. |
+| Department of Labor overtime rule (2024) | Federal district court | unlawful | Likely unlawful | Vacated the Department of Labor's 2024 overtime rule as exceeding the Fair Labor Standards Act. (*Texas v. U.S. Department of Labor, No. 4:24-cv-499 (E.D. Tex. Nov. 15, 2024)*) | District court ruling. Verify before relying. |
+| Department of Labor overtime rule (2016) | Federal district court | unlawful | Likely unlawful | Held the Department of Labor's 2016 overtime rule invalid as exceeding the Fair Labor Standards Act. (*Nevada v. U.S. Department of Labor, 275 F. Supp. 3d 795 (E.D. Tex. 2017)*) | District court ruling. Verify before relying. |
+| NLRB joint-employer rule (2023) | Federal district court | unlawful | Likely unlawful | Vacated the NLRB's 2023 joint-employer rule as contrary to common-law agency principles the Act incorporates. (*Chamber of Commerce v. NLRB, No. 6:23-cv-553 (E.D. Tex. Mar. 8, 2024)*) | District court ruling. Verify before relying. |
+| HHS Section 1557 rule (2016) | Federal district court | unlawful | Likely unlawful | Enjoined parts of HHS's 2016 Section 1557 rule, finding them likely contrary to the statute and to RFRA as applied to religious health-care providers. (*Franciscan Alliance, Inc. v. Burwell, 227 F. Supp. 3d 660 (N.D. Tex. 2016)*) | District court ruling, later followed by further litigation and new rules. Verify before relying. |
 
 ## Agency adjudication of penalties (jury trial and Article III)
 
@@ -59,7 +60,7 @@ Group: structural. Code: `agency_adjudication`.
 
 **Question.** Is an agency deciding, in its own forum and without a jury, a penalty claim of the kind the Seventh Amendment and Article III reserve to the courts?
 
-**Test.** Under Jarkesy, the jury right attaches when (1) the government seeks a legal remedy such as a civil penalty, (2) for a claim that resembles a common-law action (fraud is the paradigm), and (3) the public-rights exception does not apply. A structural problem arises when such a claim is (4) decided in the agency's own forum.
+**Test.** Under Jarkesy the Seventh Amendment jury right attaches when (1) the government seeks a legal remedy such as a civil penalty (2) for a claim that resembles a common-law action, fraud being the paradigm. When such a claim is (3) decided in the agency's own forum, the defendant is denied a jury. The public-rights exception (customs, immigration, public lands, benefits, taxes) is weighed against a violation. FCC v. AT&T (2026) upheld FCC forfeiture orders because they do not definitively resolve liability.
 
 **Elements checked in each document** (gate elements must all appear before the issue is rated):
 
@@ -70,14 +71,14 @@ Group: structural. Code: `agency_adjudication`.
 **Weighed factors:**
 
 - Described as settled or consented. Noted only: a settlement does not cure the forum, and people settle for many reasons. (noted only)
-- FCC forfeiture order: FCC v. AT&T (2026) held these do not violate the Seventh Amendment (lowers the rating one step)
-- Subject matter traditionally treated as a public right (customs, immigration, public lands, benefits, taxes) (lowers the rating one step)
+- FCC forfeiture order or notice of apparent liability: the Supreme Court upheld this practice in FCC v. AT&T (2026) (listed as a possible issue, with this reason)
+- Subject matter traditionally treated as a public right (customs, immigration, public lands, benefits, taxes) (lowers the rating one step, never below Likely)
 
 **Precedent (first rule that matches):**
 
 - Direct holding: An SEC penalty claim for fraud decided in-house: the facts of Jarkesy. (SEC v. Jarkesy, 603 U.S. 109 (2024))
 - Close analogy: A fraud-like penalty claim at another agency: Jarkesy applies by close analogy. (SEC v. Jarkesy, 603 U.S. 109 (2024))
-- Open question: No common-law analogue identified: Atlas Roofing may still permit agency adjudication of a purely statutory claim. (Atlas Roofing Co. v. OSHRC, 430 U.S. 442 (1977))
+- Open question: No common-law analogue found: whether Jarkesy reaches purely statutory penalty claims (Atlas Roofing) is open. (Atlas Roofing Co. v. OSHRC, 430 U.S. 442 (1977))
 
 **Authorities:**
 
@@ -86,7 +87,7 @@ Group: structural. Code: `agency_adjudication`.
 - *Granfinanciera, S.A. v. Nordberg, 492 U.S. 33 (1989)* (decided 1989-06-23): Congress may not strip a jury right from a claim resembling a common-law action by assigning it to a non-Article III forum.
 - *Atlas Roofing Co. v. OSHRC, 430 U.S. 442 (1977)* (decided 1977-03-23): Congress may assign new statutory 'public rights' (there, OSHA penalties) to agency adjudication without a jury; Jarkesy later confined this to claims without a common-law analogue.
 - *Axon Enterprise, Inc. v. FTC, 598 U.S. 175 (2023)* (decided 2023-04-14): Parties may bring structural constitutional challenges to agency proceedings in federal district court without waiting for the agency to finish.
-- *FCC v. AT&T, Inc., No. 25-406 (U.S. June 4, 2026)* (decided 2026-06-04): FCC forfeiture orders do not violate the Seventh Amendment because they do not definitively resolve liability and the FCC's findings are not conclusive in a later collection suit.
+- *FCC v. AT&T, Inc., No. 25-406 (U.S. June 4, 2026) (8 to 1)* (decided 2026-06-04): FCC forfeiture orders do not violate the Seventh Amendment because they do not definitively resolve liability and the FCC's findings are not conclusive in a later collection suit.
 
 **Open questions:**
 
@@ -94,23 +95,21 @@ Group: structural. Code: `agency_adjudication`.
 - Whether consent settlements negotiated under threat of in-house proceedings raise separate concerns.
 - How FCC v. AT&T's reasoning applies to other agencies whose penalty orders are not self-executing.
 
-## Appointment and supervision of officers (ALJs, hearing officers, and board members)
+## Appointment and review of officers (ALJs, hearing officers, and board members)
 
 Group: structural. Code: `officer_appointment_removal`.
 
-**Question.** Are officials exercising significant federal authority appointed, supervised, and reviewable as Article II requires?
+**Question.** Are officials exercising significant federal authority appointed and reviewable as Article II requires?
 
-**Test.** An official who holds a continuing position and exercises significant authority under federal law is an officer (Lucia) and must be appointed by the President, a department head, or a court of law; an inferior officer's final decisions must be reviewable by a principal officer (Arthrex).
+**Test.** An official who holds a continuing position and exercises significant authority under federal law is an officer (Lucia) and must be appointed by the President, a department head, or a court of law; an inferior officer's final decisions must be reviewable by a principal officer (Arthrex). Ratification by a properly appointed official cures an appointment defect going forward, so ratification notices are not flagged.
 
 **Elements checked in each document** (gate elements must all appear before the issue is rated):
 
-1. An adjudicator or officer (ALJ, hearing officer, board member) is involved *(gate)*
-2. The official exercises significant authority (decides cases, issues orders)
-3. The document indicates an appointment, review, or removal problem *(gate)*
+1. An adjudicator or officer (ALJ, hearing officer, administrative judge, board member) is involved *(gate)*
+2. The official decides cases or issues binding decisions
+3. The document describes an appointment, review, or removal defect *(gate)*
 
-**Weighed factors:**
-
-- The agency head ratified the appointment, which usually cures an appointment defect going forward (lowers the rating one step)
+**Not flagged:** ratifications, which cure an appointment defect.
 
 **Precedent (first rule that matches):**
 
@@ -136,13 +135,15 @@ Group: structural. Code: `private_delegation`.
 
 **Question.** Is a private self-regulatory organization exercising government power without adequate agency control?
 
-**Test.** Private bodies may help administer federal law only if they function subordinately to an agency that retains final authority (Adkins; Consumers' Research). Delegating binding power to private parties without that control is forbidden (Carter Coal).
+**Test.** Private bodies may help administer federal law only if they function subordinately to an agency that retains final authority (Adkins; Consumers' Research). Delegating binding power to private parties without that control is forbidden (Carter Coal). Because no court has applied this to the thousands of routine immediately effective filings, they are listed as possible issues rather than rated.
 
 **Elements checked in each document** (gate elements must all appear before the issue is rated):
 
 1. Issued by a private, agency-supervised corporation *(gate)*
 2. The action binds members or the public (a rule or fee change) *(gate)*
 3. Effective without prior agency approval (for example, immediately effective under 19(b)(3)(A)) *(gate)*
+
+**Open questions under this memo are listed as possible issues, not rated.**
 
 **Precedent (first rule that matches):**
 
@@ -180,7 +181,7 @@ Group: structural. Code: `private_discipline`.
 **Precedent (first rule that matches):**
 
 - Direct holding: none yet for this kind of issue.
-- Close analogy: A federal court of appeals has held this practice unlawful (Alpine). (Alpine Securities Corp. v. FINRA, 121 F.4th 1314 (D.C. Cir. 2024))
+- Close analogy: Expulsion or a bar: a federal court of appeals has held this practice unlawful (Alpine). (Alpine Securities Corp. v. FINRA, 121 F.4th 1314 (D.C. Cir. 2024))
 - Open question: Alpine addressed expulsion; lesser discipline is an open question. (Alpine Securities Corp. v. FINRA, 121 F.4th 1314 (D.C. Cir. 2024))
 
 **Authorities:**
@@ -197,22 +198,22 @@ Group: structural. Code: `private_discipline`.
 
 Group: structural. Code: `major_questions`.
 
-**Question.** Does the rule decide a question of vast economic or political significance, or claim a power, without clear congressional authorization?
+**Question.** Does the action decide a question of vast economic or political significance, or claim a power, without clear congressional authorization?
 
-**Test.** Agencies need clear congressional authorization for rules of vast economic and political significance, especially when they claim newfound power in a long-standing statute (West Virginia v. EPA; Alabama Realtors; NFIB v. OSHA). Agencies have only the power Congress gives them.
+**Test.** The executive branch has only the powers the Constitution and Congress give it. Agencies need clear congressional authorization for rules of vast economic and political significance, especially when they claim newfound power in a long-standing statute (West Virginia v. EPA; Alabama Realtors; NFIB v. OSHA; Biden v. Nebraska).
 
 **Elements checked in each document** (gate elements must all appear before the issue is rated):
 
 1. A binding rule, order, or program *(gate)*
-2. Vast economic or political significance (economically significant, major, nationwide, or billions at stake) *(gate)*
-3. A novel or expansive assertion of power (unprecedented, first-ever, transformative, emergency)
-4. Rests on a broad, general, or long-standing statutory provision (or emergency authority)
+2. Vast economic or political significance (designated economically significant or major, or billions of dollars or a whole industry at stake) *(gate)*
+3. A novel or expansive claim of power (unprecedented, first-ever, newly asserted authority, emergency standard, moratorium)
+4. Rests on a broad or general grant of power (a general rulemaking or catch-all provision, or an emergency statute)
 
 **Precedent (first rule that matches):**
 
 - Direct holding: none yet for this kind of issue.
-- Close analogy: West Virginia v. EPA, Alabama Realtors, and NFIB v. OSHA apply by close analogy. (West Virginia v. EPA, 597 U.S. 697 (2022))
-- Open question: Significance alone does not establish a major-questions problem. (West Virginia v. EPA, 597 U.S. 697 (2022))
+- Close analogy: Significance, a novel claim of power, and a thin statutory basis together: West Virginia v. EPA, Alabama Realtors, and NFIB v. OSHA apply by close analogy. (West Virginia v. EPA, 597 U.S. 697 (2022))
+- Open question: Significance alone, or without a novel claim of power, is an open question. (West Virginia v. EPA, 597 U.S. 697 (2022))
 
 **Authorities:**
 
@@ -235,17 +236,23 @@ Group: structural. Code: `statutory_deference`.
 
 **Question.** Does the action rest on deference to the agency's own reading of a statute?
 
-**Test.** Courts decide what statutes mean without deferring to agencies (Loper Bright). Reliance on Chevron-style deference rests on overruled law, even for rules issued while Chevron governed.
+**Test.** Loper Bright (2024) overruled Chevron: courts, not agencies, decide what statutes mean, and they may not defer to an agency's reading because a statute is ambiguous. An action that rests on Chevron deference is therefore open to challenge. Loper Bright also said earlier cases that upheld rules under Chevron keep their force, so these flags are rated Likely (arguable) rather than higher.
 
 **Elements checked in each document** (gate elements must all appear before the issue is rated):
 
 1. The agency interprets a statute
-2. The agency invokes ambiguity or gap-filling
-3. The agency relies on deference to its own reading *(gate)*
+2. The agency invokes ambiguity, silence, or gap-filling
+3. The agency relies on deference to its own reading (Chevron) *(gate)*
+
+**Weighed factors:**
+
+- Issued after Loper Bright and discusses it, which usually means the agency is explaining that it does not rely on Chevron (listed as a possible issue, with this reason)
+
+**Cap:** rated Likely unlawful at most.
 
 **Precedent (first rule that matches):**
 
-- Direct holding: Loper Bright squarely rejects deference to agency statutory interpretation. Rules relying on Chevron stood on governing law when issued. (Loper Bright Enterprises v. Raimondo, 603 U.S. 369 (2024))
+- Direct holding: Loper Bright overruled Chevron, so reliance on Chevron deference is open to challenge; rated Likely at most because Loper Bright preserved earlier cases upholding rules under Chevron. (Loper Bright Enterprises v. Raimondo, 603 U.S. 369 (2024))
 - Close analogy: none yet for this kind of issue.
 - Open question: Interpretation without claimed deference is ordinary agency work. (Loper Bright Enterprises v. Raimondo, 603 U.S. 369 (2024))
 
@@ -257,7 +264,7 @@ Group: structural. Code: `statutory_deference`.
 **Open questions:**
 
 - How much weight courts still give agency views under Skidmore after Loper Bright.
-- Loper Bright did not reopen past cases that upheld rules under Chevron (statutory stare decisis).
+- Which rules upheld under Chevron can be challenged again after Loper Bright and Corner Post.
 
 ## Presidential control and removal of agency leaders
 
@@ -265,23 +272,23 @@ Group: structural. Code: `removal_independence`.
 
 **Question.** Does the action remove or direct officials whose independence the law still protects?
 
-**Test.** After Trump v. Slaughter (2026), the President may remove commissioners of agencies wielding executive power. Bodies the Court treats differently, such as the Federal Reserve (Trump v. Cook), remain protected.
+**Test.** After Trump v. Slaughter (2026), the President may remove commissioners of agencies wielding executive power. The Federal Reserve is treated differently: in Trump v. Cook (2026) the Court, on narrow interim grounds, left in place a lower-court order keeping a Federal Reserve governor in office.
 
 **Elements checked in each document** (gate elements must all appear before the issue is rated):
 
-1. The action removes or directs agency leaders *(gate)*
-2. The body is one the Court still treats as protected (for example, the Federal Reserve) *(gate)*
+1. The action removes, or directs the decisions of, agency leaders *(gate)*
+2. The body is one the Court still treats as protected (the Federal Reserve) *(gate)*
 
 **Precedent (first rule that matches):**
 
 - Direct holding: none yet for this kind of issue.
-- Close analogy: Trump v. Cook protects Federal Reserve governors. (Trump v. Cook (U.S. June 29, 2026))
-- Open question: After Slaughter, presidential removal of commissioners is generally lawful. (Trump v. Slaughter (U.S. June 29, 2026))
+- Close analogy: Federal Reserve governors: Trump v. Cook applies by close analogy. (Trump v. Cook, No. 25A312 (U.S. June 29, 2026))
+- Open question: After Slaughter, presidential removal of other commissioners is generally lawful. (Trump v. Slaughter (U.S. June 29, 2026))
 
 **Authorities:**
 
 - *Trump v. Slaughter (U.S. June 29, 2026)* (decided 2026-06-29): Statutory limits on the President's power to remove FTC commissioners are unconstitutional; Humphrey's Executor is overruled.
-- *Trump v. Cook (U.S. June 29, 2026)* (decided 2026-06-29): Upheld an injunction against the attempted removal of a Federal Reserve governor, treating the Federal Reserve differently.
+- *Trump v. Cook, No. 25A312 (U.S. June 29, 2026)* (decided 2026-06-29): On narrow, interim grounds, the Court (5 to 4) left in place a lower-court order keeping a Federal Reserve governor in office while her challenge to her removal proceeds, treating the Federal Reserve differently from other agencies.
 - *Seila Law LLC v. CFPB, 591 U.S. 197 (2020)* (decided 2020-06-29): For-cause removal protection for the CFPB's single director is unconstitutional.
 - *Collins v. Yellen, 594 U.S. 220 (2021)* (decided 2021-06-23): An unconstitutional removal restriction does not by itself void the agency's actions; a challenger must show the restriction caused harm.
 - *Myers v. United States, 272 U.S. 52 (1926)* (decided 1926-10-25): The President has power to remove executive officers he appoints.
@@ -289,26 +296,31 @@ Group: structural. Code: `removal_independence`.
 **Open questions:**
 
 - Which bodies, beyond the Federal Reserve, remain outside the President's at-will removal power.
+- What process is due before removing a Federal Reserve governor for cause (Cook remains in litigation).
 
 ## Spending, funding, and appropriations
 
 Group: structural. Code: `spending_appropriations`.
 
-**Question.** Is the executive withholding, redirecting, or self-funding money contrary to Congress's appropriations?
+**Question.** Is the executive withholding or redirecting money contrary to Congress's appropriations?
 
-**Test.** The executive must spend funds as Congress directs (Train) and may withhold them only through the Impoundment Control Act's procedures.
+**Test.** Congress holds the power of the purse. The executive must spend funds as Congress directs (Train) and may withhold them only through the Impoundment Control Act's procedures. Withholding broad categories of funds for policy reasons, rather than for reasons the statute allows, is the core concern.
 
 **Elements checked in each document** (gate elements must all appear before the issue is rated):
 
-1. Appropriated money is withheld, paused, or terminated *(gate)*
-2. No statutory process (such as an Impoundment Control Act message) is cited
-3. The action is broad (all grants, a whole program, or government-wide)
+1. Appropriated money is withheld, paused, frozen, or terminated *(gate)*
+2. The action is broad (a whole program, a category of awards, or government-wide)
+3. The reason given is policy disagreement rather than a statutory ground
+
+**Weighed factors:**
+
+- The President sent a special message under the Impoundment Control Act (lowers the rating one step, never below Likely)
 
 **Precedent (first rule that matches):**
 
 - Direct holding: none yet for this kind of issue.
-- Close analogy: Train and the Impoundment Control Act apply by close analogy. (Train v. City of New York, 420 U.S. 35 (1975))
-- Open question: Funding questions without withholding are open. (CFPB v. Community Financial Services Ass'n of America, 601 U.S. 416 (2024))
+- Close analogy: Broad or policy-based withholding of appropriated funds: Train and the Impoundment Control Act apply by close analogy. (Train v. City of New York, 420 U.S. 35 (1975))
+- Open question: A narrow funding action is an open question. (CFPB v. Community Financial Services Ass'n of America, 601 U.S. 416 (2024))
 
 **Authorities:**
 
@@ -326,7 +338,7 @@ Group: structural. Code: `agency_structure_change`.
 
 **Question.** Is the executive restructuring or abolishing a body that Congress created by statute?
 
-**Test.** Congress creates agencies and assigns their functions by statute; the executive may manage but not abolish them without authority (Youngstown framework; In re Aiken County).
+**Test.** Congress creates agencies and assigns their functions by statute; the executive may manage but not abolish them or abandon their statutory duties without authority (Youngstown framework; In re Aiken County).
 
 **Elements checked in each document** (gate elements must all appear before the issue is rated):
 
@@ -337,7 +349,7 @@ Group: structural. Code: `agency_structure_change`.
 **Precedent (first rule that matches):**
 
 - Direct holding: none yet for this kind of issue.
-- Close analogy: Aiken County and Youngstown apply by close analogy when a statutory function is abandoned. (In re Aiken County, 725 F.3d 255 (D.C. Cir. 2013))
+- Close analogy: A statutory body or function is abandoned: Aiken County and Youngstown apply by close analogy. (In re Aiken County, 725 F.3d 255 (D.C. Cir. 2013))
 - Open question: Courts are still working out the limits of executive reorganization. (Youngstown Sheet & Tube Co. v. Sawyer, 343 U.S. 579 (1952))
 
 **Authorities:**
@@ -350,7 +362,7 @@ Group: structural. Code: `agency_structure_change`.
 
 - Whether large reductions in force can effectively abolish a statutory function.
 
-## Federalism (states, preemption, and conditions on federal funds)
+## Federalism (commandeering and conditions on federal funds)
 
 Group: structural. Code: `federalism`.
 
@@ -360,16 +372,16 @@ Group: structural. Code: `federalism`.
 
 **Elements checked in each document** (gate elements must all appear before the issue is rated):
 
-1. The action is directed at states or localities *(gate)*
+1. The action is directed at state or local governments *(gate)*
 2. It commands state officials or legislatures
 3. It conditions existing federal funds on compliance
 
 **Precedent (first rule that matches):**
 
 - Direct holding: none yet for this kind of issue.
-- Close analogy: Printz and Murphy apply by close analogy. (Printz v. United States, 521 U.S. 898 (1997))
-- Close analogy: NFIB v. Sebelius applies by close analogy. (NFIB v. Sebelius, 567 U.S. 519 (2012))
-- Open question: Preemption and ordinary grant conditions are usually lawful. (South Dakota v. Dole, 483 U.S. 203 (1987))
+- Close analogy: A command to state officials: Printz and Murphy apply by close analogy. (Printz v. United States, 521 U.S. 898 (1997))
+- Close analogy: Existing funds conditioned on compliance: NFIB v. Sebelius applies by close analogy. (NFIB v. Sebelius, 567 U.S. 519 (2012))
+- Open question: Ordinary grant conditions are usually lawful. (South Dakota v. Dole, 483 U.S. 203 (1987))
 
 **Authorities:**
 
@@ -382,32 +394,32 @@ Group: structural. Code: `federalism`.
 
 - When executive (rather than congressional) funding conditions are unauthorized as well as coercive.
 
-## Executive action that makes law (emergency powers, tariffs, and suspending or rewriting statutes)
+## Executive action that makes law (emergency powers, tariffs, and suspending statutes)
 
 Group: structural. Code: `presidential_lawmaking`.
 
 **Question.** Does an executive action impose duties, taxes, or prohibitions on the public, or set aside a statute, without a power the Constitution or Congress actually gives?
 
-**Test.** The President's power to act must come from the Constitution or a statute (Youngstown). Jackson's framework: power is greatest with Congress's authorization, weakest when the action is incompatible with Congress's will. Taxes and tariffs are Congress's power (Art. I, sec. 8), and IEEPA does not delegate it (Learning Resources). The executive may not cancel or suspend duly enacted statutes (Clinton v. City of New York; In re Aiken County). Courts read general or emergency statutes narrowly when they are used for sweeping measures.
+**Test.** The President's power to act must come from the Constitution or a statute (Youngstown). Taxes and tariffs are Congress's power (Art. I, sec. 8), and IEEPA does not delegate it (Learning Resources). The executive may not cancel or suspend duly enacted statutes (Clinton v. City of New York; In re Aiken County). Waivers and exemptions that Congress itself authorized are not flagged. Other trade and entry statutes (Sections 232, 301, 122, and 212(f)) are checked one by one.
 
 **Elements checked in each document** (gate elements must all appear before the issue is rated):
 
-1. Imposes duties, tariffs, fees, or prohibitions on the public, or suspends or waives a statute *(gate)*
+1. Imposes duties, tariffs, or prohibitions on the public, or suspends or refuses to enforce a statute *(gate)*
 2. Rests on an emergency power or a general statute rather than a specific grant
-3. The power claimed is one the cited statute does not clearly give (for example, tariffs under IEEPA, or overriding a statute)
-4. Applies to private parties or the public (importers, businesses, people), not just to agencies
+3. The power claimed is one the cited statute does not give (tariffs under IEEPA), or the action suspends a statute without congressional authorization
+4. Applies to private parties (importers, businesses, people), not just to agencies
 
 **Weighed factors:**
 
-- Also rests on a trade statute courts have read broadly (Section 232, 301, 122, or 201) (lowers the rating one step)
-- Restricts entry of noncitizens under INA 212(f), which Trump v. Hawaii read broadly (lowers the rating one step)
+- Also rests on a trade statute courts have read broadly (Section 232, 301, 122, or 201) (lowers the rating one step, never below Likely)
+- Restricts entry of noncitizens under INA 212(f), which Trump v. Hawaii read broadly (lowers the rating one step, never below Likely)
 
 **Precedent (first rule that matches):**
 
 - Direct holding: Tariffs or duties imposed under IEEPA: the facts of Learning Resources. (Learning Resources, Inc. v. Trump (U.S. Feb. 20, 2026))
-- Close analogy: Suspending, waiving, or refusing to enforce a statute: Clinton v. City of New York and In re Aiken County apply by close analogy. (Clinton v. City of New York, 524 U.S. 417 (1998))
+- Close analogy: Suspending or refusing to enforce a statute without congressional authorization: Clinton v. City of New York and In re Aiken County apply by close analogy. (Clinton v. City of New York, 524 U.S. 417 (1998))
 - Close analogy: Other IEEPA measures that operate like taxes or regulation of commerce: Learning Resources applies by close analogy. (Learning Resources, Inc. v. Trump (U.S. Feb. 20, 2026))
-- Open question: Other bases (Sections 232, 301, 122, 212(f), and emergency statutes) must be checked one by one under Youngstown. (Youngstown Sheet & Tube Co. v. Sawyer, 343 U.S. 579 (1952))
+- Open question: Other bases (Sections 232, 301, 122, 212(f), and emergency statutes) are open questions under Youngstown. (Youngstown Sheet & Tube Co. v. Sawyer, 343 U.S. 579 (1952))
 
 **Authorities:**
 
@@ -432,7 +444,7 @@ Group: individual rights. Code: `speech_restraint`.
 
 **Question.** Does the government condition a settlement or order on silence about the case?
 
-**Test.** Prior restraints are presumptively invalid (Nebraska Press). Courts have so far upheld no-deny settlement terms as voluntary waivers (Powell; Romeril; Rumery), though the SEC rescinded its policy in May 2026.
+**Test.** Prior restraints are presumptively invalid (Nebraska Press). Courts of appeals have so far upheld no-deny settlement terms as voluntary waivers (Powell; Romeril; Rumery), so the issue is arguable but contested.
 
 **Elements checked in each document** (gate elements must all appear before the issue is rated):
 
@@ -442,7 +454,7 @@ Group: individual rights. Code: `speech_restraint`.
 
 **Weighed factors:**
 
-- Courts of appeals have upheld no-deny terms as voluntary waivers (Powell; Romeril) (lowers the rating one step)
+- Courts of appeals have upheld no-deny terms as voluntary waivers (Powell; Romeril) (lowers the rating one step, never below Likely)
 
 **Precedent (first rule that matches):**
 
@@ -467,22 +479,23 @@ Group: individual rights. Code: `free_speech`.
 
 **Question.** Does the action restrict or compel speech, or pressure others to suppress it?
 
-**Test.** Content-based restrictions face strict scrutiny (Reed); commercial-speech restrictions face intermediate scrutiny (Central Hudson), heightened when speaker- or content-based (Sorrell). Compelled disclosures are allowed only if purely factual, uncontroversial, and reasonably related to preventing deception (Zauderer); others face heightened scrutiny (NIFLA). Government may not compel expressive work (303 Creative), override editorial judgment (Moody), or coerce third parties to suppress speech (Vullo).
+**Test.** Content-based restrictions face strict scrutiny (Reed); commercial-speech restrictions face intermediate scrutiny (Central Hudson), heightened when speaker- or content-based (Sorrell). Compelled disclosures are allowed when purely factual, uncontroversial, and reasonably related to preventing deception (Zauderer); compelled opinions or controversial statements face heightened scrutiny (NIFLA). Government may not compel expressive work (303 Creative), override editorial judgment (Moody), or coerce third parties to suppress speech (Vullo).
 
 **Elements checked in each document** (gate elements must all appear before the issue is rated):
 
-1. Regulates speech, advertising, labels, disclosures, publishing, or editorial choices *(gate)*
+1. Regulates or compels speech, advertising, warnings, publishing, broadcasting, or editorial choices *(gate)*
 2. Content-based, viewpoint-based, or compelled
-3. Compels opinion, controversial, or non-factual statements, or targets protected expression
+3. Compels opinion or controversial statements, or targets protected expression or editorial judgment
 
 **Weighed factors:**
 
-- Requires only factual, uncontroversial information about the speaker's own products (Zauderer) (lowers the rating one step)
+- Requires only purely factual, uncontroversial information about the speaker's own products or services (Zauderer) (lowers the rating one step, never below Likely)
 
 **Precedent (first rule that matches):**
 
 - Direct holding: none yet for this kind of issue.
-- Close analogy: NIFLA, Reed, and Vullo apply by close analogy to content-based or non-factual compulsion. (National Institute of Family & Life Advocates v. Becerra, 585 U.S. 755 (2018))
+- Close analogy: Pressure on third parties to suppress speech: Vullo applies by close analogy. (NRA v. Vullo, 602 U.S. 175 (2024))
+- Close analogy: Content-based restrictions or compelled non-factual statements: NIFLA and Reed apply by close analogy. (National Institute of Family & Life Advocates v. Becerra, 585 U.S. 755 (2018))
 - Open question: Outcome depends on the level of scrutiny and the fit of the rule. (Central Hudson Gas & Electric Corp. v. Public Service Comm'n, 447 U.S. 557 (1980))
 
 **Authorities:**
@@ -502,30 +515,33 @@ Group: individual rights. Code: `free_speech`.
 - How Zauderer applies to disclosures that are arguably not purely factual or uncontroversial (for example, climate or ESG disclosures).
 - How Moody applies to agency rules affecting platform moderation.
 
-## Religious liberty (Free Exercise, Establishment, RFRA, and RLUIPA)
+## Religious liberty (Free Exercise, Establishment Clause, RFRA, and RLUIPA)
 
 Group: individual rights. Code: `free_exercise`.
 
 **Question.** Does the action burden religious exercise, discriminate against religion, or favor one religion over another?
 
-**Test.** Constitution: a neutral, generally applicable rule that incidentally burdens religion gets rational-basis review (Smith); a rule that targets religion, is not neutral, allows individualized exemptions (Fulton), or treats any comparable secular activity better (Tandon) must survive strict scrutiny (Lukumi). Government may not exclude religious groups from public benefits (Carson) or draw lines between denominations (Catholic Charities). Statutes: for federal action RFRA applies strict scrutiny even to neutral, generally applicable rules: a substantial burden must be the least restrictive means of serving a compelling interest (Hobby Lobby; O Centro). RLUIPA applies the same test to land-use rules and to federally funded prisons and institutions (Holt).
+**Test.** Free Exercise: a neutral, generally applicable rule that incidentally burdens religion gets rational-basis review (Smith); a rule that targets religion, allows individualized exemptions (Fulton), or treats comparable secular activity better (Tandon) must survive strict scrutiny (Lukumi). Government may not exclude religious groups from public benefits because they are religious (Carson). Establishment Clause: government may not prefer one denomination over another (Larson; Catholic Charities). RFRA: for federal action, a substantial burden on religious exercise must be the least restrictive means of serving a compelling interest, even under a neutral rule (Hobby Lobby). RLUIPA applies the same test to land-use rules and to prisons and other institutions that receive federal funds (Holt).
 
 **Elements checked in each document** (gate elements must all appear before the issue is rated):
 
 1. Affects religious exercise, religious organizations, or houses of worship *(gate)*
-2. Imposes a requirement, penalty, or loss of benefits that burdens that exercise *(gate)*
-3. Not neutral or generally applicable (singles out religion, has exemptions for secular reasons, or discretionary exemptions)
+2. Imposes a requirement, penalty, exclusion, or loss of benefits that bears on that exercise *(gate)*
+3. Not neutral or generally applicable (singles out religion, has secular exemptions, or discretionary exemptions)
 4. No religious exemption or accommodation is provided, or one is removed
 
 **Weighed factors:**
 
-- Provides a religious exemption or accommodation (lowers the rating one step)
+- Provides a religious exemption or accommodation (lowers the rating one step, never below Likely)
 
 **Precedent (first rule that matches):**
 
 - Direct holding: none yet for this kind of issue.
-- Close analogy: Fulton, Tandon, and Lukumi apply by close analogy; for federal action RFRA independently requires strict scrutiny (Hobby Lobby). (Fulton v. City of Philadelphia, 593 U.S. 522 (2021))
+- Close analogy: Lines drawn between denominations or a religious test: Larson and Catholic Charities apply by close analogy (Establishment Clause). (Catholic Charities Bureau, Inc. v. Wisconsin Labor & Industry Review Comm'n, 605 U.S. ___ (2025))
+- Close analogy: Prisons, detention, or land use: RLUIPA (and, for federal action, RFRA) applies by close analogy (Holt). (Holt v. Hobbs, 574 U.S. 352 (2015))
+- Close analogy: Not neutral or generally applicable, with no accommodation: Fulton, Tandon, and Lukumi apply by close analogy; for federal action RFRA independently requires strict scrutiny. (Fulton v. City of Philadelphia, 593 U.S. 522 (2021))
 - Close analogy: A federal requirement that burdens religious exercise without accommodation: RFRA and Hobby Lobby apply by close analogy. (Burwell v. Hobby Lobby Stores, Inc., 573 U.S. 682 (2014))
+- Close analogy: Religious groups excluded from a public benefit: Carson v. Makin applies by close analogy. (Carson v. Makin, 596 U.S. 767 (2022))
 - Open question: A neutral, generally applicable rule gets rational-basis review under Smith, but RFRA still requires strict scrutiny of substantial burdens imposed by the federal government. (Employment Division v. Smith, 494 U.S. 872 (1990))
 
 **Authorities:**
@@ -536,6 +552,7 @@ Group: individual rights. Code: `free_exercise`.
 - *Tandon v. Newsom, 593 U.S. 61 (2021) (per curiam)* (decided 2021-04-09): A rule triggers strict scrutiny when it treats any comparable secular activity more favorably than religious exercise.
 - *Carson v. Makin, 596 U.S. 767 (2022)* (decided 2022-06-21): Government may not exclude religious organizations or uses from a generally available public benefit because they are religious.
 - *Kennedy v. Bremerton School District, 597 U.S. 507 (2022)* (decided 2022-06-27): Establishment Clause questions are decided by historical practice and understanding, not the Lemon test; government may not punish private religious expression.
+- *Larson v. Valente, 456 U.S. 228 (1982)* (decided 1982-04-21): Laws that grant denominational preferences are subject to strict scrutiny under the Establishment Clause.
 - *Catholic Charities Bureau, Inc. v. Wisconsin Labor & Industry Review Comm'n, 605 U.S. ___ (2025)* (decided 2025-06-05): Government may not grant or deny a religious exemption based on theological distinctions between denominations.
 - *Mahmoud v. Taylor, 606 U.S. ___ (2025)* (decided 2025-06-27): Government policies that substantially interfere with parents' religious upbringing of their children trigger strict scrutiny, even if neutral and generally applicable.
 - *Religious Freedom Restoration Act of 1993, 42 U.S.C. 2000bb to 2000bb-4* (decided 1993-11-16): Statute: the federal government may not substantially burden a person's religious exercise, even by a neutral and generally applicable rule, unless it uses the least restrictive means of furthering a compelling interest.
@@ -546,6 +563,7 @@ Group: individual rights. Code: `free_exercise`.
 - *Tanzin v. Tanvir, 592 U.S. 43 (2020)* (decided 2020-12-10): RFRA permits damages suits against federal officials in their individual capacities.
 - *Religious Land Use and Institutionalized Persons Act of 2000, 42 U.S.C. 2000cc to 2000cc-5* (decided 2000-09-22): Statute: applies RFRA's strict-scrutiny test to land-use regulation and to prisons and other institutions that receive federal funds.
 - *Holt v. Hobbs, 574 U.S. 352 (2015)* (decided 2015-01-20): Under RLUIPA a prison grooming rule that barred a religious beard was not the least restrictive means.
+- *Cutter v. Wilkinson, 544 U.S. 709 (2005)* (decided 2005-05-31): RLUIPA's protections for institutionalized persons are a permissible accommodation of religion.
 
 **Open questions:**
 
@@ -564,13 +582,13 @@ Group: individual rights. Code: `association`.
 **Elements checked in each document** (gate elements must all appear before the issue is rated):
 
 1. Requires disclosure of members, donors, owners, or supporters, or penalizes association *(gate)*
-2. Applies broadly or in bulk rather than case by case
+2. Applies in bulk rather than case by case
 3. The information may be made public or shared widely
 
 **Precedent (first rule that matches):**
 
 - Direct holding: none yet for this kind of issue.
-- Close analogy: Americans for Prosperity applies by close analogy to broad donor or member disclosure. (Americans for Prosperity Foundation v. Bonta, 594 U.S. 595 (2021))
+- Close analogy: Bulk donor or member disclosure that may become public: Americans for Prosperity applies by close analogy. (Americans for Prosperity Foundation v. Bonta, 594 U.S. 595 (2021))
 - Open question: Disclosure rules are judged by exacting scrutiny case by case. (NAACP v. Alabama ex rel. Patterson, 357 U.S. 449 (1958))
 
 **Authorities:**
@@ -589,7 +607,7 @@ Group: individual rights. Code: `fourth_amendment`.
 
 **Question.** Does the action authorize searches or records demands without a warrant or neutral review?
 
-**Test.** Administrative inspections generally require a warrant (See v. Seattle), and records demands require a chance for precompliance review (Patel), except in closely regulated industries (Burger).
+**Test.** Administrative inspections generally require a warrant (See v. Seattle), and records demands require a chance for precompliance review (Patel), except in closely regulated industries (Burger). Historical location records require a warrant (Carpenter).
 
 **Elements checked in each document** (gate elements must all appear before the issue is rated):
 
@@ -598,12 +616,12 @@ Group: individual rights. Code: `fourth_amendment`.
 
 **Weighed factors:**
 
-- A closely regulated industry (the Burger exception may apply) (lowers the rating one step)
+- A closely regulated industry (the Burger exception may apply) (lowers the rating one step, never below Likely)
 
 **Precedent (first rule that matches):**
 
 - Direct holding: none yet for this kind of issue.
-- Close analogy: See v. Seattle and Patel apply by close analogy. (City of Los Angeles v. Patel, 576 U.S. 409 (2015))
+- Close analogy: A search or records demand without a warrant or precompliance review: See v. Seattle and Patel apply by close analogy. (City of Los Angeles v. Patel, 576 U.S. 409 (2015))
 - Open question: Ordinary inspections and subpoenas are usually lawful. (New York v. Burger, 482 U.S. 691 (1987))
 
 **Authorities:**
@@ -621,25 +639,27 @@ Group: individual rights. Code: `fourth_amendment`.
 
 Group: individual rights. Code: `due_process_takings`.
 
-**Question.** Does the action take property or a license without the notice and hearing due process requires, or without fair notice of the rule?
+**Question.** Does an action against particular parties take property or a license without the notice and hearing due process requires, or does a rule take property by granting physical access?
 
-**Test.** The process due turns on the Mathews balance; agencies must give fair notice of prohibited conduct before sanctioning it (Fox); a right of physical access to property is a per se taking (Cedar Point).
+**Test.** Due process applies to actions directed at particular parties, not to rules of general application (Bi-Metallic). The process due turns on the Mathews balance, and agencies must give fair notice of prohibited conduct before sanctioning it (Fox). A rule granting a right of physical access to private property is a per se taking (Cedar Point).
 
 **Elements checked in each document** (gate elements must all appear before the issue is rated):
 
-1. Property, money, or a license is taken or suspended *(gate)*
-2. Without prior notice or a hearing, or without fair notice of the standard *(gate)*
-3. A physical occupation or right of access to private property
+1. Property, money, or a license is taken, seized, revoked, or suspended *(gate)*
+2. Directed at particular parties (an enforcement or adjudicative action), or a rule granting physical access *(gate)*
+3. Without prior notice, a hearing, or fair notice of the standard; or a right of physical access to property *(gate)*
+4. A physical occupation or right of access to private property
 
 **Precedent (first rule that matches):**
 
 - Direct holding: none yet for this kind of issue.
-- Close analogy: Cedar Point applies by close analogy to a right of access. (Cedar Point Nursery v. Hassid, 594 U.S. 139 (2021))
-- Close analogy: Mathews and Fox apply by close analogy. (Mathews v. Eldridge, 424 U.S. 319 (1976))
+- Close analogy: A right of physical access to private property: Cedar Point applies by close analogy. (Cedar Point Nursery v. Hassid, 594 U.S. 139 (2021))
+- Close analogy: A deprivation imposed on particular parties without notice or a hearing: Mathews and Fox apply by close analogy. (Mathews v. Eldridge, 424 U.S. 319 (1976))
 - Open question: Due process is a fact-specific balance. (Mathews v. Eldridge, 424 U.S. 319 (1976))
 
 **Authorities:**
 
+- *Bi-Metallic Investment Co. v. State Board of Equalization, 239 U.S. 441 (1915)* (decided 1915-12-20): Due process does not require a hearing before the government adopts a rule of general application; it protects particular parties singled out for action.
 - *Mathews v. Eldridge, 424 U.S. 319 (1976)* (decided 1976-02-24): The process due before a deprivation is set by balancing the private interest, the risk of error, and the government's interest.
 - *FCC v. Fox Television Stations, Inc., 567 U.S. 239 (2012)* (decided 2012-06-21): Due process requires fair notice of what conduct is prohibited before an agency sanctions it.
 - *Cedar Point Nursery v. Hassid, 594 U.S. 139 (2021)* (decided 2021-06-23): A regulation granting a right to physically enter private property is a per se taking.
@@ -647,7 +667,7 @@ Group: individual rights. Code: `due_process_takings`.
 
 **Open questions:**
 
-- When interim final rules adopted without comment also deny constitutionally adequate notice.
+- When summary suspensions of licenses are justified by emergencies without a prior hearing.
 
 ## Excessive fines and forfeitures
 
@@ -665,7 +685,7 @@ Group: individual rights. Code: `excessive_fines`.
 
 **Weighed factors:**
 
-- The money is described as restitution to victims, which is generally remedial (lowers the rating one step)
+- The money is described as restitution to victims, which is generally remedial (lowers the rating one step, never below Likely)
 
 **Precedent (first rule that matches):**
 
@@ -694,12 +714,12 @@ Group: individual rights. Code: `equal_protection`.
 **Elements checked in each document** (gate elements must all appear before the issue is rated):
 
 1. The action classifies by race or sex *(gate)*
-2. It grants an express preference, presumption, or set-aside *(gate)*
+2. It grants an express preference, presumption, set-aside, or quota based on race or sex *(gate)*
 
 **Precedent (first rule that matches):**
 
 - Direct holding: none yet for this kind of issue.
-- Close analogy: SFFA and Adarand apply by close analogy; strict scrutiny is rarely satisfied. (Students for Fair Admissions v. Harvard, 600 U.S. 181 (2023))
+- Close analogy: An express racial or sex preference: SFFA and Adarand apply by close analogy; strict scrutiny is rarely satisfied. (Students for Fair Admissions v. Harvard, 600 U.S. 181 (2023))
 - Open question: Mentions of diversity programs are not themselves classifications. (Adarand Constructors, Inc. v. Peña, 515 U.S. 200 (1995))
 
 **Authorities:**

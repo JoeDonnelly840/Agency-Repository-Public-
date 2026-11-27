@@ -266,6 +266,13 @@ ul.plain li { margin: 5px 0; }
 .checks label { display: flex; gap: 8px; font-size: .84rem; color: var(--text-2); padding: 2px 0; }
 .chart-stage { border: 1px solid var(--steel-3); border-radius: var(--r-lg); overflow: hidden; min-height: 300px; }
 .chart-stage svg { width: 100%; height: auto; display: block; }
+.chart-col { position: sticky; top: 76px; }
+.chart-actions { margin: 10px 0 0; }
+.seg { display: flex; gap: 0; border: 1px solid var(--steel-3); border-radius: 8px; overflow: hidden; }
+.seg button { flex: 1; background: transparent; border: 0; border-right: 1px solid var(--steel-3); color: var(--text-2); font: inherit; font-size: .8rem; padding: 6px 4px; cursor: pointer; }
+.seg button:last-child { border-right: 0; }
+.seg button.on { background: var(--steel-3); color: var(--text); font-weight: 600; }
+.seg button:hover, .seg button:focus-visible { background: var(--steel-2, rgba(255,255,255,.06)); color: var(--text); }
 .legend { display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: .8rem; color: var(--text-2); margin-top: 10px; }
 .legend span { display: inline-flex; align-items: center; gap: 6px; }
 .legend i { width: 10px; height: 10px; border-radius: 2px; display: inline-block; }
@@ -304,6 +311,7 @@ ul.plain li { margin: 5px 0; }
 .msg-next { display: flex; flex-wrap: wrap; gap: 6px; }
 .msg-next button, .bot-sugg button { font: inherit; font-size: .78rem; color: var(--cobalt-2); background: var(--steel-1); border: 1px solid var(--steel-3); border-radius: 999px; padding: 3px 10px; cursor: pointer; text-align: left; }
 .msg-next button:hover, .bot-sugg button:hover { border-color: var(--cobalt); color: var(--text); }
+.note { font-size: .85rem; color: var(--text-2); background: var(--steel-1); border-left: 3px solid var(--steel-4); border-radius: 4px; padding: 6px 10px; margin: 8px 0; }
 .typing { color: var(--text-3); font-style: italic; }
 .bot-sugg { display: flex; flex-wrap: wrap; gap: 6px; padding: 0 14px 10px; }
 .bot-form { display: flex; gap: 8px; padding: 12px 14px; border-top: 1px solid var(--steel-3); background: var(--steel-1); }
@@ -334,6 +342,9 @@ ul.plain li { margin: 5px 0; }
   .brief { grid-template-columns: 1fr; }
   .quick input { width: 170px; }
   .research, .chart-builder { grid-template-columns: 1fr; }
+  .chart-col { position: static; order: -1; }
+  .chart-stage { overflow-x: auto; }
+  .chart-stage svg { min-width: 680px; }
   .facets { position: static; max-height: none; }
 }
 @media (max-width: 760px) {

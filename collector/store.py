@@ -159,8 +159,8 @@ def archive_old_days(today, root=None):
 
 
 def fact_row(it, subs):
-    """One compact row per item for the charts: date, bodies, kind, type, outcome, sanctions, rated issues,
-    constitutionality level, impact level, routine."""
+    """One compact row per item for the charts and the assistant: date, bodies, kind, type, outcome, sanctions,
+    rated issues, lawfulness level, impact level, routine, possible issues."""
     sub = it.get("subcategory") or ""
     if sub not in subs:
         subs[sub] = len(subs)
@@ -168,7 +168,8 @@ def fact_row(it, subs):
     bodies = [it["corporation"]] if it.get("corporation") else it.get("agencies", [])
     return [it.get("date") or "", bodies, it.get("category", ""), subs[sub], it.get("outcome", ""),
             it.get("sanctions", []), sorted({f["code"] for f in it.get("flags", []) if f.get("level")}),
-            r.get("level", 0), (it.get("impact") or {}).get("level", 0), 1 if it.get("routine") else 0]
+            r.get("level", 0), (it.get("impact") or {}).get("level", 0), 1 if it.get("routine") else 0,
+            sorted({f["code"] for f in it.get("flags", []) if not f.get("level")})]
 
 
 def write_facts(months, root=None):

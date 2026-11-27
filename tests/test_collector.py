@@ -141,8 +141,7 @@ class ClassifyAndFlagTests(unittest.TestCase):
                      title="Ensuring Accountability for All Agencies", agencies=[{"slug": "executive-office-of-the-president"}])
         it = process(doc, query="president")
         self.assertEqual(it["category"], "presidential")
-        self.assertIn("removal_independence", [f["code"] for f in it["flags"]])
-        self.assertIsNone(it["rating"])        # directing agencies is lawful after Slaughter: possible issue only
+        self.assertIsNone(it["rating"])        # directing agencies is lawful after Slaughter: not rated
 
     def test_alj_at_rulemaking_hearing_is_not_penalty_flag(self):
         doc = fr_doc(title="Heat Injury and Illness Prevention; Informal Public Hearing",
@@ -220,12 +219,19 @@ class RatingTests(unittest.TestCase):
         f = it["flags"][0]
         self.assertEqual((f["level"], f["weighed"]), (3, ["settled"]))
 
-    def test_contrary_holding_lowers_one_step_but_never_removes(self):
+    def test_practice_the_supreme_court_upheld_is_a_possible_issue_with_the_reason(self):
         doc = fr_doc(title="Acme Wireless; Notice of Apparent Liability for Forfeiture; administrative law judge",
                      abstract="civil penalty for fraud", agencies=[{"slug": "federal-communications-commission"}])
         f = [x for x in process(doc, query="fcc")["flags"] if x["code"] == "agency_adjudication"][0]
-        self.assertIn("fcc_forfeiture", f["weighed"])
-        self.assertEqual(f["level"], 1)                        # close analogy, every element (2), lowered one step
+        self.assertEqual((f["level"], f["unrated_by"]), (0, "fcc_forfeiture"))   # FCC v. AT&T upheld FCC forfeitures
+
+    def test_weighed_factor_lowers_one_step_but_never_below_likely(self):
+        doc = fr_doc(title="In the Matter of Acme Customs Brokers; Order Instituting Proceedings",
+                     abstract="The Division seeks civil money penalties for fraud in customs duty declarations.",
+                     agencies=[{"slug": "federal-trade-commission"}])
+        f = [x for x in process(doc, query="ftc")["flags"] if x["code"] == "agency_adjudication"][0]
+        self.assertIn("public_rights", f["weighed"])
+        self.assertEqual(f["level"], 1)                        # close analogy with every element (2), lowered one step
 
     def test_ieepa_tariffs_near_certain(self):
         doc = fr_doc(type="Presidential Document", subtype="Executive Order", title="Imposing Tariffs",
@@ -374,6 +380,165 @@ class FullTextTests(unittest.TestCase):
             self.assertEqual(fresh["ft"]["v"], 1)
 
 
+class MethodologyReviewTests(unittest.TestCase):
+    """One test for each problem found in the November 2026 review of the methodology."""
+
+    def test_settled_sec_fraud_case_is_unchanged(self):        # item 8: kept as it was, by the owner's choice
+        it = process(fr_doc(title="In the Matter of X; Order Instituting Cease-and-Desist Proceedings, Making Findings, and Imposing a Civil Penalty",
+                            abstract="Respondent consented to the entry of the order. The order finds X made misleading statements and imposes a civil money penalty."))
+        f = [x for x in it["flags"] if x["code"] == "agency_adjudication"][0]
+        self.assertEqual((f["level"], f["weighed"]), (3, ["settled"]))
+
+    def test_ratification_is_a_cure_not_a_violation(self):      # item 6
+        it = process(fr_doc(type="Notice", title="Ratification of Appointment of Administrative Law Judges",
+                            abstract="The Commission ratifies the appointment of its administrative law judges to resolve any Appointments Clause concerns."))
+        self.assertNotIn("officer_appointment_removal", [f["code"] for f in it["flags"]])
+        self.assertIsNone(it["rating"])
+
+    def test_unappointed_judge_is_still_flagged(self):
+        it = process(fr_doc(type="Notice", title="Order on Remand",
+                            abstract="The administrative law judge who issued the initial decision was not properly appointed."))
+        f = [x for x in it["flags"] if x["code"] == "officer_appointment_removal"][0]
+        self.assertGreaterEqual(f["level"], 2)
+
+    def test_chevron_reliance_is_rated_likely_at_most(self):     # item 3
+        it = process(fr_doc(type="Rule", title="Definition of Term", publication_date="2019-05-01",
+                            abstract="The agency's interpretation is reasonable and entitled to Chevron deference because the statute is ambiguous."))
+        f = [x for x in it["flags"] if x["code"] == "statutory_deference"][0]
+        self.assertEqual((f["level"], f["capped"]), (1, 1))
+        self.assertEqual(f["at_the_time"]["because"], "loper_bright")
+
+    def test_chevron_the_company_is_not_chevron_deference(self):
+        it = process(fr_doc(type="Notice", title="Clean Air Act Operating Permit Program; Petition for Objection To Proposed Permit for Chevron U.S.A. Inc. Refinery",
+                            abstract="The petition asks EPA to object to a permit; the Administrator interprets the regulations."))
+        self.assertNotIn("statutory_deference", [f["code"] for f in it["flags"] if f["level"]])
+
+    def test_post_loper_bright_discussion_is_not_rated(self):
+        it = process(fr_doc(type="Rule", title="Updating Certification Regulations", publication_date="2026-01-15",
+                            abstract="Following Loper Bright, the agency no longer relies on Chevron deference and adopts the best reading of the statute."))
+        f = [x for x in it["flags"] if x["code"] == "statutory_deference"][0]
+        self.assertEqual((f["level"], f["unrated_by"]), (0, "post_loper"))
+
+    def test_due_process_does_not_apply_to_rules_of_general_application(self):   # item 4
+        it = process(fr_doc(type="Rule", title="Interim Final Rule; Revisions to Licensing Fees",
+                            abstract="This interim final rule is immediately effective. Licenses that are not renewed will be revoked."))
+        self.assertNotIn("due_process_takings", [f["code"] for f in it["flags"]])
+
+    def test_due_process_applies_to_actions_against_particular_parties(self):
+        it = process(fr_doc(type="Notice", title="In the Matter of Acme Securities; Order of Summary Suspension of Registration",
+                            abstract="The Commission suspended the registration of the broker-dealer without a prior hearing, effective immediately."))
+        self.assertEqual([f["level"] for f in it["flags"] if f["code"] == "due_process_takings"], [1])
+
+    def test_rule_granting_physical_access_is_a_takings_issue(self):
+        it = process(fr_doc(type="Rule", title="Access to agricultural employers' property",
+                            abstract="The rule grants union organizers a right to enter employers' property for three hours per day.",
+                            agencies=[{"slug": "labor-department"}]), query="dol")
+        f = [x for x in it["flags"] if x["code"] == "due_process_takings"][0]
+        self.assertEqual((f["level"], f["authority"]), (2, "cedar_point"))
+
+    def test_waiver_congress_authorized_is_not_executive_lawmaking(self):   # item 5
+        it = process(fr_doc(type="Presidential Document", subtype="Memorandum", title="Waiver of Jones Act requirements",
+                            abstract="Pursuant to the waiver authority Congress provided, I waive the requirements of section 27 for vessels carrying fuel.",
+                            agencies=[{"slug": "executive-office-of-the-president"}]), query="president")
+        self.assertEqual([f for f in it["flags"] if f["level"]], [])
+
+    def test_refusing_to_enforce_a_statute_is_executive_lawmaking(self):
+        it = process(fr_doc(type="Presidential Document", subtype="Executive Order", title="Pausing Enforcement",
+                            abstract="The Attorney General shall not enforce the Act for 75 days, and companies shall not be penalized.",
+                            agencies=[{"slug": "executive-office-of-the-president"}]), query="president")
+        f = [x for x in it["flags"] if x["code"] == "presidential_lawmaking"][0]
+        self.assertEqual((f["level"], f["authority"]), (1, "clinton_ny"))
+
+    def test_section_232_tariffs_alone_are_not_rated(self):
+        it = process(fr_doc(type="Presidential Document", subtype="Proclamation", title="Adjusting Imports of Steel Into the United States",
+                            abstract="Under section 232 of the Trade Expansion Act of 1962, an additional ad valorem duty applies to imported steel articles.",
+                            agencies=[{"slug": "executive-office-of-the-president"}]), query="president")
+        self.assertEqual([f for f in it["flags"] if f["level"]], [])
+
+    def test_full_text_words_cannot_inflate_a_rating(self):     # item 1
+        from collector import fulltext
+        doc = fr_doc(type="Rule", title="Energy Conservation Standards for Refrigerators", significant=True,
+                     agencies=[{"slug": "environmental-protection-agency"}])
+        item = federal_register._normalize(doc)
+        item["query_agencies"] = ["epa"]
+        classify(item)
+        flag_item(item)
+        self.assertIsNone(item["rating"])
+        boiler = ("Commenters said this unprecedented, economically significant rule rests on our general rulemaking authority and "
+                  "will for the first time set nationwide standards. " * 3) + " filler" * 600
+        fulltext.record_on_item(item, {**fulltext.extract(boiler), "v": fulltext.FT_VERSION, "read": "2026-11-27"})
+        flag_item(item)
+        f = [x for x in item["flags"] if x["code"] == "major_questions"][0]
+        self.assertLessEqual(f["level"], 1)                     # preamble passages can support Likely at most
+
+    def test_issue_must_appear_in_operative_text(self):
+        from collector import fulltext
+        doc = fr_doc(type="Rule", title="Hospital Payment Updates", agencies=[{"slug": "health-and-human-services-department"}])
+        item = federal_register._normalize(doc)
+        item["query_agencies"] = ["hhs"]
+        classify(item)
+        fulltext.record_on_item(item, {**fulltext.extract("Commenters objected to race-based preferences and racial quotas in other programs. " + " filler" * 600),
+                                       "v": fulltext.FT_VERSION, "read": "2026-11-27"})
+        flag_item(item)
+        self.assertIsNone(item["rating"])
+
+    def test_operative_regulatory_text_supports_higher_ratings(self):
+        from collector import fulltext
+        raw = (" preamble words" * 800 + " List of Subjects in 29 CFR Part 1910. For the reasons stated, OSHA amends 29 CFR part 1910 as follows: "
+               "All employers with 100 or more employees must comply with this emergency temporary standard, issued under 29 U.S.C. 655(c), "
+               "which is unprecedented in reach and imposes nationwide requirements.")
+        rec = fulltext.extract(raw)
+        self.assertTrue(rec["opev"])
+
+    def test_recalls_are_not_speech_cases_and_gagne_is_not_a_gag(self):
+        it = process(fr_doc(type="Notice", title="Brendon Gagne: Final Debarment Order",
+                            abstract="FDA is issuing an order debarring Brendon Gagne for 5 years."))
+        self.assertNotIn("speech_restraint", [f["code"] for f in it["flags"]])
+
+    def test_routine_state_plan_approvals_are_not_federalism_flags(self):
+        it = process(fr_doc(type="Rule", title="Air Plan Approval; Vermont; Regional Haze Five-Year Progress Report",
+                            abstract="EPA approves the State's plan; states must submit progress reports.",
+                            agencies=[{"slug": "environmental-protection-agency"}]), query="epa")
+        self.assertNotIn("federalism", [f["code"] for f in it["flags"]])
+
+    def test_religion_needs_a_real_burden(self):
+        it = process(fr_doc(type="Rule", title="Grants program requirements",
+                            abstract="Faith-based organizations may apply; awards are made on the merits.",
+                            agencies=[{"slug": "health-and-human-services-department"}]), query="hhs")
+        self.assertEqual([f for f in it["flags"] if f["code"] == "free_exercise" and f["level"]], [])
+
+    def test_establishment_clause_and_rluipa_are_checked(self):
+        est = process(fr_doc(type="Rule", title="Exemptions for Religious Employers",
+                             abstract="The rule provides exemptions that distinguish between denominations, requiring religious employers to meet a religious test.",
+                             agencies=[{"slug": "labor-department"}]), query="dol")
+        f = [x for x in est["flags"] if x["code"] == "free_exercise"][0]
+        self.assertEqual(f["authority"], "catholic_charities")
+        pr = process(fr_doc(type="Rule", title="Federal Detention Standards",
+                            abstract="Detainees must comply with grooming rules that prohibit religious beards; no religious exemption is available.",
+                            agencies=[{"slug": "health-and-human-services-department"}]), query="hhs")
+        f = [x for x in pr["flags"] if x["code"] == "free_exercise"][0]
+        self.assertEqual(f["authority"], "holt")
+        self.assertGreaterEqual(f["level"], 1)
+
+    def test_factual_disclosures_are_weighed_under_zauderer(self):
+        it = process(fr_doc(type="Rule", title="Fee Disclosure Rule",
+                            abstract="Firms must disclose fees. This compelled disclosure is purely factual and uncontroversial, though critics call it controversial opinion.",
+                            agencies=[{"slug": "federal-trade-commission"}]), query="ftc")
+        f = [x for x in it["flags"] if x["code"] == "free_speech"][0]
+        self.assertIn("factual_disclosure", f["weighed"])
+
+    def test_court_rulings_carry_cautions_and_memos_match_code(self):
+        from collector import doctrine, rulings
+        cautioned = {r["key"] for r in rulings.RULINGS if r.get("caution")}
+        self.assertTrue({"osha_ets", "wotus_2015", "dol_fiduciary"} <= cautioned)
+        self.assertIn("narrow", doctrine.AUTHORITIES["cook"]["held"])
+        for issue in doctrine.ISSUES:
+            for w in issue.get("weighed", []):
+                self.assertIn(w["effect"], ("lowers", "noted", "unrates"))
+            ex = doctrine.export()["doctrine"]["issues"]
+            self.assertTrue(all("effect" in w for i in ex for w in i["weighed"]))
+
+
 class DatesAndStorageTests(unittest.TestCase):
     def test_signing_date_is_the_action_date(self):
         doc = fr_doc(type="Presidential Document", subtype="Executive Order", title="An order",
@@ -399,6 +564,13 @@ class DatesAndStorageTests(unittest.TestCase):
             with open(os.path.join(root, "facts", "2026-01.json")) as f:
                 facts = json.load(f)
             self.assertEqual(facts["rows"][0][0], "2026-01-15")
+
+    def test_fact_rows_list_rated_and_possible_issues_separately(self):
+        it = {"date": "2026-01-15", "agencies": ["fda"], "category": "enforcement", "subcategory": "Enforcement notice",
+              "outcome": "charged", "sanctions": ["civil_penalty"], "rating": {"level": 2}, "impact": {"level": 1},
+              "flags": [{"code": "agency_adjudication", "level": 2}, {"code": "due_process_takings", "level": 0}]}
+        row = store.fact_row(it, {})
+        self.assertEqual((row[6], row[7], row[10]), (["agency_adjudication"], 2, ["due_process_takings"]))
 
     def test_exchange_fee_filing_is_routine(self):
         it = process(fr_doc(title="Self-Regulatory Organizations; Nasdaq Stock Market LLC; Notice of Filing and Immediate "

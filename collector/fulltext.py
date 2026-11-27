@@ -27,7 +27,7 @@ import urllib.parse
 from . import config, doctrine, store
 from .http_client import RequestRefused, SourceUnavailable
 
-FT_VERSION = 1
+FT_VERSION = 2   # 2: passages from the operative text (authority line, regulatory text) kept separately
 HALF = 120
 MAX_PASSAGES = 10
 SOURCE = "federal_register_fulltext"
@@ -83,6 +83,8 @@ SWEEP_LABELS = {
 
 _TAG = re.compile(r"<[^>]+>")
 _WS = re.compile(r"\s+")
+# Where a rule's own regulatory text begins (the amendments to the Code of Federal Regulations).
+_REG_TEXT = re.compile(r"List of Subjects in \d+ CFR|(?:amend(?:s|ed)?|amending) (?:title \d+|\d+ CFR)[^.]{0,120}?as follows:|Regulatory Text|PART \d+[\u2014\u2013-]", re.I)
 _BASIS = re.compile(r"by the authority vested in me[^.]{0,600}\.|\bAuthority:\s[^\n]{0,400}", re.I)
 
 
@@ -115,7 +117,8 @@ def attach(items, root=None):
             cache[m] = load_evidence(m, root)["items"]
         ev = cache[m].get(it["id"])
         if ev:
-            it["_ev"] = ev.get("ev", [])
+            it["_ev"] = (ev.get("opev") or []) + (ev.get("ev") or [])
+            it["_op"] = ev.get("opev") or []
             if not it.get("ft") and ev.get("v"):
                 it["ft"] = {k: ev[k] for k in ("v", "read", "terms") if ev.get(k)}
     return items
@@ -123,6 +126,7 @@ def attach(items, root=None):
 
 def detach(item):
     item.pop("_ev", None)
+    item.pop("_op", None)
     return item
 
 
@@ -135,8 +139,10 @@ def merge_evidence(items_ev, root=None):
         data = load_evidence(month, root)
         for iid, rec in recs.items():
             old = data["items"].get(iid, {})
-            merged = {**old, **{k: v for k, v in rec.items() if k not in ("ev", "terms")}}
+            merged = {**old, **{k: v for k, v in rec.items() if k not in ("ev", "opev", "terms")}}
             merged["ev"] = _dedupe((rec.get("ev") or []) + (old.get("ev") or []))[:MAX_PASSAGES + 4]
+            if rec.get("opev") is not None or old.get("opev"):
+                merged["opev"] = _dedupe((rec.get("opev") or []) + ([] if rec.get("opev") is not None else old.get("opev") or []))[:MAX_PASSAGES]
             merged["terms"] = sorted(set(old.get("terms", [])) | set(rec.get("terms", [])))
             if not merged["terms"]:
                 merged.pop("terms")
@@ -177,16 +183,20 @@ def extract(raw):
         merged.append((s, e, w))
     best = sorted(merged, key=lambda x: -x[2])[:MAX_PASSAGES]
     best.sort()
-    passages = []
-    for s, e, _ in best:
+    reg = _REG_TEXT.search(text, int(len(text) * 0.15)) if len(text) > 2000 else None
+    reg_at = reg.start() if reg else len(text) + 1
+    passages, operative = [], []
+    for s, e, w in best:
         frag = text[s:e]
         if s > 0:
             frag = frag.split(" ", 1)[-1]
         if e < len(text):
             frag = frag.rsplit(" ", 1)[0]
-        passages.append(("…" if s > 0 else "") + frag + ("…" if e < len(text) else ""))
+        passage = ("…" if s > 0 else "") + frag + ("…" if e < len(text) else "")
+        # operative: the authority line (weight 99) or the rule's own regulatory text
+        (operative if (w >= 99 or e - HALF >= reg_at) else passages).append(passage)
     cites = sorted(k for k, _, rx in doctrine.STATUTE_RX if rx.search(text))
-    return {"ev": passages, "cites": cites, "chars": len(text)}
+    return {"ev": passages, "opev": operative, "cites": cites, "chars": len(text)}
 
 
 # ------------------------------------------------------------------ requests
@@ -297,8 +307,10 @@ def record_on_item(item, rec):
     else:
         ft.pop("note", None)
     item["ft"] = ft
-    if rec.get("ev"):
-        item["_ev"] = _dedupe((rec.get("ev") or []) + item.get("_ev", []))
+    if rec.get("ev") or rec.get("opev"):
+        item["_ev"] = _dedupe((rec.get("opev") or []) + (rec.get("ev") or []) + item.get("_ev", []))
+    if rec.get("opev"):
+        item["_op"] = _dedupe((rec.get("opev") or []) + item.get("_op", []))
     return item
 
 
@@ -325,7 +337,7 @@ def enrich_new(client, items, start, end, max_reads=None):
             continue
         reads += 1
         record_on_item(it, rec)
-        if rec.get("ev") or rec.get("cites"):
+        if rec.get("ev") or rec.get("opev") or rec.get("cites"):
             prev = out.get(it["id"], {})
             out[it["id"]] = {**rec, "ev": rec.get("ev", []) + prev.get("ev", []), "terms": prev.get("terms", [])}
     report["detail"] = (f"{len(found)} documents matched legal-term searches ({used} requests"
@@ -344,7 +356,7 @@ def save_records(items, records, root=None):
             continue
         month = (store.filed_day(it) or "")[:7]
         if month:
-            store_ev[iid] = (month, {k: v for k, v in rec.items() if k in ("v", "read", "chars", "ev", "cites", "terms")})
+            store_ev[iid] = (month, {k: v for k, v in rec.items() if k in ("v", "read", "chars", "ev", "opev", "cites", "terms")})
     if store_ev:
         merge_evidence(store_ev, root)
 

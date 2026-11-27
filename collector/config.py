@@ -9,7 +9,7 @@ alongside the federal ones without changing the data format.
 """
 
 APP_NAME = "RegCollect"
-APP_VERSION = "3.1"
+APP_VERSION = "3.2"
 REPO_URL = "https://github.com/JoeDonnelly840/Agency-Repository-Public-"
 USER_AGENT = f"{APP_NAME}/{APP_VERSION} (personal legal-research tool; +{REPO_URL})"
 SEC_USER_AGENT_NAME = APP_NAME  # followed by the SEC_CONTACT_EMAIL secret, per the SEC's fair-access format

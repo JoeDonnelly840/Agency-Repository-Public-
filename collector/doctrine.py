@@ -1,4 +1,4 @@
-"""The RegCollect doctrine library and rating rubric (rubric version 3.1).
+"""The RegCollect doctrine library and rating rubric (rubric version 3.2).
 
 Every kind of constitutional issue RegCollect screens for is described here as a
 short legal memo: the question, the governing test broken into elements, the
@@ -56,7 +56,7 @@ import re
 
 from . import rulings
 
-RUBRIC_VERSION = "3.1"
+RUBRIC_VERSION = "3.2"
 REVIEW_STATUS = {"status": "Draft, not yet reviewed", "reviewed_by": "", "last_reviewed": ""}
 STRENGTH = {"direct": 3, "analogy": 2, "open": 1}
 STRENGTH_LABEL = {"direct": "Direct holding", "analogy": "Close analogy", "open": "Open question"}
@@ -105,6 +105,7 @@ IN_HOUSE = _rx(r"administrative law judge", r"order instituting (?:cease-and-des
                r"administrative proceeding", r"in-house", r"hearing officer", r"initial decision", r"departmental appeals board")
 PUBLIC_RIGHTS = _rx(r"tariff", r"customs dut", r"immigration", r"public lands", r"federal benefits", r"grant (?:award|program)",
                     r"\btax(?:es|ation)?\b", ev=False)
+PHYSICAL_ACCESS = re.compile(r"access easement|right (?:of|to) (?:physical )?(?:access|entry|enter)|physical(?:ly)? (?:occup\w*|invasion)|occupation of (?:private )?(?:property|land)", re.I)
 MONEY = re.compile(r"\$\s?(\d[\d,]*(?:\.\d+)?)\s*(million|billion)?", re.I)
 
 
@@ -172,7 +173,7 @@ AUTHORITIES = {
                       "held": "Congress may assign new statutory 'public rights' (there, OSHA penalties) to agency adjudication without a jury; Jarkesy later confined this to claims without a common-law analogue."},
     "axon": {"cite": "Axon Enterprise, Inc. v. FTC, 598 U.S. 175 (2023)", "decided": "2023-04-14",
              "held": "Parties may bring structural constitutional challenges to agency proceedings in federal district court without waiting for the agency to finish."},
-    "fcc_att": {"cite": "FCC v. AT&T, Inc., No. 25-406 (U.S. June 4, 2026)", "decided": "2026-06-04",
+    "fcc_att": {"cite": "FCC v. AT&T, Inc., No. 25-406 (U.S. June 4, 2026) (8 to 1)", "decided": "2026-06-04",
                 "held": "FCC forfeiture orders do not violate the Seventh Amendment because they do not definitively resolve liability and the FCC's findings are not conclusive in a later collection suit."},
     # officers and removal
     "lucia": {"cite": "Lucia v. SEC, 585 U.S. 237 (2018)", "decided": "2018-06-21",
@@ -183,9 +184,8 @@ AUTHORITIES = {
                         "held": "Two layers of for-cause protection between the President and officers of the PCAOB violate the separation of powers."},
     "slaughter": {"cite": "Trump v. Slaughter (U.S. June 29, 2026)", "decided": "2026-06-29",
                   "held": "Statutory limits on the President's power to remove FTC commissioners are unconstitutional; Humphrey's Executor is overruled."},
-    "cook": {"cite": "Trump v. Cook (U.S. June 29, 2026)", "decided": "2026-06-29",
-             "held": "Upheld an injunction against the attempted removal of a Federal Reserve governor, treating the Federal Reserve differently."},
-    "seila": {"cite": "Seila Law LLC v. CFPB, 591 U.S. 197 (2020)", "decided": "2020-06-29",
+    "cook": {"cite": "Trump v. Cook, No. 25A312 (U.S. June 29, 2026)", "decided": "2026-06-29",
+             "held": "On narrow, interim grounds, the Court (5 to 4) left in place a lower-court order keeping a Federal Reserve governor in office while her challenge to her removal proceeds, treating the Federal Reserve differently from other agencies."},    "seila": {"cite": "Seila Law LLC v. CFPB, 591 U.S. 197 (2020)", "decided": "2020-06-29",
               "held": "For-cause removal protection for the CFPB's single director is unconstitutional."},
     "collins": {"cite": "Collins v. Yellen, 594 U.S. 220 (2021)", "decided": "2021-06-23",
                 "held": "An unconstitutional removal restriction does not by itself void the agency's actions; a challenger must show the restriction caused harm."},
@@ -289,6 +289,10 @@ AUTHORITIES = {
                "held": "Government may not exclude religious organizations or uses from a generally available public benefit because they are religious."},
     "kennedy": {"cite": "Kennedy v. Bremerton School District, 597 U.S. 507 (2022)", "decided": "2022-06-27",
                 "held": "Establishment Clause questions are decided by historical practice and understanding, not the Lemon test; government may not punish private religious expression."},
+    "larson": {"cite": "Larson v. Valente, 456 U.S. 228 (1982)", "decided": "1982-04-21",
+               "held": "Laws that grant denominational preferences are subject to strict scrutiny under the Establishment Clause."},
+    "cutter": {"cite": "Cutter v. Wilkinson, 544 U.S. 709 (2005)", "decided": "2005-05-31",
+               "held": "RLUIPA's protections for institutionalized persons are a permissible accommodation of religion."},
     "catholic_charities": {"cite": "Catholic Charities Bureau, Inc. v. Wisconsin Labor & Industry Review Comm'n, 605 U.S. ___ (2025)", "decided": "2025-06-05",
                            "held": "Government may not grant or deny a religious exemption based on theological distinctions between denominations."},
     "mahmoud": {"cite": "Mahmoud v. Taylor, 606 U.S. ___ (2025)", "decided": "2025-06-27",
@@ -326,6 +330,8 @@ AUTHORITIES = {
     "carpenter": {"cite": "Carpenter v. United States, 585 U.S. 296 (2018)", "decided": "2018-06-22",
                   "held": "Acquiring historical cell-site location records is a search requiring a warrant."},
     # process and property
+    "bi_metallic": {"cite": "Bi-Metallic Investment Co. v. State Board of Equalization, 239 U.S. 441 (1915)", "decided": "1915-12-20",
+                    "held": "Due process does not require a hearing before the government adopts a rule of general application; it protects particular parties singled out for action."},
     "mathews": {"cite": "Mathews v. Eldridge, 424 U.S. 319 (1976)", "decided": "1976-02-24",
                 "held": "The process due before a deprivation is set by balancing the private interest, the risk of error, and the government's interest."},
     "fox": {"cite": "FCC v. Fox Television Stations, Inc., 567 U.S. 239 (2012)", "decided": "2012-06-21",
@@ -353,29 +359,41 @@ AUTHORITIES.update(rulings.AUTHORITIES)
 
 def rule(when, level, authority, before=None, note=""):
     """A precedent rule. when: fn(item, text, found) -> bool. level: 'direct', 'analogy', or 'open'.
-    before: the precedent strength for actions dated before the authority was decided (default: open)."""
+    before: the precedent strength for actions dated before the authority was decided (default: open), or "lawful"
+            when the practice was lawful under the precedent that governed at the time.
+    note: plain-language statement of when this rule applies; shown on the Methodology page and on each flag."""
     return {"when": when, "level": level, "authority": authority, "before": before or "open", "note": note}
 
 
-def weighed(id, text, detect, since=None, lowers=True):
-    """A factor that cuts against a violation. lowers=False means it is noted but does not change the rating."""
-    return {"id": id, "text": text, "detect": detect, "since": since, "lowers": lowers}
+def weighed(id, text, detect, effect="lowers", since=None):
+    """A factor that cuts against a violation.
+    effect: "lowers" (one step, never below Likely), "noted" (shown only), or
+            "unrates" (a Supreme Court holding upheld this very practice: listed as a possible issue, with the reason)."""
+    return {"id": id, "text": text, "detect": detect, "effect": effect, "since": since}
 
 
 ALWAYS = lambda item, text, found: True  # noqa: E731
+
+
+def _cat(*cats):
+    return lambda item, text: item.get("category") in cats
+
 
 # Kinds of document that never raise an issue by themselves (paperwork, meetings, inflation adjustments).
 NO_FLAG_SUBCATEGORIES = {"Information collection, privacy, or paperwork notice", "Meeting or event", "Penalty inflation adjustment",
                          "GRAS notice (food ingredient)", "Dietary supplement structure/function notification"}
 
 # Actions that withdraw, repeal, or delay something do not themselves raise the issues of what they undo.
-DEREGULATORY = re.compile(r"\b(?:withdrawal of|withdrawn|withdrawing|repeal(?:ing|ed)? of|repeal of|rescission of|rescinding|removal of|delay of (?:the )?effective date|"
-                          r"termination of the|ending certain|revok(?:es|ing) executive order)", re.I)
-TARIFF = re.compile(r"tariff|dut(?:y|ies) on (?:imports|articles|goods|products)|ad valorem|additional dut(?:y|ies)|imposing dut(?:y|ies)|duties", re.I)
-STATUTE_OVERRIDE = re.compile(r"suspend(?:s|ing|ed)? (?:the )?(?:operation|enforcement|application|implementation) of|shall not (?:be )?enforce|"
-                              r"non-?enforcement|decline[sd]? to enforce|notwithstanding any (?:other )?provision of (?:law|statute)|"
-                              r"waiv(?:e|es|ing|er of) (?:the )?(?:requirements? of )?(?:section|the act|the statute)", re.I)
-EVIDENCE_RX.extend([TARIFF, STATUTE_OVERRIDE])
+DEREGULATORY = re.compile(r"\b(?:withdraw(?:al|ing|n|s)\b|repeal(?:ing|ed|s)?\b|rescission\b|rescind(?:ing|s)?\b|removal of|proposing to remove|is removing|"
+                          r"delay of (?:the )?effective date|termination of the|ending certain|revok(?:es|ing) executive order)", re.I)
+TARIFF = re.compile(r"\btariffs?\b|dut(?:y|ies) on (?:imports|articles|goods|products)|ad valorem (?:rate of )?dut|additional (?:ad valorem )?dut(?:y|ies)|imposing dut(?:y|ies)|rate of duty", re.I)
+# Suspending or refusing to enforce a statute. Waivers that Congress itself authorized are not included.
+STATUTE_OVERRIDE = re.compile(r"suspend(?:s|ing|ed)? (?:the )?(?:operation|enforcement|application|implementation) of (?:section|the|any|title)[^.;]{0,90}?(?:act|statute|law|U\.\s?S\.\s?C)|"
+                              r"(?:will|shall) not (?:be )?enforce[d]?\b|non-?enforcement (?:of|policy)|decline[sd]? to enforce|"
+                              r"pause[sd]? (?:the )?enforcement of|(?:cease|halt)[sd]? enforcement of", re.I)
+AUTHORIZED_WAIVER = re.compile(r"waiver authority|authori[sz]e[sd]? (?:the (?:President|Secretary|Administrator|Commission) )?to waive|pursuant to (?:the )?(?:waiver|authority) (?:in|under|provided|granted)|"
+                               r"as (?:authorized|permitted|provided) (?:by|in|under) (?:section|the act|statute)|statutory waiver|exemption authority", re.I)
+EVIDENCE_RX.extend([TARIFF, STATUTE_OVERRIDE, AUTHORIZED_WAIVER, PHYSICAL_ACCESS])
 
 # ---------------------------------------------------------------------------------------------------
 ISSUES = [
@@ -384,13 +402,15 @@ ISSUES = [
         "label": "Agency adjudication of penalties (jury trial and Article III)",
         "applies": lambda item: item.get("category") in ("adjudication", "enforcement"),
         "trigger": _rx(r"order instituting", r"civil (?:money )?penalt", r"cease[- ]and[- ]desist", r"disgorgement",
-                       r"penalt(?:y|ies) of", r"sanctions? (?:against|on)", r"debar", r"(?:expel|bar) (?:or (?:bar|expel) )?members",
-                       r"notice of apparent liability", r"forfeiture order", r"administrative law judge", r"Seventh Amendment", r"Jarkesy"),
+                       r"penalt(?:y|ies) of", r"debar", r"notice of apparent liability", r"forfeiture order", r"administrative law judge",
+                       r"Seventh Amendment", r"Jarkesy"),
         "also_triggers": lambda item: item.get("source") == "sec_admin" or item.get("doc_subtype_hint") == "cmp_complaint",
         "question": "Is an agency deciding, in its own forum and without a jury, a penalty claim of the kind the Seventh Amendment and Article III reserve to the courts?",
-        "test": "Under Jarkesy, the jury right attaches when (1) the government seeks a legal remedy such as a civil penalty, "
-                "(2) for a claim that resembles a common-law action (fraud is the paradigm), and (3) the public-rights "
-                "exception does not apply. A structural problem arises when such a claim is (4) decided in the agency's own forum.",
+        "test": "Under Jarkesy the Seventh Amendment jury right attaches when (1) the government seeks a legal remedy such as a "
+                "civil penalty (2) for a claim that resembles a common-law action, fraud being the paradigm. When such a claim is "
+                "(3) decided in the agency's own forum, the defendant is denied a jury. The public-rights exception (customs, "
+                "immigration, public lands, benefits, taxes) is weighed against a violation. FCC v. AT&T (2026) upheld FCC forfeiture "
+                "orders because they do not definitively resolve liability.",
         "elements": [
             {"id": "penalty", "gate": True, "text": "A civil penalty or similar punitive money remedy is sought",
              "detect": _any(_has(PENALTY), _sanction("civil_penalty", "disgorgement", "forfeiture_nal"),
@@ -402,9 +422,10 @@ ISSUES = [
         ],
         "weighed": [
             weighed("settled", "Described as settled or consented. Noted only: a settlement does not cure the forum, and people settle for many reasons.",
-                    _has(SETTLED), lowers=False),
-            weighed("fcc_forfeiture", "FCC forfeiture order: FCC v. AT&T (2026) held these do not violate the Seventh Amendment",
-                    lambda i, t: "fcc" in i.get("agencies", []) and bool(re.search(r"forfeiture|apparent liability", t, re.I)), since="2026-06-04"),
+                    _has(SETTLED), effect="noted"),
+            weighed("fcc_forfeiture", "FCC forfeiture order or notice of apparent liability: the Supreme Court upheld this practice in FCC v. AT&T (2026)",
+                    lambda i, t: "fcc" in i.get("agencies", []) and bool(re.search(r"forfeiture|apparent liability", t, re.I)),
+                    effect="unrates", since="2026-06-04"),
             weighed("public_rights", "Subject matter traditionally treated as a public right (customs, immigration, public lands, benefits, taxes)",
                     _has(PUBLIC_RIGHTS)),
         ],
@@ -414,7 +435,7 @@ ISSUES = [
             rule(lambda i, t, f: "common_law" in f, "analogy", "jarkesy",
                  note="A fraud-like penalty claim at another agency: Jarkesy applies by close analogy."),
             rule(ALWAYS, "open", "atlas_roofing",
-                 note="No common-law analogue identified: Atlas Roofing may still permit agency adjudication of a purely statutory claim."),
+                 note="No common-law analogue found: whether Jarkesy reaches purely statutory penalty claims (Atlas Roofing) is open."),
         ],
         "authorities": ["jarkesy", "tull", "granfinanciera", "atlas_roofing", "axon", "fcc_att"],
         "open_questions": ["How far Jarkesy reaches beyond fraud-like claims (for example, purely regulatory violations).",
@@ -423,25 +444,28 @@ ISSUES = [
     },
     {
         "code": "officer_appointment_removal", "group": "structural",
-        "label": "Appointment and supervision of officers (ALJs, hearing officers, and board members)",
+        "label": "Appointment and review of officers (ALJs, hearing officers, and board members)",
         "applies": lambda item: True,
+        # A ratification is how an agency cures an appointment defect, so it is never itself flagged.
+        "exclude": re.compile(r"ratif", re.I),
         "trigger": _rx(r"administrative law judge", r"hearing officer", r"administrative patent judge", r"inferior officer",
-                       r"appointments clause", r"removal (?:protection|power)", r"for[- ]cause", r"removed from office", r"\bLucia\b", r"Arthrex"),
-        "question": "Are officials exercising significant federal authority appointed, supervised, and reviewable as Article II requires?",
+                       r"appointments clause", r"improperly appointed", r"not properly appointed", r"\bLucia\b", r"Arthrex"),
+        "question": "Are officials exercising significant federal authority appointed and reviewable as Article II requires?",
         "test": "An official who holds a continuing position and exercises significant authority under federal law is an officer "
                 "(Lucia) and must be appointed by the President, a department head, or a court of law; an inferior officer's "
-                "final decisions must be reviewable by a principal officer (Arthrex).",
+                "final decisions must be reviewable by a principal officer (Arthrex). Ratification by a properly appointed "
+                "official cures an appointment defect going forward, so ratification notices are not flagged.",
         "elements": [
-            {"id": "official", "gate": True, "text": "An adjudicator or officer (ALJ, hearing officer, board member) is involved",
+            {"id": "official", "gate": True, "text": "An adjudicator or officer (ALJ, hearing officer, administrative judge, board member) is involved",
              "detect": _has(_rx(r"administrative law judge", r"hearing officer", r"administrative (?:patent )?judge", r"board member", r"inferior officer"))},
-            {"id": "significant", "text": "The official exercises significant authority (decides cases, issues orders)",
-             "detect": _has(_rx(r"decision", r"order", r"hearing", r"rul(?:e|ing)", r"adjudicat", ev=False))},
-            {"id": "defect", "gate": True, "text": "The document indicates an appointment, review, or removal problem",
-             "detect": _has(_rx(r"not (?:properly )?appointed", r"improperly appointed", r"appointments clause", r"unreviewable", r"without (?:further )?review",
-                                r"removal protection", r"ratif(?:y|ied|ication) (?:of )?(?:the )?appointment", r"final decision (?:of|by) the (?:judge|ALJ)"))},
+            {"id": "significant", "weak": True, "text": "The official decides cases or issues binding decisions",
+             "detect": _has(_rx(r"initial decision", r"final decision", r"presid(?:e|es|ing) over", r"adjudicat\w*", r"decides? (?:the )?(?:case|matter|claim)", r"issues? (?:a |an )?(?:decision|order)s?"))},
+            {"id": "defect", "gate": True, "text": "The document describes an appointment, review, or removal defect",
+             "detect": _has(_rx(r"not (?:properly )?appointed", r"improperly appointed", r"unreviewable", r"not (?:subject to|reviewable)\w* (?:by|review)",
+                                r"without (?:further )?review by", r"insulated from (?:review|removal)", r"(?:two|multiple|dual) layers? of (?:for-cause )?(?:removal|tenure) protection",
+                                r"final decision (?:of|by) the (?:judge|ALJ|administrative law judge|administrative patent judge)"))},
         ],
-        "weighed": [weighed("ratified", "The agency head ratified the appointment, which usually cures an appointment defect going forward",
-                            _has(_rx(r"ratif", ev=False)))],
+        "weighed": [],
         "precedent": [rule(lambda i, t, f: "defect" in f, "direct", "lucia", before="open",
                            note="Lucia and Arthrex hold that unappointed or unreviewable adjudicators violate Article II."),
                       rule(ALWAYS, "open", "arthrex", note="No specific appointment or review defect is described.")],
@@ -457,11 +481,12 @@ ISSUES = [
         "question": "Is a private self-regulatory organization exercising government power without adequate agency control?",
         "test": "Private bodies may help administer federal law only if they function subordinately to an agency that retains "
                 "final authority (Adkins; Consumers' Research). Delegating binding power to private parties without that "
-                "control is forbidden (Carter Coal).",
+                "control is forbidden (Carter Coal). Because no court has applied this to the thousands of routine immediately "
+                "effective filings, they are listed as possible issues rather than rated.",
         "elements": [
             {"id": "private", "gate": True, "text": "Issued by a private, agency-supervised corporation", "detect": lambda i, t: bool(i.get("corporation"))},
             {"id": "binding", "gate": True, "text": "The action binds members or the public (a rule or fee change)",
-             "detect": _has(_rx(r"rule change", r"proposed rule", r"fee", r"amend", r"rule\b", ev=False))},
+             "detect": _has(_rx(r"rule change", r"proposed rule", r"\bfees?\b", r"amend", r"\brules?\b", ev=False))},
             {"id": "no_prior_review", "gate": True, "text": "Effective without prior agency approval (for example, immediately effective under 19(b)(3)(A))",
              "detect": _has(_rx(r"immediately effective", r"immediate effectiveness", r"19\(b\)\(3\)\(a\)", r"effective upon filing"))},
         ],
@@ -486,7 +511,7 @@ ISSUES = [
         ],
         "weighed": [],
         "precedent": [rule(lambda i, t, f: "expulsion" in f, "analogy", "alpine",
-                           note="A federal court of appeals has held this practice unlawful (Alpine)."),
+                           note="Expulsion or a bar: a federal court of appeals has held this practice unlawful (Alpine)."),
                       rule(ALWAYS, "open", "alpine", note="Alpine addressed expulsion; lesser discipline is an open question.")],
         "authorities": ["alpine", "carter_coal", "free_enterprise"],
         "open_questions": ["Whether Alpine's reasoning extends to fines and suspensions, and outside the D.C. Circuit."],
@@ -496,97 +521,116 @@ ISSUES = [
         "label": "Agency authority, delegation, and major questions",
         "applies": lambda item: item.get("category") in ("rulemaking", "presidential") or item.get("subcategory") in ("Final rule", "Proposed rule"),
         "trigger": _rx(r"economically significant", r"major rule", r"nationwide", r"industry[- ]wide", r"unprecedented",
-                       r"first[- ]ever", r"transform", r"for the first time", r"major questions", r"nondelegation", r"emergency temporary standard",
-                       r"moratorium", r"generation shifting", r"significant nexus"),
+                       r"first[- ]ever", r"major questions", r"nondelegation", r"emergency temporary standard",
+                       r"moratorium", r"generation shifting", r"significant nexus", r"new(?:ly)? (?:asserted|claimed) authority"),
         "also_triggers": lambda item: bool(item.get("significant")),
-        "question": "Does the rule decide a question of vast economic or political significance, or claim a power, without clear congressional authorization?",
-        "test": "Agencies need clear congressional authorization for rules of vast economic and political significance, "
-                "especially when they claim newfound power in a long-standing statute (West Virginia v. EPA; Alabama Realtors; NFIB v. OSHA). "
-                "Agencies have only the power Congress gives them.",
+        "question": "Does the action decide a question of vast economic or political significance, or claim a power, without clear congressional authorization?",
+        "test": "The executive branch has only the powers the Constitution and Congress give it. Agencies need clear congressional "
+                "authorization for rules of vast economic and political significance, especially when they claim newfound power in "
+                "a long-standing statute (West Virginia v. EPA; Alabama Realtors; NFIB v. OSHA; Biden v. Nebraska).",
         "elements": [
-            {"id": "rule", "gate": True, "text": "A binding rule, order, or program", "detect": lambda i, t: i.get("subcategory") in ("Final rule", "Proposed rule") or i.get("category") == "presidential"
-             or bool(re.search(r"\border\b|moratorium|emergency temporary standard", t, re.I))},
-            {"id": "significance", "gate": True, "text": "Vast economic or political significance (economically significant, major, nationwide, or billions at stake)",
-             "detect": _any(lambda i, t: bool(i.get("significant")), _has(_rx(r"economically significant", r"major rule", r"nationwide", r"industry[- ]wide", r"billion", r"all (?:employers|landlords|power plants)")))},
-            {"id": "novelty", "text": "A novel or expansive assertion of power (unprecedented, first-ever, transformative, emergency)",
-             "detect": _has(_rx(r"unprecedented", r"first[- ]ever", r"for the first time", r"transform", r"new authority", r"emergency temporary standard",
-                                r"moratorium", r"generation shifting", r"never before"))},
-            {"id": "thin_basis", "text": "Rests on a broad, general, or long-standing statutory provision (or emergency authority)",
-             "detect": _any(_has(_rx(r"general (?:rulemaking )?authority", r"long-?standing", r"broad authority", r"catch-?all", r"emergency")),
+            {"id": "rule", "gate": True, "text": "A binding rule, order, or program",
+             "detect": lambda i, t: i.get("subcategory") in ("Final rule", "Proposed rule") or i.get("category") == "presidential"
+             or bool(re.search(r"\bmoratorium\b|emergency temporary standard", t, re.I))},
+            {"id": "significance", "gate": True, "text": "Vast economic or political significance (designated economically significant or major, or billions of dollars or a whole industry at stake)",
+             "detect": _any(lambda i, t: bool(i.get("significant")),
+                            _has(_rx(r"economically significant", r"major rule", r"industry[- ]wide", r"\$\s?\d[\d.,]*\s?billion", r"billions of dollars",
+                                     r"all (?:employers|landlords|power plants|lenders|banks|hospitals|schools)", r"entire (?:industry|sector|economy)")))},
+            {"id": "novelty", "text": "A novel or expansive claim of power (unprecedented, first-ever, newly asserted authority, emergency standard, moratorium)",
+             "detect": _has(_rx(r"unprecedented", r"first[- ]ever", r"never before (?:been )?(?:regulated|asserted|claimed|used)", r"new(?:ly)? (?:asserted|claimed|discovered) (?:authority|power)",
+                                r"expand(?:s|ing|ed)? (?:the )?(?:agency's|its|commission's|department's) (?:jurisdiction|authority)", r"assert(?:s|ing)? (?:jurisdiction|authority) over",
+                                r"emergency temporary standard", r"\bmoratorium\b", r"generation shifting", r"significant nexus"))},
+            {"id": "thin_basis", "text": "Rests on a broad or general grant of power (a general rulemaking or catch-all provision, or an emergency statute)",
+             "detect": _any(_has(_rx(r"general (?:rulemaking|grant of) authority", r"catch-?all", r"broad (?:statutory )?authority", r"ancillary authority", r"necessary and proper to carry out")),
                             _cites("phsa361", "osh6c", "heroes", "dpa", "ieepa", "nea"))},
         ],
         "weighed": [],
         "precedent": [rule(lambda i, t, f: {"significance", "novelty", "thin_basis"} <= set(f), "analogy", "west_virginia",
-                           note="West Virginia v. EPA, Alabama Realtors, and NFIB v. OSHA apply by close analogy."),
-                      rule(ALWAYS, "open", "west_virginia", note="Significance alone does not establish a major-questions problem.")],
+                           note="Significance, a novel claim of power, and a thin statutory basis together: West Virginia v. EPA, Alabama Realtors, and NFIB v. OSHA apply by close analogy."),
+                      rule(ALWAYS, "open", "west_virginia", note="Significance alone, or without a novel claim of power, is an open question.")],
         "authorities": ["west_virginia", "nebraska", "nfib_osha", "alabama_realtors", "sackett", "consumers_research", "biden_missouri"],
         "open_questions": ["What counts as 'vast' significance, and whether the doctrine applies to deregulatory rules.",
                            "Whether the major questions doctrine applies to the President's own actions as it does to agencies."],
     },
     {
-        "code": "statutory_deference", "group": "structural",
+        "code": "statutory_deference", "group": "structural", "max_level": 1,
         "label": "Agency interpretation of an ambiguous statute (Chevron and Loper Bright)",
         "applies": lambda item: item.get("category") in ("rulemaking", "adjudication"),
-        "trigger": _rx(r"chevron,? U\.?S\.?A", r"chevron deference", r"chevron (?:step|framework|doctrine|analysis)", r"under chevron", r"chevron v\.", r"deference", r"ambiguous", r"reasonable interpretation", r"gap[- ]fill", r"interpretive rule",
-                       r"interpretation of (?:section|the act|the statute)", r"permissible (?:construction|interpretation)"),
+        "trigger": _rx(r"chevron,? U\.?S\.?A\.?,? Inc\.? v\.", r"chevron deference", r"chevron (?:step|framework|doctrine|analysis)", r"under chevron", r"chevron v\.",
+                       r"(?:entitled to|receive|warrant|accord(?:ed)?) deference", r"reasonable interpretation of an ambiguous", r"gap[- ]fill",
+                       r"permissible (?:construction|interpretation)"),
         "question": "Does the action rest on deference to the agency's own reading of a statute?",
-        "test": "Courts decide what statutes mean without deferring to agencies (Loper Bright). Reliance on Chevron-style "
-                "deference rests on overruled law, even for rules issued while Chevron governed.",
+        "test": "Loper Bright (2024) overruled Chevron: courts, not agencies, decide what statutes mean, and they may not defer to an "
+                "agency's reading because a statute is ambiguous. An action that rests on Chevron deference is therefore open to "
+                "challenge. Loper Bright also said earlier cases that upheld rules under Chevron keep their force, so these flags are "
+                "rated Likely (arguable) rather than higher.",
         "elements": [
-            {"id": "interpretation", "text": "The agency interprets a statute", "detect": _has(_rx(r"interpret", r"construe", r"meaning of", r"construction of", ev=False))},
-            {"id": "ambiguity", "text": "The agency invokes ambiguity or gap-filling", "detect": _has(_rx(r"ambigu", r"gap[- ]fill", r"statute is silent", r"reasonable interpretation", r"permissible (?:construction|interpretation)"))},
-            {"id": "deference", "gate": True, "text": "The agency relies on deference to its own reading", "detect": _has(_rx(r"chevron,? U\.?S\.?A", r"chevron deference", r"chevron (?:step|framework|doctrine|analysis)", r"under chevron", r"chevron v\.", r"deference", r"defer to"))},
+            {"id": "interpretation", "weak": True, "text": "The agency interprets a statute", "detect": _has(_rx(r"interpret\w*", r"construe", r"meaning of", r"construction of", ev=False))},
+            {"id": "ambiguity", "text": "The agency invokes ambiguity, silence, or gap-filling", "detect": _has(_rx(r"ambigu\w*", r"gap[- ]fill", r"statute is silent", r"reasonable interpretation", r"permissible (?:construction|interpretation)"))},
+            {"id": "deference", "gate": True, "text": "The agency relies on deference to its own reading (Chevron)",
+             "detect": _has(_rx(r"chevron,? U\.?S\.?A\.?,? Inc\.? v\.", r"chevron deference", r"chevron (?:step|framework|doctrine|analysis)", r"under chevron", r"chevron v\.",
+                                r"(?:entitled to|receive|warrant|accord(?:ed)?) deference", r"defer(?:ence)? to (?:the )?(?:agency|commission|secretary|administrator|board|department)'?s? (?:interpretation|reading|construction)"))},
         ],
-        "weighed": [],
-        "precedent": [rule(lambda i, t, f: "deference" in f, "direct", "loper_bright", before="open",
-                           note="Loper Bright squarely rejects deference to agency statutory interpretation. Rules relying on Chevron stood on governing law when issued."),
+        "weighed": [weighed("post_loper", "Issued after Loper Bright and discusses it, which usually means the agency is explaining that it does not rely on Chevron",
+                            lambda i, t: (i.get("date") or "") >= "2024-06-28" and bool(re.search(r"Loper Bright", t, re.I)), effect="unrates")],
+        "precedent": [rule(lambda i, t, f: "deference" in f, "direct", "loper_bright", before="lawful",
+                           note="Loper Bright overruled Chevron, so reliance on Chevron deference is open to challenge; rated Likely at most because Loper Bright preserved earlier cases upholding rules under Chevron."),
                       rule(ALWAYS, "open", "loper_bright", note="Interpretation without claimed deference is ordinary agency work.")],
         "authorities": ["loper_bright", "kisor"],
         "open_questions": ["How much weight courts still give agency views under Skidmore after Loper Bright.",
-                           "Loper Bright did not reopen past cases that upheld rules under Chevron (statutory stare decisis)."],
+                           "Which rules upheld under Chevron can be challenged again after Loper Bright and Corner Post."],
     },
     {
         "code": "removal_independence", "group": "structural",
         "label": "Presidential control and removal of agency leaders",
         "applies": lambda item: True,
-        "trigger": _rx(r"independent (?:regulatory )?agenc", r"humphrey", r"multi-member", r"commissioners? (?:was|were) removed",
-                       r"supervision (?:and|&) control", r"accountability for all agencies", r"federal reserve", r"removal of (?:a |the )?(?:governor|commissioner|member)"),
+        "trigger": _rx(r"independent (?:regulatory )?agenc", r"humphrey", r"federal reserve", r"removal of (?:a |the )?(?:governor|commissioner|member)",
+                       r"supervision (?:and|&) control"),
         "question": "Does the action remove or direct officials whose independence the law still protects?",
         "test": "After Trump v. Slaughter (2026), the President may remove commissioners of agencies wielding executive power. "
-                "Bodies the Court treats differently, such as the Federal Reserve (Trump v. Cook), remain protected.",
+                "The Federal Reserve is treated differently: in Trump v. Cook (2026) the Court, on narrow interim grounds, left in "
+                "place a lower-court order keeping a Federal Reserve governor in office.",
         "elements": [
-            {"id": "control", "gate": True, "text": "The action removes or directs agency leaders", "detect": _has(_rx(r"remov", r"supervision", r"direct", r"control", r"review of", ev=False))},
-            {"id": "protected_body", "gate": True, "text": "The body is one the Court still treats as protected (for example, the Federal Reserve)",
+            {"id": "control", "gate": True, "text": "The action removes, or directs the decisions of, agency leaders",
+             "detect": _has(_rx(r"remov(?:e|al|ing) (?:of )?(?:a |the )?(?:governor|commissioner|member|chair|director)", r"direct(?:s|ing)? (?:the )?(?:board|commission|governors)", r"supervision (?:and|&) control", r"subject to (?:presidential|white house) review"))},
+            {"id": "protected_body", "gate": True, "text": "The body is one the Court still treats as protected (the Federal Reserve)",
              "detect": _has(_rx(r"federal reserve", r"board of governors"))},
         ],
         "weighed": [],
-        "precedent": [rule(lambda i, t, f: "protected_body" in f, "analogy", "cook", note="Trump v. Cook protects Federal Reserve governors."),
-                      rule(ALWAYS, "open", "slaughter", note="After Slaughter, presidential removal of commissioners is generally lawful.")],
+        "precedent": [rule(lambda i, t, f: "protected_body" in f, "analogy", "cook", note="Federal Reserve governors: Trump v. Cook applies by close analogy."),
+                      rule(ALWAYS, "open", "slaughter", note="After Slaughter, presidential removal of other commissioners is generally lawful.")],
         "authorities": ["slaughter", "cook", "seila", "collins", "myers"],
-        "open_questions": ["Which bodies, beyond the Federal Reserve, remain outside the President's at-will removal power."],
+        "open_questions": ["Which bodies, beyond the Federal Reserve, remain outside the President's at-will removal power.",
+                           "What process is due before removing a Federal Reserve governor for cause (Cook remains in litigation)."],
     },
     {
         "code": "spending_appropriations", "group": "structural",
         "label": "Spending, funding, and appropriations",
         "applies": lambda item: True,
-        "trigger": _rx(r"impoundment of (?:funds|appropriat)", r"impound(?:s|ed|ing)? (?:funds|appropriat)", r"rescission of (?:budget authority|funds|appropriat)", r"deferral of budget authority", r"pause (?:of |all |on )?(?:federal )?(?:funding|grants|disbursements)",
+        "trigger": _rx(r"impoundment of (?:funds|appropriat)", r"impound(?:s|ed|ing)? (?:funds|appropriat)", r"rescission of (?:budget authority|funds|appropriat)",
+                       r"deferral of budget authority", r"pause (?:of |all |on )?(?:federal )?(?:funding|grants|disbursements)",
                        r"freez(?:e|ing) (?:of )?(?:federal )?(?:funding|grants)", r"terminat(?:e|ion of) (?:all )?(?:grants|funding)",
-                       r"appropriations clause", r"funding mechanism", r"withh(?:o|e)ld\w* (?:federal )?funds"),
-        "question": "Is the executive withholding, redirecting, or self-funding money contrary to Congress's appropriations?",
-        "test": "The executive must spend funds as Congress directs (Train) and may withhold them only through the Impoundment "
-                "Control Act's procedures.",
+                       r"appropriations clause", r"withh(?:o|e)ld\w* (?:federal )?funds", r"no longer effectuates"),
+        "question": "Is the executive withholding or redirecting money contrary to Congress's appropriations?",
+        "test": "Congress holds the power of the purse. The executive must spend funds as Congress directs (Train) and may withhold "
+                "them only through the Impoundment Control Act's procedures. Withholding broad categories of funds for policy "
+                "reasons, rather than for reasons the statute allows, is the core concern.",
         "elements": [
-            {"id": "withhold", "gate": True, "text": "Appropriated money is withheld, paused, or terminated",
+            {"id": "withhold", "gate": True, "text": "Appropriated money is withheld, paused, frozen, or terminated",
              "detect": _has(_rx(r"withh(?:o|e)ld\w* (?:federal )?(?:funds|funding|payments)", r"pause (?:of |all |on )?(?:federal )?(?:funding|grants|disbursements)",
                                 r"freez(?:e|ing) (?:of )?(?:federal )?(?:funding|grants)", r"terminat\w* (?:of )?(?:all )?(?:grants|funding|awards)", r"impoundment of (?:funds|appropriat)",
                                 r"rescission of (?:budget authority|funds|appropriat)"))},
-            {"id": "no_authority", "text": "No statutory process (such as an Impoundment Control Act message) is cited",
-             "detect": lambda i, t: not re.search(r"impoundment control act|special message", t, re.I)},
-            {"id": "broad", "text": "The action is broad (all grants, a whole program, or government-wide)", "detect": _has(_rx(r"\ball\b", r"government-wide", r"program-wide", r"entire", ev=False))},
+            {"id": "broad", "text": "The action is broad (a whole program, a category of awards, or government-wide)",
+             "detect": _has(_rx(r"all (?:federal )?(?:grants|funding|awards|financial assistance|disbursements)", r"government-wide", r"program-wide", r"entire (?:program|agency)",
+                                r"categor(?:y|ies) of (?:grants|awards|funding)"))},
+            {"id": "policy_reason", "text": "The reason given is policy disagreement rather than a statutory ground",
+             "detect": _has(_rx(r"no longer effectuates?", r"(?:agency|administration|presidential) priorities", r"(?:inconsistent|not aligned|does not align|do not align) with (?:the )?(?:administration|agency|president)",
+                                r"pending (?:a )?review of (?:all )?(?:grants|funding|programs)"))},
         ],
-        "weighed": [],
-        "precedent": [rule(lambda i, t, f: "withhold" in f, "analogy", "train", note="Train and the Impoundment Control Act apply by close analogy."),
-                      rule(ALWAYS, "open", "cfsa", note="Funding questions without withholding are open.")],
+        "weighed": [weighed("ica_message", "The President sent a special message under the Impoundment Control Act", _has(_rx(r"impoundment control act", r"special message")))],
+        "precedent": [rule(lambda i, t, f: "withhold" in f and ("broad" in f or "policy_reason" in f), "analogy", "train",
+                           note="Broad or policy-based withholding of appropriated funds: Train and the Impoundment Control Act apply by close analogy."),
+                      rule(ALWAYS, "open", "cfsa", note="A narrow funding action is an open question.")],
         "authorities": ["train", "ica", "cfsa"],
         "open_questions": ["Whether courts will enforce the Impoundment Control Act at the behest of private grantees."],
     },
@@ -598,62 +642,68 @@ ISSUES = [
                        r"reduction[- ]in[- ]force", r"transfer of functions", r"dismantl"),
         "question": "Is the executive restructuring or abolishing a body that Congress created by statute?",
         "test": "Congress creates agencies and assigns their functions by statute; the executive may manage but not abolish them "
-                "without authority (Youngstown framework; In re Aiken County).",
+                "or abandon their statutory duties without authority (Youngstown framework; In re Aiken County).",
         "elements": [
-            {"id": "restructure", "gate": True, "text": "Abolishes, eliminates, or dismantles an office or agency", "detect": _has(_rx(r"abolish", r"eliminat\w* (?:the |an )?(?:office|agency|bureau|department)", r"dismantl", r"reduction[- ]in[- ]force"))},
-            {"id": "executive", "gate": True, "text": "Done by executive action rather than statute", "detect": lambda i, t: i.get("category") == "presidential" or bool(re.search(r"\border\b|directive|memorandum", t, re.I))},
-            {"id": "statutory_body", "text": "The body or function was created by statute", "detect": _has(_rx(r"established by (?:statute|law|the act)", r"statutory (?:office|function|duties|mandate)", r"required by (?:law|statute)"))},
+            {"id": "restructure", "gate": True, "text": "Abolishes, eliminates, or dismantles an office or agency",
+             "detect": _has(_rx(r"abolish", r"eliminat\w* (?:the |an )?(?:office|agency|bureau|department)", r"dismantl", r"reduction[- ]in[- ]force"))},
+            {"id": "executive", "gate": True, "text": "Done by executive action rather than statute",
+             "detect": lambda i, t: i.get("category") == "presidential" or bool(re.search(r"executive order|presidential memorandum|secretarial order|reorganization plan", t, re.I))},
+            {"id": "statutory_body", "text": "The body or function was created by statute",
+             "detect": _has(_rx(r"established by (?:statute|law|the act)", r"statutory (?:office|function|duties|mandate)", r"required by (?:law|statute)", r"created by (?:congress|statute)"))},
         ],
         "weighed": [],
-        "precedent": [rule(lambda i, t, f: "statutory_body" in f, "analogy", "aiken", note="Aiken County and Youngstown apply by close analogy when a statutory function is abandoned."),
+        "precedent": [rule(lambda i, t, f: "statutory_body" in f, "analogy", "aiken", note="A statutory body or function is abandoned: Aiken County and Youngstown apply by close analogy."),
                       rule(ALWAYS, "open", "youngstown", note="Courts are still working out the limits of executive reorganization.")],
         "authorities": ["youngstown", "aiken", "myers"],
         "open_questions": ["Whether large reductions in force can effectively abolish a statutory function."],
     },
     {
         "code": "federalism", "group": "structural",
-        "label": "Federalism (states, preemption, and conditions on federal funds)",
+        "label": "Federalism (commandeering and conditions on federal funds)",
         "applies": lambda item: True,
-        "trigger": _rx(r"preempt", r"commandeer", r"state plan", r"conditions? (?:on|of) (?:federal )?(?:funds|grants|funding)",
-                       r"sanctuary", r"tenth amendment", r"sovereign immunity"),
-        "skip_titles": re.compile(r"implementation plans?|attainment plan|maintenance plan|state plan|approval of .{0,60}plan|redesignation|program approval|primacy", re.I),
+        "trigger": _rx(r"commandeer", r"conditions? (?:on|of) (?:federal )?(?:funds|grants|funding)",
+                       r"sanctuary", r"tenth amendment", r"require(?:s|d)? states? to"),
+        "skip_titles": re.compile(r"implementation plans?|attainment plan|maintenance plan|state plan|approval of .{0,60}plan|air (?:quality )?plan|regional haze|redesignation|program approval|primacy|plan approval", re.I),
         "question": "Does the action command state officials or coerce states through funding conditions?",
         "test": "The federal government may not commandeer state officers or legislatures (Printz; Murphy) and may not attach "
                 "coercive conditions to existing funds (NFIB v. Sebelius); conditions must be clear and related (Dole).",
         "elements": [
-            {"id": "states", "gate": True, "text": "The action is directed at states or localities", "detect": _has(_rx(r"\bstates?\b", r"local", r"jurisdictions", r"sanctuary", ev=False))},
-            {"id": "command", "text": "It commands state officials or legislatures", "detect": _has(_rx(r"commandeer", r"direct(?:s|ing)? (?:state|local)", r"require (?:states|state officials)"))},
-            {"id": "coercive_condition", "text": "It conditions existing federal funds on compliance", "detect": _has(_rx(r"condition(?:s|ing|ed)? (?:on|of) (?:federal )?(?:funds|grants|funding)", r"withh(?:o|e)ld\w* (?:federal )?(?:funds|grants)", r"terminat\w* (?:federal )?funds"))},
+            {"id": "states", "gate": True, "text": "The action is directed at state or local governments",
+             "detect": _has(_rx(r"state (?:and local )?(?:governments?|officials?|officers?|legislatures?|agencies)", r"states and localities", r"sanctuary", r"jurisdictions? that",
+                                r"require(?:s|d)? states?", r"states must", r"local governments?"))},
+            {"id": "command", "text": "It commands state officials or legislatures", "detect": _has(_rx(r"commandeer", r"direct(?:s|ing)? (?:state|local) (?:officials|officers|governments)", r"require (?:states|state officials) to", r"states must"))},
+            {"id": "coercive_condition", "text": "It conditions existing federal funds on compliance",
+             "detect": _has(_rx(r"condition(?:s|ing|ed)? (?:on|of) (?:federal )?(?:funds|grants|funding)", r"withh(?:o|e)ld\w* (?:federal )?(?:funds|grants)", r"terminat\w* (?:federal )?funds", r"ineligible for (?:federal )?(?:funds|grants)"))},
         ],
         "weighed": [],
-        "precedent": [rule(lambda i, t, f: "command" in f, "analogy", "printz", note="Printz and Murphy apply by close analogy."),
-                      rule(lambda i, t, f: "coercive_condition" in f, "analogy", "nfib_sebelius", note="NFIB v. Sebelius applies by close analogy."),
-                      rule(ALWAYS, "open", "dole", note="Preemption and ordinary grant conditions are usually lawful.")],
+        "precedent": [rule(lambda i, t, f: "command" in f, "analogy", "printz", note="A command to state officials: Printz and Murphy apply by close analogy."),
+                      rule(lambda i, t, f: "coercive_condition" in f, "analogy", "nfib_sebelius", note="Existing funds conditioned on compliance: NFIB v. Sebelius applies by close analogy."),
+                      rule(ALWAYS, "open", "dole", note="Ordinary grant conditions are usually lawful.")],
         "authorities": ["printz", "murphy", "nfib_sebelius", "dole"],
         "open_questions": ["When executive (rather than congressional) funding conditions are unauthorized as well as coercive."],
     },
     {
         "code": "presidential_lawmaking", "group": "structural",
-        "label": "Executive action that makes law (emergency powers, tariffs, and suspending or rewriting statutes)",
+        "label": "Executive action that makes law (emergency powers, tariffs, and suspending statutes)",
         "applies": lambda item: item.get("category") == "presidential" or bool(statutes_cited(item, "") & {"ieepa", "nea"}),
-        "trigger": _rx(r"shall be (?:prohibited|unlawful)", r"tariff", r"duties", r"national emergency", r"emergency economic powers", r"IEEPA",
-                       r"suspend(?:ing|s)? (?:the )?(?:entry|enforcement|implementation|operation)", r"notwithstanding",
-                       r"waive(?:r|s|d)? (?:of )?(?:the )?(?:requirements|statute)", r"shall not (?:be )?enforce", r"non-?enforcement"),
+        "trigger": _rx(r"tariffs?", r"duties", r"national emergency", r"emergency economic powers", r"IEEPA",
+                       r"suspend(?:ing|s)? (?:the )?(?:enforcement|implementation|operation)", r"(?:will|shall) not (?:be )?enforce", r"non-?enforcement",
+                       r"shall be (?:prohibited|unlawful)", r"embargo"),
         "question": "Does an executive action impose duties, taxes, or prohibitions on the public, or set aside a statute, without a power the Constitution or Congress actually gives?",
-        "test": "The President's power to act must come from the Constitution or a statute (Youngstown). Jackson's framework: power "
-                "is greatest with Congress's authorization, weakest when the action is incompatible with Congress's will. Taxes and "
-                "tariffs are Congress's power (Art. I, sec. 8), and IEEPA does not delegate it (Learning Resources). The executive "
-                "may not cancel or suspend duly enacted statutes (Clinton v. City of New York; In re Aiken County). Courts read "
-                "general or emergency statutes narrowly when they are used for sweeping measures.",
+        "test": "The President's power to act must come from the Constitution or a statute (Youngstown). Taxes and tariffs are "
+                "Congress's power (Art. I, sec. 8), and IEEPA does not delegate it (Learning Resources). The executive may not cancel "
+                "or suspend duly enacted statutes (Clinton v. City of New York; In re Aiken County). Waivers and exemptions that "
+                "Congress itself authorized are not flagged. Other trade and entry statutes (Sections 232, 301, 122, and 212(f)) "
+                "are checked one by one.",
         "elements": [
-            {"id": "binding", "gate": True, "text": "Imposes duties, tariffs, fees, or prohibitions on the public, or suspends or waives a statute",
-             "detect": _any(_has(TARIFF), _has(STATUTE_OVERRIDE), _has(_rx(r"prohibit", r"shall be unlawful", r"import (?:ban|restriction)", r"embargo", ev=False)))},
+            {"id": "binding", "gate": True, "text": "Imposes duties, tariffs, or prohibitions on the public, or suspends or refuses to enforce a statute",
+             "detect": _any(_has(TARIFF), _has(STATUTE_OVERRIDE), _has(_rx(r"shall be prohibited", r"shall be unlawful", r"import (?:ban|restriction)", r"\bembargo\b")))},
             {"id": "basis", "text": "Rests on an emergency power or a general statute rather than a specific grant",
-             "detect": _any(_cites("ieepa", "nea", "dpa", "stafford"), _has(_rx(r"national emergency", r"emergency economic powers", r"authority vested in me")))},
-            {"id": "no_clear_authority", "text": "The power claimed is one the cited statute does not clearly give (for example, tariffs under IEEPA, or overriding a statute)",
-             "detect": lambda i, t: (bool(TARIFF.search(t)) and "ieepa" in statutes_cited(i, t)) or bool(STATUTE_OVERRIDE.search(t))},
-            {"id": "public_effect", "text": "Applies to private parties or the public (importers, businesses, people), not just to agencies",
-             "detect": _has(_rx(r"import", r"importer", r"employers?", r"persons?", r"compan(?:y|ies)", r"entities", r"goods", r"articles", r"products", r"businesses", ev=False))},
+             "detect": _any(_cites("ieepa", "nea", "dpa", "stafford"), _has(_rx(r"national emergency", r"emergency economic powers", r"inherent (?:constitutional )?(?:authority|power)", r"article II")))},
+            {"id": "no_clear_authority", "text": "The power claimed is one the cited statute does not give (tariffs under IEEPA), or the action suspends a statute without congressional authorization",
+             "detect": lambda i, t: (bool(TARIFF.search(t)) and "ieepa" in statutes_cited(i, t)) or (bool(STATUTE_OVERRIDE.search(t)) and not AUTHORIZED_WAIVER.search(t))},
+            {"id": "public_effect", "weak": True, "text": "Applies to private parties (importers, businesses, people), not just to agencies",
+             "detect": _has(_rx(r"importers?", r"imported", r"imports", r"employers", r"businesses", r"compan(?:y|ies)", r"persons? (?:subject to|who)", r"articles (?:of|imported|that)", ev=False))},
         ],
         "weighed": [
             weighed("specific_trade_statute", "Also rests on a trade statute courts have read broadly (Section 232, 301, 122, or 201)",
@@ -663,12 +713,12 @@ ISSUES = [
         "precedent": [
             rule(lambda i, t, f: bool(TARIFF.search(t)) and "ieepa" in statutes_cited(i, t), "direct", "learning_resources",
                  note="Tariffs or duties imposed under IEEPA: the facts of Learning Resources."),
-            rule(lambda i, t, f: bool(STATUTE_OVERRIDE.search(t)), "analogy", "clinton_ny", before="analogy",
-                 note="Suspending, waiving, or refusing to enforce a statute: Clinton v. City of New York and In re Aiken County apply by close analogy."),
+            rule(lambda i, t, f: bool(STATUTE_OVERRIDE.search(t)) and not AUTHORIZED_WAIVER.search(t), "analogy", "clinton_ny", before="analogy",
+                 note="Suspending or refusing to enforce a statute without congressional authorization: Clinton v. City of New York and In re Aiken County apply by close analogy."),
             rule(lambda i, t, f: "ieepa" in statutes_cited(i, t) and "binding" in f, "analogy", "learning_resources",
                  note="Other IEEPA measures that operate like taxes or regulation of commerce: Learning Resources applies by close analogy."),
             rule(ALWAYS, "open", "youngstown",
-                 note="Other bases (Sections 232, 301, 122, 212(f), and emergency statutes) must be checked one by one under Youngstown."),
+                 note="Other bases (Sections 232, 301, 122, 212(f), and emergency statutes) are open questions under Youngstown."),
         ],
         "authorities": ["youngstown", "learning_resources", "clinton_ny", "aiken", "dames_moore", "algonquin", "trump_hawaii", "nebraska"],
         "open_questions": ["The limits of tariff authority under Sections 122, 232, and 301 after Learning Resources.",
@@ -679,15 +729,16 @@ ISSUES = [
         "code": "speech_restraint", "group": "rights",
         "label": "Gag orders, no-deny terms, and prior restraints on speech",
         "applies": lambda item: item.get("category") in ("enforcement", "adjudication", "rulemaking"),
-        "trigger": _rx(r"\bgag", r"neither admit(?:s|ting)? nor den", r"no[- ]deny", r"not to (?:publicly )?deny", r"prior restraint",
-                       r"non-?disparagement", r"confidentiality (?:provision|requirement|order)", r"nondisclosure (?:order|requirement)"),
+        "trigger": _rx(r"gag (?:order|rule|clause|provision)s?\b", r"gagg(?:ed|ing)\b", r"neither admit(?:s|ting)? nor den", r"no[- ]deny", r"not to (?:publicly )?deny", r"prior restraint",
+                       r"non-?disparagement", r"nondisclosure (?:order|requirement)"),
         "question": "Does the government condition a settlement or order on silence about the case?",
-        "test": "Prior restraints are presumptively invalid (Nebraska Press). Courts have so far upheld no-deny settlement terms "
-                "as voluntary waivers (Powell; Romeril; Rumery), though the SEC rescinded its policy in May 2026.",
+        "test": "Prior restraints are presumptively invalid (Nebraska Press). Courts of appeals have so far upheld no-deny settlement "
+                "terms as voluntary waivers (Powell; Romeril; Rumery), so the issue is arguable but contested.",
         "elements": [
-            {"id": "restriction", "gate": True, "text": "A restriction on speaking about the matter", "detect": _has(_rx(r"\bgag", r"no[- ]deny", r"not to (?:publicly )?deny", r"non-?disparagement", r"confidential", r"prior restraint", r"neither admit"))},
-            {"id": "government", "text": "Imposed by a government order or settlement", "detect": _has(_rx(r"order", r"settle", r"consent", r"rule", ev=False))},
-            {"id": "public", "text": "Applies to public statements", "detect": _has(_rx(r"public", r"press", r"media", ev=False))},
+            {"id": "restriction", "gate": True, "text": "A restriction on speaking about the matter",
+             "detect": _has(_rx(r"gag (?:order|rule|clause|provision)s?\b", r"gagg(?:ed|ing)\b", r"no[- ]deny", r"not to (?:publicly )?deny", r"non-?disparagement", r"prior restraint", r"neither admit", r"nondisclosure (?:order|requirement)"))},
+            {"id": "government", "weak": True, "text": "Imposed by a government order or settlement", "detect": _has(_rx(r"\border\b", r"settle", r"consent", r"\brule\b", ev=False))},
+            {"id": "public", "weak": True, "text": "Applies to public statements", "detect": _has(_rx(r"public(?:ly)?", r"\bpress\b", r"media", ev=False))},
         ],
         "weighed": [weighed("courts_upheld", "Courts of appeals have upheld no-deny terms as voluntary waivers (Powell; Romeril)",
                             _has(_rx(r"neither admit", r"no[- ]deny", r"not to (?:publicly )?deny", ev=False)))],
@@ -698,25 +749,32 @@ ISSUES = [
     {
         "code": "free_speech", "group": "rights",
         "label": "Freedom of speech and the press",
-        "applies": lambda item: item.get("category") in ("enforcement", "adjudication", "presidential") or item.get("subcategory") in ("Final rule", "Proposed rule"),
-        "trigger": _rx(r"free speech", r"freedom of (?:speech|the press)", r"first amendment", r"advertis", r"compelled (?:disclosure|speech)", r"labeling requirement",
-                       r"misinformation", r"disinformation", r"content moderation", r"press\b", r"journalis", r"viewpoint", r"broadcast content", r"censor"),
+        "applies": lambda item: item.get("source") != "openfda" and (item.get("category") in ("enforcement", "adjudication", "presidential") or item.get("subcategory") in ("Final rule", "Proposed rule")),
+        "trigger": _rx(r"free speech", r"freedom of (?:speech|the press)", r"first amendment", r"compelled (?:disclosure|speech)", r"misinformation",
+                       r"disinformation", r"content moderation", r"journalis", r"viewpoint", r"censor", r"advertising (?:restriction|ban|prohibition)",
+                       r"warning (?:label|statement)s?"),
         "question": "Does the action restrict or compel speech, or pressure others to suppress it?",
         "test": "Content-based restrictions face strict scrutiny (Reed); commercial-speech restrictions face intermediate scrutiny "
-                "(Central Hudson), heightened when speaker- or content-based (Sorrell). Compelled disclosures are allowed only if "
-                "purely factual, uncontroversial, and reasonably related to preventing deception (Zauderer); others face heightened "
-                "scrutiny (NIFLA). Government may not compel expressive work (303 Creative), override editorial judgment (Moody), "
-                "or coerce third parties to suppress speech (Vullo).",
+                "(Central Hudson), heightened when speaker- or content-based (Sorrell). Compelled disclosures are allowed when purely "
+                "factual, uncontroversial, and reasonably related to preventing deception (Zauderer); compelled opinions or "
+                "controversial statements face heightened scrutiny (NIFLA). Government may not compel expressive work (303 Creative), "
+                "override editorial judgment (Moody), or coerce third parties to suppress speech (Vullo).",
         "elements": [
-            {"id": "speech", "gate": True, "text": "Regulates speech, advertising, labels, disclosures, publishing, or editorial choices",
-             "detect": _has(_rx(r"speech", r"advertis", r"disclos", r"label", r"press", r"publish", r"broadcast", r"content", r"statement", ev=False))},
-            {"id": "content", "text": "Content-based, viewpoint-based, or compelled", "detect": _has(_rx(r"content", r"misinformation", r"disinformation", r"compel", r"must (?:disclose|state|include|display)", r"viewpoint", r"warning statement"))},
-            {"id": "not_factual", "text": "Compels opinion, controversial, or non-factual statements, or targets protected expression",
-             "detect": _has(_rx(r"controversial", r"opinion", r"ideolog", r"editorial (?:judgment|discretion|decisions)", r"viewpoint", r"misinformation", r"disinformation"))},
+            {"id": "speech", "gate": True, "text": "Regulates or compels speech, advertising, warnings, publishing, broadcasting, or editorial choices",
+             "detect": _has(_rx(r"\bspeech\b", r"advertis\w*", r"warning (?:label|statement)s?", r"compelled", r"must (?:disclose|state|include|display|post)", r"disclosure requirement",
+                                r"\bpress\b", r"publish(?:er|ers|ing)", r"broadcast(?:er|ers|ing)? content", r"content moderation", r"misinformation", r"disinformation", r"editorial"))},
+            {"id": "content", "text": "Content-based, viewpoint-based, or compelled",
+             "detect": _has(_rx(r"content-based", r"misinformation", r"disinformation", r"compel\w*", r"must (?:disclose|state|include|display|post)", r"viewpoint"))},
+            {"id": "not_factual", "text": "Compels opinion or controversial statements, or targets protected expression or editorial judgment",
+             "detect": _has(_rx(r"controversial", r"\bopinions?\b", r"ideolog", r"editorial (?:judgment|discretion|decisions)", r"viewpoint", r"misinformation", r"disinformation", r"political (?:speech|views|viewpoints)"))},
         ],
-        "weighed": [weighed("factual_disclosure", "Requires only factual, uncontroversial information about the speaker's own products (Zauderer)",
-                            _has(_rx(r"nutrition", r"ingredient", r"fee disclosure", r"price", r"factual", ev=False)))],
-        "precedent": [rule(lambda i, t, f: {"content", "not_factual"} <= set(f), "analogy", "nifla", note="NIFLA, Reed, and Vullo apply by close analogy to content-based or non-factual compulsion."),
+        "weighed": [weighed("factual_disclosure", "Requires only purely factual, uncontroversial information about the speaker's own products or services (Zauderer)",
+                            _has(_rx(r"purely factual", r"factual and uncontroversial", r"nutrition (?:facts|labeling|information)", r"ingredient (?:list|statement|labeling)",
+                                     r"fee disclosure", r"price disclosure", r"accurate information about (?:the|its) (?:products?|services?)")))],
+        "precedent": [rule(lambda i, t, f: bool(re.search(r"(?:urg|pressur|encourag|request)\w* (?:\w+ ){0,3}(?:platforms|companies|banks|insurers|providers|advertisers) to (?:remove|suppress|take down|deplatform|cut ties|terminate|stop)", t, re.I)),
+                           "analogy", "vullo", note="Pressure on third parties to suppress speech: Vullo applies by close analogy."),
+                      rule(lambda i, t, f: {"content", "not_factual"} <= set(f), "analogy", "nifla",
+                           note="Content-based restrictions or compelled non-factual statements: NIFLA and Reed apply by close analogy."),
                       rule(ALWAYS, "open", "central_hudson", note="Outcome depends on the level of scrutiny and the fit of the rule.")],
         "authorities": ["reed", "central_hudson", "sorrell", "zauderer", "nifla", "creative_303", "moody", "vullo", "murthy"],
         "open_questions": ["How Zauderer applies to disclosures that are arguably not purely factual or uncontroversial (for example, climate or ESG disclosures).",
@@ -724,40 +782,50 @@ ISSUES = [
     },
     {
         "code": "free_exercise", "group": "rights",
-        "label": "Religious liberty (Free Exercise, Establishment, RFRA, and RLUIPA)",
+        "label": "Religious liberty (Free Exercise, Establishment Clause, RFRA, and RLUIPA)",
         "applies": lambda item: True,
         "trigger": _rx(r"religio", r"free exercise", r"faith-based", r"church", r"conscience", r"\bRFRA\b", r"RLUIPA", r"establishment clause",
-                       r"houses? of worship", r"ministr", r"clergy", r"sincerely held"),
+                       r"houses? of worship", r"clergy", r"sincerely held", r"denomination"),
         "question": "Does the action burden religious exercise, discriminate against religion, or favor one religion over another?",
-        "test": "Constitution: a neutral, generally applicable rule that incidentally burdens religion gets rational-basis review "
-                "(Smith); a rule that targets religion, is not neutral, allows individualized exemptions (Fulton), or treats any "
-                "comparable secular activity better (Tandon) must survive strict scrutiny (Lukumi). Government may not exclude "
-                "religious groups from public benefits (Carson) or draw lines between denominations (Catholic Charities). "
-                "Statutes: for federal action RFRA applies strict scrutiny even to neutral, generally applicable rules: a "
-                "substantial burden must be the least restrictive means of serving a compelling interest (Hobby Lobby; O Centro). "
-                "RLUIPA applies the same test to land-use rules and to federally funded prisons and institutions (Holt).",
+        "test": "Free Exercise: a neutral, generally applicable rule that incidentally burdens religion gets rational-basis review "
+                "(Smith); a rule that targets religion, allows individualized exemptions (Fulton), or treats comparable secular "
+                "activity better (Tandon) must survive strict scrutiny (Lukumi). Government may not exclude religious groups from "
+                "public benefits because they are religious (Carson). Establishment Clause: government may not prefer one "
+                "denomination over another (Larson; Catholic Charities). RFRA: for federal action, a substantial burden on "
+                "religious exercise must be the least restrictive means of serving a compelling interest, even under a neutral "
+                "rule (Hobby Lobby). RLUIPA applies the same test to land-use rules and to prisons and other institutions that "
+                "receive federal funds (Holt).",
         "elements": [
             {"id": "religion", "gate": True, "text": "Affects religious exercise, religious organizations, or houses of worship",
-             "detect": _has(_rx(r"religio", r"faith", r"church", r"worship", r"conscience", r"ministr", r"clergy", r"sincerely held"))},
-            {"id": "burden", "gate": True, "text": "Imposes a requirement, penalty, or loss of benefits that burdens that exercise",
-             "detect": _has(_rx(r"requir", r"mandat", r"must", r"prohibit", r"penalt", r"den(?:y|ial|ied)", r"exclu", r"terminat", r"condition", ev=False))},
-            {"id": "not_neutral", "text": "Not neutral or generally applicable (singles out religion, has exemptions for secular reasons, or discretionary exemptions)",
-             "detect": _has(_rx(r"except(?:ion|ions)? for", r"exempt(?:ion|s)? (?:for|from)", r"case-by-case", r"discretion", r"waiver", r"religious (?:organizations|entities) (?:are|may not)", r"excludes? religious"))},
+             "detect": _has(_rx(r"religio\w*", r"faith-based", r"church(?:es)?", r"houses? of worship", r"conscience", r"clergy", r"sincerely held", r"denomination\w*"))},
+            {"id": "burden", "gate": True, "text": "Imposes a requirement, penalty, exclusion, or loss of benefits that bears on that exercise",
+             "detect": _has(_rx(r"must (?:provide|cover|perform|participate|comply|offer|hire)", r"requir\w* (?:\w+ ){0,4}(?:to provide|to cover|to perform|to participate|coverage)",
+                                r"penalt\w*", r"den(?:y|ial|ied|ies) (?:\w+ ){0,3}(?:funding|grants|benefits|eligibility|tax[- ]exempt)", r"(?:exclud|disqualif|ineligib)\w*",
+                                r"terminat\w* (?:\w+ ){0,3}(?:grants?|awards?|funding)", r"condition\w* (?:on|of) (?:funding|eligibility|participation)", r"\bmandat\w*", r"prohibit\w*"))},
+            {"id": "not_neutral", "text": "Not neutral or generally applicable (singles out religion, has secular exemptions, or discretionary exemptions)",
+             "detect": _has(_rx(r"except(?:ion|ions)? for", r"exempt(?:ion|ions|s)? (?:for|from)", r"case-by-case", r"(?:individualized|discretionary) (?:exemptions?|waivers?)",
+                                r"religious (?:organizations|entities) (?:are|may not)", r"excludes? religious", r"because (?:of )?(?:its|their) religio"))},
             {"id": "no_accommodation", "text": "No religious exemption or accommodation is provided, or one is removed",
              "detect": _has(_rx(r"no (?:religious )?exemption", r"without (?:a )?(?:religious )?exemption", r"rescind\w* (?:the )?(?:religious|conscience)",
                                 r"remov\w* (?:the )?(?:religious|conscience) (?:exemption|protection)", r"eliminat\w* (?:the )?(?:religious|conscience)"))},
         ],
         "weighed": [weighed("accommodation", "Provides a religious exemption or accommodation", _has(_rx(r"religious exemption", r"accommodation", r"conscience protection", ev=False)))],
         "precedent": [
+            rule(lambda i, t, f: bool(re.search(r"(?:prefer|favor|single[sd]? out|distinguish\w* between)\w* (?:\w+ ){0,3}(?:denomination|religion|faith)s?|denominational (?:preference|line)|religious test", t, re.I)),
+                 "analogy", "catholic_charities", note="Lines drawn between denominations or a religious test: Larson and Catholic Charities apply by close analogy (Establishment Clause)."),
+            rule(lambda i, t, f: "religion" in f and bool(re.search(r"\bprison|correctional|detention|institutionalized|\bzoning\b|land[- ]use", t, re.I)), "analogy", "holt",
+                 note="Prisons, detention, or land use: RLUIPA (and, for federal action, RFRA) applies by close analogy (Holt)."),
             rule(lambda i, t, f: {"not_neutral", "no_accommodation"} <= set(f), "analogy", "fulton",
-                 note="Fulton, Tandon, and Lukumi apply by close analogy; for federal action RFRA independently requires strict scrutiny (Hobby Lobby)."),
+                 note="Not neutral or generally applicable, with no accommodation: Fulton, Tandon, and Lukumi apply by close analogy; for federal action RFRA independently requires strict scrutiny."),
             rule(lambda i, t, f: "no_accommodation" in f, "analogy", "hobby_lobby",
                  note="A federal requirement that burdens religious exercise without accommodation: RFRA and Hobby Lobby apply by close analogy."),
+            rule(lambda i, t, f: bool(re.search(r"(?:exclud|disqualif|ineligib)\w* (?:\w+ ){0,4}religious|religious (?:\w+ ){0,3}(?:are |is )?(?:ineligible|excluded)", t, re.I)), "analogy", "carson",
+                 note="Religious groups excluded from a public benefit: Carson v. Makin applies by close analogy."),
             rule(ALWAYS, "open", "smith",
                  note="A neutral, generally applicable rule gets rational-basis review under Smith, but RFRA still requires strict scrutiny of substantial burdens imposed by the federal government."),
         ],
-        "authorities": ["smith", "lukumi", "fulton", "tandon", "carson", "kennedy", "catholic_charities", "mahmoud",
-                        "rfra_statute", "boerne", "hobby_lobby", "o_centro", "little_sisters", "tanzin", "rluipa_statute", "holt"],
+        "authorities": ["smith", "lukumi", "fulton", "tandon", "carson", "kennedy", "larson", "catholic_charities", "mahmoud",
+                        "rfra_statute", "boerne", "hobby_lobby", "o_centro", "little_sisters", "tanzin", "rluipa_statute", "holt", "cutter"],
         "open_questions": ["Whether the Court will overrule Smith (several Justices have urged it).",
                            "How Mahmoud's parental-rights reasoning applies to federal programs and conditions on funds.",
                            "How RLUIPA applies when federal agencies set conditions for state prisons or land-use programs."],
@@ -766,7 +834,8 @@ ISSUES = [
         "code": "association", "group": "rights",
         "label": "Freedom of association and donor privacy",
         "applies": lambda item: item.get("category") in ("enforcement", "adjudication", "presidential") or item.get("subcategory") in ("Final rule", "Proposed rule"),
-        "trigger": _rx(r"membership lists?", r"donor (?:lists?|names|identit|information|disclosure)", r"disclos\w* (?:of )?(?:their |its )?(?:donors|members)", r"political contribut", r"freedom of association", r"associational", r"beneficial owner", r"disclos\w* of (?:members|donors|contributors)"),
+        "trigger": _rx(r"membership lists?", r"donor (?:lists?|names|identit|information|disclosure)", r"disclos\w* (?:of )?(?:their |its )?(?:donors|members)", r"political contribut",
+                       r"freedom of association", r"associational", r"beneficial owner"),
         "question": "Does the action compel disclosure of members or donors, or penalize joining or supporting a group?",
         "test": "Compelled disclosure of members or donors must survive exacting scrutiny: narrow tailoring to a sufficiently "
                 "important interest (Americans for Prosperity; NAACP v. Alabama). Burdens on expressive association need a "
@@ -775,11 +844,13 @@ ISSUES = [
             {"id": "disclosure", "gate": True, "text": "Requires disclosure of members, donors, owners, or supporters, or penalizes association",
              "detect": _has(_rx(r"membership lists?", r"donor (?:lists?|names|identit|information|disclosure)", r"disclos\w* (?:of )?(?:their |its )?(?:donors|members|contributors)",
                                 r"political contribut", r"beneficial owner", r"identit(?:y|ies) of (?:its )?(?:members|donors|contributors|supporters)"))},
-            {"id": "broad", "text": "Applies broadly or in bulk rather than case by case", "detect": _has(_rx(r"\ball\b", r"each", r"every", r"annual", r"report", ev=False))},
-            {"id": "public_release", "text": "The information may be made public or shared widely", "detect": _has(_rx(r"public(?:ly)? (?:available|disclos|release)", r"published", r"database"))},
+            {"id": "broad", "text": "Applies in bulk rather than case by case",
+             "detect": _has(_rx(r"all (?:members|donors|contributors|beneficial owners)", r"each (?:member|donor|contributor|beneficial owner)", r"(?:list|lists|roster) of (?:members|donors|contributors)",
+                                r"(?:annual|periodic) (?:reports?|disclosures?)", r"\bbulk\b"))},
+            {"id": "public_release", "text": "The information may be made public or shared widely", "detect": _has(_rx(r"public(?:ly)? (?:available|disclos\w*|release\w*)", r"published", r"database"))},
         ],
         "weighed": [],
-        "precedent": [rule(lambda i, t, f: {"broad", "public_release"} <= set(f), "analogy", "afpf", note="Americans for Prosperity applies by close analogy to broad donor or member disclosure."),
+        "precedent": [rule(lambda i, t, f: {"broad", "public_release"} <= set(f), "analogy", "afpf", note="Bulk donor or member disclosure that may become public: Americans for Prosperity applies by close analogy."),
                       rule(ALWAYS, "open", "naacp_alabama", note="Disclosure rules are judged by exacting scrutiny case by case.")],
         "authorities": ["naacp_alabama", "afpf", "jaycees"],
         "open_questions": ["How Americans for Prosperity applies to federal beneficial-ownership and political-disclosure rules."],
@@ -788,18 +859,21 @@ ISSUES = [
         "code": "fourth_amendment", "group": "rights",
         "label": "Searches, inspections, records demands, or surveillance",
         "applies": lambda item: True,
-        "trigger": _rx(r"warrantless", r"inspection", r"administrative subpoena", r"civil investigative demand", r"surveillance",
-                       r"monitoring of", r"records? (?:access|demand)", r"geolocation", r"biometric", r"Fourth Amendment"),
+        "trigger": _rx(r"warrantless", r"without (?:a )?warrant", r"administrative subpoena", r"civil investigative demand", r"surveillance",
+                       r"geolocation", r"biometric", r"Fourth Amendment", r"precompliance review"),
         "question": "Does the action authorize searches or records demands without a warrant or neutral review?",
         "test": "Administrative inspections generally require a warrant (See v. Seattle), and records demands require a chance "
-                "for precompliance review (Patel), except in closely regulated industries (Burger).",
+                "for precompliance review (Patel), except in closely regulated industries (Burger). Historical location records "
+                "require a warrant (Carpenter).",
         "elements": [
-            {"id": "search", "gate": True, "text": "A search, inspection, or demand for records or data", "detect": _has(_rx(r"inspect", r"search", r"subpoena", r"investigative demand", r"records", r"surveillance", r"location", ev=False))},
-            {"id": "no_warrant", "gate": True, "text": "Without a warrant or precompliance review", "detect": _has(_rx(r"warrantless", r"without (?:a )?warrant", r"without (?:judicial|precompliance) review", r"without (?:a )?subpoena"))},
+            {"id": "search", "gate": True, "text": "A search, inspection, or demand for records or data",
+             "detect": _has(_rx(r"inspect\w*", r"\bsearch(?:es)?\b", r"subpoena", r"investigative demand", r"records? (?:demand|request|access)", r"surveillance", r"location (?:data|records|information)", ev=False))},
+            {"id": "no_warrant", "gate": True, "text": "Without a warrant or precompliance review",
+             "detect": _has(_rx(r"warrantless", r"without (?:a )?warrant", r"without (?:judicial|precompliance) review", r"without (?:a )?subpoena"))},
         ],
         "weighed": [weighed("closely_regulated", "A closely regulated industry (the Burger exception may apply)",
                             _has(_rx(r"firearm", r"liquor", r"alcohol", r"mining", r"junkyard", r"pharmac", r"vessel", r"cruise", r"aircraft", r"nuclear", ev=False)))],
-        "precedent": [rule(lambda i, t, f: "no_warrant" in f, "analogy", "patel", note="See v. Seattle and Patel apply by close analogy."),
+        "precedent": [rule(lambda i, t, f: "no_warrant" in f, "analogy", "patel", note="A search or records demand without a warrant or precompliance review: See v. Seattle and Patel apply by close analogy."),
                       rule(ALWAYS, "open", "burger", note="Ordinary inspections and subpoenas are usually lawful.")],
         "authorities": ["see_seattle", "patel", "burger", "carpenter"],
         "open_questions": ["How Carpenter applies to bulk data demands made to companies about their customers."],
@@ -807,25 +881,33 @@ ISSUES = [
     {
         "code": "due_process_takings", "group": "rights",
         "label": "Property, takings, or due process",
-        "applies": lambda item: True,
-        "trigger": _rx(r"forfeit", r"taking(?:s)? of", r"takings clause", r"without (?:prior )?(?:notice|hearing)", r"interim final rule", r"retroactiv",
-                       r"revoc", r"access easement", r"seiz", r"ex parte", r"summary suspension", r"moratorium"),
-        "question": "Does the action take property or a license without the notice and hearing due process requires, or without fair notice of the rule?",
-        "test": "The process due turns on the Mathews balance; agencies must give fair notice of prohibited conduct before "
-                "sanctioning it (Fox); a right of physical access to property is a per se taking (Cedar Point).",
+        # Due process (notice and a hearing) protects particular parties. It does not apply to rules of general
+        # application (Bi-Metallic), so rules are checked only for takings (a right of physical access, Cedar Point).
+        "applies": lambda item: item.get("category") in ("enforcement", "adjudication") or item.get("subcategory") in ("Final rule", "Proposed rule"),
+        "trigger": _rx(r"forfeit", r"takings? clause", r"taking of (?:private )?property", r"without (?:prior )?(?:notice|hearing)", r"ex parte", r"summary suspension",
+                       r"access easement", r"right (?:of|to) (?:physical )?(?:access|entry|enter)", r"\bseiz", r"revocation", r"fair notice"),
+        "question": "Does an action against particular parties take property or a license without the notice and hearing due process requires, or does a rule take property by granting physical access?",
+        "test": "Due process applies to actions directed at particular parties, not to rules of general application (Bi-Metallic). "
+                "The process due turns on the Mathews balance, and agencies must give fair notice of prohibited conduct before "
+                "sanctioning it (Fox). A rule granting a right of physical access to private property is a per se taking (Cedar Point).",
         "elements": [
-            {"id": "deprivation", "gate": True, "text": "Property, money, or a license is taken or suspended", "detect": _has(_rx(r"forfeit", r"seiz", r"revok", r"revoc", r"taking of", r"easement", r"moratorium",
-                                r"suspen(?:d|sion) (?:of )?(?:the |a |its )?(?:license|registration|permit|certificate|approval)"))},
-            {"id": "no_hearing", "gate": True, "text": "Without prior notice or a hearing, or without fair notice of the standard",
-             "detect": _has(_rx(r"without (?:prior )?(?:notice|hearing)", r"ex parte", r"summary (?:suspension|action)", r"immediately effective", r"interim final", r"retroactiv", r"vague", r"fair notice"))},
-            {"id": "physical", "text": "A physical occupation or right of access to private property", "detect": _has(_rx(r"access easement", r"right (?:of|to) (?:physical )?(?:access|entry|enter)", r"occupation of"))},
+            {"id": "deprivation", "gate": True, "text": "Property, money, or a license is taken, seized, revoked, or suspended",
+             "detect": _has(_rx(r"forfeit\w*", r"\bseiz\w*", r"revok\w*", r"revocation", r"taking of", r"easement",
+                                r"suspen(?:d|sion) (?:of )?(?:the |a |its )?(?:license|registration|permit|certificate|approval)", r"right (?:of|to) (?:physical )?(?:access|entry|enter)"))},
+            {"id": "particular", "gate": True, "text": "Directed at particular parties (an enforcement or adjudicative action), or a rule granting physical access",
+             "detect": lambda i, t: i.get("category") in ("enforcement", "adjudication") or bool(PHYSICAL_ACCESS.search(t))},
+            {"id": "no_process", "gate": True, "text": "Without prior notice, a hearing, or fair notice of the standard; or a right of physical access to property",
+             "detect": _any(_has(PHYSICAL_ACCESS), _has(_rx(r"without (?:prior )?(?:notice|hearing)", r"ex parte", r"summary (?:suspension|action|seizure)", r"without (?:an )?opportunity (?:to be heard|to respond|for a hearing)",
+                                r"fair notice", r"\bvague\b", r"no (?:prior )?hearing")))},
+            {"id": "physical", "text": "A physical occupation or right of access to private property", "detect": _has(PHYSICAL_ACCESS)},
         ],
         "weighed": [],
-        "precedent": [rule(lambda i, t, f: "physical" in f, "analogy", "cedar_point", note="Cedar Point applies by close analogy to a right of access."),
-                      rule(lambda i, t, f: {"deprivation", "no_hearing"} <= set(f), "analogy", "mathews", note="Mathews and Fox apply by close analogy."),
+        "precedent": [rule(lambda i, t, f: "physical" in f, "analogy", "cedar_point", note="A right of physical access to private property: Cedar Point applies by close analogy."),
+                      rule(lambda i, t, f: {"deprivation", "particular", "no_process"} <= set(f), "analogy", "mathews",
+                           note="A deprivation imposed on particular parties without notice or a hearing: Mathews and Fox apply by close analogy."),
                       rule(ALWAYS, "open", "mathews", note="Due process is a fact-specific balance.")],
-        "authorities": ["mathews", "fox", "cedar_point", "culley"],
-        "open_questions": ["When interim final rules adopted without comment also deny constitutionally adequate notice."],
+        "authorities": ["bi_metallic", "mathews", "fox", "cedar_point", "culley"],
+        "open_questions": ["When summary suspensions of licenses are justified by emergencies without a prior hearing."],
     },
     {
         "code": "excessive_fines", "group": "rights",
@@ -858,12 +940,15 @@ ISSUES = [
         "test": "Federal racial classifications receive strict scrutiny (Adarand) and are rarely upheld after SFFA; "
                 "sex classifications require an exceedingly persuasive justification (Virginia).",
         "elements": [
-            {"id": "classification", "gate": True, "text": "The action classifies by race or sex", "detect": _has(_rx(r"race", r"racial", r"sex[- ]based", r"gender", r"disadvantaged", r"minority-owned", r"women-owned"))},
-            {"id": "preference", "gate": True, "text": "It grants an express preference, presumption, or set-aside", "detect": _has(_rx(r"preference", r"set[- ]aside", r"presum", r"race[- ]conscious", r"goal"))},
+            {"id": "classification", "gate": True, "text": "The action classifies by race or sex",
+             "detect": _has(_rx(r"\brace\b", r"racial", r"sex[- ]based", r"socially disadvantaged", r"minority-owned", r"women-owned", r"race[- ]conscious"))},
+            {"id": "preference", "gate": True, "text": "It grants an express preference, presumption, set-aside, or quota based on race or sex",
+             "detect": _has(_rx(r"racial preferences?", r"race[- ]conscious", r"race[- ]based", r"sex[- ]based (?:preference|classification|criteria)", r"presum\w* (?:\w+ ){0,4}(?:socially )?disadvantaged",
+                                r"set[- ]asides? for (?:minority|women|disadvantaged)", r"(?:minority|women)[- ]owned (?:business )?(?:goals?|preferences?|set-asides?)", r"racial (?:quotas?|balancing)", r"\bquotas? (?:for|based on) (?:race|sex|minorit)"))},
         ],
         "weighed": [],
         "precedent": [rule(lambda i, t, f: {"classification", "preference"} <= set(f), "analogy", "sffa", before="analogy",
-                           note="SFFA and Adarand apply by close analogy; strict scrutiny is rarely satisfied."),
+                           note="An express racial or sex preference: SFFA and Adarand apply by close analogy; strict scrutiny is rarely satisfied."),
                       rule(ALWAYS, "open", "adarand", note="Mentions of diversity programs are not themselves classifications.")],
         "authorities": ["adarand", "sffa", "vmi"],
         "open_questions": ["How SFFA applies to federal contracting presumptions of disadvantage."],
@@ -908,45 +993,92 @@ def impact(item, text):
 
 # ---------------------------------------------------------------------------------------- rating
 def _level(strength, coverage):
+    """Direct holding: 3 with every element, 2 with half, else 1. Close analogy: 2 with every element, 1 with half.
+    Open question: 1 with half the elements (an arguable case), else not rated. (assess() also requires an open
+    question to show at least one element beyond the gate elements.)"""
     if strength == 3:
         return 3 if coverage >= 1 else 2 if coverage >= 0.5 else 1
     if strength == 2:
         return 2 if coverage >= 1 else 1 if coverage >= 0.5 else 0
-    return 1 if coverage >= 1 else 0
+    return 1 if coverage >= 0.5 else 0
 
 
-def assess(issue, item, text, summary_text=None):
-    """Apply one issue's test to an item. Returns the stored flag (explanations live in taxonomy.json).
-    level 0 means a possible issue that is not rated (gate elements missing, or too little evidence)."""
+def _evaluate(issue, item, text):
     found = [e["id"] for e in issue["elements"] if e["detect"](item, text)]
-    from_full_text = []
-    if summary_text is not None and summary_text != text:
-        from_full_text = [e["id"] for e in issue["elements"] if e["id"] in found and not e["detect"](item, summary_text)]
-    gates_ok = all(e["id"] in found for e in issue["elements"] if e.get("gate"))
-    hits = [w for w in issue.get("weighed", []) if w["detect"](item, text)]
+    gates = all(e["id"] in found for e in issue["elements"] if e.get("gate"))
     rule_ = next(r for r in issue["precedent"] if r["when"](item, text, found))
     coverage = len(found) / len(issue["elements"])
-    level = _level(STRENGTH[rule_["level"]], coverage) if gates_ok else 0
-    if rule_["level"] == "open" and issue.get("open_rated") is False:
-        level = 0   # an open question this common is listed as a possible issue, not rated
+    return found, gates, rule_, coverage
 
-    def lowered(lv, factors):
-        if lv <= 1:
-            return lv
-        return max(1, lv - sum(1 for w in factors if w["lowers"]))
 
-    level = lowered(level, hits)   # today, every weighed factor counts, including ones based on later decisions
+def assess(issue, item, text, core_text=None, summary_text=None):
+    """Apply one issue's test to an item. Returns the stored flag (explanations live in taxonomy.json).
+
+    text       everything RegCollect has: title, action line, summary, and passages from the full text.
+    core_text  the document's operative text: title, action line, summary, and full-text passages from the
+               operative parts (the whole of a presidential document; a rule's authority line and regulatory text).
+
+    Likely is generous: the gate elements and half the elements anywhere in what was read. Very likely and
+    Near certain need the elements in the operative text (or a court ruling on the action itself), so that
+    scattered words in a long preamble cannot raise a rating. level 0 means a possible issue, not rated."""
+    core_text = text if core_text is None else core_text
+    found, gates, rule_, coverage = _evaluate(issue, item, text)
+    c_found, c_gates, c_rule, c_coverage = _evaluate(issue, item, core_text) if core_text != text else (found, gates, rule_, coverage)
+
+    optional = [e["id"] for e in issue["elements"] if not e.get("gate") and not e.get("weak")]
+
+    def rate(r, cov, ok, fnd):
+        lv = _level(STRENGTH[r["level"]], cov) if ok else 0
+        if r["level"] == "open" and optional and not any(x in fnd for x in optional):
+            lv = 0      # an open question needs some sign of the problem beyond the essential elements
+        if r["level"] == "open" and issue.get("open_rated") is False:
+            lv = 0      # an open question this common is listed as a possible issue, not rated
+        return lv
+
+    lv_all, lv_core = rate(rule_, coverage, gates, found), rate(c_rule, c_coverage, c_gates, c_found)
+    gate_ids = [e["id"] for e in issue["elements"] if e.get("gate")]
+    if not any(g in c_found for g in gate_ids):
+        lv_all = 0      # the issue must show up in the operative text; passages elsewhere can only complete the picture
+    level, used_rule = (lv_core, c_rule) if lv_core >= min(lv_all, 1) else (min(lv_all, 1), rule_)
+    out_found = found
+    hits = [w for w in issue.get("weighed", []) if w["detect"](item, text)]
+
+    def adjust(lv, factors):
+        if any(w["effect"] == "unrates" for w in factors):
+            return 0
+        if lv > 1:
+            lv = max(1, lv - sum(1 for w in factors if w["effect"] == "lowers"))
+        return min(lv, issue.get("max_level", 3))
+
+    final = adjust(level, hits)
     out = {"code": issue["code"], "group": issue["group"], "structural": issue["group"] == "structural",
-           "level": level, "precedent": rule_["level"], "authority": rule_["authority"], "elements_found": found,
+           "level": final, "precedent": used_rule["level"], "authority": used_rule["authority"], "elements_found": out_found,
            "elements_total": len(issue["elements"]), "weighed": [w["id"] for w in hits]}
-    if from_full_text:
-        out["full_text_elements"] = from_full_text
-    decided = AUTHORITIES[rule_["authority"]]["decided"]
-    if level and item.get("date") and item["date"] < decided:
+    base = summary_text if summary_text is not None else core_text
+    s_found = c_found if base == core_text else [e["id"] for e in issue["elements"] if e["detect"](item, base)]
+    full_only = [e for e in found if e not in s_found]
+    if full_only:
+        out["full_text_elements"] = full_only
+    if final and lv_all > lv_core and final == 1 and lv_core < 1:
+        out["basis"] = "passages"           # rated on passages from the full text only, so capped at Likely
+    elif lv_all > lv_core and lv_core >= 1 and lv_core < lv_all:
+        out["basis"] = "operative"          # higher levels need the operative text, which supports this level
+    unrated = [w["id"] for w in hits if w["effect"] == "unrates"]
+    if unrated:
+        out["unrated_by"] = unrated[0]
+    if issue.get("max_level") and level > issue["max_level"]:
+        out["capped"] = issue["max_level"]
+    decided = AUTHORITIES[used_rule["authority"]]["decided"]
+    if final and item.get("date") and item["date"] < decided:
         then_hits = [w for w in hits if not w.get("since") or (item.get("date") or "") >= w["since"]]
-        then_level = lowered(_level(STRENGTH[rule_["before"]], coverage) if gates_ok else 0, then_hits)
-        if then_level < level:
-            out["at_the_time"] = {"level": then_level, "because": rule_["authority"]}
+        core_used = used_rule is c_rule
+        if used_rule["before"] == "lawful":
+            then_level = 0      # the practice was lawful under the governing precedent at the time (for example, Chevron)
+        else:
+            then_rule = dict(used_rule, level=used_rule["before"])
+            then_level = adjust(rate(then_rule, c_coverage if core_used else coverage, c_gates if core_used else gates, c_found if core_used else found), then_hits)
+        if then_level < final:
+            out["at_the_time"] = {"level": then_level, "because": used_rule["authority"]}
     return out
 
 
@@ -960,6 +1092,8 @@ def apply_ruling(flag, ruling, item):
         flag["level"] = max(flag.get("level", 0), rulings.level_of(ruling))
         flag["precedent"] = "direct"
         flag["authority"] = ruling["authority"]
+        flag.pop("basis", None)
+        flag.pop("unrated_by", None)
         decided = AUTHORITIES[ruling["authority"]]["decided"]
         if item.get("date") and item["date"] < decided:
             flag["at_the_time"] = {"level": 0, "because": ruling["authority"]}
@@ -980,24 +1114,27 @@ def export():
             "issues": [{
                 "code": i["code"], "group": i["group"], "label": i["label"], "question": i["question"], "test": i["test"],
                 "elements": [{"id": e["id"], "text": e["text"], "gate": bool(e.get("gate"))} for e in i["elements"]],
-                "weighed": [{"id": w["id"], "text": w["text"], "lowers": w["lowers"]} for w in i.get("weighed", [])],
+                "weighed": [{"id": w["id"], "text": w["text"], "effect": w["effect"], "lowers": w["effect"] == "lowers"} for w in i.get("weighed", [])],
+                "max_level": i.get("max_level", 3), "open_rated": i.get("open_rated", True),
+                "excludes": "ratifications" if i.get("exclude") else "",
                 "precedent": [{"level": r["level"], "label": STRENGTH_LABEL[r["level"]], "authority": r["authority"],
                                "before": r["before"], "note": r["note"]} for r in i["precedent"]],
                 "authorities": i["authorities"], "open_questions": i["open_questions"],
             } for i in ISSUES],
             "rubric": {
                 "constitutionality": [
-                    "The rating measures one thing: how likely it is that the action is unconstitutional, or exceeds the limits on executive power, under the law as it stands today. Impact is recorded separately and never affects it.",
+                    "The rating measures one thing: how likely it is that the action is unlawful under the Constitution or the limits on executive power, under the law as it stands today. Impact is recorded separately and never affects it.",
+                    "Each memo states a test broken into elements. Gate elements are the essential ones: an issue is rated only when every gate element appears; otherwise it is listed as a possible issue.",
                     "Precedent strength comes from the first rule in the memo that matches: a direct holding (a court has held this practice unlawful), a close analogy (a Supreme Court holding applies closely, or an appeals court has held the same practice unlawful), or an open question.",
-                    "Gate elements must all appear before an action is rated. Without them, the issue is listed as a possible issue and not rated.",
-                    "Almost certainly unconstitutional: a direct holding and every element found. Very likely: a direct holding with at least half the elements, or a close analogy with every element. Likely: any other rated issue.",
-                    "Elements are looked for in the title, action line, and summary, and in the full text when RegCollect has read it. Each flag says which elements came from the full text.",
-                    "Weighed factors (such as a contrary holding or a closely regulated industry) lower the rating by one step each but never remove it. Settlements are noted and do not lower it.",
-                    "When a court has ruled on the specific action, the ruling sets the rating: Supreme Court, almost certainly; court of appeals, very likely; district court, likely. A ruling that upheld the action lowers the rating one step.",
+                    "Likely unlawful is generous, because RegCollect is built to surface arguable issues: the gate elements and at least half of all elements, with any precedent. Very likely unlawful: a direct holding with at least half the elements, or a close analogy with every element. Almost certainly unlawful: a direct holding with every element.",
+                    "Very likely and almost certainly require the elements to appear in the document's operative text: its title, action line, and summary; the whole of a presidential document; or a rule's authority line and regulatory text. Elements found only in other passages of the full text (preambles, comment responses) can support Likely at most. Each flag says which elements came from the full text.",
+                    "Weighed factors (such as a closely regulated industry) lower the rating by one step each but never below Likely. When the Supreme Court has upheld the very practice (for example, FCC forfeiture orders in FCC v. AT&T), the issue is listed as a possible issue with that reason. Settlements are noted only.",
+                    "When a court has ruled on the specific action, the ruling sets the rating: Supreme Court, almost certainly; court of appeals, very likely; district court, likely. Each such flag states what the court held. A ruling that upheld the action lowers the rating one step.",
+                    "Some memos cap their ratings: reliance on Chevron deference is rated Likely at most, because Loper Bright preserved earlier cases that upheld rules under Chevron.",
                     "Ratings apply today's law. When the controlling decision came after the action, the flag notes that the action may have been lawful under the precedent at the time.",
                 ],
                 "impact": [
-                    "Impact is noted for context only. It is not color-coded and does not affect the constitutionality rating.",
+                    "Impact is noted for context only. It is not color-coded and does not affect the lawfulness rating.",
                     "Sanction points: 4 for criminal charges, bars, expulsions, debarment, revocations, and practice bans; 3 for civil penalties, forfeitures, disgorgement, seizures, asset freezes, and funding cuts; 2 for cease-and-desist orders, injunctions, suspensions, denials, shutdowns, gag terms, trading halts, data-deletion orders, monitors, recalls, and import actions; 1 for warnings, censures, subpoenas, inspections, compelled notices, restitution, and settlements.",
                     "Money points: 3 for at least $100 million, 2 for at least $1 million, 1 for any stated amount.",
                     "Reach points: 3 for presidential documents and rules designated economically significant or major; 2 for other final or proposed rules; 1 for actions against particular parties and self-regulatory filings.",

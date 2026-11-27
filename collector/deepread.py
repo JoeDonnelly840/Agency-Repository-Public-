@@ -86,7 +86,7 @@ def read_month(client, month, budget, root=None):
             reads += 1
             fulltext.record_on_item(it, rec)
             flag_item(it)
-            if rec.get("ev") or rec.get("cites"):
+            if rec.get("ev") or rec.get("opev") or rec.get("cites"):
                 records[it["id"]] = rec
         fulltext.save_records(items, records, root)
         _rewrite(path, kind, key, items, root)

@@ -1,4 +1,4 @@
-/* RegCollect 3.1 - static front end. No outside libraries or services; all data comes from ./data. */
+/* RegCollect 3.2 - static front end. No outside libraries or services; all data comes from ./data. */
 (function () {
   "use strict";
 
@@ -9,12 +9,15 @@
   const CAT_ORDER = ["rulemaking", "enforcement", "adjudication", "presidential", "other"];
   // Rating names come from taxonomy.json (collector/flags.py), so they can be renamed in one place.
   const LEVEL = { 3: "Near certain", 2: "Very likely", 1: "Likely" };
-  const LEVEL_FULL = { 3: "Almost certainly unconstitutional", 2: "Very likely unconstitutional", 1: "Likely unconstitutional" };
+  const LEVEL_FULL = { 3: "Almost certainly unlawful", 2: "Very likely unlawful", 1: "Likely unlawful" };
+  let SCALE_NAME = "Lawfulness", SCALE_PREFIX = "Unlawful";
   const IMPACT = { 3: "Serious Impact", 2: "Significant Impact", 1: "Lower Impact" };
   const PRECEDENT = { direct: "Direct holding", analogy: "Close analogy", open: "Open question" };
   function loadScaleNames() {
     const sc = (state.tax || {}).scales || {};
     ((sc.constitutionality || {}).levels || []).forEach((l) => { LEVEL[l.value] = l.name; LEVEL_FULL[l.value] = l.full || l.name; });
+    if ((sc.constitutionality || {}).label) SCALE_NAME = sc.constitutionality.label;
+    if ((sc.constitutionality || {}).prefix) SCALE_PREFIX = sc.constitutionality.prefix;
     ((sc.impact || {}).levels || []).forEach((l) => { IMPACT[l.value] = l.name; });
   }
   const BASIS = { signed: "signed", posted: "posted", released: "released", classified: "classified", published: "published" };
@@ -120,6 +123,26 @@
     return rows.concat(scopeItems(recent, key));
   }
 
+  /** Every item in the given archived months (YYYY-MM), for fetching a few actions found in the compact rows. */
+  async function loadMonthItems(months) {
+    const parts = await Promise.all(months.filter((m) => (state.index.months || {})[m] != null).map((m) => loadFile(`data/months/${m}.json`)));
+    return parts.flatMap((p) => p.items || []);
+  }
+  /** Compact rows for every action since 2015 (chart facts for archived months, items for recent days), for fast counting. */
+  async function loadAllRows() {
+    if (state.allRows) return state.allRows;
+    const ix = state.index;
+    const facts = await Promise.all(Object.keys(ix.months || {}).map((m) => loadFile(`data/facts/${m}.json`)));
+    const corps = new Set((ix.corporations || []).map((c) => c.key));
+    const rows = [];
+    facts.forEach((f) => (f.rows || []).forEach((r) => rows.push({ date: r[0], ents: corps.has(r[1][0]) ? [r[1][0]] : r[1], category: r[2], subcategory: f.subcategories[r[3]],
+      outcome: r[4], sanctions: r[5], codes: r[6], level: r[7], impact: r[8], routine: !!r[9], poss: r[10] || null })));
+    const recent = await loadPublished(Object.keys(ix.days || {}).sort()[0] || today(), "");
+    recent.forEach((it) => rows.push({ date: it.date, ents: entityOf(it), category: it.category, subcategory: it.subcategory, outcome: it.outcome, sanctions: it.sanctions || [],
+      codes: rated(it).map((f) => f.code), level: band(it), impact: impactOf(it), routine: !!it.routine, poss: possible(it).map((f) => f.code), item: it }));
+    return (state.allRows = rows);
+  }
+
   // ------------------------------------------------------------- entities
   const ALIASES = { sec: ["securities and exchange", "securities & exchange"], ftc: ["trade commission"], fcc: ["communications commission"],
     epa: ["environmental protection"], nlrb: ["labor relations board", "labor board"], cfpb: ["consumer bureau", "consumer financial protection"],
@@ -146,9 +169,9 @@
   const issueLabel = (code) => (issueMap()[code] || {}).label || code;
 
   // --------------------------------------------------------------- ratings
-  // Constitutionality is the only rating, and the only thing colored red, orange, or yellow.
+  // Lawfulness is the only rating, and the only thing colored red, orange, or yellow.
   // Impact is shown as plain text and never changes a rating or an order.
-  const pill = (v) => `<span class="pill c${v}" title="${esc(LEVEL_FULL[v])}"><span class="k">Unconstitutional</span>${esc(LEVEL[v])}</span>`;
+  const pill = (v) => `<span class="pill c${v}" title="${esc(LEVEL_FULL[v])}"><span class="k">${esc(SCALE_PREFIX)}</span>${esc(LEVEL[v])}</span>`;
   const impactTag = (v) => (v ? `<span class="impact-tag" title="Impact is context only; it does not affect the rating">${esc(IMPACT[v])}</span>` : "");
   const band = (it) => (it.rating ? it.rating.level : 0);
   const sevClass = (it) => (it.rating ? `s${band(it)}` : "");
@@ -175,6 +198,17 @@
     return `<span>${basis === "published" ? "Published" : basis[0].toUpperCase() + basis.slice(1)} <span class="d">${esc(fmtDay(it.date))}</span></span>${pub}`;
   }
   const REVIEW_CHOICES = [["agree", "Agree"], ["higher", "Should be higher"], ["lower", "Should be lower"], ["none", "Not an issue"]];
+  const EFFECT = { lowers: "lowers the rating one step, never below Likely", noted: "noted only", unrates: "listed as a possible issue for this reason" };
+  function unratedNote(issue, f) {
+    if (f.level) return f.capped ? `<p class="note">This memo rates issues ${esc(LEVEL_FULL[f.capped].toLowerCase())} at most. ${esc(((issue.precedent || [])[0] || {}).note || "")}</p>` : "";
+    if (f.unrated_by) { const w = (issue.weighed || []).find((x) => x.id === f.unrated_by); return `<p class="note">Listed as a possible issue, not rated: ${esc(w ? w.text : f.unrated_by)}.</p>`; }
+    return '<p class="note">Listed as a possible issue, not rated: the essential (gate) elements, or enough of the test, were not found in the document.</p>';
+  }
+  function basisNote(f) {
+    if (f.basis === "passages") return '<p class="note">Rated Likely on passages from the full text. Higher ratings need the elements in the document\'s operative text (its title and summary, the whole of a presidential document, or a rule\'s authority line and regulatory text).</p>';
+    if (f.basis === "operative") return '<p class="note">More elements appear in other passages of the full text, but higher ratings need them in the document\'s operative text.</p>';
+    return "";
+  }
   function flagHtml(it, f) {
     const d = doctrine(), A = d.authorities || {}, im = issueMap();
     const issue = im[f.code] || { elements: [], weighed: [], precedent: [], label: f.code, question: "" };
@@ -188,11 +222,12 @@
     const rv = reviews()[`${it.id}|${f.code}`];
     return `<div class="flag-detail"><div class="issue-row">${f.level ? pill(f.level) : '<span class="pill c0"><span class="k">Possible issue</span>not rated</span>'}<strong>${esc(issue.label)}</strong>
         <span class="muted small">${f.structural ? "Structural" : "Individual rights"}</span></div>
-      ${ruling ? `<div class="ruling"><strong>${esc(ruling.court_label)} ruling on this action:</strong> ${esc(ruling.summary)} <span class="cite">${esc((A[ruling.authority] || {}).cite || "")}</span>.${ruling.kind !== "constitutional" ? ` <span class="muted small">(Kind of holding: ${esc(ruling.kind)}.)</span>` : ""}</div>` : ""}
+      ${ruling ? `<div class="ruling"><strong>${esc(ruling.court_label)} ruling on this action.</strong> What the court held: ${esc((A[ruling.authority] || {}).held || ruling.summary)} <span class="cite">${esc((A[ruling.authority] || {}).cite || "")}</span>.${ruling.caution ? ` <em>${esc(ruling.caution)}</em>` : ""}${ruling.kind !== "constitutional" ? ` <span class="muted small">(Kind of holding: ${esc(ruling.kind)}.)</span>` : ""}</div>` : ""}
       <p>${esc(issue.question)}</p>
+      ${unratedNote(issue, f)}${basisNote(f)}
       <p><strong>Elements of the test found: ${f.elements_found.length} of ${f.elements_total}</strong>${ruling ? ". The court's ruling on this action sets the rating; the checklist shows what the document's own text reveals." : f.level ? "" : ". The marked (gate) elements must all appear before this issue is rated."}</p>
       <ul class="checks-list">${issue.elements.map((e) => `<li class="${f.elements_found.includes(e.id) ? "yes" : "no"}">${esc(e.text)}${e.gate ? ' <span class="gate">gate</span>' : ""}${ft.has(e.id) ? ' <span class="ftmark">found in full text</span>' : ""}</li>`).join("")}
-        ${weighed.map((w) => `<li class="counter">${esc(w.text)} <span class="muted small">(${w.lowers ? "lowers the rating one step" : "noted only"})</span></li>`).join("")}
+        ${weighed.map((w) => `<li class="counter">${esc(w.text)} <span class="muted small">(${EFFECT[w.effect || (w.lowers ? "lowers" : "noted")]})</span></li>`).join("")}
         ${(f.weighed || []).includes("upheld_by_court") ? '<li class="counter">A court upheld this action <span class="muted small">(lowers the rating one step)</span></li>' : ""}</ul>
       <p>Precedent: <strong>${esc(PRECEDENT[f.precedent] || f.precedent)}</strong>. ${esc(ruling ? "" : rule.note || "")} <span class="cite">${esc(a.cite || "")}</span>${a.held ? `: ${esc(a.held)}` : ""}</p>${then}
       <p class="muted small">Triggered by: ${(f.triggers || []).map((t) => `“${esc(t)}”`).join(", ")}. <a href="#methods#m-${esc(f.code)}">Read the memo for this issue</a>.</p>
@@ -297,7 +332,7 @@
   }
   function ratingStrip(items, linkFn) {
     const c = sevCounts(items);
-    return `<div class="strip" role="group" aria-label="Flagged actions by constitutionality">${[3, 2, 1].map((k) => `<a class="cell k${k} ${c[k] ? "" : "z"}" href="${linkFn(k)}">
+    return `<div class="strip" role="group" aria-label="Flagged actions by lawfulness">${[3, 2, 1].map((k) => `<a class="cell k${k} ${c[k] ? "" : "z"}" href="${linkFn(k)}">
         <span class="n">${c[k].toLocaleString()}</span><span class="l">${esc(LEVEL_FULL[k])}</span></a>`).join("")}</div>`;
   }
   function renderHome() {
@@ -316,11 +351,11 @@
     const planned = (state.index.jurisdictions || []).find((j) => j.key === "state") || {};
     return `<section class="brief" id="brief"><div>
         <h1>${plural(items.length, "new action")} ${esc(sinceWords())}</h1>
-        <p class="brief-sub">${flagged ? `${flagged.toLocaleString()} ${flagged === 1 ? "is" : "are"} rated as likely unconstitutional or worse.` : "None was rated as likely unconstitutional."}
+        <p class="brief-sub">${flagged ? `${flagged.toLocaleString()} ${flagged === 1 ? "is" : "are"} rated as likely unlawful or worse.` : "None was rated as likely unlawful."}
           ${routine ? `${plural(routine, "routine exchange fee filing")} ${routine === 1 ? "is" : "are"} not counted.` : ""} Choose a body below to see its actions, chart them, and check what RegCollect could and could not see.</p>
         <div class="stats"><a class="stat" href="#research"><div class="n">${items.length.toLocaleString()}</div><div class="l">new actions</div></a>
           <a class="stat" href="#coverage#history"><div class="n">${esc(historyStart().slice(0, 4))}</div><div class="l">history from</div></a></div>
-      </div><div><p class="strip-cap">Constitutionality of new actions</p>${ratingStrip(items, (k) => `#issues?l=${k}`)}</div></section>
+      </div><div><p class="strip-cap">Lawfulness of new actions</p>${ratingStrip(items, (k) => `#issues?l=${k}`)}</div></section>
       ${section("The President", "Executive orders, proclamations, and memoranda", ents.filter((e) => e.type === "president"))}
       ${section("Federal agencies", "Departments, bureaus, and independent commissions", ents.filter((e) => e.type === "agency"))}
       ${section("Agency-controlled corporations", "Private bodies exercising delegated government power", ents.filter((e) => e.type === "corporation"))}
@@ -341,7 +376,7 @@
     if (tab === "charts") {
       const rows = await loadChartRows(key);
       return { html: head + `<p class="lede">Chart this ${e.type === "agency" ? "agency's" : "body's"} actions by their action dates, from ${esc(fmtDay(historyStart()))} to today (as far as the history backfill has reached). Choose kinds of action, sanctions, outcomes, and dates, then download the chart.</p><div id="chart-host"></div>`,
-        after: () => { const ctx = state.charts[key] || (state.charts[key] = { entityName: e.name, fileKey: key }); ctx.labels = chartLabels(); window.RHCharts.render($("#chart-host"), rows, ctx); } };
+        after: () => { const ctx = state.charts[key] || (state.charts[key] = { entityName: e.name, fileKey: key }); ctx.labels = chartLabels(); ctx.today = today(); ctx.historyStart = historyStart(); window.RHCharts.render($("#chart-host"), rows, ctx); } };
     }
     if (tab === "coverage") {
       const from = state.since.dateFrom, isCorp = e.type === "corporation";
@@ -364,7 +399,7 @@
     const scopes = [["new", state.since.mode === "visit" ? `New since ${fmtDay(state.since.visitDay)}` : `Since ${fmtDay(state.since.dateFrom)}`], ["12m", "Past 12 months"], ["all", `Since ${historyStart().slice(0, 4)}`]];
     const html = head + corpNote + `
       <div class="toolbar"><span class="seg" data-ui="scope">${scopes.map(([v, l]) => `<button type="button" data-v="${v}" class="${ui.scope === v ? "active" : ""}">${esc(l)}</button>`).join("")}</span>
-        <span class="seg" data-ui="sort">${[["severity", "Most likely unconstitutional first"], ["date", "Newest first"]].map(([v, l]) => `<button type="button" data-v="${v}" class="${ui.sort === v ? "active" : ""}">${l}</button>`).join("")}</span></div>
+        <span class="seg" data-ui="sort">${[["severity", "Most likely unlawful first"], ["date", "Newest first"]].map(([v, l]) => `<button type="button" data-v="${v}" class="${ui.sort === v ? "active" : ""}">${l}</button>`).join("")}</span></div>
       <div class="tabs" id="cat-tabs">${cats.map((c) => `<button type="button" data-cat="${c}" class="${c === ui.cat ? "active" : ""}">${esc(c === "all" ? "All" : state.index.categories[c])}<span class="count">${cnt(c)}</span></button>`).join("")}</div>
       <div class="toolbar"><input type="search" id="f-q" placeholder="Filter by words (related words count too)" value="${esc(ui.q)}">
         <label><input type="checkbox" id="f-flag" ${ui.flagged ? "checked" : ""}> Only rated constitutional issues</label>
@@ -407,7 +442,7 @@
     const poss = showPossible ? all.filter((it) => !it.rating && possible(it).length && (!kind || possible(it).some((f) => f.code === kind))).sort(byDate) : [];
     const scopes = [["new", sinceWords()[0].toUpperCase() + sinceWords().slice(1)], ["12m", "Past 12 months"], ["all", `Since ${historyStart().slice(0, 4)}`]];
     return { html: `<h1>Constitutional issues</h1>
-      <p class="lede">Each flagged action is rated on one scale, <strong>constitutionality</strong>: how likely it is that the action is unconstitutional, or exceeds the limits on executive power, under today's law. The rating comes from a <a href="#methods">published rubric</a> and, when a court has ruled on the action itself, from that ruling. <strong>Impact</strong> is shown for context and never changes a rating.</p>
+      <p class="lede">Each flagged action is rated on one scale, <strong>lawfulness</strong>: how likely it is that the action is unlawful under the Constitution or the limits on executive power, under today's law. “Likely” marks an arguable issue worth a lawyer's look. The rating comes from a <a href="#methods">published rubric</a> and, when a court has ruled on the action itself, from that ruling. <strong>Impact</strong> is shown for context and never changes a rating.</p>
       <div class="toolbar"><span class="seg">${scopes.map(([v, l]) => `<button type="button" class="${scope === v ? "active" : ""}" data-go="${link({ scope: v === "new" ? "" : v })}">${esc(l)}</button>`).join("")}</span>
         <label><input type="checkbox" id="iss-s" ${structural ? "checked" : ""}> Structural issues only</label>
         ${lv || im || kind ? `<a href="${link({ l: "", i: "", kind: "" })}">Clear selection</a>` : ""}</div>
@@ -425,7 +460,7 @@
   }
 
   // ------------------------------------------------------------- research
-  const EXAMPLES = ["Almost certainly unconstitutional actions by the President, as a timeline", "IEEPA tariffs", "Rules that relied on Chevron deference",
+  const EXAMPLES = ["Almost certainly unlawful actions by the President, as a timeline", "IEEPA tariffs", "Rules that relied on Chevron deference",
     "Religious freedom and RFRA", "Penalties decided by in-house judges", "Agencies acting like Congress", "SEC gag orders and no-deny settlements",
     "Eviction moratorium", "Grant terminations and impoundment", "Proposed rules open for comment about AI"];
   const SORTS = { date: (it) => it.date || "", body: (it) => entityNames(it), title: (it) => it.title || "", type: (it) => it.subcategory || "",
@@ -448,7 +483,7 @@
         <td>${(it.flags || []).length ? `<button type="button" class="why-btn" data-why="${esc(it.id)}">${esc(listText((rated(it).length ? rated(it) : possible(it)).map((f) => issueLabel(f.code))))}${rated(it).length ? "" : " (possible)"} ${open ? "(hide)" : "(why)"}</button>` : ""}</td></tr>
         ${open ? `<tr class="detail"><td colspan="7">${whyHtml(it)}</td></tr>` : ""}`;
     }).join("");
-    return `<div class="wrap-x"><table class="t"><thead><tr>${th("date", "Date")}${th("body", "Agency or body")}${th("title", "Title")}${th("type", "Type")}${th("level", "Constitutionality")}${th("impact", "Impact")}${th("issues", "Why flagged")}</tr></thead><tbody>${rows}</tbody></table></div>
+    return `<div class="wrap-x"><table class="t"><thead><tr>${th("date", "Date")}${th("body", "Agency or body")}${th("title", "Title")}${th("type", "Type")}${th("level", "Lawfulness")}${th("impact", "Impact")}${th("issues", "Why flagged")}</tr></thead><tbody>${rows}</tbody></table></div>
       ${items.length > n ? `<p><button type="button" class="btn ghost" data-more="${esc(key)}">Show more of ${items.length.toLocaleString()}</button></p>` : ""}`;
   }
   async function renderResearch() {
@@ -476,7 +511,7 @@
       ...parsed.entities.map((x) => [`e:${x.key}`, "Agency", em[x.key].name]),
       ...parsed.concepts.map((x) => [`${x.kind}:${x.key}`, { sanction: "Sanction", issue: "Issue", category: "Kind", outcome: "Outcome", statute: "Statute" }[x.kind],
         x.kind === "statute" ? (((doctrine().statutes || []).find((t) => t.key === x.key)) || { label: x.said }).label : x.kind === "sanction" ? sm[x.key].label : x.kind === "issue" ? (imap[x.key] || {}).label : x.kind === "outcome" ? om[x.key] : x.key.startsWith("sub:") ? x.key.slice(4) + "s" : state.index.categories[x.key]]),
-      ...parsed.severity.map((x) => [`sev:${x.axis}`, "Rating", x.axis === "level" ? (x.min >= 3 ? "Almost certainly unconstitutional" : "Very likely or almost certainly unconstitutional") : x.axis === "impact" ? "Serious impact" : x.axis === "structural" ? "Structural issues" : "Any rated constitutional issue"]),
+      ...parsed.severity.map((x) => [`sev:${x.axis}`, "Rating", x.axis === "level" ? (x.min >= 3 ? "Almost certainly unlawful" : "Very likely or almost certainly unlawful") : x.axis === "impact" ? "Serious impact" : x.axis === "structural" ? "Structural issues" : "Any rated constitutional issue"]),
       ...(parsed.date ? [["date", "Dates", [parsed.date.from && fmtDay(parsed.date.from), parsed.date.to && fmtDay(parsed.date.to)].filter(Boolean).join(" to ")]] : []),
     ];
     const items = visible(pool.items, facets.routine);
@@ -490,7 +525,7 @@
         <select id="r-period" style="width:100%"><option value="12m" ${period === "12m" ? "selected" : ""}>Past 12 months</option><option value="all" ${period === "all" ? "selected" : ""}>Since ${historyStart().slice(0, 4)} (larger download)</option>
           ${years.map((y) => `<option value="${y}" ${period === y ? "selected" : ""}>${y}</option>`).join("")}</select>
         <p class="muted small" style="margin:6px 0 0">${pool.items.length.toLocaleString()} actions loaded.</p></div>
-      ${fbox("Constitutionality", "l", [3, 2, 1].map((v) => cb("l", v, LEVEL_FULL[v], count((it) => band(it) === v))).join(""), true)}
+      ${fbox("Lawfulness", "l", [3, 2, 1].map((v) => cb("l", v, LEVEL_FULL[v], count((it) => band(it) === v))).join(""), true)}
       ${fbox("Impact (context only)", "im", [3, 2, 1].map((v) => cb("im", v, IMPACT[v], count((it) => impactOf(it) === v))).join(""), facet("im").length)}
       ${fbox("Agency or body", "e", entities().map((e) => cb("e", e.key, e.name, count((it) => entityOf(it).includes(e.key)))).join(""), facet("e").length)}
       ${fbox("Kind of action", "cat", CAT_ORDER.map((c) => cb("cat", c, state.index.categories[c], count((it) => it.category === c))).join(""), facet("cat").length)}
@@ -524,11 +559,11 @@
           (rs.length > (state.ui[k] || PAGE) ? `<p><button type="button" class="btn ghost" data-more="${esc(k)}">Show more of ${rs.length.toLocaleString()}</button></p>` : "");
       body = `<div class="figures"><div class="figure"><div class="n">${res.strong.length.toLocaleString()}</div><div class="l">strong matches</div></div>
           <div class="figure"><div class="n">${res.related.length.toLocaleString()}</div><div class="l">related matches below</div></div>
-          <div class="figure"><div class="n">${all.filter((it) => it.rating).length.toLocaleString()}</div><div class="l">rated as likely unconstitutional or worse</div></div>
+          <div class="figure"><div class="n">${all.filter((it) => it.rating).length.toLocaleString()}</div><div class="l">rated as likely unlawful or worse</div></div>
           <div class="figure"><div class="n">${all.filter((it) => band(it) === 3).length}</div><div class="l">almost certainly</div></div></div>
         ${res.relaxed ? `<div class="banner">No action matched every part of your request, so RegCollect left out ${esc(res.relaxed)} and shows the closest matches.</div>` : ""}
         ${res.suggest && res.suggest.length ? `<p class="muted small">Did you mean: ${res.suggest.map((x) => `<a href="#research?q=${encodeURIComponent(x)}">${esc(x)}</a>`).join(", ")}?</p>` : ""}
-        <div class="toolbar">Group by <span class="seg" data-p="g">${[["none", "Relevance"], ["level", "Constitutionality"], ["impact", "Impact"], ["entity", "Agency"], ["issue", "Issue"], ["sanction", "Sanction"], ["category", "Kind"], ["date", "Week"]].map(([v, l]) => `<button type="button" data-v="${v}" class="${group === v ? "active" : ""}">${l}</button>`).join("")}</span>
+        <div class="toolbar">Group by <span class="seg" data-p="g">${[["none", "Relevance"], ["level", "Lawfulness"], ["impact", "Impact"], ["entity", "Agency"], ["issue", "Issue"], ["sanction", "Sanction"], ["category", "Kind"], ["date", "Week"]].map(([v, l]) => `<button type="button" data-v="${v}" class="${group === v ? "active" : ""}">${l}</button>`).join("")}</span>
           Show as <span class="seg" data-p="v">${[["cards", "Cards"], ["table", "Table"]].map(([v, l]) => `<button type="button" data-v="${v}" class="${view === v ? "active" : ""}">${l}</button>`).join("")}</span>
           <button type="button" class="btn ghost small" id="r-csv">Download CSV</button><button type="button" class="btn ghost small" id="r-link">Copy link</button></div>
         ${view === "table" ? '<p class="muted small">Flagged actions come first. Click a column heading to sort; click it again to reverse.</p>' : ""}
@@ -566,7 +601,7 @@
   function csvOf(items) {
     const q = (v) => `"${String(v == null ? "" : v).replace(/"/g, '""')}"`;
     const sm = sanctionMap(), om = outcomeMap();
-    const head = ["Action date", "Date basis", "Published", "Agency or body", "Kind", "Type", "Outcome", "Title", "Link", "Constitutionality", "Impact", "Impact points", "Rated constitutional issues", "Possible issues (not rated)", "Court ruling", "Statutes cited", "Full text read", "Sanctions", "Source", "Comments due"];
+    const head = ["Action date", "Date basis", "Published", "Agency or body", "Kind", "Type", "Outcome", "Title", "Link", "Lawfulness", "Impact", "Impact points", "Rated constitutional issues", "Possible issues (not rated)", "Court ruling", "Statutes cited", "Full text read", "Sanctions", "Source", "Comments due"];
     const rows = items.map((it) => [it.date, it.date_basis || "published", it.published || it.date, entityNames(it), state.index.categories[it.category], it.subcategory, om[it.outcome], it.title, it.url,
       it.rating ? LEVEL_FULL[it.rating.level] : "", IMPACT[impactOf(it)] || "", (it.impact || {}).points ?? "",
       rated(it).map((f) => issueLabel(f.code)).join("; "), possible(it).map((f) => issueLabel(f.code)).join("; "), (it.flags || []).filter((f) => f.ruling).map((f) => f.ruling).join("; "),
@@ -613,15 +648,15 @@
       <div class="banner"><strong>${esc(rev.status || "Draft")}.</strong> ${rev.reviewed_by ? `Reviewed by ${esc(rev.reviewed_by)} on ${esc(fmtDay(rev.last_reviewed))}.` : "These memos are drafts awaiting review by a lawyer or law-trained reader."} Holdings are short paraphrases for screening; verify every authority before relying on it. The same text is in <a href="https://github.com/JoeDonnelly840/Agency-Repository-Public-/blob/main/DOCTRINE.md" rel="noopener">DOCTRINE.md</a> in the repository.</div>
       <div class="toc"><a href="#methods#rubric">The rubric</a><a href="#methods#rulings">Known rulings</a><a href="#methods#fulltext">Full-text reading</a><a href="#methods#improve">Improving accuracy</a>${d.issues.map((i) => `<a href="#methods#m-${esc(i.code)}">${esc(i.label)}</a>`).join("")}</div>
       <h2 id="rubric">The rubric</h2>
-      <h3>Constitutionality (the rating)</h3><ul>${(r.constitutionality || []).map((x) => `<li>${esc(x)}</li>`).join("")}</ul>
+      <h3>Lawfulness (the rating)</h3><ul>${(r.constitutionality || []).map((x) => `<li>${esc(x)}</li>`).join("")}</ul>
       <ul class="plain">${cs.levels.map((l) => `<li>${pill(l.value)} <strong>${esc(l.full || l.name)}.</strong> ${esc(l.meaning)}</li>`).join("")}
         ${cs.unrated ? `<li><span class="pill c0"><span class="k">Possible issue</span>not rated</span> ${esc(cs.unrated.meaning)}</li>` : ""}</ul>
       <h3>Impact (context only)</h3><ul>${(r.impact || []).map((x) => `<li>${esc(x)}</li>`).join("")}</ul>
       <h3>Precedent strength</h3><p>Every memo sorts its precedent into the same three levels, always in this order: <strong>direct holding</strong>, <strong>close analogy</strong>, and <strong>open question</strong>. A memo that has no direct holding says so rather than skipping a level.</p>
       <h2 id="rulings">Known rulings on specific actions</h2>
       <p>When a court has ruled on the very action being rated, that ruling sets the rating. Several of these holdings are statutory (the agency or the President acted beyond the power Congress gave), which is a separation-of-powers limit; each says which kind it is.</p>
-      <div class="wrap-x"><table class="t"><thead><tr><th>Action</th><th>Court</th><th>Result</th><th>Rating</th><th>Holding</th></tr></thead><tbody>
-        ${(d.rulings || []).map((x) => `<tr><td>${esc(x.label)}</td><td>${esc(x.court_label)}</td><td>${x.result === "upheld" ? "Upheld" : "Held unlawful"}</td><td>${x.result === "upheld" ? "Lowers one step" : pill(x.level)}</td><td class="small">${esc(x.summary)} <span class="cite">${esc((A[x.authority] || {}).cite)}</span> <span class="muted">(${esc(x.kind)})</span></td></tr>`).join("")}</tbody></table></div>
+      <div class="wrap-x"><table class="t"><thead><tr><th>Action</th><th>Court</th><th>Result</th><th>Rating</th><th>What the court held</th></tr></thead><tbody>
+        ${(d.rulings || []).map((x) => `<tr><td>${esc(x.label)}</td><td>${esc(x.court_label)}</td><td>${x.result === "upheld" ? "Upheld" : "Held unlawful"}</td><td>${x.result === "upheld" ? "Lowers one step" : pill(x.level)}</td><td class="small">${esc((A[x.authority] || {}).held || x.summary)} <span class="cite">${esc((A[x.authority] || {}).cite)}</span>${x.caution ? ` <em>${esc(x.caution)}</em>` : ""}</td></tr>`).join("")}</tbody></table></div>
       <h2 id="fulltext">Full-text reading</h2>
       <p>Titles and summaries rarely say which statute an action relies on, or whether it invokes Chevron, an emergency power, or a religious exemption. RegCollect therefore also reads documents' full text, using only the Federal Register's own public interfaces: (1) its full-text search, asked about a fixed list of legal terms (${(d.statutes || []).length} statutes and doctrines are recognized), and (2) the plain-text version of the most important documents (presidential documents, flagged actions, and significant rules), one at a time with pauses, after checking robots.txt. Only short passages around the phrases the tests look for are kept, and each flag says which elements came from the full text. Regulations.gov attachments, SEC and agency press releases, and FDA recall reports are still rated from their titles and summaries.</p>
       <h2 id="improve">Improving accuracy</h2>
@@ -633,7 +668,10 @@
         <p class="muted small">${i.group === "structural" ? "Structural" : "Individual rights"}</p>
         <p><strong>Question.</strong> ${esc(i.question)}</p><p><strong>Test.</strong> ${esc(i.test)}</p>
         <p><strong>Elements checked in each document</strong> (gate elements must all appear before the issue is rated)</p><ol>${i.elements.map((e) => `<li>${esc(e.text)}${e.gate ? ' <span class="gate">gate</span>' : ""}</li>`).join("")}</ol>
-        ${(i.weighed || []).length ? `<p><strong>Weighed factors</strong></p><ul>${i.weighed.map((w) => `<li>${esc(w.text)} <span class="muted small">(${w.lowers ? "lowers the rating one step; never removes it" : "noted only"})</span></li>`).join("")}</ul>` : ""}
+        ${(i.weighed || []).length ? `<p><strong>Weighed factors</strong></p><ul>${i.weighed.map((w) => `<li>${esc(w.text)} <span class="muted small">(${EFFECT[w.effect || (w.lowers ? "lowers" : "noted")]})</span></li>`).join("")}</ul>` : ""}
+        ${i.max_level && i.max_level < 3 ? `<p><strong>Cap:</strong> rated ${esc(LEVEL_FULL[i.max_level].toLowerCase())} at most.</p>` : ""}
+        ${i.open_rated === false ? "<p><strong>Open questions under this memo are listed as possible issues, not rated</strong>, because they cover thousands of routine filings no court has addressed.</p>" : ""}
+        ${i.excludes ? "<p><strong>Not flagged:</strong> ratifications, which cure an appointment defect rather than raise one.</p>" : ""}
         <p><strong>Precedent</strong> (first rule that matches)</p><ul>${precedentRows(i)}</ul>
         ${rulingsFor(i.code).length ? `<p><strong>Court rulings on specific actions</strong></p><ul>${rulingsFor(i.code).map((x) => `<li>${esc(x.label)}: ${esc(x.summary)}</li>`).join("")}</ul>` : ""}
         <p><strong>Authorities</strong></p><ul>${i.authorities.map((k) => `<li><span class="cite">${esc((A[k] || {}).cite)}</span>, decided ${esc(fmtDay((A[k] || {}).decided))}. ${esc((A[k] || {}).held)}</li>`).join("")}</ul>
@@ -678,12 +716,12 @@
       <p class="lede">RegCollect gathers what the federal executive branch publishes, sorts it by agency and kind of action, flags arguable constitutional issues, rates each one by a published rubric, and tells you plainly what it could not see.</p>
       <div class="toc"><a href="#manual#m1">Signing in</a><a href="#manual#m2">The directory</a><a href="#manual#m3">Agency pages</a><a href="#manual#m4">Ratings</a><a href="#manual#m5">Research</a><a href="#manual#m6">Charts</a><a href="#manual#m7">The assistant</a><a href="#manual#m8">Dates and history</a><a href="#manual#m9">Questions</a></div>
       <h2 id="m1">Signing in and “what's new”</h2><p>Choose a username the first time (no password). RegCollect remembers your last visit in this browser and shows what was published since then. Use the date button at the top right to pick another starting date, or to mark everything as read. On another computer, enter the same username and paste the sync code from the account button. Items published earlier that reached RegCollect after your last visit are included, so late postings are not missed.</p>
-      <h2 id="m2">The directory</h2><p>The home screen opens with a count of new actions and how many are rated almost certainly, very likely, or likely unconstitutional. Below are buttons for the President, every federal agency, and the agency-controlled corporations, each with a description, the number of new actions, and its flag counts. State agencies are planned for a later version.</p>
+      <h2 id="m2">The directory</h2><p>The home screen opens with a count of new actions and how many are rated almost certainly, very likely, or likely unlawful. Below are buttons for the President, every federal agency, and the agency-controlled corporations, each with a description, the number of new actions, and its flag counts. State agencies are planned for a later version.</p>
       <h2 id="m3">Agency pages</h2><p><strong>Activity</strong> lists actions that are new since your last visit, from the past 12 months, or since ${esc(historyStart().slice(0, 4))}, split into rulemaking, enforcement, adjudication and licensing, and other notices. <strong>Charts</strong> builds charts you can download. <strong>Coverage</strong> shows which sources were checked and for which dates. Routine fee filings by exchanges and clearing agencies are hidden unless you ask for them.</p>
-      <h2 id="m4">Ratings</h2><p>Each flagged issue gets one rating, <strong>constitutionality</strong>: <span class="c3">almost certainly</span>, <span class="c2">very likely</span>, or <span class="c1">likely</span> unconstitutional (or beyond the limits on executive power) under today's law. It combines the strength of the precedent (a direct holding, a close analogy, or an open question) with how many elements of the legal test appear in the document, including its full text when RegCollect has read it. When a court has ruled on the action itself, that ruling sets the rating. Actions that were lawful under older precedent are rated under today's law, with a note saying how they stood at the time. Issues whose required elements were not found are listed as <em>possible issues</em>, not rated. <strong>Impact</strong> (lower, significant, or serious) is shown as plain text for context and never changes the rating. Open “Why flagged” on any action to see the checklist, the precedent, any court ruling, passages from the document, and to record your own view. See <a href="#methods">Methodology</a>.</p>
-      <h2 id="m5">Research</h2><p>Type a request in plain English, such as <em>“SEC gag orders since September,”</em> or use the filters on the left, including constitutionality and impact. The search understands related words, legal terms, case names, statutes, and everyday phrasing (for example, “religious freedom,” “IEEPA,” or “agencies acting like Congress”). Choose the period searched (the past 12 months by default, a single year, or everything since ${esc(historyStart().slice(0, 4))}). Results can be grouped, shown as a table (flagged actions first, every column sortable, with a “why flagged” column you can expand), downloaded as a CSV file, or saved as a link.</p>
+      <h2 id="m4">Ratings</h2><p>Each flagged issue gets one rating, <strong>lawfulness</strong>: <span class="c3">almost certainly</span>, <span class="c2">very likely</span>, or <span class="c1">likely</span> unlawful under the Constitution or the limits on executive power, under today's law. “Likely” is deliberately generous: it marks an arguable issue worth a lawyer's look. “Very likely” and “almost certainly” need a court ruling on the action, or the key elements of the legal test in the document's own operative text. When a court has ruled on the action itself, that ruling sets the rating and the flag says what the court held. Actions that were lawful under older precedent are rated under today's law, with a note saying how they stood at the time. Issues whose essential elements were not found, or whose practice the Supreme Court has upheld, are listed as <em>possible issues</em>, not rated. <strong>Impact</strong> (lower, significant, or serious) is shown as plain text for context and never changes the rating. Open “Why flagged” on any action to see the checklist, the precedent, any court ruling, passages from the document, and to record your own view. See <a href="#methods">Methodology</a>.</p>
+      <h2 id="m5">Research</h2><p>Type a request in plain English, such as <em>“SEC gag orders since September,”</em> or use the filters on the left, including lawfulness and impact. The search understands related words, legal terms, case names, statutes, and everyday phrasing (for example, “religious freedom,” “IEEPA,” or “agencies acting like Congress”). Choose the period searched (the past 12 months by default, a single year, or everything since ${esc(historyStart().slice(0, 4))}). Results can be grouped, shown as a table (flagged actions first, every column sortable, with a “why flagged” column you can expand), downloaded as a CSV file, or saved as a link.</p>
       <h2 id="m6">Charts</h2><p>Choose a chart (stacked bars or lines over time, totals, or share of total), what to break it down by, the kinds of action, sanctions, and outcomes to include, and the dates. Axes use whole numbers. Hover for exact figures, show the numbers as a table, and download a PNG image, an SVG drawing, or a CSV file.</p>
-      <h2 id="m7">Curt, the assistant</h2><p>Curt lives in the chat bubble at the bottom right; click it to open him and the minus button to tuck him away. He runs entirely in this browser, with no outside AI service. He can open agencies, run searches, set filters, build charts, change the period, start the tour, count and summarize what is in the data (“how many SEC actions are very likely unconstitutional?”), explain any rating, case, statute, or legal term in the doctrine library, and answer hundreds of questions about how RegCollect works. Ask “what can you do?” for ideas.</p>
+      <h2 id="m7">Curt, the assistant</h2><p>Curt lives in the chat bubble at the bottom right; click it to open him and the minus button to tuck him away. He runs entirely in this browser, with no outside AI service, and he never reads other websites. Ask him in plain words: how many actions match (“how many SEC enforcement actions in 2024?”), the latest or most likely unlawful ones, which agency has the most, a comparison of agencies, a summary of an agency, what happened in a period (“what happened this week?”), where to start looking for a challenge, or why an action was rated. He remembers the last question, so “what about the FTC?” or “and in 2022?” works. He can also open pages and agencies, set filters, build charts, change the date, start the tour, and explain any rating, case, statute, or legal term in the doctrine library. Ask “what can you do?” for ideas.</p>
       <h2 id="m8">Dates and history</h2><p>Every action is dated by the agency's own action: the signing date when the Federal Register records one, the posting or release date, or FDA's classification date for recalls. History reaches back to January 1, 2015, for sources that keep archives; it fills in automatically, newest months first. See <a href="#coverage#dates">What we track</a>.</p>
       <h2 id="m9">Common questions</h2><dl><dt>Why is today's information missing?</dt><dd>The collector runs each morning. The Federal Register publishes on business days.</dd>
         <dt>Is my information private?</dt><dd>Your username, dates, searches, and assistant conversations stay in your browser.</dd>
@@ -757,9 +795,9 @@
     { view: "home", target: "#brief", title: "Your briefing", text: "Each visit opens with what agencies published since you last checked, and how many actions raise constitutional issues." },
     { view: "home", target: 'a.tile[href="#e/sec"]', title: "The directory", text: "Every tracked body has its own button with a description, the number of new actions, and its flag counts." },
     { view: "e/sec", target: ".tabs", title: "Inside an agency", text: "Activity lists its actions; Charts builds charts you can download; Coverage shows what was checked." },
-    { view: "e/sec", target: "#items .item", title: "Ratings on every action", text: "Flagged issues show how likely they are to be unconstitutional. Open “Why flagged” for the element checklist, the precedent, any court ruling, and passages from the document." },
-    { view: "issues", target: ".strip", title: "Constitutional issues", text: "Every rated action, from almost certainly to likely unconstitutional. Click a box to see those actions; impact can be filtered separately." },
-    { view: "research", target: "#ask", title: "Research", text: "Ask in plain English or use the filters, including constitutionality and impact. Choose the period searched on the left." },
+    { view: "e/sec", target: "#items .item", title: "Ratings on every action", text: "Flagged issues show how likely they are to be unlawful. Open “Why flagged” for the element checklist, the precedent, any court ruling, and passages from the document." },
+    { view: "issues", target: ".strip", title: "Constitutional issues", text: "Every rated action, from almost certainly to likely unlawful. Click a box to see those actions; impact can be filtered separately." },
+    { view: "research", target: "#ask", title: "Research", text: "Ask in plain English or use the filters, including lawfulness and impact. Choose the period searched on the left." },
     { view: "methods", target: "#rubric", title: "Methodology", text: "The rubric and the doctrine library behind every rating, with authorities and open questions." },
     { view: "home", target: "#bot-btn", title: "Meet Curt", text: "Curt, the assistant, lives in this bubble. Ask him anything about the app or the law it applies, or tell him what to do, like “chart SEC sanctions by month.” He runs in your browser." },
   ];
@@ -856,7 +894,7 @@
 
   // The assistant (assistant.js) drives the app only through these functions.
   window.RegCollect = {
-    state, go, route, entities, entityMap, entityOf, scopeItems, visible, sevCounts, band, issueMap, sanctionMap, outcomeMap, loadPool, periodRange,
+    state, go, route, entities, entityMap, entityOf, scopeItems, visible, sevCounts, band, issueMap, sanctionMap, outcomeMap, loadPool, loadAllRows, loadMonthItems, periodRange, today, addDays,
     LEVEL, LEVEL_FULL, IMPACT, PRECEDENT, rated, possible, impactOf, doctrine, issueLabel, fmtDay, listText, sinceWords, historyStart, startTour, setSince, markAllRead,
     setEntityUI(key, patch) { const ui = state.ui[key] || (state.ui[key] = { scope: "new", cat: "all", q: "", flagged: false, sort: "severity", routine: false }); Object.assign(ui, patch); },
     setChart(key, patch) { const e = entityMap()[key]; const ctx = state.charts[key] || (state.charts[key] = { entityName: e ? e.name : key, fileKey: key }); ctx.pending = patch; },
