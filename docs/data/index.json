@@ -85,7 +85,7 @@
   "next": {
    "federal_register": "2014-12",
    "openfda": "2026-11",
-   "regulations_gov": "2020-12"
+   "regulations_gov": "2020-02"
   },
   "target_start": "2015-01-01"
  },
@@ -271,16 +271,16 @@
   "2019-12": 778,
   "2020-01": 797,
   "2020-02": 795,
-  "2020-03": 901,
-  "2020-04": 949,
-  "2020-05": 873,
-  "2020-06": 903,
-  "2020-07": 970,
-  "2020-08": 850,
-  "2020-09": 878,
-  "2020-10": 886,
-  "2020-11": 776,
-  "2020-12": 868,
+  "2020-03": 1740,
+  "2020-04": 1295,
+  "2020-05": 1056,
+  "2020-06": 1333,
+  "2020-07": 1370,
+  "2020-08": 1510,
+  "2020-09": 1255,
+  "2020-10": 1467,
+  "2020-11": 1257,
+  "2020-12": 1397,
   "2021-01": 1108,
   "2021-02": 1207,
   "2021-03": 1405,
@@ -5971,6 +5971,197 @@
    "requests": 287,
    "run_at": "2026-11-27T01:56:19+00:00",
    "start": "2021-01-01"
+  },
+  {
+   "end": "2020-12-31",
+   "items_found": 4826,
+   "items_new": 4826,
+   "kind": "backfill",
+   "reports": [
+    {
+     "agencies": {
+      "cfpb": "ok",
+      "dol": "ok",
+      "epa": "partial: too many results",
+      "fcc": "ok",
+      "fda": "ok",
+      "ferc": "ok",
+      "ftc": "ok",
+      "hhs": "ok",
+      "nlrb": "ok",
+      "sec": "ok"
+     },
+     "detail": "History 2020-12:",
+     "label": "Regulations.gov",
+     "source": "regulations_gov",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "cfpb": "ok",
+      "dol": "ok",
+      "epa": "ok",
+      "fcc": "ok",
+      "fda": "ok",
+      "ferc": "ok",
+      "ftc": "ok",
+      "hhs": "ok",
+      "nlrb": "ok",
+      "sec": "ok"
+     },
+     "detail": "History 2020-11:",
+     "label": "Regulations.gov",
+     "source": "regulations_gov",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "cfpb": "ok",
+      "dol": "ok",
+      "epa": "partial: too many results",
+      "fcc": "ok",
+      "fda": "ok",
+      "ferc": "ok",
+      "ftc": "ok",
+      "hhs": "ok",
+      "nlrb": "ok",
+      "sec": "ok"
+     },
+     "detail": "History 2020-10:",
+     "label": "Regulations.gov",
+     "source": "regulations_gov",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "cfpb": "ok",
+      "dol": "ok",
+      "epa": "ok",
+      "fcc": "ok",
+      "fda": "ok",
+      "ferc": "ok",
+      "ftc": "ok",
+      "hhs": "ok",
+      "nlrb": "ok",
+      "sec": "ok"
+     },
+     "detail": "History 2020-09:",
+     "label": "Regulations.gov",
+     "source": "regulations_gov",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "cfpb": "ok",
+      "dol": "ok",
+      "epa": "partial: too many results",
+      "fcc": "ok",
+      "fda": "ok",
+      "ferc": "ok",
+      "ftc": "ok",
+      "hhs": "ok",
+      "nlrb": "ok",
+      "sec": "ok"
+     },
+     "detail": "History 2020-08:",
+     "label": "Regulations.gov",
+     "source": "regulations_gov",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "cfpb": "ok",
+      "dol": "ok",
+      "epa": "partial: too many results",
+      "fcc": "ok",
+      "fda": "ok",
+      "ferc": "ok",
+      "ftc": "ok",
+      "hhs": "ok",
+      "nlrb": "ok",
+      "sec": "ok"
+     },
+     "detail": "History 2020-07:",
+     "label": "Regulations.gov",
+     "source": "regulations_gov",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "cfpb": "ok",
+      "dol": "ok",
+      "epa": "ok",
+      "fcc": "ok",
+      "fda": "ok",
+      "ferc": "ok",
+      "ftc": "ok",
+      "hhs": "ok",
+      "nlrb": "ok",
+      "sec": "ok"
+     },
+     "detail": "History 2020-06:",
+     "label": "Regulations.gov",
+     "source": "regulations_gov",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "cfpb": "ok",
+      "dol": "ok",
+      "epa": "partial: too many results",
+      "fcc": "ok",
+      "fda": "ok",
+      "ferc": "ok",
+      "ftc": "ok",
+      "hhs": "ok",
+      "nlrb": "ok",
+      "sec": "ok"
+     },
+     "detail": "History 2020-05:",
+     "label": "Regulations.gov",
+     "source": "regulations_gov",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "cfpb": "ok",
+      "dol": "ok",
+      "epa": "ok",
+      "fcc": "ok",
+      "fda": "ok",
+      "ferc": "ok",
+      "ftc": "ok",
+      "hhs": "ok",
+      "nlrb": "ok",
+      "sec": "ok"
+     },
+     "detail": "History 2020-04:",
+     "label": "Regulations.gov",
+     "source": "regulations_gov",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "cfpb": "ok",
+      "dol": "ok",
+      "epa": "ok",
+      "fcc": "ok",
+      "fda": "ok",
+      "ferc": "ok",
+      "ftc": "ok",
+      "hhs": "ok",
+      "nlrb": "ok",
+      "sec": "ok"
+     },
+     "detail": "History 2020-03:",
+     "label": "Regulations.gov",
+     "source": "regulations_gov",
+     "status": "ok"
+    }
+   ],
+   "requests": 288,
+   "run_at": "2026-11-27T03:37:04+00:00",
+   "start": "2020-03-01"
   }
  ],
  "schema": 3,
@@ -6089,5 +6280,5 @@
    "last_status": "ok"
   }
  },
- "updated_at": "2026-11-27T01:56:19+00:00"
+ "updated_at": "2026-11-27T03:37:04+00:00"
 }
