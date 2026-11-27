@@ -3053,12 +3053,36 @@
       "debar"
      ],
      "weighed": []
+    },
+    {
+     "authority": "mathews",
+     "code": "due_process_takings",
+     "elements_found": [
+      "deprivation",
+      "particular"
+     ],
+     "elements_total": 4,
+     "full_text_elements": [
+      "deprivation"
+     ],
+     "group": "rights",
+     "level": 0,
+     "precedent": "open",
+     "structural": false,
+     "triggers": [
+      "seiz"
+     ],
+     "weighed": []
     }
    ],
    "fr_agency_slugs": [
     "health-and-human-services-department",
     "food-and-drug-administration"
    ],
+   "ft": {
+    "read": "2026-11-27",
+    "v": 2
+   },
    "id": "fr:2026-19655",
    "impact": {
     "breakdown": [
@@ -3219,13 +3243,21 @@
     {
      "authority": "atlas_roofing",
      "code": "agency_adjudication",
-     "elements_found": [],
+     "elements_found": [
+      "penalty",
+      "common_law"
+     ],
      "elements_total": 3,
+     "full_text_elements": [
+      "penalty",
+      "common_law"
+     ],
      "group": "structural",
      "level": 0,
      "precedent": "open",
      "structural": true,
      "triggers": [
+      "civil money penalt",
       "debar"
      ],
      "weighed": []
@@ -3235,6 +3267,10 @@
     "health-and-human-services-department",
     "food-and-drug-administration"
    ],
+   "ft": {
+    "read": "2026-11-27",
+    "v": 2
+   },
    "id": "fr:2026-19654",
    "impact": {
     "breakdown": [

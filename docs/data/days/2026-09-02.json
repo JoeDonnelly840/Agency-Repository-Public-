@@ -4,6 +4,110 @@
   {
    "action": "",
    "agencies": [
+    "president"
+   ],
+   "category": "presidential",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-08-31",
+   "date_basis": "signed",
+   "doc_type": "Presidential Document",
+   "docket_ids": [],
+   "effective_on": null,
+   "eo_number": null,
+   "first_seen": "2026-11-26T01:56:14+00:00",
+   "flags": [
+    {
+     "authority": "nifla",
+     "code": "free_speech",
+     "elements_found": [
+      "speech",
+      "content",
+      "not_factual"
+     ],
+     "elements_total": 3,
+     "full_text_elements": [
+      "speech",
+      "content",
+      "not_factual"
+     ],
+     "group": "rights",
+     "level": 2,
+     "precedent": "analogy",
+     "structural": false,
+     "triggers": [
+      "disinformation"
+     ],
+     "weighed": []
+    },
+    {
+     "authority": "youngstown",
+     "code": "presidential_lawmaking",
+     "elements_found": [
+      "basis"
+     ],
+     "elements_total": 4,
+     "group": "structural",
+     "level": 0,
+     "precedent": "open",
+     "structural": true,
+     "triggers": [
+      "emergency economic powers",
+      "national emergency"
+     ],
+     "weighed": []
+    }
+   ],
+   "fr_agency_slugs": [
+    "executive-office-of-the-president"
+   ],
+   "ft": {
+    "read": "2026-11-27",
+    "terms": [
+     "ieepa",
+     "national_emergencies_act"
+    ],
+    "v": 2
+   },
+   "id": "fr:2026-18046",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 3,
+      "why": "presidential document"
+     }
+    ],
+    "level": 1,
+    "points": 3
+   },
+   "jurisdiction": "federal",
+   "outcome": "issued",
+   "priority": 2,
+   "published": "2026-09-02",
+   "rating": {
+    "issues": 1,
+    "level": 2
+   },
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "statutes": [
+    "ieepa",
+    "nea"
+   ],
+   "subcategory": "Notice",
+   "subtype": "Notice",
+   "summary": "",
+   "title": "Continuation of the National Emergency With Respect to Foreign Interference in or Undermining Public Confidence in United States Elections",
+   "url": "https://www.federalregister.gov/documents/2026/09/02/2026-18046/continuation-of-the-national-emergency-with-respect-to-foreign-interference-in-or-undermining-public"
+  },
+  {
+   "action": "",
+   "agencies": [
     "fda"
    ],
    "category": "enforcement",
@@ -2099,82 +2203,6 @@
    "url": "https://api.fda.gov/device/enforcement.json?search=recall_number:%22Z-3018-2026%22"
   },
   {
-   "action": "",
-   "agencies": [
-    "president"
-   ],
-   "category": "presidential",
-   "comments_close": null,
-   "corporation": null,
-   "date": "2026-08-31",
-   "date_basis": "signed",
-   "doc_type": "Presidential Document",
-   "docket_ids": [],
-   "effective_on": null,
-   "eo_number": null,
-   "first_seen": "2026-11-26T01:56:14+00:00",
-   "flags": [
-    {
-     "authority": "youngstown",
-     "code": "presidential_lawmaking",
-     "elements_found": [
-      "basis"
-     ],
-     "elements_total": 4,
-     "group": "structural",
-     "level": 0,
-     "precedent": "open",
-     "structural": true,
-     "triggers": [
-      "emergency economic powers",
-      "national emergency"
-     ],
-     "weighed": []
-    }
-   ],
-   "fr_agency_slugs": [
-    "executive-office-of-the-president"
-   ],
-   "ft": {
-    "terms": [
-     "ieepa",
-     "national_emergencies_act"
-    ]
-   },
-   "id": "fr:2026-18046",
-   "impact": {
-    "breakdown": [
-     {
-      "marker": "Reach",
-      "points": 3,
-      "why": "presidential document"
-     }
-    ],
-    "level": 1,
-    "points": 3
-   },
-   "jurisdiction": "federal",
-   "outcome": "issued",
-   "priority": 0,
-   "published": "2026-09-02",
-   "rating": null,
-   "rins": [],
-   "routine": false,
-   "sanctions": [],
-   "significant": false,
-   "source": "federal_register",
-   "source_label": "Federal Register",
-   "statutes": [
-    "ieepa",
-    "nea"
-   ],
-   "subcategory": "Notice",
-   "subtype": "Notice",
-   "summary": "",
-   "title": "Continuation of the National Emergency With Respect to Foreign Interference in or Undermining Public Confidence in United States Elections",
-   "url": "https://www.federalregister.gov/documents/2026/09/02/2026-18046/continuation-of-the-national-emergency-with-respect-to-foreign-interference-in-or-undermining-public"
-  },
-  {
    "action": "Notice of availability.",
    "agencies": [
     "fda"
@@ -3544,6 +3572,10 @@
    "fr_agency_slugs": [
     "executive-office-of-the-president"
    ],
+   "ft": {
+    "read": "2026-11-27",
+    "v": 2
+   },
    "id": "fr:2026-18020",
    "impact": {
     "breakdown": [

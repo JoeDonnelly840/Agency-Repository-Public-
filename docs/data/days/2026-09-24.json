@@ -2619,7 +2619,28 @@
      "precedent": "open",
      "structural": true,
      "triggers": [
-      "eliminate the agency"
+      "eliminate the agency",
+      "reorganiz"
+     ],
+     "weighed": []
+    },
+    {
+     "authority": "west_virginia",
+     "code": "major_questions",
+     "elements_found": [
+      "rule",
+      "significance"
+     ],
+     "elements_total": 4,
+     "full_text_elements": [
+      "significance"
+     ],
+     "group": "structural",
+     "level": 0,
+     "precedent": "open",
+     "structural": true,
+     "triggers": [
+      "major rule"
      ],
      "weighed": []
     }
@@ -2627,6 +2648,10 @@
    "fr_agency_slugs": [
     "federal-trade-commission"
    ],
+   "ft": {
+    "read": "2026-11-27",
+    "v": 2
+   },
    "id": "fr:2026-19598",
    "impact": {
     "breakdown": [
@@ -2652,6 +2677,9 @@
    "significant": false,
    "source": "federal_register",
    "source_label": "Federal Register",
+   "statutes": [
+    "cra"
+   ],
    "subcategory": "Final rule",
    "subtype": "",
    "summary": "The Federal Trade Commission (\"Commission\" or \"FTC\") is amending its rules of practice in order to eliminate the agency's post- employment clearance rule.",

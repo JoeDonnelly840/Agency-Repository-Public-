@@ -1715,10 +1715,12 @@
     "executive-office-of-the-president"
    ],
    "ft": {
+    "read": "2026-11-27",
     "terms": [
      "ieepa",
      "national_emergencies_act"
-    ]
+    ],
+    "v": 2
    },
    "id": "fr:2026-20322",
    "impact": {
@@ -1768,10 +1770,31 @@
    "effective_on": null,
    "eo_number": "14433",
    "first_seen": "2026-11-26T01:56:14+00:00",
-   "flags": [],
+   "flags": [
+    {
+     "authority": "west_virginia",
+     "code": "major_questions",
+     "elements_found": [
+      "rule"
+     ],
+     "elements_total": 4,
+     "group": "structural",
+     "level": 0,
+     "precedent": "open",
+     "structural": true,
+     "triggers": [
+      "nationwide"
+     ],
+     "weighed": []
+    }
+   ],
    "fr_agency_slugs": [
     "executive-office-of-the-president"
    ],
+   "ft": {
+    "read": "2026-11-27",
+    "v": 2
+   },
    "id": "fr:2026-20320",
    "impact": {
     "breakdown": [
@@ -2072,10 +2095,34 @@
      "weighed": []
     },
     {
+     "authority": "cook",
+     "code": "removal_independence",
+     "elements_found": [
+      "protected_body"
+     ],
+     "elements_total": 2,
+     "full_text_elements": [
+      "protected_body"
+     ],
+     "group": "structural",
+     "level": 0,
+     "precedent": "analogy",
+     "structural": true,
+     "triggers": [
+      "federal reserve"
+     ],
+     "weighed": []
+    },
+    {
      "authority": "mathews",
      "code": "due_process_takings",
-     "elements_found": [],
+     "elements_found": [
+      "no_process"
+     ],
      "elements_total": 4,
+     "full_text_elements": [
+      "no_process"
+     ],
      "group": "rights",
      "level": 0,
      "precedent": "open",
@@ -2091,6 +2138,7 @@
     "centers-for-medicare-medicaid-services"
    ],
    "ft": {
+    "read": "2026-11-27",
     "terms": [
      "chevron",
      "due_process",
@@ -2098,7 +2146,8 @@
      "major_questions",
      "nondelegation",
      "takings_clause"
-    ]
+    ],
+    "v": 2
    },
    "id": "fr:2026-20281",
    "impact": {
@@ -2125,6 +2174,9 @@
    "significant": true,
    "source": "federal_register",
    "source_label": "Federal Register",
+   "statutes": [
+    "cra"
+   ],
    "subcategory": "Final rule",
    "subtype": "",
    "summary": "This final rule implements the Global Benchmark for Efficient Drug Pricing Model (GLOBE Model), a new mandatory Medicare payment model under section 1115A of the Social Security Act. The GLOBE Model will test whether a payment model that uses an alternative method for calculating Medicare Part B drug inflation rebate amounts for certain separately payable Medicare Part B drugs and biological products reduces costs for Original Medicare (OM) beneficiaries and the Medicare program while preserving quality of care. The term OM has the same meaning as Medicare fee-for-service and the traditional Medicare program.",
@@ -2252,6 +2304,10 @@
    "fr_agency_slugs": [
     "executive-office-of-the-president"
    ],
+   "ft": {
+    "read": "2026-11-27",
+    "v": 2
+   },
    "id": "fr:2026-20321",
    "impact": {
     "breakdown": [
@@ -2488,10 +2544,34 @@
    "effective_on": null,
    "eo_number": null,
    "first_seen": "2026-11-26T01:56:14+00:00",
-   "flags": [],
+   "flags": [
+    {
+     "authority": "youngstown",
+     "code": "presidential_lawmaking",
+     "elements_found": [
+      "basis"
+     ],
+     "elements_total": 4,
+     "full_text_elements": [
+      "basis"
+     ],
+     "group": "structural",
+     "level": 0,
+     "precedent": "open",
+     "structural": true,
+     "triggers": [
+      "national emergency"
+     ],
+     "weighed": []
+    }
+   ],
    "fr_agency_slugs": [
     "executive-office-of-the-president"
    ],
+   "ft": {
+    "read": "2026-11-27",
+    "v": 2
+   },
    "id": "fr:2026-20318",
    "impact": {
     "breakdown": [
@@ -3202,6 +3282,10 @@
    "fr_agency_slugs": [
     "executive-office-of-the-president"
    ],
+   "ft": {
+    "read": "2026-11-27",
+    "v": 2
+   },
    "id": "fr:2026-20319",
    "impact": {
     "breakdown": [

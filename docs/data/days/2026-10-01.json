@@ -2777,10 +2777,54 @@
    "first_seen": "2026-11-26T01:56:14+00:00",
    "flags": [
     {
+     "authority": "west_virginia",
+     "code": "major_questions",
+     "elements_found": [
+      "rule",
+      "significance"
+     ],
+     "elements_total": 4,
+     "full_text_elements": [
+      "significance"
+     ],
+     "group": "structural",
+     "level": 0,
+     "precedent": "open",
+     "structural": true,
+     "triggers": [
+      "industry-wide"
+     ],
+     "weighed": []
+    },
+    {
+     "authority": "mathews",
+     "code": "due_process_takings",
+     "elements_found": [
+      "deprivation"
+     ],
+     "elements_total": 4,
+     "full_text_elements": [
+      "deprivation"
+     ],
+     "group": "rights",
+     "level": 0,
+     "precedent": "open",
+     "structural": false,
+     "triggers": [
+      "seiz"
+     ],
+     "weighed": []
+    },
+    {
      "authority": "central_hudson",
      "code": "free_speech",
-     "elements_found": [],
+     "elements_found": [
+      "speech"
+     ],
      "elements_total": 3,
+     "full_text_elements": [
+      "speech"
+     ],
      "group": "rights",
      "level": 0,
      "precedent": "open",
@@ -2795,9 +2839,11 @@
     "federal-trade-commission"
    ],
    "ft": {
+    "read": "2026-11-27",
     "terms": [
      "first_amendment"
-    ]
+    ],
+    "v": 2
    },
    "id": "fr:2026-20143",
    "impact": {

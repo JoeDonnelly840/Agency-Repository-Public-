@@ -2,6 +2,147 @@
  "date": "2026-11-02",
  "items": [
   {
+   "action": "Final rule.",
+   "agencies": [
+    "dol"
+   ],
+   "category": "rulemaking",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-02",
+   "date_basis": "published",
+   "doc_type": "Rule",
+   "docket_ids": [],
+   "effective_on": "2027-01-04",
+   "eo_number": null,
+   "first_seen": "2026-11-11T13:33:45+00:00",
+   "flags": [
+    {
+     "authority": "cedar_point",
+     "code": "due_process_takings",
+     "elements_found": [
+      "deprivation",
+      "particular",
+      "no_process",
+      "physical"
+     ],
+     "elements_total": 4,
+     "full_text_elements": [
+      "deprivation",
+      "particular",
+      "no_process",
+      "physical"
+     ],
+     "group": "rights",
+     "level": 2,
+     "precedent": "analogy",
+     "structural": false,
+     "triggers": [
+      "right to access",
+      "without notice"
+     ],
+     "weighed": []
+    },
+    {
+     "authority": "nebraska_press",
+     "code": "speech_restraint",
+     "elements_found": [
+      "restriction",
+      "government"
+     ],
+     "elements_total": 3,
+     "full_text_elements": [
+      "restriction"
+     ],
+     "group": "rights",
+     "level": 1,
+     "precedent": "open",
+     "structural": false,
+     "triggers": [
+      "gag clauses"
+     ],
+     "weighed": []
+    },
+    {
+     "authority": "youngstown",
+     "code": "agency_structure_change",
+     "elements_found": [
+      "executive"
+     ],
+     "elements_total": 3,
+     "full_text_elements": [
+      "executive"
+     ],
+     "group": "structural",
+     "level": 0,
+     "precedent": "open",
+     "structural": true,
+     "triggers": [
+      "reorganiz"
+     ],
+     "weighed": []
+    },
+    {
+     "authority": "west_virginia",
+     "code": "major_questions",
+     "elements_found": [
+      "rule",
+      "significance"
+     ],
+     "elements_total": 4,
+     "group": "structural",
+     "level": 0,
+     "precedent": "open",
+     "structural": true,
+     "triggers": [
+      "designated a significant rule"
+     ],
+     "weighed": []
+    }
+   ],
+   "fr_agency_slugs": [
+    "labor-department",
+    "employee-benefits-security-administration"
+   ],
+   "ft": {
+    "read": "2026-11-27",
+    "v": 2
+   },
+   "id": "fr:2026-22306",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 2,
+      "why": "binding rule designated significant"
+     }
+    ],
+    "level": 1,
+    "points": 2
+   },
+   "jurisdiction": "federal",
+   "outcome": "final",
+   "priority": 2,
+   "published": "2026-11-02",
+   "rating": {
+    "issues": 2,
+    "level": 2
+   },
+   "rins": [
+    "1210-AB37"
+   ],
+   "routine": false,
+   "sanctions": [],
+   "significant": true,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Final rule",
+   "subtype": "",
+   "summary": "The Department is issuing a final regulation that will require providers of pharmacy benefit management services and affiliated providers of brokerage and consulting services to disclose information about their compensation to fiduciaries of large, self-insured group health plans subject to the Employee Retirement Income Security Act (ERISA). Pharmacy spending is a major driver of overall healthcare costs for employers and is growing faster than medical and surgical spending. These disclosure requirements apply for purposes of ERISA's statutory prohibited transaction exemption for service arrangements under section 408(b)(2). These disclosures are needed so that fiduciaries can assess the…",
+   "title": "Improving Transparency Into Pharmacy Benefit Manager Fee Disclosure",
+   "url": "https://www.federalregister.gov/documents/2026/11/02/2026-22306/improving-transparency-into-pharmacy-benefit-manager-fee-disclosure"
+  },
+  {
    "action": "",
    "agencies": [
     "fda"
@@ -338,10 +479,58 @@
    "effective_on": null,
    "eo_number": null,
    "first_seen": "2026-11-11T13:33:45+00:00",
-   "flags": [],
+   "flags": [
+    {
+     "authority": "youngstown",
+     "code": "presidential_lawmaking",
+     "elements_found": [
+      "binding",
+      "public_effect"
+     ],
+     "elements_total": 4,
+     "full_text_elements": [
+      "binding"
+     ],
+     "group": "structural",
+     "level": 0,
+     "precedent": "open",
+     "structural": true,
+     "triggers": [
+      "duties",
+      "tariff",
+      "tariffs"
+     ],
+     "weighed": [
+      "specific_trade_statute"
+     ]
+    },
+    {
+     "authority": "burger",
+     "code": "fourth_amendment",
+     "elements_found": [
+      "search"
+     ],
+     "elements_total": 2,
+     "full_text_elements": [
+      "search"
+     ],
+     "group": "rights",
+     "level": 0,
+     "precedent": "open",
+     "structural": false,
+     "triggers": [
+      "surveillance"
+     ],
+     "weighed": []
+    }
+   ],
    "fr_agency_slugs": [
     "executive-office-of-the-president"
    ],
+   "ft": {
+    "read": "2026-11-27",
+    "v": 2
+   },
    "id": "fr:2026-22385",
    "impact": {
     "breakdown": [
@@ -365,6 +554,9 @@
    "significant": false,
    "source": "federal_register",
    "source_label": "Federal Register",
+   "statutes": [
+    "s232"
+   ],
    "subcategory": "Proclamation",
    "subtype": "Proclamation",
    "summary": "",
@@ -2098,6 +2290,10 @@
    "fr_agency_slugs": [
     "executive-office-of-the-president"
    ],
+   "ft": {
+    "read": "2026-11-27",
+    "v": 2
+   },
    "id": "fr:2026-22386",
    "impact": {
     "breakdown": [
@@ -2276,75 +2472,6 @@
    "summary": "",
    "title": "Eunice Kennedy Shriver National Institute of Child Health & Human Development; Notice of Meeting",
    "url": "https://www.federalregister.gov/documents/2026/11/02/2026-22319/eunice-kennedy-shriver-national-institute-of-child-health-and-human-development-notice-of-meeting"
-  },
-  {
-   "action": "Final rule.",
-   "agencies": [
-    "dol"
-   ],
-   "category": "rulemaking",
-   "comments_close": null,
-   "corporation": null,
-   "date": "2026-11-02",
-   "date_basis": "published",
-   "doc_type": "Rule",
-   "docket_ids": [],
-   "effective_on": "2027-01-04",
-   "eo_number": null,
-   "first_seen": "2026-11-11T13:33:45+00:00",
-   "flags": [
-    {
-     "authority": "west_virginia",
-     "code": "major_questions",
-     "elements_found": [
-      "rule",
-      "significance"
-     ],
-     "elements_total": 4,
-     "group": "structural",
-     "level": 0,
-     "precedent": "open",
-     "structural": true,
-     "triggers": [
-      "designated a significant rule"
-     ],
-     "weighed": []
-    }
-   ],
-   "fr_agency_slugs": [
-    "labor-department",
-    "employee-benefits-security-administration"
-   ],
-   "id": "fr:2026-22306",
-   "impact": {
-    "breakdown": [
-     {
-      "marker": "Reach",
-      "points": 2,
-      "why": "binding rule designated significant"
-     }
-    ],
-    "level": 1,
-    "points": 2
-   },
-   "jurisdiction": "federal",
-   "outcome": "final",
-   "priority": 0,
-   "published": "2026-11-02",
-   "rating": null,
-   "rins": [
-    "1210-AB37"
-   ],
-   "routine": false,
-   "sanctions": [],
-   "significant": true,
-   "source": "federal_register",
-   "source_label": "Federal Register",
-   "subcategory": "Final rule",
-   "subtype": "",
-   "summary": "The Department is issuing a final regulation that will require providers of pharmacy benefit management services and affiliated providers of brokerage and consulting services to disclose information about their compensation to fiduciaries of large, self-insured group health plans subject to the Employee Retirement Income Security Act (ERISA). Pharmacy spending is a major driver of overall healthcare costs for employers and is growing faster than medical and surgical spending. These disclosure requirements apply for purposes of ERISA's statutory prohibited transaction exemption for service arrangements under section 408(b)(2). These disclosures are needed so that fiduciaries can assess the…",
-   "title": "Improving Transparency Into Pharmacy Benefit Manager Fee Disclosure",
-   "url": "https://www.federalregister.gov/documents/2026/11/02/2026-22306/improving-transparency-into-pharmacy-benefit-manager-fee-disclosure"
   },
   {
    "action": "Proposed rule.",

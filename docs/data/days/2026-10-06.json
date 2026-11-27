@@ -138,7 +138,66 @@
      "precedent": "open",
      "structural": true,
      "triggers": [
-      "designated a significant rule"
+      "economically significant"
+     ],
+     "weighed": []
+    },
+    {
+     "authority": "slaughter",
+     "code": "removal_independence",
+     "elements_found": [
+      "protected_body"
+     ],
+     "elements_total": 2,
+     "full_text_elements": [
+      "protected_body"
+     ],
+     "group": "structural",
+     "level": 0,
+     "precedent": "open",
+     "structural": true,
+     "triggers": [
+      "federal reserve"
+     ],
+     "weighed": []
+    },
+    {
+     "authority": "naacp_alabama",
+     "code": "association",
+     "elements_found": [
+      "disclosure",
+      "public_release"
+     ],
+     "elements_total": 3,
+     "full_text_elements": [
+      "disclosure",
+      "public_release"
+     ],
+     "group": "rights",
+     "level": 0,
+     "precedent": "open",
+     "structural": false,
+     "triggers": [
+      "beneficial owner"
+     ],
+     "weighed": []
+    },
+    {
+     "authority": "mathews",
+     "code": "due_process_takings",
+     "elements_found": [
+      "no_process"
+     ],
+     "elements_total": 4,
+     "full_text_elements": [
+      "no_process"
+     ],
+     "group": "rights",
+     "level": 0,
+     "precedent": "open",
+     "structural": false,
+     "triggers": [
+      "without prior notice"
      ],
      "weighed": []
     }
@@ -146,6 +205,10 @@
    "fr_agency_slugs": [
     "securities-and-exchange-commission"
    ],
+   "ft": {
+    "read": "2026-11-27",
+    "v": 2
+   },
    "id": "fr:2026-20466",
    "impact": {
     "breakdown": [
@@ -4017,7 +4080,50 @@
      "precedent": "open",
      "structural": true,
      "triggers": [
-      "designated a significant rule"
+      "major rule"
+     ],
+     "weighed": []
+    },
+    {
+     "authority": "smith",
+     "code": "free_exercise",
+     "elements_found": [
+      "religion",
+      "burden"
+     ],
+     "elements_total": 4,
+     "full_text_elements": [
+      "religion",
+      "burden"
+     ],
+     "group": "rights",
+     "level": 0,
+     "precedent": "open",
+     "structural": false,
+     "triggers": [
+      "church",
+      "denomination"
+     ],
+     "weighed": []
+    },
+    {
+     "authority": "nebraska_press",
+     "code": "speech_restraint",
+     "elements_found": [
+      "restriction",
+      "government",
+      "public"
+     ],
+     "elements_total": 3,
+     "full_text_elements": [
+      "restriction"
+     ],
+     "group": "rights",
+     "level": 0,
+     "precedent": "open",
+     "structural": false,
+     "triggers": [
+      "gag clauses"
      ],
      "weighed": []
     }
@@ -4030,9 +4136,11 @@
     "health-and-human-services-department"
    ],
    "ft": {
+    "read": "2026-11-27",
     "terms": [
      "nonenforcement"
-    ]
+    ],
+    "v": 2
    },
    "id": "fr:2026-20447",
    "impact": {
@@ -4061,6 +4169,9 @@
    "significant": true,
    "source": "federal_register",
    "source_label": "Federal Register",
+   "statutes": [
+    "cra"
+   ],
    "subcategory": "Final rule",
    "subtype": "",
    "summary": "These final rules set forth requirements that amend the regulations under the Public Health Service Act, the Employee Retirement Income Security Act of 1974, and the Internal Revenue Code regarding price transparency reporting requirements for non- grandfathered group health plans and health insurance issuers offering non-grandfathered group and individual health insurance coverage. Specifically, these final rules are intended to improve the standardization, accuracy, and accessibility of public pricing disclosures in line with the goals of Executive Order 14221, \"Making America Healthy Again by Empowering Patients With Clear, Accurate, and Actionable Healthcare Pricing Information.\" With…",

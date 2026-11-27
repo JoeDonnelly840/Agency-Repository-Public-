@@ -6352,12 +6352,35 @@
       "reorganiz"
      ],
      "weighed": []
+    },
+    {
+     "authority": "burger",
+     "code": "fourth_amendment",
+     "elements_found": [
+      "search"
+     ],
+     "elements_total": 2,
+     "full_text_elements": [
+      "search"
+     ],
+     "group": "rights",
+     "level": 0,
+     "precedent": "open",
+     "structural": false,
+     "triggers": [
+      "surveillance"
+     ],
+     "weighed": []
     }
    ],
    "fr_agency_slugs": [
     "health-and-human-services-department",
     "centers-for-disease-control-and-prevention"
    ],
+   "ft": {
+    "read": "2026-11-27",
+    "v": 2
+   },
    "id": "fr:2026-18263",
    "impact": {
     "breakdown": [
@@ -7463,7 +7486,7 @@
      "precedent": "open",
      "structural": true,
      "triggers": [
-      "designated a significant rule"
+      "nationwide"
      ],
      "weighed": []
     }
@@ -7473,6 +7496,10 @@
     "engineers-corps",
     "environmental-protection-agency"
    ],
+   "ft": {
+    "read": "2026-11-27",
+    "v": 2
+   },
    "id": "fr:2026-18317",
    "impact": {
     "breakdown": [

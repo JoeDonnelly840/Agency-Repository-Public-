@@ -4,6 +4,93 @@
   {
    "action": "",
    "agencies": [
+    "president"
+   ],
+   "category": "presidential",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-10-16",
+   "date_basis": "signed",
+   "doc_type": "Presidential Document",
+   "docket_ids": [],
+   "effective_on": null,
+   "eo_number": "14436",
+   "first_seen": "2026-11-11T13:33:45+00:00",
+   "flags": [
+    {
+     "authority": "youngstown",
+     "code": "presidential_lawmaking",
+     "elements_found": [
+      "binding",
+      "basis",
+      "public_effect"
+     ],
+     "elements_total": 4,
+     "full_text_elements": [
+      "binding",
+      "basis",
+      "public_effect"
+     ],
+     "group": "structural",
+     "level": 1,
+     "precedent": "open",
+     "structural": true,
+     "triggers": [
+      "duties",
+      "national emergency",
+      "tariff"
+     ],
+     "weighed": [
+      "specific_trade_statute"
+     ]
+    }
+   ],
+   "fr_agency_slugs": [
+    "executive-office-of-the-president"
+   ],
+   "ft": {
+    "read": "2026-11-27",
+    "v": 2
+   },
+   "id": "fr:2026-21599",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 3,
+      "why": "presidential document"
+     }
+    ],
+    "level": 1,
+    "points": 3
+   },
+   "jurisdiction": "federal",
+   "outcome": "issued",
+   "priority": 1,
+   "published": "2026-10-21",
+   "rating": {
+    "issues": 1,
+    "level": 1
+   },
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "statutes": [
+    "s122",
+    "s232"
+   ],
+   "subcategory": "Executive Order",
+   "subtype": "Executive Order",
+   "summary": "",
+   "title": "Implementing the Lindsey O. Graham Sanctioning Russia and Iran Act of 2026",
+   "url": "https://www.federalregister.gov/documents/2026/10/21/2026-21599/implementing-the-lindsey-o-graham-sanctioning-russia-and-iran-act-of-2026"
+  },
+  {
+   "action": "",
+   "agencies": [
     "fda"
    ],
    "category": "other",
@@ -2846,54 +2933,6 @@
    "summary": "Class II. Voluntary: Firm initiated. Reason: Following a Chromium-based web-browser, report and displayed images may not match.",
    "title": "INTELERAD MEDICAL SYSTEMS INCORPORATED: IntelePACS, InteleConnect Portal/Tech Portal Versions PACS-5-1-1-R102, PACS-5-2-1-R93, PACS-5-3-1-R83 through R128, PACS-5-4-1-R66 through R101, PACS-5-5-1-R50 …",
    "url": "https://api.fda.gov/device/enforcement.json?search=recall_number:%22Z-0186-2027%22"
-  },
-  {
-   "action": "",
-   "agencies": [
-    "president"
-   ],
-   "category": "presidential",
-   "comments_close": null,
-   "corporation": null,
-   "date": "2026-10-16",
-   "date_basis": "signed",
-   "doc_type": "Presidential Document",
-   "docket_ids": [],
-   "effective_on": null,
-   "eo_number": "14436",
-   "first_seen": "2026-11-11T13:33:45+00:00",
-   "flags": [],
-   "fr_agency_slugs": [
-    "executive-office-of-the-president"
-   ],
-   "id": "fr:2026-21599",
-   "impact": {
-    "breakdown": [
-     {
-      "marker": "Reach",
-      "points": 3,
-      "why": "presidential document"
-     }
-    ],
-    "level": 1,
-    "points": 3
-   },
-   "jurisdiction": "federal",
-   "outcome": "issued",
-   "priority": 0,
-   "published": "2026-10-21",
-   "rating": null,
-   "rins": [],
-   "routine": false,
-   "sanctions": [],
-   "significant": false,
-   "source": "federal_register",
-   "source_label": "Federal Register",
-   "subcategory": "Executive Order",
-   "subtype": "Executive Order",
-   "summary": "",
-   "title": "Implementing the Lindsey O. Graham Sanctioning Russia and Iran Act of 2026",
-   "url": "https://www.federalregister.gov/documents/2026/10/21/2026-21599/implementing-the-lindsey-o-graham-sanctioning-russia-and-iran-act-of-2026"
   },
   {
    "action": "",

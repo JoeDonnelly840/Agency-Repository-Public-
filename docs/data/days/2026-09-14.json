@@ -2457,10 +2457,35 @@
    "effective_on": null,
    "eo_number": null,
    "first_seen": "2026-11-26T01:56:14+00:00",
-   "flags": [],
+   "flags": [
+    {
+     "authority": "youngstown",
+     "code": "presidential_lawmaking",
+     "elements_found": [
+      "binding"
+     ],
+     "elements_total": 4,
+     "full_text_elements": [
+      "binding"
+     ],
+     "group": "structural",
+     "level": 0,
+     "precedent": "open",
+     "structural": true,
+     "triggers": [
+      "duties",
+      "tariff"
+     ],
+     "weighed": []
+    }
+   ],
    "fr_agency_slugs": [
     "executive-office-of-the-president"
    ],
+   "ft": {
+    "read": "2026-11-27",
+    "v": 2
+   },
    "id": "fr:2026-18835",
    "impact": {
     "breakdown": [
@@ -2484,6 +2509,9 @@
    "significant": false,
    "source": "federal_register",
    "source_label": "Federal Register",
+   "statutes": [
+    "s338"
+   ],
    "subcategory": "Proclamation",
    "subtype": "Proclamation",
    "summary": "",
@@ -2505,10 +2533,35 @@
    "effective_on": null,
    "eo_number": null,
    "first_seen": "2026-11-26T01:56:14+00:00",
-   "flags": [],
+   "flags": [
+    {
+     "authority": "youngstown",
+     "code": "presidential_lawmaking",
+     "elements_found": [
+      "binding"
+     ],
+     "elements_total": 4,
+     "full_text_elements": [
+      "binding"
+     ],
+     "group": "structural",
+     "level": 0,
+     "precedent": "open",
+     "structural": true,
+     "triggers": [
+      "duties",
+      "tariff"
+     ],
+     "weighed": []
+    }
+   ],
    "fr_agency_slugs": [
     "executive-office-of-the-president"
    ],
+   "ft": {
+    "read": "2026-11-27",
+    "v": 2
+   },
    "id": "fr:2026-18836",
    "impact": {
     "breakdown": [
@@ -2532,6 +2585,9 @@
    "significant": false,
    "source": "federal_register",
    "source_label": "Federal Register",
+   "statutes": [
+    "s338"
+   ],
    "subcategory": "Proclamation",
    "subtype": "Proclamation",
    "summary": "",
@@ -2553,10 +2609,35 @@
    "effective_on": null,
    "eo_number": null,
    "first_seen": "2026-11-26T01:56:14+00:00",
-   "flags": [],
+   "flags": [
+    {
+     "authority": "youngstown",
+     "code": "presidential_lawmaking",
+     "elements_found": [
+      "binding"
+     ],
+     "elements_total": 4,
+     "full_text_elements": [
+      "binding"
+     ],
+     "group": "structural",
+     "level": 0,
+     "precedent": "open",
+     "structural": true,
+     "triggers": [
+      "duties",
+      "tariff"
+     ],
+     "weighed": []
+    }
+   ],
    "fr_agency_slugs": [
     "executive-office-of-the-president"
    ],
+   "ft": {
+    "read": "2026-11-27",
+    "v": 2
+   },
    "id": "fr:2026-18837",
    "impact": {
     "breakdown": [
@@ -2580,6 +2661,9 @@
    "significant": false,
    "source": "federal_register",
    "source_label": "Federal Register",
+   "statutes": [
+    "s338"
+   ],
    "subcategory": "Proclamation",
    "subtype": "Proclamation",
    "summary": "",
@@ -2708,22 +2792,33 @@
      "authority": "youngstown",
      "code": "presidential_lawmaking",
      "elements_found": [
-      "binding"
+      "binding",
+      "public_effect"
      ],
      "elements_total": 4,
+     "full_text_elements": [
+      "public_effect"
+     ],
      "group": "structural",
      "level": 0,
      "precedent": "open",
      "structural": true,
      "triggers": [
-      "duties"
+      "duties",
+      "tariff"
      ],
-     "weighed": []
+     "weighed": [
+      "specific_trade_statute"
+     ]
     }
    ],
    "fr_agency_slugs": [
     "executive-office-of-the-president"
    ],
+   "ft": {
+    "read": "2026-11-27",
+    "v": 2
+   },
    "id": "fr:2026-18838",
    "impact": {
     "breakdown": [
@@ -2747,6 +2842,10 @@
    "significant": false,
    "source": "federal_register",
    "source_label": "Federal Register",
+   "statutes": [
+    "s232",
+    "s338"
+   ],
    "subcategory": "Proclamation",
    "subtype": "Proclamation",
    "summary": "",
@@ -2773,22 +2872,33 @@
      "authority": "youngstown",
      "code": "presidential_lawmaking",
      "elements_found": [
-      "binding"
+      "binding",
+      "public_effect"
      ],
      "elements_total": 4,
+     "full_text_elements": [
+      "public_effect"
+     ],
      "group": "structural",
      "level": 0,
      "precedent": "open",
      "structural": true,
      "triggers": [
-      "duties"
+      "duties",
+      "tariff"
      ],
-     "weighed": []
+     "weighed": [
+      "specific_trade_statute"
+     ]
     }
    ],
    "fr_agency_slugs": [
     "executive-office-of-the-president"
    ],
+   "ft": {
+    "read": "2026-11-27",
+    "v": 2
+   },
    "id": "fr:2026-18839",
    "impact": {
     "breakdown": [
@@ -2812,6 +2922,10 @@
    "significant": false,
    "source": "federal_register",
    "source_label": "Federal Register",
+   "statutes": [
+    "s232",
+    "s338"
+   ],
    "subcategory": "Proclamation",
    "subtype": "Proclamation",
    "summary": "",

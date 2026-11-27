@@ -4,6 +4,104 @@
   {
    "action": "",
    "agencies": [
+    "president"
+   ],
+   "category": "presidential",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-09-11",
+   "date_basis": "signed",
+   "doc_type": "Presidential Document",
+   "docket_ids": [],
+   "effective_on": null,
+   "eo_number": null,
+   "first_seen": "2026-11-26T01:56:14+00:00",
+   "flags": [
+    {
+     "authority": "west_virginia",
+     "code": "major_questions",
+     "elements_found": [
+      "rule",
+      "significance",
+      "novelty"
+     ],
+     "elements_total": 4,
+     "full_text_elements": [
+      "significance",
+      "novelty"
+     ],
+     "group": "structural",
+     "level": 1,
+     "precedent": "open",
+     "structural": true,
+     "triggers": [
+      "unprecedented"
+     ],
+     "weighed": []
+    },
+    {
+     "authority": "youngstown",
+     "code": "agency_structure_change",
+     "elements_found": [
+      "restructure",
+      "executive"
+     ],
+     "elements_total": 3,
+     "full_text_elements": [
+      "restructure"
+     ],
+     "group": "structural",
+     "level": 0,
+     "precedent": "open",
+     "structural": true,
+     "triggers": [
+      "dismantl"
+     ],
+     "weighed": []
+    }
+   ],
+   "fr_agency_slugs": [
+    "executive-office-of-the-president"
+   ],
+   "ft": {
+    "read": "2026-11-27",
+    "v": 2
+   },
+   "id": "fr:2026-19251",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 3,
+      "why": "presidential document"
+     }
+    ],
+    "level": 1,
+    "points": 3
+   },
+   "jurisdiction": "federal",
+   "outcome": "issued",
+   "priority": 1,
+   "published": "2026-09-18",
+   "rating": {
+    "issues": 1,
+    "level": 1
+   },
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Determination",
+   "subtype": "Determination",
+   "summary": "",
+   "title": "Presidential Determination on Major Drug Transit or Major Illicit Drug Producing Countries for Fiscal Year 2027",
+   "url": "https://www.federalregister.gov/documents/2026/09/18/2026-19251/presidential-determination-on-major-drug-transit-or-major-illicit-drug-producing-countries-for"
+  },
+  {
+   "action": "",
+   "agencies": [
     "fda"
    ],
    "category": "adjudication",
@@ -2733,54 +2831,6 @@
    "summary": "",
    "title": "Pontook Operating Limited Partnership & New Hampshire Department of Environmental Services; Notice of Intent To File License Application, Filing of Pre-Application Document (Pad), Commencement of Pre-Filing Process, and Scoping; Request for Comments on the Pad and Scoping Document, and Identification of Issues and Associated Study Requests",
    "url": "https://www.federalregister.gov/documents/2026/09/18/2026-19198/pontook-operating-limited-partnership-and-new-hampshire-department-of-environmental-services-notice"
-  },
-  {
-   "action": "",
-   "agencies": [
-    "president"
-   ],
-   "category": "presidential",
-   "comments_close": null,
-   "corporation": null,
-   "date": "2026-09-11",
-   "date_basis": "signed",
-   "doc_type": "Presidential Document",
-   "docket_ids": [],
-   "effective_on": null,
-   "eo_number": null,
-   "first_seen": "2026-11-26T01:56:14+00:00",
-   "flags": [],
-   "fr_agency_slugs": [
-    "executive-office-of-the-president"
-   ],
-   "id": "fr:2026-19251",
-   "impact": {
-    "breakdown": [
-     {
-      "marker": "Reach",
-      "points": 3,
-      "why": "presidential document"
-     }
-    ],
-    "level": 1,
-    "points": 3
-   },
-   "jurisdiction": "federal",
-   "outcome": "issued",
-   "priority": 0,
-   "published": "2026-09-18",
-   "rating": null,
-   "rins": [],
-   "routine": false,
-   "sanctions": [],
-   "significant": false,
-   "source": "federal_register",
-   "source_label": "Federal Register",
-   "subcategory": "Determination",
-   "subtype": "Determination",
-   "summary": "",
-   "title": "Presidential Determination on Major Drug Transit or Major Illicit Drug Producing Countries for Fiscal Year 2027",
-   "url": "https://www.federalregister.gov/documents/2026/09/18/2026-19251/presidential-determination-on-major-drug-transit-or-major-illicit-drug-producing-countries-for"
   },
   {
    "action": "Notice.",

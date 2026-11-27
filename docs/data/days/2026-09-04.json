@@ -1922,6 +1922,25 @@
    "first_seen": "2026-11-26T01:56:14+00:00",
    "flags": [
     {
+     "authority": "youngstown",
+     "code": "agency_structure_change",
+     "elements_found": [
+      "restructure"
+     ],
+     "elements_total": 3,
+     "full_text_elements": [
+      "restructure"
+     ],
+     "group": "structural",
+     "level": 0,
+     "precedent": "open",
+     "structural": true,
+     "triggers": [
+      "abolish"
+     ],
+     "weighed": []
+    },
+    {
      "authority": "west_virginia",
      "code": "major_questions",
      "elements_found": [
@@ -1934,7 +1953,67 @@
      "precedent": "open",
      "structural": true,
      "triggers": [
-      "designated a significant rule"
+      "economically significant",
+      "major rule"
+     ],
+     "weighed": []
+    },
+    {
+     "authority": "slaughter",
+     "code": "removal_independence",
+     "elements_found": [
+      "protected_body"
+     ],
+     "elements_total": 2,
+     "full_text_elements": [
+      "protected_body"
+     ],
+     "group": "structural",
+     "level": 0,
+     "precedent": "open",
+     "structural": true,
+     "triggers": [
+      "federal reserve"
+     ],
+     "weighed": []
+    },
+    {
+     "authority": "naacp_alabama",
+     "code": "association",
+     "elements_found": [
+      "disclosure",
+      "broad"
+     ],
+     "elements_total": 3,
+     "full_text_elements": [
+      "disclosure",
+      "broad"
+     ],
+     "group": "rights",
+     "level": 0,
+     "precedent": "open",
+     "structural": false,
+     "triggers": [
+      "beneficial owner"
+     ],
+     "weighed": []
+    },
+    {
+     "authority": "mathews",
+     "code": "due_process_takings",
+     "elements_found": [
+      "deprivation"
+     ],
+     "elements_total": 4,
+     "full_text_elements": [
+      "deprivation"
+     ],
+     "group": "rights",
+     "level": 0,
+     "precedent": "open",
+     "structural": false,
+     "triggers": [
+      "revocation"
      ],
      "weighed": []
     }
@@ -1942,6 +2021,10 @@
    "fr_agency_slugs": [
     "securities-and-exchange-commission"
    ],
+   "ft": {
+    "read": "2026-11-27",
+    "v": 2
+   },
    "id": "fr:2026-18190",
    "impact": {
     "breakdown": [
@@ -1967,6 +2050,9 @@
    "significant": true,
    "source": "federal_register",
    "source_label": "Federal Register",
+   "statutes": [
+    "cra"
+   ],
    "subcategory": "Proposed rule",
    "subtype": "",
    "summary": "The U.S. Securities and Exchange Commission (\"SEC\" or \"Commission\") is proposing to adopt new rules, amend existing rules, amend the existing form for registration with the Commission as a transfer agent (Form TA-1) and the existing form for reporting activities of transfer agents (Form TA-2), and rescind an existing rule governing registered transfer agents. The proposals are designed to modernize the rules governing registered transfer agents.",

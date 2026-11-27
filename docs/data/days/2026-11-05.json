@@ -1812,10 +1812,12 @@
     "executive-office-of-the-president"
    ],
    "ft": {
+    "read": "2026-11-27",
     "terms": [
      "ieepa",
      "national_emergencies_act"
-    ]
+    ],
+    "v": 2
    },
    "id": "fr:2026-22685",
    "impact": {
@@ -1887,9 +1889,11 @@
     "executive-office-of-the-president"
    ],
    "ft": {
+    "read": "2026-11-27",
     "terms": [
      "national_emergencies_act"
-    ]
+    ],
+    "v": 2
    },
    "id": "fr:2026-22686",
    "impact": {
@@ -1941,6 +1945,26 @@
    "flags": [
     {
      "authority": "youngstown",
+     "code": "agency_structure_change",
+     "elements_found": [
+      "restructure",
+      "executive"
+     ],
+     "elements_total": 3,
+     "full_text_elements": [
+      "restructure"
+     ],
+     "group": "structural",
+     "level": 0,
+     "precedent": "open",
+     "structural": true,
+     "triggers": [
+      "dismantl"
+     ],
+     "weighed": []
+    },
+    {
+     "authority": "youngstown",
      "code": "presidential_lawmaking",
      "elements_found": [
       "basis"
@@ -1961,10 +1985,12 @@
     "executive-office-of-the-president"
    ],
    "ft": {
+    "read": "2026-11-27",
     "terms": [
      "ieepa",
      "national_emergencies_act"
-    ]
+    ],
+    "v": 2
    },
    "id": "fr:2026-22687",
    "impact": {
@@ -2032,16 +2058,37 @@
       "national emergency"
      ],
      "weighed": []
+    },
+    {
+     "authority": "burger",
+     "code": "fourth_amendment",
+     "elements_found": [
+      "search"
+     ],
+     "elements_total": 2,
+     "full_text_elements": [
+      "search"
+     ],
+     "group": "rights",
+     "level": 0,
+     "precedent": "open",
+     "structural": false,
+     "triggers": [
+      "surveillance"
+     ],
+     "weighed": []
     }
    ],
    "fr_agency_slugs": [
     "executive-office-of-the-president"
    ],
    "ft": {
+    "read": "2026-11-27",
     "terms": [
      "ieepa",
      "national_emergencies_act"
-    ]
+    ],
+    "v": 2
    },
    "id": "fr:2026-22688",
    "impact": {

@@ -4058,10 +4058,34 @@
    "effective_on": null,
    "eo_number": "14431",
    "first_seen": "2026-11-26T01:56:14+00:00",
-   "flags": [],
+   "flags": [
+    {
+     "authority": "youngstown",
+     "code": "presidential_lawmaking",
+     "elements_found": [
+      "public_effect"
+     ],
+     "elements_total": 4,
+     "full_text_elements": [
+      "public_effect"
+     ],
+     "group": "structural",
+     "level": 0,
+     "precedent": "open",
+     "structural": true,
+     "triggers": [
+      "duties"
+     ],
+     "weighed": []
+    }
+   ],
    "fr_agency_slugs": [
     "executive-office-of-the-president"
    ],
+   "ft": {
+    "read": "2026-11-27",
+    "v": 2
+   },
    "id": "fr:2026-19555",
    "impact": {
     "breakdown": [
@@ -8861,15 +8885,42 @@
       "moratorium"
      ],
      "weighed": []
+    },
+    {
+     "authority": "mathews",
+     "code": "due_process_takings",
+     "elements_found": [
+      "deprivation",
+      "particular",
+      "no_process",
+      "physical"
+     ],
+     "elements_total": 4,
+     "full_text_elements": [
+      "deprivation",
+      "particular",
+      "no_process",
+      "physical"
+     ],
+     "group": "rights",
+     "level": 0,
+     "precedent": "open",
+     "structural": false,
+     "triggers": [
+      "right to enter"
+     ],
+     "weighed": []
     }
    ],
    "fr_agency_slugs": [
     "health-and-human-services-department"
    ],
    "ft": {
+    "read": "2026-11-27",
     "terms": [
      "good_cause"
-    ]
+    ],
+    "v": 2
    },
    "id": "fr:2026-19493",
    "impact": {
@@ -8896,6 +8947,9 @@
    "significant": false,
    "source": "federal_register",
    "source_label": "Federal Register",
+   "statutes": [
+    "cra"
+   ],
    "subcategory": "Final rule",
    "subtype": "",
    "summary": "This interim final rule with comment period (IFC) codifies the Department of Health and Human Services' (HHS) authority to impose a temporary moratorium pausing the registration of agents and brokers that do not have a current Plan Year registration with the Federally- facilitated Exchanges at the time the moratorium is effective and are seeking to enter into Exchange agreements with the Centers for Medicare & Medicaid Services (CMS) to assist consumers with enrollment through the Federally-facilitated Exchange (FFE) and State-based Exchanges that use the Federal platform (SBE-FPs) (hereinafter collectively referred to as the \"Federally-facilitated Exchanges\"). HHS is issuing this rule on…",
@@ -9352,6 +9406,10 @@
    "fr_agency_slugs": [
     "executive-office-of-the-president"
    ],
+   "ft": {
+    "read": "2026-11-27",
+    "v": 2
+   },
    "id": "fr:2026-19554",
    "impact": {
     "breakdown": [
@@ -9375,6 +9433,9 @@
    "significant": false,
    "source": "federal_register",
    "source_label": "Federal Register",
+   "statutes": [
+    "ina212f"
+   ],
    "subcategory": "Proclamation",
    "subtype": "Proclamation",
    "summary": "",
@@ -9802,6 +9863,10 @@
     "health-and-human-services-department",
     "food-and-drug-administration"
    ],
+   "ft": {
+    "read": "2026-11-27",
+    "v": 2
+   },
    "id": "fr:2026-19419",
    "impact": {
     "breakdown": [

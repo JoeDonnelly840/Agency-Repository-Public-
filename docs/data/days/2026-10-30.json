@@ -3283,22 +3283,33 @@
      "authority": "youngstown",
      "code": "presidential_lawmaking",
      "elements_found": [
-      "binding"
+      "binding",
+      "public_effect"
      ],
      "elements_total": 4,
+     "full_text_elements": [
+      "public_effect"
+     ],
      "group": "structural",
      "level": 0,
      "precedent": "open",
      "structural": true,
      "triggers": [
-      "duties"
+      "duties",
+      "tariff"
      ],
-     "weighed": []
+     "weighed": [
+      "specific_trade_statute"
+     ]
     }
    ],
    "fr_agency_slugs": [
     "executive-office-of-the-president"
    ],
+   "ft": {
+    "read": "2026-11-27",
+    "v": 2
+   },
    "id": "fr:2026-22292",
    "impact": {
     "breakdown": [
@@ -3322,6 +3333,10 @@
    "significant": false,
    "source": "federal_register",
    "source_label": "Federal Register",
+   "statutes": [
+    "s232",
+    "s338"
+   ],
    "subcategory": "Proclamation",
    "subtype": "Proclamation",
    "summary": "",

@@ -2857,6 +2857,10 @@
    "fr_agency_slugs": [
     "executive-office-of-the-president"
    ],
+   "ft": {
+    "read": "2026-11-27",
+    "v": 2
+   },
    "id": "fr:2026-23349",
    "impact": {
     "breakdown": [
@@ -3115,6 +3119,10 @@
     "health-and-human-services-department",
     "children-and-families-administration"
    ],
+   "ft": {
+    "read": "2026-11-27",
+    "v": 2
+   },
    "id": "fr:2026-23279",
    "impact": {
     "breakdown": [
@@ -3145,6 +3153,9 @@
    "significant": true,
    "source": "federal_register",
    "source_label": "Federal Register",
+   "statutes": [
+    "cra"
+   ],
    "subcategory": "Final rule",
    "subtype": "",
    "summary": "In this final rule, the Administration for Children and Families (ACF) removes requirements from the Head Start Program Performance Standards (Performance Standards) to restore local flexibility to Head Start programs and improve access to quality services. Specifically, this final rule removes requirements related to wages and benefits that the Administration believes are not in line with the plain language of the Head Start Act and are costly and overly prescriptive for Head Start programs and staff. ACF estimates these changes will result in over $2 billion in future cost savings for Head Start programs. The rescissions in this final rule impact the costliest parts of the final rule…",
@@ -3417,10 +3428,29 @@
    "effective_on": null,
    "eo_number": null,
    "first_seen": "2026-11-16T15:29:32+00:00",
-   "flags": [],
+   "flags": [
+    {
+     "authority": "adarand",
+     "code": "equal_protection",
+     "elements_found": [],
+     "elements_total": 2,
+     "group": "rights",
+     "level": 0,
+     "precedent": "open",
+     "structural": false,
+     "triggers": [
+      "set aside"
+     ],
+     "weighed": []
+    }
+   ],
    "fr_agency_slugs": [
     "executive-office-of-the-president"
    ],
+   "ft": {
+    "read": "2026-11-27",
+    "v": 2
+   },
    "id": "fr:2026-23348",
    "impact": {
     "breakdown": [

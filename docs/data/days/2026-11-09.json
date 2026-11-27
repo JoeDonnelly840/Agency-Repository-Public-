@@ -2,6 +2,157 @@
  "date": "2026-11-09",
  "items": [
   {
+   "action": "Final rule.",
+   "agencies": [
+    "hhs"
+   ],
+   "category": "rulemaking",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-09",
+   "date_basis": "published",
+   "doc_type": "Rule",
+   "docket_ids": [
+    "CMS-1844-F"
+   ],
+   "effective_on": "2026-01-04",
+   "eo_number": null,
+   "first_seen": "2026-11-11T13:33:45+00:00",
+   "flags": [
+    {
+     "authority": "west_virginia",
+     "basis": "passages",
+     "code": "major_questions",
+     "elements_found": [
+      "rule",
+      "significance",
+      "novelty"
+     ],
+     "elements_total": 4,
+     "full_text_elements": [
+      "significance",
+      "novelty"
+     ],
+     "group": "structural",
+     "level": 1,
+     "precedent": "open",
+     "structural": true,
+     "triggers": [
+      "major rule",
+      "moratorium"
+     ],
+     "weighed": []
+    },
+    {
+     "authority": "dole",
+     "code": "federalism",
+     "elements_found": [
+      "states"
+     ],
+     "elements_total": 3,
+     "full_text_elements": [
+      "states"
+     ],
+     "group": "structural",
+     "level": 0,
+     "precedent": "open",
+     "structural": true,
+     "triggers": [
+      "requires states to"
+     ],
+     "weighed": []
+    },
+    {
+     "authority": "arthrex",
+     "code": "officer_appointment_removal",
+     "elements_found": [
+      "official"
+     ],
+     "elements_total": 3,
+     "full_text_elements": [
+      "official"
+     ],
+     "group": "structural",
+     "level": 0,
+     "precedent": "open",
+     "structural": true,
+     "triggers": [
+      "administrative law judge"
+     ],
+     "weighed": []
+    },
+    {
+     "authority": "mathews",
+     "code": "due_process_takings",
+     "elements_found": [
+      "deprivation"
+     ],
+     "elements_total": 4,
+     "full_text_elements": [
+      "deprivation"
+     ],
+     "group": "rights",
+     "level": 0,
+     "precedent": "open",
+     "structural": false,
+     "triggers": [
+      "revocation"
+     ],
+     "weighed": []
+    }
+   ],
+   "fr_agency_slugs": [
+    "health-and-human-services-department",
+    "centers-for-medicare-medicaid-services"
+   ],
+   "ft": {
+    "read": "2026-11-27",
+    "terms": [
+     "due_process",
+     "good_cause",
+     "loper_bright",
+     "nonenforcement"
+    ],
+    "v": 2
+   },
+   "id": "fr:2026-22750",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 2,
+      "why": "binding rule"
+     }
+    ],
+    "level": 1,
+    "points": 2
+   },
+   "jurisdiction": "federal",
+   "outcome": "final",
+   "priority": 1,
+   "published": "2026-11-09",
+   "rating": {
+    "issues": 1,
+    "level": 1
+   },
+   "rins": [
+    "0938-AV80"
+   ],
+   "routine": false,
+   "sanctions": [],
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "statutes": [
+    "cra"
+   ],
+   "subcategory": "Final rule",
+   "subtype": "",
+   "summary": "This final rule sets forth routine updates to the Medicare home health payment rates in accordance with existing statutory and regulatory requirements. In addition, this final rule discusses the behavior adjustments and finalizes a temporary behavior adjustment. It also finalizes the recalibrated case-mix weights and updated functional impairment levels; comorbidity subgroups; and low-utilization payment adjustment (LUPA) thresholds for CY 2027. Additionally, this final rule discusses and responds to comments on the provision of home health palliative care services and includes a summary of comments received on the request for information (RFI) on a home health specific wage index included…",
+   "title": "Calendar Year 2027 Home Health Prospective Payment System (HH PPS) Rate Update; Requirements for the HH Quality Reporting Program and the Expanded HH Value-Based Purchasing Model; Medicare Provider Enrollment, Durable Medical Equipment (DME), and DME, Prosthetics, Orthotics, and Supplies (DMEPOS) Policies",
+   "url": "https://www.federalregister.gov/documents/2026/11/09/2026-22750/calendar-year-2027-home-health-prospective-payment-system-hh-pps-rate-update-requirements-for-the-hh"
+  },
+  {
    "action": "",
    "agencies": [
     "fda"
@@ -340,91 +491,6 @@
    "summary": "",
    "title": "Agency Information Collection Activities: Submission to OMB for Review and Approval: Public Comment Request; Organ Procurement and Transplantation Network Board of Directors and Committee Member Applications and Forms",
    "url": "https://www.federalregister.gov/documents/2026/11/09/C1-2026-21857/agency-information-collection-activities-submission-to-omb-for-review-and-approval-public-comment"
-  },
-  {
-   "action": "Final rule.",
-   "agencies": [
-    "hhs"
-   ],
-   "category": "rulemaking",
-   "comments_close": null,
-   "corporation": null,
-   "date": "2026-11-09",
-   "date_basis": "published",
-   "doc_type": "Rule",
-   "docket_ids": [
-    "CMS-1844-F"
-   ],
-   "effective_on": "2026-01-04",
-   "eo_number": null,
-   "first_seen": "2026-11-11T13:33:45+00:00",
-   "flags": [
-    {
-     "authority": "west_virginia",
-     "code": "major_questions",
-     "elements_found": [
-      "rule",
-      "significance"
-     ],
-     "elements_total": 4,
-     "full_text_elements": [
-      "significance"
-     ],
-     "group": "structural",
-     "level": 0,
-     "precedent": "open",
-     "structural": true,
-     "triggers": [
-      "major rule"
-     ],
-     "weighed": []
-    }
-   ],
-   "fr_agency_slugs": [
-    "health-and-human-services-department",
-    "centers-for-medicare-medicaid-services"
-   ],
-   "ft": {
-    "terms": [
-     "due_process",
-     "good_cause",
-     "loper_bright",
-     "nonenforcement"
-    ]
-   },
-   "id": "fr:2026-22750",
-   "impact": {
-    "breakdown": [
-     {
-      "marker": "Reach",
-      "points": 2,
-      "why": "binding rule"
-     }
-    ],
-    "level": 1,
-    "points": 2
-   },
-   "jurisdiction": "federal",
-   "outcome": "final",
-   "priority": 0,
-   "published": "2026-11-09",
-   "rating": null,
-   "rins": [
-    "0938-AV80"
-   ],
-   "routine": false,
-   "sanctions": [],
-   "significant": false,
-   "source": "federal_register",
-   "source_label": "Federal Register",
-   "statutes": [
-    "cra"
-   ],
-   "subcategory": "Final rule",
-   "subtype": "",
-   "summary": "This final rule sets forth routine updates to the Medicare home health payment rates in accordance with existing statutory and regulatory requirements. In addition, this final rule discusses the behavior adjustments and finalizes a temporary behavior adjustment. It also finalizes the recalibrated case-mix weights and updated functional impairment levels; comorbidity subgroups; and low-utilization payment adjustment (LUPA) thresholds for CY 2027. Additionally, this final rule discusses and responds to comments on the provision of home health palliative care services and includes a summary of comments received on the request for information (RFI) on a home health specific wage index included…",
-   "title": "Calendar Year 2027 Home Health Prospective Payment System (HH PPS) Rate Update; Requirements for the HH Quality Reporting Program and the Expanded HH Value-Based Purchasing Model; Medicare Provider Enrollment, Durable Medical Equipment (DME), and DME, Prosthetics, Orthotics, and Supplies (DMEPOS) Policies",
-   "url": "https://www.federalregister.gov/documents/2026/11/09/2026-22750/calendar-year-2027-home-health-prospective-payment-system-hh-pps-rate-update-requirements-for-the-hh"
   },
   {
    "action": "",
@@ -1632,6 +1698,10 @@
     "health-and-human-services-department",
     "centers-for-disease-control-and-prevention"
    ],
+   "ft": {
+    "read": "2026-11-27",
+    "v": 2
+   },
    "id": "fr:2026-22821",
    "impact": {
     "breakdown": [
@@ -2013,9 +2083,13 @@
      "authority": "arthrex",
      "code": "officer_appointment_removal",
      "elements_found": [
-      "official"
+      "official",
+      "significant"
      ],
      "elements_total": 3,
+     "full_text_elements": [
+      "significant"
+     ],
      "group": "structural",
      "level": 0,
      "precedent": "open",
@@ -2029,6 +2103,10 @@
    "fr_agency_slugs": [
     "labor-department"
    ],
+   "ft": {
+    "read": "2026-11-27",
+    "v": 2
+   },
    "id": "fr:2026-22761",
    "impact": {
     "breakdown": [

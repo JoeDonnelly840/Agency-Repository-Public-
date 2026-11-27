@@ -795,6 +795,10 @@
    "fr_agency_slugs": [
     "executive-office-of-the-president"
    ],
+   "ft": {
+    "read": "2026-11-27",
+    "v": 2
+   },
    "id": "fr:2026-23113",
    "impact": {
     "breakdown": [
@@ -1907,6 +1911,26 @@
    "first_seen": "2026-11-12T13:37:14+00:00",
    "flags": [
     {
+     "authority": "west_virginia",
+     "code": "major_questions",
+     "elements_found": [
+      "rule",
+      "significance"
+     ],
+     "elements_total": 4,
+     "full_text_elements": [
+      "significance"
+     ],
+     "group": "structural",
+     "level": 0,
+     "precedent": "open",
+     "structural": true,
+     "triggers": [
+      "industry-wide"
+     ],
+     "weighed": []
+    },
+    {
      "authority": "burger",
      "code": "fourth_amendment",
      "elements_found": [
@@ -1927,6 +1951,10 @@
     "labor-department",
     "mine-safety-and-health-administration"
    ],
+   "ft": {
+    "read": "2026-11-27",
+    "v": 2
+   },
    "id": "fr:2026-23048",
    "impact": {
     "breakdown": [

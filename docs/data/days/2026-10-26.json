@@ -1599,14 +1599,19 @@
      "authority": "mathews",
      "code": "due_process_takings",
      "elements_found": [
-      "deprivation"
+      "deprivation",
+      "no_process"
      ],
      "elements_total": 4,
+     "full_text_elements": [
+      "no_process"
+     ],
      "group": "rights",
      "level": 0,
      "precedent": "open",
      "structural": false,
      "triggers": [
+      "ex parte",
       "revocation"
      ],
      "weighed": []
@@ -1615,6 +1620,10 @@
    "fr_agency_slugs": [
     "federal-communications-commission"
    ],
+   "ft": {
+    "read": "2026-11-27",
+    "v": 2
+   },
    "id": "fr:2026-21821",
    "impact": {
     "breakdown": [
@@ -1638,6 +1647,9 @@
    "significant": false,
    "source": "federal_register",
    "source_label": "Federal Register",
+   "statutes": [
+    "cra"
+   ],
    "subcategory": "Final rule",
    "subtype": "",
    "summary": "In this document, the Federal Communications Commission (Commission) modifies rules to ensure that consumers can revoke consent for robocalls they no longer wish to receive while continuing to receive those they still want. We also modernize our rules to ensure that consumers have clear, simple, and automated ways to revoke consent while streamlining callers' ability to process revocations. Specifically, we allow callers to interpret a revocation request as applying only to the specific category of informational robocalls to which the revocation was directed, allow callers to designate an exclusive means to revoke consent, and amend the exemption from the consent requirement for financial…",
@@ -2159,14 +2171,19 @@
      "authority": "mathews",
      "code": "due_process_takings",
      "elements_found": [
-      "deprivation"
+      "deprivation",
+      "no_process"
      ],
      "elements_total": 4,
+     "full_text_elements": [
+      "no_process"
+     ],
      "group": "rights",
      "level": 0,
      "precedent": "open",
      "structural": false,
      "triggers": [
+      "ex parte",
       "revocation"
      ],
      "weighed": []
@@ -2175,6 +2192,10 @@
    "fr_agency_slugs": [
     "federal-communications-commission"
    ],
+   "ft": {
+    "read": "2026-11-27",
+    "v": 2
+   },
    "id": "fr:2026-21820",
    "impact": {
     "breakdown": [

@@ -2196,10 +2196,12 @@
     "executive-office-of-the-president"
    ],
    "ft": {
+    "read": "2026-11-27",
     "terms": [
      "ieepa",
      "national_emergencies_act"
-    ]
+    ],
+    "v": 2
    },
    "id": "fr:2026-19053",
    "impact": {
@@ -2398,11 +2400,13 @@
      "authority": "dole",
      "code": "federalism",
      "elements_found": [
+      "states",
       "command",
       "coercive_condition"
      ],
      "elements_total": 3,
      "full_text_elements": [
+      "states",
       "command",
       "coercive_condition"
      ],
@@ -2412,6 +2416,8 @@
      "structural": true,
      "triggers": [
       "commandeer",
+      "require states to",
+      "requires states to",
       "tenth amendment"
      ],
      "weighed": []
@@ -2429,7 +2435,8 @@
      "precedent": "open",
      "structural": true,
      "triggers": [
-      "major questions"
+      "major questions",
+      "major rule"
      ],
      "weighed": []
     },
@@ -2455,13 +2462,15 @@
     "employment-and-training-administration"
    ],
    "ft": {
+    "read": "2026-11-27",
     "terms": [
      "commandeering",
      "due_process",
      "fourth_amendment",
      "major_questions",
      "tenth_amendment"
-    ]
+    ],
+    "v": 2
    },
    "id": "fr:2026-18978",
    "impact": {
@@ -2488,6 +2497,9 @@
    "significant": true,
    "source": "federal_register",
    "source_label": "Federal Register",
+   "statutes": [
+    "cra"
+   ],
    "subcategory": "Final rule",
    "subtype": "",
    "summary": "The Department of Labor (DOL or the Department) is issuing this final rule to require the disclosure of confidential unemployment compensation (UC) information to Federal officials for purposes of UC program oversight and audits. This rule will ensure that Federal officials, including the Department's Office of Inspector General (DOL- OIG), are able to obtain the information needed from State UC agencies to ensure proper oversight of the UC programs and to hold State UC agencies accountable for identifying and addressing fraud in UC programs.",
@@ -3213,6 +3225,10 @@
     "health-and-human-services-department",
     "centers-for-medicare-medicaid-services"
    ],
+   "ft": {
+    "read": "2026-11-27",
+    "v": 2
+   },
    "id": "fr:2026-19016",
    "impact": {
     "breakdown": [

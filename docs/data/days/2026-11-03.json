@@ -2,6 +2,149 @@
  "date": "2026-11-03",
  "items": [
   {
+   "action": "Final rule.",
+   "agencies": [
+    "hhs"
+   ],
+   "category": "rulemaking",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-03",
+   "date_basis": "published",
+   "doc_type": "Rule",
+   "docket_ids": [],
+   "effective_on": "2027-01-04",
+   "eo_number": null,
+   "first_seen": "2026-11-11T13:33:45+00:00",
+   "flags": [
+    {
+     "authority": "nifla",
+     "code": "free_speech",
+     "elements_found": [
+      "speech",
+      "content",
+      "not_factual"
+     ],
+     "elements_total": 3,
+     "full_text_elements": [
+      "speech",
+      "content",
+      "not_factual"
+     ],
+     "group": "rights",
+     "level": 2,
+     "precedent": "analogy",
+     "structural": false,
+     "triggers": [
+      "misinformation"
+     ],
+     "weighed": []
+    },
+    {
+     "authority": "west_virginia",
+     "code": "major_questions",
+     "elements_found": [
+      "rule"
+     ],
+     "elements_total": 4,
+     "group": "structural",
+     "level": 0,
+     "precedent": "open",
+     "structural": true,
+     "triggers": [
+      "major questions"
+     ],
+     "weighed": []
+    },
+    {
+     "authority": "mathews",
+     "code": "due_process_takings",
+     "elements_found": [
+      "no_process"
+     ],
+     "elements_total": 4,
+     "full_text_elements": [
+      "no_process"
+     ],
+     "group": "rights",
+     "level": 0,
+     "precedent": "open",
+     "structural": false,
+     "triggers": [
+      "without notice"
+     ],
+     "weighed": []
+    },
+    {
+     "authority": "smith",
+     "code": "free_exercise",
+     "elements_found": [
+      "religion",
+      "burden"
+     ],
+     "elements_total": 4,
+     "full_text_elements": [
+      "religion",
+      "burden"
+     ],
+     "group": "rights",
+     "level": 0,
+     "precedent": "open",
+     "structural": false,
+     "triggers": [
+      "faith-based",
+      "religio"
+     ],
+     "weighed": []
+    }
+   ],
+   "fr_agency_slugs": [
+    "health-and-human-services-department"
+   ],
+   "ft": {
+    "read": "2026-11-27",
+    "terms": [
+     "equal_protection",
+     "loper_bright",
+     "major_questions"
+    ],
+    "v": 2
+   },
+   "id": "fr:2026-22380",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 2,
+      "why": "binding rule"
+     }
+    ],
+    "level": 1,
+    "points": 2
+   },
+   "jurisdiction": "federal",
+   "outcome": "final",
+   "priority": 2,
+   "published": "2026-11-03",
+   "rating": {
+    "issues": 1,
+    "level": 2
+   },
+   "rins": [
+    "0945-AA27"
+   ],
+   "routine": false,
+   "sanctions": [],
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Final rule",
+   "subtype": "",
+   "summary": "The Department of Health and Human Services (HHS or Department) issues this rule to revise the regulation implementing section 504 of the Rehabilitation Act of 1973 (section 504) as it applies to recipients of HHS funding (entitled \"Nondiscrimination on the Basis of Disability in Programs or Activities Receiving Federal Financial Assistance,\" (\"2024 Final Rule\")), published on May 9, 2024. This rule clarifies that the Department interprets the statutory exclusion of \"gender identity disorders not resulting from physical impairments\" from the terms \"individual with a disability\" and \"disability\" set forth in our regulations to encompass \"gender dysphoria not resulting from a physical…",
+   "title": "Nondiscrimination on the Basis of Disability in Programs or Activities Receiving Federal Financial Assistance",
+   "url": "https://www.federalregister.gov/documents/2026/11/03/2026-22380/nondiscrimination-on-the-basis-of-disability-in-programs-or-activities-receiving-federal-financial"
+  },
+  {
    "action": "",
    "agencies": [
     "fda"
@@ -2562,6 +2705,65 @@
       "designated a significant rule"
      ],
      "weighed": []
+    },
+    {
+     "authority": "arthrex",
+     "code": "officer_appointment_removal",
+     "elements_found": [
+      "official"
+     ],
+     "elements_total": 3,
+     "full_text_elements": [
+      "official"
+     ],
+     "group": "structural",
+     "level": 0,
+     "precedent": "open",
+     "structural": true,
+     "triggers": [
+      "hearing officer"
+     ],
+     "weighed": []
+    },
+    {
+     "authority": "cook",
+     "code": "removal_independence",
+     "elements_found": [
+      "protected_body"
+     ],
+     "elements_total": 2,
+     "full_text_elements": [
+      "protected_body"
+     ],
+     "group": "structural",
+     "level": 0,
+     "precedent": "analogy",
+     "structural": true,
+     "triggers": [
+      "federal reserve"
+     ],
+     "weighed": []
+    },
+    {
+     "authority": "naacp_alabama",
+     "code": "association",
+     "elements_found": [
+      "disclosure",
+      "public_release"
+     ],
+     "elements_total": 3,
+     "full_text_elements": [
+      "disclosure",
+      "public_release"
+     ],
+     "group": "rights",
+     "level": 0,
+     "precedent": "open",
+     "structural": false,
+     "triggers": [
+      "donor information"
+     ],
+     "weighed": []
     }
    ],
    "fr_agency_slugs": [
@@ -2569,10 +2771,12 @@
     "centers-for-medicare-medicaid-services"
    ],
    "ft": {
+    "read": "2026-11-27",
     "terms": [
      "due_process",
      "loper_bright"
-    ]
+    ],
+    "v": 2
    },
    "id": "fr:2026-22381",
    "impact": {
@@ -2599,6 +2803,9 @@
    "significant": true,
    "source": "federal_register",
    "source_label": "Federal Register",
+   "statutes": [
+    "cra"
+   ],
    "subcategory": "Final rule",
    "subtype": "",
    "summary": "This final rule revises the Conditions for Coverage for Organ Procurement Organizations (OPOs) to clarify outstanding procedural questions and provide additional operational flexibility for OPOs to achieve high performance resulting in the successful procurement, distribution, and transplantation of more life-saving organs. This rule revises definitions, revises the designation requirements for OPOs, clarifies when an OPO's service area is open for competition, and updates the process for appeals. We are committed to holding all OPOs accountable for their performance and this final rule does not revise the focus on improving the volume of donors and transplants assessed in the outcome…",
@@ -2660,80 +2867,6 @@
    "summary": "The Environmental Protection Agency (EPA) is making a correction to the National Emission Standards for Hazardous Air Pollutants for Lime Manufacturing Plants (Lime Manufacturing NESHAP) technology review final rule that appeared in the Federal Register on July 16, 2024. Following publication of this final rule, the EPA discovered an inadvertent error in the regulatory text and is correcting the error in this action.",
    "title": "National Emission Standards for Hazardous Air Pollutants: Lime Manufacturing Plants Technology Review; Correction",
    "url": "https://www.federalregister.gov/documents/2026/11/03/2026-22404/national-emission-standards-for-hazardous-air-pollutants-lime-manufacturing-plants-technology-review"
-  },
-  {
-   "action": "Final rule.",
-   "agencies": [
-    "hhs"
-   ],
-   "category": "rulemaking",
-   "comments_close": null,
-   "corporation": null,
-   "date": "2026-11-03",
-   "date_basis": "published",
-   "doc_type": "Rule",
-   "docket_ids": [],
-   "effective_on": "2027-01-04",
-   "eo_number": null,
-   "first_seen": "2026-11-11T13:33:45+00:00",
-   "flags": [
-    {
-     "authority": "west_virginia",
-     "code": "major_questions",
-     "elements_found": [
-      "rule"
-     ],
-     "elements_total": 4,
-     "group": "structural",
-     "level": 0,
-     "precedent": "open",
-     "structural": true,
-     "triggers": [
-      "major questions"
-     ],
-     "weighed": []
-    }
-   ],
-   "fr_agency_slugs": [
-    "health-and-human-services-department"
-   ],
-   "ft": {
-    "terms": [
-     "equal_protection",
-     "loper_bright",
-     "major_questions"
-    ]
-   },
-   "id": "fr:2026-22380",
-   "impact": {
-    "breakdown": [
-     {
-      "marker": "Reach",
-      "points": 2,
-      "why": "binding rule"
-     }
-    ],
-    "level": 1,
-    "points": 2
-   },
-   "jurisdiction": "federal",
-   "outcome": "final",
-   "priority": 0,
-   "published": "2026-11-03",
-   "rating": null,
-   "rins": [
-    "0945-AA27"
-   ],
-   "routine": false,
-   "sanctions": [],
-   "significant": false,
-   "source": "federal_register",
-   "source_label": "Federal Register",
-   "subcategory": "Final rule",
-   "subtype": "",
-   "summary": "The Department of Health and Human Services (HHS or Department) issues this rule to revise the regulation implementing section 504 of the Rehabilitation Act of 1973 (section 504) as it applies to recipients of HHS funding (entitled \"Nondiscrimination on the Basis of Disability in Programs or Activities Receiving Federal Financial Assistance,\" (\"2024 Final Rule\")), published on May 9, 2024. This rule clarifies that the Department interprets the statutory exclusion of \"gender identity disorders not resulting from physical impairments\" from the terms \"individual with a disability\" and \"disability\" set forth in our regulations to encompass \"gender dysphoria not resulting from a physical…",
-   "title": "Nondiscrimination on the Basis of Disability in Programs or Activities Receiving Federal Financial Assistance",
-   "url": "https://www.federalregister.gov/documents/2026/11/03/2026-22380/nondiscrimination-on-the-basis-of-disability-in-programs-or-activities-receiving-federal-financial"
   },
   {
    "action": "",
@@ -3118,6 +3251,10 @@
    "fr_agency_slugs": [
     "federal-communications-commission"
    ],
+   "ft": {
+    "read": "2026-11-27",
+    "v": 2
+   },
    "id": "fr:2026-22408",
    "impact": {
     "breakdown": [
@@ -3141,6 +3278,10 @@
    "significant": false,
    "source": "federal_register",
    "source_label": "Federal Register",
+   "statutes": [
+    "apa_good_cause",
+    "cra"
+   ],
    "subcategory": "Final rule",
    "subtype": "",
    "summary": "In this document, the Media Bureau of the Federal Communications Commission (Commission) adopts an Order that removes a section of the Commission's Rules and references to that section to conform the Commission's Rules to the decision of the Fifth Circuit Court of Appeals in National Religious Broadcasters v. FCC.",

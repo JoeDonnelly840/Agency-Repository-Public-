@@ -67,6 +67,28 @@
    "first_seen": "2026-11-11T13:33:45+00:00",
    "flags": [
     {
+     "authority": "dole",
+     "code": "federalism",
+     "elements_found": [
+      "states",
+      "command"
+     ],
+     "elements_total": 3,
+     "full_text_elements": [
+      "states",
+      "command"
+     ],
+     "group": "structural",
+     "level": 0,
+     "precedent": "open",
+     "structural": true,
+     "triggers": [
+      "require states to",
+      "required states to"
+     ],
+     "weighed": []
+    },
+    {
      "authority": "west_virginia",
      "code": "major_questions",
      "elements_found": [
@@ -79,7 +101,46 @@
      "precedent": "open",
      "structural": true,
      "triggers": [
-      "designated a significant rule"
+      "industry-wide"
+     ],
+     "weighed": []
+    },
+    {
+     "authority": "loper_bright",
+     "code": "statutory_deference",
+     "elements_found": [
+      "interpretation",
+      "ambiguity"
+     ],
+     "elements_total": 3,
+     "full_text_elements": [
+      "ambiguity"
+     ],
+     "group": "structural",
+     "level": 0,
+     "precedent": "open",
+     "structural": true,
+     "triggers": [
+      "gap-fill"
+     ],
+     "weighed": []
+    },
+    {
+     "authority": "mathews",
+     "code": "due_process_takings",
+     "elements_found": [
+      "no_process"
+     ],
+     "elements_total": 4,
+     "full_text_elements": [
+      "no_process"
+     ],
+     "group": "rights",
+     "level": 0,
+     "precedent": "open",
+     "structural": false,
+     "triggers": [
+      "without prior notice"
      ],
      "weighed": []
     }
@@ -87,6 +148,10 @@
    "fr_agency_slugs": [
     "environmental-protection-agency"
    ],
+   "ft": {
+    "read": "2026-11-27",
+    "v": 2
+   },
    "id": "fr:2026-22082",
    "impact": {
     "breakdown": [

@@ -3393,10 +3393,34 @@
    "effective_on": null,
    "eo_number": null,
    "first_seen": "2026-11-26T01:56:14+00:00",
-   "flags": [],
+   "flags": [
+    {
+     "authority": "smith",
+     "code": "free_exercise",
+     "elements_found": [
+      "religion"
+     ],
+     "elements_total": 4,
+     "full_text_elements": [
+      "religion"
+     ],
+     "group": "rights",
+     "level": 0,
+     "precedent": "open",
+     "structural": false,
+     "triggers": [
+      "conscience"
+     ],
+     "weighed": []
+    }
+   ],
    "fr_agency_slugs": [
     "executive-office-of-the-president"
    ],
+   "ft": {
+    "read": "2026-11-27",
+    "v": 2
+   },
    "id": "fr:2026-18959",
    "impact": {
     "breakdown": [

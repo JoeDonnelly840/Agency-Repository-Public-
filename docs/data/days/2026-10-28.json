@@ -4,6 +4,90 @@
   {
    "action": "",
    "agencies": [
+    "president"
+   ],
+   "category": "presidential",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-10-22",
+   "date_basis": "signed",
+   "doc_type": "Presidential Document",
+   "docket_ids": [],
+   "effective_on": null,
+   "eo_number": null,
+   "first_seen": "2026-11-11T13:33:45+00:00",
+   "flags": [
+    {
+     "authority": "youngstown",
+     "code": "presidential_lawmaking",
+     "elements_found": [
+      "binding",
+      "basis",
+      "public_effect"
+     ],
+     "elements_total": 4,
+     "full_text_elements": [
+      "binding",
+      "basis"
+     ],
+     "group": "structural",
+     "level": 1,
+     "precedent": "open",
+     "structural": true,
+     "triggers": [
+      "tariffs"
+     ],
+     "weighed": [
+      "specific_trade_statute"
+     ]
+    }
+   ],
+   "fr_agency_slugs": [
+    "executive-office-of-the-president"
+   ],
+   "ft": {
+    "read": "2026-11-27",
+    "v": 2
+   },
+   "id": "fr:2026-22049",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 3,
+      "why": "presidential document"
+     }
+    ],
+    "level": 1,
+    "points": 3
+   },
+   "jurisdiction": "federal",
+   "outcome": "issued",
+   "priority": 1,
+   "published": "2026-10-28",
+   "rating": {
+    "issues": 1,
+    "level": 1
+   },
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "statutes": [
+    "dpa",
+    "s232"
+   ],
+   "subcategory": "Proclamation",
+   "subtype": "Proclamation",
+   "summary": "",
+   "title": "Adjusting Imports of Wind Turbines and Their Parts and Components Into the United States",
+   "url": "https://www.federalregister.gov/documents/2026/10/28/2026-22049/adjusting-imports-of-wind-turbines-and-their-parts-and-components-into-the-united-states"
+  },
+  {
+   "action": "",
+   "agencies": [
     "fda"
    ],
    "category": "enforcement",
@@ -190,54 +274,6 @@
    "title": "Acknowledgment Letter from FDA DMB to Ganesha Enterprises LLC",
    "url": "https://www.regulations.gov/document/FDA-2026-P-13434-0002",
    "withdrawn": false
-  },
-  {
-   "action": "",
-   "agencies": [
-    "president"
-   ],
-   "category": "presidential",
-   "comments_close": null,
-   "corporation": null,
-   "date": "2026-10-22",
-   "date_basis": "signed",
-   "doc_type": "Presidential Document",
-   "docket_ids": [],
-   "effective_on": null,
-   "eo_number": null,
-   "first_seen": "2026-11-11T13:33:45+00:00",
-   "flags": [],
-   "fr_agency_slugs": [
-    "executive-office-of-the-president"
-   ],
-   "id": "fr:2026-22049",
-   "impact": {
-    "breakdown": [
-     {
-      "marker": "Reach",
-      "points": 3,
-      "why": "presidential document"
-     }
-    ],
-    "level": 1,
-    "points": 3
-   },
-   "jurisdiction": "federal",
-   "outcome": "issued",
-   "priority": 0,
-   "published": "2026-10-28",
-   "rating": null,
-   "rins": [],
-   "routine": false,
-   "sanctions": [],
-   "significant": false,
-   "source": "federal_register",
-   "source_label": "Federal Register",
-   "subcategory": "Proclamation",
-   "subtype": "Proclamation",
-   "summary": "",
-   "title": "Adjusting Imports of Wind Turbines and Their Parts and Components Into the United States",
-   "url": "https://www.federalregister.gov/documents/2026/10/28/2026-22049/adjusting-imports-of-wind-turbines-and-their-parts-and-components-into-the-united-states"
   },
   {
    "action": "Information collection notice.",
@@ -3940,10 +3976,31 @@
    "effective_on": null,
    "eo_number": "14438",
    "first_seen": "2026-11-11T13:33:45+00:00",
-   "flags": [],
+   "flags": [
+    {
+     "authority": "west_virginia",
+     "code": "major_questions",
+     "elements_found": [
+      "rule"
+     ],
+     "elements_total": 4,
+     "group": "structural",
+     "level": 0,
+     "precedent": "open",
+     "structural": true,
+     "triggers": [
+      "nationwide"
+     ],
+     "weighed": []
+    }
+   ],
    "fr_agency_slugs": [
     "executive-office-of-the-president"
    ],
+   "ft": {
+    "read": "2026-11-27",
+    "v": 2
+   },
    "id": "fr:2026-22051",
    "impact": {
     "breakdown": [
@@ -7416,11 +7473,57 @@
       "designated a significant rule"
      ],
      "weighed": []
+    },
+    {
+     "authority": "mathews",
+     "code": "due_process_takings",
+     "elements_found": [
+      "deprivation"
+     ],
+     "elements_total": 4,
+     "full_text_elements": [
+      "deprivation"
+     ],
+     "group": "rights",
+     "level": 0,
+     "precedent": "open",
+     "structural": false,
+     "triggers": [
+      "revocation"
+     ],
+     "weighed": []
+    },
+    {
+     "authority": "nifla",
+     "code": "free_speech",
+     "elements_found": [
+      "speech",
+      "content",
+      "not_factual"
+     ],
+     "elements_total": 3,
+     "full_text_elements": [
+      "speech",
+      "content",
+      "not_factual"
+     ],
+     "group": "rights",
+     "level": 0,
+     "precedent": "analogy",
+     "structural": false,
+     "triggers": [
+      "viewpoint"
+     ],
+     "weighed": []
     }
    ],
    "fr_agency_slugs": [
     "health-and-human-services-department"
    ],
+   "ft": {
+    "read": "2026-11-27",
+    "v": 2
+   },
    "id": "fr:2026-21943",
    "impact": {
     "breakdown": [
@@ -7446,6 +7549,9 @@
    "significant": true,
    "source": "federal_register",
    "source_label": "Federal Register",
+   "statutes": [
+    "apa_good_cause"
+   ],
    "subcategory": "Final rule",
    "subtype": "",
    "summary": "This final rule focuses on deregulatory actions identified in HHS regulations regarding health information technology standards, implementation specifications, and certification criteria and regarding certification programs for health information technology. This final rule reduces burden, offers flexibility to both developers and providers, and supports innovation through the removal and revision of certain certification criteria and regulatory provisions.",
@@ -9024,6 +9130,10 @@
    "fr_agency_slugs": [
     "executive-office-of-the-president"
    ],
+   "ft": {
+    "read": "2026-11-27",
+    "v": 2
+   },
    "id": "fr:2026-22050",
    "impact": {
     "breakdown": [
@@ -10568,14 +10678,33 @@
    "effective_on": null,
    "eo_number": null,
    "first_seen": "2026-11-11T13:33:45+00:00",
-   "flags": [],
+   "flags": [
+    {
+     "authority": "youngstown",
+     "code": "presidential_lawmaking",
+     "elements_found": [
+      "basis"
+     ],
+     "elements_total": 4,
+     "group": "structural",
+     "level": 0,
+     "precedent": "open",
+     "structural": true,
+     "triggers": [
+      "national emergency"
+     ],
+     "weighed": []
+    }
+   ],
    "fr_agency_slugs": [
     "executive-office-of-the-president"
    ],
    "ft": {
+    "read": "2026-11-27",
     "terms": [
      "national_emergencies_act"
-    ]
+    ],
+    "v": 2
    },
    "id": "fr:2026-22052",
    "impact": {

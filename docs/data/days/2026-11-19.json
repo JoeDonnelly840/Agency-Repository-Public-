@@ -2,6 +2,337 @@
  "date": "2026-11-19",
  "items": [
   {
+   "action": "Final rule.",
+   "agencies": [
+    "hhs"
+   ],
+   "category": "rulemaking",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-11-19",
+   "date_basis": "published",
+   "doc_type": "Rule",
+   "docket_ids": [],
+   "effective_on": "2027-01-19",
+   "eo_number": null,
+   "first_seen": "2026-11-19T13:39:10+00:00",
+   "flags": [
+    {
+     "authority": "nebraska_press",
+     "code": "speech_restraint",
+     "elements_found": [
+      "restriction",
+      "government",
+      "public"
+     ],
+     "elements_total": 3,
+     "full_text_elements": [
+      "restriction",
+      "public"
+     ],
+     "group": "rights",
+     "level": 1,
+     "precedent": "open",
+     "structural": false,
+     "triggers": [
+      "not to deny"
+     ],
+     "weighed": [
+      "courts_upheld"
+     ]
+    },
+    {
+     "authority": "west_virginia",
+     "code": "major_questions",
+     "elements_found": [
+      "rule",
+      "significance"
+     ],
+     "elements_total": 4,
+     "group": "structural",
+     "level": 0,
+     "precedent": "open",
+     "structural": true,
+     "triggers": [
+      "nationwide"
+     ],
+     "weighed": []
+    },
+    {
+     "authority": "mathews",
+     "code": "due_process_takings",
+     "elements_found": [
+      "deprivation",
+      "particular",
+      "no_process",
+      "physical"
+     ],
+     "elements_total": 4,
+     "full_text_elements": [
+      "deprivation",
+      "particular",
+      "no_process",
+      "physical"
+     ],
+     "group": "rights",
+     "level": 0,
+     "precedent": "open",
+     "structural": false,
+     "triggers": [
+      "right of access"
+     ],
+     "weighed": []
+    },
+    {
+     "authority": "smith",
+     "code": "free_exercise",
+     "elements_found": [
+      "religion",
+      "burden"
+     ],
+     "elements_total": 4,
+     "full_text_elements": [
+      "religion",
+      "burden"
+     ],
+     "group": "rights",
+     "level": 0,
+     "precedent": "open",
+     "structural": false,
+     "triggers": [
+      "clergy",
+      "religio"
+     ],
+     "weighed": []
+    }
+   ],
+   "fr_agency_slugs": [
+    "health-and-human-services-department"
+   ],
+   "ft": {
+    "read": "2026-11-27",
+    "v": 2
+   },
+   "id": "fr:2026-23429",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 2,
+      "why": "binding rule designated significant"
+     }
+    ],
+    "level": 1,
+    "points": 2
+   },
+   "jurisdiction": "federal",
+   "outcome": "final",
+   "priority": 1,
+   "published": "2026-11-19",
+   "rating": {
+    "issues": 1,
+    "level": 1
+   },
+   "rins": [
+    "0945-AA00"
+   ],
+   "routine": false,
+   "sanctions": [],
+   "significant": true,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Final rule",
+   "subtype": "",
+   "summary": "The Department of Health and Human Services (HHS or \"Department\") is issuing this final rule to modify the Standards for Privacy of Individually Identifiable Health Information (\"Privacy Rule\") under the Health Insurance Portability and Accountability Act of 1996 (HIPAA) and the Health Information Technology for Economic and Clinical Health (HITECH) Act. These modifications address standards that may impede the nationwide transition to value-based health care by limiting or discouraging individual access or care coordination and case management or posing other unnecessary burdens. The modifications in this final rule promote the essential sharing of individuals' protected health information…",
+   "title": "HIPAA Privacy Rule: Changes To Support Coordinated Care and Individual Engagement and Reduce Regulatory Burdens",
+   "url": "https://www.federalregister.gov/documents/2026/11/19/2026-23429/hipaa-privacy-rule-changes-to-support-coordinated-care-and-individual-engagement-and-reduce"
+  },
+  {
+   "action": "Proposed rule.",
+   "agencies": [
+    "hhs"
+   ],
+   "category": "rulemaking",
+   "comments_close": "2027-01-19",
+   "corporation": null,
+   "date": "2026-11-19",
+   "date_basis": "published",
+   "doc_type": "Proposed Rule",
+   "docket_ids": [
+    "CMS-6098-P"
+   ],
+   "effective_on": null,
+   "eo_number": null,
+   "first_seen": "2026-11-19T13:39:10+00:00",
+   "flags": [
+    {
+     "authority": "nebraska_press",
+     "code": "speech_restraint",
+     "elements_found": [
+      "restriction",
+      "government"
+     ],
+     "elements_total": 3,
+     "full_text_elements": [
+      "restriction"
+     ],
+     "group": "rights",
+     "level": 1,
+     "precedent": "open",
+     "structural": false,
+     "triggers": [
+      "not to deny"
+     ],
+     "weighed": [
+      "courts_upheld"
+     ]
+    },
+    {
+     "authority": "dole",
+     "code": "federalism",
+     "elements_found": [
+      "states"
+     ],
+     "elements_total": 3,
+     "full_text_elements": [
+      "states"
+     ],
+     "group": "structural",
+     "level": 0,
+     "precedent": "open",
+     "structural": true,
+     "triggers": [
+      "requires states to"
+     ],
+     "weighed": []
+    },
+    {
+     "authority": "west_virginia",
+     "code": "major_questions",
+     "elements_found": [
+      "rule",
+      "novelty"
+     ],
+     "elements_total": 4,
+     "full_text_elements": [
+      "novelty"
+     ],
+     "group": "structural",
+     "level": 0,
+     "precedent": "open",
+     "structural": true,
+     "triggers": [
+      "unprecedented"
+     ],
+     "weighed": []
+    },
+    {
+     "authority": "naacp_alabama",
+     "code": "association",
+     "elements_found": [
+      "disclosure",
+      "public_release"
+     ],
+     "elements_total": 3,
+     "full_text_elements": [
+      "disclosure",
+      "public_release"
+     ],
+     "group": "rights",
+     "level": 0,
+     "precedent": "open",
+     "structural": false,
+     "triggers": [
+      "beneficial owner"
+     ],
+     "weighed": []
+    },
+    {
+     "authority": "mathews",
+     "code": "due_process_takings",
+     "elements_found": [
+      "deprivation"
+     ],
+     "elements_total": 4,
+     "full_text_elements": [
+      "deprivation"
+     ],
+     "group": "rights",
+     "level": 0,
+     "precedent": "open",
+     "structural": false,
+     "triggers": [
+      "revocation"
+     ],
+     "weighed": []
+    },
+    {
+     "authority": "central_hudson",
+     "code": "free_speech",
+     "elements_found": [
+      "speech"
+     ],
+     "elements_total": 3,
+     "full_text_elements": [
+      "speech"
+     ],
+     "group": "rights",
+     "level": 0,
+     "precedent": "open",
+     "structural": false,
+     "triggers": [
+      "first amendment"
+     ],
+     "weighed": []
+    }
+   ],
+   "fr_agency_slugs": [
+    "health-and-human-services-department",
+    "centers-for-medicare-medicaid-services"
+   ],
+   "ft": {
+    "read": "2026-11-27",
+    "terms": [
+     "due_process",
+     "first_amendment"
+    ],
+    "v": 2
+   },
+   "id": "fr:2026-23461",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 2,
+      "why": "binding rule"
+     }
+    ],
+    "level": 1,
+    "points": 2
+   },
+   "jurisdiction": "federal",
+   "outcome": "proposed",
+   "priority": 1,
+   "published": "2026-11-19",
+   "rating": {
+    "issues": 1,
+    "level": 1
+   },
+   "rins": [
+    "0938-AV97"
+   ],
+   "routine": false,
+   "sanctions": [],
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Proposed rule",
+   "subtype": "",
+   "summary": "This proposed rule would revise provisions regarding provider enrollment, medical review, investigations, and other program integrity oversight provisions to greatly strengthen our ability to crush fraud, enhance program integrity efforts across Medicare, Medicaid, Children's Health Insurance Program, and the Marketplace and maximize regulatory authorities to address inappropriate payments.",
+   "title": "Medicare, Medicaid, and Marketplace Programs; Comprehensive Regulations To Uncover Suspicious Healthcare (CRUSH)",
+   "url": "https://www.federalregister.gov/documents/2026/11/19/2026-23461/medicare-medicaid-and-marketplace-programs-comprehensive-regulations-to-uncover-suspicious"
+  },
+  {
    "action": "",
    "agencies": [
     "fda"
@@ -2000,74 +2331,6 @@
    "url": "https://www.federalregister.gov/documents/2026/11/19/2026-23609/freeport-lng-development-lp-flng-liquefaction-llc-flng-liquefaction-2-llc-flng-liquefaction-3-llc"
   },
   {
-   "action": "Final rule.",
-   "agencies": [
-    "hhs"
-   ],
-   "category": "rulemaking",
-   "comments_close": null,
-   "corporation": null,
-   "date": "2026-11-19",
-   "date_basis": "published",
-   "doc_type": "Rule",
-   "docket_ids": [],
-   "effective_on": "2027-01-19",
-   "eo_number": null,
-   "first_seen": "2026-11-19T13:39:10+00:00",
-   "flags": [
-    {
-     "authority": "west_virginia",
-     "code": "major_questions",
-     "elements_found": [
-      "rule",
-      "significance"
-     ],
-     "elements_total": 4,
-     "group": "structural",
-     "level": 0,
-     "precedent": "open",
-     "structural": true,
-     "triggers": [
-      "nationwide"
-     ],
-     "weighed": []
-    }
-   ],
-   "fr_agency_slugs": [
-    "health-and-human-services-department"
-   ],
-   "id": "fr:2026-23429",
-   "impact": {
-    "breakdown": [
-     {
-      "marker": "Reach",
-      "points": 2,
-      "why": "binding rule designated significant"
-     }
-    ],
-    "level": 1,
-    "points": 2
-   },
-   "jurisdiction": "federal",
-   "outcome": "final",
-   "priority": 0,
-   "published": "2026-11-19",
-   "rating": null,
-   "rins": [
-    "0945-AA00"
-   ],
-   "routine": false,
-   "sanctions": [],
-   "significant": true,
-   "source": "federal_register",
-   "source_label": "Federal Register",
-   "subcategory": "Final rule",
-   "subtype": "",
-   "summary": "The Department of Health and Human Services (HHS or \"Department\") is issuing this final rule to modify the Standards for Privacy of Individually Identifiable Health Information (\"Privacy Rule\") under the Health Insurance Portability and Accountability Act of 1996 (HIPAA) and the Health Information Technology for Economic and Clinical Health (HITECH) Act. These modifications address standards that may impede the nationwide transition to value-based health care by limiting or discouraging individual access or care coordination and case management or posing other unnecessary burdens. The modifications in this final rule promote the essential sharing of individuals' protected health information…",
-   "title": "HIPAA Privacy Rule: Changes To Support Coordinated Care and Individual Engagement and Reduce Regulatory Burdens",
-   "url": "https://www.federalregister.gov/documents/2026/11/19/2026-23429/hipaa-privacy-rule-changes-to-support-coordinated-care-and-individual-engagement-and-reduce"
-  },
-  {
    "action": "Correcting amendment.",
    "agencies": [
     "hhs"
@@ -2104,6 +2367,10 @@
    "fr_agency_slugs": [
     "health-and-human-services-department"
    ],
+   "ft": {
+    "read": "2026-11-27",
+    "v": 2
+   },
    "id": "fr:2026-23617",
    "impact": {
     "breakdown": [
@@ -2490,80 +2757,6 @@
    "summary": "This quarterly notice lists Centers for Medicare & Medicaid Services (CMS) manual instructions, substantive and interpretive regulations, and other Federal Register notices that were published in the 3-month period, relating to the Medicare and Medicaid programs and other programs administered by CMS.",
    "title": "Medicare and Medicaid Programs; Quarterly Listing of Program Issuances-July Through September 2026",
    "url": "https://www.federalregister.gov/documents/2026/11/19/2026-23540/medicare-and-medicaid-programs-quarterly-listing-of-program-issuances-july-through-september-2026"
-  },
-  {
-   "action": "Proposed rule.",
-   "agencies": [
-    "hhs"
-   ],
-   "category": "rulemaking",
-   "comments_close": "2027-01-19",
-   "corporation": null,
-   "date": "2026-11-19",
-   "date_basis": "published",
-   "doc_type": "Proposed Rule",
-   "docket_ids": [
-    "CMS-6098-P"
-   ],
-   "effective_on": null,
-   "eo_number": null,
-   "first_seen": "2026-11-19T13:39:10+00:00",
-   "flags": [
-    {
-     "authority": "central_hudson",
-     "code": "free_speech",
-     "elements_found": [],
-     "elements_total": 3,
-     "group": "rights",
-     "level": 0,
-     "precedent": "open",
-     "structural": false,
-     "triggers": [
-      "first amendment"
-     ],
-     "weighed": []
-    }
-   ],
-   "fr_agency_slugs": [
-    "health-and-human-services-department",
-    "centers-for-medicare-medicaid-services"
-   ],
-   "ft": {
-    "terms": [
-     "due_process",
-     "first_amendment"
-    ]
-   },
-   "id": "fr:2026-23461",
-   "impact": {
-    "breakdown": [
-     {
-      "marker": "Reach",
-      "points": 2,
-      "why": "binding rule"
-     }
-    ],
-    "level": 1,
-    "points": 2
-   },
-   "jurisdiction": "federal",
-   "outcome": "proposed",
-   "priority": 0,
-   "published": "2026-11-19",
-   "rating": null,
-   "rins": [
-    "0938-AV97"
-   ],
-   "routine": false,
-   "sanctions": [],
-   "significant": false,
-   "source": "federal_register",
-   "source_label": "Federal Register",
-   "subcategory": "Proposed rule",
-   "subtype": "",
-   "summary": "This proposed rule would revise provisions regarding provider enrollment, medical review, investigations, and other program integrity oversight provisions to greatly strengthen our ability to crush fraud, enhance program integrity efforts across Medicare, Medicaid, Children's Health Insurance Program, and the Marketplace and maximize regulatory authorities to address inappropriate payments.",
-   "title": "Medicare, Medicaid, and Marketplace Programs; Comprehensive Regulations To Uncover Suspicious Healthcare (CRUSH)",
-   "url": "https://www.federalregister.gov/documents/2026/11/19/2026-23461/medicare-medicaid-and-marketplace-programs-comprehensive-regulations-to-uncover-suspicious"
   },
   {
    "action": "",

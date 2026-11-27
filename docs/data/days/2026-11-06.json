@@ -516,6 +516,10 @@
    "fr_agency_slugs": [
     "executive-office-of-the-president"
    ],
+   "ft": {
+    "read": "2026-11-27",
+    "v": 2
+   },
    "id": "fr:2026-22787",
    "impact": {
     "breakdown": [
@@ -1330,12 +1334,33 @@
      "precedent": "open",
      "structural": true,
      "triggers": [
+      "industry-wide",
       "major rule"
      ],
      "weighed": []
     },
     {
+     "authority": "slaughter",
+     "code": "removal_independence",
+     "elements_found": [
+      "protected_body"
+     ],
+     "elements_total": 2,
+     "full_text_elements": [
+      "protected_body"
+     ],
+     "group": "structural",
+     "level": 0,
+     "precedent": "open",
+     "structural": true,
+     "triggers": [
+      "federal reserve"
+     ],
+     "weighed": []
+    },
+    {
      "authority": "loper_bright",
+     "capped": 1,
      "code": "statutory_deference",
      "elements_found": [
       "interpretation",
@@ -1348,7 +1373,7 @@
      ],
      "group": "structural",
      "level": 0,
-     "precedent": "open",
+     "precedent": "direct",
      "structural": true,
      "triggers": [
       "chevron framework",
@@ -1358,6 +1383,47 @@
      "weighed": [
       "post_loper"
      ]
+    },
+    {
+     "authority": "smith",
+     "code": "free_exercise",
+     "elements_found": [
+      "religion"
+     ],
+     "elements_total": 4,
+     "full_text_elements": [
+      "religion"
+     ],
+     "group": "rights",
+     "level": 0,
+     "precedent": "open",
+     "structural": false,
+     "triggers": [
+      "conscience",
+      "religio"
+     ],
+     "weighed": []
+    },
+    {
+     "authority": "central_hudson",
+     "code": "free_speech",
+     "elements_found": [
+      "speech",
+      "not_factual"
+     ],
+     "elements_total": 3,
+     "full_text_elements": [
+      "speech",
+      "not_factual"
+     ],
+     "group": "rights",
+     "level": 0,
+     "precedent": "open",
+     "structural": false,
+     "triggers": [
+      "censor"
+     ],
+     "weighed": []
     }
    ],
    "fr_agency_slugs": [
@@ -1365,11 +1431,13 @@
     "centers-for-medicare-medicaid-services"
    ],
    "ft": {
+    "read": "2026-11-27",
     "terms": [
      "chevron",
      "good_cause",
      "loper_bright"
-    ]
+    ],
+    "v": 2
    },
    "id": "fr:2026-22739",
    "impact": {
@@ -1480,6 +1548,25 @@
    "first_seen": "2026-11-11T13:33:45+00:00",
    "flags": [
     {
+     "authority": "youngstown",
+     "code": "agency_structure_change",
+     "elements_found": [
+      "restructure"
+     ],
+     "elements_total": 3,
+     "full_text_elements": [
+      "restructure"
+     ],
+     "group": "structural",
+     "level": 0,
+     "precedent": "open",
+     "structural": true,
+     "triggers": [
+      "eliminate the department"
+     ],
+     "weighed": []
+    },
+    {
      "authority": "west_virginia",
      "code": "major_questions",
      "elements_found": [
@@ -1493,6 +1580,46 @@
      "structural": true,
      "triggers": [
       "designated a significant rule"
+     ],
+     "weighed": []
+    },
+    {
+     "authority": "slaughter",
+     "code": "removal_independence",
+     "elements_found": [
+      "protected_body"
+     ],
+     "elements_total": 2,
+     "full_text_elements": [
+      "protected_body"
+     ],
+     "group": "structural",
+     "level": 0,
+     "precedent": "open",
+     "structural": true,
+     "triggers": [
+      "federal reserve"
+     ],
+     "weighed": []
+    },
+    {
+     "authority": "mathews",
+     "code": "due_process_takings",
+     "elements_found": [
+      "deprivation",
+      "no_process"
+     ],
+     "elements_total": 4,
+     "full_text_elements": [
+      "deprivation",
+      "no_process"
+     ],
+     "group": "rights",
+     "level": 0,
+     "precedent": "open",
+     "structural": false,
+     "triggers": [
+      "forfeit"
      ],
      "weighed": []
     },
@@ -1513,7 +1640,9 @@
      "precedent": "open",
      "structural": false,
      "triggers": [
-      "race-conscious"
+      "race-based",
+      "race-conscious",
+      "racial preference"
      ],
      "weighed": []
     },
@@ -1543,18 +1672,23 @@
      "authority": "central_hudson",
      "code": "free_speech",
      "elements_found": [
-      "speech"
+      "speech",
+      "content",
+      "not_factual"
      ],
      "elements_total": 3,
      "full_text_elements": [
-      "speech"
+      "speech",
+      "content",
+      "not_factual"
      ],
      "group": "rights",
      "level": 0,
      "precedent": "open",
      "structural": false,
      "triggers": [
-      "first amendment"
+      "first amendment",
+      "viewpoint"
      ],
      "weighed": []
     }
@@ -1563,6 +1697,7 @@
     "labor-department"
    ],
    "ft": {
+    "read": "2026-11-27",
     "terms": [
      "due_process",
      "equal_protection",
@@ -1570,7 +1705,8 @@
      "loper_bright",
      "race_conscious",
      "rfra"
-    ]
+    ],
+    "v": 2
    },
    "id": "fr:2026-22680",
    "impact": {
@@ -2072,6 +2208,10 @@
    "fr_agency_slugs": [
     "executive-office-of-the-president"
    ],
+   "ft": {
+    "read": "2026-11-27",
+    "v": 2
+   },
    "id": "fr:2026-22789",
    "impact": {
     "breakdown": [

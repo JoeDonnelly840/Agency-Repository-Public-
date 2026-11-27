@@ -4,6 +4,83 @@
   {
    "action": "",
    "agencies": [
+    "president"
+   ],
+   "category": "presidential",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-10-07",
+   "date_basis": "signed",
+   "doc_type": "Presidential Document",
+   "docket_ids": [],
+   "effective_on": null,
+   "eo_number": null,
+   "first_seen": "2026-11-11T13:33:45+00:00",
+   "flags": [
+    {
+     "authority": "cook",
+     "code": "removal_independence",
+     "elements_found": [
+      "control",
+      "protected_body"
+     ],
+     "elements_total": 2,
+     "full_text_elements": [
+      "control",
+      "protected_body"
+     ],
+     "group": "structural",
+     "level": 2,
+     "precedent": "analogy",
+     "structural": true,
+     "triggers": [
+      "federal reserve"
+     ],
+     "weighed": []
+    }
+   ],
+   "fr_agency_slugs": [
+    "executive-office-of-the-president"
+   ],
+   "ft": {
+    "read": "2026-11-27",
+    "v": 2
+   },
+   "id": "fr:2026-21061",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 3,
+      "why": "presidential document"
+     }
+    ],
+    "level": 1,
+    "points": 3
+   },
+   "jurisdiction": "federal",
+   "outcome": "issued",
+   "priority": 2,
+   "published": "2026-10-14",
+   "rating": {
+    "issues": 1,
+    "level": 2
+   },
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Memorandum",
+   "subtype": "Memorandum",
+   "summary": "",
+   "title": "Establishment of a Committee of Inquiry To Investigate Allegations of False Statements by Lisa DeNell Cook",
+   "url": "https://www.federalregister.gov/documents/2026/10/14/2026-21061/establishment-of-a-committee-of-inquiry-to-investigate-allegations-of-false-statements-by-lisa"
+  },
+  {
+   "action": "",
+   "agencies": [
     "fda"
    ],
    "category": "enforcement",
@@ -3524,6 +3601,10 @@
     "health-and-human-services-department",
     "national-institutes-of-health"
    ],
+   "ft": {
+    "read": "2026-11-27",
+    "v": 2
+   },
    "id": "fr:2026-20891",
    "impact": {
     "breakdown": [
@@ -3658,54 +3739,6 @@
    "summary": "Class I. Voluntary: Firm initiated. Reason: Marketed Without an Approved NDA/ANDA: Found to contain undeclared sildenafil, tadalafil and flibanserin",
    "title": "Erotic Enhancers: WAP Sensual Enhancement Capsules, 1 capsule per blister pack, UPC 6 80174 00463 1",
    "url": "https://api.fda.gov/drug/enforcement.json?search=recall_number:%22D-0071-2027%22"
-  },
-  {
-   "action": "",
-   "agencies": [
-    "president"
-   ],
-   "category": "presidential",
-   "comments_close": null,
-   "corporation": null,
-   "date": "2026-10-07",
-   "date_basis": "signed",
-   "doc_type": "Presidential Document",
-   "docket_ids": [],
-   "effective_on": null,
-   "eo_number": null,
-   "first_seen": "2026-11-11T13:33:45+00:00",
-   "flags": [],
-   "fr_agency_slugs": [
-    "executive-office-of-the-president"
-   ],
-   "id": "fr:2026-21061",
-   "impact": {
-    "breakdown": [
-     {
-      "marker": "Reach",
-      "points": 3,
-      "why": "presidential document"
-     }
-    ],
-    "level": 1,
-    "points": 3
-   },
-   "jurisdiction": "federal",
-   "outcome": "issued",
-   "priority": 0,
-   "published": "2026-10-14",
-   "rating": null,
-   "rins": [],
-   "routine": false,
-   "sanctions": [],
-   "significant": false,
-   "source": "federal_register",
-   "source_label": "Federal Register",
-   "subcategory": "Memorandum",
-   "subtype": "Memorandum",
-   "summary": "",
-   "title": "Establishment of a Committee of Inquiry To Investigate Allegations of False Statements by Lisa DeNell Cook",
-   "url": "https://www.federalregister.gov/documents/2026/10/14/2026-21061/establishment-of-a-committee-of-inquiry-to-investigate-allegations-of-false-statements-by-lisa"
   },
   {
    "action": "Interim final rule; request for comment.",

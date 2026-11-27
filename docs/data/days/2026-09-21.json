@@ -4,6 +4,102 @@
   {
    "action": "",
    "agencies": [
+    "president"
+   ],
+   "category": "presidential",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-09-16",
+   "date_basis": "signed",
+   "doc_type": "Presidential Document",
+   "docket_ids": [],
+   "effective_on": null,
+   "eo_number": null,
+   "first_seen": "2026-11-26T01:56:14+00:00",
+   "flags": [
+    {
+     "authority": "central_hudson",
+     "code": "free_speech",
+     "elements_found": [
+      "speech",
+      "not_factual"
+     ],
+     "elements_total": 3,
+     "full_text_elements": [
+      "speech",
+      "not_factual"
+     ],
+     "group": "rights",
+     "level": 1,
+     "precedent": "open",
+     "structural": false,
+     "triggers": [
+      "freedom of speech"
+     ],
+     "weighed": []
+    },
+    {
+     "authority": "smith",
+     "code": "free_exercise",
+     "elements_found": [
+      "religion"
+     ],
+     "elements_total": 4,
+     "full_text_elements": [
+      "religion"
+     ],
+     "group": "rights",
+     "level": 0,
+     "precedent": "open",
+     "structural": false,
+     "triggers": [
+      "religio"
+     ],
+     "weighed": []
+    }
+   ],
+   "fr_agency_slugs": [
+    "executive-office-of-the-president"
+   ],
+   "ft": {
+    "read": "2026-11-27",
+    "v": 2
+   },
+   "id": "fr:2026-19333",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 3,
+      "why": "presidential document"
+     }
+    ],
+    "level": 1,
+    "points": 3
+   },
+   "jurisdiction": "federal",
+   "outcome": "issued",
+   "priority": 1,
+   "published": "2026-09-21",
+   "rating": {
+    "issues": 1,
+    "level": 1
+   },
+   "rins": [],
+   "routine": false,
+   "sanctions": [],
+   "significant": false,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Proclamation",
+   "subtype": "Proclamation",
+   "summary": "",
+   "title": "Constitution Day, Citizenship Day, and Constitution Week, 2026",
+   "url": "https://www.federalregister.gov/documents/2026/09/21/2026-19333/constitution-day-citizenship-day-and-constitution-week-2026"
+  },
+  {
+   "action": "",
+   "agencies": [
     "fda"
    ],
    "category": "other",
@@ -1930,54 +2026,6 @@
    "withdrawn": false
   },
   {
-   "action": "",
-   "agencies": [
-    "president"
-   ],
-   "category": "presidential",
-   "comments_close": null,
-   "corporation": null,
-   "date": "2026-09-16",
-   "date_basis": "signed",
-   "doc_type": "Presidential Document",
-   "docket_ids": [],
-   "effective_on": null,
-   "eo_number": null,
-   "first_seen": "2026-11-26T01:56:14+00:00",
-   "flags": [],
-   "fr_agency_slugs": [
-    "executive-office-of-the-president"
-   ],
-   "id": "fr:2026-19333",
-   "impact": {
-    "breakdown": [
-     {
-      "marker": "Reach",
-      "points": 3,
-      "why": "presidential document"
-     }
-    ],
-    "level": 1,
-    "points": 3
-   },
-   "jurisdiction": "federal",
-   "outcome": "issued",
-   "priority": 0,
-   "published": "2026-09-21",
-   "rating": null,
-   "rins": [],
-   "routine": false,
-   "sanctions": [],
-   "significant": false,
-   "source": "federal_register",
-   "source_label": "Federal Register",
-   "subcategory": "Proclamation",
-   "subtype": "Proclamation",
-   "summary": "",
-   "title": "Constitution Day, Citizenship Day, and Constitution Week, 2026",
-   "url": "https://www.federalregister.gov/documents/2026/09/21/2026-19333/constitution-day-citizenship-day-and-constitution-week-2026"
-  },
-  {
    "action": "Request for information.",
    "agencies": [
     "hhs"
@@ -2518,10 +2566,31 @@
    "effective_on": null,
    "eo_number": null,
    "first_seen": "2026-11-26T01:56:14+00:00",
-   "flags": [],
+   "flags": [
+    {
+     "authority": "west_virginia",
+     "code": "major_questions",
+     "elements_found": [
+      "rule"
+     ],
+     "elements_total": 4,
+     "group": "structural",
+     "level": 0,
+     "precedent": "open",
+     "structural": true,
+     "triggers": [
+      "nationwide"
+     ],
+     "weighed": []
+    }
+   ],
    "fr_agency_slugs": [
     "executive-office-of-the-president"
    ],
+   "ft": {
+    "read": "2026-11-27",
+    "v": 2
+   },
    "id": "fr:2026-19334",
    "impact": {
     "breakdown": [
@@ -2918,6 +2987,10 @@
    "fr_agency_slugs": [
     "executive-office-of-the-president"
    ],
+   "ft": {
+    "read": "2026-11-27",
+    "v": 2
+   },
    "id": "fr:2026-19335",
    "impact": {
     "breakdown": [
@@ -3178,6 +3251,10 @@
    "fr_agency_slugs": [
     "executive-office-of-the-president"
    ],
+   "ft": {
+    "read": "2026-11-27",
+    "v": 2
+   },
    "id": "fr:2026-19336",
    "impact": {
     "breakdown": [

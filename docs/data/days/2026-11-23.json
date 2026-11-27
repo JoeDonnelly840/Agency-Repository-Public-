@@ -18274,6 +18274,41 @@
    "first_seen": "2026-11-23T13:43:39+00:00",
    "flags": [
     {
+     "authority": "mathews",
+     "code": "due_process_takings",
+     "elements_found": [
+      "deprivation",
+      "no_process"
+     ],
+     "elements_total": 4,
+     "full_text_elements": [
+      "deprivation",
+      "no_process"
+     ],
+     "group": "rights",
+     "level": 0,
+     "precedent": "open",
+     "structural": false,
+     "triggers": [
+      "ex parte"
+     ],
+     "weighed": []
+    },
+    {
+     "authority": "adarand",
+     "code": "equal_protection",
+     "elements_found": [],
+     "elements_total": 2,
+     "group": "rights",
+     "level": 0,
+     "precedent": "open",
+     "structural": false,
+     "triggers": [
+      "set aside"
+     ],
+     "weighed": []
+    },
+    {
      "authority": "burger",
      "code": "fourth_amendment",
      "elements_found": [
@@ -18293,6 +18328,10 @@
    "fr_agency_slugs": [
     "federal-communications-commission"
    ],
+   "ft": {
+    "read": "2026-11-27",
+    "v": 2
+   },
    "id": "fr:2026-23812",
    "impact": {
     "breakdown": [
@@ -18452,9 +18491,11 @@
     "wage-and-hour-division"
    ],
    "ft": {
+    "read": "2026-11-27",
     "terms": [
      "loper_bright"
-    ]
+    ],
+    "v": 2
    },
    "id": "fr:2026-23777",
    "impact": {

@@ -658,8 +658,13 @@
     {
      "authority": "central_hudson",
      "code": "free_speech",
-     "elements_found": [],
+     "elements_found": [
+      "speech"
+     ],
      "elements_total": 3,
+     "full_text_elements": [
+      "speech"
+     ],
      "group": "rights",
      "level": 0,
      "precedent": "open",
@@ -675,9 +680,11 @@
     "federal-energy-regulatory-commission"
    ],
    "ft": {
+    "read": "2026-11-27",
     "terms": [
      "first_amendment"
-    ]
+    ],
+    "v": 2
    },
    "id": "fr:2026-18451",
    "impact": {
@@ -1739,9 +1746,11 @@
     "executive-office-of-the-president"
    ],
    "ft": {
+    "read": "2026-11-27",
     "terms": [
      "national_emergencies_act"
-    ]
+    ],
+    "v": 2
    },
    "id": "fr:2026-18589",
    "impact": {
@@ -2294,10 +2303,34 @@
    "effective_on": null,
    "eo_number": null,
    "first_seen": "2026-11-26T01:56:14+00:00",
-   "flags": [],
+   "flags": [
+    {
+     "authority": "youngstown",
+     "code": "presidential_lawmaking",
+     "elements_found": [
+      "binding"
+     ],
+     "elements_total": 4,
+     "full_text_elements": [
+      "binding"
+     ],
+     "group": "structural",
+     "level": 0,
+     "precedent": "open",
+     "structural": true,
+     "triggers": [
+      "tariffs"
+     ],
+     "weighed": []
+    }
+   ],
    "fr_agency_slugs": [
     "executive-office-of-the-president"
    ],
+   "ft": {
+    "read": "2026-11-27",
+    "v": 2
+   },
    "id": "fr:2026-18573",
    "impact": {
     "breakdown": [
@@ -3329,6 +3362,10 @@
    "fr_agency_slugs": [
     "executive-office-of-the-president"
    ],
+   "ft": {
+    "read": "2026-11-27",
+    "v": 2
+   },
    "id": "fr:2026-18567",
    "impact": {
     "breakdown": [
@@ -3947,6 +3984,10 @@
    "fr_agency_slugs": [
     "executive-office-of-the-president"
    ],
+   "ft": {
+    "read": "2026-11-27",
+    "v": 2
+   },
    "id": "fr:2026-18571",
    "impact": {
     "breakdown": [

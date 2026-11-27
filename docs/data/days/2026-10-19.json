@@ -496,6 +496,26 @@
    "first_seen": "2026-11-11T13:33:45+00:00",
    "flags": [
     {
+     "authority": "west_virginia",
+     "code": "major_questions",
+     "elements_found": [
+      "rule",
+      "significance"
+     ],
+     "elements_total": 4,
+     "full_text_elements": [
+      "significance"
+     ],
+     "group": "structural",
+     "level": 0,
+     "precedent": "open",
+     "structural": true,
+     "triggers": [
+      "major rule"
+     ],
+     "weighed": []
+    },
+    {
      "authority": "adarand",
      "code": "equal_protection",
      "elements_found": [],
@@ -513,6 +533,10 @@
    "fr_agency_slugs": [
     "environmental-protection-agency"
    ],
+   "ft": {
+    "read": "2026-11-27",
+    "v": 2
+   },
    "id": "fr:2026-21268",
    "impact": {
     "breakdown": [
@@ -536,6 +560,9 @@
    "significant": false,
    "source": "federal_register",
    "source_label": "Federal Register",
+   "statutes": [
+    "cra"
+   ],
    "subcategory": "Final rule",
    "subtype": "",
    "summary": "The U.S. Environmental Protection Agency (EPA) is finalizing an approval of a revision to the Arizona State Implementation Plan (SIP) submitted by the Arizona Department of Environmental Quality (ADEQ). This revision includes statutes and regulations amending the Cleaner Burning Gasoline (CBG) program, which is a control measure in the greater Phoenix metropolitan area to reduce emissions of ozone- forming pollutants, carbon monoxide (CO), and particulate matter. Additionally, this revision addresses the Winter Oxygenated Fuel program to control CO emissions in the Tucson area. Finally, this revision repeals the Arizona Gasoline Set[hyphen]aside (GSA) Program, applicable to the 1971 carbon…",
@@ -1384,10 +1411,12 @@
     "executive-office-of-the-president"
    ],
    "ft": {
+    "read": "2026-11-27",
     "terms": [
      "ieepa",
      "national_emergencies_act"
-    ]
+    ],
+    "v": 2
    },
    "id": "fr:2026-21430",
    "impact": {
@@ -1460,9 +1489,11 @@
     "executive-office-of-the-president"
    ],
    "ft": {
+    "read": "2026-11-27",
     "terms": [
      "ieepa"
-    ]
+    ],
+    "v": 2
    },
    "id": "fr:2026-21431",
    "impact": {
@@ -1534,10 +1565,12 @@
     "executive-office-of-the-president"
    ],
    "ft": {
+    "read": "2026-11-27",
     "terms": [
      "ieepa",
      "national_emergencies_act"
-    ]
+    ],
+    "v": 2
    },
    "id": "fr:2026-21432",
    "impact": {
