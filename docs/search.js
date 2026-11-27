@@ -18,7 +18,21 @@
     "we us our all any find list give get want see look looking please would like could can should there this these those is are was " +
     "were be been being has have had do does did it its their them they into over under between per via vs versus also just only " +
     "some such than then more most other items item documents document things thing stuff report reports tell let know made making " +
-    "taken involving involve involves regarding concerning related relating anything everything agency agencies federal government").split(/\s+/));
+    "taken involving involve involves regarding concerning related relating anything everything agency agencies federal government " +
+    "has have ever done doing does did will would been case cases instance instances example examples kind kinds type types sort sorts " +
+    "where whether lot lots many much few several any regcollect app tool database data results result search searching query " +
+    "think believe seem seems seemed possibly maybe perhaps really very quite pretty kinda sorta action actions").split(/\s+/));
+  // Question scaffolding stripped before a request is read ("has any agency ever...", "can you find me...").
+  const SCAFFOLD = [
+    /^\s*(?:can|could|would|will) you (?:please )?(?:find|show|list|get|pull up|look up|search for|tell me about)(?: me)?\s*/i,
+    /^\s*(?:i(?:'d| would) like to see|i want to (?:see|find|know about)|i'?m (?:looking|searching) for|help me find|please find|please show(?: me)?)\s*/i,
+    /^\s*(?:are there|were there|is there|have there been|has there been)(?: any)?\s*/i,
+    /^\s*(?:what|which) (?:actions?|rules?|orders?|cases?|things?|documents?)(?: has| have| did| does)?\s*/i,
+    /^\s*(?:has|have|did|does) (?:any|an|the)? ?(?:agency|agencies|government|administration|regulators?)(?: ever)?\s*/i,
+    /^\s*(?:show|find|list|give|get)(?: me)?(?: all| any| every)?(?: the)?\s*/i,
+    /\b(?:cases|instances|examples|times) (?:where|when|in which)\b/gi,
+    /\b(?:in the database|in regcollect|in the app|for me|please|thanks?(?: you)?)\b/gi,
+  ];
 
   // Legal thesaurus: each line is a group of interchangeable words or phrases.
   const THESAURUS = [
@@ -70,26 +84,118 @@
     "spectrum|wireless|5g|satellite",
     "healthcare|health care|hospital|medicare|medicaid|nursing home",
     "independent agency|independent agencies|humphrey|commissioner removal",
+    // constitutional and administrative-law vocabulary
+    "unconstitutional|illegal|unlawful|invalid|violation|violates|violating|overreach|ultra vires|beyond authority|exceeds authority|without authority|power grab",
+    "religious freedom|religious liberty|free exercise|freedom of religion|rfra|religious freedom restoration act|rluipa|conscience|religious exemption",
+    "establishment clause|separation of church and state|government endorsement of religion",
+    "speech|free speech|freedom of speech|expression|expressive|first amendment|censorship|censor|content moderation|misinformation|disinformation",
+    "press|journalist|journalists|reporter|reporters|newspaper|media|news organization|broadcaster",
+    "compelled speech|compelled disclosure|mandatory disclosure|disclosure requirement|labeling requirement|warning label",
+    "association|freedom of association|donor|donors|donor disclosure|membership list|beneficial ownership",
+    "jury|jury trial|seventh amendment|jarkesy|right to a jury|trial by jury",
+    "due process|notice and hearing|fair notice|hearing|vagueness|vague",
+    "taking|takings|takings clause|just compensation|physical occupation|easement|property rights",
+    "search|searches|seizure|fourth amendment|warrant|warrantless|surveillance|monitoring|data collection",
+    "excessive fine|excessive fines|eighth amendment|disproportionate|grossly disproportional",
+    "equal protection|discrimination|racial classification|race-based|sex-based|affirmative action|set-aside|preference|dei",
+    "federalism|states rights|tenth amendment|commandeering|preemption|state sovereignty|sanctuary",
+    "appropriations|spending|impoundment|withhold funds|withholding funds|freeze funding|funding freeze|power of the purse|rescission",
+    "delegation|nondelegation|intelligible principle|major questions|major question|vast economic significance",
+    "chevron|deference|loper bright|statutory interpretation|ambiguous statute|agency interpretation|skidmore|auer|kisor",
+    "appointments clause|appointment|appointed|inferior officer|principal officer|lucia|arthrex|unappointed",
+    "executive order|executive orders|eo|presidential action|presidential actions|proclamation|presidential memorandum",
+    "emergency|emergency powers|national emergency|ieepa|international emergency economic powers act|national emergencies act",
+    "legislating|lawmaking|making law|acting like congress|rewriting the law|rewrite statute|suspend law|suspending law|nonenforcement|refusing to enforce",
+    "tariff|tariffs|duty|duties|customs|import tax|trade war|reciprocal tariff|section 232|section 301|section 122",
+    "moratorium|eviction|evictions|eviction moratorium|landlord|landlords|tenants|rent",
+    "vaccine|vaccines|vaccination|mandate|vaccine mandate|covid|covid-19|pandemic|coronavirus",
+    "climate|carbon|greenhouse gas|clean power plan|power plant|power plants|coal|emissions standards",
+    "wetland|wetlands|wotus|waters of the united states|clean water act",
+    "net neutrality|open internet|broadband|internet service provider|isp",
+    "noncompete|non-compete|noncompetes|non-compete clause|restrictive covenant",
+    "overtime|overtime rule|salary threshold|exempt employees|white collar exemption",
+    "joint employer|franchise|franchisee|contractor|independent contractor|gig worker",
+    "fiduciary|fiduciary rule|retirement advice|erisa|401k|pension",
+    "private fund|private funds|hedge fund|private equity|venture capital|fund adviser",
+    "abortion|reproductive|contraception|contraceptive|mifepristone|planned parenthood",
+    "transgender|gender identity|sex discrimination|title ix|section 1557",
+    "immigration|immigrant|immigrants|deportation|asylum|visa|visas|border|noncitizen|alien|entry ban|travel ban",
+    "firearm|firearms|gun|guns|pistol brace|ghost gun|atf",
+    "student loan|student loans|loan forgiveness|debt relief|heroes act",
+    "social media|platform|platforms|online|internet|tech company|big tech",
+    "data broker|data brokers|personal data|consumer data|data privacy|data security|cybersecurity|breach",
+    "credit card|credit cards|late fee|late fees|overdraft|junk fee|junk fees|hidden fees",
+    "payday|payday loan|small-dollar loan|consumer lending|debt collection|debt collector",
+    "mortgage|mortgages|home loan|servicer|foreclosure|housing",
+    "insider trading|insider|market manipulation|manipulation|pump and dump|front running",
+    "accounting fraud|financial reporting|audit|auditor|restatement|internal controls",
+    "climate disclosure|esg|sustainability|environmental social governance",
+    "drug pricing|drug prices|340b|medicare part d|price negotiation",
+    "nursing home|hospital|hospitals|health system|provider|providers|clinic|clinics",
+    "food safety|contamination|listeria|salmonella|e. coli|adulterated|misbranded",
+    "medical device|devices|510(k)|premarket|clearance|approval",
+    "opioid|opioids|fentanyl|controlled substance|narcotic",
+    "union election|representation election|bargaining unit|strike|strikes|picketing|employer speech|captive audience",
+    "worker|workers|employee|employees|workforce|labor|labour|employment",
+    "pipeline safety|natural gas pipeline|lng terminal|certificate of public convenience|eminent domain",
+    "rate|rates|tariff filing|rate case|wholesale power|transmission rate",
+    "broadcast license|license renewal|station|indecency|equal time|fairness doctrine",
+    "robocall|spam|telemarketing|do not call|tcpa",
+    "investigation|investigations|probe|inquiry|examination|exam|sweep",
+    "penalty|penalties|fine|fines|sanction|sanctions|punishment|punish",
+    "ban|ban on|prohibit|prohibited|prohibition|forbid|outlaw",
+    "rule|rules|regulation|regulations|rulemaking|regulatory|reg|regs",
+    "proposed rule|proposed rules|nprm|proposal|proposals|notice of proposed rulemaking",
+    "interim final rule|ifr|direct final rule|emergency rule|without notice and comment|good cause",
+    "repeal|rescind|rescission|rollback|roll back|withdraw|withdrawal|deregulation|deregulatory",
+    "delay|postpone|postponement|stay|pause|suspend",
+    "court|courts|judge|judges|ruling|rulings|held|decision|struck down|vacated|enjoined|injunction",
+    "supreme court|scotus|justices",
+    "trump|president trump|trump administration",
+    "biden|president biden|biden administration",
+    "obama|president obama|obama administration",
   ];
+  // Everyday or shorthand names for statutes and doctrines, used for "did you mean" and concept recognition.
+  const STATUTE_WORDS = {
+    ieepa: ["ieepa", "international emergency economic powers act", "emergency economic powers"],
+    nea: ["national emergencies act"], s232: ["section 232", "trade expansion act"], s301: ["section 301"], s122: ["section 122"],
+    ina212f: ["212(f)", "travel ban", "entry ban"], dpa: ["defense production act"], heroes: ["heroes act"],
+    ica: ["impoundment control act"], rfra: ["rfra", "religious freedom restoration act"], rluipa: ["rluipa", "religious land use"],
+    apa_good_cause: ["good cause", "good-cause exception"], cra: ["congressional review act", "cra"],
+    phsa361: ["public health service act"], osh6c: ["emergency temporary standard", "ets"],
+  };
 
   const ISSUE_WORDS = {
-    agency_adjudication: ["seventh amendment", "jury trial", "jury", "article iii", "in-house judges", "in house judges", "in-house", "in house", "administrative proceeding", "administrative proceedings", "jarkesy", "agency adjudication", "alj", "aljs", "administrative law judge", "administrative law judges"],
-    officer_appointment_removal: ["appointments clause", "appointment", "appointments", "inferior officer", "lucia", "arthrex", "alj", "aljs"],
-    private_delegation: ["private nondelegation", "private delegation", "private entity", "private entities", "sro", "sros", "self-regulatory"],
-    private_discipline: ["private discipline", "sro discipline", "expulsion", "alpine"],
-    major_questions: ["major questions", "major question", "nondelegation", "delegation", "west virginia v. epa"],
-    statutory_deference: ["chevron", "deference", "loper bright", "loper", "statutory interpretation"],
-    removal_independence: ["independent agencies", "independent agency", "humphrey", "humphrey's", "presidential control", "removal power", "slaughter", "at-will removal"],
-    spending_appropriations: ["appropriations", "appropriation", "impoundment", "impound", "power of the purse", "spending power"],
-    agency_structure_change: ["reorganization", "reorganize", "abolish", "abolished", "restructuring", "reduction in force", "dismantling", "dismantle"],
-    federalism: ["federalism", "preemption", "preempt", "tenth amendment", "commandeering", "spending clause", "states' rights", "state sovereignty"],
-    presidential_lawmaking: ["emergency powers", "national emergency", "ieepa", "executive overreach", "youngstown"],
-    speech_restraint: ["gag", "gag order", "gag orders", "gag rule", "prior restraint", "no-deny", "no deny", "nondisparagement"],
-    first_amendment: ["first amendment", "free speech", "speech", "religious liberty", "press freedom", "compelled speech"],
-    fourth_amendment: ["fourth amendment", "searches", "warrantless", "surveillance", "unreasonable search"],
-    due_process_takings: ["due process", "takings clause", "takings", "fifth amendment", "property rights", "notice and hearing"],
-    excessive_fines: ["excessive fines", "eighth amendment", "excessive fine", "disproportionate"],
-    equal_protection: ["equal protection", "race-based", "racial preference", "dei", "sex-based", "affirmative action"],
+    agency_adjudication: ["seventh amendment", "jury trial", "jury trials", "right to a jury", "jury", "article iii", "in-house judges", "in house judges", "in-house courts", "in-house", "in house",
+      "administrative proceeding", "administrative proceedings", "jarkesy", "agency adjudication", "agency courts", "agency judges", "alj", "aljs", "administrative law judge", "administrative law judges",
+      "tull", "granfinanciera", "atlas roofing", "axon", "public rights"],
+    officer_appointment_removal: ["appointments clause", "inferior officer", "inferior officers", "principal officer", "lucia", "arthrex", "unappointed", "improperly appointed"],
+    private_delegation: ["private nondelegation", "private delegation", "private entity", "private entities", "private power", "sro", "sros", "self-regulatory", "self regulatory", "carter coal", "consumers' research", "consumers research"],
+    private_discipline: ["private discipline", "sro discipline", "finra discipline", "finra expulsion", "expulsion", "alpine"],
+    major_questions: ["major questions", "major question", "nondelegation", "delegation", "west virginia v. epa", "west virginia", "exceeded its authority", "exceeds its authority",
+      "beyond its authority", "without authority", "ultra vires", "power grab", "agency overreach", "overreach", "eviction moratorium", "vaccine mandate", "clean power plan",
+      "nfib v. osha", "alabama realtors", "biden v. nebraska", "sackett", "statutory authority"],
+    statutory_deference: ["chevron", "chevron deference", "deference", "loper bright", "loper", "statutory interpretation", "agency interpretation", "skidmore", "kisor", "auer"],
+    removal_independence: ["independent agencies", "independent agency", "humphrey", "humphrey's", "humphrey's executor", "presidential control", "removal power", "slaughter", "at-will removal",
+      "firing commissioners", "fired commissioners", "removal of commissioners", "seila law", "federal reserve independence"],
+    spending_appropriations: ["appropriations", "appropriation", "impoundment", "impound", "power of the purse", "spending power", "funding freeze", "freezing funds", "withholding funds", "withheld funds",
+      "grant terminations", "terminated grants", "train v. city of new york", "impoundment control act"],
+    agency_structure_change: ["reorganization", "reorganize", "abolish", "abolished", "abolishing", "restructuring", "reduction in force", "rif", "layoffs", "dismantling", "dismantle", "shutting down agencies", "eliminating agencies"],
+    federalism: ["federalism", "preemption", "preempt", "tenth amendment", "commandeering", "commandeer", "spending clause", "states' rights", "states rights", "state sovereignty", "sanctuary cities", "sanctuary", "printz", "coercive conditions"],
+    presidential_lawmaking: ["emergency powers", "national emergency", "national emergencies", "ieepa", "executive overreach", "youngstown", "learning resources", "tariffs by executive order", "ieepa tariffs",
+      "executive lawmaking", "presidential lawmaking", "acting like congress", "acting like a legislature", "making law", "legislating", "rewriting statutes", "rewriting the law", "suspending statutes",
+      "suspending the law", "refusing to enforce", "nonenforcement", "non-enforcement", "dames & moore", "clinton v. city of new york", "line item veto", "emergency tariffs"],
+    speech_restraint: ["gag", "gag order", "gag orders", "gag rule", "prior restraint", "prior restraints", "no-deny", "no deny", "neither admit nor deny", "nondisparagement", "non-disparagement", "silencing defendants"],
+    free_speech: ["first amendment", "free speech", "freedom of speech", "speech", "censorship", "censor", "press freedom", "freedom of the press", "compelled speech", "compelled disclosure",
+      "content moderation", "misinformation", "disinformation", "jawboning", "viewpoint discrimination", "content-based", "nifla", "zauderer", "central hudson", "303 creative", "moody v. netchoice", "vullo", "commercial speech"],
+    free_exercise: ["free exercise", "religious liberty", "religious freedom", "freedom of religion", "religion", "religious", "religious exemption", "religious exemptions", "conscience", "conscience protections",
+      "rfra", "religious freedom restoration act", "rluipa", "establishment clause", "church", "churches", "houses of worship", "faith-based", "employment division v. smith", "hobby lobby",
+      "fulton v. philadelphia", "lukumi", "tandon", "carson v. makin", "kennedy v. bremerton", "little sisters", "mahmoud", "catholic charities"],
+    association: ["freedom of association", "associational", "donor disclosure", "donor privacy", "donor lists", "membership lists", "americans for prosperity", "naacp v. alabama", "beneficial ownership"],
+    fourth_amendment: ["fourth amendment", "searches", "warrantless", "warrantless searches", "surveillance", "unreasonable search", "patel", "carpenter", "administrative inspections", "inspections without a warrant"],
+    due_process_takings: ["due process", "takings clause", "takings", "fifth amendment", "property rights", "notice and hearing", "fair notice", "just compensation", "cedar point", "mathews"],
+    excessive_fines: ["excessive fines", "eighth amendment", "excessive fine", "disproportionate", "disproportionate penalty", "bajakajian", "timbs"],
+    equal_protection: ["equal protection", "race-based", "race based", "racial preference", "racial preferences", "dei", "diversity equity and inclusion", "sex-based", "affirmative action", "sffa", "adarand", "set-asides", "race discrimination", "sex discrimination"],
   };
   const CATEGORY_WORDS = {
     "sub:Proposed rule": ["proposed rules", "proposed rule", "nprm", "proposals"],
@@ -108,10 +214,10 @@
     granted: ["granted", "approved"],
   };
   const SEVERITY_WORDS = [
-    [/\b(?:most )?flagrant\b|\bclearest\b|\bobvious(?:ly)? unconstitutional\b|\bworst\b/i, { axis: "flagrance", min: 3 }],
-    [/\b(?:highly |most )?flagran(?:t|ce)\b/i, { axis: "flagrance", min: 2 }],
-    [/\b(?:most )?(?:severe|serious)\b|\bhigh[- ]impact\b|\bhigh[- ]stakes\b/i, { axis: "impact", min: 3 }],
-    [/\b(?:un)?constitutional(?: issues?| problems?| violations?)?\b|\bflagged\b|\bconstitution\b/i, { axis: "any", min: 1 }],
+    [/\b(?:almost certainly|clearly|plainly|blatantly|obviously|flagrantly|definitely) (?:un ?constitutional|illegal|unlawful|invalid)\b|\bnear[- ]certain\b|\bflagrant\b|\bblatant\b|\bworst\b|\bclearest\b|\bobvious violations?\b|\bred flags?\b/i, { axis: "level", min: 3 }],
+    [/\b(?:very likely|probably|most likely|highly likely) (?:un ?constitutional|illegal|unlawful|invalid)\b|\bstrong(?:est)? cases?\b|\borange flags?\b/i, { axis: "level", min: 2 }],
+    [/\b(?:serious|severe|significant|high|big|major) impact\b|\bhigh[- ]stakes\b|\bbiggest\b|\bmost consequential\b/i, { axis: "impact", min: 3 }],
+    [/\b(?:likely )?un ?constitutional\b|\bconstitutional (?:issues?|problems?|violations?|concerns?|questions?)\b|\bflagged\b|\bviolat(?:e|es|ed|ions?) (?:of )?the constitution\b|\billegal(?:ly)?\b|\bunlawful(?:ly)?\b|\brated\b/i, { axis: "any", min: 1 }],
     [/\bstructural\b|\bseparation of powers\b/i, { axis: "structural", min: 1 }],
   ];
   const MONTHS = ["january", "february", "march", "april", "may", "june", "july", "august", "september", "october", "november", "december"];
@@ -215,6 +321,9 @@
     const tax = ctx.taxonomy || { sanctions: [], kinds: [], outcomes: [] };
     const sanctionLabel = Object.fromEntries((tax.sanctions || []).map((s) => [s.key, s]));
     const kindLabel = Object.fromEntries((tax.kinds || []).map((k) => [k.code, k.label]));
+    const statuteLabel = Object.fromEntries((((tax.doctrine || {}).statutes) || []).map((x) => [x.key, x.label]));
+    const sweepLabel = tax.sweep_labels || {};
+    const rulingLabel = Object.fromEntries((((tax.doctrine || {}).rulings) || []).map((r) => [r.key, `${r.label} court ruling held unlawful`]));
     const outcomeLabel = Object.fromEntries((tax.outcomes || []).map((o) => [o.key, o.label]));
 
     // thesaurus: stemmed phrase -> group index
@@ -231,7 +340,10 @@
       add((ctx.categories || {})[it.category], 1);
       ctx.entityOf(it).forEach((k) => { const e = ctx.byKey[k]; if (e) add(`${e.name} ${e.short}`, 2); });
       (it.sanctions || []).forEach((k) => { const s = sanctionLabel[k]; if (s) add(`${s.label} ${s.words.join(" ")}`, 1.5); });
-      (it.flags || []).forEach((f) => add(kindLabel[f.code], 1.5));
+      (it.flags || []).forEach((f) => add(kindLabel[f.code], f.level ? 1.5 : 0.5));
+      (it.flags || []).forEach((f) => { if (f.ruling) add(rulingLabel[f.ruling], 1.5); });
+      (it.statutes || []).forEach((k) => add(`${statuteLabel[k] || ""} ${k}`, 1.5));
+      ((it.ft || {}).terms || []).forEach((k) => add(`${sweepLabel[k] || ""} ${k.replace(/_/g, " ")}`, 1));
       add(outcomeLabel[it.outcome], 0.8);
       let len = 0; tf.forEach((v) => { len += v; });
       return { it, tf, len };
@@ -256,10 +368,13 @@
     Object.entries(ISSUE_WORDS).forEach(([k, ws]) => ws.forEach((w) => concepts.push([w, "issue", k])));
     Object.entries(CATEGORY_WORDS).forEach(([k, ws]) => ws.forEach((w) => concepts.push([w, "category", k])));
     Object.entries(OUTCOME_WORDS).forEach(([k, ws]) => ws.forEach((w) => concepts.push([w, "outcome", k])));
+    Object.entries(STATUTE_WORDS).forEach(([k, ws]) => ws.forEach((w) => concepts.push([w, "statute", k])));
     concepts.sort((a, b) => b[0].length - a[0].length);
 
     function parse(q) {
-      let text = " " + String(q || "").toLowerCase().replace(/[“”]/g, '"').replace(/[’]/g, "'") + " ";
+      let raw = String(q || "").replace(/[“”]/g, '"').replace(/[’]/g, "'").replace(/[?!.]+\s*$/, "");
+      SCAFFOLD.forEach((rx) => { raw = raw.replace(rx, " "); });
+      let text = " " + raw.toLowerCase() + " ";
       const blank = (s, e) => { text = text.slice(0, s) + " ".repeat(e - s) + text.slice(e); };
       const out = { entities: [], concepts: [], severity: [], date: null, hints: {}, said: [] };
       const date = parseDates(text);
@@ -279,6 +394,8 @@
       scan(entityPhrases, ([key], said) => { if (!out.entities.some((e) => e.key === key)) out.entities.push({ key, said }); });
       scan(concepts, ([kind, key], said) => { if (!out.concepts.some((c) => c.kind === kind && c.key === key)) out.concepts.push({ kind, key, said }); });
       out.terms = [...new Set(tokens(text))];
+      // Names of specific things ("clean power plan", "rfra") are also matched as words, not only as concepts.
+      out.conceptTerms = [...new Set(out.concepts.filter((c) => c.kind === "issue" || c.kind === "statute").flatMap((c) => tokens(c.said)))].filter((t) => !out.terms.includes(t));
       return out;
     }
 
@@ -308,16 +425,17 @@
     }
 
     function matchesSeverity(it, sev) {
-      const s = it.severity;
-      if (sev.axis === "structural") return (it.flags || []).some((f) => f.structural);
-      if (!s) return false;
+      if (sev.axis === "structural") return (it.flags || []).some((f) => f.structural && f.level);
+      if (sev.axis === "impact") return ((it.impact || {}).level || 0) >= sev.min;
+      if (!it.rating) return false;
       if (sev.axis === "any") return true;
-      return s[sev.axis] >= sev.min;
+      return it.rating.level >= sev.min;
     }
 
     function conceptHit(it, c) {
       if (c.kind === "sanction") return (it.sanctions || []).includes(c.key);
       if (c.kind === "issue") return (it.flags || []).some((f) => f.code === c.key);
+      if (c.kind === "statute") return (it.statutes || []).includes(c.key) || ((it.ft || {}).terms || []).some((t) => t === c.key || (c.key === "nea" && t === "national_emergencies_act"));
       if (c.kind === "outcome") return it.outcome === c.key;
       if (c.kind === "category") return c.key.startsWith("sub:") ? it.subcategory === c.key.slice(4) : it.category === c.key;
       return false;
@@ -335,7 +453,7 @@
       const to = facets.to || (parsed.date && parsed.date.to) || "";
       const cons = parsed.concepts || [];
       const conceptWords = cons.flatMap((c) => tokens(c.said));
-      const q = expand(parsed.terms || [], conceptWords);
+      const q = expand([...(parsed.terms || []), ...(parsed.conceptTerms || [])], conceptWords);
       const hasText = (parsed.terms || []).length > 0;
       const results = [];
       docs.forEach((d) => {
@@ -347,9 +465,9 @@
         if (facets.sanctions && facets.sanctions.length && !(it.sanctions || []).some((k) => facets.sanctions.includes(k))) return;
         if (facets.issues && facets.issues.length && !(it.flags || []).some((f) => facets.issues.includes(f.code))) return;
         if (facets.outcomes && facets.outcomes.length && !facets.outcomes.includes(it.outcome)) return;
-        if (facets.flagrance && facets.flagrance.length && !(it.severity && facets.flagrance.includes(it.severity.flagrance))) return;
+        if (facets.levels && facets.levels.length && !(it.rating && facets.levels.includes(it.rating.level))) return;
         if (!facets.routine && it.routine && !ents.includes("other_sro")) return;
-        if (facets.impact && facets.impact.length && !(it.severity && facets.impact.includes(it.severity.impact))) return;
+        if (facets.impact && facets.impact.length && !facets.impact.includes((it.impact || {}).level || 0)) return;
         if ((parsed.severity || []).some((s) => !matchesSeverity(it, s))) return;
 
         let score = 0; const why = [];
@@ -361,13 +479,13 @@
           if (w === 1) why.push(t); else if (reason && why.length < 8) why.push(`${t} (${reason})`);
         });
         let conceptHits = 0;
-        cons.forEach((c) => { if (conceptHit(it, c)) { conceptHits++; score += 10; } });
+        cons.forEach((c) => { if (conceptHit(it, c)) { conceptHits++; score += 10; } else if (c.kind === "issue" && (it.flags || []).some((f) => f.code === c.key && !f.level)) score += 3; });
         if (cons.length && conceptHits === cons.length && (!hasText || score > 10 * conceptHits)) score *= 1.3;  // matches every part
         if (strict && conceptHits < cons.length) return;
         if (strict && hasText && !(parsed.terms || []).some((t) => q.has(t) && d.tf.has(t))) return;
         if (!score && (hasText || cons.length)) return;
         // gentle tie-breakers: severity and recency
-        if (it.severity) score += 0.15 * it.severity.score;
+        if (it.rating) score += 0.4 * it.rating.level;
         results.push({ it, score, why, conceptHits });
       });
       results.sort((a, b) => b.score - a.score || (b.it.date || "").localeCompare(a.it.date || ""));
@@ -376,8 +494,55 @@
       return { strong: results.filter((r) => r.score >= cut), related: results.filter((r) => r.score < cut), total: results.length };
     }
 
-    return { parse, search, tokens, sanctionLabel, kindLabel, outcomeLabel };
+    // When nothing matches every part of a request, drop the least common recognized part and try again,
+    // saying which part was left out, rather than showing nothing.
+    function searchWithRelax(parsed, facets, strict) {
+      let res = search(parsed, facets, strict);
+      if (res.strong.length || !(parsed.concepts || []).length && !(parsed.severity || []).length) return { ...res, suggest: suggest(parsed) };
+      const tryDrop = [...(parsed.concepts || []).map((c, i) => ({ kind: "c", i, label: c.said })), ...(parsed.severity || []).map((x, i) => ({ kind: "s", i, label: x.said }))];
+      for (const d of tryDrop) {
+        const p2 = { ...parsed, concepts: parsed.concepts.filter((_, j) => !(d.kind === "c" && j === d.i)), severity: parsed.severity.filter((_, j) => !(d.kind === "s" && j === d.i)) };
+        const r2 = search(p2, facets, false);
+        if (r2.strong.length) return { ...r2, relaxed: `“${d.label}”`, suggest: suggest(parsed) };
+      }
+      return { ...res, suggest: suggest(parsed) };
+    }
+    // "Did you mean": unknown words replaced by the closest known word.
+    function suggest(parsed) {
+      const unknown = (parsed.terms || []).filter((t) => !df.has(t) && !phraseGroup.has(t) && t.length >= 4);
+      if (!unknown.length) return [];
+      const fixed = (parsed.terms || []).map((t) => {
+        if (!unknown.includes(t)) return t;
+        let best = null, bd = 3;
+        vocab.forEach((v) => { if (Math.abs(v.length - t.length) <= 2 && (df.get(v) || 0) > 1) { const d = editDistance(t, v, 2); if (d < bd || (d === bd && best && (df.get(v) || 0) > (df.get(best) || 0))) { bd = d; best = v; } } });
+        return best || t;
+      });
+      const q = fixed.join(" ");
+      return q !== (parsed.terms || []).join(" ") ? [q] : [];
+    }
+
+    return { parse, search: searchWithRelax, rawSearch: search, tokens, sanctionLabel, kindLabel, outcomeLabel };
   }
 
-  window.RHSearch = { build, tokens, stem, parseDates };
+  /** A quick filter: every word (or a related word, other form, or prefix) must appear in the item. */
+  const tokCache = new WeakMap();
+  const THES_GROUPS = THESAURUS.map((line) => line.split("|").map((p) => tokens(p)).filter((t) => t.length));
+  function matcher(q) {
+    const terms = [...new Set(tokens(q))];
+    const alts = terms.map((t) => {
+      const set = new Set([t]);
+      THES_GROUPS.forEach((g) => { if (g.some((p) => p.length === 1 && p[0] === t)) g.forEach((p) => p.forEach((x) => set.add(x))); });
+      return [...set];
+    });
+    return (it) => {
+      let toks = tokCache.get(it);
+      if (!toks) {
+        toks = new Set(tokens([it.title, it.summary, it.action, it.subcategory, (it.statutes || []).join(" ")].join(" ")));
+        tokCache.set(it, toks);
+      }
+      return alts.every((a) => a.some((x) => toks.has(x) || (x.length >= 4 && [...toks].some((t) => t.startsWith(x)))));
+    };
+  }
+
+  window.RHSearch = { build, tokens, stem, parseDates, matcher, THESAURUS, ISSUE_WORDS, STATUTE_WORDS };
 })();

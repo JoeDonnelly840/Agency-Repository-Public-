@@ -5,7 +5,7 @@ import glob
 import json
 import os
 
-from . import config, store
+from . import config, fulltext, store
 from .classify import classify
 from .flags import flag_item
 
@@ -21,10 +21,23 @@ def redo(it):
     if it.get("source") in FIXED_CATEGORY_SOURCES:
         it["forced_category"], it["forced_subcategory"] = it["category"], it["subcategory"]
     classify(it)
+    fulltext.attach([it])
     flag_item(it)
-    for k in ("query_agencies", "forced_category", "forced_subcategory"):
+    fulltext.detach(it)
+    for k in ("query_agencies", "forced_category", "forced_subcategory", "severity", "seriousness"):
         it.pop(k, None)
     return store.slim(it)
+
+
+def ensure_current(today=None):
+    """Re-rate everything once if the stored data was rated under older rules. Returns True if it did."""
+    from . import doctrine
+    index = store.load_index()
+    if index.get("runs") and index.get("rubric_version") != doctrine.RUBRIC_VERSION:
+        print(f"Rating rules changed ({index.get('rubric_version')} -> {doctrine.RUBRIC_VERSION}); re-rating stored items first.")
+        main(today)
+        return True
+    return False
 
 
 def main(today=None):

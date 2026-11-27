@@ -62,8 +62,8 @@ def compute_window(index, today):
 
 
 def sort_key(item):
-    sev = item.get("severity") or {}
-    return (-sev.get("flagrance", 0), -sev.get("impact", 0), item.get("title", ""))
+    r = item.get("rating") or {}
+    return (-r.get("level", 0), item.get("title", ""))
 
 
 def filed_day(item):
@@ -89,8 +89,10 @@ def slim(item):
     """Keep stored items small: long summaries are trimmed, and flag explanations live in taxonomy.json."""
     if len(item.get("summary") or "") > SUMMARY_LIMIT:
         item["summary"] = item["summary"][:SUMMARY_LIMIT].rsplit(" ", 1)[0] + "…"
-    for k in ("query_agencies", "forced_category", "forced_subcategory"):
+    for k in ("query_agencies", "forced_category", "forced_subcategory", "_ev"):
         item.pop(k, None)
+    if not item.get("raw_text_url"):
+        item.pop("raw_text_url", None)
     return item
 
 
@@ -101,6 +103,8 @@ def _merge_into(path, key_name, key_value, items, run_at):
     for it in items:
         old = existing.get(it["id"])
         it["first_seen"] = old.get("first_seen", run_at) if old else run_at
+        if old and old.get("ft") and not it.get("ft"):
+            it["ft"] = old["ft"]          # keep the record of full-text reading when an item is fetched again
         new += 0 if old else 1
         existing[it["id"]] = slim(it)
     _write_json(path, {key_name: key_value, "items": sorted(existing.values(), key=sort_key)},
@@ -155,15 +159,16 @@ def archive_old_days(today, root=None):
 
 
 def fact_row(it, subs):
-    """One compact row per item for the charts: date, bodies, kind, type, outcome, sanctions, issues, ratings."""
+    """One compact row per item for the charts: date, bodies, kind, type, outcome, sanctions, rated issues,
+    constitutionality level, impact level, routine."""
     sub = it.get("subcategory") or ""
     if sub not in subs:
         subs[sub] = len(subs)
-    sev = it.get("severity") or {}
+    r = it.get("rating") or {}
     bodies = [it["corporation"]] if it.get("corporation") else it.get("agencies", [])
     return [it.get("date") or "", bodies, it.get("category", ""), subs[sub], it.get("outcome", ""),
-            it.get("sanctions", []), sorted({f["code"] for f in it.get("flags", [])}),
-            sev.get("flagrance", 0), sev.get("impact", 0), 1 if it.get("routine") else 0]
+            it.get("sanctions", []), sorted({f["code"] for f in it.get("flags", []) if f.get("level")}),
+            r.get("level", 0), (it.get("impact") or {}).get("level", 0), 1 if it.get("routine") else 0]
 
 
 def write_facts(months, root=None):
@@ -203,6 +208,7 @@ def source_agencies():
         "federal_register": [a["key"] for a in config.AGENCIES] + [config.PRESIDENT["key"]],
         "regulations_gov": [a["key"] for a in config.AGENCIES],
         "openfda": ["fda"],
+        "federal_register_fulltext": [a["key"] for a in config.AGENCIES] + [config.PRESIDENT["key"]],
     }
     out.update({f["key"]: ["sec"] for f in config.SEC_FEEDS})
     out.update({f["key"]: [f["agency"]] for f in config.AGENCY_FEEDS if f.get("enabled") is not False})
@@ -211,6 +217,7 @@ def source_agencies():
 
 def write_index(index, run, root=None):
     index["schema"] = 3
+    index["rubric_version"] = doctrine.RUBRIC_VERSION
     index["updated_at"] = run["run_at"]
     index["runs"] = (index.get("runs", []) + [run])[-config.MAX_RUN_HISTORY:]
     sources = index.setdefault("sources", {})
@@ -234,9 +241,15 @@ def write_index(index, run, root=None):
     index["coverage_notes"] = config.COVERAGE_NOTES
     index["not_tracked"] = config.NOT_TRACKED
     index["source_agencies"] = source_agencies()
+    dr = _read_json(_path("deepread.json", root=root), None)
+    if dr:
+        index["deepread"] = {"sweep": dr.get("sweep"), "read": dr.get("read")}
     index["source_labels"] = {"federal_register": "Federal Register", "regulations_gov": "Regulations.gov",
                               "openfda": "openFDA recall enforcement reports",
+                              "federal_register_fulltext": "Federal Register full text (legal-term searches and full reads)",
                               **{f["key"]: f["label"] for f in config.SEC_FEEDS + config.AGENCY_FEEDS}}
-    _write_json(_path("taxonomy.json", root=root), {**taxonomy.export(), **flags.export(), **doctrine.export()})
+    from . import fulltext   # imported here: fulltext itself uses store
+    _write_json(_path("taxonomy.json", root=root), {**taxonomy.export(), **flags.export(), **doctrine.export(),
+                                                     "sweep_labels": fulltext.SWEEP_LABELS})
     _write_json(_path("index.json", root=root), index)
     return index

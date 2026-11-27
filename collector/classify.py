@@ -110,6 +110,8 @@ def assign_category(item):
     if dtype == "proposed rule":
         return "rulemaking", "Proposed rule"
     if item.get("corporation"):
+        if re.search(r"rule change|proposed rule|rulebook", item.get("title", ""), re.I) and not re.search(r"disciplinary (?:action|proceeding|matter)", item.get("title", ""), re.I):
+            return ("rulemaking", "Fee change by self-regulatory organization") if SRO_FEE.search(item.get("title", "")) else ("rulemaking", "Rule change by self-regulatory organization")
         if ENFORCEMENT.search(title_action) and re.search(r"disciplin|expel|\bbar\b", full, re.I):
             return "enforcement", "Disciplinary matter"
         if SRO_FEE.search(item.get("title", "")):

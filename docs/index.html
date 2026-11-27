@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="color-scheme" content="dark">
-<meta name="description" content="RegCollect gathers what federal agencies and the President publish, sorts it, and flags arguable constitutional issues, rated by flagrance and seriousness.">
+<meta name="description" content="RegCollect gathers what federal agencies and the President publish, sorts it, and flags actions that are likely unconstitutional, rated by a published rubric.">
 <title>RegCollect</title>
 <link rel="icon" href="logo.svg" type="image/svg+xml">
 <link rel="preload" href="fonts/IBMPlexSans-Regular.woff2" as="font" type="font/woff2" crossorigin>
@@ -32,7 +32,6 @@
   </form>
   <div class="bar-tools">
     <button type="button" class="since-btn" id="since-btn" aria-haspopup="dialog" aria-expanded="false"></button>
-    <button type="button" class="bot-btn" id="bot-btn" aria-expanded="false" aria-controls="bot">Assistant</button>
     <button type="button" class="user-btn" id="user-btn" aria-haspopup="dialog" aria-expanded="false" title="Account"></button>
   </div>
 </header>
@@ -57,21 +56,26 @@
 
 <div class="shell">
   <main id="main" tabindex="-1"><div id="view" class="view"></div></main>
-  <aside class="bot" id="bot" aria-label="RegCollect assistant" hidden>
-    <div class="bot-head"><img src="logo.svg" alt="" width="22" height="22"><strong>Assistant</strong>
-      <span class="muted small">Runs in this browser</span><button type="button" class="x" id="bot-close" aria-label="Close the assistant">×</button></div>
-    <div class="bot-log" id="bot-log" aria-live="polite"></div>
-    <div class="bot-sugg" id="bot-sugg"></div>
-    <form class="bot-form" id="bot-form" autocomplete="off">
-      <label class="sr" for="bot-q">Ask the assistant</label>
-      <input id="bot-q" type="text" placeholder="Ask or tell me what to do">
-      <button class="btn small" type="submit">Send</button>
-    </form>
-  </aside>
 </div>
 
+<section class="bot" id="bot" role="dialog" aria-label="Curt, the RegCollect assistant" hidden>
+  <div class="bot-head"><span class="curt-face" aria-hidden="true">C</span>
+    <div class="bot-title"><strong>Curt</strong><span class="muted small">RegCollect assistant · runs in this browser</span></div>
+    <button type="button" class="x" id="bot-new" title="Start a new conversation" aria-label="Start a new conversation">↺</button>
+    <button type="button" class="x" id="bot-min" title="Minimize" aria-label="Minimize Curt">–</button></div>
+  <div class="bot-log" id="bot-log" aria-live="polite"></div>
+  <div class="bot-sugg" id="bot-sugg"></div>
+  <form class="bot-form" id="bot-form" autocomplete="off">
+    <label class="sr" for="bot-q">Ask Curt</label>
+    <input id="bot-q" type="text" placeholder="Ask Curt anything, or tell him what to do">
+    <button class="btn small" type="submit">Send</button>
+  </form>
+</section>
+<button type="button" class="curt-bubble" id="bot-btn" aria-expanded="false" aria-controls="bot" title="Ask Curt">
+  <span class="curt-face" aria-hidden="true">C</span><span class="curt-label">Ask Curt</span></button>
+
 <footer class="foot">
-  <span>RegCollect 3.0. An automated screen of public government records; a flag is not a legal conclusion.</span>
+  <span>RegCollect 3.1. An automated screen of public government records; a flag is not a legal conclusion.</span>
   <a href="https://github.com/JoeDonnelly840/Agency-Repository-Public-" rel="noopener">Source code</a>
 </footer>
 
@@ -107,6 +111,7 @@
 <script src="search.js"></script>
 <script src="charts.js"></script>
 <script src="app.js"></script>
+<script src="curt-script.js"></script>
 <script src="assistant.js"></script>
 </body>
 </html>

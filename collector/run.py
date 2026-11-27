@@ -9,7 +9,7 @@ import datetime as dt
 import os
 import sys
 
-from . import config, store
+from . import config, fulltext, reclassify, store
 from .classify import classify
 from .flags import flag_item
 from .http_client import PoliteClient
@@ -24,6 +24,9 @@ def main():
     start = os.environ.get("START_DATE") or start
     end = os.environ.get("END_DATE") or end
     print(f"{config.APP_NAME} run {run_at}: checking {start} to {end}")
+
+    if reclassify.ensure_current(now.date()):
+        index = store.load_index()
 
     regs_key = os.environ.get("REGULATIONS_GOV_API_KEY", "").strip()
     contact = os.environ.get("SEC_CONTACT_EMAIL", "").strip()
@@ -55,9 +58,19 @@ def main():
 
     for it in all_items:
         classify(it)
+    fulltext.attach(all_items)            # evidence already gathered for items seen before
+    for it in all_items:
+        flag_item(it)
+    # Read the most important new documents in full, then rate them again with what was found.
+    records, rep = fulltext.enrich_new(client, all_items, start, end)
+    reports.append(rep)
+    for it in all_items:
         flag_item(it)
         for k in ("query_agencies", "forced_category", "forced_subcategory"):
             it.pop(k, None)
+    fulltext.save_records(all_items, records)
+    for it in all_items:
+        fulltext.detach(it)
 
     new, months = store.merge_items(all_items, run_at, today=now.date())
     store.finish_storage(index, months, now.date())

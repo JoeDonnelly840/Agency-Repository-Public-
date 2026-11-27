@@ -1,10 +1,11 @@
 /* RegCollect chart builder: per-agency visuals, drawn as SVG with no outside libraries.
- * Chart types: stacked bars over time, lines over time, totals, share (donut), and the
- * flagrance x seriousness grid. Every chart can be exported as PNG, SVG, or CSV.
+ * Chart types: stacked bars over time, lines over time, totals, and share (donut).
+ * Every chart can be exported as PNG, SVG, or CSV.
  *
  * Series colors were checked with a colorblind-safety validator against the dark
- * chart surface. Red, orange, and yellow are deliberately absent: they mean severity
- * everywhere in RegCollect and are used only when a chart is broken down by severity.
+ * chart surface. Red, orange, and yellow are deliberately absent: they mean constitutionality
+ * everywhere in RegCollect and are used only when a chart is broken down by constitutionality.
+ * Impact is context only, so it is drawn in ordinary series colors.
  */
 (function () {
   "use strict";
@@ -61,22 +62,22 @@
       case "subcategory": return [it.subcategory || "Other"];
       case "sanction": return (it.sanctions || []).length ? it.sanctions : ["none"];
       case "outcome": return [it.outcome || "notice"];
-      case "issue": return (it.flags || []).length ? [...new Set(it.flags.map((f) => f.code))] : ["none"];
-      case "flagrance": return [it.severity ? String(it.severity.flagrance) : "0"];
-      case "impact": return [it.severity ? String(it.severity.impact) : "0"];
+      case "issue": { const r = (it.flags || []).filter((f) => f.level); return r.length ? [...new Set(r.map((f) => f.code))] : ["none"]; }
+      case "level": return [it.rating ? String(it.rating.level) : "0"];
+      case "impact": return [String((it.impact || {}).level || 0)];
       default: return ["all"];
     }
   }
   function labelFor(key, dim, L) {
-    if (key === "none") return dim === "issue" ? "No constitutional flag" : "No sanction wording";
+    if (key === "none") return dim === "issue" ? "No rated constitutional issue" : "No sanction wording";
     if (key === "all") return "All matching actions";
     if (key === "__other") return "Other";
     if (dim === "category") return L.categories[key] || key;
     if (dim === "sanction") return (L.sanctions[key] || {}).label || key;
     if (dim === "outcome") return L.outcomes[key] || key;
     if (dim === "issue") return L.kinds[key] || key;
-    if (dim === "flagrance") return key === "0" ? "No flag" : `Flagrance: ${L.flagrance[key]}`;
-    if (dim === "impact") return key === "0" ? "No flag" : `Seriousness: ${L.impact[key]}`;
+    if (dim === "level") return key === "0" ? "Not rated" : L.level[key];
+    if (dim === "impact") return key === "0" ? "No impact recorded" : L.impact[key];
     return key;
   }
 
@@ -87,23 +88,23 @@
       if (st.categories.length && !st.categories.includes(it.category)) return false;
       if (st.sanctions.length && !(it.sanctions || []).some((s) => st.sanctions.includes(s))) return false;
       if (st.outcomes.length && !st.outcomes.includes(it.outcome)) return false;
-      if (st.flaggedOnly && !(it.flags || []).length) return false;
+      if (st.flaggedOnly && !it.rating) return false;
       if (!st.routine && it.routine) return false;
       return true;
     });
   }
 
   function aggregate(items, st, L) {
-    const dim = st.type === "matrix" ? "none" : st.by;
+    const dim = st.by;
     const totals = new Map();
     items.forEach((it) => keysFor(it, dim, L).forEach((k) => totals.set(k, (totals.get(k) || 0) + 1)));
     let keys = [...totals.keys()];
-    const severityDim = dim === "flagrance" || dim === "impact";
-    if (severityDim) keys.sort((a, b) => b - a);
+    const severityDim = dim === "level";
+    if (severityDim || dim === "impact") keys.sort((a, b) => b - a);
     else keys.sort((a, b) => (a === "none") - (b === "none") || totals.get(b) - totals.get(a));
     // At most five colored series; the rest fold into "Other" (never a generated sixth hue).
     let fold = new Set();
-    if (!severityDim && st.type !== "bars" && keys.length > SERIES.length) {
+    if (!severityDim && dim !== "impact" && st.type !== "bars" && keys.length > SERIES.length) {
       fold = new Set(keys.slice(SERIES.length));
       keys = keys.slice(0, SERIES.length).concat(["__other"]);
       totals.set("__other", [...fold].reduce((s, k) => s + totals.get(k), 0));
@@ -210,7 +211,7 @@
     let s = "";
     rows.forEach((r, i) => {
       const y = M.t + 20 + i * rowH, w = Math.max(2, ((x1 - x0) * r.total) / max);
-      const color = a.dim === "flagrance" || a.dim === "impact" ? r.color : r.key === "none" || r.key === "__other" ? OTHER : SERIES[0];
+      const color = a.dim === "level" || a.dim === "impact" ? r.color : r.key === "none" || r.key === "__other" ? OTHER : SERIES[0];
       s += `<text x="${x0 - 12}" y="${y + 15}" fill="${TEXT2}" font-size="12" text-anchor="end">${esc(r.label.length > 44 ? r.label.slice(0, 43) + "…" : r.label)}</text>
         <path d="M${x0},${y + 4}H${x0 + w - 4}Q${x0 + w},${y + 4} ${x0 + w},${y + 8}V${y + 16}Q${x0 + w},${y + 20} ${x0 + w - 4},${y + 20}H${x0}Z" fill="${color}"/>
         <text x="${x0 + w + 8}" y="${y + 16}" fill="${TEXT}" font-size="12">${r.total}</text>
@@ -246,24 +247,6 @@
     return frame(title, sub, s);
   }
 
-  function drawMatrix(items, st, L, title, sub) {
-    const counts = {}; items.forEach((it) => { if (it.severity) { const k = `${it.severity.flagrance}${it.severity.impact}`; counts[k] = (counts[k] || 0) + 1; } });
-    const x0 = 250, y0 = M.t + 50, cw = 200, ch = 92;
-    let s = "";
-    [3, 2, 1].forEach((imp, j) => { s += `<text x="${x0 + j * cw + cw / 2}" y="${y0 - 14}" fill="${TEXT2}" font-size="13" text-anchor="middle">Seriousness: ${esc(L.impact[imp])}</text>`; });
-    [3, 2, 1].forEach((cla, i) => {
-      s += `<text x="${x0 - 14}" y="${y0 + i * ch + ch / 2 + 4}" fill="${TEXT2}" font-size="13" text-anchor="end">Flagrance: ${esc(L.flagrance[cla])}</text>`;
-      [3, 2, 1].forEach((imp, j) => {
-        const n = counts[`${cla}${imp}`] || 0, score = cla * imp;
-        const c = score >= 6 ? SEV[3] : score >= 3 ? SEV[2] : SEV[1];
-        s += `<rect x="${x0 + j * cw + 3}" y="${y0 + i * ch + 3}" width="${cw - 6}" height="${ch - 6}" rx="8" fill="${c}" fill-opacity="${n ? 0.28 : 0.07}" stroke="${c}" stroke-opacity="${n ? 0.8 : 0.25}"
-          class="hit" data-tip="${esc(`Flagrance ${L.flagrance[cla]}, seriousness ${L.impact[imp]}|${n} flagged actions`)}"/>
-          <text x="${x0 + j * cw + cw / 2}" y="${y0 + i * ch + ch / 2 + 10}" fill="${n ? TEXT : TEXT3}" font-family="${esc(SERIF)}" font-size="28" text-anchor="middle">${n}</text>`;
-      });
-    });
-    return frame(title, sub, s, y0 + 3 * ch + 40);
-  }
-
   // -------------------------------------------------------------- the UI
   function defaults(items) {
     const dates = items.map((i) => i.date).filter(Boolean).sort();
@@ -277,6 +260,8 @@
     const L = ctx.labels;
     const st = ctx.state || (ctx.state = defaults(items));
     if (ctx.pending) { Object.assign(st, ctx.pending); delete ctx.pending; }   // set by the assistant
+    if (st.type === "matrix") { st.type = "bars"; st.by = "level"; }          // the old grid chart was retired in 3.1
+    if (st.by === "flagrance") st.by = "level";
     const present = (key) => [...new Set(items.flatMap((i) => key(i)))];
     const cats = present((i) => [i.category]);
     const sancs = present((i) => i.sanctions || []);
@@ -288,11 +273,11 @@
       <form class="chart-controls" id="cc" onsubmit="return false">
         <div class="ctl"><span>Chart</span><select data-k="type">
           ${opt("stacked", "Stacked bars over time", st.type)}${opt("lines", "Lines over time", st.type)}${opt("bars", "Totals (bar chart)", st.type)}
-          ${opt("donut", "Share of total (donut)", st.type)}${opt("matrix", "Flagrance × seriousness grid", st.type)}</select></div>
-        <div class="ctl" ${st.type === "matrix" ? "hidden" : ""}><span>Break down by</span><select data-k="by">
+          ${opt("donut", "Share of total (donut)", st.type)}</select></div>
+        <div class="ctl"><span>Break down by</span><select data-k="by">
           ${opt("category", "Kind of action", st.by)}${opt("subcategory", "Specific type of document", st.by)}${opt("sanction", "Sanction imposed or sought", st.by)}
-          ${opt("outcome", "Outcome", st.by)}${opt("issue", "Constitutional issue", st.by)}${opt("flagrance", "Flagrance rating", st.by)}
-          ${opt("impact", "Seriousness rating", st.by)}${opt("none", "Nothing (one total)", st.by)}</select></div>
+          ${opt("outcome", "Outcome", st.by)}${opt("issue", "Constitutional issue", st.by)}${opt("level", "Constitutionality rating", st.by)}
+          ${opt("impact", "Impact (context only)", st.by)}${opt("none", "Nothing (one total)", st.by)}</select></div>
         <div class="ctl" ${st.type === "stacked" || st.type === "lines" ? "" : "hidden"}><span>Group dates by</span><select data-k="interval">
           ${opt("day", "Day", st.interval)}${opt("week", "Week", st.interval)}${opt("month", "Month", st.interval)}</select></div>
         <div class="ctl"><span>Time period</span><div class="row" style="margin:0">
@@ -300,7 +285,7 @@
         <div class="ctl"><span>Kinds of action ${st.categories.length ? "" : "(all)"}</span><div class="checks">${cats.map((c) => check("categories", c, L.categories[c] || c, st.categories.includes(c))).join("")}</div></div>
         <div class="ctl"><span>Sanctions ${st.sanctions.length ? "" : "(any)"}</span><div class="checks">${sancs.length ? sancs.map((s) => check("sanctions", s, (L.sanctions[s] || {}).label || s, st.sanctions.includes(s))).join("") : '<span class="muted small">None recorded for this agency yet.</span>'}</div></div>
         <div class="ctl"><span>Outcomes ${st.outcomes.length ? "" : "(any)"}</span><div class="checks">${outs.map((o) => check("outcomes", o, L.outcomes[o] || o, st.outcomes.includes(o))).join("")}</div></div>
-        <div class="ctl"><label class="small"><input type="checkbox" data-k="flaggedOnly" ${st.flaggedOnly ? "checked" : ""}> Only actions with a constitutional flag</label>
+        <div class="ctl"><label class="small"><input type="checkbox" data-k="flaggedOnly" ${st.flaggedOnly ? "checked" : ""}> Only actions rated likely unconstitutional or worse</label>
           ${items.some((i) => i.routine) ? `<br><label class="small"><input type="checkbox" data-k="routine" ${st.routine ? "checked" : ""}> Include routine exchange fee filings</label>` : ""}</div>
         <div class="row"><button type="button" class="btn small" data-x="png">Download PNG</button><button type="button" class="btn ghost small" data-x="svg">SVG</button>
           <button type="button" class="btn ghost small" data-x="csv">CSV</button><button type="button" class="btn ghost small" data-x="reset">Reset</button></div>
@@ -311,21 +296,17 @@
 
     const data = filterItems(items, st);
     const what = { category: "kind of action", subcategory: "type of document", sanction: "sanction", outcome: "outcome",
-      issue: "constitutional issue", flagrance: "flagrance", impact: "seriousness", none: "" }[st.by];
+      issue: "constitutional issue", level: "constitutionality", impact: "impact", none: "" }[st.by];
     const span = st.from && st.to ? `${fmt(st.from, { month: "short", day: "numeric", year: "numeric" })} – ${fmt(st.to, { month: "short", day: "numeric", year: "numeric" })}` : "";
-    const title = `${ctx.entityName}: ${st.type === "matrix" ? "flagged actions by flagrance and seriousness" : `actions${st.type === "stacked" || st.type === "lines" ? ` per ${st.interval}` : ""}${what ? ` by ${what}` : ""}`}`;
+    const title = `${ctx.entityName}: actions${st.type === "stacked" || st.type === "lines" ? ` per ${st.interval}` : ""}${what ? ` by ${what}` : ""}`;
     const filtersSaid = [st.categories.length && `kinds: ${st.categories.map((c) => L.categories[c]).join(", ")}`,
       st.sanctions.length && `sanctions: ${st.sanctions.map((s) => (L.sanctions[s] || {}).short || s).join(", ")}`,
       st.outcomes.length && `outcomes: ${st.outcomes.map((o) => L.outcomes[o]).join(", ")}`, st.flaggedOnly && "flagged only"].filter(Boolean).join("; ");
     const sub = `${data.length} matching actions${span ? `, ${span}` : ""}${filtersSaid ? `. Filters: ${filtersSaid}` : ""}. Source: RegCollect`;
 
-    let svg, agg = null;
-    if (st.type === "matrix") svg = drawMatrix(data, st, L, title, sub);
-    else {
-      agg = aggregate(data, st, L);
-      svg = st.type === "lines" ? drawLines(agg, st, title, sub) : st.type === "bars" ? drawTotals(agg, st, title, sub)
-        : st.type === "donut" ? drawDonut(agg, st, title, sub) : drawStacked(agg, st, title, sub);
-    }
+    const agg = aggregate(data, st, L);
+    const svg = st.type === "lines" ? drawLines(agg, st, title, sub) : st.type === "bars" ? drawTotals(agg, st, title, sub)
+      : st.type === "donut" ? drawDonut(agg, st, title, sub) : drawStacked(agg, st, title, sub);
     const stage = host.querySelector("#stage");
     stage.innerHTML = svg;
     if (agg && agg.series.length > 1 && st.type !== "donut" && st.type !== "bars")
@@ -357,11 +338,6 @@
   }
 
   function tableRows(st, agg, data, L) {
-    if (!agg) {
-      const rows = [["Flagrance", "Seriousness: Severe", "Seriousness: Significant", "Seriousness: Moderate"]];
-      [3, 2, 1].forEach((c) => rows.push([L.flagrance[c], ...[3, 2, 1].map((i) => data.filter((it) => it.severity && it.severity.flagrance === c && it.severity.impact === i).length)]));
-      return rows;
-    }
     if (st.type === "stacked" || st.type === "lines")
       return [["Period", ...agg.series.map((s) => s.label)], ...agg.buckets.map((b) => [b, ...agg.series.map((s) => agg.grid.get(b)[s.key])])];
     return [["Group", "Count"], ...agg.series.map((s) => [s.label, s.total])];

@@ -13,7 +13,7 @@ import json
 import os
 import sys
 
-from . import config, store
+from . import config, deepread, fulltext, reclassify, store
 from .classify import classify
 from .flags import flag_item
 from .http_client import PoliteClient
@@ -79,18 +79,26 @@ def run_once(client, state, regs_key, today, budget):
 
 def main():
     today = dt.date.today()
+    reclassify.ensure_current(today)
     state = load_state(today)
-    if all(state["done"].values()):
-        print("History backfill is complete.")
-        return 0
     client = PoliteClient()
+    if all(state["done"].values()):
+        print("History backfill is complete; reading full texts instead.")
+        return deepread.main()
     regs_key = os.environ.get("REGULATIONS_GOV_API_KEY", "").strip()
     run_at = dt.datetime.now(dt.timezone.utc).replace(microsecond=0).isoformat()
     items, reports, processed = run_once(client, state, regs_key, today, config.BACKFILL_MAX_REQUESTS)
     for it in items:
         classify(it)
+    fulltext.attach(items)
+    for it in items:
         flag_item(it)
+        fulltext.detach(it)
     new, months = store.merge_items(items, run_at, today=today)
+    touched, dlog = deepread.run(client, config.BACKFILL_MAX_REQUESTS, today=today)   # leftover budget
+    months |= {m for m in touched if store.is_archived_month(m, today)}
+    if dlog:
+        print("Full-text reading:", "; ".join(dlog))
     index = store.load_index()
     store.finish_storage(index, months, today)
     if not processed:

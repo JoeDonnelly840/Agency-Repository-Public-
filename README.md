@@ -1,16 +1,17 @@
 # RegCollect
 
-RegCollect (formerly RegHunter and Agency Tracker) reports what the federal executive branch has done since you last checked. It sorts each action by agency, kind of action, outcome, and sanction; flags arguable constitutional issues; rates each one for **flagrance** (how clearly existing law condemns it) and **seriousness** (how much is at stake) by a published rubric; and says plainly what it did **not** find or could not check. History reaches back to January 1, 2015.
+RegCollect (formerly RegHunter and Agency Tracker) reports what the federal executive branch has done since you last checked. It sorts each action by agency, kind of action, outcome, and sanction; reads the full text of the most important documents; rates each constitutional issue for **constitutionality** (almost certainly, very likely, or likely unconstitutional under today's law) by a published rubric and known court rulings; notes **impact** for context without letting it affect the rating; and says plainly what it did **not** find or could not check. History reaches back to January 1, 2015.
 
 ## How it works
 
 1. **Daily collector** (`collector/run.py`, `.github/workflows/collect.yml`): a small Python program, standard library only, that GitHub runs each morning. It reads official interfaces and published feeds, sorts and flags what it finds, and saves the results in `docs/data/`.
-2. **History backfill** (`collector/backfill.py`, `.github/workflows/backfill.yml`): every two hours, walks back one month at a time (about 280 requests per run) through the Federal Register, Regulations.gov, and openFDA until it reaches January 1, 2015. Progress is kept in `docs/data/backfill.json`. When every source shows `"done": true`, the workflow can be disabled under Actions.
-3. **Website** (`docs/`): a static page served by GitHub Pages. No outside libraries, services, or trackers; the IBM Plex fonts are stored in `docs/fonts/` under the SIL Open Font License.
+2. **History backfill** (`collector/backfill.py`, `.github/workflows/backfill.yml`): every two hours, walks back one month at a time (about 280 requests per run) through the Federal Register, Regulations.gov, and openFDA until it reaches January 1, 2015. Progress is kept in `docs/data/backfill.json`. Leftover requests, and every run once history is complete, go to full-text reading of history (`collector/deepread.py`, progress in `docs/data/deepread.json`). Keep this workflow enabled until both are complete.
+3. **Full-text reading** (`collector/fulltext.py`): the Federal Register's own full-text search is asked about about 30 legal terms (IEEPA, Chevron, RFRA, the Seventh Amendment, and others), and the plain text of presidential documents, flagged actions, and significant rules is read in full. Only short passages around the phrases the legal tests look for are kept, in `docs/data/evidence/<YYYY-MM>.json`.
+4. **Website** (`docs/`): a static page served by GitHub Pages. No outside libraries, services, or trackers; the IBM Plex fonts are stored in `docs/fonts/` under the SIL Open Font License.
    - `app.js`: the directory, agency pages (Activity, Charts, Coverage), constitutional issues, research, methodology, what we track, the manual, and the tour.
    - `search.js`: the research engine (ranked search with a legal thesaurus, word stems, and typo tolerance).
    - `charts.js`: the per-agency chart builder, with PNG, SVG, and CSV export.
-   - `assistant.js`: the built-in assistant. It is a set of rules that runs in the browser, operates the app, and answers questions from a help library. It does not use any outside AI service, and nothing typed into it leaves the browser.
+   - `assistant.js` and `curt-script.js`: Curt, the built-in assistant, in a chat bubble that can be minimized. He operates the app, answers data questions by running the search engine over the data (counts, top lists, comparisons, briefings, why an action was rated), and answers questions about the app, the rubric, and the law from a long prepared script plus entries generated from the doctrine library. He uses no outside AI service, and nothing typed into him leaves the browser. To teach him something, add an entry to `curt-script.js`.
 
 ## Dates
 
@@ -31,13 +32,15 @@ Each item has `date` (the action date), `date_basis` (signed, posted, released, 
 - `docs/data/months/YYYY-MM.json`: older items, one compact file per month.
 - `docs/data/facts/YYYY-MM.json`: compact rows used for charts, so a chart of ten years does not download every summary.
 - `docs/data/index.json`: the list of files, source health, recent runs, coverage notes, and backfill progress.
-- `docs/data/taxonomy.json`: sanctions, outcomes, rating scales, and the doctrine library.
+- `docs/data/taxonomy.json`: sanctions, outcomes, rating scales, the doctrine library, and known rulings.
+- `docs/data/evidence/YYYY-MM.json`: short passages from full texts, loaded only when you open "Why flagged".
 
 ## Sources, and the rules the collector follows
 
 | Source | What it is | Access rules followed |
 |---|---|---|
 | Federal Register API | Official daily journal of the U.S. government; public API built for programs | No key needed; one request at a time, 2 s apart |
+| Federal Register full text | Full-text search (`conditions[term]`) and each document's plain-text version (`raw_text_url`) | Same host and pauses; robots.txt checked before plain-text reads; only short passages are kept |
 | Regulations.gov API (v4, read-only) | Documents posted to Regulations.gov | Free api.data.gov key; read-only "documents" endpoint only; 4 s between requests |
 | SEC RSS feeds | Litigation releases and administrative proceedings | SEC fair-access policy: declared User-Agent with contact email, robots.txt checked, one request per feed per day |
 | openFDA | FDA recall enforcement reports | Official public API; a few requests a day, 3 s apart; data is public domain |
@@ -55,12 +58,18 @@ Safety rules enforced in `collector/http_client.py` and covered by the tests in 
 
 ## Ratings and the doctrine library
 
-`collector/doctrine.py` holds one memo per kind of constitutional issue: the question, the legal test broken into elements, counter-indicators, precedent tiers, authorities with decision dates, and open questions. `DOCTRINE.md` is the same library as a readable document (regenerate it with `python -m collector.doctrine_md`), and the app shows it on the Methodology page.
+`collector/doctrine.py` holds one memo per kind of constitutional issue: the question, the legal test broken into elements (with "gate" elements that must appear before an issue is rated), precedent rules sorted into three levels (direct holding, close analogy, open question), weighed factors, authorities with decision dates, and open questions. `collector/rulings.py` lists court rulings on specific actions (for example, the IEEPA tariff orders, the Clean Power Plan, and the CDC eviction moratorium). `DOCTRINE.md` is the same library as a readable document (regenerate it with `python -m collector.doctrine_md`), and the app shows it on the Methodology page.
 
-- **Flagrance** = precedent tier (3: the Supreme Court has held this specific practice unlawful; 2: close analogy or an appeals-court holding; 1: open) combined with the share of the test's elements found in the document. Flagrant needs tier 3 and every element; Substantial needs tier 2 or more and at least half. A counter-indicator caps the rating at Arguable. When the controlling decision came after the action, the rating at the time is also recorded.
-- **Seriousness** = points for the sanction (up to 4), money (up to 3), and reach (up to 3). Severe is 6 or more; Significant is 3 to 5; Moderate is 2 or less.
+- **Constitutionality** is the only rating: almost certainly (a direct holding and every element), very likely (a direct holding with at least half the elements, or a close analogy with every element), or likely (any other rated issue). Issues without their gate elements are listed as possible issues and not rated. Weighed factors (such as a contrary holding) lower a rating one step but never remove it; settlements are noted only. A court ruling on the action itself sets the rating (Supreme Court 3, court of appeals 2, district court 1). Ratings apply today's law, with a note when the action may have been lawful under the precedent at the time.
+- **Impact** = points for the sanction (up to 4), money (up to 3), and reach (up to 3): Lower Impact 1 to 3, Significant Impact 4 to 6, Serious Impact 7 or more. It is context only: it is not color-coded and never affects the rating or the order of results.
+- Rating names are set in one place, `SCALES` in `collector/flags.py`.
+- When the rating rules change (`RUBRIC_VERSION` in `doctrine.py`), the next daily run re-rates every stored item automatically.
 
 The memos are marked "Draft, not yet reviewed" (`REVIEW_STATUS` in `doctrine.py`). Update that entry after a review.
+
+### Reviews
+
+Open "Why flagged" on any action to record your view of a rating. Download your reviews from the Methodology page and save them as `review/labels.json`; each daily run reports how often the current rubric agrees with them (`python -m collector.reviews`).
 
 ## One-time setup
 
@@ -81,6 +90,6 @@ The memos are marked "Draft, not yet reviewed" (`REVIEW_STATUS` in `doctrine.py`
 
 ## Limitations
 
-- Flags and search read each document's title and summary, not the full text, so ratings err toward Arguable. A flag is not a legal conclusion, and the absence of a flag is not a clean bill of health.
+- Full texts are read for Federal Register documents only, most important first; Regulations.gov attachments, press releases, and recall reports are rated from titles and summaries. A flag is not a legal conclusion, and the absence of a flag is not a clean bill of health.
 - Enforcement coverage is partial. FTC and FCC press releases, NLRB decisions, and EPA, Department of Labor, FERC, and HHS-OIG enforcement are not yet connected; see *What we track* in the app for the full list.
 - SEC and agency press feeds keep only recent items, so their history starts when RegCollect began reading them.

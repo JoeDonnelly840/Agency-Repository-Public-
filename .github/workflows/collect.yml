@@ -41,6 +41,10 @@ jobs:
           END_DATE: ${{ github.event.inputs.end_date }}
         run: python -m collector.run
 
+      - name: Compare ratings with human reviews (report only)
+        continue-on-error: true
+        run: python -m collector.reviews
+
       - name: Save results
         run: |
           git config user.name "regcollect-bot"

@@ -9,7 +9,7 @@ alongside the federal ones without changing the data format.
 """
 
 APP_NAME = "RegCollect"
-APP_VERSION = "3.0"
+APP_VERSION = "3.1"
 REPO_URL = "https://github.com/JoeDonnelly840/Agency-Repository-Public-"
 USER_AGENT = f"{APP_NAME}/{APP_VERSION} (personal legal-research tool; +{REPO_URL})"
 SEC_USER_AGENT_NAME = APP_NAME  # followed by the SEC_CONTACT_EMAIL secret, per the SEC's fair-access format
@@ -35,7 +35,7 @@ MIN_SECONDS_BETWEEN_REQUESTS = {   # per host; requests are never sent in parall
     "api.fda.gov": 3.0,            # openFDA allows 240/minute; we send about 3 per day
 }
 DEFAULT_SECONDS_BETWEEN_REQUESTS = 6.0  # agency websites: one feed every 6+ seconds
-MAX_REQUESTS_PER_RUN = 300         # hard ceiling for one daily run, all sources together
+MAX_REQUESTS_PER_RUN = 400         # hard ceiling for one daily run, all sources together (full-text reading included)
 REQUEST_TIMEOUT_SECONDS = 30
 MAX_RETRIES = 2                    # retries only on timeouts / 429 / 5xx, with long pauses
 MAX_RETRY_AFTER_SECONDS = 120
@@ -46,6 +46,8 @@ FIRST_RUN_BACKFILL_DAYS = 30       # how far back the very first run looks
 HISTORY_START = "2015-01-01"       # the backfill job fills history back to this date
 ARCHIVE_AFTER_DAYS = 70            # day files older than this are combined into one file per month
 BACKFILL_MAX_REQUESTS = 280        # per backfill run, all sources together
+FULLTEXT_SWEEP_BUDGET = 90         # daily: Federal Register full-text searches for legal terms (2 per term)
+FULLTEXT_READS_PER_RUN = 60        # daily: documents read in full (presidential documents and flagged actions first)
 OVERLAP_DAYS = 3                   # re-check recent days to catch late postings and corrections
 MAX_RUN_HISTORY = 400              # run log entries kept in index.json
 

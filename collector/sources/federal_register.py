@@ -14,7 +14,7 @@ FIELDS = [
     "document_number", "title", "type", "subtype", "abstract", "action", "agencies",
     "publication_date", "html_url", "pdf_url", "docket_ids", "regulation_id_numbers",
     "significant", "comments_close_on", "effective_on", "executive_order_number", "cfr_references",
-    "signing_date",
+    "signing_date", "raw_text_url",
 ]
 PER_PAGE = 500
 MAX_PAGES_PER_QUERY = 20
@@ -57,6 +57,7 @@ def _normalize(doc):
         "comments_close": doc.get("comments_close_on"),
         "effective_on": doc.get("effective_on"),
         "eo_number": doc.get("executive_order_number"),
+        "raw_text_url": doc.get("raw_text_url") or None,
     }
 
 
