@@ -80,12 +80,12 @@
   "done": {
    "federal_register": true,
    "openfda": false,
-   "regulations_gov": false
+   "regulations_gov": true
   },
   "next": {
    "federal_register": "2014-12",
-   "openfda": "2026-11",
-   "regulations_gov": "2015-03"
+   "openfda": "2021-05",
+   "regulations_gov": "2014-12"
   },
   "target_start": "2015-01-01"
  },
@@ -135,65 +135,77 @@
  },
  "days": {
   "2026-09-01": 46,
-  "2026-09-02": 49,
+  "2026-09-02": 141,
   "2026-09-03": 434,
   "2026-09-04": 57,
   "2026-09-08": 80,
-  "2026-09-09": 42,
+  "2026-09-09": 160,
   "2026-09-10": 76,
   "2026-09-11": 44,
   "2026-09-14": 85,
   "2026-09-15": 89,
-  "2026-09-16": 50,
+  "2026-09-16": 81,
   "2026-09-17": 67,
   "2026-09-18": 99,
   "2026-09-21": 77,
   "2026-09-22": 58,
-  "2026-09-23": 117,
+  "2026-09-23": 269,
   "2026-09-24": 68,
   "2026-09-25": 79,
   "2026-09-28": 64,
   "2026-09-29": 101,
-  "2026-09-30": 73,
+  "2026-09-30": 154,
   "2026-10-01": 72,
   "2026-10-02": 70,
   "2026-10-05": 87,
   "2026-10-06": 67,
-  "2026-10-07": 49,
+  "2026-10-07": 198,
   "2026-10-08": 77,
   "2026-10-09": 203,
   "2026-10-13": 90,
-  "2026-10-14": 49,
+  "2026-10-14": 153,
   "2026-10-15": 101,
   "2026-10-16": 72,
   "2026-10-19": 79,
   "2026-10-20": 48,
-  "2026-10-21": 50,
+  "2026-10-21": 117,
   "2026-10-22": 35,
   "2026-10-23": 61,
   "2026-10-26": 70,
   "2026-10-27": 53,
-  "2026-10-28": 58,
+  "2026-10-28": 245,
   "2026-10-29": 80,
   "2026-10-30": 113,
   "2026-11-02": 65,
   "2026-11-03": 60,
-  "2026-11-04": 33,
+  "2026-11-04": 112,
   "2026-11-05": 108,
   "2026-11-06": 48,
   "2026-11-09": 54,
   "2026-11-10": 51,
+  "2026-11-11": 126,
   "2026-11-12": 44,
   "2026-11-13": 80,
   "2026-11-16": 63,
   "2026-11-17": 89,
-  "2026-11-18": 95,
+  "2026-11-18": 203,
   "2026-11-19": 65,
   "2026-11-20": 108,
   "2026-11-23": 418,
   "2026-11-24": 87,
   "2026-11-25": 92,
   "2026-11-27": 51
+ },
+ "deepread": {
+  "read": {
+   "done": false,
+   "next_month": "2026-11"
+  },
+  "sweep": {
+   "done": false,
+   "next_year": 2026,
+   "term": 0
+  }
  },
  "history_start": "2015-01-01",
  "jurisdictions": [
@@ -210,9 +222,9 @@
   }
  ],
  "months": {
-  "2015-01": 767,
-  "2015-02": 911,
-  "2015-03": 992,
+  "2015-01": 1509,
+  "2015-02": 1949,
+  "2015-03": 1336,
   "2015-04": 1382,
   "2015-05": 1267,
   "2015-06": 1211,
@@ -287,69 +299,69 @@
   "2021-03": 1405,
   "2021-04": 1126,
   "2021-05": 1211,
-  "2021-06": 1809,
-  "2021-07": 1532,
-  "2021-08": 1210,
-  "2021-09": 1284,
-  "2021-10": 1313,
-  "2021-11": 1240,
-  "2021-12": 1813,
-  "2022-01": 1684,
-  "2022-02": 1148,
-  "2022-03": 1677,
-  "2022-04": 1386,
-  "2022-05": 1627,
-  "2022-06": 1634,
-  "2022-07": 1520,
-  "2022-08": 1677,
-  "2022-09": 1812,
-  "2022-10": 1275,
-  "2022-11": 1545,
-  "2022-12": 1395,
-  "2023-01": 1591,
-  "2023-02": 1497,
-  "2023-03": 1899,
-  "2023-04": 1604,
-  "2023-05": 1771,
-  "2023-06": 1578,
-  "2023-07": 784,
-  "2023-08": 1882,
-  "2023-09": 1882,
-  "2023-10": 1929,
-  "2023-11": 1561,
-  "2023-12": 1599,
-  "2024-01": 2026,
-  "2024-02": 1933,
-  "2024-03": 1742,
-  "2024-04": 1713,
-  "2024-05": 1820,
-  "2024-06": 1421,
-  "2024-07": 1656,
-  "2024-08": 1883,
-  "2024-09": 1745,
-  "2024-10": 1654,
-  "2024-11": 2727,
-  "2024-12": 1915,
-  "2025-01": 1193,
-  "2025-02": 911,
-  "2025-03": 1982,
-  "2025-04": 1186,
-  "2025-05": 1503,
-  "2025-06": 1743,
-  "2025-07": 2160,
-  "2025-08": 1666,
-  "2025-09": 1801,
-  "2025-10": 1227,
-  "2025-11": 1884,
-  "2025-12": 2280,
-  "2026-01": 1353,
-  "2026-02": 1783,
-  "2026-03": 2001,
-  "2026-04": 1685,
-  "2026-05": 1454,
-  "2026-06": 1557,
-  "2026-07": 1621,
-  "2026-08": 1456
+  "2021-06": 2471,
+  "2021-07": 1810,
+  "2021-08": 1571,
+  "2021-09": 1688,
+  "2021-10": 1727,
+  "2021-11": 1710,
+  "2021-12": 2150,
+  "2022-01": 2040,
+  "2022-02": 1696,
+  "2022-03": 2199,
+  "2022-04": 1666,
+  "2022-05": 1919,
+  "2022-06": 2366,
+  "2022-07": 1957,
+  "2022-08": 2121,
+  "2022-09": 2217,
+  "2022-10": 1601,
+  "2022-11": 1904,
+  "2022-12": 1744,
+  "2023-01": 1980,
+  "2023-02": 1854,
+  "2023-03": 2487,
+  "2023-04": 1904,
+  "2023-05": 2410,
+  "2023-06": 1972,
+  "2023-07": 1431,
+  "2023-08": 2463,
+  "2023-09": 2209,
+  "2023-10": 2312,
+  "2023-11": 2086,
+  "2023-12": 2049,
+  "2024-01": 2464,
+  "2024-02": 2435,
+  "2024-03": 2177,
+  "2024-04": 2092,
+  "2024-05": 2246,
+  "2024-06": 1787,
+  "2024-07": 2094,
+  "2024-08": 2362,
+  "2024-09": 2135,
+  "2024-10": 2071,
+  "2024-11": 3123,
+  "2024-12": 2370,
+  "2025-01": 1657,
+  "2025-02": 1279,
+  "2025-03": 2320,
+  "2025-04": 1606,
+  "2025-05": 1796,
+  "2025-06": 2129,
+  "2025-07": 2678,
+  "2025-08": 2088,
+  "2025-09": 2206,
+  "2025-10": 1808,
+  "2025-11": 2306,
+  "2025-12": 2787,
+  "2026-01": 1630,
+  "2026-02": 2206,
+  "2026-03": 2287,
+  "2026-04": 2168,
+  "2026-05": 1953,
+  "2026-06": 2138,
+  "2026-07": 2106,
+  "2026-08": 1802
  },
  "not_tracked": [
   {
@@ -7511,6 +7523,731 @@
    "requests": 112,
    "run_at": "2026-11-27T17:18:44+00:00",
    "start": "2026-11-24"
+  },
+  {
+   "end": "2026-11-30",
+   "items_found": 30599,
+   "items_new": 30599,
+   "kind": "backfill",
+   "reports": [
+    {
+     "agencies": {
+      "cfpb": "ok",
+      "dol": "ok",
+      "epa": "ok",
+      "fcc": "ok",
+      "fda": "ok",
+      "ferc": "ok",
+      "ftc": "ok",
+      "hhs": "ok",
+      "nlrb": "ok",
+      "sec": "ok"
+     },
+     "detail": "History 2015-03:",
+     "label": "Regulations.gov",
+     "source": "regulations_gov",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "cfpb": "ok",
+      "dol": "ok",
+      "epa": "ok",
+      "fcc": "ok",
+      "fda": "ok",
+      "ferc": "ok",
+      "ftc": "ok",
+      "hhs": "ok",
+      "nlrb": "ok",
+      "sec": "ok"
+     },
+     "detail": "History 2015-02:",
+     "label": "Regulations.gov",
+     "source": "regulations_gov",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "cfpb": "ok",
+      "dol": "ok",
+      "epa": "ok",
+      "fcc": "ok",
+      "fda": "ok",
+      "ferc": "ok",
+      "ftc": "ok",
+      "hhs": "ok",
+      "nlrb": "ok",
+      "sec": "ok"
+     },
+     "detail": "History 2015-01:",
+     "label": "Regulations.gov",
+     "source": "regulations_gov",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "fda": "ok"
+     },
+     "detail": "History 2026-11:",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "fda": "partial: More recalls than the per-run limit for: medical devices."
+     },
+     "detail": "History 2026-10: More recalls than the per-run limit for: medical devices.",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "partial"
+    },
+    {
+     "agencies": {
+      "fda": "ok"
+     },
+     "detail": "History 2026-09:",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "fda": "ok"
+     },
+     "detail": "History 2026-08:",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "fda": "ok"
+     },
+     "detail": "History 2026-07:",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "fda": "ok"
+     },
+     "detail": "History 2026-06:",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "fda": "ok"
+     },
+     "detail": "History 2026-05:",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "fda": "partial: More recalls than the per-run limit for: medical devices."
+     },
+     "detail": "History 2026-04: More recalls than the per-run limit for: medical devices.",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "partial"
+    },
+    {
+     "agencies": {
+      "fda": "ok"
+     },
+     "detail": "History 2026-03:",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "fda": "ok"
+     },
+     "detail": "History 2026-02:",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "fda": "ok"
+     },
+     "detail": "History 2026-01:",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "fda": "partial: More recalls than the per-run limit for: medical devices."
+     },
+     "detail": "History 2025-12: More recalls than the per-run limit for: medical devices.",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "partial"
+    },
+    {
+     "agencies": {
+      "fda": "ok"
+     },
+     "detail": "History 2025-11:",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "fda": "partial: More recalls than the per-run limit for: medical devices."
+     },
+     "detail": "History 2025-10: More recalls than the per-run limit for: medical devices.",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "partial"
+    },
+    {
+     "agencies": {
+      "fda": "ok"
+     },
+     "detail": "History 2025-09:",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "fda": "ok"
+     },
+     "detail": "History 2025-08:",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "fda": "ok"
+     },
+     "detail": "History 2025-07:",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "fda": "ok"
+     },
+     "detail": "History 2025-06:",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "fda": "ok"
+     },
+     "detail": "History 2025-05:",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "fda": "ok"
+     },
+     "detail": "History 2025-04:",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "fda": "ok"
+     },
+     "detail": "History 2025-03:",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "fda": "ok"
+     },
+     "detail": "History 2025-02:",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "fda": "partial: More recalls than the per-run limit for: medical devices."
+     },
+     "detail": "History 2025-01: More recalls than the per-run limit for: medical devices.",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "partial"
+    },
+    {
+     "agencies": {
+      "fda": "ok"
+     },
+     "detail": "History 2024-12:",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "fda": "ok"
+     },
+     "detail": "History 2024-11:",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "fda": "partial: More recalls than the per-run limit for: medical devices."
+     },
+     "detail": "History 2024-10: More recalls than the per-run limit for: medical devices.",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "partial"
+    },
+    {
+     "agencies": {
+      "fda": "partial: More recalls than the per-run limit for: medical devices."
+     },
+     "detail": "History 2024-09: More recalls than the per-run limit for: medical devices.",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "partial"
+    },
+    {
+     "agencies": {
+      "fda": "ok"
+     },
+     "detail": "History 2024-08:",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "fda": "ok"
+     },
+     "detail": "History 2024-07:",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "fda": "ok"
+     },
+     "detail": "History 2024-06:",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "fda": "partial: More recalls than the per-run limit for: medical devices."
+     },
+     "detail": "History 2024-05: More recalls than the per-run limit for: medical devices.",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "partial"
+    },
+    {
+     "agencies": {
+      "fda": "ok"
+     },
+     "detail": "History 2024-04:",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "fda": "ok"
+     },
+     "detail": "History 2024-03:",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "fda": "ok"
+     },
+     "detail": "History 2024-02:",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "fda": "ok"
+     },
+     "detail": "History 2024-01:",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "fda": "ok"
+     },
+     "detail": "History 2023-12:",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "fda": "partial: More recalls than the per-run limit for: medical devices."
+     },
+     "detail": "History 2023-11: More recalls than the per-run limit for: medical devices.",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "partial"
+    },
+    {
+     "agencies": {
+      "fda": "ok"
+     },
+     "detail": "History 2023-10:",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "fda": "ok"
+     },
+     "detail": "History 2023-09:",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "fda": "ok"
+     },
+     "detail": "History 2023-08:",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "fda": "partial: More recalls than the per-run limit for: medical devices."
+     },
+     "detail": "History 2023-07: More recalls than the per-run limit for: medical devices.",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "partial"
+    },
+    {
+     "agencies": {
+      "fda": "ok"
+     },
+     "detail": "History 2023-06:",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "fda": "ok"
+     },
+     "detail": "History 2023-05:",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "fda": "ok"
+     },
+     "detail": "History 2023-04:",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "fda": "partial: More recalls than the per-run limit for: food."
+     },
+     "detail": "History 2023-03: More recalls than the per-run limit for: food.",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "partial"
+    },
+    {
+     "agencies": {
+      "fda": "ok"
+     },
+     "detail": "History 2023-02:",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "fda": "ok"
+     },
+     "detail": "History 2023-01:",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "fda": "partial: More recalls than the per-run limit for: medical devices."
+     },
+     "detail": "History 2022-12: More recalls than the per-run limit for: medical devices.",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "partial"
+    },
+    {
+     "agencies": {
+      "fda": "ok"
+     },
+     "detail": "History 2022-11:",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "fda": "ok"
+     },
+     "detail": "History 2022-10:",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "fda": "ok"
+     },
+     "detail": "History 2022-09:",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "fda": "ok"
+     },
+     "detail": "History 2022-08:",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "fda": "ok"
+     },
+     "detail": "History 2022-07:",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "fda": "ok"
+     },
+     "detail": "History 2022-06:",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "fda": "ok"
+     },
+     "detail": "History 2022-05:",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "fda": "ok"
+     },
+     "detail": "History 2022-04:",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "fda": "ok"
+     },
+     "detail": "History 2022-03:",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "fda": "ok"
+     },
+     "detail": "History 2022-02:",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "fda": "ok"
+     },
+     "detail": "History 2022-01:",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "fda": "ok"
+     },
+     "detail": "History 2021-12:",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "fda": "ok"
+     },
+     "detail": "History 2021-11:",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "fda": "ok"
+     },
+     "detail": "History 2021-10:",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "fda": "ok"
+     },
+     "detail": "History 2021-09:",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "fda": "ok"
+     },
+     "detail": "History 2021-08:",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "fda": "ok"
+     },
+     "detail": "History 2021-07:",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "fda": "ok"
+     },
+     "detail": "History 2021-06:",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "ok"
+    }
+   ],
+   "requests": 280,
+   "run_at": "2026-11-27T17:31:10+00:00",
+   "start": "2015-01-01"
   }
  ],
  "schema": 3,
@@ -7650,5 +8387,5 @@
    "last_status": "ok"
   }
  },
- "updated_at": "2026-11-27T17:18:44+00:00"
+ "updated_at": "2026-11-27T17:31:10+00:00"
 }

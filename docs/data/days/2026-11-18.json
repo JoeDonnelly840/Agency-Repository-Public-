@@ -55,6 +55,54 @@
    "agencies": [
     "fda"
    ],
+   "category": "enforcement",
+   "corporation": null,
+   "date": "2026-11-12",
+   "date_basis": "classified",
+   "doc_type": "Recall enforcement report",
+   "first_seen": "2026-11-27T17:31:10+00:00",
+   "flags": [],
+   "id": "openfda:Z-0409-2027",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 2,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 3
+   },
+   "jurisdiction": "federal",
+   "outcome": "recall",
+   "priority": 0,
+   "published": "2026-11-18",
+   "rating": null,
+   "recall_class": "Class I",
+   "recall_initiator": "Voluntary: Firm initiated",
+   "routine": false,
+   "sanctions": [
+    "recall"
+   ],
+   "source": "openfda",
+   "source_label": "openFDA recall enforcement reports (medical devices)",
+   "subcategory": "Recall (Class I, medical devices)",
+   "subtype": "Class I",
+   "summary": "Class I. Voluntary: Firm initiated. Reason: The configured IPAP value is recorded and transmitted instead of the actual delivered inspiratory pressure when Targeted VT is enabled.",
+   "title": "3B Medical, Inc.: Luna G3 BPAP System  Model/Catalog Number: LG3800-30VT  Product Description: The Luna G3 BPAP System is a Bi-level PAP (Bi-level Positive Airway Pressure) devic…",
+   "url": "https://api.fda.gov/device/enforcement.json?search=recall_number:%22Z-0409-2027%22"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
    "category": "other",
    "comments_close": null,
    "corporation": null,
@@ -1164,6 +1212,342 @@
    "summary": "",
    "title": "Algonquin Gas Transmission, LLC; Notice of Application and Establishing Intervention Deadline",
    "url": "https://www.federalregister.gov/documents/2026/11/18/2026-23446/algonquin-gas-transmission-llc-notice-of-application-and-establishing-intervention-deadline"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "corporation": null,
+   "date": "2026-11-06",
+   "date_basis": "classified",
+   "doc_type": "Recall enforcement report",
+   "first_seen": "2026-11-27T17:31:10+00:00",
+   "flags": [],
+   "id": "openfda:Z-0366-2027",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 2,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 3
+   },
+   "jurisdiction": "federal",
+   "outcome": "recall",
+   "priority": 0,
+   "published": "2026-11-18",
+   "rating": null,
+   "recall_class": "Class II",
+   "recall_initiator": "Voluntary: Firm initiated",
+   "routine": false,
+   "sanctions": [
+    "recall"
+   ],
+   "source": "openfda",
+   "source_label": "openFDA recall enforcement reports (medical devices)",
+   "subcategory": "Recall (Class II, medical devices)",
+   "subtype": "Class II",
+   "summary": "Class II. Voluntary: Firm initiated. Reason: Muscle stimulator may deliver constant electrical impulses to all four electrodes simultaneously, instead of alternating between the electrodes as designed, which may cause muscle fatigue.",
+   "title": "Altivera Medical Inc.: Zynex Medical M-Wave, Model: 701200",
+   "url": "https://api.fda.gov/device/enforcement.json?search=recall_number:%22Z-0366-2027%22"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "corporation": null,
+   "date": "2026-11-12",
+   "date_basis": "classified",
+   "doc_type": "Recall enforcement report",
+   "first_seen": "2026-11-27T17:31:10+00:00",
+   "flags": [],
+   "id": "openfda:Z-0436-2027",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 2,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 3
+   },
+   "jurisdiction": "federal",
+   "outcome": "recall",
+   "priority": 0,
+   "published": "2026-11-18",
+   "rating": null,
+   "recall_class": "Class II",
+   "recall_initiator": "Voluntary: Firm initiated",
+   "routine": false,
+   "sanctions": [
+    "recall"
+   ],
+   "source": "openfda",
+   "source_label": "openFDA recall enforcement reports (medical devices)",
+   "subcategory": "Recall (Class II, medical devices)",
+   "subtype": "Class II",
+   "summary": "Class II. Voluntary: Firm initiated. Reason: Some NO calibration tanks may have been contaminated with O2 (from the air).",
+   "title": "Beyond Air Inc.: NO Calibration Gas Cylinder, 45ppm;  Model/Catalog Number: 80006;  Software Version: N/A - No firmware/software;  Product Description: Nitric Oxide Calibration …",
+   "url": "https://api.fda.gov/device/enforcement.json?search=recall_number:%22Z-0436-2027%22"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "corporation": null,
+   "date": "2026-11-09",
+   "date_basis": "classified",
+   "doc_type": "Recall enforcement report",
+   "first_seen": "2026-11-27T17:31:10+00:00",
+   "flags": [],
+   "id": "openfda:Z-0396-2027",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 2,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 3
+   },
+   "jurisdiction": "federal",
+   "outcome": "recall",
+   "priority": 0,
+   "published": "2026-11-18",
+   "rating": null,
+   "recall_class": "Class II",
+   "recall_initiator": "Voluntary: Firm initiated",
+   "routine": false,
+   "sanctions": [
+    "recall"
+   ],
+   "source": "openfda",
+   "source_label": "openFDA recall enforcement reports (medical devices)",
+   "subcategory": "Recall (Class II, medical devices)",
+   "subtype": "Class II",
+   "summary": "Class II. Voluntary: Firm initiated. Reason: Potential for the Rear Tip Extender (RTE) size contained within the package to differ from the size identified on the product labeling. Certain packages labeled as containing a 0.5 cm RTE may contain a 1.5 cm RTE.",
+   "title": "Boston Scientific Corporation: AMS 700 CX/LGX Rear Tip Extenders (RTEs), Snapcone, CX/LGX, 0.5 cm. UPN: 72404320.",
+   "url": "https://api.fda.gov/device/enforcement.json?search=recall_number:%22Z-0396-2027%22"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "corporation": null,
+   "date": "2026-11-06",
+   "date_basis": "classified",
+   "doc_type": "Recall enforcement report",
+   "first_seen": "2026-11-27T17:31:10+00:00",
+   "flags": [],
+   "id": "openfda:Z-0368-2027",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 2,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 3
+   },
+   "jurisdiction": "federal",
+   "outcome": "recall",
+   "priority": 0,
+   "published": "2026-11-18",
+   "rating": null,
+   "recall_class": "Class II",
+   "recall_initiator": "Voluntary: Firm initiated",
+   "routine": false,
+   "sanctions": [
+    "recall"
+   ],
+   "source": "openfda",
+   "source_label": "openFDA recall enforcement reports (medical devices)",
+   "subcategory": "Recall (Class II, medical devices)",
+   "subtype": "Class II",
+   "summary": "Class II. Voluntary: Firm initiated. Reason: Radiofrequency probes may have small cut marks on the Tyvek side of the sterile pouch, and if the sterile barrier is compromised and devices are used, this could cause microbial or other foreign material contamination to be introduced into patient tissue, which may lead to infection, pain, inflammation, allergic reaction, toxicity, the need for additional medical and/or surgical intervention.",
+   "title": "Boston Scientific Neuromodulation Corporation: TCD Electrodes (Description/REF(Inner/Outer)):  TCD Electrode, Multi-Pack, 3M Cable, 10cm x 28ga (0.36mm)/(TCD-10-3M/TCD-10-3M-P);  TCD Electrode, Multi-Pack, 1…",
+   "url": "https://api.fda.gov/device/enforcement.json?search=recall_number:%22Z-0368-2027%22"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "corporation": null,
+   "date": "2026-11-12",
+   "date_basis": "classified",
+   "doc_type": "Recall enforcement report",
+   "first_seen": "2026-11-27T17:31:10+00:00",
+   "flags": [],
+   "id": "openfda:H-0203-2027",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 2,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 3
+   },
+   "jurisdiction": "federal",
+   "outcome": "recall",
+   "priority": 0,
+   "published": "2026-11-18",
+   "rating": null,
+   "recall_class": "Class II",
+   "recall_initiator": "Voluntary: Firm initiated",
+   "routine": false,
+   "sanctions": [
+    "recall"
+   ],
+   "source": "openfda",
+   "source_label": "openFDA recall enforcement reports (food)",
+   "subcategory": "Recall (Class II, food)",
+   "subtype": "Class II",
+   "summary": "Class II. Voluntary: Firm initiated. Reason: Foreign material: plastic fiber",
+   "title": "Breath of Fresh Air PDX LLC: Ground Up Nut Butter Cups filled with Almond & Cashew Butter Dark Chocolate Two Pack. Net wt. 1.9oz.  Each paper box consists two cups wrapped in one sealed cel…",
+   "url": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22H-0203-2027%22"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "corporation": null,
+   "date": "2026-11-06",
+   "date_basis": "classified",
+   "doc_type": "Recall enforcement report",
+   "first_seen": "2026-11-27T17:31:10+00:00",
+   "flags": [],
+   "id": "openfda:Z-0330-2027",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 2,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 3
+   },
+   "jurisdiction": "federal",
+   "outcome": "recall",
+   "priority": 0,
+   "published": "2026-11-18",
+   "rating": null,
+   "recall_class": "Class I",
+   "recall_initiator": "Voluntary: Firm initiated",
+   "routine": false,
+   "sanctions": [
+    "recall"
+   ],
+   "source": "openfda",
+   "source_label": "openFDA recall enforcement reports (medical devices)",
+   "subcategory": "Recall (Class I, medical devices)",
+   "subtype": "Class I",
+   "summary": "Class I. Voluntary: Firm initiated. Reason: Notification of performance disclosures of kit component.",
+   "title": "Cardinal Health 200, LLC: Cardinal Health Presource PBDS kits, Containing BD Alaris Pump Infusion Sets used with BD Alaris Pump Module Model 8100,labeled as:    1) LDR,MUSC,KIT          …",
+   "url": "https://api.fda.gov/device/enforcement.json?search=recall_number:%22Z-0330-2027%22"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "corporation": null,
+   "date": "2026-11-06",
+   "date_basis": "classified",
+   "doc_type": "Recall enforcement report",
+   "first_seen": "2026-11-27T17:31:10+00:00",
+   "flags": [],
+   "id": "openfda:Z-0329-2027",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 2,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 3
+   },
+   "jurisdiction": "federal",
+   "outcome": "recall",
+   "priority": 0,
+   "published": "2026-11-18",
+   "rating": null,
+   "recall_class": "Class I",
+   "recall_initiator": "Voluntary: Firm initiated",
+   "routine": false,
+   "sanctions": [
+    "recall"
+   ],
+   "source": "openfda",
+   "source_label": "openFDA recall enforcement reports (medical devices)",
+   "subcategory": "Recall (Class I, medical devices)",
+   "subtype": "Class I",
+   "summary": "Class I. Voluntary: Firm initiated. Reason: Notification of performance disclosures of kit component.",
+   "title": "Cardinal Health 200, LLC: Cardinal Health Presource PBDS kits, Containing BD Alaris Pump Infusion Sets used with BD Alaris Pump Module Model 8100,labeled as:   1) OPEN HEART A,B,C, KIT  …",
+   "url": "https://api.fda.gov/device/enforcement.json?search=recall_number:%22Z-0329-2027%22"
   },
   {
    "action": "Notice.",
@@ -2792,6 +3176,102 @@
    "url": "https://www.federalregister.gov/documents/2026/11/18/2026-23488/correction-job-corps-health-questionnaire-omb-no-1205-0033"
   },
   {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "corporation": null,
+   "date": "2026-11-09",
+   "date_basis": "classified",
+   "doc_type": "Recall enforcement report",
+   "first_seen": "2026-11-27T17:31:10+00:00",
+   "flags": [],
+   "id": "openfda:H-0200-2027",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 2,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 3
+   },
+   "jurisdiction": "federal",
+   "outcome": "recall",
+   "priority": 0,
+   "published": "2026-11-18",
+   "rating": null,
+   "recall_class": "Class I",
+   "recall_initiator": "Voluntary: Firm initiated",
+   "routine": false,
+   "sanctions": [
+    "recall"
+   ],
+   "source": "openfda",
+   "source_label": "openFDA recall enforcement reports (food)",
+   "subcategory": "Recall (Class I, food)",
+   "subtype": "Class I",
+   "summary": "Class I. Voluntary: Firm initiated. Reason: Products contain seed recalled from the supplier and may be contaminated with E. coli and/or Salmonella",
+   "title": "Country Creek LLC: Country Creek Acres Alfalfa Sprout Seeds packed in a clear and silver poly bag, 16 oz, with a white adhesive label and green, yellow and blue lettering, packed …",
+   "url": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22H-0200-2027%22"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "corporation": null,
+   "date": "2026-11-09",
+   "date_basis": "classified",
+   "doc_type": "Recall enforcement report",
+   "first_seen": "2026-11-27T17:31:10+00:00",
+   "flags": [],
+   "id": "openfda:H-0198-2027",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 2,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 3
+   },
+   "jurisdiction": "federal",
+   "outcome": "recall",
+   "priority": 0,
+   "published": "2026-11-18",
+   "rating": null,
+   "recall_class": "Class I",
+   "recall_initiator": "FDA Mandated",
+   "routine": false,
+   "sanctions": [
+    "recall"
+   ],
+   "source": "openfda",
+   "source_label": "openFDA recall enforcement reports (food)",
+   "subcategory": "Recall (Class I, food)",
+   "subtype": "Class I",
+   "summary": "Class I. FDA Mandated. Reason: May be contaminated with Clostridium botulinum",
+   "title": "D & M Smoked Fish, Inc.: Cold Smoked Sprats, 5 lbs.",
+   "url": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22H-0198-2027%22"
+  },
+  {
    "action": "Notice.",
    "agencies": [
     "fda"
@@ -2841,6 +3321,102 @@
    "summary": "The Food and Drug Administration (FDA, Agency, or we) has determined that BROMFED-DM (brompheniramine maleate; dextromethorphan hydrobromide; pseudoephedrine hydrochloride) syrup, 2 milligrams (mg)/5 milliliters (mL); 10 mg/5 mL; 30 mg/5 mL, was not withdrawn from sale for reasons of safety or effectiveness. This determination means that FDA will not begin procedures to withdraw approval of abbreviated new drug applications (ANDAs) that refer to this drug product, and it will allow FDA to continue to approve ANDAs that refer to the product as long as they meet relevant legal and regulatory requirements.",
    "title": "Determination That BROMFED-DM (Brompheniramine Maleate; Dextromethorphan Hydrobromide; Pseudoephedrine Hydrochloride) Syrup, 2 Milligrams/5 Milliliters; 10 Milligrams/5 Milliliters; 30 Milligrams/5 Milliliters, Was Not Withdrawn From Sale for Reasons of Safety or Effectiveness",
    "url": "https://www.federalregister.gov/documents/2026/11/18/2026-23414/determination-that-bromfed-dm-brompheniramine-maleate-dextromethorphan-hydrobromide-pseudoephedrine"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "corporation": null,
+   "date": "2026-11-10",
+   "date_basis": "classified",
+   "doc_type": "Recall enforcement report",
+   "first_seen": "2026-11-27T17:31:10+00:00",
+   "flags": [],
+   "id": "openfda:Z-0411-2027",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 2,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 3
+   },
+   "jurisdiction": "federal",
+   "outcome": "recall",
+   "priority": 0,
+   "published": "2026-11-18",
+   "rating": null,
+   "recall_class": "Class II",
+   "recall_initiator": "Voluntary: Firm initiated",
+   "routine": false,
+   "sanctions": [
+    "recall"
+   ],
+   "source": "openfda",
+   "source_label": "openFDA recall enforcement reports (medical devices)",
+   "subcategory": "Recall (Class II, medical devices)",
+   "subtype": "Class II",
+   "summary": "Class II. Voluntary: Firm initiated. Reason: Driver bit included in fusion Screw System may fracture or break during use resulting in intraoperative delay.",
+   "title": "Dev4: Eleganz Fusion Screw System , 1.8mm (Cannulated), Short  REF: DI-2001",
+   "url": "https://api.fda.gov/device/enforcement.json?search=recall_number:%22Z-0411-2027%22"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "corporation": null,
+   "date": "2026-11-10",
+   "date_basis": "classified",
+   "doc_type": "Recall enforcement report",
+   "first_seen": "2026-11-27T17:31:10+00:00",
+   "flags": [],
+   "id": "openfda:Z-0412-2027",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 2,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 3
+   },
+   "jurisdiction": "federal",
+   "outcome": "recall",
+   "priority": 0,
+   "published": "2026-11-18",
+   "rating": null,
+   "recall_class": "Class II",
+   "recall_initiator": "Voluntary: Firm initiated",
+   "routine": false,
+   "sanctions": [
+    "recall"
+   ],
+   "source": "openfda",
+   "source_label": "openFDA recall enforcement reports (medical devices)",
+   "subcategory": "Recall (Class II, medical devices)",
+   "subtype": "Class II",
+   "summary": "Class II. Voluntary: Firm initiated. Reason: Driver bit included in fusion Screw System may fracture or break during use resulting in intraoperative delay.",
+   "title": "Dev4: Eleganz Fusion Screw System, 1.8mm Cannulated Drill, Long  REF: DI-2004",
+   "url": "https://api.fda.gov/device/enforcement.json?search=recall_number:%22Z-0412-2027%22"
   },
   {
    "action": "Request for public comments.",
@@ -3078,6 +3654,582 @@
    "withdrawn": false
   },
   {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "corporation": null,
+   "date": "2026-11-09",
+   "date_basis": "classified",
+   "doc_type": "Recall enforcement report",
+   "first_seen": "2026-11-27T17:31:10+00:00",
+   "flags": [],
+   "id": "openfda:H-0199-2027",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 2,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 3
+   },
+   "jurisdiction": "federal",
+   "outcome": "recall",
+   "priority": 0,
+   "published": "2026-11-18",
+   "rating": null,
+   "recall_class": "Class I",
+   "recall_initiator": "Voluntary: Firm initiated",
+   "routine": false,
+   "sanctions": [
+    "recall"
+   ],
+   "source": "openfda",
+   "source_label": "openFDA recall enforcement reports (food)",
+   "subcategory": "Recall (Class I, food)",
+   "subtype": "Class I",
+   "summary": "Class I. Voluntary: Firm initiated. Reason: Potential E. coli and Salmonella contamination",
+   "title": "Francisco Family Foods: Alfalfa Sprouts hydroponically grown. 4oz Alfalfa Sprouts were packaged in zip lock style bag and 1lb Alfalfa Sprouts were packaged in gusseted plastic bag. Pro…",
+   "url": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22H-0199-2027%22"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "corporation": null,
+   "date": "2026-11-23",
+   "date_basis": "classified",
+   "doc_type": "Recall enforcement report",
+   "first_seen": "2026-11-27T17:31:10+00:00",
+   "flags": [],
+   "id": "openfda:H-0229-2027",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 2,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 3
+   },
+   "jurisdiction": "federal",
+   "outcome": "recall",
+   "priority": 0,
+   "published": "2026-11-18",
+   "rating": null,
+   "recall_class": "Class I",
+   "recall_initiator": "Voluntary: Firm initiated",
+   "routine": false,
+   "sanctions": [
+    "recall"
+   ],
+   "source": "openfda",
+   "source_label": "openFDA recall enforcement reports (food)",
+   "subcategory": "Recall (Class I, food)",
+   "subtype": "Class I",
+   "summary": "Class I. Voluntary: Firm initiated. Reason: Possible Listeria monocytogenes contamination.",
+   "title": "Fresh & Ready Foods LLC: Fresh To You Sausage, Egg & Cheese Biscuit Sandwich, net weight. 4.6 oz (131g). Refrigerated breakfast sandwich sold to the general population, packaging is fle…",
+   "url": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22H-0229-2027%22"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "corporation": null,
+   "date": "2026-11-12",
+   "date_basis": "classified",
+   "doc_type": "Recall enforcement report",
+   "first_seen": "2026-11-27T17:31:10+00:00",
+   "flags": [],
+   "id": "openfda:Z-0305-2027",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 2,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 3
+   },
+   "jurisdiction": "federal",
+   "outcome": "recall",
+   "priority": 0,
+   "published": "2026-11-18",
+   "rating": null,
+   "recall_class": "Class II",
+   "recall_initiator": "FDA Mandated",
+   "routine": false,
+   "sanctions": [
+    "recall"
+   ],
+   "source": "openfda",
+   "source_label": "openFDA recall enforcement reports (medical devices)",
+   "subcategory": "Recall (Class II, medical devices)",
+   "subtype": "Class II",
+   "summary": "Class II. FDA Mandated. Reason: The rear service/maintenance doors of certain  early CMH1530-C-A laser cutting machines were fitted only with key-operated mechanical locks  and were not equipped with laser safety interlock devices.",
+   "title": "GD HAN'S YUEMING LASER GROUP CO. LTD.: Product Series: CMH Series  Main Model Involved: CMH1530-C-A  Laser Power Range: 1.5-6 kW",
+   "url": "https://api.fda.gov/device/enforcement.json?search=recall_number:%22Z-0305-2027%22"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "corporation": null,
+   "date": "2026-11-12",
+   "date_basis": "classified",
+   "doc_type": "Recall enforcement report",
+   "first_seen": "2026-11-27T17:31:10+00:00",
+   "flags": [],
+   "id": "openfda:Z-0434-2027",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 2,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 3
+   },
+   "jurisdiction": "federal",
+   "outcome": "recall",
+   "priority": 0,
+   "published": "2026-11-18",
+   "rating": null,
+   "recall_class": "Class II",
+   "recall_initiator": "Voluntary: Firm initiated",
+   "routine": false,
+   "sanctions": [
+    "recall"
+   ],
+   "source": "openfda",
+   "source_label": "openFDA recall enforcement reports (medical devices)",
+   "subcategory": "Recall (Class II, medical devices)",
+   "subtype": "Class II",
+   "summary": "Class II. Voluntary: Firm initiated. Reason: Certain protocols can produce incorrect elevated measurements of liver stiffness. These incorrect measurements could contribute to inappropriate clinical management decisions.",
+   "title": "GE Medical Systems, LLC: 1.5T SIGNA Artist, whole body magnetic resonance scanner, System ID 585214MRAO",
+   "url": "https://api.fda.gov/device/enforcement.json?search=recall_number:%22Z-0434-2027%22"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "corporation": null,
+   "date": "2026-11-12",
+   "date_basis": "classified",
+   "doc_type": "Recall enforcement report",
+   "first_seen": "2026-11-27T17:31:10+00:00",
+   "flags": [],
+   "id": "openfda:Z-0435-2027",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 2,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 3
+   },
+   "jurisdiction": "federal",
+   "outcome": "recall",
+   "priority": 0,
+   "published": "2026-11-18",
+   "rating": null,
+   "recall_class": "Class II",
+   "recall_initiator": "Voluntary: Firm initiated",
+   "routine": false,
+   "sanctions": [
+    "recall"
+   ],
+   "source": "openfda",
+   "source_label": "openFDA recall enforcement reports (medical devices)",
+   "subcategory": "Recall (Class II, medical devices)",
+   "subtype": "Class II",
+   "summary": "Class II. Voluntary: Firm initiated. Reason: Certain protocols can produce incorrect elevated measurements of liver stiffness. These incorrect measurements could contribute to inappropriate clinical management decisions.",
+   "title": "GE Medical Systems, LLC: 3.0T SIGNA Architect, whole body magnetic resonance scanner, System ID 905684MR3T",
+   "url": "https://api.fda.gov/device/enforcement.json?search=recall_number:%22Z-0435-2027%22"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "corporation": null,
+   "date": "2026-11-12",
+   "date_basis": "classified",
+   "doc_type": "Recall enforcement report",
+   "first_seen": "2026-11-27T17:31:10+00:00",
+   "flags": [],
+   "id": "openfda:Z-0423-2027",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 2,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 3
+   },
+   "jurisdiction": "federal",
+   "outcome": "recall",
+   "priority": 0,
+   "published": "2026-11-18",
+   "rating": null,
+   "recall_class": "Class II",
+   "recall_initiator": "",
+   "routine": false,
+   "sanctions": [
+    "recall"
+   ],
+   "source": "openfda",
+   "source_label": "openFDA recall enforcement reports (medical devices)",
+   "subcategory": "Recall (Class II, medical devices)",
+   "subtype": "Class II",
+   "summary": "Class II. . Reason: A nonconformance was identified for systems manufactured from December 2024 to January 2025 that were shipped without the validated VGA cables. Some installations were completed using VGA cables that may not meet Hologic s applicable performance and safety standards for this system.",
+   "title": "Hologic, Inc: Horizon QDR X-Ray Bone Densitometer;  Models: 1. Horizon W, 2. Horizon-WI;",
+   "url": "https://api.fda.gov/device/enforcement.json?search=recall_number:%22Z-0423-2027%22"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "corporation": null,
+   "date": "2026-11-19",
+   "date_basis": "classified",
+   "doc_type": "Recall enforcement report",
+   "first_seen": "2026-11-27T17:31:10+00:00",
+   "flags": [],
+   "id": "openfda:D-0189-2027",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 2,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 3
+   },
+   "jurisdiction": "federal",
+   "outcome": "recall",
+   "priority": 0,
+   "published": "2026-11-18",
+   "rating": null,
+   "recall_class": "Class I",
+   "recall_initiator": "Voluntary: Firm initiated",
+   "routine": false,
+   "sanctions": [
+    "recall"
+   ],
+   "source": "openfda",
+   "source_label": "openFDA recall enforcement reports (drugs)",
+   "subcategory": "Recall (Class I, drugs)",
+   "subtype": "Class I",
+   "summary": "Class I. Voluntary: Firm initiated. Reason: Marketed without approved NDA/ANDA- FDA laboratory analysis found product to be tainted with undeclared ingredients: Dexamethasone, Diclofenac and Omeprazole.",
+   "title": "IBeautiStore.com: UMARY Acido Hialuronico, also known as: \"New Hyaluronic Acid 850mg Sealed 30 Caps\", Suplemento Alimenticio, Contenido Neto: 30 capletas de 850 mg.",
+   "url": "https://api.fda.gov/drug/enforcement.json?search=recall_number:%22D-0189-2027%22"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "corporation": null,
+   "date": "2026-11-12",
+   "date_basis": "classified",
+   "doc_type": "Recall enforcement report",
+   "first_seen": "2026-11-27T17:31:10+00:00",
+   "flags": [],
+   "id": "openfda:Z-0445-2027",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 2,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 3
+   },
+   "jurisdiction": "federal",
+   "outcome": "recall",
+   "priority": 0,
+   "published": "2026-11-18",
+   "rating": null,
+   "recall_class": "Class II",
+   "recall_initiator": "Voluntary: Firm initiated",
+   "routine": false,
+   "sanctions": [
+    "recall"
+   ],
+   "source": "openfda",
+   "source_label": "openFDA recall enforcement reports (medical devices)",
+   "subcategory": "Recall (Class II, medical devices)",
+   "subtype": "Class II",
+   "summary": "Class II. Voluntary: Firm initiated. Reason: Operating suite contains TruSystem Surgical Tables which are being recalled by Baxter.",
+   "title": "IMRIS Imaging Inc: IMRIS Operating Suite InVision 1.5T Operating Suite, Model Number: 12111-000, IMRIS  Product Description ORT400 Table, IMRIS Part Number 119900-000; medical sca…",
+   "url": "https://api.fda.gov/device/enforcement.json?search=recall_number:%22Z-0445-2027%22"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "corporation": null,
+   "date": "2026-11-12",
+   "date_basis": "classified",
+   "doc_type": "Recall enforcement report",
+   "first_seen": "2026-11-27T17:31:10+00:00",
+   "flags": [],
+   "id": "openfda:Z-0444-2027",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 2,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 3
+   },
+   "jurisdiction": "federal",
+   "outcome": "recall",
+   "priority": 0,
+   "published": "2026-11-18",
+   "rating": null,
+   "recall_class": "Class II",
+   "recall_initiator": "Voluntary: Firm initiated",
+   "routine": false,
+   "sanctions": [
+    "recall"
+   ],
+   "source": "openfda",
+   "source_label": "openFDA recall enforcement reports (medical devices)",
+   "subcategory": "Recall (Class II, medical devices)",
+   "subtype": "Class II",
+   "summary": "Class II. Voluntary: Firm initiated. Reason: Operating suite contains TruSystem Surgical Tables which are being recalled by Baxter.",
+   "title": "IMRIS Imaging Inc: IMRIS Operating Suite InVision 3T Operating Suite, Model Number: 120823-000, IMRIS  Product Description ORT400 Table, IMRIS Part Number 119900-000; medical scan…",
+   "url": "https://api.fda.gov/device/enforcement.json?search=recall_number:%22Z-0444-2027%22"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "corporation": null,
+   "date": "2026-11-12",
+   "date_basis": "classified",
+   "doc_type": "Recall enforcement report",
+   "first_seen": "2026-11-27T17:31:10+00:00",
+   "flags": [],
+   "id": "openfda:Z-0442-2027",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 2,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 3
+   },
+   "jurisdiction": "federal",
+   "outcome": "recall",
+   "priority": 0,
+   "published": "2026-11-18",
+   "rating": null,
+   "recall_class": "Class II",
+   "recall_initiator": "Voluntary: Firm initiated",
+   "routine": false,
+   "sanctions": [
+    "recall"
+   ],
+   "source": "openfda",
+   "source_label": "openFDA recall enforcement reports (medical devices)",
+   "subcategory": "Recall (Class II, medical devices)",
+   "subtype": "Class II",
+   "summary": "Class II. Voluntary: Firm initiated. Reason: Operating suite contains TruSystem Surgical Tables which are being recalled by Baxter.",
+   "title": "IMRIS Imaging Inc: IMRIS Operating Suite Neuro III-SV, Model Number: 116189-000, IMRIS  Product Description ORT400 Table, IMRIS Part Number 119900-000; medical scanner",
+   "url": "https://api.fda.gov/device/enforcement.json?search=recall_number:%22Z-0442-2027%22"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "corporation": null,
+   "date": "2026-11-12",
+   "date_basis": "classified",
+   "doc_type": "Recall enforcement report",
+   "first_seen": "2026-11-27T17:31:10+00:00",
+   "flags": [],
+   "id": "openfda:Z-0443-2027",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 2,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 3
+   },
+   "jurisdiction": "federal",
+   "outcome": "recall",
+   "priority": 0,
+   "published": "2026-11-18",
+   "rating": null,
+   "recall_class": "Class II",
+   "recall_initiator": "Voluntary: Firm initiated",
+   "routine": false,
+   "sanctions": [
+    "recall"
+   ],
+   "source": "openfda",
+   "source_label": "openFDA recall enforcement reports (medical devices)",
+   "subcategory": "Recall (Class II, medical devices)",
+   "subtype": "Class II",
+   "summary": "Class II. Voluntary: Firm initiated. Reason: Operating suite contains TruSystem Surgical Tables which are being recalled by Baxter.",
+   "title": "IMRIS Imaging Inc: IMRIS Operating Suite iMRI 3T S, Model Number 116118-000, IMRIS  Product Description ORT400 Table, IMRIS Part Number 119900-000; Floor System, Skyra Magnet; sca…",
+   "url": "https://api.fda.gov/device/enforcement.json?search=recall_number:%22Z-0443-2027%22"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "corporation": null,
+   "date": "2026-11-12",
+   "date_basis": "classified",
+   "doc_type": "Recall enforcement report",
+   "first_seen": "2026-11-27T17:31:10+00:00",
+   "flags": [],
+   "id": "openfda:Z-0441-2027",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 2,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 3
+   },
+   "jurisdiction": "federal",
+   "outcome": "recall",
+   "priority": 0,
+   "published": "2026-11-18",
+   "rating": null,
+   "recall_class": "Class II",
+   "recall_initiator": "Voluntary: Firm initiated",
+   "routine": false,
+   "sanctions": [
+    "recall"
+   ],
+   "source": "openfda",
+   "source_label": "openFDA recall enforcement reports (medical devices)",
+   "subcategory": "Recall (Class II, medical devices)",
+   "subtype": "Class II",
+   "summary": "Class II. Voluntary: Firm initiated. Reason: Operating suite contains TruSystem Surgical Tables which are being recalled by Baxter.",
+   "title": "IMRIS Imaging Inc: IMRIS Operating Suite iMRX System, Model Number 105828-000, IMRIS  Product Description ORT400 Table, IMRIS Part Number 119900-000; electromechanical operating t…",
+   "url": "https://api.fda.gov/device/enforcement.json?search=recall_number:%22Z-0441-2027%22"
+  },
+  {
    "action": "Notice; request for comments.",
    "agencies": [
     "fcc"
@@ -3182,6 +4334,54 @@
   {
    "action": "",
    "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "corporation": null,
+   "date": "2026-11-10",
+   "date_basis": "classified",
+   "doc_type": "Recall enforcement report",
+   "first_seen": "2026-11-27T17:31:10+00:00",
+   "flags": [],
+   "id": "openfda:H-0201-2027",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 2,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 3
+   },
+   "jurisdiction": "federal",
+   "outcome": "recall",
+   "priority": 0,
+   "published": "2026-11-18",
+   "rating": null,
+   "recall_class": "Class II",
+   "recall_initiator": "Voluntary: Firm initiated",
+   "routine": false,
+   "sanctions": [
+    "recall"
+   ],
+   "source": "openfda",
+   "source_label": "openFDA recall enforcement reports (food)",
+   "subcategory": "Recall (Class II, food)",
+   "subtype": "Class II",
+   "summary": "Class II. Voluntary: Firm initiated. Reason: Undeclared Yellow#5",
+   "title": "J F C International Inc: NAGAI SOYEAT GREEN branded soy paper wrap; 10- 2.5OZ containers in vacuumed sealed containers.  UPC: 0 11152 64246 8",
+   "url": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22H-0201-2027%22"
+  },
+  {
+   "action": "",
+   "agencies": [
     "sec"
    ],
    "category": "enforcement",
@@ -3221,6 +4421,198 @@
   {
    "action": "",
    "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "corporation": null,
+   "date": "2026-11-12",
+   "date_basis": "classified",
+   "doc_type": "Recall enforcement report",
+   "first_seen": "2026-11-27T17:31:10+00:00",
+   "flags": [],
+   "id": "openfda:Z-0425-2027",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 2,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 3
+   },
+   "jurisdiction": "federal",
+   "outcome": "recall",
+   "priority": 0,
+   "published": "2026-11-18",
+   "rating": null,
+   "recall_class": "Class II",
+   "recall_initiator": "Voluntary: Firm initiated",
+   "routine": false,
+   "sanctions": [
+    "recall"
+   ],
+   "source": "openfda",
+   "source_label": "openFDA recall enforcement reports (medical devices)",
+   "subcategory": "Recall (Class II, medical devices)",
+   "subtype": "Class II",
+   "summary": "Class II. Voluntary: Firm initiated. Reason: Some resin cartridges may have been filled without Part B resin. If an affected cartridge is used, the resin may look discolored when dispensed or after post-curing and printed parts may be less flexible and durable.",
+   "title": "Keystone Industries - Myerstown: FP3D Dark Veined;  Model/Catalog Number: 4220442  Product Description: The FP3D is designed for additive manufacturing on Carbon 3D printers (wavelength = 385 n…",
+   "url": "https://api.fda.gov/device/enforcement.json?search=recall_number:%22Z-0425-2027%22"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "corporation": null,
+   "date": "2026-11-12",
+   "date_basis": "classified",
+   "doc_type": "Recall enforcement report",
+   "first_seen": "2026-11-27T17:31:10+00:00",
+   "flags": [],
+   "id": "openfda:Z-0424-2027",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 2,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 3
+   },
+   "jurisdiction": "federal",
+   "outcome": "recall",
+   "priority": 0,
+   "published": "2026-11-18",
+   "rating": null,
+   "recall_class": "Class II",
+   "recall_initiator": "Voluntary: Firm initiated",
+   "routine": false,
+   "sanctions": [
+    "recall"
+   ],
+   "source": "openfda",
+   "source_label": "openFDA recall enforcement reports (medical devices)",
+   "subcategory": "Recall (Class II, medical devices)",
+   "subtype": "Class II",
+   "summary": "Class II. Voluntary: Firm initiated. Reason: Some resin cartridges may have been filled without Part B resin. If an affected cartridge is used, the resin may look discolored when dispensed or after post-curing and printed parts may be less flexible and durable.",
+   "title": "Keystone Industries - Myerstown: FP3D Light Reddish Pink;  Model/Catalog Number: 4230441;  Product Description: The FP3D is designed for additive manufacturing on Carbon 3D printers (wavelength…",
+   "url": "https://api.fda.gov/device/enforcement.json?search=recall_number:%22Z-0424-2027%22"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "corporation": null,
+   "date": "2026-11-12",
+   "date_basis": "classified",
+   "doc_type": "Recall enforcement report",
+   "first_seen": "2026-11-27T17:31:10+00:00",
+   "flags": [],
+   "id": "openfda:Z-0427-2027",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 2,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 3
+   },
+   "jurisdiction": "federal",
+   "outcome": "recall",
+   "priority": 0,
+   "published": "2026-11-18",
+   "rating": null,
+   "recall_class": "Class II",
+   "recall_initiator": "Voluntary: Firm initiated",
+   "routine": false,
+   "sanctions": [
+    "recall"
+   ],
+   "source": "openfda",
+   "source_label": "openFDA recall enforcement reports (medical devices)",
+   "subcategory": "Recall (Class II, medical devices)",
+   "subtype": "Class II",
+   "summary": "Class II. Voluntary: Firm initiated. Reason: Some resin cartridges may have been filled without Part B resin. If an affected cartridge is used, the resin may look discolored when dispensed or after post-curing and printed parts may be less flexible and durable.",
+   "title": "Keystone Industries - Myerstown: FP3D Original Opaque;  Model/Catalog Number: 4220443;  Product Description: The FP3D is designed for additive manufacturing on Carbon 3D printers (wavelength = …",
+   "url": "https://api.fda.gov/device/enforcement.json?search=recall_number:%22Z-0427-2027%22"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "corporation": null,
+   "date": "2026-11-12",
+   "date_basis": "classified",
+   "doc_type": "Recall enforcement report",
+   "first_seen": "2026-11-27T17:31:10+00:00",
+   "flags": [],
+   "id": "openfda:Z-0426-2027",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 2,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 3
+   },
+   "jurisdiction": "federal",
+   "outcome": "recall",
+   "priority": 0,
+   "published": "2026-11-18",
+   "rating": null,
+   "recall_class": "Class II",
+   "recall_initiator": "Voluntary: Firm initiated",
+   "routine": false,
+   "sanctions": [
+    "recall"
+   ],
+   "source": "openfda",
+   "source_label": "openFDA recall enforcement reports (medical devices)",
+   "subcategory": "Recall (Class II, medical devices)",
+   "subtype": "Class II",
+   "summary": "Class II. Voluntary: Firm initiated. Reason: Some resin cartridges may have been filled without Part B resin. If an affected cartridge is used, the resin may look discolored when dispensed or after post-curing and printed parts may be less flexible and durable.",
+   "title": "Keystone Industries - Myerstown: FP3D Original Pink;  Model/Catalog Number: 4220440;  Product Description: The FP3D is designed for additive manufacturing on Carbon 3D printers (wavelength = 38…",
+   "url": "https://api.fda.gov/device/enforcement.json?search=recall_number:%22Z-0426-2027%22"
+  },
+  {
+   "action": "",
+   "agencies": [
     "sec"
    ],
    "category": "enforcement",
@@ -3256,6 +4648,822 @@
    "summary": "",
    "title": "Krish Kumar",
    "url": "https://www.sec.gov/enforcement-litigation/litigation-releases/lr-26686"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "corporation": null,
+   "date": "2026-11-12",
+   "date_basis": "classified",
+   "doc_type": "Recall enforcement report",
+   "first_seen": "2026-11-27T17:31:10+00:00",
+   "flags": [],
+   "id": "openfda:H-0205-2027",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 2,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 3
+   },
+   "jurisdiction": "federal",
+   "outcome": "recall",
+   "priority": 0,
+   "published": "2026-11-18",
+   "rating": null,
+   "recall_class": "Class II",
+   "recall_initiator": "Voluntary: Firm initiated",
+   "routine": false,
+   "sanctions": [
+    "recall"
+   ],
+   "source": "openfda",
+   "source_label": "openFDA recall enforcement reports (food)",
+   "subcategory": "Recall (Class II, food)",
+   "subtype": "Class II",
+   "summary": "Class II. Voluntary: Firm initiated. Reason: Contains undeclared color (FD&C Yellow 5)",
+   "title": "Mana Bakery: Mana Bakery Peperecha, 8 oz., with UPC: 8-5000973405-1.",
+   "url": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22H-0205-2027%22"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "corporation": null,
+   "date": "2026-11-12",
+   "date_basis": "classified",
+   "doc_type": "Recall enforcement report",
+   "first_seen": "2026-11-27T17:31:10+00:00",
+   "flags": [],
+   "id": "openfda:Z-0433-2027",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 2,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 3
+   },
+   "jurisdiction": "federal",
+   "outcome": "recall",
+   "priority": 0,
+   "published": "2026-11-18",
+   "rating": null,
+   "recall_class": "Class II",
+   "recall_initiator": "Voluntary: Firm initiated",
+   "routine": false,
+   "sanctions": [
+    "recall"
+   ],
+   "source": "openfda",
+   "source_label": "openFDA recall enforcement reports (medical devices)",
+   "subcategory": "Recall (Class II, medical devices)",
+   "subtype": "Class II",
+   "summary": "Class II. Voluntary: Firm initiated. Reason: Plate is incorrectly bent",
+   "title": "Medartis AG: APTUS 1.2/1.5 TriLock Scaph.Pl 3x2H Large,t0.8, Model/Catalog Number: A-4350.81; APTUS fixation systems are intended for temporary fixation, correction or stabi…",
+   "url": "https://api.fda.gov/device/enforcement.json?search=recall_number:%22Z-0433-2027%22"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "corporation": null,
+   "date": "2026-11-10",
+   "date_basis": "classified",
+   "doc_type": "Recall enforcement report",
+   "first_seen": "2026-11-27T17:31:10+00:00",
+   "flags": [],
+   "id": "openfda:Z-0416-2027",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 2,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 3
+   },
+   "jurisdiction": "federal",
+   "outcome": "recall",
+   "priority": 0,
+   "published": "2026-11-18",
+   "rating": null,
+   "recall_class": "Class II",
+   "recall_initiator": "Voluntary: Firm initiated",
+   "routine": false,
+   "sanctions": [
+    "recall"
+   ],
+   "source": "openfda",
+   "source_label": "openFDA recall enforcement reports (medical devices)",
+   "subcategory": "Recall (Class II, medical devices)",
+   "subtype": "Class II",
+   "summary": "Class II. Voluntary: Firm initiated. Reason: Convenience kits contain additional product codes and lots of recalled CliniClean Pericare Wipes identified by manufacturer. Wipes may be contaminated with a lubricant used in the manufacturing process. Use of affected wipes may cause localized skin effects such as irritation, erythema, or mild inflammation. Failure to perform pericare may increase the risk of localized infection or catheter-associated urinary tract infection.",
+   "title": "Medline Industries, LP: Medline convenience kits containing BD Urinary Catheter Trays that include CliniClean Pericare Wipes      LTP CDS-LF\t  \tCDS980375M",
+   "url": "https://api.fda.gov/device/enforcement.json?search=recall_number:%22Z-0416-2027%22"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "corporation": null,
+   "date": "2026-11-10",
+   "date_basis": "classified",
+   "doc_type": "Recall enforcement report",
+   "first_seen": "2026-11-27T17:31:10+00:00",
+   "flags": [],
+   "id": "openfda:Z-0420-2027",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 2,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 3
+   },
+   "jurisdiction": "federal",
+   "outcome": "recall",
+   "priority": 0,
+   "published": "2026-11-18",
+   "rating": null,
+   "recall_class": "Class II",
+   "recall_initiator": "Voluntary: Firm initiated",
+   "routine": false,
+   "sanctions": [
+    "recall"
+   ],
+   "source": "openfda",
+   "source_label": "openFDA recall enforcement reports (medical devices)",
+   "subcategory": "Recall (Class II, medical devices)",
+   "subtype": "Class II",
+   "summary": "Class II. Voluntary: Firm initiated. Reason: Convenience kits contain additional product codes and lots of recalled CliniClean Pericare Wipes identified by manufacturer. Wipes may be contaminated with a lubricant used in the manufacturing process. Use of affected wipes may cause localized skin effects such as irritation, erythema, or mild inflammation. Failure to perform pericare may increase the risk of localized infection or catheter-associated urinary tract infection.",
+   "title": "Medline Industries, LP: Medline convenience kits containing BD Urinary Catheter Trays that include CliniClean Pericare Wipes    ABDOMINAL HYSTERECTOMY\t  \tDYNJT8877  \t  LAPAROSCOPIC HYS…",
+   "url": "https://api.fda.gov/device/enforcement.json?search=recall_number:%22Z-0420-2027%22"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "corporation": null,
+   "date": "2026-11-10",
+   "date_basis": "classified",
+   "doc_type": "Recall enforcement report",
+   "first_seen": "2026-11-27T17:31:10+00:00",
+   "flags": [],
+   "id": "openfda:Z-0414-2027",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 2,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 3
+   },
+   "jurisdiction": "federal",
+   "outcome": "recall",
+   "priority": 0,
+   "published": "2026-11-18",
+   "rating": null,
+   "recall_class": "Class II",
+   "recall_initiator": "Voluntary: Firm initiated",
+   "routine": false,
+   "sanctions": [
+    "recall"
+   ],
+   "source": "openfda",
+   "source_label": "openFDA recall enforcement reports (medical devices)",
+   "subcategory": "Recall (Class II, medical devices)",
+   "subtype": "Class II",
+   "summary": "Class II. Voluntary: Firm initiated. Reason: Convenience kits contain additional product codes and lots of recalled CliniClean Pericare Wipes identified by manufacturer. Wipes may be contaminated with a lubricant used in the manufacturing process. Use of affected wipes may cause localized skin effects such as irritation, erythema, or mild inflammation. Failure to perform pericare may increase the risk of localized infection or catheter-associated urinary tract infection.",
+   "title": "Medline Industries, LP: Medline convenience kits containing BD Urinary Catheter Trays that include CliniClean Pericare Wipes    ADULT HEART CIRCULATOR KIT\t  \tDYKS1120G  \t  \t  \t  AHT CV…",
+   "url": "https://api.fda.gov/device/enforcement.json?search=recall_number:%22Z-0414-2027%22"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "corporation": null,
+   "date": "2026-11-10",
+   "date_basis": "classified",
+   "doc_type": "Recall enforcement report",
+   "first_seen": "2026-11-27T17:31:10+00:00",
+   "flags": [],
+   "id": "openfda:Z-0419-2027",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 2,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 3
+   },
+   "jurisdiction": "federal",
+   "outcome": "recall",
+   "priority": 0,
+   "published": "2026-11-18",
+   "rating": null,
+   "recall_class": "Class II",
+   "recall_initiator": "Voluntary: Firm initiated",
+   "routine": false,
+   "sanctions": [
+    "recall"
+   ],
+   "source": "openfda",
+   "source_label": "openFDA recall enforcement reports (medical devices)",
+   "subcategory": "Recall (Class II, medical devices)",
+   "subtype": "Class II",
+   "summary": "Class II. Voluntary: Firm initiated. Reason: Convenience kits contain additional product codes and lots of recalled CliniClean Pericare Wipes identified by manufacturer. Wipes may be contaminated with a lubricant used in the manufacturing process. Use of affected wipes may cause localized skin effects such as irritation, erythema, or mild inflammation. Failure to perform pericare may increase the risk of localized infection or catheter-associated urinary tract infection.",
+   "title": "Medline Industries, LP: Medline convenience kits containing BD Urinary Catheter Trays that include CliniClean Pericare Wipes    C-SECTION\t  \tDYNJ911835B  \t  C-SECTION PACK\t  \tDYNJ90655…",
+   "url": "https://api.fda.gov/device/enforcement.json?search=recall_number:%22Z-0419-2027%22"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "corporation": null,
+   "date": "2026-11-10",
+   "date_basis": "classified",
+   "doc_type": "Recall enforcement report",
+   "first_seen": "2026-11-27T17:31:10+00:00",
+   "flags": [],
+   "id": "openfda:Z-0415-2027",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 2,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 3
+   },
+   "jurisdiction": "federal",
+   "outcome": "recall",
+   "priority": 0,
+   "published": "2026-11-18",
+   "rating": null,
+   "recall_class": "Class II",
+   "recall_initiator": "Voluntary: Firm initiated",
+   "routine": false,
+   "sanctions": [
+    "recall"
+   ],
+   "source": "openfda",
+   "source_label": "openFDA recall enforcement reports (medical devices)",
+   "subcategory": "Recall (Class II, medical devices)",
+   "subtype": "Class II",
+   "summary": "Class II. Voluntary: Firm initiated. Reason: Convenience kits contain additional product codes and lots of recalled CliniClean Pericare Wipes identified by manufacturer. Wipes may be contaminated with a lubricant used in the manufacturing process. Use of affected wipes may cause localized skin effects such as irritation, erythema, or mild inflammation. Failure to perform pericare may increase the risk of localized infection or catheter-associated urinary tract infection.",
+   "title": "Medline Industries, LP: Medline convenience kits containing BD Urinary Catheter Trays that include CliniClean Pericare Wipes    CHEST/BREAST\t  \tDYNJ908433F    COLON\t  \tDYNJ904031C  \t  …",
+   "url": "https://api.fda.gov/device/enforcement.json?search=recall_number:%22Z-0415-2027%22"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "corporation": null,
+   "date": "2026-11-10",
+   "date_basis": "classified",
+   "doc_type": "Recall enforcement report",
+   "first_seen": "2026-11-27T17:31:10+00:00",
+   "flags": [],
+   "id": "openfda:Z-0418-2027",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 2,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 3
+   },
+   "jurisdiction": "federal",
+   "outcome": "recall",
+   "priority": 0,
+   "published": "2026-11-18",
+   "rating": null,
+   "recall_class": "Class II",
+   "recall_initiator": "Voluntary: Firm initiated",
+   "routine": false,
+   "sanctions": [
+    "recall"
+   ],
+   "source": "openfda",
+   "source_label": "openFDA recall enforcement reports (medical devices)",
+   "subcategory": "Recall (Class II, medical devices)",
+   "subtype": "Class II",
+   "summary": "Class II. Voluntary: Firm initiated. Reason: Convenience kits contain additional product codes and lots of recalled CliniClean Pericare Wipes identified by manufacturer. Wipes may be contaminated with a lubricant used in the manufacturing process. Use of affected wipes may cause localized skin effects such as irritation, erythema, or mild inflammation. Failure to perform pericare may increase the risk of localized infection or catheter-associated urinary tract infection.",
+   "title": "Medline Industries, LP: Medline convenience kits containing BD Urinary Catheter Trays that include CliniClean Pericare Wipes    DAVINCI\t  \tDYNJ906763C  \t  GYN ABDOMINAL ONCOLOGY\t  \tDYN…",
+   "url": "https://api.fda.gov/device/enforcement.json?search=recall_number:%22Z-0418-2027%22"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "corporation": null,
+   "date": "2026-11-10",
+   "date_basis": "classified",
+   "doc_type": "Recall enforcement report",
+   "first_seen": "2026-11-27T17:31:10+00:00",
+   "flags": [],
+   "id": "openfda:Z-0422-2027",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 2,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 3
+   },
+   "jurisdiction": "federal",
+   "outcome": "recall",
+   "priority": 0,
+   "published": "2026-11-18",
+   "rating": null,
+   "recall_class": "Class II",
+   "recall_initiator": "Voluntary: Firm initiated",
+   "routine": false,
+   "sanctions": [
+    "recall"
+   ],
+   "source": "openfda",
+   "source_label": "openFDA recall enforcement reports (medical devices)",
+   "subcategory": "Recall (Class II, medical devices)",
+   "subtype": "Class II",
+   "summary": "Class II. Voluntary: Firm initiated. Reason: Convenience kits contain additional product codes and lots of recalled CliniClean Pericare Wipes identified by manufacturer. Wipes may be contaminated with a lubricant used in the manufacturing process. Use of affected wipes may cause localized skin effects such as irritation, erythema, or mild inflammation. Failure to perform pericare may increase the risk of localized infection or catheter-associated urinary tract infection.",
+   "title": "Medline Industries, LP: Medline convenience kits containing BD Urinary Catheter Trays that include CliniClean Pericare Wipes    ENT-MICRO\t  \tDYNJ912347  \t  LAMINECTOMY\t  \tDYNJ911420A  …",
+   "url": "https://api.fda.gov/device/enforcement.json?search=recall_number:%22Z-0422-2027%22"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "corporation": null,
+   "date": "2026-11-10",
+   "date_basis": "classified",
+   "doc_type": "Recall enforcement report",
+   "first_seen": "2026-11-27T17:31:10+00:00",
+   "flags": [],
+   "id": "openfda:Z-0417-2027",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 2,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 3
+   },
+   "jurisdiction": "federal",
+   "outcome": "recall",
+   "priority": 0,
+   "published": "2026-11-18",
+   "rating": null,
+   "recall_class": "Class II",
+   "recall_initiator": "Voluntary: Firm initiated",
+   "routine": false,
+   "sanctions": [
+    "recall"
+   ],
+   "source": "openfda",
+   "source_label": "openFDA recall enforcement reports (medical devices)",
+   "subcategory": "Recall (Class II, medical devices)",
+   "subtype": "Class II",
+   "summary": "Class II. Voluntary: Firm initiated. Reason: Convenience kits contain additional product codes and lots of recalled CliniClean Pericare Wipes identified by manufacturer. Wipes may be contaminated with a lubricant used in the manufacturing process. Use of affected wipes may cause localized skin effects such as irritation, erythema, or mild inflammation. Failure to perform pericare may increase the risk of localized infection or catheter-associated urinary tract infection.",
+   "title": "Medline Industries, LP: Medline convenience kits containing BD Urinary Catheter Trays that include CliniClean Pericare Wipes    ROBOTIC COLON\t  \tDYNJ911424  \t  ROBOTIC LITHOTOMY\t  \tDYN…",
+   "url": "https://api.fda.gov/device/enforcement.json?search=recall_number:%22Z-0417-2027%22"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "corporation": null,
+   "date": "2026-11-10",
+   "date_basis": "classified",
+   "doc_type": "Recall enforcement report",
+   "first_seen": "2026-11-27T17:31:10+00:00",
+   "flags": [],
+   "id": "openfda:Z-0413-2027",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 2,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 3
+   },
+   "jurisdiction": "federal",
+   "outcome": "recall",
+   "priority": 0,
+   "published": "2026-11-18",
+   "rating": null,
+   "recall_class": "Class II",
+   "recall_initiator": "Voluntary: Firm initiated",
+   "routine": false,
+   "sanctions": [
+    "recall"
+   ],
+   "source": "openfda",
+   "source_label": "openFDA recall enforcement reports (medical devices)",
+   "subcategory": "Recall (Class II, medical devices)",
+   "subtype": "Class II",
+   "summary": "Class II. Voluntary: Firm initiated. Reason: Convenience kits contain additional product codes and lots of recalled CliniClean Pericare Wipes identified by manufacturer. Wipes may be contaminated with a lubricant used in the manufacturing process. Use of affected wipes may cause localized skin effects such as irritation, erythema, or mild inflammation. Failure to perform pericare may increase the risk of localized infection or catheter-associated urinary tract infection.",
+   "title": "Medline Industries, LP: Medline convenience kits containing BD Urinary Catheter Trays that include CliniClean Pericare Wipes    SM-VAT  DYNJ912762",
+   "url": "https://api.fda.gov/device/enforcement.json?search=recall_number:%22Z-0413-2027%22"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "corporation": null,
+   "date": "2026-11-10",
+   "date_basis": "classified",
+   "doc_type": "Recall enforcement report",
+   "first_seen": "2026-11-27T17:31:10+00:00",
+   "flags": [],
+   "id": "openfda:Z-0421-2027",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 2,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 3
+   },
+   "jurisdiction": "federal",
+   "outcome": "recall",
+   "priority": 0,
+   "published": "2026-11-18",
+   "rating": null,
+   "recall_class": "Class II",
+   "recall_initiator": "Voluntary: Firm initiated",
+   "routine": false,
+   "sanctions": [
+    "recall"
+   ],
+   "source": "openfda",
+   "source_label": "openFDA recall enforcement reports (medical devices)",
+   "subcategory": "Recall (Class II, medical devices)",
+   "subtype": "Class II",
+   "summary": "Class II. Voluntary: Firm initiated. Reason: Convenience kits contain additional product codes and lots of recalled CliniClean Pericare Wipes identified by manufacturer. Wipes may be contaminated with a lubricant used in the manufacturing process. Use of affected wipes may cause localized skin effects such as irritation, erythema, or mild inflammation. Failure to perform pericare may increase the risk of localized infection or catheter-associated urinary tract infection.",
+   "title": "Medline Industries, LP: Medline convenience kits containing BD Urinary Catheter Trays that include CliniClean Pericare Wipes    UNIVERSAL GYN\t  \tDYNJ910195A",
+   "url": "https://api.fda.gov/device/enforcement.json?search=recall_number:%22Z-0421-2027%22"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "corporation": null,
+   "date": "2026-11-06",
+   "date_basis": "classified",
+   "doc_type": "Recall enforcement report",
+   "first_seen": "2026-11-27T17:31:10+00:00",
+   "flags": [],
+   "id": "openfda:Z-0388-2027",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 2,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 3
+   },
+   "jurisdiction": "federal",
+   "outcome": "recall",
+   "priority": 0,
+   "published": "2026-11-18",
+   "rating": null,
+   "recall_class": "Class II",
+   "recall_initiator": "Voluntary: Firm initiated",
+   "routine": false,
+   "sanctions": [
+    "recall"
+   ],
+   "source": "openfda",
+   "source_label": "openFDA recall enforcement reports (medical devices)",
+   "subcategory": "Recall (Class II, medical devices)",
+   "subtype": "Class II",
+   "summary": "Class II. Voluntary: Firm initiated. Reason: Ventilation tubes, that provide a passageway for movement of air between the auditory canal and the middle ear, were not subjected to the required sterilization process, which after implantation could cause infection and subsequent inflammation potentially leading to temporary hearing impairment, otorrhea (fluid discharge) and the need for antibiotics.",
+   "title": "Medtronic Xomed, Inc.: BOBBIN VENTILATION TUBE 5PK 1.14 FLPL, REF: 1010201, Lot# 0231048277 (GTIN 20763000281612).",
+   "url": "https://api.fda.gov/device/enforcement.json?search=recall_number:%22Z-0388-2027%22"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "corporation": null,
+   "date": "2026-11-06",
+   "date_basis": "classified",
+   "doc_type": "Recall enforcement report",
+   "first_seen": "2026-11-27T17:31:10+00:00",
+   "flags": [],
+   "id": "openfda:Z-0387-2027",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 2,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 3
+   },
+   "jurisdiction": "federal",
+   "outcome": "recall",
+   "priority": 0,
+   "published": "2026-11-18",
+   "rating": null,
+   "recall_class": "Class II",
+   "recall_initiator": "Voluntary: Firm initiated",
+   "routine": false,
+   "sanctions": [
+    "recall"
+   ],
+   "source": "openfda",
+   "source_label": "openFDA recall enforcement reports (medical devices)",
+   "subcategory": "Recall (Class II, medical devices)",
+   "subtype": "Class II",
+   "summary": "Class II. Voluntary: Firm initiated. Reason: Ventilation tubes, that provide a passageway for movement of air between the auditory canal and the middle ear, were not subjected to the required sterilization process, which after implantation could cause infection and subsequent inflammation potentially leading to temporary hearing impairment, otorrhea (fluid discharge) and the need for antibiotics.",
+   "title": "Medtronic Xomed, Inc.: Sheehy VENTILATION TUBE 5PK BUTTON 1.27 FLPL, REF: 1013301, Lot# 0231048279 (GTIN 20763000281636), Lot# 0231048280 (GTIN 20763000281636).",
+   "url": "https://api.fda.gov/device/enforcement.json?search=recall_number:%22Z-0387-2027%22"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "corporation": null,
+   "date": "2026-11-06",
+   "date_basis": "classified",
+   "doc_type": "Recall enforcement report",
+   "first_seen": "2026-11-27T17:31:10+00:00",
+   "flags": [],
+   "id": "openfda:Z-0361-2027",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 2,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 3
+   },
+   "jurisdiction": "federal",
+   "outcome": "recall",
+   "priority": 0,
+   "published": "2026-11-18",
+   "rating": null,
+   "recall_class": "Class II",
+   "recall_initiator": "Voluntary: Firm initiated",
+   "routine": false,
+   "sanctions": [
+    "recall"
+   ],
+   "source": "openfda",
+   "source_label": "openFDA recall enforcement reports (medical devices)",
+   "subcategory": "Recall (Class II, medical devices)",
+   "subtype": "Class II",
+   "summary": "Class II. Voluntary: Firm initiated. Reason: Bluetooth disconnections may occur between the device manager software and its associated accessories. Bluetooth disconnections during a SmartSync patient session may lead to harm due to undesirable or incomplete parameter programming.",
+   "title": "Medtronic, Inc.: CareLink SmartSync Device Manager App, a tablet-based platform used to program and interrogate compatible Medtronic CIEDs, Product Number M01A02",
+   "url": "https://api.fda.gov/device/enforcement.json?search=recall_number:%22Z-0361-2027%22"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "corporation": null,
+   "date": "2026-11-06",
+   "date_basis": "classified",
+   "doc_type": "Recall enforcement report",
+   "first_seen": "2026-11-27T17:31:10+00:00",
+   "flags": [],
+   "id": "openfda:Z-0362-2027",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 2,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 3
+   },
+   "jurisdiction": "federal",
+   "outcome": "recall",
+   "priority": 0,
+   "published": "2026-11-18",
+   "rating": null,
+   "recall_class": "Class II",
+   "recall_initiator": "Voluntary: Firm initiated",
+   "routine": false,
+   "sanctions": [
+    "recall"
+   ],
+   "source": "openfda",
+   "source_label": "openFDA recall enforcement reports (medical devices)",
+   "subcategory": "Recall (Class II, medical devices)",
+   "subtype": "Class II",
+   "summary": "Class II. Voluntary: Firm initiated. Reason: Bluetooth disconnections may occur between the device manager software and its associated accessories. Bluetooth disconnections during a SmartSync patient session may lead to harm due to undesirable or incomplete parameter programming.",
+   "title": "Medtronic, Inc.: PROGRAMMER 24970A, provides the analyzer and ECG hardware during device  implant, invasive troubleshooting, and implanted device follow-up procedures, Product N…",
+   "url": "https://api.fda.gov/device/enforcement.json?search=recall_number:%22Z-0362-2027%22"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "corporation": null,
+   "date": "2026-11-06",
+   "date_basis": "classified",
+   "doc_type": "Recall enforcement report",
+   "first_seen": "2026-11-27T17:31:10+00:00",
+   "flags": [],
+   "id": "openfda:Z-0363-2027",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 2,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 3
+   },
+   "jurisdiction": "federal",
+   "outcome": "recall",
+   "priority": 0,
+   "published": "2026-11-18",
+   "rating": null,
+   "recall_class": "Class II",
+   "recall_initiator": "Voluntary: Firm initiated",
+   "routine": false,
+   "sanctions": [
+    "recall"
+   ],
+   "source": "openfda",
+   "source_label": "openFDA recall enforcement reports (medical devices)",
+   "subcategory": "Recall (Class II, medical devices)",
+   "subtype": "Class II",
+   "summary": "Class II. Voluntary: Firm initiated. Reason: Bluetooth disconnections may occur between the device manager software and its associated accessories. Bluetooth disconnections during a SmartSync patient session may lead to harm due to undesirable or incomplete parameter programming.",
+   "title": "Medtronic, Inc.: RF HEAD 24967 PATIENT CONNECTOR and RF HEAD 24967 EUR MKT, communicates with Medtronic cardiac devices, Product Number 24967",
+   "url": "https://api.fda.gov/device/enforcement.json?search=recall_number:%22Z-0363-2027%22"
   },
   {
    "action": "",
@@ -3358,6 +5566,870 @@
    "summary": "",
    "title": "Northwest Pipeline, LLC; Notice of Scoping Period Requesting Comments on Environmental Issues for the Planned Silver Spur Project and Notice of Public Scoping Sessions",
    "url": "https://www.federalregister.gov/documents/2026/11/18/2026-23441/northwest-pipeline-llc-notice-of-scoping-period-requesting-comments-on-environmental-issues-for-the"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "corporation": null,
+   "date": "2026-11-06",
+   "date_basis": "classified",
+   "doc_type": "Recall enforcement report",
+   "first_seen": "2026-11-27T17:31:10+00:00",
+   "flags": [],
+   "id": "openfda:D-0178-2027",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 2,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 3
+   },
+   "jurisdiction": "federal",
+   "outcome": "recall",
+   "priority": 0,
+   "published": "2026-11-18",
+   "rating": null,
+   "recall_class": "Class II",
+   "recall_initiator": "Voluntary: Firm initiated",
+   "routine": false,
+   "sanctions": [
+    "recall"
+   ],
+   "source": "openfda",
+   "source_label": "openFDA recall enforcement reports (drugs)",
+   "subcategory": "Recall (Class II, drugs)",
+   "subtype": "Class II",
+   "summary": "Class II. Voluntary: Firm initiated. Reason: Cross-contamination: The firm was notified by the FDA of sampling results which found the presence of progesterone, estradiol, or dehydroepiandrosterone (DHEA)",
+   "title": "ORL Labs LLC: ORL Organic Oral Care Bubblegum Kids Mouthwash, 16.9 oz.,  ORL, ORL Labs, LLC, Scottsdale, Arizona, USA, UPC# #850006245475",
+   "url": "https://api.fda.gov/drug/enforcement.json?search=recall_number:%22D-0178-2027%22"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "corporation": null,
+   "date": "2026-11-06",
+   "date_basis": "classified",
+   "doc_type": "Recall enforcement report",
+   "first_seen": "2026-11-27T17:31:10+00:00",
+   "flags": [],
+   "id": "openfda:D-0175-2027",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 2,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 3
+   },
+   "jurisdiction": "federal",
+   "outcome": "recall",
+   "priority": 0,
+   "published": "2026-11-18",
+   "rating": null,
+   "recall_class": "Class II",
+   "recall_initiator": "Voluntary: Firm initiated",
+   "routine": false,
+   "sanctions": [
+    "recall"
+   ],
+   "source": "openfda",
+   "source_label": "openFDA recall enforcement reports (drugs)",
+   "subcategory": "Recall (Class II, drugs)",
+   "subtype": "Class II",
+   "summary": "Class II. Voluntary: Firm initiated. Reason: Cross-contamination: The firm was notified by the FDA of sampling results which found the presence of progesterone, estradiol, or dehydroepiandrosterone (DHEA)",
+   "title": "ORL Labs LLC: ORL Organic Oral Care Bubblegum Kids natural toothpaste, 4 oz., ORL, Manufactured in USA, ORL LAbs, LLC, Scottsdale, Arizona, USA,  UPC# 850006245505",
+   "url": "https://api.fda.gov/drug/enforcement.json?search=recall_number:%22D-0175-2027%22"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "corporation": null,
+   "date": "2026-11-06",
+   "date_basis": "classified",
+   "doc_type": "Recall enforcement report",
+   "first_seen": "2026-11-27T17:31:10+00:00",
+   "flags": [],
+   "id": "openfda:D-0176-2027",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 2,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 3
+   },
+   "jurisdiction": "federal",
+   "outcome": "recall",
+   "priority": 0,
+   "published": "2026-11-18",
+   "rating": null,
+   "recall_class": "Class II",
+   "recall_initiator": "Voluntary: Firm initiated",
+   "routine": false,
+   "sanctions": [
+    "recall"
+   ],
+   "source": "openfda",
+   "source_label": "openFDA recall enforcement reports (drugs)",
+   "subcategory": "Recall (Class II, drugs)",
+   "subtype": "Class II",
+   "summary": "Class II. Voluntary: Firm initiated. Reason: Cross-contamination: The firm was notified by the FDA of sampling results which found the presence of progesterone, estradiol, or dehydroepiandrosterone (DHEA)",
+   "title": "ORL Labs LLC: ORL Organic Oral Care Cinnamint toothpaste, 4 oz., ORL, ORL Labs, LLC, Scottsdale, Arizona, USA UPC# 850006245512",
+   "url": "https://api.fda.gov/drug/enforcement.json?search=recall_number:%22D-0176-2027%22"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "corporation": null,
+   "date": "2026-11-06",
+   "date_basis": "classified",
+   "doc_type": "Recall enforcement report",
+   "first_seen": "2026-11-27T17:31:10+00:00",
+   "flags": [],
+   "id": "openfda:D-0177-2027",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 2,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 3
+   },
+   "jurisdiction": "federal",
+   "outcome": "recall",
+   "priority": 0,
+   "published": "2026-11-18",
+   "rating": null,
+   "recall_class": "Class II",
+   "recall_initiator": "Voluntary: Firm initiated",
+   "routine": false,
+   "sanctions": [
+    "recall"
+   ],
+   "source": "openfda",
+   "source_label": "openFDA recall enforcement reports (drugs)",
+   "subcategory": "Recall (Class II, drugs)",
+   "subtype": "Class II",
+   "summary": "Class II. Voluntary: Firm initiated. Reason: Cross-contamination: The firm was notified by the FDA of sampling results which found the presence of progesterone, estradiol, or dehydroepiandrosterone (DHEA)",
+   "title": "ORL Labs LLC: ORL Organic Oral Care Fresh Mint natural toothpaste, 4 oz., ORL, Manufactured in USA, ORL Labs, LLC, Scottsdale, Arizona, USA, UPC 850006245499",
+   "url": "https://api.fda.gov/drug/enforcement.json?search=recall_number:%22D-0177-2027%22"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "corporation": null,
+   "date": "2026-11-06",
+   "date_basis": "classified",
+   "doc_type": "Recall enforcement report",
+   "first_seen": "2026-11-27T17:31:10+00:00",
+   "flags": [],
+   "id": "openfda:D-0180-2027",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 2,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 3
+   },
+   "jurisdiction": "federal",
+   "outcome": "recall",
+   "priority": 0,
+   "published": "2026-11-18",
+   "rating": null,
+   "recall_class": "Class II",
+   "recall_initiator": "Voluntary: Firm initiated",
+   "routine": false,
+   "sanctions": [
+    "recall"
+   ],
+   "source": "openfda",
+   "source_label": "openFDA recall enforcement reports (drugs)",
+   "subcategory": "Recall (Class II, drugs)",
+   "subtype": "Class II",
+   "summary": "Class II. Voluntary: Firm initiated. Reason: Cross-contamination: The firm was notified by the FDA of sampling results which found the presence of progesterone, estradiol, or dehydroepiandrosterone (DHEA)",
+   "title": "ORL Labs LLC: ORL Organic Oral Care Fresh mint mouthwash, 16.9 oz., ORL, Manufactured in USA, ORL Labs, LLC, Scottsdale, Arizona, USA, UPC# #850006245451",
+   "url": "https://api.fda.gov/drug/enforcement.json?search=recall_number:%22D-0180-2027%22"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "corporation": null,
+   "date": "2026-11-06",
+   "date_basis": "classified",
+   "doc_type": "Recall enforcement report",
+   "first_seen": "2026-11-27T17:31:10+00:00",
+   "flags": [],
+   "id": "openfda:D-0179-2027",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 2,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 3
+   },
+   "jurisdiction": "federal",
+   "outcome": "recall",
+   "priority": 0,
+   "published": "2026-11-18",
+   "rating": null,
+   "recall_class": "Class II",
+   "recall_initiator": "Voluntary: Firm initiated",
+   "routine": false,
+   "sanctions": [
+    "recall"
+   ],
+   "source": "openfda",
+   "source_label": "openFDA recall enforcement reports (drugs)",
+   "subcategory": "Recall (Class II, drugs)",
+   "subtype": "Class II",
+   "summary": "Class II. Voluntary: Firm initiated. Reason: Cross-contamination: The firm was notified by the FDA of sampling results which found the presence of progesterone, estradiol, or dehydroepiandrosterone (DHEA)",
+   "title": "ORL Labs LLC: Organic Oral Care Cinnamint Kids Mouthwash, 16.9 oz., ORL, ORL Labs, LLC, Scottsdale, Arizona, USA, 16.9 oz. UPC# #850006245468",
+   "url": "https://api.fda.gov/drug/enforcement.json?search=recall_number:%22D-0179-2027%22"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "corporation": null,
+   "date": "2026-11-06",
+   "date_basis": "classified",
+   "doc_type": "Recall enforcement report",
+   "first_seen": "2026-11-27T17:31:10+00:00",
+   "flags": [],
+   "id": "openfda:Z-0367-2027",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 2,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 3
+   },
+   "jurisdiction": "federal",
+   "outcome": "recall",
+   "priority": 0,
+   "published": "2026-11-18",
+   "rating": null,
+   "recall_class": "Class II",
+   "recall_initiator": "Voluntary: Firm initiated",
+   "routine": false,
+   "sanctions": [
+    "recall"
+   ],
+   "source": "openfda",
+   "source_label": "openFDA recall enforcement reports (medical devices)",
+   "subcategory": "Recall (Class II, medical devices)",
+   "subtype": "Class II",
+   "summary": "Class II. Voluntary: Firm initiated. Reason: Software issue that may cause the FlexVision software application to become unresponsive during clinical use.",
+   "title": "PHILIPS MEDICAL SYSTEMS NEDERLAND B.V.: Philips Allura Xper systems with software releases R8.1.x and R8.2.x systems and configured with a FlexVision monitor. Includes the following System Product Nam…",
+   "url": "https://api.fda.gov/device/enforcement.json?search=recall_number:%22Z-0367-2027%22"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "corporation": null,
+   "date": "2026-11-12",
+   "date_basis": "classified",
+   "doc_type": "Recall enforcement report",
+   "first_seen": "2026-11-27T17:31:10+00:00",
+   "flags": [],
+   "id": "openfda:Z-0428-2027",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 2,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 3
+   },
+   "jurisdiction": "federal",
+   "outcome": "recall",
+   "priority": 0,
+   "published": "2026-11-18",
+   "rating": null,
+   "recall_class": "Class II",
+   "recall_initiator": "Voluntary: Firm initiated",
+   "routine": false,
+   "sanctions": [
+    "recall"
+   ],
+   "source": "openfda",
+   "source_label": "openFDA recall enforcement reports (medical devices)",
+   "subcategory": "Recall (Class II, medical devices)",
+   "subtype": "Class II",
+   "summary": "Class II. Voluntary: Firm initiated. Reason: Due to software issues that may display incorrect values in the results box, final report, or both, potentially leading to the need for re-measureemtn of values.",
+   "title": "Philips Ultrasound, LLC: Philips EPIQ series and Affiniti series Diagnostic Ultrasound Systems with the Auto Measure licensed Option with Software Versions 9.0 and 9.0.1.    Model Numbe…",
+   "url": "https://api.fda.gov/device/enforcement.json?search=recall_number:%22Z-0428-2027%22"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "corporation": null,
+   "date": "2026-11-10",
+   "date_basis": "classified",
+   "doc_type": "Recall enforcement report",
+   "first_seen": "2026-11-27T17:31:10+00:00",
+   "flags": [],
+   "id": "openfda:Z-0400-2027",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 2,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 3
+   },
+   "jurisdiction": "federal",
+   "outcome": "recall",
+   "priority": 0,
+   "published": "2026-11-18",
+   "rating": null,
+   "recall_class": "Class II",
+   "recall_initiator": "Voluntary: Firm initiated",
+   "routine": false,
+   "sanctions": [
+    "recall"
+   ],
+   "source": "openfda",
+   "source_label": "openFDA recall enforcement reports (medical devices)",
+   "subcategory": "Recall (Class II, medical devices)",
+   "subtype": "Class II",
+   "summary": "Class II. Voluntary: Firm initiated. Reason: Temperature monitors and associated probes have not been reviewed for safety and effectiveness for intended use.",
+   "title": "Physitemp Instruments, LLC: Physitemp ESO-1 FOR ESOPHAGEAL AND GENERAL PURPOSE USE  REF: ESO-1  .",
+   "url": "https://api.fda.gov/device/enforcement.json?search=recall_number:%22Z-0400-2027%22"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "corporation": null,
+   "date": "2026-11-10",
+   "date_basis": "classified",
+   "doc_type": "Recall enforcement report",
+   "first_seen": "2026-11-27T17:31:10+00:00",
+   "flags": [],
+   "id": "openfda:Z-0404-2027",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 2,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 3
+   },
+   "jurisdiction": "federal",
+   "outcome": "recall",
+   "priority": 0,
+   "published": "2026-11-18",
+   "rating": null,
+   "recall_class": "Class II",
+   "recall_initiator": "Voluntary: Firm initiated",
+   "routine": false,
+   "sanctions": [
+    "recall"
+   ],
+   "source": "openfda",
+   "source_label": "openFDA recall enforcement reports (medical devices)",
+   "subcategory": "Recall (Class II, medical devices)",
+   "subtype": "Class II",
+   "summary": "Class II. Voluntary: Firm initiated. Reason: Temperature monitors and associated probes have not been reviewed for safety and effectiveness for intended use.",
+   "title": "Physitemp Instruments, LLC: Physitemp MT-D  REF: MT-D",
+   "url": "https://api.fda.gov/device/enforcement.json?search=recall_number:%22Z-0404-2027%22"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "corporation": null,
+   "date": "2026-11-10",
+   "date_basis": "classified",
+   "doc_type": "Recall enforcement report",
+   "first_seen": "2026-11-27T17:31:10+00:00",
+   "flags": [],
+   "id": "openfda:Z-0403-2027",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 2,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 3
+   },
+   "jurisdiction": "federal",
+   "outcome": "recall",
+   "priority": 0,
+   "published": "2026-11-18",
+   "rating": null,
+   "recall_class": "Class II",
+   "recall_initiator": "Voluntary: Firm initiated",
+   "routine": false,
+   "sanctions": [
+    "recall"
+   ],
+   "source": "openfda",
+   "source_label": "openFDA recall enforcement reports (medical devices)",
+   "subcategory": "Recall (Class II, medical devices)",
+   "subtype": "Class II",
+   "summary": "Class II. Voluntary: Firm initiated. Reason: Temperature monitors and associated probes have not been reviewed for safety and effectiveness for intended use.",
+   "title": "Physitemp Instruments, LLC: Physitemp OT-1 ORAL THERMOCOUPLE PROBE  REF: OT-1",
+   "url": "https://api.fda.gov/device/enforcement.json?search=recall_number:%22Z-0403-2027%22"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "corporation": null,
+   "date": "2026-11-10",
+   "date_basis": "classified",
+   "doc_type": "Recall enforcement report",
+   "first_seen": "2026-11-27T17:31:10+00:00",
+   "flags": [],
+   "id": "openfda:Z-0399-2027",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 2,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 3
+   },
+   "jurisdiction": "federal",
+   "outcome": "recall",
+   "priority": 0,
+   "published": "2026-11-18",
+   "rating": null,
+   "recall_class": "Class II",
+   "recall_initiator": "Voluntary: Firm initiated",
+   "routine": false,
+   "sanctions": [
+    "recall"
+   ],
+   "source": "openfda",
+   "source_label": "openFDA recall enforcement reports (medical devices)",
+   "subcategory": "Recall (Class II, medical devices)",
+   "subtype": "Class II",
+   "summary": "Class II. Voluntary: Firm initiated. Reason: Temperature monitors and associated probes have not been reviewed for safety and effectiveness for intended use.",
+   "title": "Physitemp Instruments, LLC: Physitemp RET-1 Rectal Probe  Model/Catalog Number: RET-1",
+   "url": "https://api.fda.gov/device/enforcement.json?search=recall_number:%22Z-0399-2027%22"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "corporation": null,
+   "date": "2026-11-10",
+   "date_basis": "classified",
+   "doc_type": "Recall enforcement report",
+   "first_seen": "2026-11-27T17:31:10+00:00",
+   "flags": [],
+   "id": "openfda:Z-0401-2027",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 2,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 3
+   },
+   "jurisdiction": "federal",
+   "outcome": "recall",
+   "priority": 0,
+   "published": "2026-11-18",
+   "rating": null,
+   "recall_class": "Class II",
+   "recall_initiator": "Voluntary: Firm initiated",
+   "routine": false,
+   "sanctions": [
+    "recall"
+   ],
+   "source": "openfda",
+   "source_label": "openFDA recall enforcement reports (medical devices)",
+   "subcategory": "Recall (Class II, medical devices)",
+   "subtype": "Class II",
+   "summary": "Class II. Voluntary: Firm initiated. Reason: Temperature monitors and associated probes have not been reviewed for safety and effectiveness for intended use.",
+   "title": "Physitemp Instruments, LLC: Physitemp SST-1 SKIN SENSOR  Model/Catalog Number: SST-1  Software Version: N/A",
+   "url": "https://api.fda.gov/device/enforcement.json?search=recall_number:%22Z-0401-2027%22"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "corporation": null,
+   "date": "2026-11-10",
+   "date_basis": "classified",
+   "doc_type": "Recall enforcement report",
+   "first_seen": "2026-11-27T17:31:10+00:00",
+   "flags": [],
+   "id": "openfda:Z-0402-2027",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 2,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 3
+   },
+   "jurisdiction": "federal",
+   "outcome": "recall",
+   "priority": 0,
+   "published": "2026-11-18",
+   "rating": null,
+   "recall_class": "Class II",
+   "recall_initiator": "Voluntary: Firm initiated",
+   "routine": false,
+   "sanctions": [
+    "recall"
+   ],
+   "source": "openfda",
+   "source_label": "openFDA recall enforcement reports (medical devices)",
+   "subcategory": "Recall (Class II, medical devices)",
+   "subtype": "Class II",
+   "summary": "Class II. Voluntary: Firm initiated. Reason: Temperature monitors and associated probes have not been reviewed for safety and effectiveness for intended use.",
+   "title": "Physitemp Instruments, LLC: Physitemp SST-2 SKIN SENSOR  REF: SST-2",
+   "url": "https://api.fda.gov/device/enforcement.json?search=recall_number:%22Z-0402-2027%22"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "corporation": null,
+   "date": "2026-11-10",
+   "date_basis": "classified",
+   "doc_type": "Recall enforcement report",
+   "first_seen": "2026-11-27T17:31:10+00:00",
+   "flags": [],
+   "id": "openfda:Z-0405-2027",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 2,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 3
+   },
+   "jurisdiction": "federal",
+   "outcome": "recall",
+   "priority": 0,
+   "published": "2026-11-18",
+   "rating": null,
+   "recall_class": "Class II",
+   "recall_initiator": "Voluntary: Firm initiated",
+   "routine": false,
+   "sanctions": [
+    "recall"
+   ],
+   "source": "openfda",
+   "source_label": "openFDA recall enforcement reports (medical devices)",
+   "subcategory": "Recall (Class II, medical devices)",
+   "subtype": "Class II",
+   "summary": "Class II. Voluntary: Firm initiated. Reason: Temperature monitors and associated probes have not been reviewed for safety and effectiveness for intended use.",
+   "title": "Physitemp Instruments, LLC: Physitemp TH-5 Thermalert Monitoring Thermometer  REF: TH-5",
+   "url": "https://api.fda.gov/device/enforcement.json?search=recall_number:%22Z-0405-2027%22"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "corporation": null,
+   "date": "2026-11-10",
+   "date_basis": "classified",
+   "doc_type": "Recall enforcement report",
+   "first_seen": "2026-11-27T17:31:10+00:00",
+   "flags": [],
+   "id": "openfda:Z-0406-2027",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 2,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 3
+   },
+   "jurisdiction": "federal",
+   "outcome": "recall",
+   "priority": 0,
+   "published": "2026-11-18",
+   "rating": null,
+   "recall_class": "Class II",
+   "recall_initiator": "Voluntary: Firm initiated",
+   "routine": false,
+   "sanctions": [
+    "recall"
+   ],
+   "source": "openfda",
+   "source_label": "openFDA recall enforcement reports (medical devices)",
+   "subcategory": "Recall (Class II, medical devices)",
+   "subtype": "Class II",
+   "summary": "Class II. Voluntary: Firm initiated. Reason: Temperature monitors and associated probes have not been reviewed for safety and effectiveness for intended use.",
+   "title": "Physitemp Instruments, LLC: Physitemp TH-5/AOP Thermalert Monitoring Thermometer with Analog Output  REF: TH-5/AOP",
+   "url": "https://api.fda.gov/device/enforcement.json?search=recall_number:%22Z-0406-2027%22"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "corporation": null,
+   "date": "2026-11-10",
+   "date_basis": "classified",
+   "doc_type": "Recall enforcement report",
+   "first_seen": "2026-11-27T17:31:10+00:00",
+   "flags": [],
+   "id": "openfda:Z-0407-2027",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 2,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 3
+   },
+   "jurisdiction": "federal",
+   "outcome": "recall",
+   "priority": 0,
+   "published": "2026-11-18",
+   "rating": null,
+   "recall_class": "Class II",
+   "recall_initiator": "Voluntary: Firm initiated",
+   "routine": false,
+   "sanctions": [
+    "recall"
+   ],
+   "source": "openfda",
+   "source_label": "openFDA recall enforcement reports (medical devices)",
+   "subcategory": "Recall (Class II, medical devices)",
+   "subtype": "Class II",
+   "summary": "Class II. Voluntary: Firm initiated. Reason: Temperature monitors and associated probes have not been reviewed for safety and effectiveness for intended use.",
+   "title": "Physitemp Instruments, LLC: Physitemp TH-8 Thermalert Monitoring Thermometer  REF: TH-8",
+   "url": "https://api.fda.gov/device/enforcement.json?search=recall_number:%22Z-0407-2027%22"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "corporation": null,
+   "date": "2026-11-10",
+   "date_basis": "classified",
+   "doc_type": "Recall enforcement report",
+   "first_seen": "2026-11-27T17:31:10+00:00",
+   "flags": [],
+   "id": "openfda:Z-0408-2027",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 2,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 3
+   },
+   "jurisdiction": "federal",
+   "outcome": "recall",
+   "priority": 0,
+   "published": "2026-11-18",
+   "rating": null,
+   "recall_class": "Class II",
+   "recall_initiator": "Voluntary: Firm initiated",
+   "routine": false,
+   "sanctions": [
+    "recall"
+   ],
+   "source": "openfda",
+   "source_label": "openFDA recall enforcement reports (medical devices)",
+   "subcategory": "Recall (Class II, medical devices)",
+   "subtype": "Class II",
+   "summary": "Class II. Voluntary: Firm initiated. Reason: Temperature monitors and associated probes have not been reviewed for safety and effectiveness for intended use.",
+   "title": "Physitemp Instruments, LLC: Physitemp TH-8/AOP Thermalert Monitoring Thermometer with Analog Output  REF: TH-8/AOP",
+   "url": "https://api.fda.gov/device/enforcement.json?search=recall_number:%22Z-0408-2027%22"
   },
   {
    "action": "Request for comment.",
@@ -4005,6 +7077,102 @@
    "withdrawn": false
   },
   {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "corporation": null,
+   "date": "2026-11-06",
+   "date_basis": "classified",
+   "doc_type": "Recall enforcement report",
+   "first_seen": "2026-11-27T17:31:10+00:00",
+   "flags": [],
+   "id": "openfda:D-0174-2027",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 2,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 3
+   },
+   "jurisdiction": "federal",
+   "outcome": "recall",
+   "priority": 0,
+   "published": "2026-11-18",
+   "rating": null,
+   "recall_class": "Class II",
+   "recall_initiator": "Voluntary: Firm initiated",
+   "routine": false,
+   "sanctions": [
+    "recall"
+   ],
+   "source": "openfda",
+   "source_label": "openFDA recall enforcement reports (drugs)",
+   "subcategory": "Recall (Class II, drugs)",
+   "subtype": "Class II",
+   "summary": "Class II. Voluntary: Firm initiated. Reason: Failed Dissolution Specifications",
+   "title": "SUN PHARMACEUTICAL INDUSTRIES INC: Lisdexamfetamine Dimesylate Capsules 40 mg, 100-count bottle, Rx Only, Manufactured by: Ohm Laboratories, New Brunswick, NJ 08901, Distributed by: Sun Pharmaceu…",
+   "url": "https://api.fda.gov/drug/enforcement.json?search=recall_number:%22D-0174-2027%22"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "corporation": null,
+   "date": "2026-11-18",
+   "date_basis": "published",
+   "doc_type": "Recall enforcement report",
+   "first_seen": "2026-11-27T17:31:10+00:00",
+   "flags": [],
+   "id": "openfda:99839",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 2,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 3
+   },
+   "jurisdiction": "federal",
+   "outcome": "recall",
+   "priority": 0,
+   "published": "2026-11-18",
+   "rating": null,
+   "recall_class": "Not Yet Classified",
+   "recall_initiator": "Voluntary: Firm initiated",
+   "routine": false,
+   "sanctions": [
+    "recall"
+   ],
+   "source": "openfda",
+   "source_label": "openFDA recall enforcement reports (food)",
+   "subcategory": "Recall (Not Yet Classified, food)",
+   "subtype": "Not Yet Classified",
+   "summary": "Not Yet Classified. Voluntary: Firm initiated. Reason: FDA laboratory analysis confirmed that the product contains yohimbine that is not declared on the product labels.",
+   "title": "SUPPLX.com: Branch Manager, Dietary Supplement for Men 18+, packaged in single capsule blister card, 24 individual blister cards per retail box; UPC 672713228585. Labeled s…",
+   "url": "https://api.fda.gov/food/enforcement.json?search=recall_number:%2299839%22"
+  },
+  {
    "action": "Notice.",
    "agencies": [
     "fda"
@@ -4061,6 +7229,54 @@
    "summary": "The Food and Drug Administration's (FDA or Agency) Center for Drug Evaluation and Research (CDER) is proposing to withdraw approval of new drug application (NDA) 206679 for Flolipid suspension, 20 milligrams (mg)/5 milliliters (mL) and 40 mg/5 mL and is announcing an opportunity for the NDA holder, Salerno Pharmaceuticals, 2431 East 61st St., Suite 300, Tulsa, OK 74136, to request a hearing on this proposal. The basis for the proposal is that Salerno Pharmaceuticals has repeatedly failed to file required annual reports for NDA 206679.",
    "title": "Salerno Pharmaceuticals; Proposal To Withdraw Approval of a New Drug Application for Flolipid Suspension, 20 Milligrams/5 Milliliters and 40 Milligrams/5 Milliliters; Opportunity for a Hearing",
    "url": "https://www.federalregister.gov/documents/2026/11/18/2026-23413/salerno-pharmaceuticals-proposal-to-withdraw-approval-of-a-new-drug-application-for-flolipid"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "corporation": null,
+   "date": "2026-11-12",
+   "date_basis": "classified",
+   "doc_type": "Recall enforcement report",
+   "first_seen": "2026-11-27T17:31:10+00:00",
+   "flags": [],
+   "id": "openfda:Z-0438-2027",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 2,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 3
+   },
+   "jurisdiction": "federal",
+   "outcome": "recall",
+   "priority": 0,
+   "published": "2026-11-18",
+   "rating": null,
+   "recall_class": "Class II",
+   "recall_initiator": "Voluntary: Firm initiated",
+   "routine": false,
+   "sanctions": [
+    "recall"
+   ],
+   "source": "openfda",
+   "source_label": "openFDA recall enforcement reports (medical devices)",
+   "subcategory": "Recall (Class II, medical devices)",
+   "subtype": "Class II",
+   "summary": "Class II. Voluntary: Firm initiated. Reason: Call station batteries may fully deplete without a low battery alert.",
+   "title": "Securitas Healthcare LLC: Arial Call Stations  Model/Catalog Number: CSK200-900, CSK200-900MR, CSK200, CSK200MR, CSK200-1069, CSK200-1069MR    Software Version: V1.6.4 (FW)",
+   "url": "https://api.fda.gov/device/enforcement.json?search=recall_number:%22Z-0438-2027%22"
   },
   {
    "action": "",
@@ -4551,6 +7767,966 @@
    "url": "https://www.federalregister.gov/documents/2026/11/18/2026-23422/self-regulatory-organizations-the-nasdaq-stock-market-llc-notice-of-filing-and-immediate"
   },
   {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "corporation": null,
+   "date": "2026-11-06",
+   "date_basis": "classified",
+   "doc_type": "Recall enforcement report",
+   "first_seen": "2026-11-27T17:31:10+00:00",
+   "flags": [],
+   "id": "openfda:Z-0364-2027",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 2,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 3
+   },
+   "jurisdiction": "federal",
+   "outcome": "recall",
+   "priority": 0,
+   "published": "2026-11-18",
+   "rating": null,
+   "recall_class": "Class II",
+   "recall_initiator": "Voluntary: Firm initiated",
+   "routine": false,
+   "sanctions": [
+    "recall"
+   ],
+   "source": "openfda",
+   "source_label": "openFDA recall enforcement reports (medical devices)",
+   "subcategory": "Recall (Class II, medical devices)",
+   "subtype": "Class II",
+   "summary": "Class II. Voluntary: Firm initiated. Reason: Reagent probe carryover on the Atellica CH and Atellica CI Analyzers may cause falsely elevated Hemoglobin A1c (A1c_E/A1c_H) results due to HDLC carryover (biases of 9 29% in NGSP units), and falsely depressed Direct Bilirubin 2 (DBil_2) results due to TP_2 carryover (biases of 0% to -25%), which may affect patient samples, quality control, and/or calibrator results.",
+   "title": "Siemens Healthcare Diagnostics, Inc.: Atellica CH HDL Cholesterol (HDLC);  Siemens Material Number (SMN): 11537213;",
+   "url": "https://api.fda.gov/device/enforcement.json?search=recall_number:%22Z-0364-2027%22"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "corporation": null,
+   "date": "2026-11-06",
+   "date_basis": "classified",
+   "doc_type": "Recall enforcement report",
+   "first_seen": "2026-11-27T17:31:10+00:00",
+   "flags": [],
+   "id": "openfda:Z-0365-2027",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 2,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 3
+   },
+   "jurisdiction": "federal",
+   "outcome": "recall",
+   "priority": 0,
+   "published": "2026-11-18",
+   "rating": null,
+   "recall_class": "Class II",
+   "recall_initiator": "Voluntary: Firm initiated",
+   "routine": false,
+   "sanctions": [
+    "recall"
+   ],
+   "source": "openfda",
+   "source_label": "openFDA recall enforcement reports (medical devices)",
+   "subcategory": "Recall (Class II, medical devices)",
+   "subtype": "Class II",
+   "summary": "Class II. Voluntary: Firm initiated. Reason: Reagent probe carryover on the Atellica CH and Atellica CI Analyzers may cause falsely elevated Hemoglobin A1c (A1c_E/A1c_H) results due to HDLC carryover (biases of 9 29% in NGSP units), and falsely depressed Direct Bilirubin 2 (DBil_2) results due to TP_2 carryover (biases of 0% to -25%), which may affect patient samples, quality control, and/or calibrator results.",
+   "title": "Siemens Healthcare Diagnostics, Inc.: Atellica CH Total Protein_2 (TP_2);  Siemens Material Number (SMN): 1. 11645755 (3700 tests), 2. 11537228 (7400 tests);",
+   "url": "https://api.fda.gov/device/enforcement.json?search=recall_number:%22Z-0365-2027%22"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "corporation": null,
+   "date": "2026-11-06",
+   "date_basis": "classified",
+   "doc_type": "Recall enforcement report",
+   "first_seen": "2026-11-27T17:31:10+00:00",
+   "flags": [],
+   "id": "openfda:Z-0393-2027",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 2,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 3
+   },
+   "jurisdiction": "federal",
+   "outcome": "recall",
+   "priority": 0,
+   "published": "2026-11-18",
+   "rating": null,
+   "recall_class": "Class II",
+   "recall_initiator": "Voluntary: Firm initiated",
+   "routine": false,
+   "sanctions": [
+    "recall"
+   ],
+   "source": "openfda",
+   "source_label": "openFDA recall enforcement reports (medical devices)",
+   "subcategory": "Recall (Class II, medical devices)",
+   "subtype": "Class II",
+   "summary": "Class II. Voluntary: Firm initiated. Reason: A software issue identified in the ultrasound system may result in the unintended activation of the Color Doppler setting, which has not received FDA clearance. This unintended activation could cause the system to crash or become unresponsive.",
+   "title": "Siemens Medical Solutions USA, Inc.: ACUSON Orgin ICE Ultrasound Imaging System  REF: 11669400",
+   "url": "https://api.fda.gov/device/enforcement.json?search=recall_number:%22Z-0393-2027%22"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "corporation": null,
+   "date": "2026-11-06",
+   "date_basis": "classified",
+   "doc_type": "Recall enforcement report",
+   "first_seen": "2026-11-27T17:31:10+00:00",
+   "flags": [],
+   "id": "openfda:Z-0392-2027",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 2,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 3
+   },
+   "jurisdiction": "federal",
+   "outcome": "recall",
+   "priority": 0,
+   "published": "2026-11-18",
+   "rating": null,
+   "recall_class": "Class II",
+   "recall_initiator": "Voluntary: Firm initiated",
+   "routine": false,
+   "sanctions": [
+    "recall"
+   ],
+   "source": "openfda",
+   "source_label": "openFDA recall enforcement reports (medical devices)",
+   "subcategory": "Recall (Class II, medical devices)",
+   "subtype": "Class II",
+   "summary": "Class II. Voluntary: Firm initiated. Reason: A software issue identified in the ultrasound system may result in the unintended activation of the Color Doppler setting, which has not received FDA clearance. This unintended activation could cause the system to crash or become unresponsive.",
+   "title": "Siemens Medical Solutions USA, Inc.: ACUSON Orgin Ultrasound Imaging System  REF: 11668590",
+   "url": "https://api.fda.gov/device/enforcement.json?search=recall_number:%22Z-0392-2027%22"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "corporation": null,
+   "date": "2026-11-06",
+   "date_basis": "classified",
+   "doc_type": "Recall enforcement report",
+   "first_seen": "2026-11-27T17:31:10+00:00",
+   "flags": [],
+   "id": "openfda:Z-0395-2027",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 2,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 3
+   },
+   "jurisdiction": "federal",
+   "outcome": "recall",
+   "priority": 0,
+   "published": "2026-11-18",
+   "rating": null,
+   "recall_class": "Class II",
+   "recall_initiator": "Voluntary: Firm initiated",
+   "routine": false,
+   "sanctions": [
+    "recall"
+   ],
+   "source": "openfda",
+   "source_label": "openFDA recall enforcement reports (medical devices)",
+   "subcategory": "Recall (Class II, medical devices)",
+   "subtype": "Class II",
+   "summary": "Class II. Voluntary: Firm initiated. Reason: A software issue identified in the ultrasound system may result in the unintended activation of the Color Doppler setting, which has not received FDA clearance. This unintended activation could cause the system to crash or become unresponsive.",
+   "title": "Siemens Medical Solutions USA, Inc.: ACUSON Sequoia Select Ultrasound Imaging System  REF: 11658635",
+   "url": "https://api.fda.gov/device/enforcement.json?search=recall_number:%22Z-0395-2027%22"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "corporation": null,
+   "date": "2026-11-06",
+   "date_basis": "classified",
+   "doc_type": "Recall enforcement report",
+   "first_seen": "2026-11-27T17:31:10+00:00",
+   "flags": [],
+   "id": "openfda:Z-0394-2027",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 2,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 3
+   },
+   "jurisdiction": "federal",
+   "outcome": "recall",
+   "priority": 0,
+   "published": "2026-11-18",
+   "rating": null,
+   "recall_class": "Class II",
+   "recall_initiator": "Voluntary: Firm initiated",
+   "routine": false,
+   "sanctions": [
+    "recall"
+   ],
+   "source": "openfda",
+   "source_label": "openFDA recall enforcement reports (medical devices)",
+   "subcategory": "Recall (Class II, medical devices)",
+   "subtype": "Class II",
+   "summary": "Class II. Voluntary: Firm initiated. Reason: A software issue identified in the ultrasound system may result in the unintended activation of the Color Doppler setting, which has not received FDA clearance. This unintended activation could cause the system to crash or become unresponsive.",
+   "title": "Siemens Medical Solutions USA, Inc.: ACUSON Sequoia Ultrasound Imaging System  REF: 11148775",
+   "url": "https://api.fda.gov/device/enforcement.json?search=recall_number:%22Z-0394-2027%22"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "corporation": null,
+   "date": "2026-11-06",
+   "date_basis": "classified",
+   "doc_type": "Recall enforcement report",
+   "first_seen": "2026-11-27T17:31:10+00:00",
+   "flags": [],
+   "id": "openfda:Z-0369-2027",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 2,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 3
+   },
+   "jurisdiction": "federal",
+   "outcome": "recall",
+   "priority": 0,
+   "published": "2026-11-18",
+   "rating": null,
+   "recall_class": "Class II",
+   "recall_initiator": "Voluntary: Firm initiated",
+   "routine": false,
+   "sanctions": [
+    "recall"
+   ],
+   "source": "openfda",
+   "source_label": "openFDA recall enforcement reports (medical devices)",
+   "subcategory": "Recall (Class II, medical devices)",
+   "subtype": "Class II",
+   "summary": "Class II. Voluntary: Firm initiated. Reason: Potential that the system may not execute movement control commands as intended and may display the following message to the user, \"Limited stand/table movement, SC.\"",
+   "title": "Siemens Medical Solutions USA, Inc: ARTIS icono biplane. Model Number: 11327600.",
+   "url": "https://api.fda.gov/device/enforcement.json?search=recall_number:%22Z-0369-2027%22"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "corporation": null,
+   "date": "2026-11-12",
+   "date_basis": "classified",
+   "doc_type": "Recall enforcement report",
+   "first_seen": "2026-11-27T17:31:10+00:00",
+   "flags": [],
+   "id": "openfda:Z-0429-2027",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 2,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 3
+   },
+   "jurisdiction": "federal",
+   "outcome": "recall",
+   "priority": 0,
+   "published": "2026-11-18",
+   "rating": null,
+   "recall_class": "Class II",
+   "recall_initiator": "Voluntary: Firm initiated",
+   "routine": false,
+   "sanctions": [
+    "recall"
+   ],
+   "source": "openfda",
+   "source_label": "openFDA recall enforcement reports (medical devices)",
+   "subcategory": "Recall (Class II, medical devices)",
+   "subtype": "Class II",
+   "summary": "Class II. Voluntary: Firm initiated. Reason: Potential for loss of X-ray functionality after system startup or restart.",
+   "title": "Siemens Medical Solutions USA, Inc: ARTIS icono biplane. Model Number: 11327600.",
+   "url": "https://api.fda.gov/device/enforcement.json?search=recall_number:%22Z-0429-2027%22"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "corporation": null,
+   "date": "2026-11-06",
+   "date_basis": "classified",
+   "doc_type": "Recall enforcement report",
+   "first_seen": "2026-11-27T17:31:10+00:00",
+   "flags": [],
+   "id": "openfda:Z-0370-2027",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 2,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 3
+   },
+   "jurisdiction": "federal",
+   "outcome": "recall",
+   "priority": 0,
+   "published": "2026-11-18",
+   "rating": null,
+   "recall_class": "Class II",
+   "recall_initiator": "Voluntary: Firm initiated",
+   "routine": false,
+   "sanctions": [
+    "recall"
+   ],
+   "source": "openfda",
+   "source_label": "openFDA recall enforcement reports (medical devices)",
+   "subcategory": "Recall (Class II, medical devices)",
+   "subtype": "Class II",
+   "summary": "Class II. Voluntary: Firm initiated. Reason: Potential that the system may not execute movement control commands as intended and may display the following message to the user, \"Limited stand/table movement, SC.\"",
+   "title": "Siemens Medical Solutions USA, Inc: ARTIS icono ceiling. Model Number: 11328100.",
+   "url": "https://api.fda.gov/device/enforcement.json?search=recall_number:%22Z-0370-2027%22"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "corporation": null,
+   "date": "2026-11-12",
+   "date_basis": "classified",
+   "doc_type": "Recall enforcement report",
+   "first_seen": "2026-11-27T17:31:10+00:00",
+   "flags": [],
+   "id": "openfda:Z-0430-2027",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 2,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 3
+   },
+   "jurisdiction": "federal",
+   "outcome": "recall",
+   "priority": 0,
+   "published": "2026-11-18",
+   "rating": null,
+   "recall_class": "Class II",
+   "recall_initiator": "Voluntary: Firm initiated",
+   "routine": false,
+   "sanctions": [
+    "recall"
+   ],
+   "source": "openfda",
+   "source_label": "openFDA recall enforcement reports (medical devices)",
+   "subcategory": "Recall (Class II, medical devices)",
+   "subtype": "Class II",
+   "summary": "Class II. Voluntary: Firm initiated. Reason: Potential for loss of X-ray functionality after system startup or restart.",
+   "title": "Siemens Medical Solutions USA, Inc: ARTIS icono ceiling. Model Number: 11328100.",
+   "url": "https://api.fda.gov/device/enforcement.json?search=recall_number:%22Z-0430-2027%22"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "corporation": null,
+   "date": "2026-11-06",
+   "date_basis": "classified",
+   "doc_type": "Recall enforcement report",
+   "first_seen": "2026-11-27T17:31:10+00:00",
+   "flags": [],
+   "id": "openfda:Z-0371-2027",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 2,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 3
+   },
+   "jurisdiction": "federal",
+   "outcome": "recall",
+   "priority": 0,
+   "published": "2026-11-18",
+   "rating": null,
+   "recall_class": "Class II",
+   "recall_initiator": "Voluntary: Firm initiated",
+   "routine": false,
+   "sanctions": [
+    "recall"
+   ],
+   "source": "openfda",
+   "source_label": "openFDA recall enforcement reports (medical devices)",
+   "subcategory": "Recall (Class II, medical devices)",
+   "subtype": "Class II",
+   "summary": "Class II. Voluntary: Firm initiated. Reason: Potential that the system may not execute movement control commands as intended and may display the following message to the user, \"Limited stand/table movement, SC.\"",
+   "title": "Siemens Medical Solutions USA, Inc: ARTIS icono floor. Model Number: 11327700.",
+   "url": "https://api.fda.gov/device/enforcement.json?search=recall_number:%22Z-0371-2027%22"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "corporation": null,
+   "date": "2026-11-12",
+   "date_basis": "classified",
+   "doc_type": "Recall enforcement report",
+   "first_seen": "2026-11-27T17:31:10+00:00",
+   "flags": [],
+   "id": "openfda:Z-0431-2027",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 2,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 3
+   },
+   "jurisdiction": "federal",
+   "outcome": "recall",
+   "priority": 0,
+   "published": "2026-11-18",
+   "rating": null,
+   "recall_class": "Class II",
+   "recall_initiator": "Voluntary: Firm initiated",
+   "routine": false,
+   "sanctions": [
+    "recall"
+   ],
+   "source": "openfda",
+   "source_label": "openFDA recall enforcement reports (medical devices)",
+   "subcategory": "Recall (Class II, medical devices)",
+   "subtype": "Class II",
+   "summary": "Class II. Voluntary: Firm initiated. Reason: Potential for loss of X-ray functionality after system startup or restart.",
+   "title": "Siemens Medical Solutions USA, Inc: ARTIS icono floor. Model Number: 11327700.",
+   "url": "https://api.fda.gov/device/enforcement.json?search=recall_number:%22Z-0431-2027%22"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "corporation": null,
+   "date": "2026-11-12",
+   "date_basis": "classified",
+   "doc_type": "Recall enforcement report",
+   "first_seen": "2026-11-27T17:31:10+00:00",
+   "flags": [],
+   "id": "openfda:Z-0432-2027",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 2,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 3
+   },
+   "jurisdiction": "federal",
+   "outcome": "recall",
+   "priority": 0,
+   "published": "2026-11-18",
+   "rating": null,
+   "recall_class": "Class II",
+   "recall_initiator": "Voluntary: Firm initiated",
+   "routine": false,
+   "sanctions": [
+    "recall"
+   ],
+   "source": "openfda",
+   "source_label": "openFDA recall enforcement reports (medical devices)",
+   "subcategory": "Recall (Class II, medical devices)",
+   "subtype": "Class II",
+   "summary": "Class II. Voluntary: Firm initiated. Reason: Potential for loss of X-ray functionality after system startup or restart.",
+   "title": "Siemens Medical Solutions USA, Inc: ARTIS pheno. Model Number: 10849000.",
+   "url": "https://api.fda.gov/device/enforcement.json?search=recall_number:%22Z-0432-2027%22"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "corporation": null,
+   "date": "2026-11-06",
+   "date_basis": "classified",
+   "doc_type": "Recall enforcement report",
+   "first_seen": "2026-11-27T17:31:10+00:00",
+   "flags": [],
+   "id": "openfda:Z-0372-2027",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 2,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 3
+   },
+   "jurisdiction": "federal",
+   "outcome": "recall",
+   "priority": 0,
+   "published": "2026-11-18",
+   "rating": null,
+   "recall_class": "Class II",
+   "recall_initiator": "Voluntary: Firm initiated",
+   "routine": false,
+   "sanctions": [
+    "recall"
+   ],
+   "source": "openfda",
+   "source_label": "openFDA recall enforcement reports (medical devices)",
+   "subcategory": "Recall (Class II, medical devices)",
+   "subtype": "Class II",
+   "summary": "Class II. Voluntary: Firm initiated. Reason: Potential that the system may not execute movement control commands as intended and may display the following message to the user, \"Limited stand/table movement, SC.\"",
+   "title": "Siemens Medical Solutions USA, Inc: ARTIS pheno. Model Number: 10849000.",
+   "url": "https://api.fda.gov/device/enforcement.json?search=recall_number:%22Z-0372-2027%22"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "corporation": null,
+   "date": "2026-11-12",
+   "date_basis": "classified",
+   "doc_type": "Recall enforcement report",
+   "first_seen": "2026-11-27T17:31:10+00:00",
+   "flags": [],
+   "id": "openfda:H-0208-2027",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 2,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 3
+   },
+   "jurisdiction": "federal",
+   "outcome": "recall",
+   "priority": 0,
+   "published": "2026-11-18",
+   "rating": null,
+   "recall_class": "Class II",
+   "recall_initiator": "Voluntary: Firm initiated",
+   "routine": false,
+   "sanctions": [
+    "recall"
+   ],
+   "source": "openfda",
+   "source_label": "openFDA recall enforcement reports (food)",
+   "subcategory": "Recall (Class II, food)",
+   "subtype": "Class II",
+   "summary": "Class II. Voluntary: Firm initiated. Reason: Products may contain elevated levels of thallium",
+   "title": "Snack Right Super Foods, Inc.: Brad's Crunchy Kale Original, 2 oz (57g) bags with UPC 813104021679.",
+   "url": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22H-0208-2027%22"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "corporation": null,
+   "date": "2026-11-12",
+   "date_basis": "classified",
+   "doc_type": "Recall enforcement report",
+   "first_seen": "2026-11-27T17:31:10+00:00",
+   "flags": [],
+   "id": "openfda:H-0206-2027",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 2,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 3
+   },
+   "jurisdiction": "federal",
+   "outcome": "recall",
+   "priority": 0,
+   "published": "2026-11-18",
+   "rating": null,
+   "recall_class": "Class II",
+   "recall_initiator": "Voluntary: Firm initiated",
+   "routine": false,
+   "sanctions": [
+    "recall"
+   ],
+   "source": "openfda",
+   "source_label": "openFDA recall enforcement reports (food)",
+   "subcategory": "Recall (Class II, food)",
+   "subtype": "Class II",
+   "summary": "Class II. Voluntary: Firm initiated. Reason: Products may contain elevated levels of thallium",
+   "title": "Snack Right Super Foods, Inc.: Brad's Crunchy Kale Radical Ranch, 2 oz (57g) bags with UPC UPC 813104020726.",
+   "url": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22H-0206-2027%22"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "corporation": null,
+   "date": "2026-11-12",
+   "date_basis": "classified",
+   "doc_type": "Recall enforcement report",
+   "first_seen": "2026-11-27T17:31:10+00:00",
+   "flags": [],
+   "id": "openfda:H-0209-2027",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 2,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 3
+   },
+   "jurisdiction": "federal",
+   "outcome": "recall",
+   "priority": 0,
+   "published": "2026-11-18",
+   "rating": null,
+   "recall_class": "Class II",
+   "recall_initiator": "Voluntary: Firm initiated",
+   "routine": false,
+   "sanctions": [
+    "recall"
+   ],
+   "source": "openfda",
+   "source_label": "openFDA recall enforcement reports (food)",
+   "subcategory": "Recall (Class II, food)",
+   "subtype": "Class II",
+   "summary": "Class II. Voluntary: Firm initiated. Reason: Products may contain elevated levels of thallium",
+   "title": "Snack Right Super Foods, Inc.: Brad's Crunchy Kale, Cheeze It Up, 2 oz (57g) bags with UPC 813104021877.",
+   "url": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22H-0209-2027%22"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "corporation": null,
+   "date": "2026-11-12",
+   "date_basis": "classified",
+   "doc_type": "Recall enforcement report",
+   "first_seen": "2026-11-27T17:31:10+00:00",
+   "flags": [],
+   "id": "openfda:H-0207-2027",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 2,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 3
+   },
+   "jurisdiction": "federal",
+   "outcome": "recall",
+   "priority": 0,
+   "published": "2026-11-18",
+   "rating": null,
+   "recall_class": "Class II",
+   "recall_initiator": "Voluntary: Firm initiated",
+   "routine": false,
+   "sanctions": [
+    "recall"
+   ],
+   "source": "openfda",
+   "source_label": "openFDA recall enforcement reports (food)",
+   "subcategory": "Recall (Class II, food)",
+   "subtype": "Class II",
+   "summary": "Class II. Voluntary: Firm initiated. Reason: Products may contain elevated levels of thallium",
+   "title": "Snack Right Super Foods, Inc.: Brad's Veggie Chips Kale, 3 oz (85g) bags with UPC UPC 854615002054.",
+   "url": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22H-0207-2027%22"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "corporation": null,
+   "date": "2026-11-09",
+   "date_basis": "classified",
+   "doc_type": "Recall enforcement report",
+   "first_seen": "2026-11-27T17:31:10+00:00",
+   "flags": [],
+   "id": "openfda:Z-0397-2027",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 2,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 3
+   },
+   "jurisdiction": "federal",
+   "outcome": "recall",
+   "priority": 0,
+   "published": "2026-11-18",
+   "rating": null,
+   "recall_class": "Class II",
+   "recall_initiator": "Voluntary: Firm initiated",
+   "routine": false,
+   "sanctions": [
+    "recall"
+   ],
+   "source": "openfda",
+   "source_label": "openFDA recall enforcement reports (medical devices)",
+   "subcategory": "Recall (Class II, medical devices)",
+   "subtype": "Class II",
+   "summary": "Class II. Voluntary: Firm initiated. Reason: Potential exposure to contamination, possibly compromising the sterility and cleanliness.",
+   "title": "Straumann USA LLC: Straumann BLC Implants, SLActive, RXD. Endosseous Dental Implant. WB Healing Abutment, O6, GH1.5, AH2,Ti. Article Numbers: 035.9208S, 035.9210S, 035.9214S, 035.…",
+   "url": "https://api.fda.gov/device/enforcement.json?search=recall_number:%22Z-0397-2027%22"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "corporation": null,
+   "date": "2026-11-09",
+   "date_basis": "classified",
+   "doc_type": "Recall enforcement report",
+   "first_seen": "2026-11-27T17:31:10+00:00",
+   "flags": [],
+   "id": "openfda:Z-0398-2027",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 2,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 3
+   },
+   "jurisdiction": "federal",
+   "outcome": "recall",
+   "priority": 0,
+   "published": "2026-11-18",
+   "rating": null,
+   "recall_class": "Class II",
+   "recall_initiator": "Voluntary: Firm initiated",
+   "routine": false,
+   "sanctions": [
+    "recall"
+   ],
+   "source": "openfda",
+   "source_label": "openFDA recall enforcement reports (medical devices)",
+   "subcategory": "Recall (Class II, medical devices)",
+   "subtype": "Class II",
+   "summary": "Class II. Voluntary: Firm initiated. Reason: Potential exposure to contamination, possibly compromising the sterility and cleanliness.",
+   "title": "Straumann USA LLC: Straumann Healing Abutments, Ti, Endosseous Dental Implant Abutments. Article Numbers: 064.4202S, 064.4204S, 064.4214S, 064.8212S, 064.8213S, 064.8215S.",
+   "url": "https://api.fda.gov/device/enforcement.json?search=recall_number:%22Z-0398-2027%22"
+  },
+  {
    "action": "Request for public comments.",
    "agencies": [
     "hhs"
@@ -4652,6 +8828,54 @@
    "url": "https://www.federalregister.gov/documents/2026/11/18/2026-23467/sunshine-act-open-commission-meeting-thursday-november-19-2026"
   },
   {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "corporation": null,
+   "date": "2026-11-12",
+   "date_basis": "classified",
+   "doc_type": "Recall enforcement report",
+   "first_seen": "2026-11-27T17:31:10+00:00",
+   "flags": [],
+   "id": "openfda:Z-0439-2027",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 2,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 3
+   },
+   "jurisdiction": "federal",
+   "outcome": "recall",
+   "priority": 0,
+   "published": "2026-11-18",
+   "rating": null,
+   "recall_class": "Class III",
+   "recall_initiator": "Voluntary: Firm initiated",
+   "routine": false,
+   "sanctions": [
+    "recall"
+   ],
+   "source": "openfda",
+   "source_label": "openFDA recall enforcement reports (medical devices)",
+   "subcategory": "Recall (Class III, medical devices)",
+   "subtype": "Class III",
+   "summary": "Class III. Voluntary: Firm initiated. Reason: Customer ordered US-approved version of the device but received a variant not approved for sale/use in the United States. Product was distributed into an unauthorized geography due to a fulfillment/distribution error.",
+   "title": "TEM INNOVATIONS GMBH: ROTEM sigma complete;  Model/Catalog Number: 555501;  In vitro diagnostic to monitor and analyze patient coagulation status from a blood sample.",
+   "url": "https://api.fda.gov/device/enforcement.json?search=recall_number:%22Z-0439-2027%22"
+  },
+  {
    "action": "Notice.",
    "agencies": [
     "dol"
@@ -4703,6 +8927,54 @@
    "url": "https://www.federalregister.gov/documents/2026/11/18/2026-23492/tuv-sud-america-inc-applications-for-expansion-of-recognition"
   },
   {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "corporation": null,
+   "date": "2026-11-12",
+   "date_basis": "classified",
+   "doc_type": "Recall enforcement report",
+   "first_seen": "2026-11-27T17:31:10+00:00",
+   "flags": [],
+   "id": "openfda:Z-0437-2027",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 2,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 3
+   },
+   "jurisdiction": "federal",
+   "outcome": "recall",
+   "priority": 0,
+   "published": "2026-11-18",
+   "rating": null,
+   "recall_class": "Class II",
+   "recall_initiator": "Voluntary: Firm initiated",
+   "routine": false,
+   "sanctions": [
+    "recall"
+   ],
+   "source": "openfda",
+   "source_label": "openFDA recall enforcement reports (medical devices)",
+   "subcategory": "Recall (Class II, medical devices)",
+   "subtype": "Class II",
+   "summary": "Class II. Voluntary: Firm initiated. Reason: A software defect in the Tandem Mobi mobile application for Android (versions 3.5.4, 3.5.2.2, and 3.5.2.1) in which the immediate ( Now ) portion of an Extended Bolus is incorrectly reduced to 0 units when the entered glucose value equals the user s active target glucose value; the deferred ( Later ) portion is delivered, but the total insulin delivered may be less than intended, and the application does not provide a distinct alert that the immediate portion was omitted, potentially resulting in unrecognized under-delivery of insulin and hyperglycemia.",
+   "title": "Tandem Diabetes Care, Inc.: Tandem Mobi Insulin Pump with Interoperable Technology (with Android Tandem Mobi Mobile app)  Model/Catalog Number: 1015472",
+   "url": "https://api.fda.gov/device/enforcement.json?search=recall_number:%22Z-0437-2027%22"
+  },
+  {
    "action": "Request for public comments.",
    "agencies": [
     "dol"
@@ -4752,6 +9024,535 @@
    "summary": "OSHA solicits public comments concerning the proposal to extend the Office of Management and Budget's (OMB) approval of the information collection requirements specified in the Hazard Communication Standard.",
    "title": "The Hazard Communication Standard; Extension of the Office of Management and Budget's Approval of Information Collection (Paperwork) Requirements",
    "url": "https://www.federalregister.gov/documents/2026/11/18/2026-23491/the-hazard-communication-standard-extension-of-the-office-of-management-and-budgets-approval-of"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "corporation": null,
+   "date": "2026-11-06",
+   "date_basis": "classified",
+   "doc_type": "Recall enforcement report",
+   "first_seen": "2026-11-27T17:31:10+00:00",
+   "flags": [],
+   "id": "openfda:Z-0380-2027",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 2,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 3
+   },
+   "jurisdiction": "federal",
+   "outcome": "recall",
+   "priority": 0,
+   "published": "2026-11-18",
+   "rating": null,
+   "recall_class": "Class II",
+   "recall_initiator": "Voluntary: Firm initiated",
+   "routine": false,
+   "sanctions": [
+    "recall"
+   ],
+   "source": "openfda",
+   "source_label": "openFDA recall enforcement reports (medical devices)",
+   "subcategory": "Recall (Class II, medical devices)",
+   "subtype": "Class II",
+   "summary": "Class II. Voluntary: Firm initiated. Reason: The Perfusion Module may have an unprogrammed Front End Board (FEB) which will not allow the system to proceed beyond the initial startup process. The OCS system will display an error message saying Unsupported Perfusion Module Present and will prevent further system use.",
+   "title": "TransMedics, Inc.: OCS Heart Perfusion Set  Model/Catalog Number: 1200  Software Version: rev 3  Product Description: OCS Heart Perfusion Module,    included in the Heart Perfusio…",
+   "url": "https://api.fda.gov/device/enforcement.json?search=recall_number:%22Z-0380-2027%22"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "corporation": null,
+   "date": "2026-11-06",
+   "date_basis": "classified",
+   "doc_type": "Recall enforcement report",
+   "first_seen": "2026-11-27T17:31:10+00:00",
+   "flags": [],
+   "id": "openfda:Z-0386-2027",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 2,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 3
+   },
+   "jurisdiction": "federal",
+   "outcome": "recall",
+   "priority": 0,
+   "published": "2026-11-18",
+   "rating": null,
+   "recall_class": "Class II",
+   "recall_initiator": "Voluntary: Firm initiated",
+   "routine": false,
+   "sanctions": [
+    "recall"
+   ],
+   "source": "openfda",
+   "source_label": "openFDA recall enforcement reports (medical devices)",
+   "subcategory": "Recall (Class II, medical devices)",
+   "subtype": "Class II",
+   "summary": "Class II. Voluntary: Firm initiated. Reason: Incorrectly assembled device kits that include incorrect components.",
+   "title": "TransMedics, Inc.: OCS Heart System    OCS Heart Instrumentation Tool Set   Model/Catalog Number: 1401   OCS Heart Instrumentation Tool Set,   accessories intended to be used with…",
+   "url": "https://api.fda.gov/device/enforcement.json?search=recall_number:%22Z-0386-2027%22"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "corporation": null,
+   "date": "2026-11-06",
+   "date_basis": "classified",
+   "doc_type": "Recall enforcement report",
+   "first_seen": "2026-11-27T17:31:10+00:00",
+   "flags": [],
+   "id": "openfda:Z-0384-2027",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 4,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 2,
+    "points": 5
+   },
+   "jurisdiction": "federal",
+   "outcome": "recall",
+   "priority": 0,
+   "published": "2026-11-18",
+   "rating": null,
+   "recall_class": "Class II",
+   "recall_initiator": "Voluntary: Firm initiated",
+   "routine": false,
+   "sanctions": [
+    "criminal",
+    "recall"
+   ],
+   "source": "openfda",
+   "source_label": "openFDA recall enforcement reports (medical devices)",
+   "subcategory": "Recall (Class II, medical devices)",
+   "subtype": "Class II",
+   "summary": "Class II. Voluntary: Firm initiated. Reason: Incorrectly assembled device kits that include incorrect components.",
+   "title": "TransMedics, Inc.: OCS Heart System   OCS Heart Perfusion Set   Model/Catalog Number: 1200    OCS Heart Perfusion Sets containing OCS Heart Cardioplegia Arrest Set   are component…",
+   "url": "https://api.fda.gov/device/enforcement.json?search=recall_number:%22Z-0384-2027%22"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "corporation": null,
+   "date": "2026-11-06",
+   "date_basis": "classified",
+   "doc_type": "Recall enforcement report",
+   "first_seen": "2026-11-27T17:31:10+00:00",
+   "flags": [],
+   "id": "openfda:Z-0383-2027",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 2,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 3
+   },
+   "jurisdiction": "federal",
+   "outcome": "recall",
+   "priority": 0,
+   "published": "2026-11-18",
+   "rating": null,
+   "recall_class": "Class II",
+   "recall_initiator": "Voluntary: Firm initiated",
+   "routine": false,
+   "sanctions": [
+    "recall"
+   ],
+   "source": "openfda",
+   "source_label": "openFDA recall enforcement reports (medical devices)",
+   "subcategory": "Recall (Class II, medical devices)",
+   "subtype": "Class II",
+   "summary": "Class II. Voluntary: Firm initiated. Reason: Incorrectly assembled device sets with incorrect accessories.",
+   "title": "TransMedics, Inc.: OCS Liver Perfusion Set   Model/Catalog Number: 3200    OCS Liver Perfusion Sets containing OCS Liver Instrumentation Tool Set and OCS Liver Perfusion Terminati…",
+   "url": "https://api.fda.gov/device/enforcement.json?search=recall_number:%22Z-0383-2027%22"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "corporation": null,
+   "date": "2026-11-06",
+   "date_basis": "classified",
+   "doc_type": "Recall enforcement report",
+   "first_seen": "2026-11-27T17:31:10+00:00",
+   "flags": [],
+   "id": "openfda:Z-0381-2027",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 2,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 3
+   },
+   "jurisdiction": "federal",
+   "outcome": "recall",
+   "priority": 0,
+   "published": "2026-11-18",
+   "rating": null,
+   "recall_class": "Class II",
+   "recall_initiator": "Voluntary: Firm initiated",
+   "routine": false,
+   "sanctions": [
+    "recall"
+   ],
+   "source": "openfda",
+   "source_label": "openFDA recall enforcement reports (medical devices)",
+   "subcategory": "Recall (Class II, medical devices)",
+   "subtype": "Class II",
+   "summary": "Class II. Voluntary: Firm initiated. Reason: The Perfusion Module may have an unprogrammed Front End Board (FEB) which will not allow the system to proceed beyond the initial startup process. The OCS system will display an error message saying Unsupported Perfusion Module Present and will prevent further system use.",
+   "title": "TransMedics, Inc.: OCS Liver Perfusion Set   Model/Catalog Number: 3200   Software Version: rev 3    OCS Liver Perfusion Module included in the Liver Perfusion Set used for organ …",
+   "url": "https://api.fda.gov/device/enforcement.json?search=recall_number:%22Z-0381-2027%22"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "corporation": null,
+   "date": "2026-11-06",
+   "date_basis": "classified",
+   "doc_type": "Recall enforcement report",
+   "first_seen": "2026-11-27T17:31:10+00:00",
+   "flags": [],
+   "id": "openfda:Z-0385-2027",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 2,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 3
+   },
+   "jurisdiction": "federal",
+   "outcome": "recall",
+   "priority": 0,
+   "published": "2026-11-18",
+   "rating": null,
+   "recall_class": "Class II",
+   "recall_initiator": "Voluntary: Firm initiated",
+   "routine": false,
+   "sanctions": [
+    "recall"
+   ],
+   "source": "openfda",
+   "source_label": "openFDA recall enforcement reports (medical devices)",
+   "subcategory": "Recall (Class II, medical devices)",
+   "subtype": "Class II",
+   "summary": "Class II. Voluntary: Firm initiated. Reason: Incorrectly assembled device kits that include incorrect components.",
+   "title": "TransMedics, Inc.: OCS Liver System   OCS Liver Perfusion Set   Model/Catalog Number: 3200    OCS Liver Perfusion Sets containing OCS Liver Perfusion Initiation Set and OCS Liver …",
+   "url": "https://api.fda.gov/device/enforcement.json?search=recall_number:%22Z-0385-2027%22"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "corporation": null,
+   "date": "2026-11-06",
+   "date_basis": "classified",
+   "doc_type": "Recall enforcement report",
+   "first_seen": "2026-11-27T17:31:10+00:00",
+   "flags": [],
+   "id": "openfda:Z-0390-2027",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 2,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 3
+   },
+   "jurisdiction": "federal",
+   "outcome": "recall",
+   "priority": 0,
+   "published": "2026-11-18",
+   "rating": null,
+   "recall_class": "Class II",
+   "recall_initiator": "Voluntary: Firm initiated",
+   "routine": false,
+   "sanctions": [
+    "recall"
+   ],
+   "source": "openfda",
+   "source_label": "openFDA recall enforcement reports (medical devices)",
+   "subcategory": "Recall (Class II, medical devices)",
+   "subtype": "Class II",
+   "summary": "Class II. Voluntary: Firm initiated. Reason: Faulty Solution Delivery System (SDS) Cassettes  within the device set were assembled with syringes that  were manufactured with an atypical lubricant, which results in sub-par performance and has the potential to cause leaks.",
+   "title": "TransMedics, Inc.: OCS Liver System for organ transport    OCS Liver Solution Infusion Set  Model/Catalog Number: 3457     Product Description: OCS Liver Solution Infusion Set;   …",
+   "url": "https://api.fda.gov/device/enforcement.json?search=recall_number:%22Z-0390-2027%22"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "corporation": null,
+   "date": "2026-11-06",
+   "date_basis": "classified",
+   "doc_type": "Recall enforcement report",
+   "first_seen": "2026-11-27T17:31:10+00:00",
+   "flags": [],
+   "id": "openfda:Z-0389-2027",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 2,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 3
+   },
+   "jurisdiction": "federal",
+   "outcome": "recall",
+   "priority": 0,
+   "published": "2026-11-18",
+   "rating": null,
+   "recall_class": "Class II",
+   "recall_initiator": "Voluntary: Firm initiated",
+   "routine": false,
+   "sanctions": [
+    "recall"
+   ],
+   "source": "openfda",
+   "source_label": "openFDA recall enforcement reports (medical devices)",
+   "subcategory": "Recall (Class II, medical devices)",
+   "subtype": "Class II",
+   "summary": "Class II. Voluntary: Firm initiated. Reason: Faulty Solution Delivery System (SDS) Cassettes  within the device set were assembled with syringes that  were manufactured with an atypical lubricant, which results in sub-par performance and has the potential to cause leaks.",
+   "title": "TransMedics, Inc.: OCS Liver System for organ transport   OCS Liver Perfusion Set  Model/Catalog Number: 3200    Product Description: The recalled product is a standard off the sh…",
+   "url": "https://api.fda.gov/device/enforcement.json?search=recall_number:%22Z-0389-2027%22"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "corporation": null,
+   "date": "2026-11-06",
+   "date_basis": "classified",
+   "doc_type": "Recall enforcement report",
+   "first_seen": "2026-11-27T17:31:10+00:00",
+   "flags": [],
+   "id": "openfda:Z-0391-2027",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 2,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 3
+   },
+   "jurisdiction": "federal",
+   "outcome": "recall",
+   "priority": 0,
+   "published": "2026-11-18",
+   "rating": null,
+   "recall_class": "Class II",
+   "recall_initiator": "Voluntary: Firm initiated",
+   "routine": false,
+   "sanctions": [
+    "recall"
+   ],
+   "source": "openfda",
+   "source_label": "openFDA recall enforcement reports (medical devices)",
+   "subcategory": "Recall (Class II, medical devices)",
+   "subtype": "Class II",
+   "summary": "Class II. Voluntary: Firm initiated. Reason: Faulty Solution Delivery System (SDS) Cassettes  within the device set were assembled with syringes that  were manufactured with an atypical lubricant, which results in sub-par performance and has the potential to cause leaks.",
+   "title": "TransMedics, Inc.: OCS Liver System for organ transport   OCS Solution Delivery Cassettes   Model/Catalog Number: 1467     Product Description: OCS Solution Delivery Cassettes   T…",
+   "url": "https://api.fda.gov/device/enforcement.json?search=recall_number:%22Z-0391-2027%22"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "corporation": null,
+   "date": "2026-11-06",
+   "date_basis": "classified",
+   "doc_type": "Recall enforcement report",
+   "first_seen": "2026-11-27T17:31:10+00:00",
+   "flags": [],
+   "id": "openfda:Z-0382-2027",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 2,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 3
+   },
+   "jurisdiction": "federal",
+   "outcome": "recall",
+   "priority": 0,
+   "published": "2026-11-18",
+   "rating": null,
+   "recall_class": "Class II",
+   "recall_initiator": "Voluntary: Firm initiated",
+   "routine": false,
+   "sanctions": [
+    "recall"
+   ],
+   "source": "openfda",
+   "source_label": "openFDA recall enforcement reports (medical devices)",
+   "subcategory": "Recall (Class II, medical devices)",
+   "subtype": "Class II",
+   "summary": "Class II. Voluntary: Firm initiated. Reason: The Perfusion Module may have an unprogrammed Front End Board (FEB) which will not allow the system to proceed beyond the initial startup process. The OCS system will display an error message saying Unsupported Perfusion Module Present and will prevent further system use.",
+   "title": "TransMedics, Inc.: OCS Lung Mission Critical Plus Perfusion Set  Model/Catalog Number: 2200  Software Version: rev 1  OCS Lung MC+ Perfusion Module included in the Lung MC+ Perfus…",
+   "url": "https://api.fda.gov/device/enforcement.json?search=recall_number:%22Z-0382-2027%22"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "corporation": null,
+   "date": "2026-11-12",
+   "date_basis": "classified",
+   "doc_type": "Recall enforcement report",
+   "first_seen": "2026-11-27T17:31:10+00:00",
+   "flags": [],
+   "id": "openfda:Z-0440-2027",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 2,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 3
+   },
+   "jurisdiction": "federal",
+   "outcome": "recall",
+   "priority": 0,
+   "published": "2026-11-18",
+   "rating": null,
+   "recall_class": "Class II",
+   "recall_initiator": "Voluntary: Firm initiated",
+   "routine": false,
+   "sanctions": [
+    "recall"
+   ],
+   "source": "openfda",
+   "source_label": "openFDA recall enforcement reports (medical devices)",
+   "subcategory": "Recall (Class II, medical devices)",
+   "subtype": "Class II",
+   "summary": "Class II. Voluntary: Firm initiated. Reason: Potential for the K-wire to fracture during use resulting in procedural delay and possibility of a piece of fractured K-wire remaining in the patient's bone.",
+   "title": "VB SPINE LLC: NITINOL K-WIRE BLUNT;  Catalog/Part Number: 48280232; used in spinal surgery",
+   "url": "https://api.fda.gov/device/enforcement.json?search=recall_number:%22Z-0440-2027%22"
   },
   {
    "action": "",
@@ -5078,6 +9879,342 @@
   {
    "action": "",
    "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "corporation": null,
+   "date": "2026-11-06",
+   "date_basis": "classified",
+   "doc_type": "Recall enforcement report",
+   "first_seen": "2026-11-27T17:31:10+00:00",
+   "flags": [],
+   "id": "openfda:Z-0375-2027",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 2,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 3
+   },
+   "jurisdiction": "federal",
+   "outcome": "recall",
+   "priority": 0,
+   "published": "2026-11-18",
+   "rating": null,
+   "recall_class": "Class II",
+   "recall_initiator": "Voluntary: Firm initiated",
+   "routine": false,
+   "sanctions": [
+    "recall"
+   ],
+   "source": "openfda",
+   "source_label": "openFDA recall enforcement reports (medical devices)",
+   "subcategory": "Recall (Class II, medical devices)",
+   "subtype": "Class II",
+   "summary": "Class II. Voluntary: Firm initiated. Reason: The feeding pump may deliver enteral fluids outside its labeled accuracy specification of +/-5%. This inaccuracy can result in over-delivery or under-delivery of enteral fluids relative to the prescribed dose, if proper controls are not in place. Over- or under-delivery of enteral nutrition through the pump and associated feed sets could cause temporary or medically reversible adverse health consequences, with a remote probability of serious adverse health consequences.",
+   "title": "Vesco Medical Llc: Vesco Q 1000mL Bag Feed Set (LL), Model Number VED-051",
+   "url": "https://api.fda.gov/device/enforcement.json?search=recall_number:%22Z-0375-2027%22"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "corporation": null,
+   "date": "2026-11-06",
+   "date_basis": "classified",
+   "doc_type": "Recall enforcement report",
+   "first_seen": "2026-11-27T17:31:10+00:00",
+   "flags": [],
+   "id": "openfda:Z-0378-2027",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 2,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 3
+   },
+   "jurisdiction": "federal",
+   "outcome": "recall",
+   "priority": 0,
+   "published": "2026-11-18",
+   "rating": null,
+   "recall_class": "Class II",
+   "recall_initiator": "Voluntary: Firm initiated",
+   "routine": false,
+   "sanctions": [
+    "recall"
+   ],
+   "source": "openfda",
+   "source_label": "openFDA recall enforcement reports (medical devices)",
+   "subcategory": "Recall (Class II, medical devices)",
+   "subtype": "Class II",
+   "summary": "Class II. Voluntary: Firm initiated. Reason: The feeding pump may deliver enteral fluids outside its labeled accuracy specification of +/-5%. This inaccuracy can result in over-delivery or under-delivery of enteral fluids relative to the prescribed dose, if proper controls are not in place. Over- or under-delivery of enteral nutrition through the pump and associated feed sets could cause temporary or medically reversible adverse health consequences, with a remote probability of serious adverse health consequences.",
+   "title": "Vesco Medical Llc: Vesco Q 1000mL Bag Feed Set (PVC), Model Number VED-054",
+   "url": "https://api.fda.gov/device/enforcement.json?search=recall_number:%22Z-0378-2027%22"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "corporation": null,
+   "date": "2026-11-06",
+   "date_basis": "classified",
+   "doc_type": "Recall enforcement report",
+   "first_seen": "2026-11-27T17:31:10+00:00",
+   "flags": [],
+   "id": "openfda:Z-0379-2027",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 2,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 3
+   },
+   "jurisdiction": "federal",
+   "outcome": "recall",
+   "priority": 0,
+   "published": "2026-11-18",
+   "rating": null,
+   "recall_class": "Class II",
+   "recall_initiator": "Voluntary: Firm initiated",
+   "routine": false,
+   "sanctions": [
+    "recall"
+   ],
+   "source": "openfda",
+   "source_label": "openFDA recall enforcement reports (medical devices)",
+   "subcategory": "Recall (Class II, medical devices)",
+   "subtype": "Class II",
+   "summary": "Class II. Voluntary: Firm initiated. Reason: The feeding pump may deliver enteral fluids outside its labeled accuracy specification of +/-5%. This inaccuracy can result in over-delivery or under-delivery of enteral fluids relative to the prescribed dose, if proper controls are not in place. Over- or under-delivery of enteral nutrition through the pump and associated feed sets could cause temporary or medically reversible adverse health consequences, with a remote probability of serious adverse health consequences.",
+   "title": "Vesco Medical Llc: Vesco Q 100mL Small Bore Bag Feed Set, Model Number VED-059",
+   "url": "https://api.fda.gov/device/enforcement.json?search=recall_number:%22Z-0379-2027%22"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "corporation": null,
+   "date": "2026-11-06",
+   "date_basis": "classified",
+   "doc_type": "Recall enforcement report",
+   "first_seen": "2026-11-27T17:31:10+00:00",
+   "flags": [],
+   "id": "openfda:Z-0376-2027",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 2,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 3
+   },
+   "jurisdiction": "federal",
+   "outcome": "recall",
+   "priority": 0,
+   "published": "2026-11-18",
+   "rating": null,
+   "recall_class": "Class II",
+   "recall_initiator": "Voluntary: Firm initiated",
+   "routine": false,
+   "sanctions": [
+    "recall"
+   ],
+   "source": "openfda",
+   "source_label": "openFDA recall enforcement reports (medical devices)",
+   "subcategory": "Recall (Class II, medical devices)",
+   "subtype": "Class II",
+   "summary": "Class II. Voluntary: Firm initiated. Reason: The feeding pump may deliver enteral fluids outside its labeled accuracy specification of +/-5%. This inaccuracy can result in over-delivery or under-delivery of enteral fluids relative to the prescribed dose, if proper controls are not in place. Over- or under-delivery of enteral nutrition through the pump and associated feed sets could cause temporary or medically reversible adverse health consequences, with a remote probability of serious adverse health consequences.",
+   "title": "Vesco Medical Llc: Vesco Q 40mm Screw Cap Feed Set, Model Number VED-052",
+   "url": "https://api.fda.gov/device/enforcement.json?search=recall_number:%22Z-0376-2027%22"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "corporation": null,
+   "date": "2026-11-06",
+   "date_basis": "classified",
+   "doc_type": "Recall enforcement report",
+   "first_seen": "2026-11-27T17:31:10+00:00",
+   "flags": [],
+   "id": "openfda:Z-0374-2027",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 2,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 3
+   },
+   "jurisdiction": "federal",
+   "outcome": "recall",
+   "priority": 0,
+   "published": "2026-11-18",
+   "rating": null,
+   "recall_class": "Class II",
+   "recall_initiator": "Voluntary: Firm initiated",
+   "routine": false,
+   "sanctions": [
+    "recall"
+   ],
+   "source": "openfda",
+   "source_label": "openFDA recall enforcement reports (medical devices)",
+   "subcategory": "Recall (Class II, medical devices)",
+   "subtype": "Class II",
+   "summary": "Class II. Voluntary: Firm initiated. Reason: The feeding pump may deliver enteral fluids outside its labeled accuracy specification of +/-5%. This inaccuracy can result in over-delivery or under-delivery of enteral fluids relative to the prescribed dose, if proper controls are not in place. Over- or under-delivery of enteral nutrition through the pump and associated feed sets could cause temporary or medically reversible adverse health consequences, with a remote probability of serious adverse health consequences.",
+   "title": "Vesco Medical Llc: Vesco Q 500mL Bag Feed Set (PVC), Model Number VED-050",
+   "url": "https://api.fda.gov/device/enforcement.json?search=recall_number:%22Z-0374-2027%22"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "corporation": null,
+   "date": "2026-11-06",
+   "date_basis": "classified",
+   "doc_type": "Recall enforcement report",
+   "first_seen": "2026-11-27T17:31:10+00:00",
+   "flags": [],
+   "id": "openfda:Z-0377-2027",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 2,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 3
+   },
+   "jurisdiction": "federal",
+   "outcome": "recall",
+   "priority": 0,
+   "published": "2026-11-18",
+   "rating": null,
+   "recall_class": "Class II",
+   "recall_initiator": "Voluntary: Firm initiated",
+   "routine": false,
+   "sanctions": [
+    "recall"
+   ],
+   "source": "openfda",
+   "source_label": "openFDA recall enforcement reports (medical devices)",
+   "subcategory": "Recall (Class II, medical devices)",
+   "subtype": "Class II",
+   "summary": "Class II. Voluntary: Firm initiated. Reason: The feeding pump may deliver enteral fluids outside its labeled accuracy specification of +/-5%. This inaccuracy can result in over-delivery or under-delivery of enteral fluids relative to the prescribed dose, if proper controls are not in place. Over- or under-delivery of enteral nutrition through the pump and associated feed sets could cause temporary or medically reversible adverse health consequences, with a remote probability of serious adverse health consequences.",
+   "title": "Vesco Medical Llc: Vesco Q ENPlus Spike Feed Set, Model Numer VED-053",
+   "url": "https://api.fda.gov/device/enforcement.json?search=recall_number:%22Z-0377-2027%22"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "corporation": null,
+   "date": "2026-11-06",
+   "date_basis": "classified",
+   "doc_type": "Recall enforcement report",
+   "first_seen": "2026-11-27T17:31:10+00:00",
+   "flags": [],
+   "id": "openfda:Z-0373-2027",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 2,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 3
+   },
+   "jurisdiction": "federal",
+   "outcome": "recall",
+   "priority": 0,
+   "published": "2026-11-18",
+   "rating": null,
+   "recall_class": "Class II",
+   "recall_initiator": "Voluntary: Firm initiated",
+   "routine": false,
+   "sanctions": [
+    "recall"
+   ],
+   "source": "openfda",
+   "source_label": "openFDA recall enforcement reports (medical devices)",
+   "subcategory": "Recall (Class II, medical devices)",
+   "subtype": "Class II",
+   "summary": "Class II. Voluntary: Firm initiated. Reason: The feeding pump may deliver enteral fluids outside its labeled accuracy specification of +/-5%. This inaccuracy can result in over-delivery or under-delivery of enteral fluids relative to the prescribed dose, if proper controls are not in place. Over- or under-delivery of enteral nutrition through the pump and associated feed sets could cause temporary or medically reversible adverse health consequences, with a remote probability of serious adverse health consequences.",
+   "title": "Vesco Medical Llc: Vesco Q Enteral Feeding Pump, Model Number VED-701, Software Versions 6.0 - 7.8",
+   "url": "https://api.fda.gov/device/enforcement.json?search=recall_number:%22Z-0373-2027%22"
+  },
+  {
+   "action": "",
+   "agencies": [
     "ferc"
    ],
    "category": "other",
@@ -5125,6 +10262,54 @@
    "summary": "",
    "title": "Village of Swanton, Vermont; Notice of Availability of Environmental Assessment",
    "url": "https://www.federalregister.gov/documents/2026/11/18/2026-23447/village-of-swanton-vermont-notice-of-availability-of-environmental-assessment"
+  },
+  {
+   "action": "",
+   "agencies": [
+    "fda"
+   ],
+   "category": "enforcement",
+   "corporation": null,
+   "date": "2026-11-06",
+   "date_basis": "classified",
+   "doc_type": "Recall enforcement report",
+   "first_seen": "2026-11-27T17:31:10+00:00",
+   "flags": [],
+   "id": "openfda:Z-0360-2027",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Sanction",
+      "points": 2,
+      "why": "most serious sanction named"
+     },
+     {
+      "marker": "Reach",
+      "points": 1,
+      "why": "action against particular parties"
+     }
+    ],
+    "level": 1,
+    "points": 3
+   },
+   "jurisdiction": "federal",
+   "outcome": "recall",
+   "priority": 0,
+   "published": "2026-11-18",
+   "rating": null,
+   "recall_class": "Class II",
+   "recall_initiator": "Voluntary: Firm initiated",
+   "routine": false,
+   "sanctions": [
+    "recall"
+   ],
+   "source": "openfda",
+   "source_label": "openFDA recall enforcement reports (medical devices)",
+   "subcategory": "Recall (Class II, medical devices)",
+   "subtype": "Class II",
+   "summary": "Class II. Voluntary: Firm initiated. Reason: Endovascular prosthesis were manufactured on equipment that was not operating with valid parameters and may cause the distal tip to separate.",
+   "title": "W L Gore & Associates, Inc.: Brand Name: GOREÂ¿ VIABAHNÂ¿ Endoprosthesis with Heparin Bioactive Surface, GOREÂ¿ VIABAHNÂ¿ Endoprosthesis with PROPATEN Bioactive Surface  Product Name: GOREÂ…",
+   "url": "https://api.fda.gov/device/enforcement.json?search=recall_number:%22Z-0360-2027%22"
   }
  ]
 }
