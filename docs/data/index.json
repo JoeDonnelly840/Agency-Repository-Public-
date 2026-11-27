@@ -79,12 +79,12 @@
  "backfill": {
   "done": {
    "federal_register": true,
-   "openfda": false,
+   "openfda": true,
    "regulations_gov": true
   },
   "next": {
    "federal_register": "2014-12",
-   "openfda": "2021-05",
+   "openfda": "2014-12",
    "regulations_gov": "2014-12"
   },
   "target_start": "2015-01-01"
@@ -204,7 +204,7 @@
   "sweep": {
    "done": false,
    "next_year": 2026,
-   "term": 0
+   "term": 24
   }
  },
  "history_start": "2015-01-01",
@@ -222,83 +222,83 @@
   }
  ],
  "months": {
-  "2015-01": 1509,
-  "2015-02": 1949,
-  "2015-03": 1336,
-  "2015-04": 1382,
-  "2015-05": 1267,
-  "2015-06": 1211,
-  "2015-07": 1206,
-  "2015-08": 1353,
-  "2015-09": 1180,
-  "2015-10": 1797,
-  "2015-11": 1559,
-  "2015-12": 1731,
-  "2016-01": 1206,
-  "2016-02": 1465,
-  "2016-03": 1701,
-  "2016-04": 1983,
-  "2016-05": 2156,
-  "2016-06": 2334,
-  "2016-07": 1558,
-  "2016-08": 1552,
-  "2016-09": 1350,
-  "2016-10": 1387,
-  "2016-11": 1473,
-  "2016-12": 1890,
-  "2017-01": 1678,
-  "2017-02": 1752,
-  "2017-03": 2307,
-  "2017-04": 1625,
-  "2017-05": 2537,
-  "2017-06": 2732,
-  "2017-07": 1818,
-  "2017-08": 1881,
-  "2017-09": 2126,
-  "2017-10": 1618,
-  "2017-11": 1723,
-  "2017-12": 1609,
-  "2018-01": 1990,
-  "2018-02": 2376,
-  "2018-03": 2278,
-  "2018-04": 1708,
-  "2018-05": 1508,
-  "2018-06": 2302,
-  "2018-07": 1544,
-  "2018-08": 1540,
-  "2018-09": 1517,
-  "2018-10": 1663,
-  "2018-11": 1450,
-  "2018-12": 1295,
-  "2019-01": 1212,
-  "2019-02": 2246,
-  "2019-03": 1724,
-  "2019-04": 2781,
-  "2019-05": 2819,
-  "2019-06": 1829,
-  "2019-07": 1639,
-  "2019-08": 1893,
-  "2019-09": 1611,
-  "2019-10": 1934,
-  "2019-11": 1635,
-  "2019-12": 1506,
-  "2020-01": 1654,
-  "2020-02": 1587,
-  "2020-03": 1740,
-  "2020-04": 1295,
-  "2020-05": 1056,
-  "2020-06": 1333,
-  "2020-07": 1370,
-  "2020-08": 1510,
-  "2020-09": 1255,
-  "2020-10": 1467,
-  "2020-11": 1257,
-  "2020-12": 1397,
-  "2021-01": 1108,
-  "2021-02": 1207,
-  "2021-03": 1405,
-  "2021-04": 1126,
-  "2021-05": 1211,
+  "2015-01": 1739,
+  "2015-02": 2377,
+  "2015-03": 1770,
+  "2015-04": 2197,
+  "2015-05": 1798,
+  "2015-06": 1570,
+  "2015-07": 1939,
+  "2015-08": 1824,
+  "2015-09": 1981,
+  "2015-10": 2126,
+  "2015-11": 2149,
+  "2015-12": 2229,
+  "2016-01": 1511,
+  "2016-02": 1861,
+  "2016-03": 2238,
+  "2016-04": 2623,
+  "2016-05": 2579,
+  "2016-06": 3025,
+  "2016-07": 2253,
+  "2016-08": 2094,
+  "2016-09": 1900,
+  "2016-10": 2131,
+  "2016-11": 2093,
+  "2016-12": 2516,
+  "2017-01": 2333,
+  "2017-02": 2097,
+  "2017-03": 2973,
+  "2017-04": 2289,
+  "2017-05": 3185,
+  "2017-06": 3217,
+  "2017-07": 2326,
+  "2017-08": 2604,
+  "2017-09": 2375,
+  "2017-10": 1836,
+  "2017-11": 2229,
+  "2017-12": 1881,
+  "2018-01": 2368,
+  "2018-02": 3096,
+  "2018-03": 2751,
+  "2018-04": 2230,
+  "2018-05": 2266,
+  "2018-06": 2709,
+  "2018-07": 1945,
+  "2018-08": 2218,
+  "2018-09": 1972,
+  "2018-10": 2210,
+  "2018-11": 2139,
+  "2018-12": 1623,
+  "2019-01": 1383,
+  "2019-02": 2732,
+  "2019-03": 2340,
+  "2019-04": 3183,
+  "2019-05": 3295,
+  "2019-06": 2322,
+  "2019-07": 2274,
+  "2019-08": 2600,
+  "2019-09": 1989,
+  "2019-10": 2500,
+  "2019-11": 2396,
+  "2019-12": 1978,
+  "2020-01": 2102,
+  "2020-02": 2117,
+  "2020-03": 2153,
+  "2020-04": 1814,
+  "2020-05": 1407,
+  "2020-06": 1710,
+  "2020-07": 1851,
+  "2020-08": 1838,
+  "2020-09": 1773,
+  "2020-10": 1971,
+  "2020-11": 1540,
+  "2020-12": 1784,
+  "2021-01": 1359,
+  "2021-02": 1572,
+  "2021-03": 1661,
+  "2021-04": 1452,
+  "2021-05": 1587,
   "2021-06": 2471,
   "2021-07": 1810,
   "2021-08": 1571,
@@ -8248,6 +8248,787 @@
    "requests": 280,
    "run_at": "2026-11-27T17:31:10+00:00",
    "start": "2015-01-01"
+  },
+  {
+   "end": "2021-05-31",
+   "items_found": 38159,
+   "items_new": 38159,
+   "kind": "backfill",
+   "reports": [
+    {
+     "agencies": {
+      "fda": "ok"
+     },
+     "detail": "History 2021-05:",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "fda": "ok"
+     },
+     "detail": "History 2021-04:",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "fda": "ok"
+     },
+     "detail": "History 2021-03:",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "fda": "ok"
+     },
+     "detail": "History 2021-02:",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "fda": "ok"
+     },
+     "detail": "History 2021-01:",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "fda": "ok"
+     },
+     "detail": "History 2020-12:",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "fda": "ok"
+     },
+     "detail": "History 2020-11:",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "fda": "partial: More recalls than the per-run limit for: medical devices."
+     },
+     "detail": "History 2020-10: More recalls than the per-run limit for: medical devices.",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "partial"
+    },
+    {
+     "agencies": {
+      "fda": "ok"
+     },
+     "detail": "History 2020-09:",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "fda": "ok"
+     },
+     "detail": "History 2020-08:",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "fda": "ok"
+     },
+     "detail": "History 2020-07:",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "fda": "partial: More recalls than the per-run limit for: medical devices."
+     },
+     "detail": "History 2020-06: More recalls than the per-run limit for: medical devices.",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "partial"
+    },
+    {
+     "agencies": {
+      "fda": "partial: More recalls than the per-run limit for: medical devices."
+     },
+     "detail": "History 2020-05: More recalls than the per-run limit for: medical devices.",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "partial"
+    },
+    {
+     "agencies": {
+      "fda": "ok"
+     },
+     "detail": "History 2020-04:",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "fda": "ok"
+     },
+     "detail": "History 2020-03:",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "fda": "partial: More recalls than the per-run limit for: medical devices."
+     },
+     "detail": "History 2020-02: More recalls than the per-run limit for: medical devices.",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "partial"
+    },
+    {
+     "agencies": {
+      "fda": "ok"
+     },
+     "detail": "History 2020-01:",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "fda": "ok"
+     },
+     "detail": "History 2019-12:",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "fda": "partial: More recalls than the per-run limit for: drugs, medical devices."
+     },
+     "detail": "History 2019-11: More recalls than the per-run limit for: drugs, medical devices.",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "partial"
+    },
+    {
+     "agencies": {
+      "fda": "partial: More recalls than the per-run limit for: medical devices."
+     },
+     "detail": "History 2019-10: More recalls than the per-run limit for: medical devices.",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "partial"
+    },
+    {
+     "agencies": {
+      "fda": "ok"
+     },
+     "detail": "History 2019-09:",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "fda": "partial: More recalls than the per-run limit for: drugs."
+     },
+     "detail": "History 2019-08: More recalls than the per-run limit for: drugs.",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "partial"
+    },
+    {
+     "agencies": {
+      "fda": "partial: More recalls than the per-run limit for: food."
+     },
+     "detail": "History 2019-07: More recalls than the per-run limit for: food.",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "partial"
+    },
+    {
+     "agencies": {
+      "fda": "partial: More recalls than the per-run limit for: medical devices."
+     },
+     "detail": "History 2019-06: More recalls than the per-run limit for: medical devices.",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "partial"
+    },
+    {
+     "agencies": {
+      "fda": "ok"
+     },
+     "detail": "History 2019-05:",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "fda": "ok"
+     },
+     "detail": "History 2019-04:",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "fda": "partial: More recalls than the per-run limit for: drugs."
+     },
+     "detail": "History 2019-03: More recalls than the per-run limit for: drugs.",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "partial"
+    },
+    {
+     "agencies": {
+      "fda": "ok"
+     },
+     "detail": "History 2019-02:",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "fda": "ok"
+     },
+     "detail": "History 2019-01:",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "fda": "ok"
+     },
+     "detail": "History 2018-12:",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "fda": "partial: More recalls than the per-run limit for: food."
+     },
+     "detail": "History 2018-11: More recalls than the per-run limit for: food.",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "partial"
+    },
+    {
+     "agencies": {
+      "fda": "partial: More recalls than the per-run limit for: medical devices."
+     },
+     "detail": "History 2018-10: More recalls than the per-run limit for: medical devices.",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "partial"
+    },
+    {
+     "agencies": {
+      "fda": "partial: More recalls than the per-run limit for: medical devices."
+     },
+     "detail": "History 2018-09: More recalls than the per-run limit for: medical devices.",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "partial"
+    },
+    {
+     "agencies": {
+      "fda": "partial: More recalls than the per-run limit for: medical devices."
+     },
+     "detail": "History 2018-08: More recalls than the per-run limit for: medical devices.",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "partial"
+    },
+    {
+     "agencies": {
+      "fda": "ok"
+     },
+     "detail": "History 2018-07:",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "fda": "partial: More recalls than the per-run limit for: medical devices."
+     },
+     "detail": "History 2018-06: More recalls than the per-run limit for: medical devices.",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "partial"
+    },
+    {
+     "agencies": {
+      "fda": "partial: More recalls than the per-run limit for: medical devices, food."
+     },
+     "detail": "History 2018-05: More recalls than the per-run limit for: medical devices, food.",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "partial"
+    },
+    {
+     "agencies": {
+      "fda": "ok"
+     },
+     "detail": "History 2018-04:",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "fda": "partial: More recalls than the per-run limit for: medical devices."
+     },
+     "detail": "History 2018-03: More recalls than the per-run limit for: medical devices.",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "partial"
+    },
+    {
+     "agencies": {
+      "fda": "partial: More recalls than the per-run limit for: drugs."
+     },
+     "detail": "History 2018-02: More recalls than the per-run limit for: drugs.",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "partial"
+    },
+    {
+     "agencies": {
+      "fda": "ok"
+     },
+     "detail": "History 2018-01:",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "fda": "ok"
+     },
+     "detail": "History 2017-12:",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "fda": "ok"
+     },
+     "detail": "History 2017-11:",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "fda": "ok"
+     },
+     "detail": "History 2017-10:",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "fda": "ok"
+     },
+     "detail": "History 2017-09:",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "fda": "partial: More recalls than the per-run limit for: medical devices, food."
+     },
+     "detail": "History 2017-08: More recalls than the per-run limit for: medical devices, food.",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "partial"
+    },
+    {
+     "agencies": {
+      "fda": "partial: More recalls than the per-run limit for: food."
+     },
+     "detail": "History 2017-07: More recalls than the per-run limit for: food.",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "partial"
+    },
+    {
+     "agencies": {
+      "fda": "partial: More recalls than the per-run limit for: medical devices."
+     },
+     "detail": "History 2017-06: More recalls than the per-run limit for: medical devices.",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "partial"
+    },
+    {
+     "agencies": {
+      "fda": "ok"
+     },
+     "detail": "History 2017-05:",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "fda": "partial: More recalls than the per-run limit for: medical devices, food."
+     },
+     "detail": "History 2017-04: More recalls than the per-run limit for: medical devices, food.",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "partial"
+    },
+    {
+     "agencies": {
+      "fda": "partial: More recalls than the per-run limit for: medical devices."
+     },
+     "detail": "History 2017-03: More recalls than the per-run limit for: medical devices.",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "partial"
+    },
+    {
+     "agencies": {
+      "fda": "ok"
+     },
+     "detail": "History 2017-02:",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "fda": "partial: More recalls than the per-run limit for: food."
+     },
+     "detail": "History 2017-01: More recalls than the per-run limit for: food.",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "partial"
+    },
+    {
+     "agencies": {
+      "fda": "partial: More recalls than the per-run limit for: food."
+     },
+     "detail": "History 2016-12: More recalls than the per-run limit for: food.",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "partial"
+    },
+    {
+     "agencies": {
+      "fda": "partial: More recalls than the per-run limit for: medical devices."
+     },
+     "detail": "History 2016-11: More recalls than the per-run limit for: medical devices.",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "partial"
+    },
+    {
+     "agencies": {
+      "fda": "partial: More recalls than the per-run limit for: medical devices, food."
+     },
+     "detail": "History 2016-10: More recalls than the per-run limit for: medical devices, food.",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "partial"
+    },
+    {
+     "agencies": {
+      "fda": "partial: More recalls than the per-run limit for: food."
+     },
+     "detail": "History 2016-09: More recalls than the per-run limit for: food.",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "partial"
+    },
+    {
+     "agencies": {
+      "fda": "partial: More recalls than the per-run limit for: medical devices."
+     },
+     "detail": "History 2016-08: More recalls than the per-run limit for: medical devices.",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "partial"
+    },
+    {
+     "agencies": {
+      "fda": "partial: More recalls than the per-run limit for: drugs."
+     },
+     "detail": "History 2016-07: More recalls than the per-run limit for: drugs.",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "partial"
+    },
+    {
+     "agencies": {
+      "fda": "partial: More recalls than the per-run limit for: medical devices."
+     },
+     "detail": "History 2016-06: More recalls than the per-run limit for: medical devices.",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "partial"
+    },
+    {
+     "agencies": {
+      "fda": "ok"
+     },
+     "detail": "History 2016-05:",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "fda": "ok"
+     },
+     "detail": "History 2016-04:",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "fda": "partial: More recalls than the per-run limit for: medical devices."
+     },
+     "detail": "History 2016-03: More recalls than the per-run limit for: medical devices.",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "partial"
+    },
+    {
+     "agencies": {
+      "fda": "ok"
+     },
+     "detail": "History 2016-02:",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "fda": "ok"
+     },
+     "detail": "History 2016-01:",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "fda": "ok"
+     },
+     "detail": "History 2015-12:",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "fda": "partial: More recalls than the per-run limit for: drugs."
+     },
+     "detail": "History 2015-11: More recalls than the per-run limit for: drugs.",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "partial"
+    },
+    {
+     "agencies": {
+      "fda": "ok"
+     },
+     "detail": "History 2015-10:",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "fda": "partial: More recalls than the per-run limit for: drugs, medical devices."
+     },
+     "detail": "History 2015-09: More recalls than the per-run limit for: drugs, medical devices.",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "partial"
+    },
+    {
+     "agencies": {
+      "fda": "ok"
+     },
+     "detail": "History 2015-08:",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "fda": "partial: More recalls than the per-run limit for: medical devices, food."
+     },
+     "detail": "History 2015-07: More recalls than the per-run limit for: medical devices, food.",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "partial"
+    },
+    {
+     "agencies": {
+      "fda": "ok"
+     },
+     "detail": "History 2015-06:",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "fda": "ok"
+     },
+     "detail": "History 2015-05:",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "fda": "partial: More recalls than the per-run limit for: drugs, food."
+     },
+     "detail": "History 2015-04: More recalls than the per-run limit for: drugs, food.",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "partial"
+    },
+    {
+     "agencies": {
+      "fda": "ok"
+     },
+     "detail": "History 2015-03:",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "ok"
+    },
+    {
+     "agencies": {
+      "fda": "partial: More recalls than the per-run limit for: food."
+     },
+     "detail": "History 2015-02: More recalls than the per-run limit for: food.",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "partial"
+    },
+    {
+     "agencies": {
+      "fda": "ok"
+     },
+     "detail": "History 2015-01:",
+     "kind": "api",
+     "label": "openFDA recall enforcement reports",
+     "source": "openfda",
+     "status": "ok"
+    }
+   ],
+   "requests": 279,
+   "run_at": "2026-11-27T19:35:32+00:00",
+   "start": "2015-01-01"
   }
  ],
  "schema": 3,
@@ -8387,5 +9168,5 @@
    "last_status": "ok"
   }
  },
- "updated_at": "2026-11-27T17:31:10+00:00"
+ "updated_at": "2026-11-27T19:35:32+00:00"
 }

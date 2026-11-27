@@ -654,11 +654,31 @@
    "effective_on": null,
    "eo_number": null,
    "first_seen": "2026-11-26T01:56:14+00:00",
-   "flags": [],
+   "flags": [
+    {
+     "authority": "central_hudson",
+     "code": "free_speech",
+     "elements_found": [],
+     "elements_total": 3,
+     "group": "rights",
+     "level": 0,
+     "precedent": "open",
+     "structural": false,
+     "triggers": [
+      "first amendment"
+     ],
+     "weighed": []
+    }
+   ],
    "fr_agency_slugs": [
     "energy-department",
     "federal-energy-regulatory-commission"
    ],
+   "ft": {
+    "terms": [
+     "first_amendment"
+    ]
+   },
    "id": "fr:2026-18451",
    "impact": {
     "breakdown": [
@@ -1718,6 +1738,11 @@
    "fr_agency_slugs": [
     "executive-office-of-the-president"
    ],
+   "ft": {
+    "terms": [
+     "national_emergencies_act"
+    ]
+   },
    "id": "fr:2026-18589",
    "impact": {
     "breakdown": [
@@ -1741,6 +1766,9 @@
    "significant": false,
    "source": "federal_register",
    "source_label": "Federal Register",
+   "statutes": [
+    "nea"
+   ],
    "subcategory": "Notice",
    "subtype": "Notice",
    "summary": "",
@@ -3247,9 +3275,13 @@
      "authority": "naacp_alabama",
      "code": "association",
      "elements_found": [
-      "disclosure"
+      "disclosure",
+      "broad"
      ],
      "elements_total": 3,
+     "full_text_elements": [
+      "broad"
+     ],
      "group": "rights",
      "level": 0,
      "precedent": "open",
@@ -3258,11 +3290,35 @@
       "political contribut"
      ],
      "weighed": []
+    },
+    {
+     "authority": "central_hudson",
+     "code": "free_speech",
+     "elements_found": [
+      "speech"
+     ],
+     "elements_total": 3,
+     "full_text_elements": [
+      "speech"
+     ],
+     "group": "rights",
+     "level": 0,
+     "precedent": "open",
+     "structural": false,
+     "triggers": [
+      "first amendment"
+     ],
+     "weighed": []
     }
    ],
    "fr_agency_slugs": [
     "securities-and-exchange-commission"
    ],
+   "ft": {
+    "terms": [
+     "first_amendment"
+    ]
+   },
    "id": "fr:2026-18424",
    "impact": {
     "breakdown": [

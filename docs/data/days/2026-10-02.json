@@ -2,6 +2,124 @@
  "date": "2026-10-02",
  "items": [
   {
+   "action": "Final rule.",
+   "agencies": [
+    "hhs"
+   ],
+   "category": "rulemaking",
+   "comments_close": null,
+   "corporation": null,
+   "date": "2026-10-02",
+   "date_basis": "published",
+   "doc_type": "Rule",
+   "docket_ids": [
+    "CMS-5545-F"
+   ],
+   "effective_on": "2026-11-30",
+   "eo_number": null,
+   "first_seen": "2026-11-26T01:56:14+00:00",
+   "flags": [
+    {
+     "authority": "loper_bright",
+     "code": "statutory_deference",
+     "elements_found": [
+      "deference"
+     ],
+     "elements_total": 3,
+     "full_text_elements": [
+      "deference"
+     ],
+     "group": "structural",
+     "level": 1,
+     "precedent": "direct",
+     "structural": true,
+     "triggers": [
+      "chevron u.s.a"
+     ],
+     "weighed": []
+    },
+    {
+     "authority": "west_virginia",
+     "code": "major_questions",
+     "elements_found": [
+      "rule",
+      "significance"
+     ],
+     "elements_total": 4,
+     "group": "structural",
+     "level": 0,
+     "precedent": "open",
+     "structural": true,
+     "triggers": [
+      "major questions",
+      "nondelegation"
+     ],
+     "weighed": []
+    },
+    {
+     "authority": "mathews",
+     "code": "due_process_takings",
+     "elements_found": [],
+     "elements_total": 3,
+     "group": "rights",
+     "level": 0,
+     "precedent": "open",
+     "structural": false,
+     "triggers": [
+      "takings clause"
+     ],
+     "weighed": []
+    }
+   ],
+   "fr_agency_slugs": [
+    "health-and-human-services-department",
+    "centers-for-medicare-medicaid-services"
+   ],
+   "ft": {
+    "terms": [
+     "chevron",
+     "due_process",
+     "loper_bright",
+     "major_questions",
+     "nondelegation",
+     "takings_clause"
+    ]
+   },
+   "id": "fr:2026-20281",
+   "impact": {
+    "breakdown": [
+     {
+      "marker": "Reach",
+      "points": 2,
+      "why": "binding rule designated significant"
+     }
+    ],
+    "level": 1,
+    "points": 2
+   },
+   "jurisdiction": "federal",
+   "outcome": "final",
+   "priority": 1,
+   "published": "2026-10-02",
+   "rating": {
+    "issues": 1,
+    "level": 1
+   },
+   "rins": [
+    "0938-AV66"
+   ],
+   "routine": false,
+   "sanctions": [],
+   "significant": true,
+   "source": "federal_register",
+   "source_label": "Federal Register",
+   "subcategory": "Final rule",
+   "subtype": "",
+   "summary": "This final rule implements the Global Benchmark for Efficient Drug Pricing Model (GLOBE Model), a new mandatory Medicare payment model under section 1115A of the Social Security Act. The GLOBE Model will test whether a payment model that uses an alternative method for calculating Medicare Part B drug inflation rebate amounts for certain separately payable Medicare Part B drugs and biological products reduces costs for Original Medicare (OM) beneficiaries and the Medicare program while preserving quality of care. The term OM has the same meaning as Medicare fee-for-service and the traditional Medicare program.",
+   "title": "Global Benchmark for Efficient Drug Pricing (GLOBE) Model",
+   "url": "https://www.federalregister.gov/documents/2026/10/02/2026-20281/global-benchmark-for-efficient-drug-pricing-globe-model"
+  },
+  {
    "action": "",
    "agencies": [
     "fda"
@@ -1705,6 +1823,7 @@
      "precedent": "open",
      "structural": true,
      "triggers": [
+      "emergency economic powers",
       "national emergency"
      ],
      "weighed": []
@@ -1713,6 +1832,12 @@
    "fr_agency_slugs": [
     "executive-office-of-the-president"
    ],
+   "ft": {
+    "terms": [
+     "ieepa",
+     "national_emergencies_act"
+    ]
+   },
    "id": "fr:2026-20322",
    "impact": {
     "breakdown": [
@@ -1736,6 +1861,10 @@
    "significant": false,
    "source": "federal_register",
    "source_label": "Federal Register",
+   "statutes": [
+    "ieepa",
+    "nea"
+   ],
    "subcategory": "Notice",
    "subtype": "Notice",
    "summary": "",
@@ -2023,77 +2152,6 @@
    "title": "GRAS Notice (GRN) 1252 – Amendments – Saccharomyces cerevisiae \"BY-1568\"",
    "url": "https://www.regulations.gov/document/FDA-2025-N-1928-0080",
    "withdrawn": false
-  },
-  {
-   "action": "Final rule.",
-   "agencies": [
-    "hhs"
-   ],
-   "category": "rulemaking",
-   "comments_close": null,
-   "corporation": null,
-   "date": "2026-10-02",
-   "date_basis": "published",
-   "doc_type": "Rule",
-   "docket_ids": [
-    "CMS-5545-F"
-   ],
-   "effective_on": "2026-11-30",
-   "eo_number": null,
-   "first_seen": "2026-11-26T01:56:14+00:00",
-   "flags": [
-    {
-     "authority": "west_virginia",
-     "code": "major_questions",
-     "elements_found": [
-      "rule",
-      "significance"
-     ],
-     "elements_total": 4,
-     "group": "structural",
-     "level": 0,
-     "precedent": "open",
-     "structural": true,
-     "triggers": [
-      "designated a significant rule"
-     ],
-     "weighed": []
-    }
-   ],
-   "fr_agency_slugs": [
-    "health-and-human-services-department",
-    "centers-for-medicare-medicaid-services"
-   ],
-   "id": "fr:2026-20281",
-   "impact": {
-    "breakdown": [
-     {
-      "marker": "Reach",
-      "points": 2,
-      "why": "binding rule designated significant"
-     }
-    ],
-    "level": 1,
-    "points": 2
-   },
-   "jurisdiction": "federal",
-   "outcome": "final",
-   "priority": 0,
-   "published": "2026-10-02",
-   "rating": null,
-   "rins": [
-    "0938-AV66"
-   ],
-   "routine": false,
-   "sanctions": [],
-   "significant": true,
-   "source": "federal_register",
-   "source_label": "Federal Register",
-   "subcategory": "Final rule",
-   "subtype": "",
-   "summary": "This final rule implements the Global Benchmark for Efficient Drug Pricing Model (GLOBE Model), a new mandatory Medicare payment model under section 1115A of the Social Security Act. The GLOBE Model will test whether a payment model that uses an alternative method for calculating Medicare Part B drug inflation rebate amounts for certain separately payable Medicare Part B drugs and biological products reduces costs for Original Medicare (OM) beneficiaries and the Medicare program while preserving quality of care. The term OM has the same meaning as Medicare fee-for-service and the traditional Medicare program.",
-   "title": "Global Benchmark for Efficient Drug Pricing (GLOBE) Model",
-   "url": "https://www.federalregister.gov/documents/2026/10/02/2026-20281/global-benchmark-for-efficient-drug-pricing-globe-model"
   },
   {
    "action": "",

@@ -2501,11 +2501,32 @@
    "effective_on": null,
    "eo_number": null,
    "first_seen": "2026-11-19T13:39:10+00:00",
-   "flags": [],
+   "flags": [
+    {
+     "authority": "central_hudson",
+     "code": "free_speech",
+     "elements_found": [],
+     "elements_total": 3,
+     "group": "rights",
+     "level": 0,
+     "precedent": "open",
+     "structural": false,
+     "triggers": [
+      "first amendment"
+     ],
+     "weighed": []
+    }
+   ],
    "fr_agency_slugs": [
     "health-and-human-services-department",
     "centers-for-medicare-medicaid-services"
    ],
+   "ft": {
+    "terms": [
+     "due_process",
+     "first_amendment"
+    ]
+   },
    "id": "fr:2026-23461",
    "impact": {
     "breakdown": [

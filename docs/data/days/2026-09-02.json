@@ -2142,6 +2142,7 @@
      "precedent": "open",
      "structural": true,
      "triggers": [
+      "emergency economic powers",
       "national emergency"
      ],
      "weighed": []
@@ -2150,6 +2151,12 @@
    "fr_agency_slugs": [
     "executive-office-of-the-president"
    ],
+   "ft": {
+    "terms": [
+     "ieepa",
+     "national_emergencies_act"
+    ]
+   },
    "id": "fr:2026-18046",
    "impact": {
     "breakdown": [
@@ -2173,6 +2180,10 @@
    "significant": false,
    "source": "federal_register",
    "source_label": "Federal Register",
+   "statutes": [
+    "ieepa",
+    "nea"
+   ],
    "subcategory": "Notice",
    "subtype": "Notice",
    "summary": "",
@@ -5288,6 +5299,11 @@
    "fr_agency_slugs": [
     "environmental-protection-agency"
    ],
+   "ft": {
+    "terms": [
+     "loper_bright"
+    ]
+   },
    "id": "fr:2026-17985",
    "impact": {
     "breakdown": [

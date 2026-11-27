@@ -2568,6 +2568,12 @@
     "health-and-human-services-department",
     "centers-for-medicare-medicaid-services"
    ],
+   "ft": {
+    "terms": [
+     "due_process",
+     "loper_bright"
+    ]
+   },
    "id": "fr:2026-22381",
    "impact": {
     "breakdown": [
@@ -2665,10 +2671,34 @@
    "effective_on": "2027-01-04",
    "eo_number": null,
    "first_seen": "2026-11-11T13:33:45+00:00",
-   "flags": [],
+   "flags": [
+    {
+     "authority": "west_virginia",
+     "code": "major_questions",
+     "elements_found": [
+      "rule"
+     ],
+     "elements_total": 4,
+     "group": "structural",
+     "level": 0,
+     "precedent": "open",
+     "structural": true,
+     "triggers": [
+      "major questions"
+     ],
+     "weighed": []
+    }
+   ],
    "fr_agency_slugs": [
     "health-and-human-services-department"
    ],
+   "ft": {
+    "terms": [
+     "equal_protection",
+     "loper_bright",
+     "major_questions"
+    ]
+   },
    "id": "fr:2026-22380",
    "impact": {
     "breakdown": [

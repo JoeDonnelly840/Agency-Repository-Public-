@@ -2765,10 +2765,30 @@
    "effective_on": null,
    "eo_number": null,
    "first_seen": "2026-11-26T01:56:14+00:00",
-   "flags": [],
+   "flags": [
+    {
+     "authority": "central_hudson",
+     "code": "free_speech",
+     "elements_found": [],
+     "elements_total": 3,
+     "group": "rights",
+     "level": 0,
+     "precedent": "open",
+     "structural": false,
+     "triggers": [
+      "first amendment"
+     ],
+     "weighed": []
+    }
+   ],
    "fr_agency_slugs": [
     "federal-trade-commission"
    ],
+   "ft": {
+    "terms": [
+     "first_amendment"
+    ]
+   },
    "id": "fr:2026-20143",
    "impact": {
     "breakdown": [
