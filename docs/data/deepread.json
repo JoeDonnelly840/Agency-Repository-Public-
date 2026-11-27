@@ -1,6 +1,12 @@
 {
  "log": [
-  "sweep 2026 terms 0-23: 195 documents"
+  "sweep 2026 terms 0-23: 195 documents",
+  "sweep 2026 terms 24-29: 77 documents",
+  "sweep 2025 terms 0-29: 293 documents",
+  "sweep 2024 terms 0-29: 300 documents",
+  "sweep 2023 terms 0-29: 234 documents",
+  "sweep 2022 terms 0-29: 201 documents",
+  "sweep 2021 terms 0-13: 100 documents"
  ],
  "read": {
   "done": false,
@@ -8,7 +14,7 @@
  },
  "sweep": {
   "done": false,
-  "next_year": 2026,
-  "term": 24
+  "next_year": 2021,
+  "term": 14
  }
 }

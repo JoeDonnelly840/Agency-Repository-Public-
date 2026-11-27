@@ -358,7 +358,28 @@
    "effective_on": "2026-01-04",
    "eo_number": null,
    "first_seen": "2026-11-11T13:33:45+00:00",
-   "flags": [],
+   "flags": [
+    {
+     "authority": "west_virginia",
+     "code": "major_questions",
+     "elements_found": [
+      "rule",
+      "significance"
+     ],
+     "elements_total": 4,
+     "full_text_elements": [
+      "significance"
+     ],
+     "group": "structural",
+     "level": 0,
+     "precedent": "open",
+     "structural": true,
+     "triggers": [
+      "major rule"
+     ],
+     "weighed": []
+    }
+   ],
    "fr_agency_slugs": [
     "health-and-human-services-department",
     "centers-for-medicare-medicaid-services"
@@ -366,7 +387,9 @@
    "ft": {
     "terms": [
      "due_process",
-     "loper_bright"
+     "good_cause",
+     "loper_bright",
+     "nonenforcement"
     ]
    },
    "id": "fr:2026-22750",
@@ -394,6 +417,9 @@
    "significant": false,
    "source": "federal_register",
    "source_label": "Federal Register",
+   "statutes": [
+    "cra"
+   ],
    "subcategory": "Final rule",
    "subtype": "",
    "summary": "This final rule sets forth routine updates to the Medicare home health payment rates in accordance with existing statutory and regulatory requirements. In addition, this final rule discusses the behavior adjustments and finalizes a temporary behavior adjustment. It also finalizes the recalibrated case-mix weights and updated functional impairment levels; comorbidity subgroups; and low-utilization payment adjustment (LUPA) thresholds for CY 2027. Additionally, this final rule discusses and responds to comments on the provision of home health palliative care services and includes a summary of comments received on the request for information (RFI) on a home health specific wage index included…",
@@ -1111,6 +1137,12 @@
     "health-and-human-services-department",
     "centers-for-medicare-medicaid-services"
    ],
+   "ft": {
+    "terms": [
+     "good_cause",
+     "notwithstanding"
+    ]
+   },
    "id": "fr:2026-22743",
    "impact": {
     "breakdown": [

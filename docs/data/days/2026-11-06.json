@@ -350,6 +350,11 @@
    "fr_agency_slugs": [
     "environmental-protection-agency"
    ],
+   "ft": {
+    "terms": [
+     "good_cause"
+    ]
+   },
    "id": "fr:2026-22671",
    "impact": {
     "breakdown": [
@@ -373,6 +378,9 @@
    "significant": false,
    "source": "federal_register",
    "source_label": "Federal Register",
+   "statutes": [
+    "cra"
+   ],
    "subcategory": "Final rule",
    "subtype": "",
    "summary": "The U.S. Environmental Protection Agency (EPA) is revising the format for materials submitted by the State of California that are incorporated by reference into the California State Implementation Plan (SIP). The regulations and other materials affected by this format change have all been previously submitted by the State of California and approved by the EPA. This format revision will primarily affect the \"Identification of plan--in part\" sections, as well as the format of the SIP materials that will be available for public inspection at the EPA Regional Office and the National Archives and Records Administration (NARA). This action, which only relates to rules applicable within six…",
@@ -1307,6 +1315,26 @@
    "first_seen": "2026-11-11T13:33:45+00:00",
    "flags": [
     {
+     "authority": "west_virginia",
+     "code": "major_questions",
+     "elements_found": [
+      "rule",
+      "significance"
+     ],
+     "elements_total": 4,
+     "full_text_elements": [
+      "significance"
+     ],
+     "group": "structural",
+     "level": 0,
+     "precedent": "open",
+     "structural": true,
+     "triggers": [
+      "major rule"
+     ],
+     "weighed": []
+    },
+    {
      "authority": "loper_bright",
      "code": "statutory_deference",
      "elements_found": [
@@ -1339,6 +1367,7 @@
    "ft": {
     "terms": [
      "chevron",
+     "good_cause",
      "loper_bright"
     ]
    },
@@ -1367,6 +1396,9 @@
    "significant": false,
    "source": "federal_register",
    "source_label": "Federal Register",
+   "statutes": [
+    "cra"
+   ],
    "subcategory": "Final rule",
    "subtype": "",
    "summary": "This final rule with comment period revises the Medicare Hospital Outpatient Prospective Payment System (OPPS) and the Medicare Ambulatory Surgical Center (ASC) payment system for calendar year 2027 based on our continuing experience with these systems. We also describe the changes to the amounts and factors used to determine the payment rates for Medicare services paid under the OPPS and those paid under the ASC payment systems. In addition, this final rule with comment period updates and refines the requirements for the Hospital Outpatient Quality Reporting Program and the Ambulatory Surgical Center Quality Reporting Program. There are no changes to the Rural Emergency Hospital Quality…",
